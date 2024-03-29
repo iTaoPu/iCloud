@@ -13,7 +13,7 @@
 
 |订阅名|订阅标识|作者|更新来源|Github仓库|订阅链接|维护状态|
 |-----|------|----|------|---------|-------|-------|
-|AIsouler的GKD订阅|666|AIsouler|由订阅内部规定链接更新|[AIsouler/GKD_subscription](https://github.com/AIsouler/GKD_subscription)|<ul><li>[Gitmirror源（国内）](https://raw.gitmirror.com/AIsouler/GKD_subscription/main/dist/AIsouler_gkd.json5)</li><br></ul>|仍在维护|
+|AIsouler的GKD订阅|666|AIsouler|由订阅内部规定链接更新|[AIsouler/GKD_subscription](https://github.com/AIsouler/GKD_subscription)|<ul><li>[Gitmirror源](https://raw.gitmirror.com/AIsouler/GKD_subscription/main/dist/AIsouler_gkd.json5)</li><br></ul>|仍在维护|
 
 注意
 
@@ -25,4 +25,6 @@
 本项目遵循 CC BY-NC-SA 4.0 协议。
 
 即：署名-非商业性使用-相同方式共享 4.0 协议
+
+[点击查看全文（中文）](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.zh-hans)
 
