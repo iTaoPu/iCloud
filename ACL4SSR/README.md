@@ -1,1 +1,3 @@
-ACL files for Android, Windows, Mac and iOS clients.
+
+はACL4SSRをベースに改造した独自の[サブコンバーター]ルールを使っている。
+Android、Windows、Mac、iOSクライアント用のACLファイル。
