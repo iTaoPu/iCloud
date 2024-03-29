@@ -57,5 +57,5 @@
 
 即：署名-非商业性使用-相同方式共享 4.0 协议
 
-[点击查看全文(中文)](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.zh-hans)
+[点击查看全文【中文】](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.zh-hans)
 
