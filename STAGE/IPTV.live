@@ -99,7 +99,7 @@ http://[2409:8087:7001:20:2::3]:80/dbiptv.sn.chinamobile.com/PLTV/88888893/224/3
 http://[2409:8087:7001:20:2::3]:80/dbiptv.sn.chinamobile.com/PLTV/88888893/224/3221226972/index.m3u8
 #EXTINF:-1 tvg-id="世界地理" tvg-name="世界地理" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/CCTV世界地理.png" group-title="📺 央視頻道",CCTV 世界地理
 http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002485/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
-#EXTINF:-1 tvg-id="文化精品" tvg-name="文化精品" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/CCTV文化精品.png" group-title="📺 央視頻道",CCTV 文化精品
+#EXTINF:-1 tvg-id="文化精品" tvg-name="文化精品" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/CCTV央视文化精品.png" group-title="📺 央視頻道",CCTV 文化精品
 http://[2409:8087:7001:20:2::3]:80/dbiptv.sn.chinamobile.com/PLTV/88888893/224/3221226981/index.m3u8
 #EXTINF:-1 tvg-id="央视台球" tvg-name="央视台球" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/CCTV央视台球.png" group-title="📺 央視頻道",CCTV 央视台球
 http://[2409:8087:7001:20:2::3]:80/dbiptv.sn.chinamobile.com/PLTV/88888893/224/3221226956/index.m3u8
@@ -369,11 +369,11 @@ http://183.242.49.77:8787/live/BTV新闻/index.m3u8
 http://183.242.49.77:8787/live/BTV国际/index.m3u8
 
 #📺 上海頻道
-#EXTINF:-1 tvg-id="上海新闻综合" tvg-name="上海新闻综合" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/上海新闻.png" group-title="📺 上海頻道",上海新闻
+#EXTINF:-1 tvg-id="上海新闻综合" tvg-name="上海新闻综合" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/上海新闻综合.png" group-title="📺 上海頻道",上海新闻综合
 http://[2409:8087:7001:20:1000::88]:6610/000000001000/5000000011000031110/index.m3u8?channel-id=bestzb&Contentid=5000000011000031110&livemode=1&stbId=3
 #EXTINF:-1 tvg-id="上海都市" tvg-name="上海都市" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/上海都市.png" group-title="📺 上海頻道",上海都市
 http://[2409:8087:7001:20:1000::88]:6610/000000001000/5000000010000018926/index.m3u8?channel-id=bestzb&Contentid=5000000010000018926&livemode=1&stbId=3
-#EXTINF:-1 tvg-id="上视外语 tvg-name="上视外语" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/上海ICS外语" group-title="📺 上海頻道",上海ICS外语
+#EXTINF:-1 tvg-id="上视外语 tvg-name="上视外语" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/上海ICS外语.png" group-title="📺 上海頻道",上海ICS外语
 http://[2409:8087:7001:20:1000::88]:6610/000000001000/5000000010000030951/index.m3u8?channel-id=bestzb&Contentid=5000000010000030951&livemode=1&stbId=3
 #EXTINF:-1 tvg-id="东方影视" tvg-name="东方影视" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/上海东方影视.png" group-title="📺 上海頻道",东方影视
 http://[2409:8087:7001:20:1000::88]:6610/000000001000/5000000010000032212/index.m3u8?channel-id=bestzb&Contentid=5000000010000032212&livemode=1&stbId=3
