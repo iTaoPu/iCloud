@@ -103,7 +103,7 @@ http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002485/index.m3
 http://[2409:8087:7001:20:2::3]:80/dbiptv.sn.chinamobile.com/PLTV/88888893/224/3221226981/index.m3u8
 #EXTINF:-1 tvg-id="央视台球" tvg-name="央视台球" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/CCTV央视台球.png" group-title="📺 央視頻道",CCTV 央视台球
 http://[2409:8087:7001:20:2::3]:80/dbiptv.sn.chinamobile.com/PLTV/88888893/224/3221226956/index.m3u8
-#EXTINF:-1 tvg-id="央视高网" tvg-name="央视高网" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/CCTV央视高网.png" group-title="📺 央視頻道",CCTV 央视高网
+#EXTINF:-1 tvg-id="央视高网" tvg-name="央视高网" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/CCTV高尔夫网球.png" group-title="📺 央視頻道",CCTV 央视高网
 http://[2409:8087:7001:20:2::3]:80/dbiptv.sn.chinamobile.com/PLTV/88888893/224/3221226978/index.m3u8
 #EXTINF:-1 tvg-id="风云剧场" tvg-name="风云剧场" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/CCTV风云剧场.png" group-title="📺 央視頻道",CCTV 风云剧场
 http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002505/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
@@ -117,13 +117,13 @@ http://[2409:8087:7001:20:2::3]:80/dbiptv.sn.chinamobile.com/PLTV/88888893/224/3
 http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002525/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
 #EXTINF:-1 tvg-id="女性时尚" tvg-name="女性时尚" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/CCTV女性时尚.png" group-title="📺 央視頻道",CCTV 女性时尚
 http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002475/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
-#EXTINF:-1 tvg-id="中国教育1台" tvg-name="中国教育1台" tvg-logo="https://github.moeyy.xyz/https://raw.githubusercontent.com/fenxp/iptv/main/tv/"中国教育电视台-1.png" group-title="📺 央視頻道",CETV-1
+#EXTINF:-1 tvg-id="中国教育1台" tvg-name="中国教育1台" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/中国教育电视台-1.png" group-title="📺 央視頻道",CETV-1
 http://[2409:8087:7000:20:1000::22]:6060/000000001000/5000000002000002652/index.m3u8?channel-id=bestzb&Contentid=5000000002000002652&livemode=1&stbId=3
-#EXTINF:-1 tvg-id="中国教育2台" tvg-name="中国教育2台" tvg-logo="https://github.moeyy.xyz/https://raw.githubusercontent.com/fenxp/iptv/main/tv/"中国教育电视台-2.ng" group-title="📺 央視頻道",CETV-2
+#EXTINF:-1 tvg-id="中国教育2台" tvg-name="中国教育2台" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/中国教育电视台-2.png" group-title="📺 央視頻道",CETV-2
 http://[2409:8087:1a0b:df::4013]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226425/index.m3u8
-#EXTINF:-1 tvg-id="中国教育3台" g-name="中国教育3台" tvg-logo="https://github.moeyy.xyz/https://raw.githubusercontent.com/fenxp/iptv/main/tv/"中国教育电视台-3.ng" group-title="📺 央視頻道",CETV-3
+#EXTINF:-1 tvg-id="中国教育3台" g-name="中国教育3台" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/中国教育电视台-3.png" group-title="📺 央視頻道",CETV-3
 http://[2409:8087:7004:20:1000::22]:6610/yinhe/2/ch00000090990000001309/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
-#EXTINF:-1 tvg-id="中国教育4台" tvg-name="中国教育4台" tvg-logo="https://github.moeyy.xyz/https://raw.githubusercontent.com/fenxp/iptv/main/tv/"中国教育电视台-4.ng" group-title="📺 央視頻道",CETV-4
+#EXTINF:-1 tvg-id="中国教育4台" tvg-name="中国教育4台" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/中国教育电视台-4.png" group-title="📺 央視頻道",CETV-4
 http://[2409:8087:7004:20:1000::22]:6610/yinhe/2/ch00000090990000001308/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
 #EXTINF:-1 tvg-id="CGTN" tvg-name="CGTN" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/CGTN.png" group-title="📺 央視頻道",CGTN
 http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001024/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
@@ -133,7 +133,7 @@ http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002905/index.m3
 http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002827/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
 #EXTINF:-1 tvg-id="CGTN俄语" tvg-name="CGTN俄语" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD//CGTN俄语.png" group-title="📺 央視頻道",CGTN Русский
 http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002883/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
-#EXTINF:-1 tvg-id="CGTN西语" tvg-name="CGTN西语" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/CGTN语.png" group-title="📺 央視頻道",CGTN Español
+#EXTINF:-1 tvg-id="CGTN西语" tvg-name="CGTN西语" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/CGTN西班牙语.png" group-title="📺 央視頻道",CGTN Español
 http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002716/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
 #EXTINF:-1 tvg-id="CGTN阿语" tvg-name="CGTN阿语" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/CGTN阿拉伯语.png" group-title="📺 央視頻道",CGTN العربية
 http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002826/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
@@ -219,11 +219,11 @@ http://[2409:8087:7001:20:3::3]:80/dbiptv.sn.chinamobile.com/PLTV/88888890/224/3
 http://[2409:8087:7001:20:3::3]:80/dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226229/index.m3u8
 #EXTINF:-1 tvg-id="康巴卫视" tvg-name="康巴卫视" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/康巴卫视.png" group-title="📺 衛視頻道",康巴卫视
 http://[2409:8087:1a0b:df::4005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225660/index.m3u8
-#EXTINF:-1,tvg-id="凤凰中文" tvg-name="凤凰中文" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/凤凰中文台.png" group-title="📺 港澳台頻道",鳳凰衛視中文
+#EXTINF:-1,tvg-id="凤凰中文" tvg-name="凤凰中文" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/凤凰中文台.png" group-title="📺 衛視頻道",鳳凰衛視中文
 http://1.62.64.252/1.v.smtcdns.net/qctv.fengshows.cn/live/0701pcc72.flv
-#EXTINF:-1 tvg-id="凤凰资讯" tvg-name="凤凰资讯" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/凤凰资讯台.png" group-title="📺 港澳台頻道",鳳凰衛視資訊
+#EXTINF:-1 tvg-id="凤凰资讯" tvg-name="凤凰资讯" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/凤凰资讯台.png" group-title="📺 衛視頻道",鳳凰衛視資訊
 http://1.62.64.252/1.v.smtcdns.net/qctv.fengshows.cn/live/0701pin72.flv
-#EXTINF:-1 tvg-id="凤凰香港" tvg-name="凤凰香港" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/凤凰香港台.png" group-title="📺 港澳台頻道",鳳凰衛視香港
+#EXTINF:-1 tvg-id="凤凰香港" tvg-name="凤凰香港" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/凤凰香港台.png" group-title="📺 衛視頻道",鳳凰衛視香港
 http://1.62.64.252/1.v.smtcdns.net/qctv.fengshows.cn/live/0701phk72.flv
 
 #📺 4K•頻道
@@ -237,6 +237,14 @@ http://liveshowbak2.kan0512.com/ksznorecord/csztv4k_4k.m3u8
 http://zteres.sn.chinamobile.com:6060/000000001000/1000000004000011651/1.m3u8?channel-id=ystenlive&Contentid=1000000004000011651&livemode=1&stbId=3
 #EXTINF:-1 tvg-id="4K测试" tvg-name="华数4K测试" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/4K测试.png" group-title="📺 4K•頻道",4K•测试
 http://[2409:8087:5e01:34::23]:6610/ZTE_CMS/00000001000000060000000000000459/index.m3u8?IAS
+#EXTINF:-1 tvg-id="华数4K影院" tvg-name="华数4K影院" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/华数4K影院.png" group-title="📺 4K•頻道",华数TV•4K影院
+http://zteres.sn.chinamobile.com:6060/000000001000/6000000003000004748/index.m3u8?channel-id=wasusyt&Contentid=6000000003000004748&livemode=1&stbId=3
+#EXTINF:-1 tvg-id="华数4K影院" tvg-name="华数4K影院" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/华数4K影院.png" group-title="📺 4K•頻道",华数TV•4K影院「IPv6」
+http://[2409:8087:7001:20:1000::95]:6610/000000001000/6000000003000004748/index.m3u8?channel-id=wasusyt&Contentid=6000000003000004748&livemode=1&stbId=3
+#EXTINF:-1 tvg-id="咪咕" tvg-name="咪咕视频4K Ⅰ" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/咪咕视频.png" group-title="📺 4K•頻道",咪咕直播4K Ⅰ
+http://[2409:8087:1a01:df::4001]/PLTV/88888888/224/3221225655/index.m3u8
+#EXTINF:-1 tvg-id="咪咕" tvg-name="咪咕视频4K Ⅱ" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/咪咕视频.png" group-title="📺 4K•頻道",咪咕直播4K Ⅱ
+http://[2409:8087:1a01:df::4005]/PLTV/88888888/224/3221225651/index.m3u8
 #EXTINF:-1 tvg-id="Love Nrture 4K" tvg-name="Love Nrture 4K" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/LoveNarure4K.png" group-title="📺 4K•頻道",Love Nrture 4K「自然」
 https://d18dyiwu97wm6q.cloudfront.net/playlist2160p.m3u8
 #EXTINF:-1,tvg-id="Loupe 4K" tvg-name="Loupe 4K" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/Loupe4K.png" group-title="📺 4K•頻道",Loupe 4K
@@ -267,7 +275,7 @@ http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN6380788ba7bed/index.m
 http://183.242.49.77:8787/live/BTV科教/index.m3u8
 #EXTINF:-1,tvg-id="卡酷少儿" tvg-name="卡酷少儿" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/卡酷少儿.png" group-title="📺 數字頻道",BTV卡酷少儿
 http://183.242.49.77:8787/live/BTV卡酷少儿/index.m3u8
-#EXTINF:-1 tvg-id="优漫卡通" tvg-name="江苏优漫卡通" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/优漫卡通.png" group-title="📺 江蘇頻道",优漫卡通
+#EXTINF:-1 tvg-id="优漫卡通" tvg-name="江苏优漫卡通" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/优漫卡通.png" group-title="📺 數字頻道",优漫卡通
 http://[2409:8087:1a0b:df::4005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225656/index.m3u8
 #EXTINF:-1 tvg-id="嘉佳卡通" tvg-name="嘉佳卡通" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/嘉佳卡通.png" group-title="📺 數字頻道",嘉佳卡通
 http://[2409:8087:7000:20::4]:80/dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226227/index.m3u8
@@ -283,11 +291,11 @@ http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN6000057BESTVSMGSMG/in
 http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225738/index.m3u8
 #EXTINF:-1 tvg-id="哈哈炫动" tvg-name="哈哈炫动" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/哈哈炫动.png" group-title="📺 數字頻道",哈哈炫动
 http://[2409:8087:1a0b:df::4001]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225657/index.m3u8
-#EXTINF:-1 tvg-id="河北农民" tvg-name="河北农民" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/农民频道.png" group-title="📺 河北頻道",农民频道•保定 Ⅰ
+#EXTINF:-1 tvg-id="河北农民" tvg-name="河北农民" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/农民频道.png" group-title="📺 數字頻道",农民频道•保定 Ⅰ
 http://zdwjl.eatuo.com:808/tsfile/live/1005_1.m3u8
-#EXTINF:-1 tvg-id="河北农民" tvg-name="河北农民" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/农民频道.png" group-title="📺 河北頻道",农民频道•保定 Ⅱ
+#EXTINF:-1 tvg-id="河北农民" tvg-name="河北农民" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/农民频道.png" group-title="📺 數字頻道",农民频道•保定 Ⅱ
 http://111.225.113.130:808/tsfile/live/1004_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-id="河北农民" tvg-name="河北农民" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/农民频道.png" group-title="📺 河北頻道",农民频道•邯郸
+#EXTINF:-1 tvg-id="河北农民" tvg-name="河北农民" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/农民频道.png" group-title="📺 數字頻道",农民频道•邯郸
 http://hbyxmlg.picp.io:8088/tsfile/live/1005_1.m3u8
 #EXTINF:-1 tvg-id="哒啵电竞" tvg-name="哒啵电竞" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/哒啵电竞.png" group-title="📺 數字頻道",哒啵电竞
 http://[2409:8087:7000:20::4]:80/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226951/index.m3u8
@@ -305,14 +313,14 @@ http://[2409:8087:7001:20:1000::95]:6610/000000001000/6000000006000320630/index.
 http://[2409:8087:7004:20:1000::22]:6610/yinhe/2/ch00000090990000001322/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
 #EXTINF:-1 tvg-id="老故事" tvg-name="中央新影老故事" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/中央新影老故事.png" group-title="📺 數字頻道",老故事
 http://[2409:8087:7001:20:3::5]:80/dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226236/index.m3u8
+#EXTINF:-1,tvg-id="发现之旅" tvg-name="发现之旅" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/中央新影发现之旅.png" group-title="📺 數字頻道",发现之旅
+http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226235/index.m3u8
 #EXTINF:-1 tvg-id="财富天下" tvg-name="财富天下" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/财富天下.png" group-title="📺 數字頻道",财富天下
 http://[2409:8087:7000:20::4]:80/dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226350/index.m3u8
 #EXTINF:-1 tvg-id="家庭理财" tvg-name="家庭理财" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/家庭理财.png" group-title="📺 數字頻道",家庭理财
 http://[2409:8087:7000:20::4]:80/dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226247/index.m3u8
 #EXTINF:-1 tvg-id="置业" tvg-name="置业" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/置业频道.png" group-title="📺 數字頻道",置业频道
 http://[2409:8087:7000:20::4]:80/dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226241/index.m3u8
-#EXTINF:-1,tvg-id="发现之旅" tvg-name="发现之旅" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/发现之旅.png" group-title="📺 數字頻道",发现之旅
-http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226235/index.m3u8
 #EXTINF:-1 tvg-id="重温经典" tvg-name="重温经典" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/重温经典.png" group-title="📺 數字頻道",重温经典
 http://36.108.172.237:10005/stream/channelid/1379387286?ticket=0bbf0fa9b0d03fc5f32588c5e4a19869f807b853&profile=pass
 
@@ -355,19 +363,19 @@ http://183.242.49.77:8787/live/BTV财经/index.m3u8
 http://183.242.49.77:8787/live/BTV体育/index.m3u8
 #EXTINF:-1,tvg-id="北京生活" tvg-name="BTV生活" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/北京生活.png" group-title="📺 北京頻道",BTV生活
 http://183.242.49.77:8787/live/BTV生活/index.m3u8
-#EXTINF:-1,tvg-id="北京国际" tvg-name="BTV国际" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/北京国际.png" group-title="📺 北京頻道",BTV国际
-http://183.242.49.77:8787/live/BTV国际/index.m3u8
 #EXTINF:-1,tvg-id="北京新闻" tvg-name="BTV新闻" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/北京新闻.png" group-title="📺 北京頻道",BTV新闻
 http://183.242.49.77:8787/live/BTV新闻/index.m3u8
+#EXTINF:-1,tvg-id="北京国际" tvg-name="BTV国际" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/北京国际.png" group-title="📺 北京頻道",BTV国际
+http://183.242.49.77:8787/live/BTV国际/index.m3u8
 
 #📺 上海頻道
-#EXTINF:-1 tvg-id="上海新闻综合" tvg-name="上海新闻综合" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/上视新闻.png" group-title="📺 上海頻道",上海新闻
+#EXTINF:-1 tvg-id="上海新闻综合" tvg-name="上海新闻综合" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/上海新闻.png" group-title="📺 上海頻道",上海新闻
 http://[2409:8087:7001:20:1000::88]:6610/000000001000/5000000011000031110/index.m3u8?channel-id=bestzb&Contentid=5000000011000031110&livemode=1&stbId=3
 #EXTINF:-1 tvg-id="上海都市" tvg-name="上海都市" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/上海都市.png" group-title="📺 上海頻道",上海都市
 http://[2409:8087:7001:20:1000::88]:6610/000000001000/5000000010000018926/index.m3u8?channel-id=bestzb&Contentid=5000000010000018926&livemode=1&stbId=3
 #EXTINF:-1 tvg-id="上视外语 tvg-name="上视外语" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/上海ICS外语" group-title="📺 上海頻道",上海ICS外语
 http://[2409:8087:7001:20:1000::88]:6610/000000001000/5000000010000030951/index.m3u8?channel-id=bestzb&Contentid=5000000010000030951&livemode=1&stbId=3
-#EXTINF:-1 tvg-id="东方影视" tvg-name="东方影视" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/东方影视.png" group-title="📺 上海頻道",东方影视
+#EXTINF:-1 tvg-id="东方影视" tvg-name="东方影视" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/上海东方影视.png" group-title="📺 上海頻道",东方影视
 http://[2409:8087:7001:20:1000::88]:6610/000000001000/5000000010000032212/index.m3u8?channel-id=bestzb&Contentid=5000000010000032212&livemode=1&stbId=3
 #EXTINF:-1 tvg-id="东方财经" tvg-name="东方财经" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/东方财经.png" group-title="📺 上海頻道",东方财经
 http://[2409:8087:7001:20:1000::88]:6610/000000001000/5000000007000010003/index.m3u8?channel-id=bestzb&Contentid=5000000007000010003&livemode=1&stbId=3
@@ -465,7 +473,7 @@ https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8
 https://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8
 #EXTINF:-1 tvg-id="浙江少儿" tvg-name="浙江少儿" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/浙江少儿.png" group-title="📺 浙江頻道",浙江少儿
 https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8
-#EXTINF:-1 tvg-id="浙江教科影视" tvg-name="浙江教科影视" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/浙江教科影视.png" group-title="📺 浙江頻道",浙江教科影视
+#EXTINF:-1 tvg-id="浙江教科影视" tvg-name="浙江教科影视" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/浙江科教影视.png" group-title="📺 浙江頻道",浙江科教影视
 https://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8
 #EXTINF:-1 tvg-id="浙江民生休闲" tvg-name="浙江民生休闲" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/浙江民生休闲.png" group-title="📺 浙江頻道",浙江民生休闲
 https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8
@@ -924,10 +932,6 @@ http://11.xmyxc.cn/api/php/yy.php?id=1353685311
 http://11.xmyxc.cn/api/php/yy.php?id=1354210357
 
 #📺 華數TV系列
-#EXTINF:-1 tvg-id="华数4K影院" tvg-name="华数4K影院" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/华数4K影院.png" group-title="📺 4K•頻道",华数TV•4K影院
-http://zteres.sn.chinamobile.com:6060/000000001000/6000000003000004748/index.m3u8?channel-id=wasusyt&Contentid=6000000003000004748&livemode=1&stbId=3
-#EXTINF:-1 tvg-id="华数4K影院" tvg-name="华数4K影院" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/华数4K影院.png" group-title="📺 4K•頻道",华数TV•4K影院「IPv6」
-http://[2409:8087:7001:20:1000::95]:6610/000000001000/6000000003000004748/index.m3u8?channel-id=wasusyt&Contentid=6000000003000004748&livemode=1&stbId=3
 #EXTINF:-1,tvg-id="华数欧美影院" tvg-name="华数欧美影院" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/华数欧美影院.png" group-title="📺 華數TV系列",华数TV•欧美影院
 http://[2409:8087:7001:20:1000::95]:6610/000000001000/2000000004000000005/index.m3u8?channel-id=hnbblive&Contentid=2000000004000000005&livemode=1&stbId=3
 #EXTINF:-1,tvg-id="华数亚洲影院" tvg-name="华数亚洲影院" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/华数亚洲影院.png" group-title="📺 華數TV系列",华数TV•亚洲影院
@@ -950,8 +954,6 @@ http://[2409:8087:1a0b:df::4005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/
 http://[2409:8087:7000:20:1000::22]:6060/000000001000/2000000003000000022/index.m3u8?channel-id=hnbblive&Contentid=2000000003000000022&livemode=1&stbId=3
 #EXTINF:-1 tvg-id="newtv魅力潇湘" tvg-name="魅力潇湘" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/NewTV魅力潇湘.png" group-title="📺 NewTV系列",NewTV魅力潇湘
 http://[2409:8087:7000:20:1000::22]:6060/000000001000/1000000001000006197/index.m3u8?channel-id=ystenlive&Contentid=1000000001000006197&livemode=1&stbId=3
-#EXTINF:-1 tvg-id="newtv热播精选" tvg-name="热播精选" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/NewTV热播精选.png" group-title="📺 NewTV系列",NewTV热播精选
-http://[2409:8087:7000:20:1000::22]:6060/000000001000/2000000003000000016/index.m3u8?channel-id=hnbblive&Contentid=2000000003000000016&livemode=1&stbId=3
 #EXTINF:-1 tvg-id="newtv农业致富" tvg-name="农业致富" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/NewTV农业致富.png" group-title="📺 NewTV系列",NewTV农业致富
 http://[2409:8087:7000:20:1000::22]:6060/000000001000/2000000003000000003/index.m3u8?channel-id=hnbblive&Contentid=2000000003000000003&livemode=1&stbId=3
 #EXTINF:-1 tvg-id="newtv武搏世界" tvg-name="武搏世界" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/NewTV武搏世界.png" group-title="📺 NewTV系列",NewTV武搏世界
@@ -986,21 +988,23 @@ http://[2409:8087:7000:20:1000::22]:6060/000000001000/1000000004000024282/index.
 http://[2409:8087:7000:20:1000::22]:6060/000000001000/2000000003000000020/index.m3u8?channel-id=hnbblive&Contentid=2000000003000000020&livemode=1&stbId=3
 #EXTINF:-1 tvg-id="newtv精品纪录" tvg-name="精品纪录" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/NewTV精品纪录.png" group-title="📺 NewTV系列",NewTV精品纪录
 http://[2409:8087:7000:20:1000::22]:6060/000000001000/2000000003000000019/index.m3u8?channel-id=hnbblive&Contentid=2000000003000000019&livemode=1&stbId=3
-#EXTINF:-1 tvg-id="newtv精品萌宠" tvg-name="精品萌宠" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/NewTV精品萌宠.png" group-title="📺 NewTV系列",NewTV精品萌宠
-http://[2409:8087:7000:20:1000::22]:6060/000000001000/1000000006000032328/index.m3u8?channel-id=ystenlive&Contentid=1000000006000032328&livemode=1&stbId=3
 #EXTINF:-1 tvg-id="newtv精品体育" tvg-name="精品体育" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/NewTV精品体育.png" group-title="📺 NewTV系列",NewTV精品体育
 http://[2409:8087:7000:20:1000::22]:6060/000000001000/1000000004000014634/index.m3u8?channel-id=ystenlive&Contentid=1000000004000014634&livemode=1&stbId=3
 #EXTINF:-1 tvg-id="newtv军旅剧场" tvg-name="军旅剧场" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/NewTV军旅剧场.png" group-title="📺 NewTV系列",NewTV军旅剧场
 http://[2409:8087:7000:20:1000::22]:6060/000000001000/2000000003000000014/index.m3u8?channel-id=hnbblive&Contentid=2000000003000000014&livemode=1&stbId=3
 #EXTINF:-1 tvg-id="newtv中国功夫" tvg-name="中国功夫" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/NewTV中国功夫.png" group-title="📺 NewTV系列",NewTV中国功夫
 http://[2409:8087:7000:20:1000::22]:6060/000000001000/2000000003000000009/index.m3u8?channel-id=hnbblive&Contentid=2000000003000000009&livemode=1&stbId=3
+#EXTINF:-1 tvg-id="newtv热播精选" tvg-name="热播精选" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/NewTV热播精选.png" group-title="📺 NewTV系列",NewTV热播精选
+http://[2409:8087:7000:20:1000::22]:6060/000000001000/2000000003000000016/index.m3u8?channel-id=hnbblive&Contentid=2000000003000000016&livemode=1&stbId=3
 #EXTINF:-1 tvg-id="newtv精品综合" tvg-name="精品综合" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/NewTV精品综合.png" group-title="📺 NewTV系列",NewTV精品综合
 http://[2409:8087:7000:20:1000::22]:6060/000000001000/1000000004000019008/index.m3u8?channel-id=ystenlive&Contentid=1000000004000019008&livemode=1&stbId=3
+#EXTINF:-1 tvg-id="newtv精品萌宠" tvg-name="精品萌宠" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/NewTV精品萌宠.png" group-title="📺 NewTV系列",NewTV精品萌宠
+http://[2409:8087:7000:20:1000::22]:6060/000000001000/1000000006000032328/index.m3u8?channel-id=ystenlive&Contentid=1000000006000032328&livemode=1&stbId=3
 #EXTINF:-1 tvg-id="newtv优购物" tvg-name="优购物" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/NewTV优购物.png" group-title="📺 NewTV系列",NewTV优购物
 http://[2409:8087:7000:20:1000::22]:6060/000000001000/1000000005000266011/index.m3u8?channel-id=ystenlive&Contentid=1000000005000266011&livemode=1&stbId=3
 
 #📺 SiTV系列
-#EXTINF:-1 tvg-id="SiTV五星体育" tvg-name="五星体育" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/五星体育.png" group-title="📺 SiTV系列",SiTV五星体育
+#EXTINF:-1 tvg-id="SiTV五星体育" tvg-name="五星体育" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/上海五星体育.png" group-title="📺 SiTV系列",SiTV五星体育
 http://[2409:8087:7000:20:1000::22]:6060/000000001000/5000000010000017540/index.m3u8?channel-id=bestzb&Contentid=5000000010000017540&livemode=1&stbId=3
 #EXTINF:-1 tvg-id="SiTV劲爆体育" tvg-name="劲爆体育" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/劲爆体育.png" group-title="📺 SiTV系列",SiTV劲爆体育
 http://[2409:8087:7000:20:1000::22]:6060/000000001000/5000000002000029972/index.m3u8?channel-id=bestzb&Contentid=5000000002000029972&livemode=1&stbId=3
@@ -1068,10 +1072,6 @@ http://[2409:8087:7000:20:1000::22]:6060/000000001000/6000000006000180630/index.
 http://[2409:8087:7000:20:1000::22]:6060/000000001000/6000000006000030630/index.m3u8?channel-id=wasusyt&Contentid=6000000006000030630&livemode=1&stbId=3
 
 #📺 咪咕視頻
-#EXTINF:-1 tvg-id="咪咕" tvg-name="咪咕视频4K Ⅰ" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/咪咕视频.png" group-title="📺 4K•頻道",咪咕直播4K Ⅰ
-http://[2409:8087:1a01:df::4001]/PLTV/88888888/224/3221225655/index.m3u8
-#EXTINF:-1 tvg-id="咪咕" tvg-name="咪咕视频4K Ⅱ" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/咪咕视频.png" group-title="📺 4K•頻道",咪咕直播4K Ⅱ
-http://[2409:8087:1a01:df::4005]/PLTV/88888888/224/3221225651/index.m3u8
 #EXTINF:-1 tvg-id="咪咕" tvg-name="咪咕视频4K Ⅰ" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/咪咕视频.png" group-title="📺 咪咕視頻",咪咕直播4K Ⅰ
 http://[2409:8087:1a01:df::4001]/PLTV/88888888/224/3221225655/index.m3u8
 #EXTINF:-1 tvg-id="咪咕" tvg-name="咪咕视频4K Ⅱ" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/咪咕视频.png" group-title="📺 咪咕視頻",咪咕直播4K Ⅱ
