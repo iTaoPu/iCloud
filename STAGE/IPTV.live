@@ -226,11 +226,11 @@ http://1.62.64.252/1.v.smtcdns.net/qctv.fengshows.cn/live/0701pin72.flv
 #EXTINF:-1 tvg-id="凤凰香港" tvg-name="凤凰香港" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/凤凰香港台.png" group-title="📺 衛視頻道",鳳凰衛視香港
 http://1.62.64.252/1.v.smtcdns.net/qctv.fengshows.cn/live/0701phk72.flv
 
-#EXTINF:-1 tvg-id="翡翠台" tvg-name="翡翠台" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/翡翠台.png" group-title="📺 衛視頻道",翡翠台（廣電 IPv6）
+#EXTINF:-1 tvg-id="翡翠台" tvg-name="翡翠台" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/翡翠台.png" group-title="📺 衛視頻道",翡翠台
 https://cdn-iptv.hiper25.com/TVB/video.m3u8
-#EXTINF:-1 tvg-id="明珠台" tvg-name="明珠台" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/明珠台.png" group-title="📺 衛視頻道",明珠台（廣電 IPv6）
+#EXTINF:-1 tvg-id="明珠台" tvg-name="明珠台" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/明珠台.png" group-title="📺 衛視頻道",明珠台
 https://cdn-iptv.hiper25.com/Pearl/video.m3u8
-#EXTINF:-1 tvg-id="澳视澳门" tvg-name="澳视澳门" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/澳视澳门台.png" group-title="📺 衛視頻道",澳視澳門（廣電 IPv6）
+#EXTINF:-1 tvg-id="澳视澳门" tvg-name="澳视澳门" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/澳视澳门台.png" group-title="📺 衛視頻道",澳視澳門
 https://cdn-iptv.hiper25.com/TDM/video.m3u8
 
 #📺 4K•頻道
