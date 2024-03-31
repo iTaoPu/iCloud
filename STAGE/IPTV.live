@@ -226,6 +226,13 @@ http://1.62.64.252/1.v.smtcdns.net/qctv.fengshows.cn/live/0701pin72.flv
 #EXTINF:-1 tvg-id="凤凰香港" tvg-name="凤凰香港" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/凤凰香港台.png" group-title="📺 衛視頻道",鳳凰衛視香港
 http://1.62.64.252/1.v.smtcdns.net/qctv.fengshows.cn/live/0701phk72.flv
 
+#EXTINF:-1 tvg-id="翡翠台" tvg-name="翡翠台" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/翡翠台.png" group-title="📺 衛視頻道",翡翠台（廣電 IPv6）
+https://iptv.hiper25.com/TVB/video.m3u8
+#EXTINF:-1 tvg-id="明珠台" tvg-name="明珠台" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/明珠台.png" group-title="📺 衛視頻道",明珠台（廣電 IPv6）
+https://iptv.hiper25.com/Pearl/video.m3u8
+#EXTINF:-1 tvg-id="澳视澳门" tvg-name="澳视澳门" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/澳视澳门台.png" group-title="📺 衛視頻道",澳視澳門（廣電 IPv6）
+https://iptv.hiper25.com/TDM/video.m3u8
+
 #📺 4K•頻道
 #EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV4K" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/CCTV4K.png" group-title="📺 4K•頻道",CCTV•4K
 http://159.75.85.63:5679/cctv4k.php
@@ -641,28 +648,6 @@ http://tvlive.ynradio.com/live/yunnanshaoer/playlist.m3u8
 http://tvlive.ynradio.com/live/yunnandushi/playlist.m3u8
 #EXTINF:-1 tvg-id="澜湄国际" tvg-name="澜湄国际" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/澜湄国际卫视.png" group-title="📺 雲南頻道",澜湄国际
 http://tvlive.ynradio.com/live/yunnanguoji/playlist.m3u8
-
-#📽️ 廣電•IPv6
-#EXTINF:-1 tvg-id="翡翠台" tvg-name="翡翠台" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/翡翠台.png" group-title="📽️ 廣電•IPv6",翡翠台（廣電 IPv6）
-https://iptv.hiper25.com/TVB/video.m3u8
-#EXTINF:-1 tvg-id="明珠台" tvg-name="明珠台" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/明珠台.png" group-title="📽️ 廣電•IPv6",明珠台（廣電 IPv6）
-https://iptv.hiper25.com/Pearl/video.m3u8
-#EXTINF:-1 tvg-id="澳视澳门" tvg-name="澳视澳门" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/澳视澳门台.png" group-title="📽️ 廣電•IPv6",澳視澳門（廣電 IPv6）
-https://iptv.hiper25.com/TDM/video.m3u8
-#EXTINF:-1 tvg-id="广东卫视" tvg-name="广东卫视" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/广东卫视.png" group-title="📽️ 廣電•IPv6",廣東衛視（廣電 IPv6）
-https://iptv.hiper25.com/gdws/video.m3u8
-#EXTINF:-1 tvg-id="广东珠江" tvg-name="广东珠江" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/广东珠江.png" group-title="📽️ 廣電•IPv6",廣東珠江（廣電 IPv6）
-https://iptv.hiper25.com/gdzj/video.m3u8
-#EXTINF:-1 tvg-id="广东体育" tvg-name="广东体育" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/广东体育.png" group-title="📽️ 廣電•IPv6",廣東體育（廣電 IPv6）
-https://iptv.hiper25.com/gdty/video.m3u8
-#EXTINF:-1 tvg-id="广东民生" tvg-name="广东民生" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/广东民生.png" group-title="📽️ 廣電•IPv6",廣東民生（廣電 IPv6）
-https://iptv.hiper25.com/gdms/video.m3u8
-#EXTINF:-1 tvg-id="广东经济科教" tvg-name="广东经济科教" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/广东经济科教.png" group-title="📽️ 廣電•IPv6",廣東經濟科教（廣電 IPv6）
-https://iptv.hiper25.com/gdjjkj/video.m3u8
-#EXTINF:-1 tvg-id="大湾区卫视" tvg-name="大湾区卫视" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/大湾区卫视.png" group-title="📽️ 廣電•IPv6",大灣區衛視（廣電 IPv6）
-https://iptv.hiper25.com/dwq/video.m3u8
-#EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV4K" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/CCTV4K.png" group-title="📽️ 廣電•IPv6",CCTV•4K（廣電 IPv6）
-https://iptv.hiper25.com/CCTV-4K/video.m3u8
 
 #🎥 影視輪播
 #EXTINF:-1,tvg-id="经典功夫" tvg-name="经典功夫" tvg-logo="https://icloud.5iclub.dedyn.io/STAGE/HD/星空经典功夫.png" group-title="🎥 影視輪播",經典功夫•星空「成都」
