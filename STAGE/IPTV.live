@@ -229,7 +229,7 @@ http://1.62.64.252/1.v.smtcdns.net/qctv.fengshows.cn/live/0701pin72.flv
 http://1.62.64.252/1.v.smtcdns.net/qctv.fengshows.cn/live/0701phk72.flv
 
 #📺 4K•頻道
-#EXTINF:-1,tvg-id="纪实科教" tvg-name="纪实科教" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/北京纪实科教8K.png" group-title="📺 數字頻道",BTV纪实科教8K
+#EXTINF:-1,tvg-id="纪实科教" tvg-name="纪实科教" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/北京纪实科教8K.png" group-title="📺 4K•頻道",纪实科教•8K
 http://49.7.69.235/downflv.brtvcloud.com/8klive/8kliveok.m3u8
 #EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV4K" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/CCTV4K.png" group-title="📺 4K•頻道",CCTV•4K
 http://159.75.85.63:5679/cctv4k.php
