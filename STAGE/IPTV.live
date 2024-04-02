@@ -352,6 +352,36 @@ https://nt-hls.ntjoy.com/live/4f5.m3u8
 #EXTINF:-1 tvg-id="海安综合" tvg-name="海安综合" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/海安新闻综合.png" group-title="📺 江蘇頻道",海安新闻综合「官方」
 http://haian-tv-hls.cm.jstv.com/haian-tv/haaxwzh.m3u8
 
+
+#EXTINF:-1,tvg-id="苏州社会经济" tvg-name="苏州社会经济" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/苏州社会经济.png" group-title="📺 江蘇頻道",苏州社会经济
+http://tylive.kan0512.com/norecord/norecord_csztv2.m3u8
+#EXTINF:-1,tvg-id="苏州生活资讯" tvg-name="苏州生活资讯" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/苏州生活资讯.png" group-title="📺 江蘇頻道",苏州生活资讯
+http://tylive.kan0512.com/norecord/norecord_csztv5.m3u8
+#EXTINF:-1,tvg-id="苏州文化生活" tvg-name="苏州文化生活" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/苏州文化生活.png" group-title="📺 江蘇頻道",苏州文化生活
+http://tylive.kan0512.com/norecord/norecord_csztv3.m3u8
+#EXTINF:-1,tvg-id="苏州新闻综合" tvg-name="苏州新闻综合" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/苏州新闻综合.png" group-title="📺 江蘇頻道",苏州新闻综合
+http://tylive.kan0512.com/norecord/norecord_csztv1.m3u8
+#EXTINF:-1,tvg-id="无锡新闻综合" tvg-name="无锡新闻综合" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/无锡新闻综合.png" group-title="📺 江蘇頻道",无锡新闻综合
+http://stream.thmz.com/wxtv1/playlist.m3u8?_upt=df50c8ad1706195780
+#EXTINF:-1,tvg-id="无锡娱乐" tvg-name="无锡娱乐" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/无锡娱乐.png" group-title="📺 江蘇頻道",无锡娱乐
+http://stream.thmz.com/wxtv2/sd/live.m3u8?_upt=081040171706199780
+#EXTINF:-1,tvg-id="无锡都市资讯" tvg-name="无锡都市资讯" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/无锡都市资讯.png" group-title="📺 江蘇頻道",无锡都市资讯
+http://stream.thmz.com/wxtv3/sd/live.m3u8?_upt=978cd8731706199708
+#EXTINF:-1,tvg-id="无锡生活" tvg-name="无锡生活" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/无锡生活.png" group-title="📺 江蘇頻道",无锡生活
+http://stream.thmz.com/wxtv4/sd/live.m3u8?_upt=95a5f0d51706199864
+#EXTINF:-1,tvg-id="无锡经济" tvg-name="无锡经济" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/无锡经济.png" group-title="📺 江蘇頻道",无锡经济
+http://stream.thmz.com/wxtv5/sd/live.m3u8?_upt=31414f601706199828
+#EXTINF:-1,tvg-id="扬州新闻综合" tvg-name="扬州新闻综合" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/扬州新闻综合.png" group-title="📺 江蘇頻道",扬州新闻综合
+http://cm-wshls.homecdn.com/live/8bb.m3u8
+#EXTINF:-1,tvg-id="扬州城市" tvg-name="扬州城市" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/扬州城市.png" group-title="📺 江蘇頻道",扬州城市
+http://cm-wshls.homecdn.com/live/8bd.m3u8
+#EXTINF:-1,tvg-id="扬州生活" tvg-name="扬州生活" tvg-logo=https://live.5iclub.dedyn.io/STAGE/HD/扬州生活.png" group-title="📺 江蘇頻道",扬州生活
+http://cm-wshls.homecdn.com/live/8bf.m3u8
+#EXTINF:-1,tvg-id="镇江新闻综合" tvg-name="镇江新闻综合" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/镇江新闻综合.png" group-title="📺 江蘇頻道",镇江新闻综合
+http://zjtv-wshls.homecdn.com/live/2aa50.m3u8
+#EXTINF:-1,tvg-id="镇江社会民生" tvg-name="镇江社会民生" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/镇江社会民生.png" group-title="📺 江蘇頻道",镇江社会民生
+http://zjtv-wshls.homecdn.com/live/2aa16.m3u8
+
 #📺 北京頻道
 #EXTINF:-1,tvg-id="北京文艺" tvg-name="BTV文艺" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/北京文艺.png" group-title="📺 北京頻道",BTV文艺
 http://183.242.49.77:8787/live/BTV文艺/index.m3u8
@@ -450,35 +480,45 @@ http://v.vlanl.com:4022/udp/225.1.4.149:1185
 http://v.vlanl.com:4022/udp/225.1.4.191:1241
 
 #📺 河北頻道
-#EXTINF:-1 tvg-id="河北生活" tvg-name="河北经济" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北经济生活.png" group-title="📺 河北頻道",河北经济生活•邯郸 Ⅰ
+#EXTINF:-1 tvg-id="河北生活" tvg-name="河北经济" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北经济生活.png" group-title="📺 河北頻道",河北经济生活「邯郸」
+ Ⅰ
 http://116.132.87.246:8888/newlive/live/hls/20/live.m3u8
-#EXTINF:-1 tvg-id="河北生活" tvg-name="河北经济" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北经济生活.png" group-title="📺 河北頻道",河北经济生活•邯郸 Ⅱ
+#EXTINF:-1 tvg-id="河北生活" tvg-name="河北经济" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北经济生活.png" group-title="📺 河北頻道",河北经济生活「邯郸」
+ Ⅱ
 http://hbyxmlg.picp.io:8088/tsfile/live/1000_1.m3u8
-#EXTINF:-1 tvg-id="河北生活" tvg-name="河北经济" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北经济生活.png" group-title="📺 河北頻道",河北经济生活•保定
+#EXTINF:-1 tvg-id="河北生活" tvg-name="河北经济" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北经济生活.png" group-title="📺 河北頻道",河北经济生活「保定」
 http://111.225.113.130:808/tsfile/live/0019_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-id="河北都市" tvg-name="河北都市" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北都市.png" group-title="📺 河北頻道",河北都市•邯郸 Ⅰ
+#EXTINF:-1 tvg-id="河北都市" tvg-name="河北都市" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北都市.png" group-title="📺 河北頻道",河北都市「邯郸」
+Ⅰ
 http://116.132.87.246:8888/newlive/live/hls/21/live.m3u8
-#EXTINF:-1 tvg-id="河北都市" tvg-name="河北都市" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北都市.png" group-title="📺 河北頻道",河北都市•邯郸 Ⅱ
+#EXTINF:-1 tvg-id="河北都市" tvg-name="河北都市" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北都市.png" group-title="📺 河北頻道",河北都市「邯郸」
+ Ⅱ
 http://hbyxmlg.picp.io:8088/tsfile/live/1001_1.m3u8
-#EXTINF:-1 tvg-id="河北都市" tvg-name="河北都市" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北都市.png" group-title="📺 河北頻道",河北都市•保定
+#EXTINF:-1 tvg-id="河北都市" tvg-name="河北都市" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北都市.png" group-title="📺 河北頻道",河北都市「保定」
 http://111.225.113.130:808/tsfile/live/1000_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-id="河北影视" tvg-name="河北影视" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北影视剧.png" group-title="📺 河北頻道",河北影视剧•邯郸 Ⅰ
+#EXTINF:-1 tvg-id="河北影视" tvg-name="河北影视" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北影视剧.png" group-title="📺 河北頻道",河北影视剧「邯郸」
+ Ⅰ
 http://116.132.87.246:8888/newlive/live/hls/22/live.m3u8
-#EXTINF:-1 tvg-id="河北影视" tvg-name="河北影视" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北影视剧.png" group-title="📺 河北頻道",河北影视剧•邯郸 Ⅱ
+#EXTINF:-1 tvg-id="河北影视" tvg-name="河北影视" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北影视剧.png" group-title="📺 河北頻道",河北影视剧「邯郸」
+ Ⅱ
 http://hbyxmlg.picp.io:8088/tsfile/live/1002_1.m3u8
-#EXTINF:-1 tvg-id="河北影视" tvg-name="河北影视" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北影视剧.png" group-title="📺 河北頻道",河北影视剧•保定
+#EXTINF:-1 tvg-id="河北影视" tvg-name="河北影视" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北影视剧.png" group-title="📺 河北頻道",河北影视剧「保定」
 http://111.225.113.130:808/tsfile/live/1001_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-id="河北公共" tvg-name="河北公共" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北公共.png" group-title="📺 河北頻道",河北公共•邯郸 Ⅰ
+#EXTINF:-1 tvg-id="河北公共" tvg-name="河北公共" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北公共.png" group-title="📺 河北頻道",河北公共「邯郸」
+ Ⅰ
 http://116.132.87.246:8888/newlive/live/hls/23/live.m3u8
-#EXTINF:-1 tvg-id="河北公共" tvg-name="河北公共" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北公共.png" group-title="📺 河北頻道",河北公共•邯郸 Ⅱ
+#EXTINF:-1 tvg-id="河北公共" tvg-name="河北公共" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北公共.png" group-title="📺 河北頻道",河北公共「邯郸」
+ Ⅱ
 http://hbyxmlg.picp.io:8088/tsfile/live/1004_1.m3u8
-#EXTINF:-1 tvg-id="河北公共" tvg-name="河北公共" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北公共.png" group-title="📺 河北頻道",河北公共•保定
+#EXTINF:-1 tvg-id="河北公共" tvg-name="河北公共" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北公共.png" group-title="📺 河北頻道",河北公共「保定」
 http://111.225.113.130:808/tsfile/live/1003_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-id="河北少儿科教" tvg-name="河北少儿科教" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北少儿科教.png" group-title="📺 河北頻道",河北少儿科教•保定 Ⅰ
+#EXTINF:-1 tvg-id="河北少儿科教" tvg-name="河北少儿科教" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北少儿科教.png" group-title="📺 河北頻道",河北少儿科教「保定」 Ⅰ
 http://zdwjl.eatuo.com:808/tsfile/live/1003_1.m3u8
-#EXTINF:-1 tvg-id="河北少儿科教" tvg-name="河北少儿科教" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北少儿科教.png" group-title="📺 河北頻道",河北少儿科教•保定 Ⅱ
+#EXTINF:-1 tvg-id="河北少儿科教" tvg-name="河北少儿科教" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北少儿科教.png" group-title="📺 河北頻道",河北少儿科教「保定」
+ Ⅱ
 http://111.225.113.130:808/tsfile/live/1002_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-id="河北少儿科教" tvg-name="河北少儿科教" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北少儿科教.png" group-title="📺 河北頻道",河北少儿科教•邯郸
+#EXTINF:-1 tvg-id="河北少儿科教" tvg-name="河北少儿科教" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北少儿科教.png" group-title="📺 河北頻道",河北少儿科教「邯郸」
+
 http://hbyxmlg.picp.io:8088/tsfile/live/1003_1.m3u8
 
 #EXTINF:-1 tvg-id="石家庄新闻综合" tvg-name="石家庄新闻综合" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/石家庄新闻综合.png" group-title="📺 河北頻道",石家庄新闻综合
@@ -627,12 +667,28 @@ http://liveflash.sxrtv.com/live/sxfilm.m3u8?sub_m3u8=true&edge_slice=true
 http://liveflash.sxrtv.com/live/huanghe.m3u8?sub_m3u8=true&edge_slice=true
 
 #📺 安徽頻道
-#EXTINF:-1 tvg-id="安徽经济生活" tvg-name="安徽经济生活" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/安徽经济生活.png" group-title="📺 安徽頻道",经济生活
+#EXTINF:-1 tvg-id="安徽经济生活" tvg-name="安徽经济生活" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/安徽经济生活.png" group-title="📺 安徽頻道",经济生活「合肥」
 http://112.30.194.221:20080/live/eac499adad7b49ff9cfa79ba84693959/hls.m3u8?zanhd
-#EXTINF:-1 tvg-id="安徽影视" tvg-name="安徽影视" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/安徽影视.png" group-title="📺 安徽頻道",安徽影视
+#EXTINF:-1 tvg-id="安徽影视" tvg-name="安徽影视" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/安徽影视.png" group-title="📺 安徽頻道",安徽影视「合肥」
 http://112.30.194.221:20080/live/d18ff95cb1fb4bbcb56215e189fc12be/hls.m3u8?zanhd
-#EXTINF:-1 tvg-id="安徽综艺体育" tvg-name="安徽综艺体育" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/安徽综艺体育.png" group-title="📺 安徽頻道",综艺•体育
+#EXTINF:-1 tvg-id="安徽综艺体育" tvg-name="安徽综艺体育" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/安徽综艺体育.png" group-title="📺 安徽頻道",安徽综艺体育「合肥」
 http://112.30.194.221:20080/live/c41f112b83f644ddb082669501c8ecd3/hls.m3u8?zanhd
+
+#EXTINF:-1,tvg-id="安徽公共" tvg-name="安徽公共" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/安徽公共.png" group-title="📺 安徽頻道",安徽公共「青岛」
+http://live.ahsx.ahtv.cn/live/ggtv.m3u8?txSecret=1ba104a5183796c21ef53d4029e8153a&txTime=6955487F
+#EXTINF:-1,tvg-id="安徽国际" tvg-name="安徽国际" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/安徽国际.png" group-title="📺 安徽頻道",安徽国际「青岛」
+http://live.ahsx.ahtv.cn/live/gjtv.m3u8?txSecret=a01a318e234cbd28375d91ed3d145637&txTime=6955487F
+#EXTINF:-1,tvg-id="安徽经济生活" tvg-name="安徽经济生活" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/安徽经济生活.png" group-title="📺 安徽頻道",安徽经济生活「青岛」
+http://live.ahsx.ahtv.cn/live/jjshtv.m3u8?txSecret=4f0326a07141810dd8772716d3dcc27b&txTime=6955487F
+#EXTINF:-1,tvg-id="安徽农业科教" tvg-name="安徽农业科教" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/安徽农业科教.png" group-title="📺 安徽頻道",安徽农业科教「青岛」
+http://live.ahsx.ahtv.cn/live/nykjtv.m3u8?txSecret=acb52e311eb9b41d3bd39947e03e3de2&txTime=6955487F
+#EXTINF:-1,tvg-id="安徽卫视" tvg-name="安徽卫视" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/安徽卫视.png" group-title="📺 安徽頻道",安徽卫视「青岛」
+http://live.ahsx.ahtv.cn/live/ahtv.m3u8?txSecret=a069b18fac6cd605568d3733d24e5613&txTime=6955487F
+#EXTINF:-1,tvg-id="安徽影视" tvg-name="安徽影视" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/安徽影视.png" group-title="📺 安徽頻道",安徽影视「青岛」
+https://live.ahsx.ahtv.cn/live/ystv.m3u8?txSecret=04f4df21c1acbe136972606ec0e0b820&txTime=6955487F
+#EXTINF:-1,tvg-id="安徽综艺体育" tvg-name="安徽综艺体育" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/安徽综艺体育.png" group-title="📺 安徽頻道",安徽综艺体育「青岛」
+http://live.ahsx.ahtv.cn/live/zytytv.m3u8?txSecret=60b1fa7f6d8558da8445c5315a16eca9&txTime=6955487F
+
 
 #📺 海南頻道
 #EXTINF:-1 tvg-id="海南新闻" tvg-name="海南新闻" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/海南新闻.png" group-title="📺 海南頻道",海南新闻
@@ -648,14 +704,6 @@ http://[2409:8087:5e01:34::21]:6610/ZTE_CMS/08984400000000060000000000000320/ind
 #EXTINF:-1 tvg-id="视听海南" tvg-name="视听海南" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/视听海南.png" group-title="📺 海南頻道",视听海南
 http://[2409:8087:5e01:34::20]:6610/ZTE_CMS/08984400000000060000000000000440/index.m3u8?IAS
 
-#📺 廣西頻道
-#EXTINF:-1 tvg-id="广西影视" tvg-name="广西影视" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/广西影视.png" group-title="📺 廣西頻道",广西影视
-http://116.9.204.242:9901/tsfile/live/0124_1.m3u8
-#EXTINF:-1 tvg-id="广西综艺" tvg-name="广西综艺旅游" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/广西综艺旅游.png" group-title="📺 廣西頻道",广西综艺旅游
-http://116.9.204.242:9901/tsfile/live/0125_1.m3u8
-#EXTINF:-1 tvg-id="广西都市" tvg-name="广西都市" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/广西都市.png" group-title="📺 廣西頻道",广西都市
-http://116.9.204.242:9901/tsfile/live/1002_1.m3u8
-
 #📺 雲南頻道
 #EXTINF:-1 tvg-id="云南娱乐" tvg-name="云南娱乐" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/云南娱乐.png" group-title="📺 雲南頻道",云南娱乐
 http://tvlive.ynradio.com/live/yunnanyule/playlist.m3u8
@@ -665,6 +713,39 @@ http://tvlive.ynradio.com/live/yunnanshaoer/playlist.m3u8
 http://tvlive.ynradio.com/live/yunnandushi/playlist.m3u8
 #EXTINF:-1 tvg-id="澜湄国际" tvg-name="澜湄国际" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/澜湄国际卫视.png" group-title="📺 雲南頻道",澜湄国际
 http://tvlive.ynradio.com/live/yunnanguoji/playlist.m3u8
+
+#📺 青海頻道
+#EXTINF:-1,tvg-id="青海都市" tvg-name="青海都市" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/青海都市.png" group-title="青海",青海都市
+http://stream.qhbtv.com/qhds/sd/live.m3u8?_upt=efeefead1707378479
+#EXTINF:-1,tvg-id="青海经视" tvg-name="青海经视" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/青海经视.png" group-title="青海",青海经视
+http://stream.qhbtv.com/qhsh/sd/live.m3u8?_upt=0ca7de7f1707366913
+
+#📺 廣西自治區
+#EXTINF:-1 tvg-id="广西影视" tvg-name="广西影视" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/广西影视.png" group-title="📺 廣西自治區",广西影视
+http://116.9.204.242:9901/tsfile/live/0124_1.m3u8
+#EXTINF:-1 tvg-id="广西综艺" tvg-name="广西综艺旅游" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/广西综艺旅游.png" group-title="📺 廣西自治區",广西综艺旅游
+http://116.9.204.242:9901/tsfile/live/0125_1.m3u8
+#EXTINF:-1 tvg-id="广西都市" tvg-name="广西都市" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/广西都市.png" group-title="📺 廣西自治區",广西都市
+http://116.9.204.242:9901/tsfile/live/1002_1.m3u8
+
+#EXTINF:-1,tvg-id="南宁文旅生活" tvg-name="南宁文旅生活" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/南宁文旅生活.png" group-title="📺 廣西自治區",南宁文旅生活
+http://hls.nntv.cn/nnlive/WLSH_24.m3u8
+#EXTINF:-1,tvg-id="南宁公共" tvg-name="南宁公共" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/南宁公共.png" group-title="📺 廣西自治區",南宁公共
+https://hls.nntv.cn/nnlive/GGPD_24.m3u8
+#EXTINF:-1,tvg-id="南宁新闻综合" tvg-name="南宁新闻综合" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/南宁新闻综合.png" group-title="📺 廣西自治區",南宁新闻综合
+https://hls.nntv.cn/nnlive/XWZH_24.m3u8
+#EXTINF:-1,tvg-id="南宁影视娱乐" tvg-name="南宁影视娱乐" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/南宁影视娱乐.png" group-title="📺 廣西自治區",南宁影视娱乐
+https://hls.nntv.cn/nnlive/YSYL_24.m3u8
+
+#📺 寧夏自治區
+#EXTINF:-1,tvg-id="宁夏文旅" tvg-name="宁夏文旅" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/宁夏文旅.png" group-title="📺 寧夏自治區",宁夏文旅
+https://hls.ningxiahuangheyun.com/live/nxwl1M.m3u8
+#EXTINF:-1,tvg-id="宁夏公共" tvg-name="宁夏公共" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/宁夏公共.png" group-title="📺 寧夏自治區",宁夏公共
+https://hls.ningxiahuangheyun.com/live/nxgg1M.m3u8
+#EXTINF:-1,tvg-id="宁夏经济" tvg-name="宁夏经济" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/宁夏经济.png" group-title="📺 寧夏自治區",宁夏经济
+https://hls.ningxiahuangheyun.com/live/nxjj1M.m3u8
+#EXTINF:-1,tvg-id="宁夏少儿" tvg-name="宁夏少儿" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/宁夏少儿.png" group-title="📺 寧夏自治區",宁夏少儿
+https://hls.ningxiahuangheyun.com/live/nxse1M.m3u8
 
 #🎥 影視輪播
 #EXTINF:-1 tvg-id="封神榜" tvg-name="封神榜" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/虎牙直播.png" group-title="🎥 影視輪播",封神榜「虎牙」

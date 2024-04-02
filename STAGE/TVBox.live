@@ -174,6 +174,21 @@ BTV卡酷少儿,http://183.242.49.77:8787/live/BTV卡酷少儿/index.m3u8
 南通社教「官方」,https://nt-hls.ntjoy.com/live/4f3.m3u8
 南通公共崇川「官方」,https://nt-hls.ntjoy.com/live/4f5.m3u8
 海安新闻综合「官方」,http://haian-tv-hls.cm.jstv.com/haian-tv/haaxwzh.m3u8
+
+苏州社会经济,http://tylive.kan0512.com/norecord/norecord_csztv2.m3u8
+苏州生活资讯,http://tylive.kan0512.com/norecord/norecord_csztv5.m3u8
+苏州文化生活,http://tylive.kan0512.com/norecord/norecord_csztv3.m3u8
+苏州新闻综合,http://tylive.kan0512.com/norecord/norecord_csztv1.m3u8
+无锡1套,http://stream.thmz.com/wxtv1/playlist.m3u8?_upt=df50c8ad1706195780
+无锡2套,http://stream.thmz.com/wxtv2/sd/live.m3u8?_upt=081040171706199780
+无锡3套,http://stream.thmz.com/wxtv3/sd/live.m3u8?_upt=978cd8731706199708
+无锡4套,http://stream.thmz.com/wxtv4/sd/live.m3u8?_upt=95a5f0d51706199864
+无锡5套,http://stream.thmz.com/wxtv5/sd/live.m3u8?_upt=31414f601706199828
+扬州新闻综合,http://cm-wshls.homecdn.com/live/8bb.m3u8
+扬州城市,http://cm-wshls.homecdn.com/live/8bd.m3u8
+扬州生活,http://cm-wshls.homecdn.com/live/8bf.m3u8
+镇江新闻综合,http://zjtv-wshls.homecdn.com/live/2aa50.m3u8
+镇江社会民生,http://zjtv-wshls.homecdn.com/live/2aa16.m3u8
 📺 北京頻道,#genre#
 BTV文艺,http://183.242.49.77:8787/live/BTV文艺/index.m3u8
 BTV影视,http://183.242.49.77:8787/live/BTV影视/index.m3u8
@@ -309,9 +324,17 @@ BTV国际,http://183.242.49.77:8787/live/BTV国际/index.m3u8
 山西影视,http://liveflash.sxrtv.com/live/sxfilm.m3u8?sub_m3u8=true&edge_slice=true
 黄河卫视,http://liveflash.sxrtv.com/live/huanghe.m3u8?sub_m3u8=true&edge_slice=true
 📺 安徽頻道,#genre#
-经济生活,http://112.30.194.221:20080/live/eac499adad7b49ff9cfa79ba84693959/hls.m3u8?zanhd
+安徽经济生活,http://112.30.194.221:20080/live/eac499adad7b49ff9cfa79ba84693959/hls.m3u8?zanhd
 安徽影视,http://112.30.194.221:20080/live/d18ff95cb1fb4bbcb56215e189fc12be/hls.m3u8?zanhd
-综艺•体育,http://112.30.194.221:20080/live/c41f112b83f644ddb082669501c8ecd3/hls.m3u8?zanhd
+安徽综艺体育,http://112.30.194.221:20080/live/c41f112b83f644ddb082669501c8ecd3/hls.m3u8?zanhd
+
+安徽公共,http://live.ahsx.ahtv.cn/live/ggtv.m3u8?txSecret=1ba104a5183796c21ef53d4029e8153a&txTime=6955487F
+安徽国际,http://live.ahsx.ahtv.cn/live/gjtv.m3u8?txSecret=a01a318e234cbd28375d91ed3d145637&txTime=6955487F
+安徽经济生活,http://live.ahsx.ahtv.cn/live/jjshtv.m3u8?txSecret=4f0326a07141810dd8772716d3dcc27b&txTime=6955487F
+安徽农业科教,http://live.ahsx.ahtv.cn/live/nykjtv.m3u8?txSecret=acb52e311eb9b41d3bd39947e03e3de2&txTime=6955487F
+安徽卫视,http://live.ahsx.ahtv.cn/live/ahtv.m3u8?txSecret=a069b18fac6cd605568d3733d24e5613&txTime=6955487F
+安徽影视,https://live.ahsx.ahtv.cn/live/ystv.m3u8?txSecret=04f4df21c1acbe136972606ec0e0b820&txTime=6955487F
+安徽综艺体育,http://live.ahsx.ahtv.cn/live/zytytv.m3u8?txSecret=60b1fa7f6d8558da8445c5315a16eca9&txTime=6955487F
 📺 海南頻道,#genre#
 海南新闻,http://[2409:8087:5e01:34::21]:6610/ZTE_CMS/08984400000000060000000000000321/index.m3u8?IAS
 海南文旅,http://[2409:8087:5e01:34::21]:6610/ZTE_CMS/08984400000000060000000000000322/index.m3u8?IAS
@@ -319,26 +342,27 @@ BTV国际,http://183.242.49.77:8787/live/BTV国际/index.m3u8
 海南公共,http://[2409:8087:5e01:34::21]:6610/ZTE_CMS/08984400000000060000000000000382/index.m3u8?IAS
 海南自贸,http://[2409:8087:5e01:34::21]:6610/ZTE_CMS/08984400000000060000000000000320/index.m3u8?IAS
 视听海南,http://[2409:8087:5e01:34::20]:6610/ZTE_CMS/08984400000000060000000000000440/index.m3u8?IAS
-📺 廣西頻道,#genre#
-广西影视,http://116.9.204.242:9901/tsfile/live/0124_1.m3u8
-广西综艺旅游,http://116.9.204.242:9901/tsfile/live/0125_1.m3u8
-广西都市,http://116.9.204.242:9901/tsfile/live/1002_1.m3u8
 📺 雲南頻道,#genre#
 云南娱乐,http://tvlive.ynradio.com/live/yunnanyule/playlist.m3u8
 云南少儿,http://tvlive.ynradio.com/live/yunnanshaoer/playlist.m3u8
 云南都市,http://tvlive.ynradio.com/live/yunnandushi/playlist.m3u8
 澜湄国际,http://tvlive.ynradio.com/live/yunnanguoji/playlist.m3u8
-📽️ 廣電•IPv6,#genre#
-翡翠台（廣電 IPv6）,https://iptv.hiper25.com/TVB/video.m3u8
-明珠台（廣電 IPv6）,https://iptv.hiper25.com/Pearl/video.m3u8
-澳視澳門（廣電 IPv6）,https://iptv.hiper25.com/TDM/video.m3u8
-廣東衛視（廣電 IPv6）,https://iptv.hiper25.com/gdws/video.m3u8
-廣東珠江（廣電 IPv6）,https://iptv.hiper25.com/gdzj/video.m3u8
-廣東體育（廣電 IPv6）,https://iptv.hiper25.com/gdty/video.m3u8
-廣東民生（廣電 IPv6）,https://iptv.hiper25.com/gdms/video.m3u8
-廣東經濟科教（廣電 IPv6）,https://iptv.hiper25.com/gdjjkj/video.m3u8
-大灣區衛視（廣電 IPv6）,https://iptv.hiper25.com/dwq/video.m3u8
-CCTV•4K（廣電 IPv6）,https://iptv.hiper25.com/CCTV-4K/video.m3u8
+📺 青海頻道,#genre#
+青海都市,http://stream.qhbtv.com/qhds/sd/live.m3u8?_upt=efeefead1707378479
+青海经视,http://stream.qhbtv.com/qhsh/sd/live.m3u8?_upt=0ca7de7f1707366913
+📺 廣西自治區,#genre#
+广西影视,http://116.9.204.242:9901/tsfile/live/0124_1.m3u8
+广西综艺旅游,http://116.9.204.242:9901/tsfile/live/0125_1.m3u8
+广西都市,http://116.9.204.242:9901/tsfile/live/1002_1.m3u8
+南宁都市生活,http://hls.nntv.cn/nnlive/WLSH_24.m3u8
+南宁公共,https://hls.nntv.cn/nnlive/GGPD_24.m3u8
+南宁新闻综合,https://hls.nntv.cn/nnlive/XWZH_24.m3u8
+南宁影视娱乐,https://hls.nntv.cn/nnlive/YSYL_24.m3u8
+📺 寧夏自治區,#genre#
+宁夏文旅,https://hls.ningxiahuangheyun.com/live/nxwl1M.m3u8
+宁夏公共,https://hls.ningxiahuangheyun.com/live/nxgg1M.m3u8
+宁夏经济,https://hls.ningxiahuangheyun.com/live/nxjj1M.m3u8
+宁夏少儿,https://hls.ningxiahuangheyun.com/live/nxse1M.m3u8
 🎥 影視輪播,#genre#
 封神榜「虎牙」,http://cfss.cc/cdn/hy/23749096.flv
 西游记•张卫健版 Ⅰ「虎牙」,http://cfss.cc/cdn/hy/23735126.flv
