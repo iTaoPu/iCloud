@@ -229,10 +229,14 @@ http://1.62.64.252/1.v.smtcdns.net/qctv.fengshows.cn/live/0701pin72.flv
 http://1.62.64.252/1.v.smtcdns.net/qctv.fengshows.cn/live/0701phk72.flv
 
 #📺 4K•頻道
+#EXTINF:-1,tvg-id="纪实科教" tvg-name="纪实科教" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/北京纪实科教8K.png" group-title="📺 數字頻道",BTV纪实科教8K
+http://49.7.69.235/downflv.brtvcloud.com/8klive/8kliveok.m3u8
 #EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV4K" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/CCTV4K.png" group-title="📺 4K•頻道",CCTV•4K
 http://159.75.85.63:5679/cctv4k.php
 #EXTINF:-1 tvg-id="CCTV16" tvg-name="CCTV16" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/CCTV16.png" group-title="📺 4K•頻道",CCTV16•4K
 http://zteres.sn.chinamobile.com:6060/000000001000/5000000008000023254/1.m3u8?channel-id=bestzb&Contentid=5000000008000023254&livemode=1&stbId=3
+#EXTINF:-1 tvg-id="CCTV16" tvg-name="CCTV16" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/CCTV16.png" group-title="📺 4K•頻道",CCTV16•4K「IPv6」
+http://[2409:8087:7000:20:1000::22]:6060/000000001000/5000000008000023254/index.m3u8?channel-id=bestzb&Contentid=5000000008000023254&livemode=1&stbId=3
 #EXTINF:-1 tvg-id="苏州4K" tvg-name="苏州4K" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/苏州4K.png" group-title="📺 4K•頻道",苏州•4K
 http://liveshowbak2.kan0512.com/ksznorecord/csztv4k_4k.m3u8
 #EXTINF:-1 tvg-id="纯享4K" tvg-name="纯享4K" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/纯享4K.png" group-title="📺 4K•頻道",纯享•4K
@@ -254,11 +258,15 @@ https://d2dw21aq0j0l5c.cloudfront.net/playlist_3840x2160.m3u8
 
 #📺 數字頻道
 #EXTINF:-1 tvg-id="CHC动作电影" tvg-name="CHC动作电影" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/CHC动作电影.png" group-title="📺 數字頻道",CHC动作电影
-http://[2409:8087:7000:20::4]/dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226465/index.m3u8
+http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002055/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
 #EXTINF:-1 tvg-id="CHC高清电影" tvg-name="CHC高清电影" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/CHC高清电影.png" group-title="📺 數字頻道",CHC高清电影
-http://[2409:8087:7000:20::4]/dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226463/index.m3u8
-#EXTINF:-1 tvg-id="CHC家庭影院" tvg-name="CHC家庭影院" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/CHC家庭影院.png" group-title="📺 數字頻道",CHC家庭影院
-http://[2409:8087:7000:20::4]/dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226462/index.m3u8
+http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002065/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+#EXTINF:-1 tvg-id="CHC家庭影院" tvg-name="CHC家庭影院" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/CHC家庭影院.png" group-title="📺 數字頻道",CHC家庭影院「西安」
+http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226462/index.m3u8
+#EXTINF:-1 tvg-id="CHC动作电影" tvg-name="CHC动作电影" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/CHC动作电影.png" group-title="📺 數字頻道",CHC动作电影「西安」
+http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226465/index.m3u8
+#EXTINF:-1 tvg-id="CHC家庭影院" tvg-name="CHC家庭影院" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/CHC家庭影院.png" group-title="📺 數字頻道",CHC家庭影院「西安」
+http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226463/index.m3u8
 #EXTINF:-1 tvg-id="CHC动作电影" tvg-name="CHC动作电影" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/CHC动作电影.png" group-title="📺 數字頻道",CHC动作电影「北海」
 http://219.159.194.53:8181/tsfile/live/1018_1.m3u8
 #EXTINF:-1 tvg-id="CHC家庭影院" tvg-name="CHC家庭影院" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/CHC家庭影院.png" group-title="📺 數字頻道",CHC家庭影院「北海」
