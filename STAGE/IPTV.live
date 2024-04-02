@@ -652,6 +652,18 @@ http://[2409:8087:7000:20::4]:80/dbiptv.sn.chinamobile.com/PLTV/88888888/224/322
 http://[2409:8087:7000:20::4]:80/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226363/index.m3u8
 #EXTINF:-1 tvg-id="陕西八套" tvg-name="陕西八套" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/陕西西部电影.png" group-title="📺 陝西頻道",陕西西部电影
 http://[2409:8087:7000:20::4]:80/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226364/index.m3u8
+#EXTINF:-1 tvg-id="西安新闻综合" tvg-name="西安新闻综合" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/西安新闻综合.png" group-title="📺 陝西頻道",西安新闻综合
+http://[2409:8087:7000:20::4]:80/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226366/index.m3u8
+#EXTINF:-1 tvg-id="西安都市" tvg-name="西安都市" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/西安都市.png" group-title="📺 陝西頻道",西安都市
+http://[2409:8087:7000:20::4]:80/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226367/index.m3u8
+#EXTINF:-1 tvg-id="西安商务资迅" tvg-name="西安商务资迅" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/西安商务资讯.png" group-title="📺 陝西頻道",西安商务资讯
+http://[2409:8087:7000:20::4]:80/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226368/index.m3u8
+#EXTINF:-1 tvg-id="西安影视" tvg-name="西安影视" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/西安影视.png" group-title="📺 陝西頻道",西安影视
+http://[2409:8087:7000:20::4]:80/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226369/index.m3u8
+#EXTINF:-1 tvg-id="西安丝路" tvg-name="西安丝路" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/西安丝路.png" group-title="📺 陝西頻道",西安丝路
+http://[2409:8087:7000:20::4]:80/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226370/index.m3u8
+#EXTINF:-1 tvg-id="西安教育eTV" tvg-name="西安教育eTV" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/西安教育.png" group-title="📺 陝西頻道",ETV•西安教育
+http://[2409:8087:7000:20::4]:80/dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226371/index.m3u8
 
 #📺 黑龍江頻道
 #EXTINF:-1 tvg-id="黑龙江新闻法治" tvg-name="黑龙江新闻法治" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/黑龙江新闻法治.png" group-title="📺 黑龍江頻道",黑龙江新闻法治
@@ -722,7 +734,6 @@ https://live.ahsx.ahtv.cn/live/ystv.m3u8?txSecret=04f4df21c1acbe136972606ec0e0b8
 #EXTINF:-1,tvg-id="安徽综艺体育" tvg-name="安徽综艺体育" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/安徽综艺体育.png" group-title="📺 安徽頻道",安徽综艺体育「青岛」
 http://live.ahsx.ahtv.cn/live/zytytv.m3u8?txSecret=60b1fa7f6d8558da8445c5315a16eca9&txTime=6955487F
 
-
 #📺 海南頻道
 #EXTINF:-1 tvg-id="海南新闻" tvg-name="海南新闻" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/海南新闻.png" group-title="📺 海南頻道",海南新闻
 http://[2409:8087:5e01:34::21]:6610/ZTE_CMS/08984400000000060000000000000321/index.m3u8?IAS
@@ -736,6 +747,9 @@ http://[2409:8087:5e01:34::21]:6610/ZTE_CMS/08984400000000060000000000000382/ind
 http://[2409:8087:5e01:34::21]:6610/ZTE_CMS/08984400000000060000000000000320/index.m3u8?IAS
 #EXTINF:-1 tvg-id="视听海南" tvg-name="视听海南" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/视听海南.png" group-title="📺 海南頻道",视听海南
 http://[2409:8087:5e01:34::20]:6610/ZTE_CMS/08984400000000060000000000000440/index.m3u8?IAS
+#EXTINF:-1 tvg-id="三亚综合" tvg-name="三亚新闻综合" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/三亚新闻综合.png" group-title="📺 海南頻道",三亚新闻综合
+http://[2409:8087:5e01:34::21]:6610/ZTE_CMS/00000001000000060000000000000136/index.m3u8?IAS
+
 
 #📺 雲南頻道
 #EXTINF:-1 tvg-id="云南娱乐" tvg-name="云南娱乐" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/云南娱乐.png" group-title="📺 雲南頻道",云南娱乐
