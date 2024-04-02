@@ -375,7 +375,7 @@ http://stream.thmz.com/wxtv5/sd/live.m3u8?_upt=31414f601706199828
 http://cm-wshls.homecdn.com/live/8bb.m3u8
 #EXTINF:-1,tvg-id="扬州城市" tvg-name="扬州城市" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/扬州城市.png" group-title="📺 江蘇頻道",扬州城市
 http://cm-wshls.homecdn.com/live/8bd.m3u8
-#EXTINF:-1,tvg-id="扬州生活" tvg-name="扬州生活" tvg-logo=https://live.5iclub.dedyn.io/STAGE/HD/扬州生活.png" group-title="📺 江蘇頻道",扬州生活
+#EXTINF:-1,tvg-id="扬州生活" tvg-name="扬州生活" tvg-logo=‘’https://live.5iclub.dedyn.io/STAGE/HD/扬州生活.png" group-title="📺 江蘇頻道",扬州生活
 http://cm-wshls.homecdn.com/live/8bf.m3u8
 #EXTINF:-1,tvg-id="镇江新闻综合" tvg-name="镇江新闻综合" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/镇江新闻综合.png" group-title="📺 江蘇頻道",镇江新闻综合
 http://zjtv-wshls.homecdn.com/live/2aa50.m3u8
@@ -715,9 +715,9 @@ http://tvlive.ynradio.com/live/yunnandushi/playlist.m3u8
 http://tvlive.ynradio.com/live/yunnanguoji/playlist.m3u8
 
 #📺 青海頻道
-#EXTINF:-1,tvg-id="青海都市" tvg-name="青海都市" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/青海都市.png" group-title="青海",青海都市
+#EXTINF:-1,tvg-id="青海都市" tvg-name="青海都市" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/青海都市.png" group-title="📺 青海頻道",青海都市
 http://stream.qhbtv.com/qhds/sd/live.m3u8?_upt=efeefead1707378479
-#EXTINF:-1,tvg-id="青海经视" tvg-name="青海经视" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/青海经视.png" group-title="青海",青海经视
+#EXTINF:-1,tvg-id="青海经视" tvg-name="青海经视" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/青海经视.png" group-title="📺 青海頻道",青海经视
 http://stream.qhbtv.com/qhsh/sd/live.m3u8?_upt=0ca7de7f1707366913
 
 #📺 廣西自治區
