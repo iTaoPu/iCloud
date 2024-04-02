@@ -286,7 +286,7 @@ http://183.242.49.77:8787/live/BTV卡酷少儿/index.m3u8
 #EXTINF:-1 tvg-id="优漫卡通" tvg-name="江苏优漫卡通" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/优漫卡通.png" group-title="📺 數字頻道",优漫卡通
 http://[2409:8087:1a0b:df::4005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225656/index.m3u8
 #EXTINF:-1 tvg-id="嘉佳卡通" tvg-name="嘉佳卡通" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/嘉佳卡通.png" group-title="📺 數字頻道",嘉佳卡通
-http://[2409:8087:7000:20::4]:80/dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226227/index.m3u8
+http://[2409:8087:5e01:34::22]:6610/ZTE_CMS/00000001000000060000000000000343/index.m3u8?key=tvbox6_com 
 #EXTINF:-1 tvg-id="茶" tvg-name="茶" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/茶频道.png" group-title="📺 數字頻道",茶频道
 http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000002305/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
 #EXTINF:-1 tvg-id="快乐垂钓" tvg-name="快乐垂钓" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/快乐垂钓.png" group-title="📺 數字頻道",快乐垂钓
