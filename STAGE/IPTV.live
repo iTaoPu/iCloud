@@ -227,6 +227,10 @@ http://1.62.64.252/1.v.smtcdns.net/qctv.fengshows.cn/live/0701pcc72.flv
 http://1.62.64.252/1.v.smtcdns.net/qctv.fengshows.cn/live/0701pin72.flv
 #EXTINF:-1 tvg-id="凤凰香港" tvg-name="凤凰香港" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/凤凰香港台.png" group-title="📺 衛視頻道",鳳凰衛視香港
 http://1.62.64.252/1.v.smtcdns.net/qctv.fengshows.cn/live/0701phk72.flv
+#EXTINF:-1,tvg-id="凤凰中文" tvg-name="凤凰中文" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/凤凰中文台.png" group-title="📺 衛視頻道",鳳凰衛視中文「高清」
+http://play-flive.ifeng.com/live/06OLEGEGM4G.m3u8
+#EXTINF:-1 tvg-id="凤凰资讯" tvg-name="凤凰资讯" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/凤凰资讯台.png" group-title="📺 衛視頻道",鳳凰衛視資訊「高清」
+http://play-flive.ifeng.com/live/06OLEEWQKN4.m3u8
 
 #📺 4K•頻道
 #EXTINF:-1,tvg-id="纪实科教" tvg-name="纪实科教" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/北京纪实科教8K.png" group-title="📺 4K•頻道",纪实科教•8K
@@ -770,6 +774,8 @@ http://stream.qhbtv.com/qhds/sd/live.m3u8?_upt=efeefead1707378479
 http://stream.qhbtv.com/qhsh/sd/live.m3u8?_upt=0ca7de7f1707366913
 
 #📺 廣西自治區
+#EXTINF:-1 tvg-id="广西卫视" tvg-name="广西卫视" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/广西卫视.png" group-title="📺 廣西自治區",广西卫视
+http://zteres.sn.chinamobile.com:6060/000000001000/5000000011000031118/1.m3u8?channel-id=bestzb&Contentid=5000000011000031118&livemode=1&stbId=3
 #EXTINF:-1 tvg-id="广西影视" tvg-name="广西影视" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/广西影视.png" group-title="📺 廣西自治區",广西影视
 http://116.9.204.242:9901/tsfile/live/0124_1.m3u8
 #EXTINF:-1 tvg-id="广西综艺" tvg-name="广西综艺旅游" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/广西综艺旅游.png" group-title="📺 廣西自治區",广西综艺旅游
