@@ -159,6 +159,8 @@ http://[2409:8087:7001:20:3::3]:80/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3
 http://[2409:8087:7001:20:3::3]:80/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221225803/index.m3u8
 #EXTINF:-1 tvg-id="广西卫视" tvg-name="广西卫视" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/广西卫视.png" group-title="📺 衛視頻道",广西卫视
 http://[2409:8087:1a0b:df::4020]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226380/index.m3u8
+#EXTINF:-1 tvg-id="广西卫视" tvg-name="广西卫视" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/广西卫视.png" group-title="📺 衛視頻道",广西卫视「高清」
+http://zteres.sn.chinamobile.com:6060/000000001000/5000000011000031118/1.m3u8?channel-id=bestzb&Contentid=5000000011000031118&livemode=1&stbId=3
 #EXTINF:-1 tvg-id="江苏卫视" tvg-name="江苏卫视" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/江苏卫视.png" group-title="📺 衛視頻道",江苏卫视
 http://[2409:8087:7000:20::17]:80/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221225800/index.m3u8
 #EXTINF:-1 tvg-id="江西卫视" tvg-name="江西卫视" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/江西卫视.png" group-title="📺 衛視頻道",江西卫视
@@ -774,8 +776,6 @@ http://stream.qhbtv.com/qhds/sd/live.m3u8?_upt=efeefead1707378479
 http://stream.qhbtv.com/qhsh/sd/live.m3u8?_upt=0ca7de7f1707366913
 
 #📺 廣西自治區
-#EXTINF:-1 tvg-id="广西卫视" tvg-name="广西卫视" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/广西卫视.png" group-title="📺 廣西自治區",广西卫视
-http://zteres.sn.chinamobile.com:6060/000000001000/5000000011000031118/1.m3u8?channel-id=bestzb&Contentid=5000000011000031118&livemode=1&stbId=3
 #EXTINF:-1 tvg-id="广西影视" tvg-name="广西影视" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/广西影视.png" group-title="📺 廣西自治區",广西影视
 http://116.9.204.242:9901/tsfile/live/0124_1.m3u8
 #EXTINF:-1 tvg-id="广西综艺" tvg-name="广西综艺旅游" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/广西综艺旅游.png" group-title="📺 廣西自治區",广西综艺旅游
