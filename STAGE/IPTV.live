@@ -223,11 +223,11 @@ http://[2409:8087:7001:20:3::3]:80/dbiptv.sn.chinamobile.com/PLTV/88888890/224/3
 http://[2409:8087:7001:20:3::3]:80/dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226229/index.m3u8
 #EXTINF:-1 tvg-id="康巴卫视" tvg-name="康巴卫视" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/康巴卫视.png" group-title="📺 衛視頻道",康巴卫视
 http://[2409:8087:1a0b:df::4005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225660/index.m3u8
-#EXTINF:-1,tvg-id="凤凰中文" tvg-name="凤凰中文" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/凤凰中文台.png" group-title="📺 衛視頻道",鳳凰衛視中文
+#EXTINF:-1,tvg-id="凤凰中文" tvg-name="凤凰中文" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/凤凰中文台.png" group-title="📺 衛視頻道",鳳凰衛視中文「哈尔滨」
 http://1.62.64.252/1.v.smtcdns.net/qctv.fengshows.cn/live/0701pcc72.flv
-#EXTINF:-1 tvg-id="凤凰资讯" tvg-name="凤凰资讯" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/凤凰资讯台.png" group-title="📺 衛視頻道",鳳凰衛視資訊
+#EXTINF:-1 tvg-id="凤凰资讯" tvg-name="凤凰资讯" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/凤凰资讯台.png" group-title="📺 衛視頻道",鳳凰衛視資訊「哈尔滨」
 http://1.62.64.252/1.v.smtcdns.net/qctv.fengshows.cn/live/0701pin72.flv
-#EXTINF:-1 tvg-id="凤凰香港" tvg-name="凤凰香港" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/凤凰香港台.png" group-title="📺 衛視頻道",鳳凰衛視香港
+#EXTINF:-1 tvg-id="凤凰香港" tvg-name="凤凰香港" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/凤凰香港台.png" group-title="📺 衛視頻道",鳳凰衛視香港「哈尔滨」
 http://1.62.64.252/1.v.smtcdns.net/qctv.fengshows.cn/live/0701phk72.flv
 #EXTINF:-1,tvg-id="凤凰中文" tvg-name="凤凰中文" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/凤凰中文台.png" group-title="📺 衛視頻道",鳳凰衛視中文「高清」
 http://play-flive.ifeng.com/live/06OLEGEGM4G.m3u8
