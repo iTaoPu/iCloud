@@ -315,12 +315,16 @@ http://219.159.194.53:8181/tsfile/live/1016_1.m3u8
 http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225738/index.m3u8
 #EXTINF:-1 tvg-id="哈哈炫动" tvg-name="哈哈炫动" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/哈哈炫动.png" group-title="📺 數字頻道",哈哈炫动
 http://[2409:8087:1a0b:df::4001]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225657/index.m3u8
-#EXTINF:-1 tvg-id="河北农民" tvg-name="河北农民" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/农民频道.png" group-title="📺 數字頻道",农民频道•保定 Ⅰ
-http://zdwjl.eatuo.com:808/tsfile/live/1005_1.m3u8
-#EXTINF:-1 tvg-id="河北农民" tvg-name="河北农民" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/农民频道.png" group-title="📺 數字頻道",农民频道•保定 Ⅱ
-http://111.225.113.130:808/tsfile/live/1004_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-id="河北农民" tvg-name="河北农民" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/农民频道.png" group-title="📺 數字頻道",农民频道•邯郸
+#EXTINF:-1 tvg-id="河北农民" tvg-name="河北农民" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/农民频道.png" group-title="📺 數字頻道",农民频道「邯郸」
 http://hbyxmlg.picp.io:8088/tsfile/live/1005_1.m3u8
+#EXTINF:-1,tvg-id="河北农民" tvg-name="河北农民" tvg-logo="https://epg.112114.xyz/logo/河北农民.png" group-title="河北",河北农民
+http://110.253.152.47:8888/rtp/239.253.92.176:6006
+#EXTINF:-1,tvg-id="河北农民" tvg-name="河北农民" tvg-logo="https://epg.112114.xyz/logo/河北农民.png" group-title="河北",河北农民
+http://111.225.112.123:808/tsfile/live/1004_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1,tvg-id="河北农民" tvg-name="河北农民" tvg-logo="https://epg.112114.xyz/logo/河北农民.png" group-title="河北",河北农民
+http://121.19.134.190:808/tsfile/live/1005_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1,tvg-id="河北农民" tvg-name="河北农民" tvg-logo="https://epg.112114.xyz/logo/河北农民.png" group-title="河北",河北农民
+http://121.19.134.48:808/tsfile/live/1005_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-id="哒啵电竞" tvg-name="哒啵电竞" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/哒啵电竞.png" group-title="📺 數字頻道",哒啵电竞
 http://[2409:8087:7000:20::4]:80/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226951/index.m3u8
 #EXTINF:-1 tvg-id="哒啵赛事" tvg-name="哒啵赛事" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/哒啵赛事.png" group-title="📺 數字頻道",哒啵赛事
@@ -506,47 +510,34 @@ http://v.vlanl.com:4022/udp/225.1.4.149:1185
 http://v.vlanl.com:4022/udp/225.1.4.191:1241
 
 #📺 河北頻道
-#EXTINF:-1 tvg-id="河北生活" tvg-name="河北经济" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北经济生活.png" group-title="📺 河北頻道",河北经济生活「邯郸」
- Ⅰ
+#EXTINF:-1 tvg-id="河北生活" tvg-name="河北经济" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北经济生活.png" group-title="📺 河北頻道",河北经济生活「邯郸」Ⅰ
 http://116.132.87.246:8888/newlive/live/hls/20/live.m3u8
-#EXTINF:-1 tvg-id="河北生活" tvg-name="河北经济" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北经济生活.png" group-title="📺 河北頻道",河北经济生活「邯郸」
- Ⅱ
+#EXTINF:-1 tvg-id="河北生活" tvg-name="河北经济" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北经济生活.png" group-title="📺 河北頻道",河北经济生活「邯郸」Ⅱ
 http://hbyxmlg.picp.io:8088/tsfile/live/1000_1.m3u8
-#EXTINF:-1 tvg-id="河北生活" tvg-name="河北经济" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北经济生活.png" group-title="📺 河北頻道",河北经济生活「保定」
-http://111.225.113.130:808/tsfile/live/0019_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-id="河北都市" tvg-name="河北都市" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北都市.png" group-title="📺 河北頻道",河北都市「邯郸」
-Ⅰ
+#EXTINF:-1 tvg-id="河北都市" tvg-name="河北都市" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北都市.png" group-title="📺 河北頻道",河北都市「邯郸」Ⅰ
 http://116.132.87.246:8888/newlive/live/hls/21/live.m3u8
-#EXTINF:-1 tvg-id="河北都市" tvg-name="河北都市" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北都市.png" group-title="📺 河北頻道",河北都市「邯郸」
- Ⅱ
+#EXTINF:-1 tvg-id="河北都市" tvg-name="河北都市" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北都市.png" group-title="📺 河北頻道",河北都市「邯郸」Ⅱ
 http://hbyxmlg.picp.io:8088/tsfile/live/1001_1.m3u8
 #EXTINF:-1 tvg-id="河北都市" tvg-name="河北都市" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北都市.png" group-title="📺 河北頻道",河北都市「保定」
 http://111.225.113.130:808/tsfile/live/1000_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-id="河北影视" tvg-name="河北影视" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北影视剧.png" group-title="📺 河北頻道",河北影视剧「邯郸」
- Ⅰ
+#EXTINF:-1 tvg-id="河北影视" tvg-name="河北影视" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北影视剧.png" group-title="📺 河北頻道",河北影视剧「邯郸」Ⅰ
 http://116.132.87.246:8888/newlive/live/hls/22/live.m3u8
-#EXTINF:-1 tvg-id="河北影视" tvg-name="河北影视" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北影视剧.png" group-title="📺 河北頻道",河北影视剧「邯郸」
- Ⅱ
+#EXTINF:-1 tvg-id="河北影视" tvg-name="河北影视" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北影视剧.png" group-title="📺 河北頻道",河北影视剧「邯郸」Ⅱ
 http://hbyxmlg.picp.io:8088/tsfile/live/1002_1.m3u8
 #EXTINF:-1 tvg-id="河北影视" tvg-name="河北影视" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北影视剧.png" group-title="📺 河北頻道",河北影视剧「保定」
 http://111.225.113.130:808/tsfile/live/1001_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-id="河北公共" tvg-name="河北公共" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北公共.png" group-title="📺 河北頻道",河北公共「邯郸」
- Ⅰ
+#EXTINF:-1 tvg-id="河北公共" tvg-name="河北公共" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北公共.png" group-title="📺 河北頻道",河北公共「邯郸」Ⅰ
 http://116.132.87.246:8888/newlive/live/hls/23/live.m3u8
-#EXTINF:-1 tvg-id="河北公共" tvg-name="河北公共" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北公共.png" group-title="📺 河北頻道",河北公共「邯郸」
- Ⅱ
+#EXTINF:-1 tvg-id="河北公共" tvg-name="河北公共" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北公共.png" group-title="📺 河北頻道",河北公共「邯郸」Ⅱ
 http://hbyxmlg.picp.io:8088/tsfile/live/1004_1.m3u8
 #EXTINF:-1 tvg-id="河北公共" tvg-name="河北公共" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北公共.png" group-title="📺 河北頻道",河北公共「保定」
 http://111.225.113.130:808/tsfile/live/1003_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-id="河北少儿科教" tvg-name="河北少儿科教" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北少儿科教.png" group-title="📺 河北頻道",河北少儿科教「保定」 Ⅰ
 http://zdwjl.eatuo.com:808/tsfile/live/1003_1.m3u8
-#EXTINF:-1 tvg-id="河北少儿科教" tvg-name="河北少儿科教" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北少儿科教.png" group-title="📺 河北頻道",河北少儿科教「保定」
- Ⅱ
+#EXTINF:-1 tvg-id="河北少儿科教" tvg-name="河北少儿科教" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北少儿科教.png" group-title="📺 河北頻道",河北少儿科教「保定」Ⅱ
 http://111.225.113.130:808/tsfile/live/1002_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-id="河北少儿科教" tvg-name="河北少儿科教" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/河北少儿科教.png" group-title="📺 河北頻道",河北少儿科教「邯郸」
-
 http://hbyxmlg.picp.io:8088/tsfile/live/1003_1.m3u8
-
 #EXTINF:-1 tvg-id="石家庄新闻综合" tvg-name="石家庄新闻综合" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/石家庄新闻综合.png" group-title="📺 河北頻道",石家庄新闻综合
 http://pluslive1.sjzntv.cn/xmzh/playlist.m3u8
 #EXTINF:-1 tvg-id="石家庄娱乐" tvg-name="石家庄娱乐" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/石家庄娱乐.png" group-title="📺 河北頻道",石家庄娱乐
