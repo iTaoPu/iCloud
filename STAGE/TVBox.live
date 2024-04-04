@@ -156,9 +156,11 @@ BTV卡酷少儿,http://183.242.49.77:8787/live/BTV卡酷少儿/index.m3u8
 金鹰卡通「北海」,http://219.159.194.53:8181/tsfile/live/1016_1.m3u8
 纪实人文,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225738/index.m3u8
 哈哈炫动,http://[2409:8087:1a0b:df::4001]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225657/index.m3u8
-农民频道•保定 Ⅰ,http://zdwjl.eatuo.com:808/tsfile/live/1005_1.m3u8
-农民频道•保定 Ⅱ,http://111.225.113.130:808/tsfile/live/1004_1.m3u8?key=txiptv&playlive=1&authid=0
-农民频道•邯郸,http://hbyxmlg.picp.io:8088/tsfile/live/1005_1.m3u8
+河北农民「张家口」,http://110.253.152.47:8888/rtp/239.253.92.176:6006
+河北农民「保定」,http://111.225.112.123:808/tsfile/live/1004_1.m3u8?key=txiptv&playlive=1&authid=0
+河北农民「保定」,http://121.19.134.190:808/tsfile/live/1005_1.m3u8?key=txiptv&playlive=1&authid=0
+河北农民「保定」,http://121.19.134.48:808/tsfile/live/1005_1.m3u8?key=txiptv&playlive=1&authid=0
+农民频道「邯郸」,http://hbyxmlg.picp.io:8088/tsfile/live/1005_1.m3u8
 哒啵电竞,http://[2409:8087:7000:20::4]:80/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226951/index.m3u8
 哒啵赛事,http://[2409:8087:7000:20::4]:80/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226954/index.m3u8
 黑莓电影,http://[2409:8087:1a0b:df::4014]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225743/index.m3u8
@@ -251,21 +253,11 @@ BTV国际,http://183.242.49.77:8787/live/BTV国际/index.m3u8
 郑州都市生活,http://v.vlanl.com:4022/udp/225.1.4.149:1185
 郑州教育,http://v.vlanl.com:4022/udp/225.1.4.191:1241
 📺 河北頻道,#genre#
-河北经济生活•邯郸 Ⅰ,http://116.132.87.246:8888/newlive/live/hls/20/live.m3u8
-河北经济生活•邯郸 Ⅱ,http://hbyxmlg.picp.io:8088/tsfile/live/1000_1.m3u8
-河北经济生活•保定,http://111.225.113.130:808/tsfile/live/0019_1.m3u8?key=txiptv&playlive=1&authid=0
-河北都市•邯郸 Ⅰ,http://116.132.87.246:8888/newlive/live/hls/21/live.m3u8
-河北都市•邯郸 Ⅱ,http://hbyxmlg.picp.io:8088/tsfile/live/1001_1.m3u8
-河北都市•保定,http://111.225.113.130:808/tsfile/live/1000_1.m3u8?key=txiptv&playlive=1&authid=0
-河北影视剧•邯郸 Ⅰ,http://116.132.87.246:8888/newlive/live/hls/22/live.m3u8
-河北影视剧•邯郸 Ⅱ,http://hbyxmlg.picp.io:8088/tsfile/live/1002_1.m3u8
-河北影视剧•保定,http://111.225.113.130:808/tsfile/live/1001_1.m3u8?key=txiptv&playlive=1&authid=0
-河北公共•邯郸 Ⅰ,http://116.132.87.246:8888/newlive/live/hls/23/live.m3u8
-河北公共•邯郸 Ⅱ,http://hbyxmlg.picp.io:8088/tsfile/live/1004_1.m3u8
-河北公共•保定,http://111.225.113.130:808/tsfile/live/1003_1.m3u8?key=txiptv&playlive=1&authid=0
-河北少儿科教•保定 Ⅰ,http://zdwjl.eatuo.com:808/tsfile/live/1003_1.m3u8
-河北少儿科教•保定 Ⅱ,http://111.225.113.130:808/tsfile/live/1002_1.m3u8?key=txiptv&playlive=1&authid=0
-河北少儿科教•邯郸,http://hbyxmlg.picp.io:8088/tsfile/live/1003_1.m3u8
+河北经济生活「邯郸」,http://116.132.87.246:8888/newlive/live/hls/20/live.m3u8
+河北都市「邯郸」,http://116.132.87.246:8888/newlive/live/hls/21/live.m3u8
+河北影视剧「邯郸」,http://116.132.87.246:8888/newlive/live/hls/22/live.m3u8
+河北公共「邯郸」,http://116.132.87.246:8888/newlive/live/hls/23/live.m3u8
+河北少儿科教「邯郸」,http://hbyxmlg.picp.io:8088/tsfile/live/1003_1.m3u8
 石家庄新闻综合,http://pluslive1.sjzntv.cn/xmzh/playlist.m3u8
 石家庄娱乐,http://pluslive1.sjzntv.cn/yule/playlist.m3u8
 石家庄生活,http://pluslive1.sjzntv.cn/shenghuo/playlist.m3u8
