@@ -1,4 +1,4 @@
-## 📺TVBox多仓源  📡IPTV直播源
+## 📺TVBox多仓源
 
 ### 📖说明
 所有播放源均收集于互联网🌐，仅供**测试研究使用**，不得**商用**。
@@ -15,6 +15,4 @@
 </p>
 
 ### 💡致谢：
-- Logo来源：[https://github.com/wanglindl/TVlogo](https://github.com/wanglindl/TVlogo)[`特别感谢`]
-- [erc.cc](https://epg.erw.cc/)及[epg.pw](https://epg.pw/xmltv/epg_CN.xml)提供的epg接口[`特别感谢`]
 - GitHub及互联网其他资源[`特别感谢`]
