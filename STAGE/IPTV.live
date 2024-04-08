@@ -1,50 +1,6 @@
 #EXTM3U x-tvg-url="ttps://live.fanmingming.com/e.xml" catcup="append" catcup-source="?playseek=${(b)yyyyMMddmmss}-${(e)yyyyMMddmmss}"
 
-#🐼 iPanda频道
-#EXTINF:-1 tvg-id="iPanda" tvg-name="iPanda" tvg-logo="https://live.fanmingming.com/tv/精选.png" group-title="🐼 iPanda频道",都江堰青青
-ttp://gcalic.v.myalicdn.com/gc/xiongmao20_1/index.m3u8
-#EXTINF:-1 tvg-id="iPanda" tvg-name="iPanda" tvg-logo="https://live.fanmingming.com/tv/精选.png" group-title="🐼 iPanda频道",都江堰妃妃
-ttp://gcalic.v.myalicdn.com/gc/xiongmao13_1/index.m3u8
-#EXTINF:-1 tvg-id="iPanda" tvg-name="iPanda" tvg-logo="https://live.fanmingming.com/tv/精选.png" group-title="🐼 iPanda频道",都江堰娅祥
-ttp://gcalic.v.myalicdn.com/gc/xiongmao15_1/index.m3u8
-#EXTINF:-1 tvg-id="iPanda" tvg-name="iPanda" tvg-logo="https://live.fanmingming.com/tv/精选.png" group-title="🐼 iPanda频道",都江堰瑞瑞
-ttp://gcalic.v.myalicdn.com/gc/xiongmao16_1/index.m3u8
-#EXTINF:-1 tvg-id="iPanda" tvg-name="iPanda" tvg-logo="https://live.fanmingming.com/tv/精选.png" group-title="🐼 iPanda频道",都江堰壹玖
-ttp://gcalic.v.myalicdn.com/gc/xiongmao14_1/index.m3u8
-#EXTINF:-1 tvg-id="iPanda" tvg-name="iPanda" tvg-logo="https://live.fanmingming.com/tv/精选.png" group-title="🐼 iPanda频道",都江堰水秀
-ttp://gcalic.v.myalicdn.com/gc/xiongmao12_1/index.m3u8
-#EXTINF:-1 tvg-id="iPanda" tvg-name="iPanda" tvg-logo="https://live.fanmingming.com/tv/精选.png" group-title="🐼 iPanda频道",都江堰怡然
-ttp://gcalic.v.myalicdn.com/gc/xiongmao18_1/index.m3u8
-#EXTINF:-1 tvg-id="iPanda" tvg-name="iPanda" tvg-logo="https://live.fanmingming.com/tv/精选.png" group-title="🐼 iPanda频道",基地成年园 Ⅰ
-ttp://gcalic.v.myalicdn.com/gc/xiongmao01_1/index.m3u8
-#EXTINF:-1 tvg-id="iPanda" tvg-name="iPanda" tvg-logo="https://live.fanmingming.com/tv/精选.png" group-title="🐼 iPanda频道",基地成年园 Ⅱ
-ttp://gcalic.v.myalicdn.com/gc/xiongmao02_1/index.m3u8
-#EXTINF:-1 tvg-id="iPanda" tvg-name="iPanda" tvg-logo="https://live.fanmingming.com/tv/精选.png" group-title="🐼 iPanda频道",基地幼年园 Ⅰ
-ttp://gcalic.v.myalicdn.com/gc/xiongmao03_1/index.m3u8
-#EXTINF:-1 tvg-id="iPanda" tvg-name="iPanda" tvg-logo="https://live.fanmingming.com/tv/精选.png" group-title="🐼 iPanda频道",基地幼年园 Ⅱ
-ttp://gcalic.v.myalicdn.com/gc/xiongmao04_1/index.m3u8
-#EXTINF:-1 tvg-id="iPanda" tvg-name="iPanda" tvg-logo="https://live.fanmingming.com/tv/精选.png" group-title="🐼 iPanda频道",基地幼儿园 Ⅰ
-ttp://gcalic.v.myalicdn.com/gc/xiongmao05_1/index.m3u8
-#EXTINF:-1 tvg-id="iPanda" tvg-name="iPanda" tvg-logo="https://live.fanmingming.com/tv/精选.png" group-title="🐼 iPanda频道",基地幼儿园 Ⅱ
-ttp://gcalic.v.myalicdn.com/gc/xiongmao06_1/index.m3u8
-#EXTINF:-1 tvg-id="iPanda" tvg-name="iPanda" tvg-logo="https://live.fanmingming.com/tv/精选.png" group-title="🐼 iPanda频道",基地母子园 Ⅰ
-ttp://gcalic.v.myalicdn.com/gc/xiongmao07_1/index.m3u8
-#EXTINF:-1 tvg-id="iPanda" tvg-name="iPanda" tvg-logo="https://live.fanmingming.com/tv/精选.png" group-title="🐼 iPanda频道",基地母子园 Ⅱ
-ttp://gcalic.v.myalicdn.com/gc/xiongmao08_1/index.m3u8
-#EXTINF:-1 tvg-id="iPanda" tvg-name="iPanda" tvg-logo="https://live.fanmingming.com/tv/精选.png" group-title="🐼 iPanda频道",基地别墅 Ⅰ
-ttp://gcalic.v.myalicdn.com/gc/xiongmao09_1/index.m3u8
-#EXTINF:-1 tvg-id="iPanda" tvg-name="iPanda" tvg-logo="https://live.fanmingming.com/tv/精选.png" group-title="🐼 iPanda频道",基地别墅 Ⅱ
-ttp://gcalic.v.myalicdn.com/gc/xiongmao10_1/index.m3u8
-#EXTINF:-1 tvg-id="iPanda" tvg-name="iPanda" tvg-logo="https://live.fanmingming.com/tv/精选.png" group-title="🐼 iPanda频道",大丰麋鹿
-ttp://gcalic.v.myalicdn.com/gc/xiongmao23_1/index.m3u8
-#EXTINF:-1 tvg-id="iPanda" tvg-name="iPanda" tvg-logo="https://live.fanmingming.com/tv/精选.png" group-title="🐼 iPanda频道",白马雪山
-ttp://gcalic.v.myalicdn.com/gc/xiongmao24_1/index.m3u8
-#EXTINF:-1 tvg-id="iPanda" tvg-name="iPanda" tvg-logo="https://live.fanmingming.com/tv/精选.png" group-title="🐼 iPanda频道",成都高清
-ttp://gcalic.v.myalicdn.com/gc/ipanda_1td/index.m3u8
-#EXTINF:-1 tvg-id="iPanda" tvg-name="iPanda" tvg-logo="https://live.fanmingming.com/tv/精选.png" group-title="🐼 iPanda频道",都江堰高清
-ttp://gcalic.v.myalicdn.com/gc/ipanda1000_1td/index.m3u8
-
-#📺 📺 央视频道频道
+#📺 央视频道
 #EXTINF:-1 tvg-id="CCTV1" tvg-name="CCTV1" tvg-logo="ttps://live.fanmingming.com/tv/CCTV1.png" group-title="📺 央视频道",CCTV-1 综合
 ttps://itv.lat/tv/live.pp?&line=1&id=cctv1
 #EXTINF:-1 tvg-id="CCTV2" tvg-name="CCTV2" tvg-logo="ttps://live.fanmingming.com/tv/CCTV2.png" group-title="📺 央视频道",CCTV-2 财经
