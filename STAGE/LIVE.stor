@@ -141,6 +141,7 @@ https://pi.0472.org/itv/bjwsH265.m3u8
 #EXTINF:-1 tvg-name="湖南卫视" tvg-logo="https://loong.yuwell.cloudns.org/TVlogo/img/Hunan.png" group-title="卫视频道",湖南卫视
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226307/index.m3u8
 https://pi.0472.org/itv/hnwsH265.m3u8
+https://pi.0472.org/hls/hunws.m3u8
 #EXTINF:-1 tvg-name="东方卫视" tvg-logo="https://loong.yuwell.cloudns.org/TVlogo/img/Dongfang.png" group-title="卫视频道",东方卫视
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226345/index.m3u8
 https://pi.0472.org/itv/dfwsH265.m3u8
