@@ -20,7 +20,7 @@
 |名称|地址|类型|
 | ------------ | ------------ | ------------ |
 |[🍙饭太硬.COM]|[http://www.饭太硬.com/tv](http://www.饭太硬.com/tv)|源|
-|[🦸‍♀️XIAOMI.小暴脾气.FUN]|[http://www.饭太硬.com/tv](http://www.mpanso.com/小米/DEMO.json)|源|
+|[🦸‍♀️XIAOMI.小暴脾气.FUN]|[http://www.mpanso.com/小米/DEMO.json](http://www.mpanso.com/小米/DEMO.json)|源|
 |[🐈肥猫.COM]|[(http://肥猫.com)](http://肥猫.com)|源|
 |[🔞纯一骚零.TOP]|[https://100km.top/0](https://100km.top/0)|源|
 |[🏓巧技.COM]|[http://cdn.qiaoji8.com/tvbox.json](http://cdn.qiaoji8.com/tvbox.json)|源|
