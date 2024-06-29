@@ -557,7 +557,7 @@ http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/322
 http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226304/index.m3u8
 #EXTINF:-1 tvg-id="黑龙江影视" tvg-name="黑龙江影视" tvg-logo="https://loong.yuwell.cloudns.org/TVlogo/img/Heilongjiang3.png" group-title="黑龙江频道",黑龙江影视
 http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226298/index.m3u8
-#EXTINF:-1 tvg-id="黑龙江农业科教" tvg-name="黑龙江农业科教" tvg-logo="https://loong.yuwell.cloudns.org/TVlogo/img/heilongjiang8.png" group-title="黑龙江频道" ,黑龙江农业科教
+#EXTINF:-1 tvg-id="黑龙江农业科教" tvg-name="黑龙江农业科教" tvg-logo="https://loong.yuwell.cloudns.org/TVlogo/img/Heilongjiang8.png" group-title="黑龙江频道" ,黑龙江农业科教
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226242/index.m3u8
 
 #EXTINF:-1 tvg-id="海南新闻" tvg-name="海南新闻" tvg-logo="https://loong.yuwell.cloudns.org/TVlogo/img/Hainan2.png" group-title="海南频道",海南新闻
