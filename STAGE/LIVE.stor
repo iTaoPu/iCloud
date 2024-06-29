@@ -416,6 +416,20 @@ http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000047/index.m3u8?
 #EXTINF:-1,tvg-id="爱动漫" tvg-name="iHOT爱动漫" tvg-logo="https://loong.yuwell.cloudns.org/TVlogo/img/ihot11.png" group-title="IHOT系列",iHOT爱动漫
 http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000059/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000059&IASHttpSessionId=OTT19019320240419154124000281
 
+#EXTINF:-1 tvg-id="南京综合" tvg-name="南京综合" tvg-logo="https://loong.yuwell.cloudns.org/TVlogo/img/Nanjing1.png" group-title="江苏频道",南京新闻综合
+http://live.nbs.cn/channels/njtv/xwzh/nbs06.m3u8
+#EXTINF:-1 tvg-id="南京教科" tvg-name="南京教科" tvg-logo="https://loong.yuwell.cloudns.org/TVlogo/img/Nanjing2.png" group-title="江苏频道",南京教科
+http://live.nbs.cn/channels/njtv/jkpd/nbs06.m3u8
+#EXTINF:-1 tvg-id="南京生活" tvg-name="南京生活" tvg-logo="https://loong.yuwell.cloudns.org/TVlogo/img/Nanjing3.png" group-title="江苏频道",南京生活
+http://live.nbs.cn/channels/njtv/shpd/nbs06.m3u8
+#EXTINF:-1 tvg-id="南京信息" tvg-name="南京信息" tvg-logo="https://loong.yuwell.cloudns.org/TVlogo/img/Nanjing4.png" group-title="江苏频道",南京信息
+http://live.nbs.cn/channels/njtv/xxpd/500k.m3u8
+#EXTINF:-1 tvg-id="南京娱乐" tvg-name="南京娱乐" tvg-logo="https://loong.yuwell.cloudns.org/TVlogo/img/Nanjing5.png" group-title="江苏频道",南京娱乐
+http://live.nbs.cn/channels/njtv/ylpd/500k.m3u8
+#EXTINF:-1 tvg-id="南京少儿" tvg-name="南京少儿" tvg-logo="https://loong.yuwell.cloudns.org/TVlogo/img/Nanjing6.png" group-title="江苏频道",南京少儿
+http://live.nbs.cn/channels/njtv/sepd/nbs23.m3u8
+#EXTINF:-1 tvg-id="南京十八" tvg-name="南京十八" tvg-logo="https://loong.yuwell.cloudns.org/TVlogo/img/Nanjing18.png" group-title="江苏频道",南京十八
+http://live.nbs.cn/channels/njtv/sbpd/500k.m3u8
 #EXTINF:-1 tvg-id="海安新闻综合" tvg-logo="https://loong.yuwell.cloudns.org/TVlogo/img/haianxw.png" group-title="江苏频道",海安新闻综合
 http://haian-tv-hls.cm.jstv.com/haian-tv/haaxwzh.m3u8
 
