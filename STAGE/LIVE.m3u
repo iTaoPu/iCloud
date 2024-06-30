@@ -1,5 +1,8 @@
 #EXTM3U x-tvg-url="https://epg.5i計畫通行.cloudns.org" catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}"
 
+#EXTINF:-1 tvg-id="5️⃣i計畫通行" tvg-name="5️⃣i計畫通行" tvg-logo="https://image.5iclub.cloudns.org/file/988bc6faf54c182e8abb7.png" group-title="5️⃣i計畫通行",5️⃣i計畫通行
+https://image.5iclub.cloudns.org/file/988bc6faf54c182e8abb7.png
+
 #EXTINF:-1 tvg-id="iPanda" tvg-name="iPanda" tvg-logo="https://image.5iclub.cloudns.org/file/8391f400e08f0ee370d5a.png" group-title="iPanda熊猫频道",都江堰青青
 http://gcalic.v.myalicdn.com/gc/xiongmao20_1/index.m3u8
 #EXTINF:-1 tvg-id="iPanda" tvg-name="iPanda" tvg-logo="https://image.5iclub.cloudns.org/file/8391f400e08f0ee370d5a.png" group-title="iPanda熊猫频道",都江堰妃妃
@@ -596,6 +599,8 @@ http://[2409:8087:1a01:df::4033]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/322
 #EXTINF:-1 tvg-logo="https://image.5iclub.cloudns.org/file/ac3bf381e23c39007e331.png" group-title="咪咕视频",咪咕直播 𝟜「IPV6」
 http://[2409:8087:1a01:df::4046]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226472/index.m3u8
 
+#EXTINF:-1 tvg-logo="https://image.5iclub.cloudns.org/file/e24347b54fb47ca5c4556.png" group-title="BesTV•体育",BesTV 4K 「IPV6」
+http://[2409:8087:5e01:34::30]:6610/ZTE_CMS/00000001000000060000000000000202/index.m3u8?IAS
 #EXTINF:-1 tvg-logo="https://image.5iclub.cloudns.org/file/e24347b54fb47ca5c4556.png" group-title="BesTV•体育",BesTV 𝟙「IPV6」
 http://[2409:8087:5e08:24::12]:6610/000000001000/2000000002000000024/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000024&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
 #EXTINF:-1 tvg-logo="https://image.5iclub.cloudns.org/file/e24347b54fb47ca5c4556.png" group-title="BesTV•体育",BesTV 𝟚「IPV6」
