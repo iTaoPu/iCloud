@@ -443,7 +443,7 @@ http://live.nbs.cn/channels/njtv/sepd/nbs23.m3u8
 http://live.nbs.cn/channels/njtv/sbpd/500k.m3u8
 #EXTINF:-1 tvg-id="海安新闻综合" tvg-logo="https://image.5iclub.cloudns.org/file/0d0213be39f10ed4a914f.png" group-title="江苏频道",海安新闻综合
 http://haian-tv-hls.cm.jstv.com/haian-tv/haaxwzh.m3u8
-#EXTINF:-1 tvg-id="如东新闻综合" tvg-logo="https://image.5iclub.cloudns.org/file/f19e64d9f11a32a582149.png" group-title="江苏频道" ,如东新闻综合
+#EXTINF:-1 tvg-id="如东新闻综合" tvg-logo="https://image.5iclub.cloudns.org/file/0cd2bbf1f2718900a37b1.png" group-title="江苏频道" ,如东新闻综合
 http://rudong-tv-hls.cm.jstv.com/rudong-tv/rdxwzh.m3u8
 
 #EXTINF:-1 tvg-name="上海新闻综合" tvg-logo="https://image.5iclub.cloudns.org/file/4eee7c251dfaea1d5bca5.png" group-title="上海频道",上海新闻综合
