@@ -1,7 +1,9 @@
 #EXTM3U x-tvg-url="https://epg.5i計畫通行.cloudns.org" catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}"
 
-#EXTINF:-1 tvg-id="5️⃣i計畫通行" tvg-name="5️⃣i計畫通行" tvg-logo="https://image.5iclub.cloudns.org/file/eed80177c62d32847d8f8.png" group-title="5️⃣i計畫通行",5️⃣i計畫通行
-https://v26-web.douyinvod.com/24ef2b2cce0055c448c0921acd99f457/6681216f/video/tos/cn/tos-cn-ve-15c001-alinc2/oEGwmAffGAEQzA7GBeA8I7FE0ib2oNBdDYBgCK/?a=6383&ch=26&cr=3&dr=0&lr=all&cd=0%7C0%7C0%7C3&br=949&bt=949&cs=0&ds=3&ft=nO1ThnYYwAgGXBuxNfuJiS1FkuagRFKQA5ThMdm9r73~Y7mmbcYW-dDUOeIUxMf&mime_type=video_mp4&qs=0&rc=ZTtkPGU4OjU2Njc5ZWYzaUBpanBtOm05cnFqdDMzNGkzM0A1NTVjYTReXy8xNmAyYWFeYSNta3NgMmRrLi1gLS1kLTBzcw%3D%3D&btag=80000e00028000&cquery=100w_100B_100x_100z_100o&dy_q=1719731297&feature_id=f0150a16a324336cda5d6dd0b69ed299&l=20240630150817C818F271CA64B9DFEC2C
+#EXTINF:-1 tvg-id="BesTV 4K" tvg-name="BesTV 4K" tvg-logo="https://image.5iclub.cloudns.org/file/eed80177c62d32847d8f8.png" group-title="5️⃣i計畫通行",5️⃣i計畫通行
+http://[2409:8087:5e01:34::30]:6610/ZTE_CMS/00000001000000060000000000000202/index.m3u8?IAS
+#EXTINF:-1 tvg-id="视听海南" tvg-name="视听海南" tvg-logo="https://image.5iclub.cloudns.org/file/eed80177c62d32847d8f8.png" group-title="5️⃣i計畫通行",5️⃣i計畫通行
+http://[2409:8087:5e01:34::20]:6610/ZTE_CMS/08984400000000060000000000000440/index.m3u8?IAS
 
 #EXTINF:-1 tvg-id="iPanda" tvg-name="iPanda" tvg-logo="https://image.5iclub.cloudns.org/file/8391f400e08f0ee370d5a.png" group-title="iPanda熊猫频道",都江堰青青
 http://gcalic.v.myalicdn.com/gc/xiongmao20_1/index.m3u8
@@ -257,6 +259,8 @@ http://[2409:8087:1a0b:df::4020]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/
 
 #EXTINF:-1 tvg-name="爱上4K" tvg-logo="https://image.5iclub.cloudns.org/file/567376f2a56c4ab27dd09.png" tvg-logo="" group-title="数字频道",爱上4K
 http://[2409:8087:5e01:34::23]:6610/ZTE_CMS/00000001000000060000000000000459/index.m3u8?IAS
+#EXTINF:-1 tvg-id="苏州4K" tvg-name="苏州4K" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/苏州4K.png" group-title="数字频道",苏州•4K频道
+http://liveshowbak2.kan0512.com/ksznorecord/csztv4k_4k.m3u8
 #EXTINF:-1 tvg-name="欢笑剧场" tvg-logo="https://image.5iclub.cloudns.org/file/a804ce68b6009b5fa0ae7.png" group-title="数字频道",欢笑剧场4K
 https://pi.0472.org/itv/hxjc-4k_8000.m3u8
 #EXTINF:-1 tvg-name="4K超高清电影" tvg-logo="https://image.5iclub.cloudns.org/file/30ae26f4dbcc0e8e372d4.png" group-title="数字频道",4K超高清电影
@@ -419,6 +423,21 @@ http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000047/index.m3u8?
 #EXTINF:-1,tvg-id="爱动漫" tvg-name="iHOT爱动漫" tvg-logo="https://image.5iclub.cloudns.org/file/28213d730531be1fa2cd8.png" group-title="IHOT系列",iHOT爱动漫
 http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000059/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000059&IASHttpSessionId=OTT19019320240419154124000281
 
+
+#EXTINF:-1 tvg-id="江苏城市" tvg-name="江苏城市" tvg-logo="https://image.5iclub.cloudns.org/file/813dfdff017440b0b0f35.png" group-title="江苏频道",江苏城市1
+http://58.220.219.14:9901/tsfile/live/0120_1.m3u8
+#EXTINF:-1 tvg-id="江苏综艺" tvg-name="江苏综艺" tvg-logo="https://image.5iclub.cloudns.org/file/aaedeb2d132ec8fcc1d24.png" group-title="江苏频道",江苏综艺2
+http://58.220.219.14:9901/tsfile/live/0120_2.m3u8
+#EXTINF:-1 tvg-id="江苏城市" tvg-name="江苏城市" tvg-logo="https://image.5iclub.cloudns.org/file/813dfdff017440b0b0f35.png" group-title="江苏频道",江苏城市3
+http://58.220.219.14:9901/tsfile/live/0120_5.m3u8
+#EXTINF:-1 tvg-id="江苏综艺" tvg-name="江苏综艺" tvg-logo="https://image.5iclub.cloudns.org/file/aaedeb2d132ec8fcc1d24.png" group-title="江苏频道",江苏综艺4
+http://58.220.219.14:9901/tsfile/live/0120_6.m3u8
+
+
+#EXTINF:-1 tvg-id="江苏城市" tvg-name="江苏城市" tvg-logo="https://image.5iclub.cloudns.org/file/813dfdff017440b0b0f35.png" group-title="江苏频道",江苏城市
+http://58.220.219.14:9901/tsfile/live/0120_3.m3u8
+#EXTINF:-1 tvg-id="江苏综艺" tvg-name="江苏综艺" tvg-logo="https://image.5iclub.cloudns.org/file/aaedeb2d132ec8fcc1d24.png" group-title="江苏频道",江苏综艺
+http://58.220.219.14:9901/tsfile/live/0120_4.m3u8
 #EXTINF:-1 tvg-id="南京综合" tvg-name="南京综合" tvg-logo="https://image.5iclub.cloudns.org/file/ba47a3b89defa3b875bd9.png" group-title="江苏频道",南京新闻综合
 http://live.nbs.cn/channels/njtv/xwzh/nbs06.m3u8
 #EXTINF:-1 tvg-id="南京教科" tvg-name="南京教科" tvg-logo="https://image.5iclub.cloudns.org/file/b7d9fca277720a89cae5b.png" group-title="江苏频道",南京教科
@@ -587,6 +606,59 @@ http://[2409:8087:5e01:34::21]:6610/ZTE_CMS/08984400000000060000000000000323/ind
 http://[2409:8087:5e01:34::21]:6610/ZTE_CMS/08984400000000060000000000000382/index.m3u8?IAS
 #EXTINF:-1 tvg-id="海南自贸" tvg-name="海南自贸" tvg-logo="https://image.5iclub.cloudns.org/file/14e2583907c0a9312eb5a.png" group-title="海南频道",海南自贸
 http://[2409:8087:5e01:34::21]:6610/ZTE_CMS/08984400000000060000000000000320/index.m3u8?IAS
+#EXTINF:-1 tvg-id="三亚综合" tvg-name="三亚新闻综合" tvg-logo="https://image.5iclub.cloudns.org/file/95f83a25a653a9f71a0af.png" group-title="海南频道",三亚新闻综合
+http://[2409:8087:5e01:34::21]:6610/ZTE_CMS/00000001000000060000000000000136/index.m3u8?IAS
+
+#EXTINF:-1 tvg-id="石家庄新闻综合" tvg-name="石家庄新闻综合" tvg-logo="https://image.5iclub.cloudns.org/file/d413547759f37902a34d6.png" group-title="河北频道",石家庄新闻综合
+http://pluslive1.sjzntv.cn/xmzh/playlist.m3u8
+#EXTINF:-1 tvg-id="石家庄娱乐" tvg-name="石家庄娱乐" tvg-logo="https://image.5iclub.cloudns.org/file/26e6819fe508df6034593.png" group-title="河北频道",石家庄娱乐
+http://pluslive1.sjzntv.cn/yule/playlist.m3u8
+#EXTINF:-1 tvg-id="石家庄生活" tvg-name="石家庄生活" tvg-logo="https://image.5iclub.cloudns.org/file/0d4026ede214d5556c61f.png" group-title="河北频道",石家庄生活
+http://pluslive1.sjzntv.cn/shenghuo/playlist.m3u8
+#EXTINF:-1 tvg-id="石家庄都市" tvg-name="石家庄都市" tvg-logo="https://image.5iclub.cloudns.org/file/22d3bedb93b9ba4282d34.png" group-title="河北频道",石家庄都市
+http://pluslive1.sjzntv.cn/dushi/playlist.m3u8
+
+#EXTINF:-1 tvg-id="东莞新闻综合" tvg-name="东莞新闻综合" tvg-logo="https://image.5iclub.cloudns.org/file/ebe905c75cec645ea1699.png" group-title="广东频道",东莞新闻综合「官方」
+https://stream.sun0769.com/dgrtv1/mp4tv1_1500/index.m3u8
+#EXTINF:-1 tvg-id="东莞生活资讯" tvg-name="东莞生活资讯" tvg-logo="https://image.5iclub.cloudns.org/file/1e08b8fb9fe1c2ce3ed5a.png" group-title="广东频道",东莞生活资讯「官方」
+https://stream.sun0769.com/dgrtv1/mp4tv2_1500/index.m3u8
+
+
+#EXTINF:-1 tvg-id="云南娱乐" tvg-name="云南娱乐" tvg-logo="https://image.5iclub.cloudns.org/file/e435f6810b9af62c3070b.png" group-title="云南频道",云南娱乐
+http://tvlive.ynradio.com/live/yunnanyule/playlist.m3u8
+#EXTINF:-1 tvg-id="云南少儿" tvg-name="云南少儿" tvg-logo="https://image.5iclub.cloudns.org/file/7dc5555c0e179a637d4e0.png" group-title="云南频道",云南少儿
+http://tvlive.ynradio.com/live/yunnanshaoer/playlist.m3u8
+#EXTINF:-1 tvg-id="云南都市" tvg-name="云南都市" tvg-logo="https://image.5iclub.cloudns.org/file/48d7b91c137c258aa88cb.png" group-title="云南频道",云南都市
+http://tvlive.ynradio.com/live/yunnandushi/playlist.m3u8
+#EXTINF:-1 tvg-id="澜湄国际" tvg-name="澜湄国际" tvg-logo="https://image.5iclub.cloudns.org/file/6e17dcff7a9f021ea05b5.png" group-title="云南频道",澜湄国际
+http://tvlive.ynradio.com/live/yunnanguoji/playlist.m3u8
+
+#EXTINF:-1,tvg-id="青海都市" tvg-name="青海都市" tvg-logo="https://image.5iclub.cloudns.org/file/55d97b9ca073d15410e3e.png" group-title="青海频道",青海都市
+http://stream.qhbtv.com/qhds/sd/live.m3u8?_upt=efeefead1707378479
+#EXTINF:-1,tvg-id="青海经视" tvg-name="青海经视" tvg-logo="https://image.5iclub.cloudns.org/file/d7f6d9991233445a5c565.png" group-title="青海频道",青海经视
+http://stream.qhbtv.com/qhsh/sd/live.m3u8?_upt=0ca7de7f1707366913
+
+#EXTINF:-1 tvg-id="广西影视" tvg-name="广西影视" tvg-logo="https://image.5iclub.cloudns.org/file/4e87890892c91c26ef1bc.png" group-title="广西频道",广西影视
+http://116.9.204.242:9901/tsfile/live/0124_1.m3u8
+#EXTINF:-1 tvg-id="广西综艺" tvg-name="广西综艺旅游" tvg-logo="https://image.5iclub.cloudns.org/file/20282a718029b8f3ee424.png" group-title="广西频道",广西综艺旅游
+http://116.9.204.242:9901/tsfile/live/0125_1.m3u8
+#EXTINF:-1 tvg-id="广西都市" tvg-name="广西都市" tvg-logo="https://image.5iclub.cloudns.org/file/af45c3df46922b482c09f.png" group-title="广西频道",广西都市
+http://116.9.204.242:9901/tsfile/live/1002_1.m3u8
+#EXTINF:-1,tvg-id="南宁文旅生活" tvg-name="南宁文旅生活" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/南宁文旅生活.png" group-title="广西频道",南宁文旅生活
+http://hls.nntv.cn/nnlive/WLSH_24.m3u8
+#EXTINF:-1,tvg-id="南宁公共" tvg-name="南宁公共" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/南宁公共.png" group-title="广西频道",南宁公共
+https://hls.nntv.cn/nnlive/GGPD_24.m3u8
+#EXTINF:-1,tvg-id="南宁新闻综合" tvg-name="南宁新闻综合" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/南宁新闻综合.png" group-title="广西频道",南宁新闻综合
+https://hls.nntv.cn/nnlive/XWZH_24.m3u8
+
+#EXTINF:-1,tvg-id="宁夏文旅" tvg-name="宁夏文旅" tvg-logo="https://image.5iclub.cloudns.org/file/739c3150c6b50c22ba292.png" group-title="宁夏频道",宁夏文旅
+https://hls.ningxiahuangheyun.com/live/nxwl1M.m3u8
+#EXTINF:-1,tvg-id="宁夏公共" tvg-name="宁夏公共" tvg-logo="https://image.5iclub.cloudns.org/file/653027c88495a4d74d869.png" group-title="宁夏频道",宁夏公共
+https://hls.ningxiahuangheyun.com/live/nxgg1M.m3u8
+#EXTINF:-1,tvg-id="宁夏经济" tvg-name="宁夏经济" tvg-logo="https://image.5iclub.cloudns.org/file/cebba102b3b85d0f28da5.png" group-title="宁夏频道",宁夏经济
+https://hls.ningxiahuangheyun.com/live/nxjj1M.m3u8
+#EXTINF:-1,tvg-id="宁夏少儿" tvg-name="宁夏少儿" tvg-logo="https://image.5iclub.cloudns.org/file/b77ae06e93cc84883ffbb.png" group-title="宁夏频道",宁夏少儿
+https://hls.ningxiahuangheyun.com/live/nxse1M.m3u8
 
 #EXTINF:-1 tvg-logo="https://image.5iclub.cloudns.org/file/5ff7ce2e738aed7c17a94.png" tvg-name="咪咕全民热练" group-title="咪咕视频",咪咕运动「IPV6」
 http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226508/index.m3u8
@@ -599,8 +671,6 @@ http://[2409:8087:1a01:df::4033]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/322
 #EXTINF:-1 tvg-logo="https://image.5iclub.cloudns.org/file/ac3bf381e23c39007e331.png" group-title="咪咕视频",咪咕直播 𝟜「IPV6」
 http://[2409:8087:1a01:df::4046]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226472/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://image.5iclub.cloudns.org/file/e24347b54fb47ca5c4556.png" group-title="BesTV•体育",BesTV 4K 「IPV6」
-http://[2409:8087:5e01:34::30]:6610/ZTE_CMS/00000001000000060000000000000202/index.m3u8?IAS
 #EXTINF:-1 tvg-logo="https://image.5iclub.cloudns.org/file/e24347b54fb47ca5c4556.png" group-title="BesTV•体育",BesTV 𝟙「IPV6」
 http://[2409:8087:5e08:24::12]:6610/000000001000/2000000002000000024/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000024&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
 #EXTINF:-1 tvg-logo="https://image.5iclub.cloudns.org/file/e24347b54fb47ca5c4556.png" group-title="BesTV•体育",BesTV 𝟚「IPV6」
