@@ -1,6 +1,0 @@
-#EXTINF:-1 tvg-name="湖南卫视" tvg-logo="https://live.fanmingming.com/tv/湖南卫视.png" group-title="测试频道",湖南卫视1
-https://pi.0472.org/itv/hnwsH265.m3u8
-#EXTINF:-1 tvg-name="湖南卫视" tvg-logo="https://live.fanmingming.com/tv/湖南卫视.png" group-title="测试频道",湖南卫视2
-https://pi.0472.org/hls/hunws.m3u8
-#EXTINF:-1 tvg-name="重温经典" tvg-logo="https://live.fanmingming.com/tv/重温经典.png" group-title="测试频道",重温经典
-https://pi.0472.org/itv/CWJD.m3u8
