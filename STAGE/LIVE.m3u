@@ -259,7 +259,7 @@ http://[2409:8087:1a0b:df::4020]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/
 
 #EXTINF:-1 tvg-name="爱上4K" tvg-logo="https://image.5iclub.cloudns.org/file/567376f2a56c4ab27dd09.png" tvg-logo="" group-title="数字频道",爱上4K
 http://[2409:8087:5e01:34::23]:6610/ZTE_CMS/00000001000000060000000000000459/index.m3u8?IAS
-#EXTINF:-1 tvg-id="苏州4K" tvg-name="苏州4K" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/苏州4K.png" group-title="数字频道",苏州•4K频道
+#EXTINF:-1 tvg-id="苏州4K" tvg-name="苏州4K" tvg-logo="https://image.5iclub.cloudns.org/file/257d7b79fb84837d399e4.png" group-title="数字频道",苏州•4K频道
 http://liveshowbak2.kan0512.com/ksznorecord/csztv4k_4k.m3u8
 #EXTINF:-1 tvg-name="欢笑剧场" tvg-logo="https://image.5iclub.cloudns.org/file/a804ce68b6009b5fa0ae7.png" group-title="数字频道",欢笑剧场4K
 https://pi.0472.org/itv/hxjc-4k_8000.m3u8
