@@ -1,7 +1,7 @@
 #EXTM3U x-tvg-url="https://epg.5i計畫通行.cloudns.org" catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}"
 
-#EXTINF:-1 tvg-id="5️⃣i計畫通行" tvg-name="5️⃣i計畫通行" tvg-logo="https://image.5iclub.cloudns.org/file/80e7be92246b354033d54.png" group-title="5️⃣i計畫通行",5️⃣i計畫通行
-https://image.5iclub.cloudns.org/file/80e7be92246b354033d54.png
+#EXTINF:-1 tvg-id="5️⃣i計畫通行" tvg-name="5️⃣i計畫通行" tvg-logo="https://image.5iclub.cloudns.org/file/eed80177c62d32847d8f8.png" group-title="5️⃣i計畫通行",5️⃣i計畫通行
+https://yuwell-loong.github.io/iCloud/STAGE/%E8%A8%88%E5%8A%83%E9%80%9A%E8%A1%8C/%E3%80%8A%E7%A0%B4%E9%98%B2%E6%AD%8C%E3%80%8B%E5%A4%A7%E5%9D%A6%E8%AA%A0.mp4
 
 #EXTINF:-1 tvg-id="iPanda" tvg-name="iPanda" tvg-logo="https://image.5iclub.cloudns.org/file/8391f400e08f0ee370d5a.png" group-title="iPanda熊猫频道",都江堰青青
 http://gcalic.v.myalicdn.com/gc/xiongmao20_1/index.m3u8
