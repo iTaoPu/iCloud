@@ -635,11 +635,11 @@ http://116.9.204.242:9901/tsfile/live/0124_1.m3u8
 http://116.9.204.242:9901/tsfile/live/0125_1.m3u8
 #EXTINF:-1 tvg-id="广西都市" tvg-name="广西都市" tvg-logo="https://image.5iclub.cloudns.org/file/af45c3df46922b482c09f.png" group-title="广西频道",广西都市
 http://116.9.204.242:9901/tsfile/live/1002_1.m3u8
-#EXTINF:-1,tvg-id="南宁文旅生活" tvg-name="南宁文旅生活" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/南宁文旅生活.png" group-title="广西频道",南宁文旅生活
+#EXTINF:-1,tvg-id="南宁文旅生活" tvg-name="南宁文旅生活" tvg-logo="https://image.5iclub.cloudns.org/file/1dfc9b9586a85a66c6ec4.png" group-title="广西频道",南宁文旅生活
 http://hls.nntv.cn/nnlive/WLSH_24.m3u8
-#EXTINF:-1,tvg-id="南宁公共" tvg-name="南宁公共" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/南宁公共.png" group-title="广西频道",南宁公共
+#EXTINF:-1,tvg-id="南宁公共" tvg-name="南宁公共" tvg-logo="https://image.5iclub.cloudns.org/file/105d77dfee7f42514612b.png" group-title="广西频道",南宁公共
 https://hls.nntv.cn/nnlive/GGPD_24.m3u8
-#EXTINF:-1,tvg-id="南宁新闻综合" tvg-name="南宁新闻综合" tvg-logo="https://live.5iclub.dedyn.io/STAGE/HD/南宁新闻综合.png" group-title="广西频道",南宁新闻综合
+#EXTINF:-1,tvg-id="南宁新闻综合" tvg-name="南宁新闻综合" tvg-logo="https://image.5iclub.cloudns.org/file/69b5d1a543d262372c74d.png" group-title="广西频道",南宁新闻综合
 https://hls.nntv.cn/nnlive/XWZH_24.m3u8
 
 #EXTINF:-1,tvg-id="宁夏文旅" tvg-name="宁夏文旅" tvg-logo="https://image.5iclub.cloudns.org/file/739c3150c6b50c22ba292.png" group-title="宁夏频道",宁夏文旅
