@@ -191,8 +191,6 @@ https://itv.lat/hls?channel=bjwsH265&token=240702
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226307/index.m3u8
 #EXTINF:-1 tvg-name="湖南卫视" tvg-logo="https://image.5iclub.cloudns.org/file/040040388ebac1d5a41f2.png" group-title="卫视频道",湖南卫视 𝟚
 https://itv.lat/hls?channel=hnwsH265&token=240702
-#EXTINF:-1 tvg-name="湖南卫视" tvg-logo="https://image.5iclub.cloudns.org/file/040040388ebac1d5a41f2.png" group-title="卫视频道",湖南卫视 𝟛
-https://itv.lat/hls?channel=hunws&token=240702
 #EXTINF:-1 tvg-name="东方卫视" tvg-logo="https://image.5iclub.cloudns.org/file/e5209b85abb643f5e5c30.png" group-title="卫视频道",东方卫视 𝟙
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226345/index.m3u8
 #EXTINF:-1 tvg-name="东方卫视" tvg-logo="https://image.5iclub.cloudns.org/file/e5209b85abb643f5e5c30.png" group-title="卫视频道",东方卫视 𝟚
