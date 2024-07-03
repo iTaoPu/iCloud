@@ -933,8 +933,9 @@ https://sjlivecdn9.cbg.cn/202407021657/app_2/_definst_/ls_3.stream/chunklist.m3u
 #EXTINF:-1 tvg-id="时尚购物" tvg-logo="https://image.5iclub.cloudns.org/file/b12cc530d0f5a5dbc9ca8.png" group-title="重庆频道",时尚购物
 https://tvlive.ugoshop.com/ugotvlive/ssgotv.m3u8?auth_key=2312509421-0-0-6642ec3645caa943da6855a9ef7e2129
 
-#EXTINF:-1 tvg-id="延边新闻综合" tvg-logo="https://image.5iclub.cloudns.org/file/48a14dc3b2ca866c41f76.png" group-title="吉林频道",延边新闻综合https://live.ybtvyun.com/video/s10006-ff4eb5dba33d/index.m3u8
-#EXTINF:-1 tvg-id="延边汉语综合" tvg-logo="https://image.5iclub.cloudns.org/file/8b95183dad69edc1c7bbd.png" group-title="吉林频道",延边汉语综合https://live.ybtvyun.com/video/s10006-ff4eb5dba33d/index.m3u8
+#EXTINF:-1 tvg-id="延边新闻综合" tvg-logo="https://image.5iclub.cloudns.org/file/48a14dc3b2ca866c41f76.png" group-title="吉林频道",延边新闻综合
+https://live.ybtvyun.com/video/s10006-ff4eb5dba33d/index.m3u8
+#EXTINF:-1 tvg-id="延边汉语综合" tvg-logo="https://image.5iclub.cloudns.org/file/8b95183dad69edc1c7bbd.png" group-title="吉林频道",延边汉语综合
 https://live.ybtvyun.com/video/s10006-e9c6f9e4d53b/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://image.5iclub.cloudns.org/file/5ff7ce2e738aed7c17a94.png" tvg-name="咪咕全民热练" group-title="咪咕视频",咪咕运动「IPV6」
