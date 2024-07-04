@@ -348,6 +348,8 @@ http://liveshowbak2.kan0512.com/ksznorecord/csztv4k_4k.m3u8
 https://itv.lat/hls?channel=hxjc-4k_8000&token=732106
 #EXTINF:-1 tvg-name="4K超高清电影" tvg-logo="https://image.5iclub.cloudns.org/file/30ae26f4dbcc0e8e372d4.png" group-title="数字频道",4K超高清电影
 https://itv.lat/hls?channel=emdy4k_8000&token=732106
+#EXTINF:-1 tvg-name="IPTV5+" tvg-logo="https://image.5iclub.cloudns.org/file/9ee53b216d3be0908232d.png" group-title="数字频道",IPTV5+ 体育赛事
+http://[2409:8087:5e00:24::1f]:6060/ZTE_CMS/00000001000000060000000000000461/index.m3u8
 #EXTINF:-1 tvg-name="CHC影迷电影" tvg-logo="https://image.5iclub.cloudns.org/file/bd2516dcc852eae61e4e4.png" group-title="数字频道",CHC影迷电影 𝟙
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN6380764b172c9/index.m3u8?m3u8_level=2
 #EXTINF:-1 tvg-name="CHC影迷电影" tvg-logo="https://image.5iclub.cloudns.org/file/bd2516dcc852eae61e4e4.png" group-title="数字频道",CHC影迷电影 𝟚
@@ -666,7 +668,7 @@ http://php.jdshipin.com:8880/iptv.php?id=hnjy
 
 #EXTINF:-1 tvg-id="湖北综合" tvg-name="湖北综合" tvg-logo="https://image.5iclub.cloudns.org/file/bd943d742b413e8c9c482.png" group-title="湖北频道",湖北综合
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN638072216f7da/index.m3u8?AuthInfo=9kOOdBn7MFF%2F2bWjKgahUUAdKgLqNB5aOAUhcp5CeNLx3R3LdIBdA5q61lut1LwZcw4SC2tJubc%2Bq5t%2F61jvWCtjrJL0x%2BHncPgdmcbBW9I
-#EXTINF:-1 tvg-id="湖北影视" tvg-name="湖北影视" tvg-logo="https://image.5iclub.cloudns.org/file/b95e4b817d0ed7590031a.png" group-title="湖北频道",湖北影视
+#EXTINF:-1 tvg-id="湖北影视" tvg-name="湖北影视" tvg-logo="https://image.5iclub.cloudns.org/file/b95e4b817d0ed7590031a.png" group-title="湖北频道",湖北影视 
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN6380728abccd2/index.m3u8?AuthInfo=9kOOdBn7MFF%2F2bWjKgahUUAdKgLqNB5aOAUhcp5CeNKU1xiiKGJYFBZK9RpEkaggogtHJZW6nJQqLppbEYE%2BqJ9kJW%2FMvKldfS2dCii9VSI
 #EXTINF:-1 tvg-id="湖北教育" tvg-name="湖北教育" tvg-logo="https://image.5iclub.cloudns.org/file/2849c230ceb522f059e6f.png" group-title="湖北频道",湖北教育
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN638072a6cbbf6/index.m3u8?AuthInfo=9kOOdBn7MFF%2F2bWjKgahUUAdKgLqNB5aOAUhcp5CeNKTFQuOKNd5i0HMa3ydMWIQ6kJ2fBJGJ77BLTXK72CqUYQsX3ZguYt0954s9hfZTfc
@@ -739,6 +741,10 @@ http://[2409:8087:5e01:34::21]:6610/ZTE_CMS/08984400000000060000000000000382/ind
 http://[2409:8087:5e01:34::21]:6610/ZTE_CMS/08984400000000060000000000000320/index.m3u8?IAS
 #EXTINF:-1 tvg-id="三亚综合" tvg-name="三亚新闻综合" tvg-logo="https://image.5iclub.cloudns.org/file/95f83a25a653a9f71a0af.png" group-title="海南频道",三亚新闻综合
 http://[2409:8087:5e01:34::21]:6610/ZTE_CMS/00000001000000060000000000000136/index.m3u8?IAS
+#EXTINF:-1 tvg-id="新海南" tvg-name="新海南" tvg-logo="https://image.5iclub.cloudns.org/file/2f61b3179f505cbaf1bcc.png" group-title="海南频道" ,新海南
+http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010090/index.m3u8
+#EXTINF:-1 tvg-id="海南导视" tvg-name="海南导视" tvg-logo="https://image.5iclub.cloudns.org/file/00481673d52f406fb68cb.png" group-title="海南频道" ,海南导视
+http://[2409:8087:5e00:24::1f]:6060/ZTE_CMS/08984400000000060000000000000441/index.m3u8
 
 
 #EXTINF:-1 tvg-id="石家庄新闻综合" tvg-name="石家庄新闻综合" tvg-logo="https://image.5iclub.cloudns.org/file/d413547759f37902a34d6.png" group-title="河北频道",石家庄新闻综合
@@ -754,8 +760,10 @@ http://pluslive1.sjzntv.cn/dushi/playlist.m3u8
 http://116.162.6.192/4403-txt.otvstream.otvcloud.com/otv/skcc/live/channel58/1300.m3u8
 #EXTINF:-1 tvg-id="广东体育" tvg-logo="https://image.5iclub.cloudns.org/file/c91a930aa236e33bf250b.png" group-title="广东频道",广东体育
 http://116.162.6.192/4403-txt.otvstream.otvcloud.com/otv/skcc/live/channel34/1300.m3u8
-#EXTINF:-1 tvg-id="广东珠江" tvg-logo="https://image.5iclub.cloudns.org/file/f3ce31616823584371516.png" group-title="广东频道",广东珠江
+#EXTINF:-1 tvg-id="广东珠江" tvg-logo="https://image.5iclub.cloudns.org/file/f3ce31616823584371516.png" group-title="广东频道",广东珠江 𝟙
 http://116.162.6.192/4403-txt.otvstream.otvcloud.com/otv/skcc/live/channel65/1300.m3u8
+#EXTINF:-1 tvg-id="广东珠江" tvg-logo="https://image.5iclub.cloudns.org/file/f3ce31616823584371516.png" group-title="广东频道",广东珠江 𝟚
+http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010091/index.m3u8
 #EXTINF:-1 tvg-id="广东民生" tvg-logo="https://image.5iclub.cloudns.org/file/52b8aeee66f34aab44556.png" group-title="广东频道",广东民生
 http://116.162.6.192/4403-txt.otvstream.otvcloud.com/otv/skcc/live/channel45/1300.m3u8
 #EXTINF:-1 tvg-id="广东少儿" tvg-logo="https://image.5iclub.cloudns.org/file/2317ca9630a2fc1a40e74.png" group-title="广东频道",广东少儿
@@ -939,8 +947,10 @@ https://live.ybtvyun.com/video/s10006-ff4eb5dba33d/index.m3u8
 #EXTINF:-1 tvg-id="延边汉语综合" tvg-logo="https://image.5iclub.cloudns.org/file/8b95183dad69edc1c7bbd.png" group-title="吉林频道",延边汉语综合
 https://live.ybtvyun.com/video/s10006-e9c6f9e4d53b/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://image.5iclub.cloudns.org/file/5ff7ce2e738aed7c17a94.png" tvg-name="咪咕全民热练" group-title="咪咕视频",咪咕运动「IPV6」
+#EXTINF:-1 tvg-logo="https://image.5iclub.cloudns.org/file/5ff7ce2e738aed7c17a94.png" tvg-name="咪咕全民热练" group-title="咪咕视频",咪咕全民热练 𝟙「IPV6」
 http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226508/index.m3u8
+#EXTINF:-1 tvg-logo="https://image.5iclub.cloudns.org/file/5ff7ce2e738aed7c17a94.png" tvg-name="咪咕全民热练" group-title="咪咕视频",咪咕全民热练 𝟚「IPV6」
+http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010147/index.m3u8
 #EXTINF:-1 tvg-logo="https://image.5iclub.cloudns.org/file/ac3bf381e23c39007e331.png" group-title="咪咕视频",咪咕直播 𝟙「IPV6」
 http://[2409:8087:1a01:df::404d]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226124/index.m3u8
 #EXTINF:-1 tvg-logo="https://image.5iclub.cloudns.org/file/ac3bf381e23c39007e331.png" group-title="咪咕视频",咪咕直播 𝟚「IPV6」
