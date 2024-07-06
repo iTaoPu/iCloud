@@ -51,85 +51,85 @@ http://gcalic.v.myalicdn.com/gc/ipanda1000_1td/index.m3u8
 #EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://image.5iclub.cloudns.org/file/f281c92fa229ca37d718e.png" group-title="央视频道",CCTV-1 综合 𝟙
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN111128BESTVSMGSMG/index.m3u8?AuthInfo=9kOOdBn7MFF%2F2bWjKgahUU6FFmRK8Hl0ytyd5e5kWGEwoDIwMxbrlyyVy9x6ZDKnldIYKOjBOUjRyoym5n7Kg0yIYstFTUfqtC14fzxhy5Y
 #EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://image.5iclub.cloudns.org/file/f281c92fa229ca37d718e.png" group-title="央视频道",CCTV-1 综合 𝟚
-https://itv.lat/hls?channel=CCTV-1H265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=CCTV-1H265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="CCTV2" tvg-logo="https://image.5iclub.cloudns.org/file/94def2ffcccbf884a56c0.png" group-title="央视频道",CCTV-2 财经 𝟙
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN5000036BESTVSMGSMG/index.m3u8?AuthInfo=9kOOdBn7MFF%2F2bWjKgahUSpr1AVNI633ampcuzdN%2BfGVSARKsxkWGZw7vFUuOj2QZHeRzosIxVbl7i2QHFATHA3k5wDWG1qHkZQAleNv%2FbI
 #EXTINF:-1 tvg-name="CCTV2" tvg-logo="https://image.5iclub.cloudns.org/file/94def2ffcccbf884a56c0.png" group-title="央视频道",CCTV-2 财经 𝟚
-https://itv.lat/hls?channel=CCTV-2H265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=CCTV-2H265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="CCTV3" tvg-logo="https://image.5iclub.cloudns.org/file/910683d987602c1475e75.png" group-title="央视频道",CCTV-3 综艺 𝟙
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN638727c125355/index.m3u8?AuthInfo=9kOOdBn7MFF%2F2bWjKgahUSPTZ4CK5oLfjaEYe9dogNMUNNEYLCPUtKY62j1Wp5u04wipypKUQ1TTuR2lXvBl5YpHqBJmlA19x22TD9bUOjk
 #EXTINF:-1 tvg-name="CCTV3" tvg-logo="https://image.5iclub.cloudns.org/file/910683d987602c1475e75.png" group-title="央视频道",CCTV-3 综艺 𝟚
-https://itv.lat/hls?channel=CCTV-3H265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=CCTV-3H265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="CCTV4" tvg-logo="https://image.5iclub.cloudns.org/file/ae51a1dc6fbbdd290ef8f.png" group-title="央视频道",CCTV-4 中文国际 𝟙
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN5000037BESTVSMGSMG/index.m3u8?AuthInfo=9kOOdBn7MFF%2F2bWjKgahUSpr1AVNI633ampcuzdN%2BfH0ZQXwaiVktPr6ILPKXqwOUC2ZXft7ZULN6h9qLQPFOTSlVTfophiKaMb8h1kPV74
 #EXTINF:-1 tvg-name="CCTV4" tvg-logo="https://image.5iclub.cloudns.org/file/ae51a1dc6fbbdd290ef8f.png" group-title="央视频道",CCTV-4 中文国际 𝟚
-https://itv.lat/hls?channel=CCTV-4H265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=CCTV-4H265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="CCTV5" tvg-logo="https://image.5iclub.cloudns.org/file/5dfeca628fff56e1c7a34.png" group-title="央视频道",CCTV-5 体育 𝟙
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN638727e617ca0/index.m3u8?AuthInfo=9kOOdBn7MFF%2F2bWjKgahUSPTZ4CK5oLfjaEYe9dogNMSXw4ajlL%2FoUYC2RZQQDco6uQSifXBocz5ID6RePfIKQ4rFWiHjq%2FeZoDmrzW%2FKlw
 #EXTINF:-1 tvg-name="CCTV5" tvg-logo="https://image.5iclub.cloudns.org/file/5dfeca628fff56e1c7a34.png" group-title="央视频道",CCTV-5 体育 𝟚
-https://itv.lat/hls?channel=CCTV-5H265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=CCTV-5H265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="CCTV5PLUS" tvg-logo="https://image.5iclub.cloudns.org/file/f31f3cd58d7697cfb4ad4.png" group-title="央视频道",CCTV-5+ 体育赛事 𝟙
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN63872908d48f9/index.m3u8?AuthInfo=9kOOdBn7MFF%2F2bWjKgahUSBx06ZL9Bo6JOM%2BSTjxZRK254G1jtietGzDaHvFNRtjXOvFnbf%2BTao33JqYlfMYYn2z3agOn9gvNMT9KmBaR9o
 #EXTINF:-1 tvg-name="CCTV5PLUS" tvg-logo="https://image.5iclub.cloudns.org/file/f31f3cd58d7697cfb4ad4.png" group-title="央视频道",CCTV-5+ 体育赛事 𝟚
-https://itv.lat/hls?channel=CCTV-5plusH265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=CCTV-5plusH265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="CCTV6" tvg-logo="https://image.5iclub.cloudns.org/file/649e347cb21b2e7cce68a.png" group-title="央视频道",CCTV-6 电影 𝟙
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN638728804b1f9/index.m3u8?AuthInfo=9kOOdBn7MFF%2F2bWjKgahUdDh4EPdDnvGlSBkYaxFdazJhFQmuq4XUiks9ZrIlJN%2BknLs8H%2BSxcDXy%2BTesEc8Q0KCN89MjYoj85Sol1kbKI4
 #EXTINF:-1 tvg-name="CCTV6" tvg-logo="https://image.5iclub.cloudns.org/file/649e347cb21b2e7cce68a.png" group-title="央视频道",CCTV-6 电影 𝟚
-https://itv.lat/hls?channel=CCTV-6H265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=CCTV-6H265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="CCTV7" tvg-logo="https://image.5iclub.cloudns.org/file/2fe3b47173f829ee8e267.png" group-title="央视频道",CCTV-7 国防军事 𝟙
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN5000038BESTVSMGSMG/index.m3u8?AuthInfo=9kOOdBn7MFF%2F2bWjKgahUSpr1AVNI633ampcuzdN%2BfHYKFve4MwNzRa0jPXeHjqnBjPmzSdKDNWNHhnZSaMGCXKmdx8d%2BnYdhVK5ge22ot4
 #EXTINF:-1 tvg-name="CCTV7" tvg-logo="https://image.5iclub.cloudns.org/file/2fe3b47173f829ee8e267.png" group-title="央视频道",CCTV-7 国防军事 𝟚
-https://itv.lat/hls?channel=CCTV-7H265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=CCTV-7H265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="CCTV8" tvg-logo="https://image.5iclub.cloudns.org/file/3021ad265c222aadfaf14.png" group-title="央视频道",CCTV-8 电视剧 𝟙
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN638728970aa82/index.m3u8?AuthInfo=9kOOdBn7MFF%2F2bWjKgahUdDh4EPdDnvGlSBkYaxFdaymid9ta2tVUW0%2FdVrFqszC1EVEkAbpip1IYxn%2Ba2aA%2BVAihIiw9D8ejUsDbfU0K68
 #EXTINF:-1 tvg-name="CCTV8" tvg-logo="https://image.5iclub.cloudns.org/file/3021ad265c222aadfaf14.png" group-title="央视频道",CCTV-8 电视剧 𝟚
-https://itv.lat/hls?channel=CCTV-8H265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=CCTV-8H265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="CCTV9" tvg-logo="https://image.5iclub.cloudns.org/file/e41dcffab45e10d35a43f.png" group-title="央视频道",CCTV-9 纪录 𝟙
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN5000039BESTVSMGSMG/index.m3u8?AuthInfo=9kOOdBn7MFF%2F2bWjKgahUSpr1AVNI633ampcuzdN%2BfHArfvJF2pWpm4RxcBNhZ7j9vEUeCQte%2BbQaOGNIUEEK%2B3RBE1BC9EUsM18gnb%2FyAA
 #EXTINF:-1 tvg-name="CCTV9" tvg-logo="https://image.5iclub.cloudns.org/file/e41dcffab45e10d35a43f.png" group-title="央视频道",CCTV-9 纪录 𝟚
-https://itv.lat/hls?channel=CCTV-9H265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=CCTV-9H265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="CCTV10" tvg-logo="https://image.5iclub.cloudns.org/file/b223de73a2594a19d6b0a.png" group-title="央视频道",CCTV-10 科教 𝟙
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN3949784BESTVSMGSMG/index.m3u8?AuthInfo=9kOOdBn7MFF%2F2bWjKgahUXt3TPFwzzdHCkOT9AjSv5OuXozn3alq9%2BUx7ZLG1w9aOfkLjZvYj56D3xkOAtSOIoLsdw8c1%2BCwLDg1aS4esN4
 #EXTINF:-1 tvg-name="CCTV10" tvg-logo="https://image.5iclub.cloudns.org/file/b223de73a2594a19d6b0a.png" group-title="央视频道",CCTV-10 科教 𝟚
-https://itv.lat/hls?channel=CCTV-10H265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=CCTV-10H265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="CCTV11" tvg-logo="https://image.5iclub.cloudns.org/file/90e504237c370b471e63f.png" group-title="央视频道",CCTV-11 戏曲 𝟙
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN6000053BESTVSMGSMG/index.m3u8?AuthInfo=9kOOdBn7MFF%2F2bWjKgahUTWDyIgRkFJBAHMhA2ayG0Qj2xHA4vdPGsjBbxSL3p%2FmAObVTfznR%2Fpc%2B76QYmLRMuL3Lj9iabhv8arW7kJe6%2F4
 #EXTINF:-1 tvg-name="CCTV11" tvg-logo="https://image.5iclub.cloudns.org/file/90e504237c370b471e63f.png" group-title="央视频道",CCTV-11 戏曲 𝟚
-https://itv.lat/hls?channel=CCTV-11-H265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=CCTV-11-H265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="CCTV12" tvg-logo="https://image.5iclub.cloudns.org/file/494630f300be655c39ad6.png" group-title="央视频道",CCTV-12 社会与法 𝟙
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN5000040BESTVSMGSMG/index.m3u8?AuthInfo=9kOOdBn7MFF%2F2bWjKgahUd3JM2PCgDefrKOVZLNt0QMAmpLefguRLiOPXiDRWhxHg8yim2giTBA8RILsb%2B8Y5pkFUyZBE%2FkNJAbwncEegkU
 #EXTINF:-1 tvg-name="CCTV12" tvg-logo="https://image.5iclub.cloudns.org/file/494630f300be655c39ad6.png" group-title="央视频道",CCTV-12 社会与法 𝟚
-https://itv.lat/hls?channel=CCTV-12H265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=CCTV-12H265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="CCTV13" tvg-logo="https://image.5iclub.cloudns.org/file/fea0ebed0d3942ca3636b.png" group-title="央视频道",CCTV-13 新闻 𝟙
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN6000054BESTVSMGSMG/index.m3u8?AuthInfo=9kOOdBn7MFF%2F2bWjKgahUTWDyIgRkFJBAHMhA2ayG0SuXozn3alq9%2BUx7ZLG1w9awc14iEUxQ5VsTsr5pEBsmF56tXUfsukRUpygmTCKvAI
 #EXTINF:-1 tvg-name="CCTV13" tvg-logo="https://image.5iclub.cloudns.org/file/fea0ebed0d3942ca3636b.png" group-title="央视频道",CCTV-13 新闻 𝟚
-https://itv.lat/hls?channel=CCTV-xw&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=CCTV-xw&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="CCTV14" tvg-logo="https://image.5iclub.cloudns.org/file/8e57a14bfe2d0aa00e57a.png" group-title="央视频道",CCTV-14 少儿 𝟙
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN3949788BESTVSMGSMG/index.m3u8?AuthInfo=9kOOdBn7MFF%2F2bWjKgahUXt3TPFwzzdHCkOT9AjSv5PYKFve4MwNzRa0jPXeHjqnp7khdLaCMP6L4QpTf84Oz6DvCG1%2BJ81QvStkxO%2FoGm8
 #EXTINF:-1 tvg-name="CCTV14" tvg-logo="https://image.5iclub.cloudns.org/file/8e57a14bfe2d0aa00e57a.png" group-title="央视频道",CCTV-14 少儿 𝟚
-https://itv.lat/hls?channel=CCTV-14H265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=CCTV-14H265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="CCTV15" tvg-logo="https://image.5iclub.cloudns.org/file/783a747fed8f9244157e2.png" group-title="央视频道",CCTV-15 音乐 𝟙
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN6000055BESTVSMGSMG/index.m3u8?AuthInfo=9kOOdBn7MFF%2F2bWjKgahUTWDyIgRkFJBAHMhA2ayG0Tdo%2FUL80msfbhDYvoWpNl31Dy7jHvMl%2FzVUrNxhL1ek1YEGVDZ7lCg0LtKJY4Ku%2B8
 #EXTINF:-1 tvg-name="CCTV15" tvg-logo="https://image.5iclub.cloudns.org/file/783a747fed8f9244157e2.png" group-title="央视频道",CCTV-15 音乐 𝟚
-https://itv.lat/hls?channel=CCTV-15-yyH265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=CCTV-15-yyH265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="CCTV16" tvg-logo="https://image.5iclub.cloudns.org/file/7afd697595c95f1d4fd69.png" group-title="央视频道",CCTV-16 奥林匹克 𝟙
 http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226100/index.m3u8
 #EXTINF:-1 tvg-name="CCTV16" tvg-logo="https://image.5iclub.cloudns.org/file/7afd697595c95f1d4fd69.png" group-title="央视频道",CCTV-16 奥林匹克 𝟚
-https://itv.lat/hls?channel=CCTV-16&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=CCTV-16&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="CCTV16" tvg-logo="https://image.5iclub.cloudns.org/file/7afd697595c95f1d4fd69.png" group-title="央视频道",CCTV-16 奥林匹克 4K
-https://itv.lat/hls?channel=CCTV-16-4K_8000&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=CCTV-16-4K_8000&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="CCTV17" tvg-logo="https://image.5iclub.cloudns.org/file/ac031ccd5894f9379cdcd.png" group-title="央视频道",CCTV-17 农业农村 𝟙
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN638728afa13b4/index.m3u8?AuthInfo=9kOOdBn7MFF%2F2bWjKgahUdDh4EPdDnvGlSBkYaxFdaz%2FyAI9to%2FMBBt%2FivcdSfljJ1%2FqqamWUjAiBAxNssfyBlZUDSXAIMtStS86hRHFuJM
 #EXTINF:-1 tvg-name="CCTV17" tvg-logo="https://image.5iclub.cloudns.org/file/ac031ccd5894f9379cdcd.png" group-title="央视频道",CCTV-17 农业农村 𝟚
-https://itv.lat/hls?channel=CCTV-17&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=CCTV-17&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="CCTV4K" tvg-logo="https://image.5iclub.cloudns.org/file/f80637196310f165af5af.png" group-title="央视频道",CCTV-4K 超高清 𝟙
 http://27.222.3.214/liveali-tp4k.cctv.cn/live/4K10M.stream/playlist.m3u8
 #EXTINF:-1 tvg-name="CCTV4K" tvg-logo="https://image.5iclub.cloudns.org/file/f80637196310f165af5af.png" group-title="央视频道",CCTV-4K 超高清 𝟚
-https://itv.lat/hls?channel=ys4Kcq_2000&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=ys4Kcq_2000&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="CGTN" tvg-logo="https://image.5iclub.cloudns.org/file/41bc9648ef40940d7c902.png" group-title="央视频道",CGTN英语 𝟙
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN63806f4f64099/index.m3u8?m3u8_level=2
 #EXTINF:-1 tvg-name="CGTN" tvg-logo="https://image.5iclub.cloudns.org/file/41bc9648ef40940d7c902.png" group-title="央视频道",CGTN英语 𝟚
-https://itv.lat/hls?channel=CGTN&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=CGTN&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="CGTN" tvg-logo="https://image.5iclub.cloudns.org/file/41bc9648ef40940d7c902.png" group-title="央视频道",CGTN英语 𝟛
 https://live.cgtn.com/1000/prog_index.m3u8
 #EXTINF:-1 tvg-name="CGTN纪录" tvg-logo="https://image.5iclub.cloudns.org/file/03589e4630d345c8ea475.png" group-title="央视频道",CGTN记录 𝟙
@@ -139,19 +139,19 @@ https://news.cgtn.com/resource/live/document/cgtn-doc.m3u8
 #EXTINF:-1 tvg-name="CGTN俄语" tvg-logo="https://image.5iclub.cloudns.org/file/08bcd6fab7f3e2b7cd128.png" group-title="央视频道",CGTN俄语 𝟙
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN638071d299009/index.m3u8?m3u8_level=2
 #EXTINF:-1 tvg-name="CGTN俄语" tvg-logo="https://image.5iclub.cloudns.org/file/08bcd6fab7f3e2b7cd128.png" group-title="央视频道",CGTN俄语 𝟚
-https://itv.lat/hls?channel=ey_2000&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=ey_2000&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="CGTN俄语" tvg-logo="https://image.5iclub.cloudns.org/file/08bcd6fab7f3e2b7cd128.png" group-title="央视频道",CGTN俄语 𝟛
 http://news.cgtn.com/resource/live/russian/cgtn-r.m3u8
 #EXTINF:-1 tvg-name="CGTN法语" tvg-logo="https://image.5iclub.cloudns.org/file/2c6d6ac88fbf10a0a3050.png" group-title="央视频道",CGTN法语 𝟙
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN63806fb631afe/index.m3u8?m3u8_level=2
 #EXTINF:-1 tvg-name="CGTN法语" tvg-logo="https://image.5iclub.cloudns.org/file/2c6d6ac88fbf10a0a3050.png" group-title="央视频道",CGTN法语 𝟚
-https://itv.lat/hls?channel=fy_2000&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=fy_2000&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="CGTN法语" tvg-logo="https://image.5iclub.cloudns.org/file/2c6d6ac88fbf10a0a3050.png" group-title="央视频道",CGTN法语 𝟛
 https://news.cgtn.com/resource/live/french/cgtn-f.m3u8
 #EXTINF:-1 tvg-name="CGTN西语" tvg-logo="https://image.5iclub.cloudns.org/file/755a6de16cad0e0068b84.png" group-title="央视频道",CGTN西班牙语 𝟙
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN63806f81c8eb5/index.m3u8?m3u8_level=2
 #EXTINF:-1 tvg-name="CGTN西语" tvg-logo="https://image.5iclub.cloudns.org/file/755a6de16cad0e0068b84.png" group-title="央视频道",CGTN西班牙语 𝟚
-https://itv.lat/hls?channel=xbyy_2000&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=xbyy_2000&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="CGTN西语" tvg-logo="https://image.5iclub.cloudns.org/file/755a6de16cad0e0068b84.png" group-title="央视频道",CGTN西班牙语 𝟛
 https://news.cgtn.com/resource/live/espanol/cgtn-e.m3u8
 #EXTINF:-1 tvg-name="CGTN阿语" tvg-logo="https://image.5iclub.cloudns.org/file/e5b8f3f6b49aa524985fb.png" group-title="央视频道",CGTN阿拉伯语 𝟙
@@ -159,24 +159,24 @@ http://livear.cgtn.com/1000a/prog_index.m3u8
 #EXTINF:-1 tvg-name="CGTN阿语" tvg-logo="https://image.5iclub.cloudns.org/file/e5b8f3f6b49aa524985fb.png" group-title="央视频道",CGTN阿拉伯语 𝟚
 https://news.cgtn.com/resource/live/arabic/cgtn-a.m3u8
 #EXTINF:-1 tvg-name="发现之旅" tvg-logo="https://image.5iclub.cloudns.org/file/e654148b77a1bd219e809.png" group-title="央视频道",发现之旅
-https://itv.lat/hls?channel=fxzl_2000&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=fxzl_2000&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="老故事" tvg-logo="https://image.5iclub.cloudns.org/file/58a157722e465d28777ed.png" group-title="央视频道",老故事
-https://itv.lat/hls?channel=lgs_2000&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=lgs_2000&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="中学生" tvg-logo="https://image.5iclub.cloudns.org/file/71816a22857f6710d710a.png" group-title="央视频道",中学生
-https://itv.lat/hls?channel=zxs&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=zxs&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="重温经典" tvg-logo="https://image.5iclub.cloudns.org/file/bfc0f351ccfb852fb3d89.png" group-title="央视频道",重温经典
-https://itv.lat/hls?channel=CWJD&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=CWJD&token=85c53bb8caf87075db8efcb56cab13d6
 
 #EXTINF:-1 tvg-name="凤凰中文" tvg-logo="https://image.5iclub.cloudns.org/file/8049778e22ce336229471.png" group-title="卫视频道",凤凰中文 𝟙
 http://116.162.6.192/1.v.smtcdns.net/qctv.fengshows.cn/live/0701pcc72.m3u8
 #EXTINF:-1 tvg-name="凤凰中文" tvg-logo="https://image.5iclub.cloudns.org/file/8049778e22ce336229471.png" group-title="卫视频道",凤凰中文 𝟚
-https://itv.lat/hls?channel=test1&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=test1&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="凤凰中文" tvg-logo="https://image.5iclub.cloudns.org/file/8049778e22ce336229471.png" group-title="卫视频道",凤凰中文 𝟛
 http://116.162.6.191/zycfcdn.gdwlcloud.com/PLTV/88888888/224/3221226317/index.m3u8
 #EXTINF:-1 tvg-name="凤凰资讯" tvg-logo="https://image.5iclub.cloudns.org/file/114b0590cbf291e683958.png" group-title="卫视频道",凤凰资讯 𝟙
 http://116.162.6.192/1.v.smtcdns.net/qctv.fengshows.cn/live/0701pin72.m3u8
 #EXTINF:-1 tvg-name="凤凰资讯" tvg-logo="https://image.5iclub.cloudns.org/file/114b0590cbf291e683958.png" group-title="卫视频道",凤凰资讯 𝟚
-https://itv.lat/hls?channel=test2&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=test2&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="凤凰资讯" tvg-logo="https://image.5iclub.cloudns.org/file/114b0590cbf291e683958.png" group-title="卫视频道",凤凰资讯 𝟛
 http://116.162.6.191/zycfcdn.gdwlcloud.com/PLTV/88888888/224/3221226320/index.m3u8
 #EXTINF:-1 tvg-name="凤凰香港" tvg-logo="https://image.5iclub.cloudns.org/file/9e0876c45e16f385b4501.png" group-title="卫视频道",凤凰香港
@@ -186,117 +186,117 @@ http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8
 #EXTINF:-1 tvg-name="北京卫视" tvg-logo="https://image.5iclub.cloudns.org/file/dab0b428d699498e69552.png" group-title="卫视频道",北京卫视 𝟙
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226450/index.m3u8
 #EXTINF:-1 tvg-name="北京卫视" tvg-logo="https://image.5iclub.cloudns.org/file/dab0b428d699498e69552.png" group-title="卫视频道",北京卫视 𝟚
-https://itv.lat/hls?channel=bjwsH265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=bjwsH265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="湖南卫视" tvg-logo="https://image.5iclub.cloudns.org/file/040040388ebac1d5a41f2.png" group-title="卫视频道",湖南卫视 𝟙
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226307/index.m3u8
 #EXTINF:-1 tvg-name="湖南卫视" tvg-logo="https://image.5iclub.cloudns.org/file/040040388ebac1d5a41f2.png" group-title="卫视频道",湖南卫视 𝟚
-https://itv.lat/hls?channel=hnwsH265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=hnwsH265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="东方卫视" tvg-logo="https://image.5iclub.cloudns.org/file/e5209b85abb643f5e5c30.png" group-title="卫视频道",东方卫视 𝟙
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226345/index.m3u8
 #EXTINF:-1 tvg-name="东方卫视" tvg-logo="https://image.5iclub.cloudns.org/file/e5209b85abb643f5e5c30.png" group-title="卫视频道",东方卫视 𝟚
-https://itv.lat/hls?channel=dfwsH265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=dfwsH265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="四川卫视" tvg-logo="https://image.5iclub.cloudns.org/file/49e3bf1417fddbccd4fbf.png" group-title="卫视频道",四川卫视 𝟙
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226338/index.m3u8
 #EXTINF:-1 tvg-name="四川卫视" tvg-logo="https://image.5iclub.cloudns.org/file/49e3bf1417fddbccd4fbf.png" group-title="卫视频道",四川卫视 𝟚
-https://itv.lat/hls?channel=scwsH265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=scwsH265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="天津卫视" tvg-logo="https://image.5iclub.cloudns.org/file/6946cc2a76feacb4f4e44.png" group-title="卫视频道",天津卫视 𝟙
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226459/index.m3u8
 #EXTINF:-1 tvg-name="天津卫视" tvg-logo="https://image.5iclub.cloudns.org/file/6946cc2a76feacb4f4e44.png" group-title="卫视频道",天津卫视 𝟚
-https://itv.lat/hls?channel=tjwsH265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=tjwsH265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="安徽卫视" tvg-logo="https://image.5iclub.cloudns.org/file/744476085577958601191.png" group-title="卫视频道",安徽卫视 𝟙
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226391/index.m3u8
 #EXTINF:-1 tvg-name="安徽卫视" tvg-logo="https://image.5iclub.cloudns.org/file/744476085577958601191.png" group-title="卫视频道",安徽卫视 𝟚
-https://itv.lat/hls?channel=ahwsH265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=ahwsH265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="山东卫视" tvg-logo="https://image.5iclub.cloudns.org/file/9f44ad4aedc3ea01676b4.png" group-title="卫视频道",山东卫视 𝟙
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226456/index.m3u8
 #EXTINF:-1 tvg-name="山东卫视" tvg-logo="https://image.5iclub.cloudns.org/file/9f44ad4aedc3ea01676b4.png" group-title="卫视频道",山东卫视 𝟚
-https://itv.lat/hls?channel=sdwsH265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=sdwsH265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="山东教育卫视" tvg-logo="https://image.5iclub.cloudns.org/file/e7365680093a21931b78a.png" group-title="卫视频道",山东教育卫视
-https://itv.lat/hls?channel=sdjy&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=sdjy&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="深圳卫视" tvg-logo="https://image.5iclub.cloudns.org/file/4a4dfc04e16c3ae41b7d8.png" group-title="卫视频道",深圳卫视 𝟙
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226313/index.m3u8
 #EXTINF:-1 tvg-name="深圳卫视" tvg-logo="https://image.5iclub.cloudns.org/file/4a4dfc04e16c3ae41b7d8.png" group-title="卫视频道",深圳卫视 𝟚
-https://itv.lat/hls?channel=szwsH265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=szwsH265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="广东卫视" tvg-logo="https://image.5iclub.cloudns.org/file/0c40ba5d57d3d82a61938.png" group-title="卫视频道",广东卫视 𝟙
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226248/index.m3u8
 #EXTINF:-1 tvg-name="广东卫视" tvg-logo="https://image.5iclub.cloudns.org/file/0c40ba5d57d3d82a61938.png" group-title="卫视频道",广东卫视 𝟚
-https://itv.lat/hls?channel=gdwsH265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=gdwsH265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="广西卫视" tvg-logo="https://image.5iclub.cloudns.org/file/bba500778e592f4b6cd18.png" group-title="卫视频道",广西卫视 𝟙
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226549/index.m3u8
 #EXTINF:-1 tvg-name="广西卫视" tvg-logo="https://image.5iclub.cloudns.org/file/bba500778e592f4b6cd18.png" group-title="卫视频道",广西卫视 𝟚
-https://itv.lat/hls?channel=gxws&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=gxws&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="江苏卫视" tvg-logo="https://image.5iclub.cloudns.org/file/0ac0f991cf7c35c58d7e5.png" group-title="卫视频道",江苏卫视 𝟙
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226310/index.m3u8
 #EXTINF:-1 tvg-name="江苏卫视" tvg-logo="https://image.5iclub.cloudns.org/file/0ac0f991cf7c35c58d7e5.png" group-title="卫视频道",江苏卫视 𝟚
-https://itv.lat/hls?channel=jswsH265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=jswsH265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="江西卫视" tvg-logo="https://image.5iclub.cloudns.org/file/e307fb678b41d89dd332a.png" group-title="卫视频道",江西卫视 𝟙
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226344/index.m3u8
 #EXTINF:-1 tvg-name="江西卫视" tvg-logo="https://image.5iclub.cloudns.org/file/e307fb678b41d89dd332a.png" group-title="卫视频道",江西卫视 𝟚
-https://itv.lat/hls?channel=jxwsH265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=jxwsH265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="河北卫视" tvg-logo="https://image.5iclub.cloudns.org/file/5f581eaa105b5c93b3675.png" group-title="卫视频道",河北卫视
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226406/index.m3u8
 #EXTINF:-1 tvg-name="河南卫视" tvg-logo="https://image.5iclub.cloudns.org/file/3702d6844a143769a4665.png" group-title="卫视频道",河南卫视 𝟙
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226480/index.m3u8
 #EXTINF:-1 tvg-name="河南卫视" tvg-logo="https://image.5iclub.cloudns.org/file/3702d6844a143769a4665.png" group-title="卫视频道",河南卫视 𝟚
-https://itv.lat/hls?channel=hnws35&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=hnws35&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="浙江卫视" tvg-logo="https://image.5iclub.cloudns.org/file/d64c91a3b8ee239c76dbf.png" group-title="卫视频道",浙江卫视 𝟙
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226339/index.m3u8
 #EXTINF:-1 tvg-name="浙江卫视" tvg-logo="https://image.5iclub.cloudns.org/file/d64c91a3b8ee239c76dbf.png" group-title="卫视频道",浙江卫视 𝟚
-https://itv.lat/hls?channel=zjwsH265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=zjwsH265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="海南卫视" tvg-logo="https://image.5iclub.cloudns.org/file/7fc294b9a0ca7e54b0ddc.png" group-title="卫视频道",海南卫视 𝟙
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226465/index.m3u8
 #EXTINF:-1 tvg-name="海南卫视" tvg-logo="https://image.5iclub.cloudns.org/file/7fc294b9a0ca7e54b0ddc.png" group-title="卫视频道",海南卫视 𝟚
-https://itv.lat/hls?channel=hnws&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=hnws&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="湖北卫视" tvg-logo="https://image.5iclub.cloudns.org/file/471df5939f013cfe6dc83.png" group-title="卫视频道",湖北卫视 𝟙
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226477/index.m3u8
 #EXTINF:-1 tvg-name="湖北卫视" tvg-logo="https://image.5iclub.cloudns.org/file/471df5939f013cfe6dc83.png" group-title="卫视频道",湖北卫视 𝟚
-https://itv.lat/hls?channel=hbwsH265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=hbwsH265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="山西卫视" tvg-logo="https://image.5iclub.cloudns.org/file/0ac8b39d65b1e470f54ce.png" group-title="卫视频道",山西卫视 𝟙
 http://[2409:8087:5e01:34::21]:6610/ZTE_CMS/00000001000000060000000000000318/index.m3u8?IAS
 #EXTINF:-1 tvg-name="山西卫视" tvg-logo="https://image.5iclub.cloudns.org/file/0ac8b39d65b1e470f54ce.png" group-title="卫视频道",山西卫视 𝟚
-https://itv.lat/hls?channel=sxws42&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=sxws42&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="东南卫视" tvg-logo="https://image.5iclub.cloudns.org/file/03c115c1b8c9873bc5ce8.png" group-title="卫视频道",东南卫视 𝟙
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226341/index.m3u8
 #EXTINF:-1 tvg-name="东南卫视" tvg-logo="https://image.5iclub.cloudns.org/file/03c115c1b8c9873bc5ce8.png" group-title="卫视频道",东南卫视 𝟚
-https://itv.lat/hls?channel=dnwsfjwsH265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=dnwsfjwsH265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="贵州卫视" tvg-logo="https://image.5iclub.cloudns.org/file/97468dac0d1af99230fd3.png" group-title="卫视频道",贵州卫视 𝟙
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226474/index.m3u8
 #EXTINF:-1 tvg-name="贵州卫视" tvg-logo="https://image.5iclub.cloudns.org/file/97468dac0d1af99230fd3.png" group-title="卫视频道",贵州卫视 𝟚
-https://itv.lat/hls?channel=gzwsH265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=gzwsH265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="辽宁卫视" tvg-logo="https://image.5iclub.cloudns.org/file/cb0c80360f74026ea5e61.png" group-title="卫视频道",辽宁卫视 𝟙
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226546/index.m3u8
 #EXTINF:-1 tvg-name="辽宁卫视" tvg-logo="https://image.5iclub.cloudns.org/file/cb0c80360f74026ea5e61.png" group-title="卫视频道",辽宁卫视 𝟚
-https://itv.lat/hls?channel=lnwsHDH265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=lnwsHDH265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="重庆卫视" tvg-logo="https://image.5iclub.cloudns.org/file/f0cd9d4d1aa6fb9897fcd.png" group-title="卫视频道",重庆卫视 𝟙
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226409/index.m3u8
 #EXTINF:-1 tvg-name="重庆卫视" tvg-logo="https://image.5iclub.cloudns.org/file/f0cd9d4d1aa6fb9897fcd.png" group-title="卫视频道",重庆卫视 𝟚
-https://itv.lat/hls?channel=cqwsH265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=cqwsH265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="黑龙江卫视" tvg-logo="https://image.5iclub.cloudns.org/file/d523933447252615beb02.png" group-title="卫视频道",黑龙江卫视 𝟙
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226327/index.m3u8
 #EXTINF:-1 tvg-name="黑龙江卫视" tvg-logo="https://image.5iclub.cloudns.org/file/d523933447252615beb02.png" group-title="卫视频道",黑龙江卫视 𝟚
-https://itv.lat/hls?channel=hljwsH265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=hljwsH265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="内蒙古卫视" tvg-logo="https://image.5iclub.cloudns.org/file/8d85ca7b0fcb7b78b2ebe.png" group-title="卫视频道",内蒙古卫视 𝟙
 http://[2409:8087:5e01:34::20]:6610/ZTE_CMS/00000001000000060000000000000319/index.m3u8?IAS
 #EXTINF:-1 tvg-name="内蒙古卫视" tvg-logo="https://image.5iclub.cloudns.org/file/8d85ca7b0fcb7b78b2ebe.png" group-title="卫视频道",内蒙古卫视 𝟚
-https://itv.lat/hls?channel=nmgws&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=nmgws&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="宁夏卫视" tvg-logo="https://image.5iclub.cloudns.org/file/1b268f5bdad72b8dd703b.png" group-title="卫视频道",宁夏卫视
 http://[2409:8087:5e01:34::20]:6610/ZTE_CMS/00000001000000060000000000000309/index.m3u8?IAS
 #EXTINF:-1 tvg-name="陕西卫视" tvg-logo="https://image.5iclub.cloudns.org/file/c3aa29629c9845c43baee.png" group-title="卫视频道",陕西卫视 𝟙
 http://[2409:8087:5e01:34::22]:6610/ZTE_CMS/00000001000000060000000000000313/index.m3u8?IAS
 #EXTINF:-1 tvg-name="陕西卫视" tvg-logo="https://image.5iclub.cloudns.org/file/c3aa29629c9845c43baee.png" group-title="卫视频道",陕西卫视 𝟚
-https://itv.lat/hls?channel=sxws&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=sxws&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="吉林卫视" tvg-logo="https://image.5iclub.cloudns.org/file/b733b9400c4a398d710fa.png" group-title="卫视频道",吉林卫视 𝟙
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226397/index.m3u8
 #EXTINF:-1 tvg-name="吉林卫视" tvg-logo="https://image.5iclub.cloudns.org/file/b733b9400c4a398d710fa.png" group-title="卫视频道",吉林卫视 𝟚
-https://itv.lat/hls?channel=jlwsH265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=jlwsH265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="甘肃卫视" tvg-logo="https://image.5iclub.cloudns.org/file/538a40fadf474f22dd6bf.png" group-title="卫视频道",甘肃卫视 𝟙
 http://[2409:8087:1a0b:df::4005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225633/index.m3u8
 #EXTINF:-1 tvg-name="甘肃卫视" tvg-logo="https://image.5iclub.cloudns.org/file/538a40fadf474f22dd6bf.png" group-title="卫视频道",甘肃卫视 𝟚
-https://itv.lat/hls?channel=gsws&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=gsws&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="云南卫视" tvg-logo="https://image.5iclub.cloudns.org/file/037e4b6ee376228c0ec57.png" group-title="卫视频道",云南卫视 𝟙
 http://[2409:8087:5e01:34::22]:6610/ZTE_CMS/00000001000000060000000000000305/index.m3u8?IAS
 #EXTINF:-1 tvg-name="云南卫视" tvg-logo="https://image.5iclub.cloudns.org/file/037e4b6ee376228c0ec57.png" group-title="卫视频道",云南卫视 𝟚
-https://itv.lat/hls?channel=ynws&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=ynws&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="三沙卫视" tvg-logo="https://image.5iclub.cloudns.org/file/d94be3e6d927dc105a24a.png" group-title="卫视频道",三沙卫视
 http://[2409:8087:5e01:34::21]:6610/ZTE_CMS/08984400000000060000000000000319/index.m3u8?IAS
 #EXTINF:-1 tvg-name="青海卫视" tvg-logo="https://image.5iclub.cloudns.org/file/ad358ac6403b7a33cad3d.png" group-title="卫视频道",青海卫视
@@ -306,11 +306,11 @@ http://[2409:8087:1a0b:df::4005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/
 #EXTINF:-1 tvg-name="西藏卫视" tvg-logo="https://image.5iclub.cloudns.org/file/bda99e40b7e611cafe4da.png" group-title="卫视频道",西藏卫视 𝟙
 http://[2409:8087:5e01:34::23]:6610/ZTE_CMS/00000001000000060000000000000317/index.m3u8?IAS
 #EXTINF:-1 tvg-name="西藏卫视" tvg-logo="https://image.5iclub.cloudns.org/file/bda99e40b7e611cafe4da.png" group-title="卫视频道",西藏卫视 𝟚
-https://itv.lat/hls?channel=xzwsH264_2000&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=xzwsH264_2000&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="兵团卫视" tvg-logo="https://image.5iclub.cloudns.org/file/fe9dbdaa68c4e0b7b657d.png" group-title="卫视频道",兵团卫视 𝟙
 http://[2409:8087:1a0b:df::4020]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226439/index.m3u8
 #EXTINF:-1 tvg-name="兵团卫视" tvg-logo="https://image.5iclub.cloudns.org/file/fe9dbdaa68c4e0b7b657d.png" group-title="卫视频道",兵团卫视 𝟚
-https://itv.lat/hls?channel=btws&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=btws&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="延边卫视" tvg-logo="https://image.5iclub.cloudns.org/file/4691dc281d2e64966fea7.png" group-title="卫视频道",延边卫视
 http://[2409:8087:1a0b:df::4020]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226516/index.m3u8
 #EXTINF:-1 tvg-name="安多卫视" tvg-logo="https://image.5iclub.cloudns.org/file/af90ee14bf4c5cb1e6e08.png" group-title="卫视频道",安多卫视 𝟙
@@ -322,13 +322,13 @@ http://[2409:8087:5e01:34::22]:6610/ZTE_CMS/00000001000000060000000000000193/ind
 #EXTINF:-1 tvg-name="康巴卫视" tvg-logo="https://image.5iclub.cloudns.org/file/1328139e172261c38d9be.png" group-title="卫视频道",康巴卫视 𝟙
 http://[2409:8087:1a0b:df::4005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225660/index.m3u8
 #EXTINF:-1 tvg-name="康巴卫视" tvg-logo="https://image.5iclub.cloudns.org/file/1328139e172261c38d9be.png" group-title="卫视频道",康巴卫视 𝟚
-https://itv.lat/hls?channel=kbwsH264_2000&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=kbwsH264_2000&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="中国教育1台" tvg-logo="https://image.5iclub.cloudns.org/file/ea292ea7484c9397bc0b0.png" group-title="卫视频道",CETV-1 𝟙
 http://[2409:8087:1a0b:df::4020]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225652/index.m3u8
-#EXTINF:-1 tvg-name="中国教育1台" tvg-logo="https://image.5iclub.cloudns.org/file/ea292ea7484c9397bc0b0.png" group-title="卫视频道",CETV-1  𝟚
+#EXTINF:-1 tvg-name="中国教育1台" tvg-logo="https://image.5iclub.cloudns.org/file/ea292ea7484c9397bc0b0.png" group-title="卫视频道",CETV-1 𝟚
 http://mobilelive-ds.ysp.cctv.cn/ysp/2022823801.m3u8
-#EXTINF:-1 tvg-name="中国教育1台" tvg-logo="https://image.5iclub.cloudns.org/file/ea292ea7484c9397bc0b0.png" group-title="卫视频道",CETV-1  𝟛
-https://itv.lat/hls?channel=CETV-1H264&token=567bcc7f346c8ce22e1893cee0f43a3a
+#EXTINF:-1 tvg-name="中国教育1台" tvg-logo="https://image.5iclub.cloudns.org/file/ea292ea7484c9397bc0b0.png" group-title="卫视频道",CETV-1 𝟛
+https://itv.lat/hls?channel=CETV-1H264&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="中国教育2台" tvg-logo="https://image.5iclub.cloudns.org/file/d0f908a2f74deca4be609.png" group-title="卫视频道",CETV-2 𝟙
 http://[2409:8087:1a0b:df::4013]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226425/index.m3u8
 #EXTINF:-1 tvg-name="中国教育2台" tvg-logo="https://image.5iclub.cloudns.org/file/d0f908a2f74deca4be609.png" group-title="卫视频道",CETV-2 𝟚
@@ -345,55 +345,55 @@ http://[2409:8087:5e01:34::23]:6610/ZTE_CMS/00000001000000060000000000000459/ind
 #EXTINF:-1 tvg-id="苏州4K" tvg-name="苏州4K" tvg-logo="https://image.5iclub.cloudns.org/file/257d7b79fb84837d399e4.png" group-title="数字频道",苏州•4K频道
 http://liveshowbak2.kan0512.com/ksznorecord/csztv4k_4k.m3u8
 #EXTINF:-1 tvg-name="欢笑剧场" tvg-logo="https://image.5iclub.cloudns.org/file/a804ce68b6009b5fa0ae7.png" group-title="数字频道",欢笑剧场4K
-https://itv.lat/hls?channel=hxjc-4k_8000&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=hxjc-4k_8000&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="4K超高清电影" tvg-logo="https://image.5iclub.cloudns.org/file/30ae26f4dbcc0e8e372d4.png" group-title="数字频道",4K超高清电影
-https://itv.lat/hls?channel=emdy4k_8000&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=emdy4k_8000&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="IPTV5+" tvg-logo="https://image.5iclub.cloudns.org/file/9ee53b216d3be0908232d.png" group-title="数字频道",IPTV5+ 体育赛事
 http://[2409:8087:5e00:24::1f]:6060/ZTE_CMS/00000001000000060000000000000461/index.m3u8
 #EXTINF:-1 tvg-name="CHC影迷电影" tvg-logo="https://image.5iclub.cloudns.org/file/bd2516dcc852eae61e4e4.png" group-title="数字频道",CHC影迷电影 𝟙
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN6380764b172c9/index.m3u8?m3u8_level=2
 #EXTINF:-1 tvg-name="CHC影迷电影" tvg-logo="https://image.5iclub.cloudns.org/file/bd2516dcc852eae61e4e4.png" group-title="数字频道",CHC影迷电影 𝟚
-https://itv.lat/hls?channel=lnwsCHC-HDH265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=lnwsCHC-HDH265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="CHC动作电影" tvg-logo="https://image.5iclub.cloudns.org/file/d3fe1eb96555ab7a0f25a.png" group-title="数字频道",CHC动作电影 𝟙
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN6380763222d00/index.m3u8?m3u8_level=2
 #EXTINF:-1 tvg-name="CHC动作电影" tvg-logo="https://image.5iclub.cloudns.org/file/d3fe1eb96555ab7a0f25a.png" group-title="数字频道",CHC动作电影 𝟚
-https://itv.lat/hls?channel=wqCHCdzdyH265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=wqCHCdzdyH265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="CHC家庭影院" tvg-logo="https://image.5iclub.cloudns.org/file/54a48db2d660e045d4a3f.png" group-title="数字频道",CHC家庭影院 𝟙
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN63807601b19dd/index.m3u8?m3u8_level=2
 #EXTINF:-1 tvg-name="CHC家庭影院" tvg-logo="https://image.5iclub.cloudns.org/file/54a48db2d660e045d4a3f.png" group-title="数字频道",CHC家庭影院 𝟚
-https://itv.lat/hls?channel=jbtygqCHCjtyyH265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=jbtygqCHCjtyyH265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="上海纪实人文" tvg-logo="https://image.5iclub.cloudns.org/file/057328ca006b7d1398124.png" group-title="数字频道",纪实人文
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225738/index.m3u8
 #EXTINF:-1 tvg-name="纪实科教" tvg-logo="https://image.5iclub.cloudns.org/file/b11189f0f1ad548c86837.png" group-title="数字频道",纪实科教 𝟙
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225729/index.m3u8
 #EXTINF:-1 tvg-name="纪实科教" tvg-logo="https://image.5iclub.cloudns.org/file/b11189f0f1ad548c86837.png" group-title="数字频道",纪实科教 𝟚
-https://itv.lat/hls?channel=bjjs_2000&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=bjjs_2000&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="劲爆体育" tvg-logo="https://image.5iclub.cloudns.org/file/e44f286ef3eaeaa317d7a.png" group-title="数字频道",劲爆体育 𝟙
 http://[2409:8087:5e08:24::12]:6610/000000001000/2000000002000000008/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000008&IASHttpSessionId=OTT19019320240419154124000281
 #EXTINF:-1 tvg-name="劲爆体育" tvg-logo="https://image.5iclub.cloudns.org/file/e44f286ef3eaeaa317d7a.png" group-title="数字频道",劲爆体育 𝟚
-https://itv.lat/hls?channel=lqhxjcHDH265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=lqhxjcHDH265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="乐游" tvg-logo="https://image.5iclub.cloudns.org/file/6b26a9119a849287686fc.png" group-title="数字频道",乐游频道 𝟙
 http://[2409:8087:5e08:24::12]:6610/000000001000/2000000002000000092/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000092&IASHttpSessionId=OTT19019320240419154124000281
 #EXTINF:-1 tvg-name="乐游" tvg-logo="https://image.5iclub.cloudns.org/file/6b26a9119a849287686fc.png" group-title="数字频道",乐游频道 𝟚
-https://itv.lat/hls?channel=qjs-HDH265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=qjs-HDH265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="卡酷少儿" tvg-logo="https://image.5iclub.cloudns.org/file/34eaf08c784e733b64688.png" group-title="数字频道",卡酷少儿 𝟙
 http://[2409:8087:1a0b:df::4020]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225654/index.m3u8
 #EXTINF:-1 tvg-name="卡酷少儿" tvg-logo="https://image.5iclub.cloudns.org/file/34eaf08c784e733b64688.png" group-title="数字频道",卡酷少儿 𝟚
-https://itv.lat/hls?channel=kkkt&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=kkkt&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="金鹰卡通" tvg-logo="https://image.5iclub.cloudns.org/file/b816e2fa8ba8f7b7fe330.png" group-title="数字频道",金鹰卡通 𝟙
 http://[2409:8087:1a0b:df::4008]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225653/index.m3u8
 #EXTINF:-1 tvg-name="金鹰卡通" tvg-logo="https://image.5iclub.cloudns.org/file/b816e2fa8ba8f7b7fe330.png" group-title="数字频道",金鹰卡通 𝟚
-https://itv.lat/hls?channel=jykt_2000&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=jykt_2000&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="金鹰纪实" tvg-logo="https://image.5iclub.cloudns.org/file/feca1ec774d446e99dfec.png" group-title="数字频道",金鹰纪实 𝟙
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN4766929BESTVSMGSMG/index.m3u8?m3u8_level=2
 #EXTINF:-1 tvg-name="金鹰纪实" tvg-logo="https://image.5iclub.cloudns.org/file/feca1ec774d446e99dfec.png" group-title="数字频道",金鹰纪实 𝟚
-https://itv.lat/hls?channel=jyjsHDH265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=jyjsHDH265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="茶" tvg-logo="https://image.5iclub.cloudns.org/file/9f90b7721b11fab574ecd.png" group-title="数字频道",茶频道
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN638729d8aca53/index.m3u8?AuthInfo=9kOOdBn7MFF%2F2bWjKgahUSBx06ZL9Bo6JOM%2BSTjxZRIdUCZxTtaM%2Bza0L7mJjkPMmnEhAf%2Bi68sKjzRCbPoTU0E%2B6Pia2CkRtxgPs8Tmw7I
 #EXTINF:-1 tvg-name="快乐垂钓" tvg-logo="https://image.5iclub.cloudns.org/file/ce9c980daa1a518a83be3.png" group-title="数字频道",快乐垂钓 𝟙
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN638729b6002c4/index.m3u8?m3u8_level=2
 #EXTINF:-1 tvg-name="快乐垂钓" tvg-logo="https://image.5iclub.cloudns.org/file/ce9c980daa1a518a83be3.png" group-title="数字频道",快乐垂钓 𝟚
-https://itv.lat/hls?channel=fyzqklcdHDH265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=fyzqklcdHDH265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="哒啵赛事" tvg-logo="https://image.5iclub.cloudns.org/file/b067eb2f6d8ab6a356165.png" group-title="数字频道",哒啵赛事
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225675/index.m3u8
 #EXTINF:-1 tvg-name="哒啵电竞" tvg-logo="https://image.5iclub.cloudns.org/file/a491de7f81b9a19dd4c12.png" group-title="数字频道",哒啵电竞
@@ -409,7 +409,7 @@ http://[2409:8087:1a0b:df::4014]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/
 #EXTINF:-1 tvg-name="梨园" tvg-logo="https://image.5iclub.cloudns.org/file/6a3228959e9ad9e1b02fa.png" group-title="数字频道",梨园频道 𝟙
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN6380788ba7bed/index.m3u8?AuthInfo=toEYVdLfxymUP2l9NZpQI5%2BK6T7j%2FlRm%2BvbM9VO7bA0q1S1k1f36SqqriM0FZoFSAJRfCt8SS7X6sTRmXb81a8O4H%2FdroDKjLoDeaMQdyJQ
 #EXTINF:-1 tvg-name="梨园" tvg-logo="https://image.5iclub.cloudns.org/file/6a3228959e9ad9e1b02fa.png" group-title="数字频道",梨园频道 𝟚
-https://itv.lat/hls?channel=ly&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=ly&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="求索记录" tvg-logo="https://image.5iclub.cloudns.org/file/7b3777ccf6fdc9b8fe0cd.png" group-title="数字频道",求索记录
 http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000010/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000010&IASHttpSessionId=OTT19019320240419154124000281
 #EXTINF:-1 tvg-name="求索动物" tvg-logo="https://image.5iclub.cloudns.org/file/d90086fae765af6d4cc3c.png" group-title="数字频道",求索动物
@@ -419,35 +419,35 @@ http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000011/index.m3u8?
 #EXTINF:-1 tvg-name="求索生活" tvg-logo="https://image.5iclub.cloudns.org/file/4586e85e6000017d26cf4.png" group-title="数字频道",求索生活
 http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000008/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000008&IASHttpSessionId=OTT19019320240419154124000281
 #EXTINF:-1 tvg-name="动漫秀场" tvg-logo="https://image.5iclub.cloudns.org/file/041f81bbdecc6b227e2c2.png" group-title="数字频道",动漫秀场
-https://itv.lat/hls?channel=yybb-dmxc-H265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=yybb-dmxc-H265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="都市剧场" tvg-logo="https://image.5iclub.cloudns.org/file/de30062dd44e9ab7f60ff.png" group-title="数字频道",都市剧场
-https://itv.lat/hls?channel=yxfydsjcHDH265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=yxfydsjcHDH265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="嘉佳卡通" tvg-logo="https://image.5iclub.cloudns.org/file/d7a086c8aa5791f9bd50b.png" group-title="数字频道",嘉佳卡通
-https://itv.lat/hls?channel=jjkt_2000&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=jjkt_2000&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="家庭理财" tvg-logo="https://image.5iclub.cloudns.org/file/7b831f67f7572d3a78794.png" group-title="数字频道",家庭理财
-https://itv.lat/hls?channel=jtlc&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=jtlc&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="财富天下" tvg-logo="https://image.5iclub.cloudns.org/file/10a1e364ab0bf9a1ce907.png" group-title="数字频道",财富天下
-https://itv.lat/hls?channel=cftx&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=cftx&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="魅力足球" tvg-logo="https://image.5iclub.cloudns.org/file/6a764ccb4b41c0ea25dcc.png" group-title="数字频道",魅力足球
-https://itv.lat/hls?channel=mlyy&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=mlyy&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="生活时尚" tvg-logo="https://image.5iclub.cloudns.org/file/d5a58f6ca2fe0e4835fcc.png" group-title="数字频道",生活时尚
-https://itv.lat/hls?channel=shssH265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=shssH265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="四海钓鱼" tvg-logo="https://image.5iclub.cloudns.org/file/90037260c36d1a420309b.png" group-title="数字频道",四海钓鱼
-https://itv.lat/hls?channel=shdy&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=shdy&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="天元围棋" tvg-logo="https://image.5iclub.cloudns.org/file/2392cd33041f0a1a7b15b.png" group-title="数字频道",天元围棋
-https://itv.lat/hls?channel=tywq_2000&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=tywq_2000&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="武术世界" tvg-logo="https://image.5iclub.cloudns.org/file/01c73988b77c7a988e1d0.png" group-title="数字频道",武术世界
-https://itv.lat/hls?channel=wssj&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=wssj&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="先锋乒羽" tvg-logo="https://image.5iclub.cloudns.org/file/a23fe766c112ee4151456.png" group-title="数字频道",先锋乒羽
-https://itv.lat/hls?channel=xfpy&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=xfpy&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="新视觉" tvg-logo="https://image.5iclub.cloudns.org/file/78fc981ca6ab3c8ee615b.png" group-title="数字频道",新视觉
-https://itv.lat/hls?channel=ycxsjH265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=ycxsjH265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="证券资讯" tvg-logo="https://image.5iclub.cloudns.org/file/54926cb291919389cba2f.png" group-title="数字频道",证券服务
-https://itv.lat/hls?channel=jz_2000&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=jz_2000&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="中国天气" tvg-logo="https://image.5iclub.cloudns.org/file/6a455735fab68dc09cadd.png" group-title="数字频道",中国天气
-https://itv.lat/hls?channel=zgqx&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=zgqx&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="精品导视" tvg-logo="https://image.5iclub.cloudns.org/file/9f357af2a4254e49fbd58.png" group-title="数字频道",精品导视
-https://itv.lat/hls?channel=jpdsH265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=jpdsH265&token=85c53bb8caf87075db8efcb56cab13d6
 
 #EXTINF:-1 tvg-name="newtv超级体育" tvg-logo="https://image.5iclub.cloudns.org/file/200d28abab3619cf9513c.png" group-title="NewTV系列",超级体育
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225715/index.m3u8
@@ -562,7 +562,7 @@ http://[2409:8087:5e08:24::12]:6610/000000001000/2000000002000000090/index.m3u8?
 #EXTINF:-1 tvg-name="法治天地" tvg-logo="https://image.5iclub.cloudns.org/file/079f8d3a974ed0add11ac.png" group-title="上海频道",法治天地 𝟙
 http://[2409:8087:5e08:24::12]:6610/000000001000/2000000002000000014/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000014&IASHttpSessionId=OTT19019320240419154124000281
 #EXTINF:-1 tvg-name="法治天地" tvg-logo="https://image.5iclub.cloudns.org/file/079f8d3a974ed0add11ac.png" group-title="上海频道",法治天地 𝟚
-https://itv.lat/hls?channel=fztx&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=fztx&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="第一财经" tvg-logo="https://image.5iclub.cloudns.org/file/3cca5279a78a849334fc7.png" group-title="上海频道",第一财经
 http://[2409:8087:5e08:24::12]:6610/000000001000/2000000002000000004/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000004&IASHttpSessionId=OTT19019320240419154124000281
 #EXTINF:-1 tvg-name="东方购物" tvg-logo="https://image.5iclub.cloudns.org/file/84e5b51307e8cf03571c0.png" group-title="上海频道",东方购物
@@ -607,31 +607,31 @@ https://livestream-bt.nmtv.cn/nmtv/2315general.m3u8?txSecret=e2b255285dd119a92c8
 https://livestream-bt.nmtv.cn/nmtv/2321general.m3u8?txSecret=2250268a1d326dbbc4cbf0ba32649ca5&txTime=771E8800
 
 #EXTINF:-1 tvg-name="SCTV2" tvg-logo="https://image.5iclub.cloudns.org/file/4a3856d92dc2b49533067.png" group-title="四川频道",四川经济
-https://itv.lat/hls?channel=SCTV-2-H265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=SCTV-2-H265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="SCTV4" tvg-logo="https://image.5iclub.cloudns.org/file/80365cfa083bb286da681.png" group-title="四川频道",四川新闻
-https://itv.lat/hls?channel=SCTV-4H265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=SCTV-4H265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="SCTV5" tvg-logo="https://image.5iclub.cloudns.org/file/c09ec93e6c2e478b0724f.png" group-title="四川频道",四川影视文艺
-https://itv.lat/hls?channel=SCTV-5-scysH265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=SCTV-5-scysH265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="SCTV7" tvg-logo="https://image.5iclub.cloudns.org/file/2b21fd77d01977b58ce34.png" group-title="四川频道",四川妇女儿童
-https://itv.lat/hls?channel=SCTV-7-&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=SCTV-7-&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="SCTV8" tvg-logo="https://image.5iclub.cloudns.org/file/7cc6129ffe2784e38e44b.png" group-title="四川频道",四川科教
-https://itv.lat/hls?channel=SCTV-ggSCTV-8&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=SCTV-ggSCTV-8&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="SCTV9" tvg-logo="https://image.5iclub.cloudns.org/file/bdefd5830a944c3e4cfe4.png" group-title="四川频道",四川乡村
-https://itv.lat/hls?channel=SCTV-kjSCTV-9-&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=SCTV-kjSCTV-9-&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="SCTV3" tvg-logo="https://image.5iclub.cloudns.org/file/a9082e128d5a091423b3b.png" group-title="四川频道",四川文化旅游
-https://itv.lat/hls?channel=SCTV-3-H265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=SCTV-3-H265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="峨眉电影" tvg-logo="https://image.5iclub.cloudns.org/file/500a3c2e7d777244ce416.png" group-title="四川频道",四川峨眉电影
-https://itv.lat/hls?channel=emdygqH265&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=emdygqH265&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="成都新闻综合" tvg-logo="https://image.5iclub.cloudns.org/file/eed97fea7886c30cb9f16.png" group-title="四川频道",成都新闻综合
-https://itv.lat/hls?channel=CDTV-1&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=CDTV-1&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="成都经济资讯" tvg-logo="https://image.5iclub.cloudns.org/file/75387a497b69eaf173271.png" group-title="四川频道",成都经济资讯
-https://itv.lat/hls?channel=CDTV-2&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=CDTV-2&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="成都都市生活" tvg-logo="https://image.5iclub.cloudns.org/file/415577cd37612aa666ecf.png" group-title="四川频道",成都都市生活
-https://itv.lat/hls?channel=CDTV-3&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=CDTV-3&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="成都影视文艺" tvg-logo="https://image.5iclub.cloudns.org/file/e92718f7a272c55155dd9.png" group-title="四川频道",成都影视文艺
-https://itv.lat/hls?channel=CDTV-4&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=CDTV-4&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="成都公共" tvg-logo="https://image.5iclub.cloudns.org/file/d7499ee2c7465319129c5.png" group-title="四川频道",成都公共
-https://itv.lat/hls?channel=CDTV-5&token=567bcc7f346c8ce22e1893cee0f43a3a
+https://itv.lat/hls?channel=CDTV-5&token=85c53bb8caf87075db8efcb56cab13d6
 
 #EXTINF:-1 tvg-id="湖南爱晚" tvg-name="湖南爱晚" tvg-logo="https://image.5iclub.cloudns.org/file/b064e521212d8459b19e4.png" group-title="湖南频道",湖南爱晚 𝟙
 http://php.jdshipin.com:8880/iptv.php?id=hngg
