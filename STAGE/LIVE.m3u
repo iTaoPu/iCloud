@@ -570,15 +570,15 @@ https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
 https://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8
 #EXTINF:-1 tvg-id="中国蓝新闻" tvg-name="中国蓝新闻" tvg-logo="https://image.5iclub.cloudns.org/file/85293982f416f5bf28f95.png" group-title="浙江频道",中国蓝新闻
 http://ali-m-l.cztv.com/channels/lantian/channel009/1080p.m3u8
-#EXTINF:-1 tvg-id="杭州综合" tvg-logo="https://image.5iclub.cloudns.org/file/b8c52f932d2d7c5310535.png" group-title="浙江",杭州综合
+#EXTINF:-1 tvg-id="杭州综合" tvg-logo="https://image.5iclub.cloudns.org/file/b8c52f932d2d7c5310535.png" group-title="浙江频道",杭州综合
 http://www.372583307.top:4022/udp/233.50.201.173:5140
-#EXTINF:-1 tvg-id="杭州明珠" tvg-logo="https://image.5iclub.cloudns.org/file/79844a0545a76d8403dbf.png" group-title="浙江",杭州明珠
+#EXTINF:-1 tvg-id="杭州明珠" tvg-logo="https://image.5iclub.cloudns.org/file/79844a0545a76d8403dbf.png" group-title="浙江频道",杭州明珠
 http://www.372583307.top:4022/udp/233.50.201.174:5140
-#EXTINF:-1 tvg-id="杭州生活" tvg-logo="https://image.5iclub.cloudns.org/file/ad500b24496bee1c89412.png" group-title="浙江",杭州生活
+#EXTINF:-1 tvg-id="杭州生活" tvg-logo="https://image.5iclub.cloudns.org/file/ad500b24496bee1c89412.png" group-title="浙江频道",杭州生活
 http://www.372583307.top:4022/udp/233.50.201.175:5140
-#EXTINF:-1 tvg-id="杭州影视" tvg-logo="https://image.5iclub.cloudns.org/file/e6f12ce05fac3a6370fa1.png" group-title="浙江",杭州影视
+#EXTINF:-1 tvg-id="杭州影视" tvg-logo="https://image.5iclub.cloudns.org/file/e6f12ce05fac3a6370fa1.png" group-title="浙江频道",杭州影视
 http://www.372583307.top:4022/udp/233.50.201.176:5140
-#EXTINF:-1 tvg-id="杭州青少体育" tvg-logo="https://image.5iclub.cloudns.org/file/58f8b1c9b674ef113e265.png" group-title="浙江",杭州青少体育
+#EXTINF:-1 tvg-id="杭州青少体育" tvg-logo="https://image.5iclub.cloudns.org/file/58f8b1c9b674ef113e265.png" group-title="浙江频道",杭州青少体育
 http://www.372583307.top:4022/udp/233.50.201.177:5140
 #EXTINF:-1 tvg-name="余杭新闻频道" tvg-logo="https://image.5iclub.cloudns.org/file/b5e79768d584f044d906a.png" group-title="浙江频道",余杭新闻
 http://l.cztvcloud.com/channels/lantian/SXyuhang1/720p.m3u8?zzhed
