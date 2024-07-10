@@ -167,22 +167,6 @@ https://itv.lat/hls?channel=zxs&token=85c53bb8caf87075db8efcb56cab13d6
 #EXTINF:-1 tvg-name="重温经典" tvg-logo="https://image.5iclub.cloudns.org/file/bfc0f351ccfb852fb3d89.png" group-title="央视频道",重温经典
 https://itv.lat/hls?channel=CWJD&token=85c53bb8caf87075db8efcb56cab13d6
 
-#EXTINF:-1 tvg-name="凤凰中文" tvg-logo="https://image.5iclub.cloudns.org/file/8049778e22ce336229471.png" group-title="卫视频道",凤凰中文 𝟙
-http://116.162.6.192/1.v.smtcdns.net/qctv.fengshows.cn/live/0701pcc72.m3u8
-#EXTINF:-1 tvg-name="凤凰中文" tvg-logo="https://image.5iclub.cloudns.org/file/8049778e22ce336229471.png" group-title="卫视频道",凤凰中文 𝟚
-https://itv.lat/hls?channel=test1&token=85c53bb8caf87075db8efcb56cab13d6
-#EXTINF:-1 tvg-name="凤凰中文" tvg-logo="https://image.5iclub.cloudns.org/file/8049778e22ce336229471.png" group-title="卫视频道",凤凰中文 𝟛
-http://116.162.6.191/zycfcdn.gdwlcloud.com/PLTV/88888888/224/3221226317/index.m3u8
-#EXTINF:-1 tvg-name="凤凰资讯" tvg-logo="https://image.5iclub.cloudns.org/file/114b0590cbf291e683958.png" group-title="卫视频道",凤凰资讯 𝟙
-http://116.162.6.192/1.v.smtcdns.net/qctv.fengshows.cn/live/0701pin72.m3u8
-#EXTINF:-1 tvg-name="凤凰资讯" tvg-logo="https://image.5iclub.cloudns.org/file/114b0590cbf291e683958.png" group-title="卫视频道",凤凰资讯 𝟚
-https://itv.lat/hls?channel=test2&token=85c53bb8caf87075db8efcb56cab13d6
-#EXTINF:-1 tvg-name="凤凰资讯" tvg-logo="https://image.5iclub.cloudns.org/file/114b0590cbf291e683958.png" group-title="卫视频道",凤凰资讯 𝟛
-http://116.162.6.191/zycfcdn.gdwlcloud.com/PLTV/88888888/224/3221226320/index.m3u8
-#EXTINF:-1 tvg-name="凤凰香港" tvg-logo="https://image.5iclub.cloudns.org/file/9e0876c45e16f385b4501.png" group-title="卫视频道",凤凰香港
-http://116.162.6.192/1.v.smtcdns.net/qctv.fengshows.cn/live/0701phk72.m3u8
-#EXTINF:-1 tvg-name="香港卫视" tvg-logo="https://image.5iclub.cloudns.org/file/3f329f145e8b8eedd9501.png" group-title="卫视频道",香港卫视
-http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8
 #EXTINF:-1 tvg-name="北京卫视" tvg-logo="https://image.5iclub.cloudns.org/file/dab0b428d699498e69552.png" group-title="卫视频道",北京卫视 𝟙
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226450/index.m3u8
 #EXTINF:-1 tvg-name="北京卫视" tvg-logo="https://image.5iclub.cloudns.org/file/dab0b428d699498e69552.png" group-title="卫视频道",北京卫视 𝟚
@@ -946,15 +930,60 @@ http://jxcbn.ws-cdn.gitv.tv/hls/FSGW/index.m3u8?gMac=unknown&livodToken=dec390e3
 #EXTINF:-1 tvg-id="江西陶瓷频道" tvg-logo="https://image.5iclub.cloudns.org/file/4fc011f55366110da4c93.png"group-title="江西频道",江西陶瓷频道
 http://116.162.6.191/yun-live.jxtvcn.com.cn/live/tv_taoci.m3u8
 
-#EXTINF:-1 tvg-id="重庆新闻" tvg-logo="https://image.5iclub.cloudns.org/file/7bb7f7ac92cc8d4eded1d.png" group-title="重庆频道",重庆新闻
-https://sjlivecdn9.cbg.cn/202407021657/app_2/_definst_/ls_3.stream/chunklist.m3u8
+#EXTINF:-1 tvg-name="重庆都市" tvg-logo="https://live.fanmingming.com/tv/重庆都市.png" group-title="重庆频道",重庆都市
+http://ott.cqccn.com/PLTV/88888888/224/3221227312/index.m3u8
+#EXTINF:-1 tvg-name="重庆云课堂" tvg-logo="https://live.fanmingming.com/tv/重庆云课堂.png" group-title="重庆频道",重庆云课堂
+http://ott.cqccn.com/PLTV/88888888/224/3221227715/index.m3u8
+#EXTINF:-1 tvg-name="重庆云课堂" tvg-logo="https://live.fanmingming.com/tv/重庆云课堂2.png" group-title="重庆频道",重庆云课堂
+http://ott.cqccn.com/PLTV/88888888/224/3221227718/index.m3u8
+#EXTINF:-1 tvg-name="重庆党员教育" tvg-logo="https://live.fanmingming.com/tv/重庆党员教育.png" group-title="重庆频道",重庆党员教育
+http://ott.cqccn.com/PLTV/88888888/224/3221227459/index.m3u8
+#EXTINF:-1 tvg-name="重庆公共农村" tvg-logo="https://live.fanmingming.com/tv/重庆公共农村.png" group-title="重庆频道",重庆公共农村
+http://ott.cqccn.com/PLTV/88888888/224/3221227447/index.m3u8
+#EXTINF:-1 tvg-name="重庆少儿" tvg-logo="https://live.fanmingming.com/tv/重庆少儿.png" group-title="重庆频道",重庆少儿
+http://ott.cqccn.com/PLTV/88888888/224/3221227249/index.m3u8
+#EXTINF:-1 tvg-name="重庆影视" tvg-logo="https://live.fanmingming.com/tv/重庆影视.png" group-title="重庆频道",重庆影视
+http://ott.cqccn.com/PLTV/88888888/224/3221227297/index.m3u8
+#EXTINF:-1 tvg-name="重庆文体娱乐" tvg-logo="https://live.fanmingming.com/tv/重庆文体娱乐.png" group-title="重庆频道",重庆文体娱乐
+http://ott.cqccn.com/PLTV/88888888/224/3221227381/index.m3u8
+#EXTINF:-1 tvg-name="重庆新闻" tvg-logo="https://image.5iclub.cloudns.org/file/7bb7f7ac92cc8d4eded1d.png" group-title="重庆频道",重庆新闻
+http://ott.cqccn.com/PLTV/88888888/224/3221227315/index.m3u8
+#EXTINF:-1 tvg-name="重庆汽摩" tvg-logo="https://live.fanmingming.com/tv/重庆汽摩.png" group-title="重庆频道",重庆汽摩
+http://ott.cqccn.com/PLTV/88888888/224/3221227444/index.m3u8
+#EXTINF:-1 tvg-name="重庆生活资讯" tvg-logo="https://live.fanmingming.com/tv/重庆生活资讯.png" group-title="重庆频道",重庆生活资讯
+http://ott.cqccn.com/PLTV/88888888/224/3221227252/index.m3u8
+#EXTINF:-1 tvg-name="重庆科教" tvg-logo="https://live.fanmingming.com/tv/重庆科教.png" group-title="重庆频道",重庆科教
+http://ott.cqccn.com/PLTV/88888888/224/3221227285/index.m3u8
 #EXTINF:-1 tvg-id="时尚购物" tvg-logo="https://image.5iclub.cloudns.org/file/b12cc530d0f5a5dbc9ca8.png" group-title="重庆频道",时尚购物
 https://tvlive.ugoshop.com/ugotvlive/ssgotv.m3u8?auth_key=2312509421-0-0-6642ec3645caa943da6855a9ef7e2129
+#EXTINF:-1 tvg-name="重庆移动电视" tvg-logo="https://live.fanmingming.com/tv/重庆移动电视.png" group-title="重庆频道",重庆移动电视
+http://ott.cqccn.com/PLTV/88888888/224/3221227237/index.m3u8
+#EXTINF:-1 tvg-name="重庆移动电视" tvg-logo="https://live.fanmingming.com/tv/重庆移动电视.png" group-title="重庆频道",重庆移动电视
+http://ott.cqccn.com/PLTV/88888888/224/3221227306/index.m3u8
 
 #EXTINF:-1 tvg-id="延边新闻综合" tvg-logo="https://image.5iclub.cloudns.org/file/48a14dc3b2ca866c41f76.png" group-title="吉林频道",延边新闻综合
 https://live.ybtvyun.com/video/s10006-ff4eb5dba33d/index.m3u8
 #EXTINF:-1 tvg-id="延边汉语综合" tvg-logo="https://image.5iclub.cloudns.org/file/8b95183dad69edc1c7bbd.png" group-title="吉林频道",延边汉语综合
 https://live.ybtvyun.com/video/s10006-e9c6f9e4d53b/index.m3u8
+
+#EXTINF:-1 tvg-name="凤凰中文" tvg-logo="https://image.5iclub.cloudns.org/file/8049778e22ce336229471.png" group-title="港澳台频道",凤凰中文 𝟙
+http://116.162.6.192/1.v.smtcdns.net/qctv.fengshows.cn/live/0701pcc72.m3u8
+#EXTINF:-1 tvg-name="凤凰中文" tvg-logo="https://image.5iclub.cloudns.org/file/8049778e22ce336229471.png" group-title="港澳台频道",凤凰中文 𝟚
+https://itv.lat/hls?channel=test1&token=85c53bb8caf87075db8efcb56cab13d6
+#EXTINF:-1 tvg-name="凤凰中文" tvg-logo="https://image.5iclub.cloudns.org/file/8049778e22ce336229471.png" group-title="港澳台频道",凤凰中文 𝟛
+http://116.162.6.191/zycfcdn.gdwlcloud.com/PLTV/88888888/224/3221226317/index.m3u8
+#EXTINF:-1 tvg-name="凤凰资讯" tvg-logo="https://image.5iclub.cloudns.org/file/114b0590cbf291e683958.png" group-title="港澳台频道",凤凰资讯 𝟙
+http://116.162.6.192/1.v.smtcdns.net/qctv.fengshows.cn/live/0701pin72.m3u8
+#EXTINF:-1 tvg-name="凤凰资讯" tvg-logo="https://image.5iclub.cloudns.org/file/114b0590cbf291e683958.png" group-title="港澳台频道",凤凰资讯 𝟚
+https://itv.lat/hls?channel=test2&token=85c53bb8caf87075db8efcb56cab13d6
+#EXTINF:-1 tvg-name="凤凰资讯" tvg-logo="https://image.5iclub.cloudns.org/file/114b0590cbf291e683958.png" group-title="港澳台频道",凤凰资讯 𝟛
+http://116.162.6.191/zycfcdn.gdwlcloud.com/PLTV/88888888/224/3221226320/index.m3u8
+#EXTINF:-1 tvg-name="凤凰香港" tvg-logo="https://image.5iclub.cloudns.org/file/9e0876c45e16f385b4501.png" group-title="港澳台频道",凤凰香港
+http://116.162.6.192/1.v.smtcdns.net/qctv.fengshows.cn/live/0701phk72.m3u8
+#EXTINF:-1 tvg-name="香港卫视" tvg-logo="https://image.5iclub.cloudns.org/file/3f329f145e8b8eedd9501.png" group-title="港澳台频道",香港卫视
+http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8
+#EXTINF:-1 tvg-name="美亚C+" tvg-id="美亚C+" tvg-logo="https://live.fanmingming.com/tv/美亚C+.png" group-title="港澳台频道", 美亚C+
+http://ottproxy2.ist.ooo/livehls/MOB-U1-NO/03.m3u8
 
 #EXTINF:-1 tvg-logo="https://image.5iclub.cloudns.org/file/5ff7ce2e738aed7c17a94.png" tvg-name="咪咕全民热练" group-title="咪咕视频",咪咕全民热练 𝟙「IPV6」
 http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226508/index.m3u8
