@@ -568,11 +568,21 @@ https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
 https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
 #EXTINF:-1 tvg-name="之江纪录" tvg-logo="https://image.5iclub.cloudns.org/file/6325e82a561233aa1b1a1.png" group-title="浙江频道",之江纪录
 https://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8
-#EXTINF:-1,tvg-id="中国蓝新闻" tvg-name="中国蓝新闻" tvg-logo="https://image.5iclub.cloudns.org/file/85293982f416f5bf28f95.png" group-title="浙江频道",中国蓝新闻
+#EXTINF:-1 tvg-id="中国蓝新闻" tvg-name="中国蓝新闻" tvg-logo="https://image.5iclub.cloudns.org/file/85293982f416f5bf28f95.png" group-title="浙江频道",中国蓝新闻
 http://ali-m-l.cztv.com/channels/lantian/channel009/1080p.m3u8
-#EXTINF:-1 tvg-name="余杭综合频道" tvg-logo="https://image.5iclub.cloudns.org/file/b5e79768d584f044d906a.png" group-title="浙江频道",余杭综合频道
+#EXTINF:-1 tvg-id="杭州综合" tvg-logo="https://image.5iclub.cloudns.org/file/b8c52f932d2d7c5310535.png" group-title="浙江",杭州综合
+http://www.372583307.top:4022/udp/233.50.201.173:5140
+#EXTINF:-1 tvg-id="杭州明珠" tvg-logo="https://image.5iclub.cloudns.org/file/79844a0545a76d8403dbf.png" group-title="浙江",杭州明珠
+http://www.372583307.top:4022/udp/233.50.201.174:5140
+#EXTINF:-1 tvg-id="杭州生活" tvg-logo="https://image.5iclub.cloudns.org/file/ad500b24496bee1c89412.png" group-title="浙江",杭州生活
+http://www.372583307.top:4022/udp/233.50.201.175:5140
+#EXTINF:-1 tvg-id="杭州影视" tvg-logo="https://image.5iclub.cloudns.org/file/e6f12ce05fac3a6370fa1.png" group-title="浙江",杭州影视
+http://www.372583307.top:4022/udp/233.50.201.176:5140
+#EXTINF:-1 tvg-id="杭州青少体育" tvg-logo="https://image.5iclub.cloudns.org/file/58f8b1c9b674ef113e265.png" group-title="浙江",杭州青少体育
+http://www.372583307.top:4022/udp/233.50.201.177:5140
+#EXTINF:-1 tvg-name="余杭新闻频道" tvg-logo="https://image.5iclub.cloudns.org/file/b5e79768d584f044d906a.png" group-title="浙江频道",余杭新闻
 http://l.cztvcloud.com/channels/lantian/SXyuhang1/720p.m3u8?zzhed
-#EXTINF:-1 tvg-name="余杭未来频道" tvg-logo="https://image.5iclub.cloudns.org/file/c5f0a6b0558fbc9e68e03.png" group-title="浙江频道",余杭未来频道
+#EXTINF:-1 tvg-name="余杭未来频道" tvg-logo="https://image.5iclub.cloudns.org/file/c5f0a6b0558fbc9e68e03.png" group-title="浙江频道",余杭未来
 http://l.cztvcloud.com/channels/lantian/SXyuhang3/720p.m3u8?zzhed
 
 #EXTINF:-1 tvg-name="内蒙古综合" tvg-logo="https://image.5iclub.cloudns.org/file/840bcefd81d5a56c8ddb4.png" group-title="内蒙古频道",内蒙古新闻综合
@@ -956,7 +966,7 @@ http://116.162.6.191/zycfcdn.gdwlcloud.com/PLTV/88888888/224/3221226320/index.m3
 http://116.162.6.192/1.v.smtcdns.net/qctv.fengshows.cn/live/0701phk72.m3u8
 #EXTINF:-1 tvg-name="香港卫视" tvg-logo="https://image.5iclub.cloudns.org/file/3f329f145e8b8eedd9501.png" group-title="港澳台频道",香港卫视
 http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8
-#EXTINF:-1 tvg-name="美亚C+" tvg-id="美亚C+" tvg-logo="https://live.fanmingming.com/tv/美亚C+.png" group-title="港澳台频道", 美亚C+
+#EXTINF:-1 tvg-name="C+" tvg-id="C+" tvg-logo="https://image.5iclub.cloudns.org/file/b5e24553d5162b9fe3283.png" group-title="港澳台频道", C+
 http://ottproxy2.ist.ooo/livehls/MOB-U1-NO/03.m3u8
 
 #EXTINF:-1 tvg-logo="https://image.5iclub.cloudns.org/file/5ff7ce2e738aed7c17a94.png" tvg-name="咪咕全民热练" group-title="咪咕视频",咪咕全民热练 𝟙「IPV6」
