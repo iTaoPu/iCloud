@@ -875,6 +875,8 @@ http://hls.nntv.cn/nnlive/WLSH_24.m3u8
 https://hls.nntv.cn/nnlive/GGPD_24.m3u8
 #EXTINF:-1,tvg-id="南宁新闻综合" tvg-name="南宁新闻综合" tvg-logo="https://image.5iclub.cloudns.org/file/69b5d1a543d262372c74d.png" group-title="广西频道",南宁新闻综合
 https://hls.nntv.cn/nnlive/XWZH_24.m3u8
+#EXTINF:-1,tvg-id="南宁影视娱乐" tvg-name="南宁影视娱乐" tvg-logo="https://image.5iclub.cloudns.org/file/b24374f09563b1f0716b7.png" group-title="广西频道",南宁影视娱乐
+http://hls.nntv.cn/nnlive/YSYL_244.m3u8
 #EXTINF:-1,tvg-id="广西乐思购" tvg-name="广西乐思购" tvg-logo="https://image.5iclub.cloudns.org/file/8cb217a88ad4a84b1641c.png" group-title="广西频道",广西乐思购
 https://mobilelive.gxtv.cn/live/nn_live1002/playlist.m3u8
 
