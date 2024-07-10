@@ -923,18 +923,24 @@ http://112.30.194.221:20080/live/eac499adad7b49ff9cfa79ba84693959/hls.m3u8
 #EXTINF:-1 tvg-name="安徽综艺体育" tvg-logo="https://image.5iclub.cloudns.org/file/d4b7aeeff45af844621de.png" group-title="安徽频道",安徽综艺体育
 http://112.30.194.221:20080/live/c41f112b83f644ddb082669501c8ecd3/hls.m3u8
 
-#EXTINF:-1 tvg-name="江西都市" tvg-logo="https://image.5iclub.cloudns.org/file/a186ea1d82a3c15a8ccad.png" group-title="江西频道",江西都市http://116.162.6.191/yun-live.jxtvcn.com.cn/live/tv_jxtv2.m3u8
+#EXTINF:-1 tvg-name="江西都市" tvg-logo="https://image.5iclub.cloudns.org/file/a186ea1d82a3c15a8ccad.png" group-title="江西频道",江西都市
+http://jxcbn.ws-cdn.gitv.tv/hls/JXDS/index.m3u8?gMac=unknown&livodToken=888d14599229b54289a4690063f3d36d85eb571de652856432870a6d015c02ab_1720512461_604800&fromCDN=ws
 #EXTINF:-1 tvg-name="江西影视旅游" tvg-logo="https://image.5iclub.cloudns.org/file/3dbdeabbb77a4e684e1be.png" group-title="江西频道",江西影视旅游
-http://116.162.6.191/yun-live.jxtvcn.com.cn/live/tv_jxtv4.m3u8
+http://jxcbn.ws-cdn.gitv.tv/hls/JXYS/index.m3u8?gMac=unknown&livodToken=c81e0458f09f05164f539683c1a0552b6797150fe98d26e989d08de6b005db90_1720512487_604800&fromCDN=ws
 #EXTINF:-1 tvg-name="江西公共农业" tvg-logo="https://image.5iclub.cloudns.org/file/fea9afd89121e576ce5e3.png" group-title="江西频道",江西公共农业
-http://116.162.6.191/yun-live.jxtvcn.com.cn/live/tv_jxtv5.m3u8
+http://jxcbn.ws-cdn.gitv.tv/hls/JXGGNY/index.m3u8?gMac=unknown&livodToken=0f7c5e1c9e40f36dd89ac6df96d776f24e6ca87af6c05a635b2c5690eb274c3e_1720512500_604800&fromCDN=ws
 #EXTINF:-1 tvg-name="江西少儿" tvg-logo="https://image.5iclub.cloudns.org/file/017fea23a63d3f09e07dd.png" group-title="江西频道",江西少儿
-http://116.162.6.191/yun-live.jxtvcn.com.cn/live/tv_jxtv6.m3u8
+http://jxcbn.ws-cdn.gitv.tv/hls/JXSEHD/index.m3u8?gMac=unknown&livodToken=5e939da8139add2e4069a71598b81b174daea2eef14281beb442417e51c34326_1720512512_604800&fromCDN=ws
 #EXTINF:-1 tvg-name="江西新闻" tvg-logo="https://image.5iclub.cloudns.org/file/6d1a92f1a9ea23ea77f9f.png" group-title="江西频道",江西新闻
-http://116.162.6.191/yun-live.jxtvcn.com.cn/live/tv_jxtv7.m3u8
-#EXTINF:-1 tvg-name="江西移动电视" tvg-logo="https://image.5iclub.cloudns.org/file/3d85a3ef61b240a939c47.png" group-title="江西频道",江西移动电视http://116.162.6.191/yun-live.jxtvcn.com.cn/live/tv_jxtv8.m3u8
+http://jxcbn.ws-cdn.gitv.tv/hls/JXXWHD/index.m3u8?gMac=unknown&livodToken=13f8efd4062f22de88f3164eb290d652d0239af27c1610cb5bbe4b05d1c7f139_1720512528_604800&fromCDN=ws
+#EXTINF:-1 tvg-name="江西经济生活" tvg-logo="https://image.5iclub.cloudns.org/file/0045aef90b992b5ab219d.png" group-title="江西频道",江西经济生活
+http://jxcbn.ws-cdn.gitv.tv/hls/JXJJSHHD/index.m3u8?gMac=unknown&livodToken=64ed6dab9a564fbedd8ea38d03be6a7bbbc616365a24f4486a21128fbd2384f1_1720512473_604800&fromCDN=ws
+#EXTINF:-1 tvg-name="江西教育" tvg-logo="https://image.5iclub.cloudns.org/file/b5081b1b5e918a9e62908.png" group-title="江西频道",江西教育
+http://jxcbn.ws-cdn.gitv.tv/hls/JXJY/index.m3u8?gMac=unknown&livodToken=84ba9b9a6ddf6327c28b0574a2780bb3e6454cc59dd44f654fce49304403e2e7_1720512575_604800&fromCDN=ws
+#EXTINF:-1 tvg-name="江西移动电视" tvg-logo="https://image.5iclub.cloudns.org/file/3d85a3ef61b240a939c47.png" group-title="江西频道",江西移动电视
+http://116.162.6.191/yun-live.jxtvcn.com.cn/live/tv_jxtv8.m3u8
 #EXTINF:-1 tvg-id="江西风尚购物" tvg-logo="https://image.5iclub.cloudns.org/file/7cc2af28591e05f64339a.png"group-title="江西频道",风尚购物
-http://116.162.6.191/yun-live.jxtvcn.com.cn/live/tv_fsgw.m3u8
+http://jxcbn.ws-cdn.gitv.tv/hls/FSGW/index.m3u8?gMac=unknown&livodToken=dec390e34dd1205656b4977de8b70fe8fcd227828c0679711f5f2c51eb1e1231_1720512540_604800&fromCDN=ws
 #EXTINF:-1 tvg-id="江西陶瓷频道" tvg-logo="https://image.5iclub.cloudns.org/file/4fc011f55366110da4c93.png"group-title="江西频道",江西陶瓷频道
 http://116.162.6.191/yun-live.jxtvcn.com.cn/live/tv_taoci.m3u8
 
