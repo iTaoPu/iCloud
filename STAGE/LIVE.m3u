@@ -916,7 +916,8 @@ http://live.cooltv.top/tv/cutv.php?id=sxhh
 http://live.cooltv.top/tv/cutv.php?id=sxhh
 https://tvlive.ugoshop.com/ugotvlive/ugotv01.m3u8?auth_key=2312509421-0-0-f8f7e886fe98ee0a0c01458710bf26d3
 
-#EXTINF:-1 tvg-name="安徽影视" tvg-logo="https://image.5iclub.cloudns.org/file/e8b6ce586ecc6ac7d0bdc.png" group-title="安徽频道",安徽影视http://112.30.194.221:20080/live/d18ff95cb1fb4bbcb56215e189fc12be/hls.m3u8
+#EXTINF:-1 tvg-name="安徽影视" tvg-logo="https://image.5iclub.cloudns.org/file/e8b6ce586ecc6ac7d0bdc.png" group-title="安徽频道",安徽影视
+http://112.30.194.221:20080/live/d18ff95cb1fb4bbcb56215e189fc12be/hls.m3u8
 #EXTINF:-1 tvg-name="安徽经济生活" tvg-logo="https://image.5iclub.cloudns.org/file/ed9c129e23f0f4bd0e703.png" group-title="安徽频道",安徽经济生活
 http://112.30.194.221:20080/live/eac499adad7b49ff9cfa79ba84693959/hls.m3u8
 #EXTINF:-1 tvg-name="安徽综艺体育" tvg-logo="https://image.5iclub.cloudns.org/file/d4b7aeeff45af844621de.png" group-title="安徽频道",安徽综艺体育
