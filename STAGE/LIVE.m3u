@@ -994,7 +994,7 @@ http://116.162.6.192/1.v.smtcdns.net/qctv.fengshows.cn/live/0701phk72.m3u8
 http://php.jdshipin.com:8880/smt.php?id=tvbcaijing_twn
 #EXTINF:-1 tvg-name="香港卫视" tvg-logo="https://image.5iclub.cloudns.org/file/3f329f145e8b8eedd9501.png" group-title="港澳频道",香港卫视
 http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8
-#EXTINF:-1 tvg-name="C+" tvg-id="C+" tvg-logo="https://image.5iclub.cloudns.org/file/b5e24553d5162b9fe3283.png" group-title="港澳频道", C+
+#EXTINF:-1 tvg-name="C+" tvg-id="美亚C+" tvg-logo="https://image.5iclub.cloudns.org/file/b5e24553d5162b9fe3283.png" group-title="港澳频道", 美亚C+
 http://ottproxy2.ist.ooo/livehls/MOB-U1-NO/03.m3u8
 #EXTINF:-1 tvg-name="翡翠台" tvg-logo="https://image.5iclub.cloudns.org/file/8b1007278519b2355dc5e.png" group-title="港澳频道",翡翠台
 http://php.jdshipin.com:8880/smt.php?id=jade_twn
@@ -1251,6 +1251,14 @@ https://epg.pw/stream/e0de516e5f3d27316191a2f08953b9cc3fbc396694e2969a3401b2e07e
 https://epg.pw/stream/1f8ae2cd70bd10ff4b1c7e7ce2db6d534f0b00caca678a8a513cadd462c30528.m3u8
 #EXTINF:-1 tvg-name="生命电视" tvg-logo="https://image.5iclub.cloudns.org/file/fdbeee832771ddd6cb3ff.png" group-title="湾湾频道",生命电视 𝟚
 https://epg.pw/stream/3f1da41967f70b7fc0c80cce65f2a8c6d9c74b85eb97d39b0f3745b36b69a875.m3u8
+#EXTINF:-1 tvg-name="TAIWANPlus" tvg-logo="https://image.5iclub.cloudns.org/file/56af10eacc86d2ff44a70.png" group-title="湾湾频道",TAIWANPlus
+https://bcovlive-a.akamaihd.net/rce33d845cb9e42dfa302c7ac345f7858/ap-northeast-1/6282251407001/playlist.m3u8
+#EXTINF:-1 tvg-name="探索亚洲" tvg-logo="https://image.5iclub.cloudns.org/file/eb7e9c051cb70b4bb9764.png" group-title="湾湾频道",探索亚洲
+http://61.221.215.25:8800/hls/50/index.m3u8
+#EXTINF:-1 tvg-name="动物星球" tvg-logo="https://image.5iclub.cloudns.org/file/0d5de915c917a4e50805e.png" group-title="湾湾频道",动物星球
+http://61.221.215.25:8800/hls/57/index.m3u8
+#EXTINF:-1 tvg-name="番薯台" tvg-logo="https://image.5iclub.cloudns.org/file/c4ac03b8aa565de7a3cb7.png" group-title="湾湾频道",番薯台
+http://61.216.67.119:1935/TWHG/E1/chunklist_w705811302.m3u8
 
 #EXTINF:-1 tvg-logo="https://image.5iclub.cloudns.org/file/5ff7ce2e738aed7c17a94.png" tvg-name="咪咕全民热练" group-title="咪咕视频",咪咕全民热练 𝟙「IPV6」
 http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226508/index.m3u8
