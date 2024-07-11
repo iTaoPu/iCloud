@@ -504,7 +504,33 @@ http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000047/index.m3u8?
 http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000059/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000059&IASHttpSessionId=OTT19019320240419154124000281
 
 #EXTINF:-1 tvg-id="北京新闻" tvg-name="北京新闻" tvg-logo="https://image.5iclub.cloudns.org/file/c3567f8cff5567a5af142.png" group-title="北京频道",北京新闻
-https://live.funhillrm.com/5/sd/live.m3u8
+https://epg.pw/stream/a4ed03f7cee7d045bb9c19e183dc8e1f2b81c3ca19a06ec6f8de20a7e8dd51c4.ctv
+#EXTINF:-1 tvg-name="北京文艺" tvg-logo="https://image.5iclub.cloudns.org/file/61adb9140316f9d3555fa.png" group-title="北京频道",北京文艺
+https://epg.pw/stream/8d1156a87cd9a99a96edea7b1cf2d187504afb3d2308ab656b24f89f57279280.ctv
+#EXTINF:-1 tvg-name="北京财经" tvg-logo="https://image.5iclub.cloudns.org/file/8b2809626a506266cec62.png" group-title="北京频道",北京财经
+https://epg.pw/stream/e39ca4f8fa3af15f8cd6b747458b6ee6277e951355d280bc5c73aceb3131900c.ctv
+#EXTINF:-1 tvg-name="北京纪实科教" tvg-logo="https://image.5iclub.cloudns.org/file/e9fcdeb4f8d94d55b1dbf.png" group-title="北京频道",北京纪实科教 𝟙
+https://epg.pw/stream/cc7f8d91f16724d656d8fdbbc8c52042928674b696e1deb4cbb336a27a722079.ctv
+#EXTINF:-1 tvg-name="北京纪实科教" tvg-logo="https://image.5iclub.cloudns.org/file/e9fcdeb4f8d94d55b1dbf.png" group-title="北京频道",北京纪实科教 𝟚
+https://epg.pw/stream/400fb03eb82b795fcd7788a39f8b35f4eb9431476e6e1a65abb3d5d0b97a51b0.m3u8
+#EXTINF:-1 tvg-name="北京淘BABY" tvg-logo="https://image.5iclub.cloudns.org/file/35b77516dbd9fc4010033.png" group-title="北京频道",北京淘BABY 𝟙
+https://epg.pw/stream/546678813022c60ce2cda8d4db354fb34f59fa03eff6d2d8285e52f52049ea82.ctv
+#EXTINF:-1 tvg-name="北京淘BABY" tvg-logo="https://image.5iclub.cloudns.org/file/35b77516dbd9fc4010033.png" group-title="北京频道",北京淘BABY 𝟚
+https://epg.pw/stream/3d3aeed48cadfc64ea05a4c1fe129f334ef0a697746cca2f5422570d65905e1e.ctv
+#EXTINF:-1 tvg-name="北京淘剧场" tvg-logo="https://image.5iclub.cloudns.org/file/8f0824872998e3c952869.png" group-title="北京频道",北京淘剧场 𝟙
+https://epg.pw/stream/6a4d00df7e820e3e344d3fbf0323a207c5e3e2560b1f7cd7a6fc3fd46fa0cd8f.ctv
+#EXTINF:-1 tvg-name="北京淘剧场" tvg-logo="https://image.5iclub.cloudns.org/file/8f0824872998e3c952869.png" group-title="北京频道",北京淘剧场 𝟚
+https://epg.pw/stream/b7f6458ca3f84e3f187df8cabed744c221a28d5dc43d4b9d0bbda3d86334a5f8.ctv
+#EXTINF:-1 tvg-name="北京淘娱乐" tvg-logo="https://image.5iclub.cloudns.org/file/c6b5a3bf95e7e3e790397.png" group-title="北京频道",北京淘娱乐 𝟙
+https://epg.pw/stream/e93a3535ca2eaef6df3ae49285187f14b011563bab377a0ad4a9b05896f2fa6e.ctv
+#EXTINF:-1 tvg-name="北京淘娱乐" tvg-logo="https://image.5iclub.cloudns.org/file/c6b5a3bf95e7e3e790397.png" group-title="北京频道",北京淘娱乐 𝟚
+https://epg.pw/stream/38656ad8339111cee7e54f8e04ab6ff7aac5cf126685319a1e4b17fd35747c08.ctv
+#EXTINF:-1 tvg-name="北京淘电影" tvg-logo="https://image.5iclub.cloudns.org/file/7c45ac600a75d35b56e1f.png" group-title="北京频道",北京淘电影 𝟙
+https://epg.pw/stream/8f9c6cc958f8727b3d4292a016d1fd96f54576616fa08d90116ec3f33dc9f9f4.ctv
+#EXTINF:-1 tvg-name="北京淘电影" tvg-logo="https://image.5iclub.cloudns.org/file/7c45ac600a75d35b56e1f.png" group-title="北京频道",北京淘电影 𝟚
+https://epg.pw/stream/0163d007c5f88cc778ce4b753afb81eb14f6ed35db2f1fb8f04b72b08a46eec4.ctv
+#EXTINF:-1 tvg-name="北京萌宠TV" tvg-logo="https://image.5iclub.cloudns.org/file/1d5874c707d09dd8af9be.png" group-title="北京频道",北京萌宠TV
+https://epg.pw/stream/c871a2ebe67246b5409ae8224141887715f400fe39508bb2d21fdf60ddecfaa9.ctv
 
 #EXTINF:-1 tvg-id="江苏城市" tvg-name="江苏城市" tvg-logo="https://image.5iclub.cloudns.org/file/813dfdff017440b0b0f35.png" group-title="江苏频道",江苏城市
 http://58.220.219.14:9901/tsfile/live/0120_3.m3u8
@@ -994,6 +1020,8 @@ http://php.jdshipin.com:8880/smt.php?id=j2_twn
 http://php.jdshipin.com:8880/smt.php?id=rhk31_twn
 #EXTINF:-1 tvg-name="RTHK32" tvg-logo="https://image.5iclub.cloudns.org/file/07f3d8239c250ff3c4e37.png" group-title="港澳台频道",RTHK32
 http://php.jdshipin.com:8880/smt.php?id=rhk32_twn
+#EXTINF:-1 tvg-name="澳门莲花" tvg-logo="https://image.5iclub.cloudns.org/file/ed0b91adb4beb7e85fe29.png" group-title="🇲🇴澳门",澳门莲花
+https://epg.pw/stream/5499880d623a69122a59f962ddc7e383ee4f633ddcee32ba133ac25e98f125e2.ctv
 #EXTINF:-1 tvg-name="民視" tvg-logo="https://image.5iclub.cloudns.org/file/5418a81af05d835749073.png" group-title="港澳台频道",民視 𝟙
 rtmp://f13h.mine.nu/sat/tv051
 #EXTINF:-1 tvg-name="民視" tvg-logo="https://image.5iclub.cloudns.org/file/5418a81af05d835749073.png" group-title="港澳台频道",民視 𝟚
@@ -1198,6 +1226,30 @@ https://iptv.lalifeier.eu.org/litv/litv-longturn19.m3u8
 https://iptv.lalifeier.eu.org/litv/litv-longturn20.m3u8
 #EXTINF:-1 tvg-name="台灣戲劇台" tvg-logo="https://image.5iclub.cloudns.org/file/ea86fef7db9d5479b42e3.png" group-title="港澳台频道",台灣戲劇台
 https://iptv.lalifeier.eu.org/litv/litv-longturn22.m3u8
+#EXTINF:-1 tvg-name="大爱2" tvg-logo="https://image.5iclub.cloudns.org/file/251e08dcefa9beb001405.png" group-title="港澳台频道",大爱2 𝟙
+https://epg.pw/stream/d8ecd4005a721625fd1cf30519dc635fdeec60f7a294302874d5638972f56f68.m3u8
+#EXTINF:-1 tvg-name="大爱2" tvg-logo="https://image.5iclub.cloudns.org/file/251e08dcefa9beb001405.png" group-title="港澳台频道",大爱2 𝟚
+https://epg.pw/stream/2b383d639b6b2eade22f2d085141a38ae48a98f24b8a06f485e23f7211bbf909.m3u8
+#EXTINF:-1 tvg-name="大立电视台" tvg-logo="https://image.5iclub.cloudns.org/file/dac23aeb0b150dee87e4e.png" group-title="港澳台频道",大立电视台
+https://epg.pw/stream/5089e07a3319b33160e486ab9c09540d8ad763339474f9c41ba8062333504b0d.m3u8
+#EXTINF:-1 tvg-name="人间卫视" tvg-logo="https://image.5iclub.cloudns.org/file/60fd130ac35859822535a.png" group-title="港澳台频道",人间卫视 𝟙
+https://epg.pw/stream/05b9099bef592e55129817a0f82b4cc60378970bc856b993ae9e330e85f4351f.m3u8
+#EXTINF:-1 tvg-name="人间卫视" tvg-logo="https://image.5iclub.cloudns.org/file/60fd130ac35859822535a.png" group-title="港澳台频道",人间卫视 𝟚
+https://epg.pw/stream/42db7d21271f321cdd59f552ed6de00b634a389edf2db56e1f2b59852f9551db.ctv
+#EXTINF:-1 tvg-name="唯心电视" tvg-logo="https://image.5iclub.cloudns.org/file/28c46661dda821eadc639.png" group-title="🇨🇳台湾",唯心电视 𝟙
+https://epg.pw/stream/821eba8c8f03a7d2b604051525642cfdca5c96a65d2fa7ca56ea9d179674b543.m3u8
+#EXTINF:-1 tvg-name="唯心电视" tvg-logo="https://image.5iclub.cloudns.org/file/28c46661dda821eadc639.png" group-title="🇨🇳台湾",唯心电视 𝟚
+https://epg.pw/stream/e0de516e5f3d27316191a2f08953b9cc3fbc396694e2969a3401b2e07ea50e95.m3u8
+#EXTINF:-1 tvg-name="生命电视" tvg-logo="https://image.5iclub.cloudns.org/file/fdbeee832771ddd6cb3ff.png" group-title="🇨🇳台湾",生命电视 𝟙
+https://epg.pw/stream/1f8ae2cd70bd10ff4b1c7e7ce2db6d534f0b00caca678a8a513cadd462c30528.m3u8
+#EXTINF:-1 tvg-name="生命电视" tvg-logo="https://image.5iclub.cloudns.org/file/fdbeee832771ddd6cb3ff.png" group-title="🇨🇳台湾",生命电视 𝟚
+https://epg.pw/stream/3f1da41967f70b7fc0c80cce65f2a8c6d9c74b85eb97d39b0f3745b36b69a875.m3u8
+#EXTINF:-1 tvg-name="环球电视台" tvg-logo="https://image.5iclub.cloudns.org/file/64e946f3d49f7cfec73ed.png" group-title="🇭🇰香港",环球电视台 𝟙
+https://epg.pw/stream/8884871c3db7be5caf8d6dc44cfe4909e921ffffc77be1d1b7b2eeec0cbdedbb.m3u8
+#EXTINF:-1 tvg-name="环球电视台" tvg-logo="https://image.5iclub.cloudns.org/file/64e946f3d49f7cfec73ed.png" group-title="🇭🇰香港",环球电视台 𝟚
+https://epg.pw/stream/b4dc9c6994b988ed1e17cd22e6574f578b8d43a534a2e4d07049f711b3e9bdad.m3u8
+#EXTINF:-1 tvg-name="环球电视台" tvg-logo="https://image.5iclub.cloudns.org/file/64e946f3d49f7cfec73ed.png" group-title="🇭🇰香港",环球电视台 𝟛
+https://epg.pw/stream/871627cefa0727603ae38287f349e796402982c186ea32bea812ef9d764c5923.m3u8
 
 #EXTINF:-1 tvg-logo="https://image.5iclub.cloudns.org/file/5ff7ce2e738aed7c17a94.png" tvg-name="咪咕全民热练" group-title="咪咕视频",咪咕全民热练 𝟙「IPV6」
 http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226508/index.m3u8
