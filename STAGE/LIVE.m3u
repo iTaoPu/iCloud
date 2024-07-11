@@ -1136,9 +1136,9 @@ https://iptv.lalifeier.eu.org/litv/4gtv-4gtv101.m3u8
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv104.m3u8
 #EXTINF:-1 tvg-name="第1商業台" tvg-logo="https://image.5iclub.cloudns.org/file/bd8d635c74b2968b5235f.png" group-title="港澳台频道",第一商業台
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv109.m3u8
-#EXTINF:-1 tvg-name="東森新聞" tvg-logo="https://raw.githubusercontent.com/linitfor/epg/main/logo/東森新聞.png" group-title="港澳台频道",東森新聞
+#EXTINF:-1 tvg-name="東森新聞" tvg-logo="https://image.5iclub.cloudns.org/file/6b7830476e3e649cdf894.png" group-title="港澳台频道",東森新聞
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv152.m3u8
-#EXTINF:-1 tvg-name="東森財經新聞" tvg-logo="https://image.5iclub.cloudns.org/file/6b7830476e3e649cdf894.png" group-title="港澳台频道",東森財經新聞
+#EXTINF:-1 tvg-name="東森財經新聞" tvg-logo="https://image.5iclub.cloudns.org/file/613b70b7a22e33a36f053.png" group-title="港澳台频道",東森財經新聞
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv153.m3u8
 #EXTINF:-1 tvg-name="美國之音" tvg-logo="https://image.5iclub.cloudns.org/file/d67eb6e22e9b816dc4873.png" group-title="港澳台频道",美國之音
 https://iptv.lalifeier.eu.org/litv/litv-ftv03.m3u8
