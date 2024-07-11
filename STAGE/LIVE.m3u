@@ -1008,9 +1008,9 @@ http://v2h.jdshipin.com/xinghe/xinghe.stream/chunklist.m3u8
 http://php.jdshipin.com:8880/smt.php?id=viu1_twn
 #EXTINF:-1 tvg-name="无线新闻台" tvg-logo="https://image.5iclub.cloudns.org/file/da431980e2ea06af96deb.png" group-title="港澳台频道",无线新闻台
 http://php.jdshipin.com:8880/smt.php?id=inews_twn
-#EXTINF:-1 tvg-name="娱乐新闻台" tvg-logo="https://image.5iclub.cloudns.org/file/8768fa1a89e5cbca0a965.png" group-title="港澳台频道",娱乐新闻台
+#EXTINF:-1 tvg-name="TVB娱乐新闻台" tvg-logo="https://image.5iclub.cloudns.org/file/8768fa1a89e5cbca0a965.png" group-title="港澳台频道",娱乐新闻台
 https://edge6a.v2h-cdn.com/enew/enew.stream/chunklist.m3u8
-#EXTINF:-1 tvg-name="TVB 娱乐新闻台" tvg-logo="https://image.5iclub.cloudns.org/file/8768fa1a89e5cbca0a965.png" group-title="港澳台频道",TVB 娱乐新闻台
+#EXTINF:-1 tvg-name="TVB娱乐新闻台" tvg-logo="https://image.5iclub.cloudns.org/file/8768fa1a89e5cbca0a965.png" group-title="港澳台频道",TVB 娱乐新闻台
 http://v2h.jdshipin.com/enew/enew.stream/chunklist.m3u8
 #EXTINF:-1 tvg-name="功夫台" tvg-logo="https://image.5iclub.cloudns.org/file/641560e62cf4659a768b6.png" group-title="港澳台频道",功夫台
 http://v2h.jdshipin.com/asia_action/asia_action.stream/chunklist.m3u8
@@ -1022,171 +1022,171 @@ http://php.jdshipin.com:8880/smt.php?id=rhk31_twn
 http://php.jdshipin.com:8880/smt.php?id=rhk32_twn
 #EXTINF:-1 tvg-name="澳门莲花" tvg-logo="https://image.5iclub.cloudns.org/file/ed0b91adb4beb7e85fe29.png" group-title="港澳台频道",澳门莲花
 https://epg.pw/stream/5499880d623a69122a59f962ddc7e383ee4f633ddcee32ba133ac25e98f125e2.ctv
-#EXTINF:-1 tvg-name="民視" tvg-logo="https://image.5iclub.cloudns.org/file/5418a81af05d835749073.png" group-title="港澳台频道",民視 𝟙
+#EXTINF:-1 tvg-name="民视" tvg-logo="https://image.5iclub.cloudns.org/file/5418a81af05d835749073.png" group-title="港澳台频道",民视 𝟙
 rtmp://f13h.mine.nu/sat/tv051
-#EXTINF:-1 tvg-name="民視" tvg-logo="https://image.5iclub.cloudns.org/file/5418a81af05d835749073.png" group-title="港澳台频道",民視 𝟚
+#EXTINF:-1 tvg-name="民视" tvg-logo="https://image.5iclub.cloudns.org/file/5418a81af05d835749073.png" group-title="港澳台频道",民视 𝟚
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv002.m3u8
-#EXTINF:-1 tvg-name="民視" tvg-logo="https://image.5iclub.cloudns.org/file/5418a81af05d835749073.png" group-title="港澳台频道",民視 𝟛
+#EXTINF:-1 tvg-name="民视" tvg-logo="https://image.5iclub.cloudns.org/file/5418a81af05d835749073.png" group-title="港澳台频道",民视 𝟛
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv155.m3u8
-#EXTINF:-1 tvg-name="台視" tvg-logo="https://image.5iclub.cloudns.org/file/ac396b6ff91f2dd5ac0bb.png" group-title="港澳台频道",台視 𝟙
+#EXTINF:-1 tvg-name="台视" tvg-logo="https://image.5iclub.cloudns.org/file/ac396b6ff91f2dd5ac0bb.png" group-title="港澳台频道",台视 𝟙
 rtmp://f13h.mine.nu/sat/tv071
-#EXTINF:-1 tvg-name="台視" tvg-logo="https://image.5iclub.cloudns.org/file/ac396b6ff91f2dd5ac0bb.png" group-title="港澳台频道",台視 𝟚
+#EXTINF:-1 tvg-name="台视" tvg-logo="https://image.5iclub.cloudns.org/file/ac396b6ff91f2dd5ac0bb.png" group-title="港澳台频道",台视 𝟚
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv066.m3u8
-#EXTINF:-1 tvg-name="中視" tvg-logo="https://image.5iclub.cloudns.org/file/458b712a18d2ea0295484.png" group-title="港澳台频道",中視 𝟙
+#EXTINF:-1 tvg-name="中视" tvg-logo="https://image.5iclub.cloudns.org/file/458b712a18d2ea0295484.png" group-title="港澳台频道",中视 𝟙
 rtmp://f13h.mine.nu/sat/tv091
-#EXTINF:-1 tvg-name="中視" tvg-logo="https://image.5iclub.cloudns.org/file/458b712a18d2ea0295484.png" group-title="港澳台频道",中視 𝟚
+#EXTINF:-1 tvg-name="中视" tvg-logo="https://image.5iclub.cloudns.org/file/458b712a18d2ea0295484.png" group-title="港澳台频道",中视 𝟚
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv040.m3u8
-#EXTINF:-1 tvg-name="華視" tvg-logo="https://image.5iclub.cloudns.org/file/fc417633f8f9663b49232.png" group-title="港澳台频道",華視 𝟙
+#EXTINF:-1 tvg-name="华视" tvg-logo="https://image.5iclub.cloudns.org/file/fc417633f8f9663b49232.png" group-title="港澳台频道",华视 𝟙
 rtmp://f13h.mine.nu/sat/tv111
-#EXTINF:-1 tvg-name="華視" tvg-logo="https://image.5iclub.cloudns.org/file/fc417633f8f9663b49232.png" group-title="港澳台频道",華視 𝟚
+#EXTINF:-1 tvg-name="华视" tvg-logo="https://image.5iclub.cloudns.org/file/fc417633f8f9663b49232.png" group-title="港澳台频道",华视 𝟚
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv041.m3u8
-#EXTINF:-1 tvg-name="東森超視" tvg-logo="https://image.5iclub.cloudns.org/file/61649a15894c3c9a0dad9.png" group-title="港澳台频道",東森超視
+#EXTINF:-1 tvg-name="东森超视" tvg-logo="https://image.5iclub.cloudns.org/file/61649a15894c3c9a0dad9.png" group-title="港澳台频道",东森超视
 rtmp://f13h.mine.nu/sat/tv331
-#EXTINF:-1 tvg-name="MoMo综合" tvg-logo="https://image.5iclub.cloudns.org/file/a59ee2f72f71f7d8d6561.png" group-title="港澳台频道",MOMOTV
+#EXTINF:-1 tvg-name="MoMoTV" tvg-logo="https://image.5iclub.cloudns.org/file/a59ee2f72f71f7d8d6561.png" group-title="港澳台频道",MOMOTV
 rtmp://f13h.mine.nu/sat/tv761
-#EXTINF:-1 tvg-name="緯來日本台" tvg-logo="https://image.5iclub.cloudns.org/file/85b7982439488b0e32bcf.png" group-title="港澳台频道",緯來日本台
+#EXTINF:-1 tvg-name="纬来日本台" tvg-logo="https://image.5iclub.cloudns.org/file/85b7982439488b0e32bcf.png" group-title="港澳台频道",纬来日本台
 rtmp://f13h.mine.nu/sat/tv771
-#EXTINF:-1 tvg-name="緯來育樂" tvg-logo="https://image.5iclub.cloudns.org/file/fa0f72c0d9ffaae03c763.png" group-title="港澳台频道",緯來育樂
+#EXTINF:-1 tvg-name="纬来育乐" tvg-logo="https://image.5iclub.cloudns.org/file/fa0f72c0d9ffaae03c763.png" group-title="港澳台频道",纬来育乐
 rtmp://f13h.mine.nu/sat/tv701
-#EXTINF:-1 tvg-name="緯來體育台" tvg-logo="https://image.5iclub.cloudns.org/file/83fec1111d2b33dd63079.png" group-title="港澳台频道",緯來體育台
+#EXTINF:-1 tvg-name=纬来体育台" tvg-logo="https://image.5iclub.cloudns.org/file/83fec1111d2b33dd63079.png" group-title="港澳台频道",纬来体育台
 rtmp://f13h.mine.nu/sat/tv721
 #EXTINF:-1 tvg-name="DAZN1" tvg-logo="https://image.5iclub.cloudns.org/file/8246026e89d3bbe0e5845.png" group-title="港澳台频道",DAZN𝟙
 rtmp://f13h.mine.nu/sat/tv731
 #EXTINF:-1 tvg-name="DAZN2" tvg-logo="https://image.5iclub.cloudns.org/file/61dcf97542709afcf699f.png" group-title="港澳台频道",DAZN𝟚
 rtmp://f13h.mine.nu/sat/tv741
-#EXTINF:-1 tvg-name="民視台灣台" tvg-logo="https://image.5iclub.cloudns.org/file/9e484b6fbdfde4aed90bf.png" group-title="港澳台频道",民視台灣台 𝟙
+#EXTINF:-1 tvg-name="民视台湾台" tvg-logo="https://image.5iclub.cloudns.org/file/9e484b6fbdfde4aed90bf.png" group-title="港澳台频道",民视台湾台 𝟙
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv001.m3u8
-#EXTINF:-1 tvg-name="民視台灣台" tvg-logo="https://image.5iclub.cloudns.org/file/9e484b6fbdfde4aed90bf.png" group-title="港澳台频道",民視台灣台 𝟚
+#EXTINF:-1 tvg-name="民视台湾台" tvg-logo="https://image.5iclub.cloudns.org/file/9e484b6fbdfde4aed90bf.png" group-title="港澳台频道",民视台湾台 𝟚
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv156.m3u8
-#EXTINF:-1 tvg-name="民視第一台" tvg-logo="https://image.5iclub.cloudns.org/file/f1a3aff2c4ce7285ab256.png" group-title="港澳台频道",民視第一台
+#EXTINF:-1 tvg-name="民视第一台" tvg-logo="https://image.5iclub.cloudns.org/file/f1a3aff2c4ce7285ab256.png" group-title="港澳台频道",民视第一台
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv003.m3u8
-#EXTINF:-1 tvg-name="民視綜藝" tvg-logo="https://image.5iclub.cloudns.org/file/19b29cf5d179ae576f4ed.png" group-title="港澳台频道",民視綜藝
+#EXTINF:-1 tvg-name="民视综艺" tvg-logo="https://image.5iclub.cloudns.org/file/19b29cf5d179ae576f4ed.png" group-title="港澳台频道",民视综艺
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv004.m3u8
-#EXTINF:-1 tvg-name="豬哥亮歌廳秀" tvg-logo="https://image.5iclub.cloudns.org/file/b9387c002a2dec52d2c9f.png" group-title="港澳台频道",豬哥亮歌廳秀
+#EXTINF:-1 tvg-name="猪哥亮歌厅秀" tvg-logo="https://image.5iclub.cloudns.org/file/b9387c002a2dec52d2c9f.png" group-title="港澳台频道",猪哥亮歌厅秀
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv006.m3u8
-#EXTINF:-1 tvg-name="中天新聞" tvg-logo="https://image.5iclub.cloudns.org/file/8d3a9e229e9389505356b.png" group-title="港澳台频道",中天新聞
+#EXTINF:-1 tvg-name="中天新闻" tvg-logo="https://image.5iclub.cloudns.org/file/8d3a9e229e9389505356b.png" group-title="港澳台频道",中天新闻
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv009.m3u8
-#EXTINF:-1 tvg-name="非凡新聞" tvg-logo="https://image.5iclub.cloudns.org/file/51282a5eeb675d197e80c.png" group-title="港澳台频道",非凡新聞
+#EXTINF:-1 tvg-name="非凡新闻" tvg-logo="https://image.5iclub.cloudns.org/file/51282a5eeb675d197e80c.png" group-title="港澳台频道",非凡新闻
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv010.m3u8
-#EXTINF:-1 tvg-name="非凡商業" tvg-logo="https://image.5iclub.cloudns.org/file/6041cd823d25eefc24909.png" group-title="港澳台频道",非凡商業
+#EXTINF:-1 tvg-name="非凡商业" tvg-logo="https://image.5iclub.cloudns.org/file/6041cd823d25eefc24909.png" group-title="港澳台频道",非凡商业
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv048.m3u8
-#EXTINF:-1 tvg-name="影迷數位電影台" tvg-logo="https://image.5iclub.cloudns.org/file/50586cfaeb7a92dd2e631.png" group-title="港澳台频道",影迷數位電影台
+#EXTINF:-1 tvg-name="影迷数位电影台" tvg-logo="https://image.5iclub.cloudns.org/file/50586cfaeb7a92dd2e631.png" group-title="港澳台频道",影迷数位电影台
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv011.m3u8
-#EXTINF:-1 tvg-name="視納華仁紀實頻道" tvg-logo="https://image.5iclub.cloudns.org/file/b13261451170eed6fc3d5.png" group-title="港澳台频道",視納華仁紀實頻道
+#EXTINF:-1 tvg-name="视纳华仁纪实频道" tvg-logo="https://image.5iclub.cloudns.org/file/b13261451170eed6fc3d5.png" group-title="港澳台频道",视纳华仁纪实频道
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv013.m3u8
-#EXTINF:-1 tvg-name="時尚運動X" tvg-logo="https://image.5iclub.cloudns.org/file/413e6132404d73b5c27e2.png" group-title="港澳台频道",時尚運動X
+#EXTINF:-1 tvg-name="时尚运动X" tvg-logo="https://image.5iclub.cloudns.org/file/413e6132404d73b5c27e2.png" group-title="港澳台频道",时尚运动X
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv014.m3u8
 #EXTINF:-1 tvg-name="GLOBETROTTER" tvg-logo="https://image.5iclub.cloudns.org/file/f223e39520f56599f32c8.png" group-title="港澳台频道",GLOBETROTTER
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv016.m3u8
-#EXTINF:-1 tvg-name="AMC電影台" tvg-logo="https://image.5iclub.cloudns.org/file/44fdfcc13d5536138e30a.png" group-title="港澳台频道",AMC電影台
+#EXTINF:-1 tvg-name="AMC电影台" tvg-logo="https://image.5iclub.cloudns.org/file/44fdfcc13d5536138e30a.png" group-title="港澳台频道",AMC电影台
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv017.m3u8
-#EXTINF:-1 tvg-name="達文西頻道" tvg-logo="https://image.5iclub.cloudns.org/file/8cdf143c31a4e4d27d67a.png" group-title="港澳台频道",達文西頻道
+#EXTINF:-1 tvg-name="达文西频道" tvg-logo="https://image.5iclub.cloudns.org/file/8cdf143c31a4e4d27d67a.png" group-title="港澳台频道",达文西频道
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv018.m3u8
 #EXTINF:-1 tvg-name="八大精彩台" tvg-logo="https://image.5iclub.cloudns.org/file/13073ed9c05d2d75d626e.png" group-title="港澳台频道",八大精彩台
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv034.m3u8
-#EXTINF:-1 tvg-name="八大綜合台" tvg-logo="https://image.5iclub.cloudns.org/file/026a400efb7c93916a65e.png" group-title="港澳台频道",八大綜合台
+#EXTINF:-1 tvg-name="八大综合台" tvg-logo="https://image.5iclub.cloudns.org/file/026a400efb7c93916a65e.png" group-title="港澳台频道",八大综合台
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv039.m3u8
-#EXTINF:-1 tvg-name="公視戲劇" tvg-logo="https://image.5iclub.cloudns.org/file/b7c0ac239549c6c999ef6.png" group-title="港澳台频道",公視戲劇
+#EXTINF:-1 tvg-name="公视戏剧" tvg-logo="https://image.5iclub.cloudns.org/file/b7c0ac239549c6c999ef6.png" group-title="港澳台频道",公视戏剧
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv042.m3u8
-#EXTINF:-1 tvg-name="客家電視台" tvg-logo="https://image.5iclub.cloudns.org/file/8b377c5b5eac804095b39.png" group-title="港澳台频道",客家電視台
+#EXTINF:-1 tvg-name="客家电视台" tvg-logo="https://image.5iclub.cloudns.org/file/8b377c5b5eac804095b39.png" group-title="港澳台频道",客家电视台
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv043.m3u8
 #EXTINF:-1 tvg-name="靖天卡通台" tvg-logo="https://image.5iclub.cloudns.org/file/f69e173db24fa1073ce9a.png" group-title="港澳台频道",靖天卡通台
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv044.m3u8
-#EXTINF:-1 tvg-name="靖洋戲劇台" tvg-logo="https://image.5iclub.cloudns.org/file/ff761ffc481077d3bd111.png" group-title="港澳台频道",靖洋戲劇台
+#EXTINF:-1 tvg-name="靖洋戏剧台" tvg-logo="https://image.5iclub.cloudns.org/file/ff761ffc481077d3bd111.png" group-title="港澳台频道",靖洋戏剧台
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv045.m3u8
-#EXTINF:-1 tvg-name="靖天綜合台" tvg-logo="https://image.5iclub.cloudns.org/file/9b75bcd0e6544f8b05018.png" group-title="港澳台频道",靖天綜合台
+#EXTINF:-1 tvg-name="靖天综合台" tvg-logo="https://image.5iclub.cloudns.org/file/9b75bcd0e6544f8b05018.png" group-title="港澳台频道",靖天综合台
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv046.m3u8
 #EXTINF:-1 tvg-name="靖天日本台" tvg-logo="https://image.5iclub.cloudns.org/file/02ea750bb2443de924b21.png" group-title="港澳台频道",靖天日本台
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv047.m3u8
-#EXTINF:-1 tvg-name="采昌影劇" tvg-logo="https://image.5iclub.cloudns.org/file/906edf4ce7e36889ffa69.png" group-title="港澳台频道",采昌影劇
+#EXTINF:-1 tvg-name="采昌影剧" tvg-logo="https://image.5iclub.cloudns.org/file/906edf4ce7e36889ffa69.png" group-title="港澳台频道",采昌影剧
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv049.m3u8
-#EXTINF:-1 tvg-name="台視新聞" tvg-logo="https://image.5iclub.cloudns.org/file/8f020f56f7d3e0fdd7ce8.png" group-title="港澳台频道",台視新聞
+#EXTINF:-1 tvg-name="台视新闻" tvg-logo="https://image.5iclub.cloudns.org/file/8f020f56f7d3e0fdd7ce8.png" group-title="港澳台频道",台视新闻
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv051.m3u8
-#EXTINF:-1 tvg-name="華視新聞" tvg-logo="https://image.5iclub.cloudns.org/file/80819eb0ebaff0751f443.png" group-title="港澳台频道",華視新聞
+#EXTINF:-1 tvg-name="华视新闻" tvg-logo="https://image.5iclub.cloudns.org/file/80819eb0ebaff0751f443.png" group-title="港澳台频道",华视新闻
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv052.m3u8
 #EXTINF:-1 tvg-name="GINX TV" tvg-logo="https://image.5iclub.cloudns.org/file/2edea4b6d2417220dee6a.png" group-title="港澳台频道",GINX TV
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv053.m3u8
-#EXTINF:-1 tvg-name="靖天歡樂台" tvg-logo="https://image.5iclub.cloudns.org/file/bb62cee7bb8dbb71933c1.png" group-title="港澳台频道",靖天歡樂台
+#EXTINF:-1 tvg-name="靖天欢乐台" tvg-logo="https://image.5iclub.cloudns.org/file/bb62cee7bb8dbb71933c1.png" group-title="港澳台频道",靖天欢乐台
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv054.m3u8
-#EXTINF:-1 tvg-name="靖天映畫" tvg-logo="https://image.5iclub.cloudns.org/file/5bc097c95b763f1f39dae.png" group-title="港澳台频道",靖天映畫台
+#EXTINF:-1 tvg-name="靖天映画" tvg-logo="https://image.5iclub.cloudns.org/file/5bc097c95b763f1f39dae.png" group-title="港澳台频道",靖天映画台
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv055.m3u8
-#EXTINF:-1 tvg-name="台視財經" tvg-logo="https://image.5iclub.cloudns.org/file/dc38ac4e6eb8d81c31560.png" group-title="港澳台频道",台視財經
+#EXTINF:-1 tvg-name="台视财经" tvg-logo="https://image.5iclub.cloudns.org/file/dc38ac4e6eb8d81c31560.png" group-title="港澳台频道",台视财经
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv056.m3u8
 #EXTINF:-1 tvg-name="靖洋卡通台" tvg-logo="https://image.5iclub.cloudns.org/file/3cbc5ed56e9ccb9ecb641.png" group-title="港澳台频道",靖洋卡通台
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv057.m3u8
-#EXTINF:-1 tvg-name="靖天戲劇台" tvg-logo="https://image.5iclub.cloudns.org/file/a4251c6cb58e461044f51.png" group-title="港澳台频道",靖天戲劇台
+#EXTINF:-1 tvg-name="靖天戏剧台" tvg-logo="https://image.5iclub.cloudns.org/file/a4251c6cb58e461044f51.png" group-title="港澳台频道",靖天戏剧台
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv058.m3u8
-#EXTINF:-1 tvg-name="古典音樂台" tvg-logo="https://image.5iclub.cloudns.org/file/5ef9789021bcab6ce40d4.png" group-title="港澳台频道",古典音樂台
+#EXTINF:-1 tvg-name="古典音乐台" tvg-logo="https://image.5iclub.cloudns.org/file/5ef9789021bcab6ce40d4.png" group-title="港澳台频道",古典音乐台
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv059.m3u8
-#EXTINF:-1 tvg-name="靖天電影台" tvg-logo="https://image.5iclub.cloudns.org/file/39c24a1b7a68644064308.png" group-title="港澳台频道",靖天電影台
+#EXTINF:-1 tvg-name="靖天电影台" tvg-logo="https://image.5iclub.cloudns.org/file/39c24a1b7a68644064308.png" group-title="港澳台频道",靖天电影台
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv061.m3u8
-#EXTINF:-1 tvg-name="靖天育樂台" tvg-logo="https://image.5iclub.cloudns.org/file/1b218d685339958e6e2c2.png" group-title="港澳台频道",靖天育樂台
+#EXTINF:-1 tvg-name="靖天育乐台" tvg-logo="https://image.5iclub.cloudns.org/file/1b218d685339958e6e2c2.png" group-title="港澳台频道",靖天育乐台
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv062.m3u8
-#EXTINF:-1 tvg-name="靖天國際台" tvg-logo="https://image.5iclub.cloudns.org/file/211b4e8e3e7f5f3e67f7b.png" group-title="港澳台频道",靖天國際台
+#EXTINF:-1 tvg-name="靖天国际台" tvg-logo="https://image.5iclub.cloudns.org/file/211b4e8e3e7f5f3e67f7b.png" group-title="港澳台频道",靖天国际台
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv063.m3u8
-#EXTINF:-1 tvg-name="中視新聞" tvg-logo="https://image.5iclub.cloudns.org/file/39d60d1137f74995a044a.png" group-title="港澳台频道",中視新聞
+#EXTINF:-1 tvg-name="中视新闻" tvg-logo="https://image.5iclub.cloudns.org/file/39d60d1137f74995a044a.png" group-title="港澳台频道",中视新闻
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv074.m3u8
-#EXTINF:-1 tvg-name="中視菁采" tvg-logo="https://image.5iclub.cloudns.org/file/57ebb054293306314aec7.png" group-title="港澳台频道",中視菁采
+#EXTINF:-1 tvg-name="中视菁采" tvg-logo="https://image.5iclub.cloudns.org/file/57ebb054293306314aec7.png" group-title="港澳台频道",中视菁采
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv064.m3u8
-#EXTINF:-1 tvg-name="靖天資訊台" tvg-logo="https://image.5iclub.cloudns.org/file/c0b3ff3bceef33cd18922.png" group-title="港澳台频道",靖天資訊台
+#EXTINF:-1 tvg-name="靖天资讯台" tvg-logo="https://image.5iclub.cloudns.org/file/c0b3ff3bceef33cd18922.png" group-title="港澳台频道",靖天资讯台
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv065.m3u8
 #EXTINF:-1 tvg-name="TVBS" tvg-logo="https://image.5iclub.cloudns.org/file/3dd774d7d4f7bac9776af.png" group-title="港澳台频道",TVBS
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv073.m3u8
 #EXTINF:-1 tvg-name="TVBS精采台" tvg-logo="https://image.5iclub.cloudns.org/file/614f342570f2179e3a4c3.png" group-title="港澳台频道",TVBS精采台
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv067.m3u8
-#EXTINF:-1 tvg-name="TVBS歡樂台" tvg-logo="https://image.5iclub.cloudns.org/file/cdd462060965cd8c2c5ea.png" group-title="港澳台频道",TVBS歡樂台
+#EXTINF:-1 tvg-name="TVBS欢乐台" tvg-logo="https://image.5iclub.cloudns.org/file/cdd462060965cd8c2c5ea.png" group-title="港澳台频道",TVBS欢乐台
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv068.m3u8
-#EXTINF:-1 tvg-name="TVBS新聞台" tvg-logo="https://image.5iclub.cloudns.org/file/bc9533598aeab888b3664.png" group-title="港澳台频道",TVBS新聞台
+#EXTINF:-1 tvg-name="TVBS新闻台" tvg-logo="https://image.5iclub.cloudns.org/file/bc9533598aeab888b3664.png" group-title="港澳台频道",TVBS新闻台
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv072.m3u8
-#EXTINF:-1 tvg-name="愛爾達娛樂" tvg-logo="https://image.5iclub.cloudns.org/file/5cf4882ce8304a71fff8e.png" group-title="港澳台频道",愛爾達娛樂
+#EXTINF:-1 tvg-name="爱尔达娱乐" tvg-logo="https://image.5iclub.cloudns.org/file/5cf4882ce8304a71fff8e.png" group-title="港澳台频道",爱尔达娱乐
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv070.m3u8
-#EXTINF:-1 tvg-name="鏡新聞" tvg-logo="https://image.5iclub.cloudns.org/file/04b445b56f6c7cf160eee.png" group-title="港澳台频道",鏡新聞
+#EXTINF:-1 tvg-name="镜新闻" tvg-logo="https://image.5iclub.cloudns.org/file/04b445b56f6c7cf160eee.png" group-title="港澳台频道",镜新闻
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv075.m3u8
-#EXTINF:-1 tvg-name="CATCHPLAY電影台" tvg-logo="https://image.5iclub.cloudns.org/file/ca2a72ab12d88def7d8bc.png" group-title="港澳台频道",CATCHPLAY電影台
+#EXTINF:-1 tvg-name="CATCHPLAY电影台" tvg-logo="https://image.5iclub.cloudns.org/file/ca2a72ab12d88def7d8bc.png" group-title="港澳台频道",CATCHPLAY电影台
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv076.m3u8
 #EXTINF:-1 tvg-name="TRACE SPORTS STARS" tvg-logo="https://image.5iclub.cloudns.org/file/3d561e6d2d4beb7f1c5da.png" group-title="港澳台频道",TRACE SPORTS STARS
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv077.m3u8
 #EXTINF:-1 tvg-name="阿里郎" tvg-logo="https://image.5iclub.cloudns.org/file/8f1c7d12778fcbd500480.png" group-title="港澳台频道",阿里郎
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv079.m3u8
-#EXTINF:-1 tvg-name="中視經典" tvg-logo="https://image.5iclub.cloudns.org/file/7c314d41942b27fb7afc4.png" group-title="港澳台频道",中視經典
+#EXTINF:-1 tvg-name="中视经典" tvg-logo="https://image.5iclub.cloudns.org/file/7c314d41942b27fb7afc4.png" group-title="港澳台频道",中视经典
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv080.m3u8
 #EXTINF:-1 tvg-name="TRACE URBAN" tvg-logo="https://image.5iclub.cloudns.org/file/be7f6f8da124f80abfea0.png" group-title="港澳台频道",TRACE URBAN
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv082.m3u8
 #EXTINF:-1 tvg-name="MEZZO LIVE" tvg-logo="https://image.5iclub.cloudns.org/file/f6d75359b5f246990a183.png" group-title="港澳台频道",MEZZO LIVE
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv083.m3u8
-#EXTINF:-1 tvg-name="國會頻道1" tvg-logo="https://image.5iclub.cloudns.org/file/cfbfbeb34b6853643c0bb.png" group-title="港澳台频道",國會頻道𝟙
+#EXTINF:-1 tvg-name="国会频道1" tvg-logo="https://image.5iclub.cloudns.org/file/cfbfbeb34b6853643c0bb.png" group-title="港澳台频道",国会频道𝟙
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv084.m3u8
-#EXTINF:-1 tvg-name="國會頻道2" tvg-logo="https://image.5iclub.cloudns.org/file/668b71d9f70138e7ed1de.png" group-title="港澳台频道",國會頻道𝟚
+#EXTINF:-1 tvg-name="国会频道2" tvg-logo="https://image.5iclub.cloudns.org/file/668b71d9f70138e7ed1de.png" group-title="港澳台频道",国会频道𝟚
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv085.m3u8
-#EXTINF:-1 tvg-name="智林體育台" tvg-logo="https://image.5iclub.cloudns.org/file/9e2ffec07f3a6abf901a5.png" group-title="港澳台频道",智林體育台
+#EXTINF:-1 tvg-name="智林体育台" tvg-logo="https://image.5iclub.cloudns.org/file/9e2ffec07f3a6abf901a5.png" group-title="港澳台频道",智林体育台
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv101.m3u8
-#EXTINF:-1 tvg-name="SBN全球財經台" tvg-logo="https://image.5iclub.cloudns.org/file/de577fa6537b23dca4e46.png" group-title="港澳台频道",SBN全球財經台
+#EXTINF:-1 tvg-name="SBN全球财经台" tvg-logo="https://image.5iclub.cloudns.org/file/de577fa6537b23dca4e46.png" group-title="港澳台频道",SBN全球财经台
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv104.m3u8
-#EXTINF:-1 tvg-name="第1商業台" tvg-logo="https://image.5iclub.cloudns.org/file/bd8d635c74b2968b5235f.png" group-title="港澳台频道",第一商業台
+#EXTINF:-1 tvg-name="第1商业台" tvg-logo="https://image.5iclub.cloudns.org/file/bd8d635c74b2968b5235f.png" group-title="港澳台频道",第一商业台
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv109.m3u8
-#EXTINF:-1 tvg-name="東森新聞" tvg-logo="https://image.5iclub.cloudns.org/file/6b7830476e3e649cdf894.png" group-title="港澳台频道",東森新聞
+#EXTINF:-1 tvg-name="东森新闻" tvg-logo="https://image.5iclub.cloudns.org/file/6b7830476e3e649cdf894.png" group-title="港澳台频道",东森新闻
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv152.m3u8
-#EXTINF:-1 tvg-name="東森財經新聞" tvg-logo="https://image.5iclub.cloudns.org/file/613b70b7a22e33a36f053.png" group-title="港澳台频道",東森財經新聞
+#EXTINF:-1 tvg-name="东森财经新闻" tvg-logo="https://image.5iclub.cloudns.org/file/613b70b7a22e33a36f053.png" group-title="港澳台频道",东森财经新闻
 https://iptv.lalifeier.eu.org/litv/4gtv-4gtv153.m3u8
-#EXTINF:-1 tvg-name="美國之音" tvg-logo="https://image.5iclub.cloudns.org/file/d67eb6e22e9b816dc4873.png" group-title="港澳台频道",美國之音
+#EXTINF:-1 tvg-name="美国之音" tvg-logo="https://image.5iclub.cloudns.org/file/d67eb6e22e9b816dc4873.png" group-title="港澳台频道",美国之音
 https://iptv.lalifeier.eu.org/litv/litv-ftv03.m3u8
-#EXTINF:-1 tvg-name="民視旅遊" tvg-logo="https://image.5iclub.cloudns.org/file/1e4e10a42c9090516f7a1.png" group-title="港澳台频道",民視旅遊
+#EXTINF:-1 tvg-name="民视旅游" tvg-logo="https://image.5iclub.cloudns.org/file/1e4e10a42c9090516f7a1.png" group-title="港澳台频道",民视旅游
 https://iptv.lalifeier.eu.org/litv/litv-ftv07.m3u8
-#EXTINF:-1 tvg-name="民視影劇" tvg-logo="https://image.5iclub.cloudns.org/file/b5817d95147cbf88fa36f.png" group-title="港澳台频道",民視影劇
+#EXTINF:-1 tvg-name="民视影剧" tvg-logo="https://image.5iclub.cloudns.org/file/b5817d95147cbf88fa36f.png" group-title="港澳台频道",民视影剧
 https://iptv.lalifeier.eu.org/litv/litv-ftv09.m3u8
-#EXTINF:-1 tvg-name="半島新聞" tvg-logo="https://image.5iclub.cloudns.org/file/07acfe5a5d09380e98c72.png" group-title="港澳台频道",半島新聞
+#EXTINF:-1 tvg-name="半岛新闻" tvg-logo="https://image.5iclub.cloudns.org/file/07acfe5a5d09380e98c72.png" group-title="港澳台频道",半岛新闻
 https://iptv.lalifeier.eu.org/litv/litv-ftv10.m3u8
-#EXTINF:-1 tvg-name="民視新聞台" tvg-logo="https://image.5iclub.cloudns.org/file/3b9680cbdf0cb7cc49f9d.png" group-title="港澳台频道",民視新聞台
+#EXTINF:-1 tvg-name="民视新闻台" tvg-logo="https://image.5iclub.cloudns.org/file/3b9680cbdf0cb7cc49f9d.png" group-title="港澳台频道",民视新闻台
 https://iptv.lalifeier.eu.org/litv/litv-ftv13.m3u8
-#EXTINF:-1 tvg-name="愛放動漫" tvg-logo="https://image.5iclub.cloudns.org/file/c436c36fc89534fdd6431.png" group-title="港澳台频道",愛放動漫
+#EXTINF:-1 tvg-name="爱放动漫" tvg-logo="https://image.5iclub.cloudns.org/file/c436c36fc89534fdd6431.png" group-title="港澳台频道",爱放动漫
 https://iptv.lalifeier.eu.org/litv/litv-ftv15.m3u8
 #EXTINF:-1 tvg-name="好消息" tvg-logo="https://image.5iclub.cloudns.org/file/f4d1316a33cda64d1672d.png" group-title="港澳台频道",好消息
 https://iptv.lalifeier.eu.org/litv/litv-ftv16.m3u8
-#EXTINF:-1 tvg-name="好消息2台" tvg-logo="https://image.5iclub.cloudns.org/file/fc9901c931b000efc8659.png" group-title="港澳台频道",好消息2台
+#EXTINF:-1 tvg-name="好消息2" tvg-logo="https://image.5iclub.cloudns.org/file/fc9901c931b000efc8659.png" group-title="港澳台频道",好消息𝟚
 https://iptv.lalifeier.eu.org/litv/litv-ftv17.m3u8
-#EXTINF:-1 tvg-name="龍華卡通" tvg-logo="https://image.5iclub.cloudns.org/file/e84d70c52731111c30b0d.png" group-title="港澳台频道",龍華卡通
+#EXTINF:-1 tvg-name="龙华卡通" tvg-logo="https://image.5iclub.cloudns.org/file/e84d70c52731111c30b0d.png" group-title="港澳台频道",龙华卡通
 https://iptv.lalifeier.eu.org/litv/litv-longturn01.m3u8
-#EXTINF:-1 tvg-name="龍華電影" tvg-logo="https://image.5iclub.cloudns.org/file/966b77d38f8938be20962.png" group-title="港澳台频道",龍華電影
+#EXTINF:-1 tvg-name="龙华电影" tvg-logo="https://image.5iclub.cloudns.org/file/966b77d38f8938be20962.png" group-title="港澳台频道",龙华电影
 https://iptv.lalifeier.eu.org/litv/litv-longturn03.m3u8
 #EXTINF:-1 tvg-name="博斯魅力" tvg-logo="https://image.5iclub.cloudns.org/file/3e1c5baaaa70f8a4a1314.png" group-title="港澳台频道",博斯魅力
 https://iptv.lalifeier.eu.org/litv/litv-longturn04.m3u8
@@ -1194,37 +1194,37 @@ https://iptv.lalifeier.eu.org/litv/litv-longturn04.m3u8
 https://iptv.lalifeier.eu.org/litv/litv-longturn05.m3u8
 #EXTINF:-1 tvg-name="博斯高球2" tvg-logo="https://image.5iclub.cloudns.org/file/68f98b8efbe7bf499c847.png" group-title="港澳台频道",博斯高球𝟚
 https://iptv.lalifeier.eu.org/litv/litv-longturn06.m3u8
-#EXTINF:-1 tvg-name="博斯運動1" tvg-logo="https://image.5iclub.cloudns.org/file/76c78c092f737d5429e06.png" group-title="港澳台频道",博斯運動𝟙
+#EXTINF:-1 tvg-name="博斯运动1" tvg-logo="https://image.5iclub.cloudns.org/file/76c78c092f737d5429e06.png" group-title="港澳台频道",博斯运动𝟙
 https://iptv.lalifeier.eu.org/litv/litv-longturn07.m3u8
-#EXTINF:-1 tvg-name="博斯運動2" tvg-logo="https://image.5iclub.cloudns.org/file/6b7ddd9f7d70b078d3105.png" group-title="港澳台频道",博斯運動𝟚
+#EXTINF:-1 tvg-name="博斯运动2" tvg-logo="https://image.5iclub.cloudns.org/file/6b7ddd9f7d70b078d3105.png" group-title="港澳台频道",博斯运动𝟚
 https://iptv.lalifeier.eu.org/litv/litv-longturn08.m3u8
-#EXTINF:-1 tvg-name="博斯網球" tvg-logo="https://image.5iclub.cloudns.org/file/929f911839d6c8aa6b13b.png" group-title="港澳台频道",博斯網球
+#EXTINF:-1 tvg-name="博斯网球" tvg-logo="https://image.5iclub.cloudns.org/file/929f911839d6c8aa6b13b.png" group-title="港澳台频道",博斯网球
 https://iptv.lalifeier.eu.org/litv/litv-longturn09.m3u8
-#EXTINF:-1 tvg-name="博斯無限" tvg-logo="https://image.5iclub.cloudns.org/file/51a683f1632c8273fd022.png" group-title="港澳台频道",博斯無限
+#EXTINF:-1 tvg-name="博斯无限" tvg-logo="https://image.5iclub.cloudns.org/file/51a683f1632c8273fd022.png" group-title="港澳台频道",博斯无限
 https://iptv.lalifeier.eu.org/litv/litv-longturn10.m3u8
-#EXTINF:-1 tvg-name="博斯無限2" tvg-logo="https://image.5iclub.cloudns.org/file/9e5907ec16bf8f44a9705.png" group-title="港澳台频道",博斯無限𝟚
+#EXTINF:-1 tvg-name="博斯无限2" tvg-logo="https://image.5iclub.cloudns.org/file/9e5907ec16bf8f44a9705.png" group-title="港澳台频道",博斯无限𝟚
 https://iptv.lalifeier.eu.org/litv/litv-longturn13.m3u8
-#EXTINF:-1 tvg-name="龍華日韓" tvg-logo="https://image.5iclub.cloudns.org/file/d4d93108dcc42966cbf49.png" group-title="港澳台频道",龍華日韓
+#EXTINF:-1 tvg-name="龙华日韩" tvg-logo="https://image.5iclub.cloudns.org/file/d4d93108dcc42966cbf49.png" group-title="港澳台频道",龙华日韩
 https://iptv.lalifeier.eu.org/litv/litv-longturn11.m3u8
-#EXTINF:-1 tvg-name="龍華偶像" tvg-logo="https://image.5iclub.cloudns.org/file/2864fa706b62d3ccbd924.png" group-title="港澳台频道",龍華偶像
+#EXTINF:-1 tvg-name="龙华偶像" tvg-logo="https://image.5iclub.cloudns.org/file/2864fa706b62d3ccbd924.png" group-title="港澳台频道",龙华偶像
 https://iptv.lalifeier.eu.org/litv/litv-longturn12.m3u8
-#EXTINF:-1 tvg-name="寰宇新聞台" tvg-logo="https://image.5iclub.cloudns.org/file/3df4c22210cfbd294d4da.png" group-title="港澳台频道",寰宇新聞台
+#EXTINF:-1 tvg-name="寰宇新闻台" tvg-logo="https://image.5iclub.cloudns.org/file/3df4c22210cfbd294d4da.png" group-title="港澳台频道",寰宇新闻台
 https://iptv.lalifeier.eu.org/litv/litv-longturn14.m3u8
-#EXTINF:-1 tvg-name="寰宇新聞台灣台" tvg-logo="https://image.5iclub.cloudns.org/file/48374fc3dee0f2da7d2bd.png" group-title="港澳台频道",寰宇新聞台灣台
+#EXTINF:-1 tvg-name="寰宇新闻台湾台" tvg-logo="https://image.5iclub.cloudns.org/file/48374fc3dee0f2da7d2bd.png" group-title="港澳台频道",寰宇新闻台湾台
 https://iptv.lalifeier.eu.org/litv/litv-longturn15.m3u8
-#EXTINF:-1 tvg-name="寰宇財經台" tvg-logo="https://image.5iclub.cloudns.org/file/d8a81fc87ddd392b724e5.png" group-title="港澳台频道",寰宇財經台
+#EXTINF:-1 tvg-name="寰宇财经台" tvg-logo="https://image.5iclub.cloudns.org/file/d8a81fc87ddd392b724e5.png" group-title="港澳台频道",寰宇财经台
 https://iptv.lalifeier.eu.org/litv/litv-longturn23.m3u8
-#EXTINF:-1 tvg-name="亞洲旅遊台" tvg-logo="https://image.5iclub.cloudns.org/file/8d81601068b475638b85c.png" group-title="港澳台频道",亞洲旅遊台
+#EXTINF:-1 tvg-name="亚洲旅游台" tvg-logo="https://image.5iclub.cloudns.org/file/8d81601068b475638b85c.png" group-title="港澳台频道",亚洲旅游台
 https://iptv.lalifeier.eu.org/litv/litv-longturn17.m3u8
-#EXTINF:-1 tvg-name="龍華戲劇" tvg-logo="https://image.5iclub.cloudns.org/file/d23aa880b95dfe4e5e1e5.png" group-title="港澳台频道",龍華戲劇
+#EXTINF:-1 tvg-name="龙华戏剧" tvg-logo="https://image.5iclub.cloudns.org/file/d23aa880b95dfe4e5e1e5.png" group-title="港澳台频道",龙华戏剧
 https://iptv.lalifeier.eu.org/litv/litv-longturn18.m3u8
-#EXTINF:-1 tvg-name="龍華經典" tvg-logo="https://image.5iclub.cloudns.org/file/385ff8dfbf612e83b639f.png" group-title="港澳台频道",龍華經典
+#EXTINF:-1 tvg-name="龙华经典" tvg-logo="https://image.5iclub.cloudns.org/file/385ff8dfbf612e83b639f.png" group-title="港澳台频道",龙华经典
 https://iptv.lalifeier.eu.org/litv/litv-longturn21.m3u8
-#EXTINF:-1 tvg-name="Smart知識台" tvg-logo="https://image.5iclub.cloudns.org/file/8486bbf29503d4c123ccc.png" group-title="港澳台频道",Smart知識台
+#EXTINF:-1 tvg-name="Smart知识台" tvg-logo="https://image.5iclub.cloudns.org/file/8486bbf29503d4c123ccc.png" group-title="港澳台频道",Smart知识台
 https://iptv.lalifeier.eu.org/litv/litv-longturn19.m3u8
-#EXTINF:-1 tvg-name="生活英語台" tvg-logo="https://image.5iclub.cloudns.org/file/6f3449d2eb167b36103fc.png" group-title="港澳台频道",生活英語台
+#EXTINF:-1 tvg-name="生活英语台" tvg-logo="https://image.5iclub.cloudns.org/file/6f3449d2eb167b36103fc.png" group-title="港澳台频道",生活英语台
 https://iptv.lalifeier.eu.org/litv/litv-longturn20.m3u8
-#EXTINF:-1 tvg-name="台灣戲劇台" tvg-logo="https://image.5iclub.cloudns.org/file/ea86fef7db9d5479b42e3.png" group-title="港澳台频道",台灣戲劇台
+#EXTINF:-1 tvg-name="台湾戏剧台" tvg-logo="https://image.5iclub.cloudns.org/file/ea86fef7db9d5479b42e3.png" group-title="港澳台频道",台湾戏剧台
 https://iptv.lalifeier.eu.org/litv/litv-longturn22.m3u8
 #EXTINF:-1 tvg-name="大爱2" tvg-logo="https://image.5iclub.cloudns.org/file/251e08dcefa9beb001405.png" group-title="港澳台频道",大爱2 𝟙
 https://epg.pw/stream/d8ecd4005a721625fd1cf30519dc635fdeec60f7a294302874d5638972f56f68.m3u8
