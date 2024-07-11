@@ -980,8 +980,6 @@ http://php.jdshipin.com:8880/smt.php?id=Xinhe
 http://v2h.jdshipin.com/xinghe/xinghe.stream/chunklist.m3u8
 #EXTINF:-1 tvg-name="VIUTV" tvg-logo="https://image.5iclub.cloudns.org/file/b7eba391568c3501df3bf.png" group-title="港澳台频道",VIUTV
 http://php.jdshipin.com:8880/smt.php?id=viu1_twn
-#EXTINF:-1 tvg-name="TVB Plus" tvg-logo="https://raw.githubusercontent.com/linitfor/epg/main/logo/TVB Plus.png" group-title="港澳台频道",TVB Plus
-http://ncdsrti.7766.org:7550/hls/chunklistxufkwjw.m3u8
 #EXTINF:-1 tvg-name="无线新闻台" tvg-logo="https://image.5iclub.cloudns.org/file/da431980e2ea06af96deb.png" group-title="港澳台频道",无线新闻台
 http://php.jdshipin.com:8880/smt.php?id=inews_twn
 #EXTINF:-1 tvg-name="娱乐新闻台" tvg-logo="https://image.5iclub.cloudns.org/file/8768fa1a89e5cbca0a965.png" group-title="港澳台频道",娱乐新闻台
