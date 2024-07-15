@@ -24,6 +24,8 @@
 |[🦸‍♀️XIAOMI.小暴脾气.FUN]|[http://www.mpanso.com/小米/DEMO.json](http://www.mpanso.com/小米/DEMO.json)|源|
 |[🐈肥猫.COM]|[(http://肥猫.com)](http://肥猫.com)|源|
 |[🔞纯一骚零.TOP]|[https://100km.top/0](https://100km.top/0)|源|
+|[🆗屌炸天.TOP]|[https://ok321.top/tv](https://ok321.top/tv)|源|
+|[🥑菜妮丝.TOP]|[https://tv.菜妮丝.top](https://tv.菜妮丝.top)|源|
 |[🏓巧技.COM]|[http://cdn.qiaoji8.com/tvbox.json](http://cdn.qiaoji8.com/tvbox.json)|源|
 |[🐮王二小放牛娃.XYZ]|[http://tvbox.王二小放牛娃.xyz](http://tvbox.王二小放牛娃.xyz)|源|
 |[🐱喵呜.GIT]|[https://anaer.github.io/Meow/meow.json](https://anaer.github.io/Meow/meow.json)|源|
