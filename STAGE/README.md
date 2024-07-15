@@ -12,7 +12,7 @@
 |[Kimentanm](https://github.com/Kimentanm/aptv "Kimentanm")|https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u|IPV4/IPV6|
 |[joevess](https://github.com/joevess/IPTV "joevess")|https://raw.githubusercontent.com/joevess/IPTV/main/m3u/iptv.m3u|IPV4|
 |[Ftindy](https://github.com/Ftindy/IPTV-URL "Ftindy")|https://raw.githubusercontent.com/Ftindy/IPTV-URL/main/IPV6.m3u|IPV6|
-|[YanG-1989](https://github.com/YanG-1989/m3u "YanG-1989")|https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u|IPV6|
+|[YanG-1989](https://github.com/YanG-1989/m3u "YanG-1989")|https://tv.iill.top//m3u/Gather|IPV6|
 |[wzsvip](https://github.com/wzsvip/wzsvip.github.io "wzsvip")|https://raw.githubusercontent.com/wzsvip/wzsvip.github.io/main/ipv4.m3u|IPV4|
 |[wzsvip](https://github.com/wzsvip/wzsvip.github.io "wzsvip")|https://raw.githubusercontent.com/wzsvip/wzsvip.github.io/main/ipv6.m3u|IPV6|
 |[ngo5](https://github.com/ngo5/IPTV "ngo5")|https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u|IPV4/IPV6|
