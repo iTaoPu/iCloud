@@ -134,6 +134,18 @@ https://itv.lat/hls?channel=lgs_2000&token=fbca23599065f5bd644b330db4e3b1f5
 https://itv.lat/hls?channel=zxs&token=fbca23599065f5bd644b330db4e3b1f5
 #EXTINF:-1 tvg-name="重温经典" tvg-logo="https://image.5iclub.cloudns.org/file/bfc0f351ccfb852fb3d89.png" group-title="央视频道",重温经典
 https://itv.lat/hls?channel=CWJD&token=fbca23599065f5bd644b330db4e3b1f5
+#EXTINF:-1 tvg-name="兵器科技" tvg-logo="https://image.5iclub.cloudns.org/file/50f8c7e3dd5354736d4c4.png" group-title="央视频道",兵器科技 𝟚
+http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN638077907bdcd/index.m3u8?AuthInfo=toEYVdLfxymUP2l9NZpQIxzzxEhTjOtZryLHMXreoGKB9zm%2BIxepVqZYZm7RAv244Kkb0RUYfm4%2FqM8nid95yfI6je%2Fgd5aFLyZ9USd3KbA
+#EXTINF:-1 tvg-name="央视台球" tvg-logo="https://image.5iclub.cloudns.org/file/474ddbd3f2d18f861f02d.png" group-title="央视频道",央视台球 𝟚
+http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN6380775932cff/index.m3u8?AuthInfo=toEYVdLfxymUP2l9NZpQIxzzxEhTjOtZryLHMXreoGIhhbZzYqwcgjvvRZLVRTRUXFxC%2BlDuTkdKHPnzcR1DomGVyhFGbQRmDDrX7x%2FDZL0
+#EXTINF:-1 tvg-name="第一剧场" tvg-logo="https://image.5iclub.cloudns.org/file/048c0a81d170228a08869.png" group-title="央视频道",第一剧场 𝟚
+http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN638077f5ca035/index.m3u8?AuthInfo=toEYVdLfxymUP2l9NZpQIxzzxEhTjOtZryLHMXreoGIg5Jm9ufDm6djkkrhWP0zlHbXMBq03w%2FgOHENZxE4ay%2BEXqK0XzFFWJtPAReIvdhE
+#EXTINF:-1 tvg-name="风云足球" tvg-logo="https://image.5iclub.cloudns.org/file/55389162e2da76032acae.png" group-title="央视频道",风云足球 𝟚
+http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN638077160c04a/index.m3u8?AuthInfo=toEYVdLfxymUP2l9NZpQIxzzxEhTjOtZryLHMXreoGJz5anxUFgyS6MrkLezPQZm9JL%2Bv9RrHWJTagMmnVYzpeQ%2FU0oiypeROXP7q2riYic
+#EXTINF:-1 tvg-name="高尔夫网球" tvg-logo="https://image.5iclub.cloudns.org/file/0359fac0509c5f9915743.png" group-title="央视频道",央视高尔夫网球 𝟚
+http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN63807743b61bb/index.m3u8?AuthInfo=toEYVdLfxymUP2l9NZpQIxzzxEhTjOtZryLHMXreoGLY7Qr44mlU8Mm7hAKppcofYcqtkgnrIU1veEPNSLwHTPQxqGjPgZkOj3N28h2Dcwo
+#EXTINF:-1 tvg-name="世界地理" tvg-logo="https://image.5iclub.cloudns.org/file/30ae6314ae7951985c2f4.png" group-title="央视频道",世界地理 𝟚
+http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN638077a61f4f3/index.m3u8?AuthInfo=toEYVdLfxymUP2l9NZpQIxzzxEhTjOtZryLHMXreoGJ1P%2BMWIbO7dcr69BOnWr6VtCf%2FZIGsCvoR9H9LBuL%2Bb%2BgUMie3w0VElI8jl5lx%2Fxs
 
 #EXTINF:-1 tvg-id="CCTV1" tvg-name="CCTV1" tvg-logo="https://live.fanmingming.com/tv/CCTV1.png" group-title="央视频道「IPv4」",CCTV-1 综合
 http://58.248.112.205:8006/GD_CUCC/G_CCTV-1-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj%2FtHZMxCRWp3HWsIw2YA4WN0gZ4ZwGH0TEaahnmJ3AUk9g%2B&p=GITV&area=GD_CUCC&mac=d4:38:44:a5:72:8b
@@ -1187,6 +1199,8 @@ http://php.jdshipin.com:8880/smt.php?id=rhk31_twn
 http://php.jdshipin.com:8880/smt.php?id=rhk32_twn
 #EXTINF:-1 tvg-name="澳门莲花" tvg-logo="https://image.5iclub.cloudns.org/file/ed0b91adb4beb7e85fe29.png" group-title="港澳频道",澳门莲花
 https://epg.pw/stream/5499880d623a69122a59f962ddc7e383ee4f633ddcee32ba133ac25e98f125e2.ctv
+#EXTINF:-1,tvg-id="澳亚卫视" tvg-name="澳亚卫视" tvg-logo="https://image.5iclub.cloudns.org/file/0bac5556af0f3cbe9229e.png" group-title="港澳频道",澳亚卫视
+https://live.mastvnet.com/lsdream/lY44pmm/2000/live.m3u8
 #EXTINF:-1 tvg-name="环球电视台" tvg-logo="https://image.5iclub.cloudns.org/file/64e946f3d49f7cfec73ed.png" group-title="港澳频道",环球电视台 𝟙
 https://epg.pw/stream/8884871c3db7be5caf8d6dc44cfe4909e921ffffc77be1d1b7b2eeec0cbdedbb.m3u8
 #EXTINF:-1 tvg-name="环球电视台" tvg-logo="https://image.5iclub.cloudns.org/file/64e946f3d49f7cfec73ed.png" group-title="港澳频道",环球电视台 𝟚
