@@ -1110,7 +1110,7 @@ https://iptv.lalifeier.eu.org/hntv/hmfz.m3u8
 https://iptv.lalifeier.eu.org/hntv/hndsj.m3u8
 #EXTINF:-1 tvg-id="河南新闻" tvg-logo="https://image.5iclub.cloudns.org/file/8ff3bad5be933b83aaadc.png" group-title="河南频道",河南新闻
 https://iptv.lalifeier.eu.org/hntv/hnxw.m3u8
-#EXTINF:-1 tvg-id="欢腾购物" tvg-logo="https://raw.githubusercontent.com/linitfor/epg/main/logo/欢腾购物.png" group-title="河南频道",欢腾购物
+#EXTINF:-1 tvg-id="欢腾购物" tvg-logo="https://image.5iclub.cloudns.org/file/6ecb5952c12783cc25cf3.png" group-title="河南频道",欢腾购物
 https://iptv.lalifeier.eu.org/hntv/htgw.m3u8
 #EXTINF:-1 tvg-id="河南公共" tvg-logo="https://image.5iclub.cloudns.org/file/434548adbdf5926a12be0.png" group-title="河南频道",河南公共
 https://iptv.lalifeier.eu.org/hntv/hngg.m3u8
