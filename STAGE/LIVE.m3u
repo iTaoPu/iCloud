@@ -127,13 +127,13 @@ http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN6380775932cff/1.m3u8?
 #EXTINF:-1 tvg-name="高尔夫网球" tvg-logo="https://image.yuwell.dynv6.net/file/0359fac0509c5f9915743.png" group-title="央视频道",央视高尔夫网球
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN63807743b61bb/1.m3u8?m3u8_level=2
 #EXTINF:-1 tvg-name="发现之旅" tvg-logo="https://image.yuwell.dynv6.net/file/e654148b77a1bd219e809.png" group-title="央视频道",发现之旅
-https://itv.lat/hls?channel=fxzl_2000&token=fbca23599065f5bd644b330db4e3b1f5
+http://ww.hanliu8.cn:8865/xinganjuezb.php?id=lgs
 #EXTINF:-1 tvg-name="老故事" tvg-logo="https://image.yuwell.dynv6.net/file/58a157722e465d28777ed.png" group-title="央视频道",老故事
-https://itv.lat/hls?channel=lgs_2000&token=fbca23599065f5bd644b330db4e3b1f5
+老故事,http://[2409:8087:7001:20:3::5]:80/dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226236
 #EXTINF:-1 tvg-name="中学生" tvg-logo="https://image.yuwell.dynv6.net/file/71816a22857f6710d710a.png" group-title="央视频道",中学生
-https://itv.lat/hls?channel=zxs&token=fbca23599065f5bd644b330db4e3b1f5
+http://ww.hanliu8.cn:8865/xinganjuezb.php?id=zxs
 #EXTINF:-1 tvg-name="重温经典" tvg-logo="https://image.yuwell.dynv6.net/file/bfc0f351ccfb852fb3d89.png" group-title="央视频道",重温经典
-https://itv.lat/hls?channel=CWJD&token=fbca23599065f5bd644b330db4e3b1f5
+http://ali.hlspull.yximgs.com/laoshu/awei_cwjd.flv
 #EXTINF:-1 tvg-name="兵器科技" tvg-logo="https://image.yuwell.dynv6.net/file/50f8c7e3dd5354736d4c4.png" group-title="央视频道",兵器科技 𝟚
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN638077907bdcd/index.m3u8?AuthInfo=toEYVdLfxymUP2l9NZpQIxzzxEhTjOtZryLHMXreoGKB9zm%2BIxepVqZYZm7RAv244Kkb0RUYfm4%2FqM8nid95yfI6je%2Fgd5aFLyZ9USd3KbA
 #EXTINF:-1 tvg-name="央视台球" tvg-logo="https://image.yuwell.dynv6.net/file/474ddbd3f2d18f861f02d.png" group-title="央视频道",央视台球 𝟚
