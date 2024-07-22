@@ -1,10 +1,10 @@
 #EXTM3U x-tvg-url="https://epg.5i計畫通行.cloudns.org" catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}"
 
-#EXTINF:-1 tvg-id="BesTV 4K" tvg-name="BesTV 4K" tvg-logo="https://image.yuwell.dynv6.net/file/2c70aa19739ac78276bd9.png" group-title="⚠️溫馨提示",請勿付費 謹防詐騙
+#EXTINF:-1 tvg-name="請勿付費 謹防詐騙" tvg-logo="https://image.yuwell.dynv6.net/file/2c70aa19739ac78276bd9.png" group-title="⚠️溫馨提示",請勿付費 謹防詐騙
 http://[2409:8087:5e01:34::30]:6610/ZTE_CMS/00000001000000060000000000000202/index.m3u8?IAS
-#EXTINF:-1 tvg-id="视听海南" tvg-name="视听海南" tvg-logo="https://image.yuwell.dynv6.net/file/2837ac7587c0f86c667d4.png" group-title="⚠️溫馨提示",佛系更新 拒絕焦慮
+#EXTINF:-1 tvg-name="佛系更新 拒絕焦慮" tvg-logo="https://image.yuwell.dynv6.net/file/2837ac7587c0f86c667d4.png" group-title="⚠️溫馨提示",佛系更新 拒絕焦慮
 http://[2409:8087:5e01:34::20]:6610/ZTE_CMS/08984400000000060000000000000440/index.m3u8?IAS
-#EXTINF:-1 tvg-name="直播中国" tvg-logo="https://image.yuwell.dynv6.net/file/eed80177c62d32847d8f8.png"  group-title="⚠️溫馨提示",5️⃣i計畫通行 維護
+#EXTINF:-1 tvg-name="5️⃣i計畫通行 維護" tvg-logo="https://image.yuwell.dynv6.net/file/eed80177c62d32847d8f8.png"  group-title="⚠️溫馨提示",5️⃣i計畫通行 維護
 https://gcalic.v.myalicdn.com/gc/wgw05_1/index.m3u8?contentid=2820180516001 
 
 #EXTINF:-1 tvg-id="iPanda" tvg-name="iPanda" tvg-logo="https://image.yuwell.dynv6.net/file/8391f400e08f0ee370d5a.png" group-title="熊猫频道",都江堰青青
@@ -89,7 +89,7 @@ https://itv.lat/hls?channel=CCTV-16-4K_8000&token=fbca23599065f5bd644b330db4e3b1
 #EXTINF:-1 tvg-name="CCTV17" tvg-logo="https://image.yuwell.dynv6.net/file/ac031ccd5894f9379cdcd.png" group-title="央视频道",CCTV-17 农业农村
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN638728afa13b4/index.m3u8?AuthInfo=9kOOdBn7MFF%2F2bWjKgahUdDh4EPdDnvGlSBkYaxFdaz%2FyAI9to%2FMBBt%2FivcdSfljJ1%2FqqamWUjAiBAxNssfyBlZUDSXAIMtStS86hRHFuJM
 #EXTINF:-1 tvg-name="CCTV4K" tvg-logo="https://image.yuwell.dynv6.net/file/f80637196310f165af5af.png" group-title="央视频道",CCTV-4K 超高清
-http://27.222.3.214/liveali-tp4k.cctv.cn/live/4K10M.stream/playlist.m3u8
+http://liveop.cctv.cn/hls/4KHD/playlist.m3u8
 #EXTINF:-1 tvg-name="CGTN" tvg-logo="https://image.yuwell.dynv6.net/file/41bc9648ef40940d7c902.png" group-title="央视频道",CGTN英语 𝟙
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN63806f4f64099/index.m3u8?m3u8_level=2
 #EXTINF:-1 tvg-name="CGTN" tvg-logo="https://image.yuwell.dynv6.net/file/41bc9648ef40940d7c902.png" group-title="央视频道",CGTN英语 𝟚
