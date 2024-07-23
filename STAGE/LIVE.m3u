@@ -584,6 +584,10 @@ http://[2409:8087:5e08:24::12]:6610/000000001000/2000000002000000014/index.m3u8?
 http://[2409:8087:5e08:24::12]:6610/000000001000/2000000002000000004/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000004&IASHttpSessionId=OTT19019320240419154124000281
 #EXTINF:-1 tvg-name="东方购物" tvg-logo="https://image.yuwell.dynv6.net/file/84e5b51307e8cf03571c0.png" group-title="上海频道",东方购物
 http://ocj2.kksmg.com/ocj2/ocj2.m3u8
+#EXTINF:-1 tvg-id="上海金山" tvg-logo="https://image.5iclub.cloudns.org/file/a8db20e747578d1b881bd.png" group-title="上海频道",上海金山
+http://livejs1.newsjs.net/jspd/playlist.m3u8
+#EXTINF:-1 tvg-id="上海崇明" tvg-logo="https://image.5iclub.cloudns.org/file/5cf480392b55bad8b7277.png" group-title="上海频道",上海崇明
+https://pili-live-hls.wdit.com.cn/wditlive/c038f4fafbdf4f97ba74c74ad67259b931ee.m3u8
 
 #EXTINF:-1 tvg-name="浙江公共新闻" tvg-logo="https://image.yuwell.dynv6.net/file/cd1a5d9cb517ba3635085.png" group-title="浙江频道",浙江新闻
 https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8
@@ -694,6 +698,12 @@ http://222.241.154.37:9901/tsfile/live/23023_1.m3u8
 http://222.241.154.37:9901/tsfile/live/23027_1.m3u8
 #EXTINF:-1 tvg-id="湖南教育" tvg-name="湖南教育台" tvg-logo="https://image.yuwell.dynv6.net/file/48f67ac420a1317379eb6.png" group-title="湖南频道",湖南教育 𝟚
 http://php.jdshipin.com:8880/iptv.php?id=hnjy
+#EXTINF:-1 tvg-id="长沙新闻综合" tvg-logo="https://image.5iclub.cloudns.org/file/0c1b2d4923b8fd0867c34.png" group-title="湖南频道" ,长沙新闻综合
+http://phonetx.qing.mgtv.com/nn_live/nn_x64/dWlwPTEwMy43MS43MC4xMDMmcWlkPSZzPTE4NzQzMGIzYTkxNThkYzFhNjVmOTdjMDJmOWRlYmM2JmVzPTE3MjE3NDg2MzAmdXVpZD03NDJiNDI1YjhjMDUzMmU5NmViYjg4YWNjZDk0Mzk4Ni02NzQ3NDY2NyZ2PTImYXM9MCZjZG5leF9pZD10eF9waG9uZV9saXZl/CSXWMPP360.m3u8
+#EXTINF:-1 tvg-id="长沙政法" tvg-logo="https://image.5iclub.cloudns.org/file/86aaf06b3bb80b83fa56d.png" group-title="湖南频道" ,长沙政法
+http://phonetx.qing.mgtv.com/nn_live/nn_x64/dWlwPTEwMy43MS43MC4xMDMmcWlkPSZzPTc5NTRlMzdhMGEzNTU4NmZiMzc3ODYyZDZiYzA1NTU0JmVzPTE3MjE3NDM1MzEmdXVpZD03YjA3ZTM5OTkzY2RlZmJjZmM3MDFlMGQ5NDBkMzg3Yi02NzQ3NDY2NyZ2PTImYXM9MCZjZG5leF9pZD10eF9waG9uZV9saXZl/CSZFMPP360.m3u8
+#EXTINF:-1 tvg-id="长沙女性" tvg-logo="https://image.5iclub.cloudns.org/file/aa26cea96907d4a4be43c.png" group-title="湖南频道" ,长沙女性
+http://phonews.qing.mgtv.com/nn_live/nn_x64/dWlwPTEwMy43MS43MC4xMDMmcWlkPSZzPTRhMzdiYTc0YWEzNTU3YTllZDc1ODU4YjUwNWYyMjczJmVzPTE3MjE3MzYyMDkmdXVpZD0xODIzM2VhYTVkNTM0OThkYjJlNzkyYzU0NGZjNTJkMi02NzQ3NDY2NyZ2PTImYXM9MCZjZG5leF9pZD13c19waG9uZTM,/CSNXMPP360.m3u8
 
 #EXTINF:-1 tvg-id="湖北综合" tvg-name="湖北综合" tvg-logo="https://image.yuwell.dynv6.net/file/bd943d742b413e8c9c482.png" group-title="湖北频道",湖北综合
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN638072216f7da/index.m3u8?AuthInfo=9kOOdBn7MFF%2F2bWjKgahUUAdKgLqNB5aOAUhcp5CeNLx3R3LdIBdA5q61lut1LwZcw4SC2tJubc%2Bq5t%2F61jvWCtjrJL0x%2BHncPgdmcbBW9I
@@ -993,6 +1003,23 @@ http://hls.nntv.cn/nnlive/YSYL_244.m3u8
 #EXTINF:-1,tvg-id="广西乐思购" tvg-name="广西乐思购" tvg-logo="https://image.yuwell.dynv6.net/file/8cb217a88ad4a84b1641c.png" group-title="广西频道",广西乐思购
 https://mobilelive.gxtv.cn/live/nn_live1002/playlist.m3u8
 
+#EXTINF:-1 tvg-id="陕西新闻资讯" tvg-logo="https://image.5iclub.cloudns.org/file/822930128a67fcc598cdd.png" group-title="陕西频道" ,陕西新闻资讯
+http://stream.snrtv.com/sxbc-1-bryZ36.m3u8
+#EXTINF:-1 tvg-id="陕西都市青春" tvg-logo="https://image.5iclub.cloudns.org/file/9d2c43a2970e22f98299c.png" group-title="陕西频道",陕西都市青春
+http://stream.snrtv.com/sxbc-2-vALZ01.m3u8
+#EXTINF:-1 tvg-id="陕西生活频道" tvg-logo="https://image.5iclub.cloudns.org/file/49e2935a42b48aa6dc861.png" group-title="陕西频道",陕西生活频道
+http://stream.snrtv.com/sxbc-3-egJN56.m3u8
+#EXTINF:-1 tvg-id="陕西公共频道" tvg-logo="https://image.5iclub.cloudns.org/file/9d2b7e271d56cbf7747c3.png" group-title="陕西频道",陕西公共频道
+http://stream.snrtv.com/sxbc-5-mvJMOW.m3u8
+#EXTINF:-1 tvg-id="陕西体育休闲" tvg-logo="https://image.5iclub.cloudns.org/file/ce1bfe37dc89ff0233965.png" group-title="陕西频道",陕西体育休闲
+http://stream.snrtv.com/sxbc-7-lmuyzN.m3u8
+#EXTINF:-1 tvg-id="陕西农林卫视" tvg-logo="https://image.5iclub.cloudns.org/file/9cdd7ecf39a8a18d06021.png" group-title="陕西频道",陕西农林卫视
+http://stream.snrtv.com/sxbc-nl-bceiL8.m3u8
+#EXTINF:-1 tvg-id="延安综合" tvg-logo="https://image.5iclub.cloudns.org/file/37b2293e4f83c8ddd3659.png" group-title="陕西频道",延安综合
+http://lives.cloud.yanews.cn/video/s10001-YATV-1/index.m3u8
+#EXTINF:-1 tvg-id="延安公共" tvg-logo="https://image.5iclub.cloudns.org/file/26bdf3f62dfebc94c6b31.png" group-title="陕西频道",延安公共
+http://lives.cloud.yanews.cn/video/s10001-YATV-2/index.m3u8
+
 #EXTINF:-1,tvg-id="宁夏文旅" tvg-name="宁夏文旅" tvg-logo="https://image.yuwell.dynv6.net/file/739c3150c6b50c22ba292.png" group-title="宁夏频道",宁夏文旅
 https://hls.ningxiahuangheyun.com/live/nxwl1M.m3u8
 #EXTINF:-1,tvg-id="宁夏公共" tvg-name="宁夏公共" tvg-logo="https://image.yuwell.dynv6.net/file/653027c88495a4d74d869.png" group-title="宁夏频道",宁夏公共
@@ -1001,6 +1028,9 @@ https://hls.ningxiahuangheyun.com/live/nxgg1M.m3u8
 https://hls.ningxiahuangheyun.com/live/nxjj1M.m3u8
 #EXTINF:-1,tvg-id="宁夏少儿" tvg-name="宁夏少儿" tvg-logo="https://image.yuwell.dynv6.net/file/b77ae06e93cc84883ffbb.png" group-title="宁夏频道",宁夏少儿
 https://hls.ningxiahuangheyun.com/live/nxse1M.m3u8
+
+#EXTINF:-1 tvg-id="西藏影视文化" tvg-logo="https://image.5iclub.cloudns.org/file/ceb938211ea15375d604b.png" group-title="西藏频道" ,西藏影视文化
+https://tv.vtibet.cn/live/gHxCmvaVjK68XL.m3u8?secret=48a7803f30e6f90f8f91cb2f73c9e0d1&time=669fa158
 
 #EXTINF:-1 tvg-name="山西经济与科教" tvg-logo="https://image.yuwell.dynv6.net/file/7a9d0384bac7b93e59cfe.png" group-title="山西频道",山西经济与科教
 http://liveflash.sxrtv.com/live/sxfinance.m3u8?sub_m3u8=true&edge_slice=true
@@ -1137,6 +1167,9 @@ https://iptv.lalifeier.eu.org/hntv/gxpd.m3u8
 http://ott.cqccn.com/PLTV/88888888/224/3221227315/index.m3u8
 #EXTINF:-1 tvg-id="时尚购物" tvg-logo="https://image.yuwell.dynv6.net/file/b12cc530d0f5a5dbc9ca8.png" group-title="重庆频道",时尚购物
 https://tvlive.ugoshop.com/ugotvlive/ssgotv.m3u8?auth_key=2312509421-0-0-6642ec3645caa943da6855a9ef7e2129
+
+#EXTINF:-1  tvg-id="乌鲁木齐新闻" tvg-logo="https://image.5iclub.cloudns.org/file/b6918e360c82c18e2404d.png" group-title="新疆频道",乌鲁木齐新闻
+http://pili-live-hls.xjwlmqapp2019.sobeylive.com/xjwlmqapp2019/xwzh.m3u8
 
 #EXTINF:-1 tvg-id="时尚购物" tvg-logo="https://image.yuwell.dynv6.net/file/148a3fe117d4f8f53b347.png" group-title="吉林频道",吉林都市
 https://iptv.lalifeier.eu.org/jlntv/jlds.m3u8
