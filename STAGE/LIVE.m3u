@@ -584,9 +584,9 @@ http://[2409:8087:5e08:24::12]:6610/000000001000/2000000002000000014/index.m3u8?
 http://[2409:8087:5e08:24::12]:6610/000000001000/2000000002000000004/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000004&IASHttpSessionId=OTT19019320240419154124000281
 #EXTINF:-1 tvg-name="东方购物" tvg-logo="https://image.yuwell.dynv6.net/file/84e5b51307e8cf03571c0.png" group-title="上海频道",东方购物
 http://ocj2.kksmg.com/ocj2/ocj2.m3u8
-#EXTINF:-1 tvg-id="上海金山" tvg-logo="https://image.yuwell.dynv6.net/file/a8db20e747578d1b881bd.png" group-title="上海频道",上海金山
+#EXTINF:-1 tvg-id="上海金山" tvg-logo="https://image.yuwell.dynv6.net/file/5cf480392b55bad8b7277.png" group-title="上海频道",上海金山
 http://livejs1.newsjs.net/jspd/playlist.m3u8
-#EXTINF:-1 tvg-id="上海崇明" tvg-logo="https://image.yuwell.dynv6.net/file/5cf480392b55bad8b7277.png" group-title="上海频道",上海崇明
+#EXTINF:-1 tvg-id="上海崇明" tvg-logo="https://image.yuwell.dynv6.net/file/a8db20e747578d1b881bd.png" group-title="上海频道",上海崇明
 https://pili-live-hls.wdit.com.cn/wditlive/c038f4fafbdf4f97ba74c74ad67259b931ee.m3u8
 
 #EXTINF:-1 tvg-name="浙江公共新闻" tvg-logo="https://image.yuwell.dynv6.net/file/cd1a5d9cb517ba3635085.png" group-title="浙江频道",浙江新闻
