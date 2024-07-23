@@ -59,7 +59,7 @@ dns:
   default-nameserver:
     - 119.29.29.29
     - 180.184.1.1
-    - 2400:3200:baba::1
+    - 2400:3200::1
   nameserver:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
