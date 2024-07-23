@@ -584,9 +584,9 @@ http://[2409:8087:5e08:24::12]:6610/000000001000/2000000002000000014/index.m3u8?
 http://[2409:8087:5e08:24::12]:6610/000000001000/2000000002000000004/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000004&IASHttpSessionId=OTT19019320240419154124000281
 #EXTINF:-1 tvg-name="东方购物" tvg-logo="https://image.yuwell.dynv6.net/file/84e5b51307e8cf03571c0.png" group-title="上海频道",东方购物
 http://ocj2.kksmg.com/ocj2/ocj2.m3u8
-#EXTINF:-1 tvg-id="上海金山" tvg-logo="https://image.yuwell.dynv6.net//file/a8db20e747578d1b881bd.png" group-title="上海频道",上海金山
+#EXTINF:-1 tvg-id="上海金山" tvg-logo="https://image.yuwell.dynv6.net/file/a8db20e747578d1b881bd.png" group-title="上海频道",上海金山
 http://livejs1.newsjs.net/jspd/playlist.m3u8
-#EXTINF:-1 tvg-id="上海崇明" tvg-logo="https://image.yuwell.dynv6.net//file/5cf480392b55bad8b7277.png" group-title="上海频道",上海崇明
+#EXTINF:-1 tvg-id="上海崇明" tvg-logo="https://image.yuwell.dynv6.net/file/5cf480392b55bad8b7277.png" group-title="上海频道",上海崇明
 https://pili-live-hls.wdit.com.cn/wditlive/c038f4fafbdf4f97ba74c74ad67259b931ee.m3u8
 
 #EXTINF:-1 tvg-name="浙江公共新闻" tvg-logo="https://image.yuwell.dynv6.net/file/cd1a5d9cb517ba3635085.png" group-title="浙江频道",浙江新闻
@@ -1005,19 +1005,19 @@ https://mobilelive.gxtv.cn/live/nn_live1002/playlist.m3u8
 
 #EXTINF:-1 tvg-id="陕西新闻资讯" tvg-logo="https://image.yuwell.dynv6.net/file/822930128a67fcc598cdd.png" group-title="陕西频道" ,陕西新闻资讯
 http://stream.snrtv.com/sxbc-1-bryZ36.m3u8
-#EXTINF:-1 tvg-id="陕西都市青春" tvg-logo="https://image.yuwell.dynv6.net//file/9d2c43a2970e22f98299c.png" group-title="陕西频道",陕西都市青春
+#EXTINF:-1 tvg-id="陕西都市青春" tvg-logo="https://image.yuwell.dynv6.net/file/9d2c43a2970e22f98299c.png" group-title="陕西频道",陕西都市青春
 http://stream.snrtv.com/sxbc-2-vALZ01.m3u8
-#EXTINF:-1 tvg-id="陕西生活频道" tvg-logo="https://image.yuwell.dynv6.net//file/49e2935a42b48aa6dc861.png" group-title="陕西频道",陕西生活频道
+#EXTINF:-1 tvg-id="陕西生活频道" tvg-logo="https://image.yuwell.dynv6.net/file/49e2935a42b48aa6dc861.png" group-title="陕西频道",陕西生活频道
 http://stream.snrtv.com/sxbc-3-egJN56.m3u8
-#EXTINF:-1 tvg-id="陕西公共频道" tvg-logo="https://image.yuwell.dynv6.net//file/9d2b7e271d56cbf7747c3.png" group-title="陕西频道",陕西公共频道
+#EXTINF:-1 tvg-id="陕西公共频道" tvg-logo="https://image.yuwell.dynv6.net/file/9d2b7e271d56cbf7747c3.png" group-title="陕西频道",陕西公共频道
 http://stream.snrtv.com/sxbc-5-mvJMOW.m3u8
-#EXTINF:-1 tvg-id="陕西体育休闲" tvg-logo="https://image.yuwell.dynv6.net//file/ce1bfe37dc89ff0233965.png" group-title="陕西频道",陕西体育休闲
+#EXTINF:-1 tvg-id="陕西体育休闲" tvg-logo="https://image.yuwell.dynv6.net/file/ce1bfe37dc89ff0233965.png" group-title="陕西频道",陕西体育休闲
 http://stream.snrtv.com/sxbc-7-lmuyzN.m3u8
-#EXTINF:-1 tvg-id="陕西农林卫视" tvg-logo="https://image.yuwell.dynv6.net//file/9cdd7ecf39a8a18d06021.png" group-title="陕西频道",陕西农林卫视
+#EXTINF:-1 tvg-id="陕西农林卫视" tvg-logo="https://image.yuwell.dynv6.net/file/9cdd7ecf39a8a18d06021.png" group-title="陕西频道",陕西农林卫视
 http://stream.snrtv.com/sxbc-nl-bceiL8.m3u8
-#EXTINF:-1 tvg-id="延安综合" tvg-logo="https://image.yuwell.dynv6.net//file/37b2293e4f83c8ddd3659.png" group-title="陕西频道",延安综合
+#EXTINF:-1 tvg-id="延安综合" tvg-logo="https://image.yuwell.dynv6.net/file/37b2293e4f83c8ddd3659.png" group-title="陕西频道",延安综合
 http://lives.cloud.yanews.cn/video/s10001-YATV-1/index.m3u8
-#EXTINF:-1 tvg-id="延安公共" tvg-logo="https://image.yuwell.dynv6.net//file/26bdf3f62dfebc94c6b31.png" group-title="陕西频道",延安公共
+#EXTINF:-1 tvg-id="延安公共" tvg-logo="https://image.yuwell.dynv6.net/file/26bdf3f62dfebc94c6b31.png" group-title="陕西频道",延安公共
 http://lives.cloud.yanews.cn/video/s10001-YATV-2/index.m3u8
 
 #EXTINF:-1,tvg-id="宁夏文旅" tvg-name="宁夏文旅" tvg-logo="https://image.yuwell.dynv6.net/file/739c3150c6b50c22ba292.png" group-title="宁夏频道",宁夏文旅
@@ -1029,7 +1029,7 @@ https://hls.ningxiahuangheyun.com/live/nxjj1M.m3u8
 #EXTINF:-1,tvg-id="宁夏少儿" tvg-name="宁夏少儿" tvg-logo="https://image.yuwell.dynv6.net/file/b77ae06e93cc84883ffbb.png" group-title="宁夏频道",宁夏少儿
 https://hls.ningxiahuangheyun.com/live/nxse1M.m3u8
 
-#EXTINF:-1 tvg-id="西藏影视文化" tvg-logo="https://image.yuwell.dynv6.net//file/ceb938211ea15375d604b.png" group-title="西藏频道" ,西藏影视文化
+#EXTINF:-1 tvg-id="西藏影视文化" tvg-logo="https://image.yuwell.dynv6.net/file/ceb938211ea15375d604b.png" group-title="西藏频道" ,西藏影视文化
 https://tv.vtibet.cn/live/gHxCmvaVjK68XL.m3u8?secret=48a7803f30e6f90f8f91cb2f73c9e0d1&time=669fa158
 
 #EXTINF:-1 tvg-name="山西经济与科教" tvg-logo="https://image.yuwell.dynv6.net/file/7a9d0384bac7b93e59cfe.png" group-title="山西频道",山西经济与科教
@@ -1168,7 +1168,7 @@ http://ott.cqccn.com/PLTV/88888888/224/3221227315/index.m3u8
 #EXTINF:-1 tvg-id="时尚购物" tvg-logo="https://image.yuwell.dynv6.net/file/b12cc530d0f5a5dbc9ca8.png" group-title="重庆频道",时尚购物
 https://tvlive.ugoshop.com/ugotvlive/ssgotv.m3u8?auth_key=2312509421-0-0-6642ec3645caa943da6855a9ef7e2129
 
-#EXTINF:-1  tvg-id="乌鲁木齐新闻" tvg-logo="https://image.yuwell.dynv6.net//file/b6918e360c82c18e2404d.png" group-title="新疆频道",乌鲁木齐新闻
+#EXTINF:-1  tvg-id="乌鲁木齐新闻" tvg-logo="https://image.yuwell.dynv6.net/file/b6918e360c82c18e2404d.png" group-title="新疆频道",乌鲁木齐新闻
 http://pili-live-hls.xjwlmqapp2019.sobeylive.com/xjwlmqapp2019/xwzh.m3u8
 
 #EXTINF:-1 tvg-id="时尚购物" tvg-logo="https://image.yuwell.dynv6.net/file/148a3fe117d4f8f53b347.png" group-title="吉林频道",吉林都市
