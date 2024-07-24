@@ -108,16 +108,17 @@ This is the family variant of BebasDNS but with adblocker
 
 | Protocol       | Address                                            |
 |----------------|----------------------------------------------------|
-| DNS-over-HTTPS | `https://internetsehat.bebasid.com/adblock` | 
-| DNS-over-TLS   | `tls://family-adblock.bebasid.com:853` |
+| DNS-over-HTTPS | `https://internetsehat.bebasid.com/adblock`  | 
+| DNS-over-TLS   | `tls://family-adblock.bebasid.com:853`  |
+
 #### OISD Filter
 
 This is a custom BebasDNS variant with only OISD Big filter
 
 | Protocol       | Address                                            |
 |----------------|----------------------------------------------------|
-| DNS-over-HTTPS | `https://dns.bebasid.com/dns-oisd` | 
-| DNS-over-TLS   | `tls://oisd.dns.bebasid.com:853` | 
+| DNS-over-HTTPS | `https://dns.bebasid.com/dns-oisd`  | 
+| DNS-over-TLS   | `tls://oisd.dns.bebasid.com:853`  | 
 #### Hagezi Multi Normal Filter
 
 This is a custom BebasDNS variant with only Hagezi Multi Normal filter
