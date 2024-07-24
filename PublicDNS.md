@@ -119,6 +119,7 @@ This is a custom BebasDNS variant with only OISD Big filter
 |----------------|----------------------------------------------------|
 | DNS-over-HTTPS | `https://dns.bebasid.com/dns-oisd`  | 
 | DNS-over-TLS   | `tls://oisd.dns.bebasid.com:853`  | 
+
 #### Hagezi Multi Normal Filter
 
 This is a custom BebasDNS variant with only Hagezi Multi Normal filter
@@ -166,6 +167,7 @@ DNS servers with custom filtering that protects your device from malware.
 | DNSCrypt, IPv6 |  Provider: `2.dnscrypt-cert.opendns.com` IP: `[2620:0:ccc::2]`|
 | DNS-over-HTTPS | `https://doh.opendns.com/dns-query` |
 | DNS-over-TLS | `tls://dns.opendns.com` | 
+
 #### FamilyShield
 
 OpenDNS servers that provide adult content blocking.
@@ -176,6 +178,7 @@ OpenDNS servers that provide adult content blocking.
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.opendns.com` IP: `208.67.220.123`| 
 | DNS-over-HTTPS | `https://doh.familyshield.opendns.com/dns-query` |
 | DNS-over-TLS | `tls://familyshield.opendns.com` |
+
 #### Sandbox
 
 Non-filtering OpenDNS servers.
@@ -187,11 +190,9 @@ Non-filtering OpenDNS servers.
 | DNS-over-HTTPS | `https://doh.sandbox.opendns.com/dns-query` | 
 | DNS-over-TLS | `tls://sandbox.opendns.com` | 
 
-:::info
 
 OpenDNS's servers remove the AUTHORITY sections from certain responses, including those with NODATA, which makes caching such responses impossible.
 
-:::
 
 ### CleanBrowsing
 
@@ -209,6 +210,7 @@ Blocks access to all adult, pornographic and explicit sites, including proxy & V
 | DNSCrypt, IPv6 | Provider: `cleanbrowsing.org` IP: `[2a0d:2a00:1::]:8443`|
 | DNS-over-HTTPS | `https://doh.cleanbrowsing.org/doh/family-filter/` |
 | DNS-over-TLS | `tls://family-filter-dns.cleanbrowsing.org` |
+
 #### Adult Filter
 
 Less restrictive than the Family filter, it only blocks access to adult content and malicious and phishing domains.
@@ -559,6 +561,7 @@ Recommended for most users, very flexible filtering with blocking most ads netwo
 | Protocol       | Address                                            |
 |----------------|----------------------------------------------------|
 |DNS-over-HTTPS|`https://ada.openbld.net/dns-query`|
+
 #### Strict Filtering (RIC)
 
 More strictly filtering policies with blocking — ads, marketing, tracking, malware, clickbait, coinhive and phishing domains.
