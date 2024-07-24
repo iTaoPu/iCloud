@@ -1083,6 +1083,7 @@ This service ia a small ad blocking DNS hobby project with D-o-H, D-o-T & DNSCry
 | DNSCrypt, IPv6 | Provider: `2.dnscrypt-cert.oszx.co` IP: `[2001:41d0:801:2000::d64]:5353`|
 | DNS-over-HTTPS | `https://dns.oszx.co/dns-query` |
 | DNS-over-TLS | `tls://dns.oszx.co` | 
+
 #### PumpleX
 
 These servers provide no ad blocking, keep no logs, and have DNSSEC enabled.
@@ -1095,6 +1096,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled.
 | DNSCrypt, IPv6 | Provider: `2.dnscrypt-cert.pumplex.com` IP: `[2001:41d0:801:2000::1b28]:5353`|
 | DNS-over-HTTPS | `https://dns.pumplex.com/dns-query` |
 | DNS-over-TLS | `tls://dns.pumplex.com` |
+
 ### Privacy-First DNS
 
 [Privacy-First DNS](https://tiarap.org/) blocks over 140K ads, ad-tracking, malware and phishing domains. No logging, no ECS, DNSSEC validation, free!
