@@ -504,35 +504,31 @@ https://epg.pw/stream/8d1156a87cd9a99a96edea7b1cf2d187504afb3d2308ab656b24f89f57
 https://epg.pw/stream/e39ca4f8fa3af15f8cd6b747458b6ee6277e951355d280bc5c73aceb3131900c.ctv
 #EXTINF:-1 tvg-name="北京纪实科教" tvg-logo="https://image.yuwell.dynv6.net/file/e9fcdeb4f8d94d55b1dbf.png" group-title="北京频道",北京纪实科教 𝟙
 https://epg.pw/stream/cc7f8d91f16724d656d8fdbbc8c52042928674b696e1deb4cbb336a27a722079.ctv
-#EXTINF:-1 tvg-name="北京纪实科教" tvg-logo="https://image.yuwell.dynv6.net/file/e9fcdeb4f8d94d55b1dbf.png" group-title="北京频道",北京纪实科教 𝟚
-https://epg.pw/stream/400fb03eb82b795fcd7788a39f8b35f4eb9431476e6e1a65abb3d5d0b97a51b0.m3u8
 #EXTINF:-1 tvg-name="北京淘BABY" tvg-logo="https://image.yuwell.dynv6.net/file/35b77516dbd9fc4010033.png" group-title="北京频道",北京淘BABY 𝟙
 https://epg.pw/stream/546678813022c60ce2cda8d4db354fb34f59fa03eff6d2d8285e52f52049ea82.ctv
-#EXTINF:-1 tvg-name="北京淘BABY" tvg-logo="https://image.yuwell.dynv6.net/file/35b77516dbd9fc4010033.png" group-title="北京频道",北京淘BABY 𝟚
-https://epg.pw/stream/3d3aeed48cadfc64ea05a4c1fe129f334ef0a697746cca2f5422570d65905e1e.ctv
 #EXTINF:-1 tvg-name="北京淘剧场" tvg-logo="https://image.yuwell.dynv6.net/file/8f0824872998e3c952869.png" group-title="北京频道",北京淘剧场 𝟙
 https://epg.pw/stream/6a4d00df7e820e3e344d3fbf0323a207c5e3e2560b1f7cd7a6fc3fd46fa0cd8f.ctv
-#EXTINF:-1 tvg-name="北京淘剧场" tvg-logo="https://image.yuwell.dynv6.net/file/8f0824872998e3c952869.png" group-title="北京频道",北京淘剧场 𝟚
-https://epg.pw/stream/b7f6458ca3f84e3f187df8cabed744c221a28d5dc43d4b9d0bbda3d86334a5f8.ctv
 #EXTINF:-1 tvg-name="北京淘娱乐" tvg-logo="https://image.yuwell.dynv6.net/file/c6b5a3bf95e7e3e790397.png" group-title="北京频道",北京淘娱乐 𝟙
 https://epg.pw/stream/e93a3535ca2eaef6df3ae49285187f14b011563bab377a0ad4a9b05896f2fa6e.ctv
-#EXTINF:-1 tvg-name="北京淘娱乐" tvg-logo="https://image.yuwell.dynv6.net/file/c6b5a3bf95e7e3e790397.png" group-title="北京频道",北京淘娱乐 𝟚
-https://epg.pw/stream/38656ad8339111cee7e54f8e04ab6ff7aac5cf126685319a1e4b17fd35747c08.ctv
 #EXTINF:-1 tvg-name="北京淘电影" tvg-logo="https://image.yuwell.dynv6.net/file/7c45ac600a75d35b56e1f.png" group-title="北京频道",北京淘电影 𝟙
 https://epg.pw/stream/8f9c6cc958f8727b3d4292a016d1fd96f54576616fa08d90116ec3f33dc9f9f4.ctv
+#EXTINF:-1 tvg-name="北京纪实科教" tvg-logo="https://image.yuwell.dynv6.net/file/e9fcdeb4f8d94d55b1dbf.png" group-title="北京频道",北京纪实科教 𝟚
+https://epg.pw/stream/400fb03eb82b795fcd7788a39f8b35f4eb9431476e6e1a65abb3d5d0b97a51b0.m3u8
 #EXTINF:-1 tvg-name="北京淘电影" tvg-logo="https://image.yuwell.dynv6.net/file/7c45ac600a75d35b56e1f.png" group-title="北京频道",北京淘电影 𝟚
 https://epg.pw/stream/0163d007c5f88cc778ce4b753afb81eb14f6ed35db2f1fb8f04b72b08a46eec4.ctv
+#EXTINF:-1 tvg-name="北京淘BABY" tvg-logo="https://image.yuwell.dynv6.net/file/35b77516dbd9fc4010033.png" group-title="北京频道",北京淘BABY 𝟚
+https://epg.pw/stream/3d3aeed48cadfc64ea05a4c1fe129f334ef0a697746cca2f5422570d65905e1e.ctv
+#EXTINF:-1 tvg-name="北京淘剧场" tvg-logo="https://image.yuwell.dynv6.net/file/8f0824872998e3c952869.png" group-title="北京频道",北京淘剧场 𝟚
+https://epg.pw/stream/b7f6458ca3f84e3f187df8cabed744c221a28d5dc43d4b9d0bbda3d86334a5f8.ctv
+#EXTINF:-1 tvg-name="北京淘娱乐" tvg-logo="https://image.yuwell.dynv6.net/file/c6b5a3bf95e7e3e790397.png" group-title="北京频道",北京淘娱乐 𝟚
+https://epg.pw/stream/38656ad8339111cee7e54f8e04ab6ff7aac5cf126685319a1e4b17fd35747c08.ctv
 #EXTINF:-1 tvg-name="北京萌宠TV" tvg-logo="https://image.yuwell.dynv6.net/file/1d5874c707d09dd8af9be.png" group-title="北京频道",北京萌宠TV
 https://epg.pw/stream/c871a2ebe67246b5409ae8224141887715f400fe39508bb2d21fdf60ddecfaa9.ctv
 
-#EXTINF:-1 tvg-id="江苏城市" tvg-name="江苏城市" tvg-logo="https://image.yuwell.dynv6.net/file/813dfdff017440b0b0f35.png" group-title="江苏频道",江苏城市 𝟙
+#EXTINF:-1 tvg-id="江苏城市" tvg-name="江苏城市" tvg-logo="https://image.yuwell.dynv6.net/file/813dfdff017440b0b0f35.png" group-title="江苏频道",江苏城市
 http://58.220.219.14:9901/tsfile/live/0120_3.m3u8
-#EXTINF:-1 tvg-id="江苏城市" tvg-name="江苏城市" tvg-logo="https://image.yuwell.dynv6.net/file/813dfdff017440b0b0f35.png" group-title="江苏频道",江苏城市 𝟚
-https://iptv.lalifeier.eu.org/jstv/jscs.m3u8
-#EXTINF:-1 tvg-id="江苏综艺" tvg-name="江苏综艺" tvg-logo="https://image.yuwell.dynv6.net/file/aaedeb2d132ec8fcc1d24.png" group-title="江苏频道",江苏综艺 𝟙
+#EXTINF:-1 tvg-id="江苏综艺" tvg-name="江苏综艺" tvg-logo="https://image.yuwell.dynv6.net/file/aaedeb2d132ec8fcc1d24.png" group-title="江苏频道",江苏综艺
 http://58.220.219.14:9901/tsfile/live/0120_4.m3u8
-#EXTINF:-1 tvg-id="江苏综艺" tvg-name="江苏综艺" tvg-logo="https://image.yuwell.dynv6.net/file/aaedeb2d132ec8fcc1d24.png" group-title="江苏频道",江苏综艺 𝟚
-https://iptv.lalifeier.eu.org/jstv/jszy.m3u8
 #EXTINF:-1 tvg-id="江苏新闻" tvg-logo="https://image.yuwell.dynv6.net/file/4d43f9c0af5ee81e2c99d.png" group-title="江苏频道",江苏新闻
 https://iptv.lalifeier.eu.org/jstv/jsgg.m3u8
 #EXTINF:-1 tvg-id="江苏影视" tvg-logo="https://image.yuwell.dynv6.net/file/d1171c670bc07d5f116f6.png" group-title="江苏频道",江苏影视
@@ -666,38 +662,22 @@ https://itv.lat/hls?channel=CDTV-4&token=fbca23599065f5bd644b330db4e3b1f5
 #EXTINF:-1 tvg-name="成都公共" tvg-logo="https://image.yuwell.dynv6.net/file/d7499ee2c7465319129c5.png" group-title="四川频道",成都公共
 https://itv.lat/hls?channel=CDTV-5&token=fbca23599065f5bd644b330db4e3b1f5
 
-#EXTINF:-1 tvg-id="湖南爱晚" tvg-name="湖南爱晚" tvg-logo="https://image.yuwell.dynv6.net/file/b064e521212d8459b19e4.png" group-title="湖南频道",湖南爱晚 𝟙
-http://php.jdshipin.com:8880/iptv.php?id=hngg
-#EXTINF:-1 tvg-id="湖南爱晚" tvg-name="湖南爱晚" tvg-logo="https://image.yuwell.dynv6.net/file/b064e521212d8459b19e4.png" group-title="湖南频道",湖南爱晚 𝟚
+#EXTINF:-1 tvg-id="湖南爱晚" tvg-name="湖南爱晚" tvg-logo="https://image.yuwell.dynv6.net/file/b064e521212d8459b19e4.png" group-title="湖南频道",湖南爱晚
 http://222.241.154.37:9901/tsfile/live/23022_1.m3u8
-#EXTINF:-1 tvg-id="湖南电视剧" tvg-name="湖南电视剧" tvg-logo="https://image.yuwell.dynv6.net/file/d50b8ff02f176ee4c1c7b.png" group-title="湖南频道",湖南电视剧 𝟙
-http://php.jdshipin.com:8880/iptv.php?id=hndsj
-#EXTINF:-1 tvg-id="湖南电视剧" tvg-name="湖南电视剧" tvg-logo="https://image.yuwell.dynv6.net/file/d50b8ff02f176ee4c1c7b.png" group-title="湖南频道",湖南电视剧 𝟚
+#EXTINF:-1 tvg-id="湖南电视剧" tvg-name="湖南电视剧" tvg-logo="https://image.yuwell.dynv6.net/file/d50b8ff02f176ee4c1c7b.png" group-title="湖南频道",湖南电视剧
 http://222.241.154.37:9901/tsfile/live/23026_1.m3u8
-#EXTINF:-1 tvg-id="湖南电影" tvg-name="湖南电影" tvg-logo="https://image.yuwell.dynv6.net/file/28f543e8c269d3007e10c.png" group-title="湖南频道",湖南电影 𝟙
-http://php.jdshipin.com:8880/iptv.php?id=hndy
-#EXTINF:-1 tvg-id="湖南电影" tvg-name="湖南电影" tvg-logo="https://image.yuwell.dynv6.net/file/28f543e8c269d3007e10c.png" group-title="湖南频道",湖南电影 𝟚
+#EXTINF:-1 tvg-id="湖南电影" tvg-name="湖南电影" tvg-logo="https://image.yuwell.dynv6.net/file/28f543e8c269d3007e10c.png" group-title="湖南频道",湖南电影
 http://222.241.154.37:9901/tsfile/live/23025_1.m3u8
-#EXTINF:-1 tvg-id="湖南都市" tvg-name="湖南都市" tvg-logo="https://image.yuwell.dynv6.net/file/6357d903c8646488b2d50.png" group-title="湖南频道",湖南都市 𝟙
-http://php.jdshipin.com:8880/iptv.php?id=hnds
-#EXTINF:-1 tvg-id="湖南都市" tvg-name="湖南都市" tvg-logo="https://image.yuwell.dynv6.net/file/6357d903c8646488b2d50.png" group-title="湖南频道",湖南都市 𝟚
+#EXTINF:-1 tvg-id="湖南都市" tvg-name="湖南都市" tvg-logo="https://image.yuwell.dynv6.net/file/6357d903c8646488b2d50.png" group-title="湖南频道",湖南都市
 http://222.241.154.37:9901/tsfile/live/23021_1.m3u8
-#EXTINF:-1 tvg-id="湖南国际" tvg-name="湖南国际" tvg-logo="https://image.yuwell.dynv6.net/file/72035ddd1c81230a96fd6.png" group-title="湖南频道",湖南国际 𝟙
-http://php.jdshipin.com:8880/iptv.php?id=hngj
-#EXTINF:-1 tvg-id="湖南国际" tvg-name="湖南国际" tvg-logo="https://image.yuwell.dynv6.net/file/72035ddd1c81230a96fd6.png" group-title="湖南频道",湖南国际 𝟚
+#EXTINF:-1 tvg-id="湖南国际" tvg-name="湖南国际" tvg-logo="https://image.yuwell.dynv6.net/file/72035ddd1c81230a96fd6.png" group-title="湖南频道",湖南国际
 http://222.241.154.37:9901/tsfile/live/23024_1.m3u8
-#EXTINF:-1 tvg-id="湖南经视" tvg-name="湖南经视" tvg-logo="https://image.yuwell.dynv6.net/file/78f3e80609bff816a3318.png" group-title="湖南频道",湖南经视 𝟙
-http://php.jdshipin.com:8880/iptv.php?id=hnjs
-#EXTINF:-1 tvg-id="湖南经视" tvg-name="湖南经视" tvg-logo="https://image.yuwell.dynv6.net/file/78f3e80609bff816a3318.png" group-title="湖南频道",湖南经视 𝟚
+#EXTINF:-1 tvg-id="湖南经视" tvg-name="湖南经视" tvg-logo="https://image.yuwell.dynv6.net/file/78f3e80609bff816a3318.png" group-title="湖南频道",湖南经视
 http://222.241.154.37:9901/tsfile/live/23020_1.m3u8
-#EXTINF:-1 tvg-id="湖南娱乐" tvg-name="湖南娱乐" tvg-logo="https://image.yuwell.dynv6.net/file/5eef88490d8f8f30ee576.png" group-title="湖南频道",湖南娱乐 𝟙
-http://php.jdshipin.com:8880/iptv.php?id=hnyl
-#EXTINF:-1 tvg-id="湖南娱乐" tvg-name="湖南娱乐" tvg-logo="https://image.yuwell.dynv6.net/file/5eef88490d8f8f30ee576.png" group-title="湖南频道",湖南娱乐 𝟚
+#EXTINF:-1 tvg-id="湖南娱乐" tvg-name="湖南娱乐" tvg-logo="https://image.yuwell.dynv6.net/file/5eef88490d8f8f30ee576.png" group-title="湖南频道",湖南娱乐
 http://222.241.154.37:9901/tsfile/live/23023_1.m3u8
-#EXTINF:-1 tvg-id="湖南教育" tvg-name="湖南教育台" tvg-logo="https://image.yuwell.dynv6.net/file/48f67ac420a1317379eb6.png" group-title="湖南频道",湖南教育 𝟙
+#EXTINF:-1 tvg-id="湖南教育" tvg-name="湖南教育台" tvg-logo="https://image.yuwell.dynv6.net/file/48f67ac420a1317379eb6.png" group-title="湖南频道",湖南教育
 http://222.241.154.37:9901/tsfile/live/23027_1.m3u8
-#EXTINF:-1 tvg-id="湖南教育" tvg-name="湖南教育台" tvg-logo="https://image.yuwell.dynv6.net/file/48f67ac420a1317379eb6.png" group-title="湖南频道",湖南教育 𝟚
-http://php.jdshipin.com:8880/iptv.php?id=hnjy
 #EXTINF:-1 tvg-id="长沙新闻综合" tvg-logo="https://image.yuwell.dynv6.net/file/ed443aa73b25a5cf5c859.png" group-title="湖南频道" ,长沙新闻综合
 http://phonetx.qing.mgtv.com/nn_live/nn_x64/dWlwPTEwMy43MS43MC4xMDMmcWlkPSZzPTE4NzQzMGIzYTkxNThkYzFhNjVmOTdjMDJmOWRlYmM2JmVzPTE3MjE3NDg2MzAmdXVpZD03NDJiNDI1YjhjMDUzMmU5NmViYjg4YWNjZDk0Mzk4Ni02NzQ3NDY2NyZ2PTImYXM9MCZjZG5leF9pZD10eF9waG9uZV9saXZl/CSXWMPP360.m3u8
 #EXTINF:-1 tvg-id="长沙政法" tvg-logo="https://image.yuwell.dynv6.net/file/f7292b2c7ddf54349c47a.png" group-title="湖南频道" ,长沙政法
@@ -817,31 +797,19 @@ https://live3.hnntv.cn/srs/tv/ggpd.m3u8
 #EXTINF:-1 tvg-id="海南自贸" tvg-name="海南自贸" tvg-logo="https://image.yuwell.dynv6.net/file/14e2583907c0a9312eb5a.png" group-title="海南频道",海南自贸
 https://live3.hnntv.cn/srs/tv/jjpd.m3u8
 
-#EXTINF:-1 tvg-id="河北经济生活" tvg-logo="https://image.yuwell.dynv6.net/file/5f0fc1b21c7e4236e5537.png" group-title="河北频道",河北经济生活 𝟙
+#EXTINF:-1 tvg-id="河北经济生活" tvg-logo="https://image.yuwell.dynv6.net/file/5f0fc1b21c7e4236e5537.png" group-title="河北频道",河北经济生活
 https://tv.pull.hebtv.com/jishi/jingjishenghuo.m3u8?t=1963555098&k=188078e4cff948b7252bb3e5f88306b2
-#EXTINF:-1 tvg-id="河北农民" tvg-logo="https://image.yuwell.dynv6.net/file/02b9888bac03bcb0b9a05.png" group-title="河北频道",河北农民 𝟙
-https://tv.pull.hebtv.com/jishi/nongminpindao.m3u8?t=1963555153&k=322fe32502d1e3695b0bdef5e698635e
-#EXTINF:-1 tvg-id="河北都市" tvg-logo="https://image.yuwell.dynv6.net/file/e2bd9ef50c827733ab2a1.png" group-title="河北频道",河北都市 𝟙
+#EXTINF:-1 tvg-id="河北都市" tvg-logo="https://image.yuwell.dynv6.net/file/e2bd9ef50c827733ab2a1.png" group-title="河北频道",河北都市
 http://tv.pull.hebtv.com/jishi/dushipindao.m3u8?t=2510710360&k=4380da13735a230c080ce8ff404033af
-#EXTINF:-1 tvg-id="河北影视剧" tvg-logo="https://image.yuwell.dynv6.net/file/c510dde6b58069d30a467.png" group-title="河北频道",河北影视剧 𝟙
+#EXTINF:-1 tvg-id="河北影视剧" tvg-logo="https://image.yuwell.dynv6.net/file/c510dde6b58069d30a467.png" group-title="河北频道",河北影视剧
 https://tv.pull.hebtv.com/zhibo/yingshijupindao.m3u8?t=1963555862&k=c1c7d65caa03f1cbd6c9585b5d840534
-#EXTINF:-1 tvg-id="河北少儿科教" tvg-logo="https://image.yuwell.dynv6.net/file/158ed43bc91b203161ac5.png" group-title="河北频道",河北少儿科教 𝟙
+#EXTINF:-1 tvg-id="河北少儿科教" tvg-logo="https://image.yuwell.dynv6.net/file/158ed43bc91b203161ac5.png" group-title="河北频道",河北少儿科教
 https://tv.pull.hebtv.com/jishi/shaoerkejiao.m3u8?t=1963555882&k=3b5e2390e33ef21bf9697e4d1811e261
-#EXTINF:-1 tvg-id="河北公共" tvg-logo="https://image.yuwell.dynv6.net/file/b4005b8c1dee3f1dafffd.png" group-title="河北频道",河北公共 𝟙
+#EXTINF:-1 tvg-id="河北公共" tvg-logo="https://image.yuwell.dynv6.net/file/b4005b8c1dee3f1dafffd.png" group-title="河北频道",河北公共
 https://tv.pull.hebtv.com/jishi/gonggongpindao.m3u8?t=1963555917&k=fc9fcfabd123ab877e24ee9a0ef0c862
-#EXTINF:-1 tvg-id="河北经济生活" tvg-logo="https://image.yuwell.dynv6.net/file/5f0fc1b21c7e4236e5537.png" group-title="河北频道",河北经济生活 𝟚
-https://iptv.lalifeier.eu.org/hebtv/hbjj.m3u8
-#EXTINF:-1 tvg-id="河北农民" tvg-logo="https://image.yuwell.dynv6.net/file/02b9888bac03bcb0b9a05.png" group-title="河北频道",河北农民 𝟚
-https://iptv.lalifeier.eu.org/hebtv/hbnm.m3u8
-#EXTINF:-1 tvg-id="河北都市" tvg-logo="https://image.yuwell.dynv6.net/file/e2bd9ef50c827733ab2a1.png" group-title="河北频道",河北都市 𝟚
-https://iptv.lalifeier.eu.org/hebtv/hbds.m3u8
-#EXTINF:-1 tvg-id="河北影视剧" tvg-logo="https://image.yuwell.dynv6.net/file/c510dde6b58069d30a467.png" group-title="河北频道",河北影视剧 𝟚
-https://iptv.lalifeier.eu.org/hebtv/hbys.m3u8
-#EXTINF:-1 tvg-id="河北少儿科教" tvg-logo="https://image.yuwell.dynv6.net/file/158ed43bc91b203161ac5.png" group-title="河北频道",河北少儿科教 𝟚
-https://iptv.lalifeier.eu.org/hebtv/hbsekj.m3u8
-#EXTINF:-1 tvg-id="河北公共" tvg-logo="https://image.yuwell.dynv6.net/file/b4005b8c1dee3f1dafffd.png" group-title="河北频道",河北公共 𝟚
-https://iptv.lalifeier.eu.org/hebtv/hbgg.m3u8
-#EXTINF:-1 tvg-id="三佳购物" tvg-logo="https://image.yuwell.dynv6.net/file/f6624e5f83caf0b103e7e.png" group-title="河北频道",三佳购物 𝟚
+#EXTINF:-1 tvg-id="河北农民" tvg-logo="https://image.yuwell.dynv6.net/file/02b9888bac03bcb0b9a05.png" group-title="河北频道",河北农民
+https://tv.pull.hebtv.com/jishi/nongminpindao.m3u8?t=1963555153&k=322fe32502d1e3695b0bdef5e698635e
+#EXTINF:-1 tvg-id="三佳购物" tvg-logo="https://image.yuwell.dynv6.net/file/f6624e5f83caf0b103e7e.png" group-title="河北频道",三佳购物
 https://iptv.lalifeier.eu.org/hebtv/hbsjgw.m3u8
 #EXTINF:-1 tvg-id="石家庄新闻综合" tvg-name="石家庄新闻综合" tvg-logo="https://image.yuwell.dynv6.net/file/d413547759f37902a34d6.png" group-title="河北频道",石家庄新闻综合
 http://pluslive1.sjzntv.cn/xmzh/playlist.m3u8
@@ -862,25 +830,15 @@ http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010091/index.m3u8
 http://116.162.6.192/4403-txt.otvstream.otvcloud.com/otv/skcc/live/channel45/1300.m3u8
 #EXTINF:-1 tvg-id="广东少儿" tvg-logo="https://image.yuwell.dynv6.net/file/2317ca9630a2fc1a40e74.png" group-title="广东频道",广东少儿
 http://116.162.6.192/4403-txt.otvstream.otvcloud.com/otv/skcc/live/channel63/1300.m3u8
-#EXTINF:-1 tvg-name="广州综合" tvg-logo="https://image.yuwell.dynv6.net/file/04ef88ef581613053a00f.png" group-title="广东频道",广州综合 𝟙
-https://iptv.lalifeier.eu.org/gztv/zhonghe.m3u8
-#EXTINF:-1 tvg-name="广州综合" tvg-logo="https://image.yuwell.dynv6.net/file/04ef88ef581613053a00f.png" group-title="广东频道",广州综合 𝟚
+#EXTINF:-1 tvg-name="广州综合" tvg-logo="https://image.yuwell.dynv6.net/file/04ef88ef581613053a00f.png" group-title="广东频道",广州综合
 https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=e8a54fced9025a5af7cec5c05d5dc530&txTime=19072465600
-#EXTINF:-1 tvg-name="广州新闻" tvg-logo="https://image.yuwell.dynv6.net/file/2b2bda4d71c703e638b26.png" group-title="广东频道",广州新闻 𝟙
-https://iptv.lalifeier.eu.org/gztv/xinwen.m3u8
-#EXTINF:-1 tvg-name="广州新闻" tvg-logo="https://image.yuwell.dynv6.net/file/2b2bda4d71c703e638b26.png" group-title="广东频道",广州新闻 𝟚
-https://tencentplay.gztv.com/live/xinwen.m3u8?txSecret=dd1b312cc1b5cbe9fad85bf5ddce4b10&txTime=190723b940c
-#EXTINF:-1 tvg-name="广州新闻" tvg-logo="https://image.yuwell.dynv6.net/file/2b2bda4d71c703e638b26.png" group-title="广东频道",广州新闻 𝟛
+#EXTINF:-1 tvg-name="广州新闻" tvg-logo="https://image.yuwell.dynv6.net/file/2b2bda4d71c703e638b26.png" group-title="广东频道",广州新闻
 https://tencentplay.gztv.com/live/xinwen.m3u8?txSecret=dd1b312cc1b5cbe9fad85bf5ddce4b10&txTime=190723b940c
 #EXTINF:-1 tvg-name="广州竞赛" tvg-logo="https://image.yuwell.dynv6.net/file/9b6e1b04a04775e0a737a.png" group-title="广东频道",广州竞赛
 https://iptv.lalifeier.eu.org/gztv/jingsai.m3u8
-#EXTINF:-1 tvg-name="广州影视" tvg-logo="https://image.yuwell.dynv6.net/file/158ffdc00cab0395184a7.png" group-title="广东频道",广州影视 𝟙
-https://iptv.lalifeier.eu.org/gztv/yingshi.m3u8
-#EXTINF:-1 tvg-name="广州影视" tvg-logo="https://image.yuwell.dynv6.net/file/158ffdc00cab0395184a7.png" group-title="广东频道",广州影视 𝟚
+#EXTINF:-1 tvg-name="广州影视" tvg-logo="https://image.yuwell.dynv6.net/file/158ffdc00cab0395184a7.png" group-title="广东频道",广州影视
 https://tencentplay.gztv.com/live/yingshi.m3u8?txSecret=da4e7946ce44b3e1150e257961439a77&txTime=19071ed9221
-#EXTINF:-1 tvg-name="广州法治" tvg-logo="https://image.yuwell.dynv6.net/file/94e487aebba00b7a5ddf9.png" group-title="广东频道",广州法治 𝟙
-https://iptv.lalifeier.eu.org/gztv/fazhi.m3u8
-#EXTINF:-1 tvg-name="广州法治" tvg-logo="https://image.yuwell.dynv6.net/file/94e487aebba00b7a5ddf9.png" group-title="广东频道",广州法治 𝟚
+#EXTINF:-1 tvg-name="广州法治" tvg-logo="https://image.yuwell.dynv6.net/file/94e487aebba00b7a5ddf9.png" group-title="广东频道",广州法治
 https://tencentplay.gztv.com/live/fazhi.m3u8?txSecret=20dfe98b09fcc32036f01f02603af87e&txTime=19072194574
 #EXTINF:-1 tvg-name="广州南国都市" tvg-logo="https://image.yuwell.dynv6.net/file/0d033837a182572463316.png" group-title="广东频道",广州南国都市
 https://iptv.lalifeier.eu.org/gztv/shenghuo.m3u8
@@ -923,34 +881,16 @@ https://stream.sun0769.com/dgrtv1/mp4tv1_1500/index.m3u8
 #EXTINF:-1 tvg-id="东莞生活资讯" tvg-name="东莞生活资讯" tvg-logo="https://image.yuwell.dynv6.net/file/1e08b8fb9fe1c2ce3ed5a.png" group-title="广东频道",东莞生活资讯「官方」
 https://stream.sun0769.com/dgrtv1/mp4tv2_1500/index.m3u8
 
-#EXTINF:-1 tvg-id="云南娱乐" tvg-name="云南娱乐" tvg-logo="https://image.yuwell.dynv6.net/file/e435f6810b9af62c3070b.png" group-title="云南频道",云南娱乐 𝟙
-http://tvlive.ynradio.com/live/yunnanyule/playlist.m3u8
-#EXTINF:-1 tvg-id="云南娱乐" tvg-name="云南娱乐" tvg-logo="https://image.yuwell.dynv6.net/file/e435f6810b9af62c3070b.png" group-title="云南频道",云南娱乐 𝟚
+#EXTINF:-1 tvg-id="云南娱乐" tvg-name="云南娱乐" tvg-logo="https://image.yuwell.dynv6.net/file/e435f6810b9af62c3070b.png" group-title="云南频道",云南娱乐
 http://tvlive.ynradio.com/live/yunnanyule/chunks.m3u8
-#EXTINF:-1 tvg-id="云南少儿" tvg-name="云南少儿" tvg-logo="https://image.yuwell.dynv6.net/file/7dc5555c0e179a637d4e0.png" group-title="云南频道",云南少儿 𝟙
-http://tvlive.ynradio.com/live/yunnanshaoer/playlist.m3u8
-#EXTINF:-1 tvg-id="云南少儿" tvg-name="云南少儿" tvg-logo="https://image.yuwell.dynv6.net/file/7dc5555c0e179a637d4e0.png" group-title="云南频道",云南少儿 𝟚
+#EXTINF:-1 tvg-id="云南少儿" tvg-name="云南少儿" tvg-logo="https://image.yuwell.dynv6.net/file/7dc5555c0e179a637d4e0.png" group-title="云南频道",云南少儿
 http://tvlive.ynradio.com/live/yunnanshaoer/chunks.m3u8
 #EXTINF:-1 tvg-id="云南康旅" tvg-name="云南康旅" tvg-logo="https://image.yuwell.dynv6.net/file/7dc5555c0e179a637d4e0.png" group-title="云南频道",云南康旅
 http://tvlive.ynradio.com/live/yunnangonggong/chunks.m3u8
-#EXTINF:-1 tvg-id="云南都市" tvg-name="云南都市" tvg-logo="https://image.yuwell.dynv6.net/file/48d7b91c137c258aa88cb.png" group-title="云南频道",云南都市 𝟙
-http://tvlive.ynradio.com/live/yunnandushi/playlist.m3u8
-#EXTINF:-1 tvg-id="云南都市" tvg-name="云南都市" tvg-logo="https://image.yuwell.dynv6.net/file/48d7b91c137c258aa88cb.png" group-title="云南频道",云南都市 𝟚
+#EXTINF:-1 tvg-id="云南都市" tvg-name="云南都市" tvg-logo="https://image.yuwell.dynv6.net/file/48d7b91c137c258aa88cb.png" group-title="云南频道",云南都市
 http://tvlive.ynradio.com/live/yunnandushi/chunks.m3u8
-#EXTINF:-1 tvg-id="澜湄国际" tvg-name="澜湄国际" tvg-logo="https://image.yuwell.dynv6.net/file/6e17dcff7a9f021ea05b5.png" group-title="云南频道",澜湄国际 𝟙
-http://tvlive.ynradio.com/live/yunnanguoji/playlist.m3u8
-#EXTINF:-1 tvg-id="澜湄国际" tvg-name="澜湄国际" tvg-logo="https://image.yuwell.dynv6.net/file/6e17dcff7a9f021ea05b5.png" group-title="云南频道",澜湄国际 𝟚
+#EXTINF:-1 tvg-id="澜湄国际" tvg-name="澜湄国际" tvg-logo="https://image.yuwell.dynv6.net/file/6e17dcff7a9f021ea05b5.png" group-title="云南频道",澜湄国际
 http://tvlive.ynradio.com/live/yunnanguoji/chunks.m3u8
-#EXTINF:-1 tvg-id="云南都市" tvg-name="云南都市" tvg-logo="https://image.yuwell.dynv6.net/file/48d7b91c137c258aa88cb.png" group-title="云南频道",云南都市 𝟛
-https://iptv.lalifeier.eu.org/yntv/ynds.m3u8
-#EXTINF:-1 tvg-id="云南娱乐" tvg-name="云南娱乐" tvg-logo="https://image.yuwell.dynv6.net/file/e435f6810b9af62c3070b.png" group-title="云南频道",云南娱乐 𝟛
-https://iptv.lalifeier.eu.org/yntv/ynyl.m3u8
-#EXTINF:-1 tvg-id="云南康旅" tvg-name="云南康旅" tvg-logo="https://image.yuwell.dynv6.net/file/7dc5555c0e179a637d4e0.png" group-title="云南频道",云南康旅 𝟛
-https://iptv.lalifeier.eu.org/yntv/ynkl.m3u8
-#EXTINF:-1 tvg-id="澜湄国际" tvg-name="澜湄国际" tvg-logo="https://image.yuwell.dynv6.net/file/6e17dcff7a9f021ea05b5.png" group-title="云南频道",澜湄国际 𝟛
-https://iptv.lalifeier.eu.org/yntv/yngj.m3u8
-#EXTINF:-1 tvg-id="云南少儿" tvg-name="云南少儿" tvg-logo="https://image.yuwell.dynv6.net/file/7dc5555c0e179a637d4e0.png" group-title="云南频道",云南少儿 𝟛
-https://iptv.lalifeier.eu.org/yntv/ynse.m3u8
 #EXTINF:-1 tvg-id="昆明教育" tvg-name="昆明教育" tvg-logo="https://image.yuwell.dynv6.net/file/3a0583d5b0492cd43347c.png" group-title="云南频道",昆明教育
 http://pili-live-hdl-kmjy.kmetv.com/kmjy1/kmjy1.m3u8
 
@@ -1042,32 +982,16 @@ http://liveflash.sxrtv.com/live/sxpublic.m3u8?sub_m3u8=true&edge_slice=true
 http://liveflash.sxrtv.com/live/sxfilm.m3u8?sub_m3u8=true&edge_slice=true
 #EXTINF:-1 tvg-name="山西黄河" tvg-logo="https://image.yuwell.dynv6.net/file/f1273c7d6e140fb7ff57d.png" group-title="山西频道",山西黄河
 http://liveflash.sxrtv.com/live/huanghe.m3u8?sub_m3u8=true&edge_slice=true
-#EXTINF:-1 tvg-name="山西经济与科教" tvg-logo="https://image.yuwell.dynv6.net/file/7a9d0384bac7b93e59cfe.png" group-title="山西频道",山西经济与科教 𝟚
-https://iptv.lalifeier.eu.org/sxrtv/sxjj.m3u8
-#EXTINF:-1 tvg-name="山西社会与法治" tvg-logo="https://image.yuwell.dynv6.net/file/d28eebd5b51c823d5605d.png" group-title="山西频道",山西社会与法治 𝟚
-https://iptv.lalifeier.eu.org/sxrtv/sxshfz.m3u8
-#EXTINF:-1 tvg-name="山西文体生活" tvg-logo="https://image.yuwell.dynv6.net/file/ed0220dd10a92b1ed139d.png" group-title="山西频道",山西文体生活 𝟚
-https://iptv.lalifeier.eu.org/sxrtv/sxwtsh.m3u8
-#EXTINF:-1 tvg-name="山西影视" tvg-logo="https://image.yuwell.dynv6.net/file/90e969885d64db35f9203.png" group-title="山西频道",山西影视 𝟚
-https://iptv.lalifeier.eu.org/sxrtv/sxys.m3u8
-#EXTINF:-1 tvg-name="山西黄河" tvg-logo="https://image.yuwell.dynv6.net/file/f1273c7d6e140fb7ff57d.png" group-title="山西频道",山西黄河 𝟚
-https://iptv.lalifeier.eu.org/sxrtv/sxhh.m3u8
 #EXTINF:-1 tvg-name="山西优购物" tvg-logo="https://image.yuwell.dynv6.net/file/c24433098d8812f8970c6.png" group-title="山西频道",山西优购物
 http://live.cooltv.top/tv/cutv.php?id=sxhh
 https://tvlive.ugoshop.com/ugotvlive/ugotv01.m3u8?auth_key=2312509421-0-0-f8f7e886fe98ee0a0c01458710bf26d3
 
-#EXTINF:-1 tvg-name="安徽影视" tvg-logo="https://image.yuwell.dynv6.net/file/e8b6ce586ecc6ac7d0bdc.png" group-title="安徽频道",安徽影视 𝟙
+#EXTINF:-1 tvg-name="安徽影视" tvg-logo="https://image.yuwell.dynv6.net/file/e8b6ce586ecc6ac7d0bdc.png" group-title="安徽频道",安徽影视
 http://112.30.194.221:20080/live/d18ff95cb1fb4bbcb56215e189fc12be/hls.m3u8
-#EXTINF:-1 tvg-name="安徽影视" tvg-logo="https://image.yuwell.dynv6.net/file/e8b6ce586ecc6ac7d0bdc.png" group-title="安徽频道",安徽影视 𝟚
-https://iptv.lalifeier.eu.org/ahtv/ahys.m3u8
-#EXTINF:-1 tvg-name="安徽经济生活" tvg-logo="https://image.yuwell.dynv6.net/file/ed9c129e23f0f4bd0e703.png" group-title="安徽频道",安徽经济生活 𝟙
+#EXTINF:-1 tvg-name="安徽经济生活" tvg-logo="https://image.yuwell.dynv6.net/file/ed9c129e23f0f4bd0e703.png" group-title="安徽频道",安徽经济生活
 http://112.30.194.221:20080/live/eac499adad7b49ff9cfa79ba84693959/hls.m3u8
-#EXTINF:-1 tvg-name="安徽经济生活" tvg-logo="https://image.yuwell.dynv6.net/file/ed9c129e23f0f4bd0e703.png" group-title="安徽频道",安徽经济生活 𝟚
-https://iptv.lalifeier.eu.org/ahtv/ahjjsh.m3u8
-#EXTINF:-1 tvg-name="安徽综艺体育" tvg-logo="https://image.yuwell.dynv6.net/file/d4b7aeeff45af844621de.png" group-title="安徽频道",安徽综艺体育 𝟙
+#EXTINF:-1 tvg-name="安徽综艺体育" tvg-logo="https://image.yuwell.dynv6.net/file/d4b7aeeff45af844621de.png" group-title="安徽频道",安徽综艺体育
 http://112.30.194.221:20080/live/c41f112b83f644ddb082669501c8ecd3/hls.m3u8
-#EXTINF:-1 tvg-name="安徽综艺体育" tvg-logo="https://image.yuwell.dynv6.net/file/d4b7aeeff45af844621de.png" group-title="安徽频道",安徽综艺体育 𝟚
-https://iptv.lalifeier.eu.org/ahtv/ahzyty.m3u8
 #EXTINF:-1 tvg-name="安徽公共" tvg-logo="https://image.yuwell.dynv6.net/file/e394c461022017256d455.png" group-title="安徽频道",安徽公共
 https://iptv.lalifeier.eu.org/ahtv/ahgg.m3u8
 #EXTINF:-1 tvg-name="安徽农业科教" tvg-logo="https://image.yuwell.dynv6.net/file/e0ffde637c5d08d196abd.png" group-title="安徽频道",安徽农业科教
@@ -1078,57 +1002,25 @@ https://iptv.lalifeier.eu.org/ahtv/ahgj.m3u8
 https://iptv.lalifeier.eu.org/ahtv/ahyd.m3u8
 
 #EXTINF:-1 tvg-name="江西都市" tvg-logo="https://image.yuwell.dynv6.net/file/a186ea1d82a3c15a8ccad.png" group-title="江西频道",江西都市
-http://jxcbn.ws-cdn.gitv.tv/hls/JXDS/index.m3u8?gMac=unknown&livodToken=888d14599229b54289a4690063f3d36d85eb571de652856432870a6d015c02ab_1720512461_604800&fromCDN=ws
-#EXTINF:-1 tvg-name="江西影视旅游" tvg-logo="https://image.yuwell.dynv6.net/file/3dbdeabbb77a4e684e1be.png" group-title="江西频道",江西影视旅游
-http://jxcbn.ws-cdn.gitv.tv/hls/JXYS/index.m3u8?gMac=unknown&livodToken=c81e0458f09f05164f539683c1a0552b6797150fe98d26e989d08de6b005db90_1720512487_604800&fromCDN=ws
-#EXTINF:-1 tvg-name="江西公共农业" tvg-logo="https://image.yuwell.dynv6.net/file/fea9afd89121e576ce5e3.png" group-title="江西频道",江西公共农业
-http://jxcbn.ws-cdn.gitv.tv/hls/JXGGNY/index.m3u8?gMac=unknown&livodToken=0f7c5e1c9e40f36dd89ac6df96d776f24e6ca87af6c05a635b2c5690eb274c3e_1720512500_604800&fromCDN=ws
-#EXTINF:-1 tvg-name="江西少儿" tvg-logo="https://image.yuwell.dynv6.net/file/017fea23a63d3f09e07dd.png" group-title="江西频道",江西少儿
-http://jxcbn.ws-cdn.gitv.tv/hls/JXSEHD/index.m3u8?gMac=unknown&livodToken=5e939da8139add2e4069a71598b81b174daea2eef14281beb442417e51c34326_1720512512_604800&fromCDN=ws
-#EXTINF:-1 tvg-name="江西新闻" tvg-logo="https://image.yuwell.dynv6.net/file/6d1a92f1a9ea23ea77f9f.png" group-title="江西频道",江西新闻
-http://jxcbn.ws-cdn.gitv.tv/hls/JXXWHD/index.m3u8?gMac=unknown&livodToken=13f8efd4062f22de88f3164eb290d652d0239af27c1610cb5bbe4b05d1c7f139_1720512528_604800&fromCDN=ws
-#EXTINF:-1 tvg-name="江西经济生活" tvg-logo="https://image.yuwell.dynv6.net/file/0045aef90b992b5ab219d.png" group-title="江西频道",江西经济生活
-http://jxcbn.ws-cdn.gitv.tv/hls/JXJJSHHD/index.m3u8?gMac=unknown&livodToken=64ed6dab9a564fbedd8ea38d03be6a7bbbc616365a24f4486a21128fbd2384f1_1720512473_604800&fromCDN=ws
-#EXTINF:-1 tvg-name="江西教育" tvg-logo="https://image.yuwell.dynv6.net/file/b5081b1b5e918a9e62908.png" group-title="江西频道",江西教育
-http://jxcbn.ws-cdn.gitv.tv/hls/JXJY/index.m3u8?gMac=unknown&livodToken=84ba9b9a6ddf6327c28b0574a2780bb3e6454cc59dd44f654fce49304403e2e7_1720512575_604800&fromCDN=ws
-#EXTINF:-1 tvg-name="江西移动电视" tvg-logo="https://image.yuwell.dynv6.net/file/3d85a3ef61b240a939c47.png" group-title="江西频道",江西移动电视
-http://116.162.6.191/yun-live.jxtvcn.com.cn/live/tv_jxtv8.m3u8
-#EXTINF:-1 tvg-id="江西风尚购物" tvg-logo="https://image.yuwell.dynv6.net/file/7cc2af28591e05f64339a.png"group-title="江西频道",风尚购物
-http://jxcbn.ws-cdn.gitv.tv/hls/FSGW/index.m3u8?gMac=unknown&livodToken=dec390e34dd1205656b4977de8b70fe8fcd227828c0679711f5f2c51eb1e1231_1720512540_604800&fromCDN=ws
-#EXTINF:-1 tvg-id="江西陶瓷频道" tvg-logo="https://image.yuwell.dynv6.net/file/4fc011f55366110da4c93.png"group-title="江西频道",江西陶瓷频道
-http://116.162.6.191/yun-live.jxtvcn.com.cn/live/tv_taoci.m3u8
-#EXTINF:-1 tvg-name="江西经济生活" tvg-logo="https://image.yuwell.dynv6.net/file/0045aef90b992b5ab219d.png" group-title="江西频道",江西经济生活 𝟙
-https://iptv.lalifeier.eu.org/gitv/jxjs.m3u8
-#EXTINF:-1 tvg-name="江西影视旅游" tvg-logo="https://image.yuwell.dynv6.net/file/3dbdeabbb77a4e684e1be.png" group-title="江西频道",江西影视旅游 𝟙
-https://iptv.lalifeier.eu.org/gitv/jxys.m3u8
-#EXTINF:-1 tvg-name="江西公共农业" tvg-logo="https://image.yuwell.dynv6.net/file/fea9afd89121e576ce5e3.png" group-title="江西频道",江西公共农业 𝟙
-https://iptv.lalifeier.eu.org/gitv/jxgg.m3u8
-#EXTINF:-1 tvg-name="江西少儿" tvg-logo="https://image.yuwell.dynv6.net/file/017fea23a63d3f09e07dd.png" group-title="江西频道",江西少儿 𝟙
-https://iptv.lalifeier.eu.org/gitv/jxse.m3u8
-#EXTINF:-1 tvg-name="江西新闻" tvg-logo="https://image.yuwell.dynv6.net/file/6d1a92f1a9ea23ea77f9f.png" group-title="江西频道",江西新闻 𝟙 
-https://iptv.lalifeier.eu.org/gitv/jxxw.m3u8
-#EXTINF:-1 tvg-id="江西风尚购物" tvg-logo="https://image.yuwell.dynv6.net/file/7cc2af28591e05f64339a.png"group-title="江西频道",风尚购物 𝟙
-https://iptv.lalifeier.eu.org/gitv/fsgw.m3u8
-#EXTINF:-1 tvg-name="江西教育" tvg-logo="https://image.yuwell.dynv6.net/file/b5081b1b5e918a9e62908.png" group-title="江西频道",江西教育 𝟙
-https://iptv.lalifeier.eu.org/gitv/jxjy.m3u8
-#EXTINF:-1 tvg-name="江西都市" tvg-logo="https://image.yuwell.dynv6.net/file/a186ea1d82a3c15a8ccad.png" group-title="江西频道",江西都市 𝟚
 http://yun-live.jxtvcn.com.cn/live-jxtv/tv_jxtv2.m3u8?t=t&token=t
-#EXTINF:-1 tvg-name="江西经济生活" tvg-logo="https://image.yuwell.dynv6.net/file/0045aef90b992b5ab219d.png" group-title="江西频道",江西经济生活 𝟚
+#EXTINF:-1 tvg-name="江西经济生活" tvg-logo="https://image.yuwell.dynv6.net/file/0045aef90b992b5ab219d.png" group-title="江西频道",江西经济生活
 http://yun-live.jxtvcn.com.cn/live-jxtv/tv_jxtv3_hd.m3u8?t=t&token=t
-#EXTINF:-1 tvg-name="江西影视旅游" tvg-logo="https://image.yuwell.dynv6.net/file/3dbdeabbb77a4e684e1be.png" group-title="江西频道",江西影视旅游 𝟚
+#EXTINF:-1 tvg-name="江西影视旅游" tvg-logo="https://image.yuwell.dynv6.net/file/3dbdeabbb77a4e684e1be.png" group-title="江西频道",江西影视旅游
 http://yun-live.jxtvcn.com.cn/live-jxtv/tv_jxtv4.m3u8?t=t&token=t
-#EXTINF:-1 tvg-name="江西公共农业" tvg-logo="https://image.yuwell.dynv6.net/file/fea9afd89121e576ce5e3.png" group-title="江西频道",江西公共农业 𝟚
+#EXTINF:-1 tvg-name="江西公共农业" tvg-logo="https://image.yuwell.dynv6.net/file/fea9afd89121e576ce5e3.png" group-title="江西频道",江西公共农业
 http://yun-live.jxtvcn.com.cn/live-jxtv/tv_jxtv5.m3u8?t=t&token=t
-#EXTINF:-1 tvg-name="江西少儿" tvg-logo="https://image.yuwell.dynv6.net/file/017fea23a63d3f09e07dd.png" group-title="江西频道",江西少儿 𝟚
+#EXTINF:-1 tvg-name="江西少儿" tvg-logo="https://image.yuwell.dynv6.net/file/017fea23a63d3f09e07dd.png" group-title="江西频道",江西少儿
 http://yun-live.jxtvcn.com.cn/live-jxtv/tv_jxtv6.m3u8?t=t&token=t
-#EXTINF:-1 tvg-name="江西新闻" tvg-logo="https://image.yuwell.dynv6.net/file/6d1a92f1a9ea23ea77f9f.png" group-title="江西频道",江西新闻 𝟚
+#EXTINF:-1 tvg-name="江西新闻" tvg-logo="https://image.yuwell.dynv6.net/file/6d1a92f1a9ea23ea77f9f.png" group-title="江西频道",江西新闻
 http://yun-live.jxtvcn.com.cn/live-jxtv/tv_jxtv7.m3u8?t=t&token=t
-#EXTINF:-1 tvg-name="江西移动电视" tvg-logo="https://image.yuwell.dynv6.net/file/3d85a3ef61b240a939c47.png" group-title="江西频道",江西移动电视 𝟚
+#EXTINF:-1 tvg-name="江西移动电视" tvg-logo="https://image.yuwell.dynv6.net/file/3d85a3ef61b240a939c47.png" group-title="江西频道",江西移动电视
 http://yun-live.jxtvcn.com.cn/live-jxtv/tv_jxtv8.m3u8?t=t&token=t
-#EXTINF:-1 tvg-id="江西风尚购物" tvg-logo="https://image.yuwell.dynv6.net/file/7cc2af28591e05f64339a.png"group-title="江西频道",风尚购物 𝟚
+#EXTINF:-1 tvg-id="江西风尚购物" tvg-logo="https://image.yuwell.dynv6.net/file/7cc2af28591e05f64339a.png"group-title="江西频道",风尚购物
 http://yun-live.jxtvcn.com.cn/live-jxtv/tv_fsgw.m3u8?t=t&token=t
-#EXTINF:-1 tvg-id="江西陶瓷频道" tvg-logo="https://image.yuwell.dynv6.net/file/4fc011f55366110da4c93.png"group-title="江西频道",江西陶瓷频道 𝟚
+#EXTINF:-1 tvg-id="江西陶瓷频道" tvg-logo="https://image.yuwell.dynv6.net/file/4fc011f55366110da4c93.png"group-title="江西频道",江西陶瓷频道
 http://yun-live.jxtvcn.com.cn/live-jxtv/tv_taoci.m3u8?t=t&token=t
+#EXTINF:-1 tvg-name="江西教育" tvg-logo="https://image.yuwell.dynv6.net/file/b5081b1b5e918a9e62908.png" group-title="江西频道",江西教育
+https://iptv.lalifeier.eu.org/gitv/jxjy.m3u8
 
 #EXTINF:-1 tvg-id="河南都市" tvg-logo="https://image.yuwell.dynv6.net/file/9e258f8f2d5ab71124c90.png" group-title="河南频道",河南都市
 https://iptv.lalifeier.eu.org/hntv/hnds.m3u8
@@ -1198,10 +1090,8 @@ http://116.162.6.191/zycfcdn.gdwlcloud.com/PLTV/88888888/224/3221226317/index.m3
 http://116.162.6.192/1.v.smtcdns.net/qctv.fengshows.cn/live/0701pin72.m3u8
 #EXTINF:-1 tvg-name="凤凰资讯" tvg-logo="https://image.yuwell.dynv6.net/file/114b0590cbf291e683958.png" group-title="港澳频道",凤凰资讯 𝟚
 http://116.162.6.191/zycfcdn.gdwlcloud.com/PLTV/88888888/224/3221226320/index.m3u8
-#EXTINF:-1 tvg-name="凤凰香港" tvg-logo="https://image.yuwell.dynv6.net/file/9e0876c45e16f385b4501.png" group-title="港澳频道",凤凰香港 𝟙
+#EXTINF:-1 tvg-name="凤凰香港" tvg-logo="https://image.yuwell.dynv6.net/file/9e0876c45e16f385b4501.png" group-title="港澳频道",凤凰香港
 http://116.162.6.192/1.v.smtcdns.net/qctv.fengshows.cn/live/0701phk72.m3u8
-#EXTINF:-1 tvg-name="凤凰香港" tvg-logo="https://image.yuwell.dynv6.net/file/9e0876c45e16f385b4501.png" group-title="港澳频道",凤凰香港 𝟚
-http://php.jdshipin.com:8880/smt.php?id=tvbcaijing_twn
 #EXTINF:-1 tvg-name="香港卫视" tvg-logo="https://image.yuwell.dynv6.net/file/3f329f145e8b8eedd9501.png" group-title="港澳频道",香港卫视
 http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8
 #EXTINF:-1 tvg-name="C+" tvg-id="美亚C+" tvg-logo="https://image.yuwell.dynv6.net/file/b5e24553d5162b9fe3283.png" group-title="港澳频道", 美亚C+
