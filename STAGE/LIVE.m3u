@@ -1,11 +1,11 @@
 #EXTM3U x-tvg-url="https://epg.5i計畫通行.cloudns.org" catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}"
 
 #EXTINF:-1 tvg-name="請勿付費 謹防詐騙" tvg-logo="https://image.5iclub.cloudns.org/file/2c70aa19739ac78276bd9.png" group-title="⚠️溫馨提示",請勿付費 謹防詐騙
-http://[2409:8087:5e01:34::30]:6610/ZTE_CMS/00000001000000060000000000000202/index.m3u8?IAS
+http://hls.cntv.myhwcdn.cn/asp/hls/4000/0303000a/3/default/8edf3fb6a69148ea9a7dc0b5a9d99fdb/4000.m3u8
 #EXTINF:-1 tvg-name="佛系更新 拒絕焦慮" tvg-logo="https://image.5iclub.cloudns.org/file/2837ac7587c0f86c667d4.png" group-title="⚠️溫馨提示",佛系更新 拒絕焦慮
-http://[2409:8087:5e01:34::20]:6610/ZTE_CMS/08984400000000060000000000000440/index.m3u8?IAS
+http://newcntv.qcloudcdn.com/asp/hls/4000/0303000a/3/default/2bdfdad540b342f592f9817cb7f3b79a/4000.m3u8
 #EXTINF:-1 tvg-name="5️⃣i計畫通行 維護" tvg-logo="https://image.5iclub.cloudns.org/file/eed80177c62d32847d8f8.png"  group-title="⚠️溫馨提示",5️⃣i計畫通行 維護
-https://gcalic.v.myalicdn.com/gc/wgw05_1/index.m3u8?contentid=2820180516001 
+http://hls.cntv.kcdnvip.com/asp/hls/1200/0303000a/3/default/18a8a559464448dbaf60d33913e09aea/1200.m3u8
 
 #EXTINF:-1 tvg-id="iPanda" tvg-name="iPanda" tvg-logo="https://image.5iclub.cloudns.org/file/8391f400e08f0ee370d5a.png" group-title="熊猫频道",都江堰青青
 http://gcalic.v.myalicdn.com/gc/xiongmao20_1/index.m3u8
