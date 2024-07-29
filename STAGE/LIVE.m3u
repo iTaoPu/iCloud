@@ -90,30 +90,18 @@ https://itv.lat/hls?channel=CCTV-16-4K_8000&token=fbca23599065f5bd644b330db4e3b1
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN638728afa13b4/index.m3u8?AuthInfo=9kOOdBn7MFF%2F2bWjKgahUdDh4EPdDnvGlSBkYaxFdaz%2FyAI9to%2FMBBt%2FivcdSfljJ1%2FqqamWUjAiBAxNssfyBlZUDSXAIMtStS86hRHFuJM
 #EXTINF:-1 tvg-name="CCTV4K" tvg-logo="https://image.5iclub.cloudns.org/file/f80637196310f165af5af.png" group-title="央视频道",CCTV-4K 超高清
 http://liveop.cctv.cn/hls/4KHD/playlist.m3u8
-#EXTINF:-1 tvg-name="CGTN" tvg-logo="https://image.5iclub.cloudns.org/file/41bc9648ef40940d7c902.png" group-title="央视频道",CGTN英语 𝟙
-http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN63806f4f64099/index.m3u8?m3u8_level=2
-#EXTINF:-1 tvg-name="CGTN" tvg-logo="https://image.5iclub.cloudns.org/file/41bc9648ef40940d7c902.png" group-title="央视频道",CGTN英语 𝟚
+#EXTINF:-1 tvg-name="CGTN" tvg-logo="https://image.5iclub.cloudns.org/file/41bc9648ef40940d7c902.png" group-title="央视频道",CGTN英语
 https://live.cgtn.com/1000/prog_index.m3u8
-#EXTINF:-1 tvg-name="CGTN纪录" tvg-logo="https://image.5iclub.cloudns.org/file/03589e4630d345c8ea475.png" group-title="央视频道",CGTN记录 𝟙
-http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN63a15d0ee63f3/index.m3u8?m3u8_level=2
-#EXTINF:-1 tvg-name="CGTN纪录" tvg-logo="https://image.5iclub.cloudns.org/file/03589e4630d345c8ea475.png" group-title="央视频道",CGTN记录 𝟚
-https://news.cgtn.com/resource/live/document/cgtn-doc.m3u8
-#EXTINF:-1 tvg-name="CGTN俄语" tvg-logo="https://image.5iclub.cloudns.org/file/08bcd6fab7f3e2b7cd128.png" group-title="央视频道",CGTN俄语 𝟙
-http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN638071d299009/index.m3u8?m3u8_level=2
-#EXTINF:-1 tvg-name="CGTN俄语" tvg-logo="https://image.5iclub.cloudns.org/file/08bcd6fab7f3e2b7cd128.png" group-title="央视频道",CGTN俄语 𝟚
-http://news.cgtn.com/resource/live/russian/cgtn-r.m3u8
-#EXTINF:-1 tvg-name="CGTN法语" tvg-logo="https://image.5iclub.cloudns.org/file/2c6d6ac88fbf10a0a3050.png" group-title="央视频道",CGTN法语 𝟙
-http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN63806fb631afe/index.m3u8?m3u8_level=2
-#EXTINF:-1 tvg-name="CGTN法语" tvg-logo="https://image.5iclub.cloudns.org/file/2c6d6ac88fbf10a0a3050.png" group-title="央视频道",CGTN法语 𝟚
-https://news.cgtn.com/resource/live/french/cgtn-f.m3u8
-#EXTINF:-1 tvg-name="CGTN西语" tvg-logo="https://image.5iclub.cloudns.org/file/755a6de16cad0e0068b84.png" group-title="央视频道",CGTN西班牙语 𝟙
-http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN63806f81c8eb5/index.m3u8?m3u8_level=2
-#EXTINF:-1 tvg-name="CGTN西语" tvg-logo="https://image.5iclub.cloudns.org/file/755a6de16cad0e0068b84.png" group-title="央视频道",CGTN西班牙语 𝟚
-https://news.cgtn.com/resource/live/espanol/cgtn-e.m3u8
-#EXTINF:-1 tvg-name="CGTN阿语" tvg-logo="https://image.5iclub.cloudns.org/file/e5b8f3f6b49aa524985fb.png" group-title="央视频道",CGTN阿拉伯语 𝟙
-http://livear.cgtn.com/1000a/prog_index.m3u8
-#EXTINF:-1 tvg-name="CGTN阿语" tvg-logo="https://image.5iclub.cloudns.org/file/e5b8f3f6b49aa524985fb.png" group-title="央视频道",CGTN阿拉伯语 𝟚
-https://news.cgtn.com/resource/live/arabic/cgtn-a.m3u8
+#EXTINF:-1 tvg-name="CGTN纪录" tvg-logo="https://image.5iclub.cloudns.org/file/03589e4630d345c8ea475.png" group-title="央视频道",CGTN记录
+https://livedoc.cgtn.com/500d/prog_index.m3u8
+#EXTINF:-1 tvg-name="CGTN俄语" tvg-logo="https://image.5iclub.cloudns.org/file/08bcd6fab7f3e2b7cd128.png" group-title="央视频道",CGTN俄语
+https://liveru.cgtn.com/1000r/prog_index.m3u8
+#EXTINF:-1 tvg-name="CGTN法语" tvg-logo="https://image.5iclub.cloudns.org/file/2c6d6ac88fbf10a0a3050.png" group-title="央视频道",CGTN法语
+https://livefr.cgtn.com/1000f/prog_index.m3u8
+#EXTINF:-1 tvg-name="CGTN西语" tvg-logo="https://image.5iclub.cloudns.org/file/755a6de16cad0e0068b84.png" group-title="央视频道",CGTN西班牙语
+https://livees.cgtn.com/1000e/prog_index.m3u8
+#EXTINF:-1 tvg-name="CGTN阿语" tvg-logo="https://image.5iclub.cloudns.org/file/e5b8f3f6b49aa524985fb.png" group-title="央视频道",CGTN阿拉伯语
+https://livear.cgtn.com/1000a/prog_index.m3u8
 #EXTINF:-1 tvg-name="第一剧场" tvg-logo="https://image.5iclub.cloudns.org/file/048c0a81d170228a08869.png" group-title="央视频道",第一剧场
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN638077f5ca035/1.m3u8?m3u8_level=2
 #EXTINF:-1 tvg-name="兵器科技" tvg-logo="https://image.5iclub.cloudns.org/file/50f8c7e3dd5354736d4c4.png" group-title="央视频道",兵器科技
@@ -251,11 +239,11 @@ https://itv.lat/hls?channel=emdy4k_8000&token=fbca23599065f5bd644b330db4e3b1f5
 #EXTINF:-1 tvg-name="IPTV5+" tvg-logo="https://image.5iclub.cloudns.org/file/9ee53b216d3be0908232d.png" group-title="数字频道",IPTV5+ 体育赛事
 http://[2409:8087:5e00:24::1f]:6060/ZTE_CMS/00000001000000060000000000000461/index.m3u8
 #EXTINF:-1 tvg-name="CHC影迷电影" tvg-logo="https://image.5iclub.cloudns.org/file/bd2516dcc852eae61e4e4.png" group-title="数字频道",CHC影迷电影
-http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN6380764b172c9/index.m3u8?m3u8_level=2
+https://pi.0472.org/6/chcym.m3u8
 #EXTINF:-1 tvg-name="CHC动作电影" tvg-logo="https://image.5iclub.cloudns.org/file/d3fe1eb96555ab7a0f25a.png" group-title="数字频道",CHC动作电影
-http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN6380763222d00/index.m3u8?m3u8_level=2
+https://pi.0472.org/6/chcdz.m3u8
 #EXTINF:-1 tvg-name="CHC家庭影院" tvg-logo="https://image.5iclub.cloudns.org/file/54a48db2d660e045d4a3f.png" group-title="数字频道",CHC家庭影院
-http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN63807601b19dd/index.m3u8?m3u8_level=2
+https://pi.0472.org/6/chcjt.m3u8
 #EXTINF:-1 tvg-name="上海纪实人文" tvg-logo="https://image.5iclub.cloudns.org/file/057328ca006b7d1398124.png" group-title="数字频道",纪实人文
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225738/index.m3u8
 #EXTINF:-1 tvg-name="纪实科教" tvg-logo="https://image.5iclub.cloudns.org/file/b11189f0f1ad548c86837.png" group-title="数字频道",纪实科教
