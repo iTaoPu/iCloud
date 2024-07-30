@@ -261,6 +261,8 @@ http://[2409:8087:1a0b:df::4006]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/
 http://[2409:8087:1a0b:df::4014]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225743/index.m3u8
 #EXTINF:-1 tvg-name="梨园" tvg-logo="https://image.5iclub.cloudns.org/file/6a3228959e9ad9e1b02fa.png" group-title="数字频道",梨园频道
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN6380788ba7bed/index.m3u8?AuthInfo=toEYVdLfxymUP2l9NZpQI5%2BK6T7j%2FlRm%2BvbM9VO7bA0q1S1k1f36SqqriM0FZoFSAJRfCt8SS7X6sTRmXb81a8O4H%2FdroDKjLoDeaMQdyJQ
+#EXTINF:-1 tvg-name="精彩影视" tvg-logo="https://image.yuwell.dynv6.net/file/e8cb9199797e3d509e591.png" group-title="数字频道",精彩影视
+http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000063/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000063&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
 #EXTINF:-1 tvg-name="求索记录" tvg-logo="https://image.5iclub.cloudns.org/file/7b3777ccf6fdc9b8fe0cd.png" group-title="数字频道",求索记录
 http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000010/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000010&IASHttpSessionId=OTT19019320240419154124000281
 #EXTINF:-1 tvg-name="求索动物" tvg-logo="https://image.5iclub.cloudns.org/file/d90086fae765af6d4cc3c.png" group-title="数字频道",求索动物
