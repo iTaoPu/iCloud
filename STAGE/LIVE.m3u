@@ -84,14 +84,10 @@ http://[2409:8087:1a01:df::4077]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226476/index.m3u8
 #EXTINF:-1 tvg-name="CCTV16" tvg-logo="https://image.5iclub.cloudns.org/file/7afd697595c95f1d4fd69.png" group-title="央视频道",CCTV-16 奥林匹克
 http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226100/index.m3u8
-#EXTINF:-1 tvg-name="CCTV16" tvg-logo="https://image.5iclub.cloudns.org/file/7afd697595c95f1d4fd69.png" group-title="央视频道",CCTV-16 奥林匹克 4K
-https://itv.lat/hls?channel=CCTV-16-4K_8000&token=fbca23599065f5bd644b330db4e3b1f5
 #EXTINF:-1 tvg-name="CCTV17" tvg-logo="https://image.5iclub.cloudns.org/file/ac031ccd5894f9379cdcd.png" group-title="央视频道",CCTV-17 农业农村
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225765/index.m3u8
 #EXTINF:-1 tvg-name="CCTV4K" tvg-logo="https://image.5iclub.cloudns.org/file/f80637196310f165af5af.png" group-title="央视频道",CCTV-4K 超高清 1080P
 http://liveop.cctv.cn/hls/4KHD/playlist.m3u8
-#EXTINF:-1 tvg-name="CCTV4K" tvg-logo="https://image.5iclub.cloudns.org/file/f80637196310f165af5af.png" group-title="央视频道",CCTV-4K 超高清
-http://27.222.3.214/liveali-tp4k.cctv.cn/live/4K10M.stream/playlist.m3u8
 #EXTINF:-1 tvg-name="CGTN" tvg-logo="https://image.5iclub.cloudns.org/file/41bc9648ef40940d7c902.png" group-title="央视频道",CGTN英语
 https://0472.org/hls/cgtn.m3u8
 #EXTINF:-1 tvg-name="CGTN纪录" tvg-logo="https://image.5iclub.cloudns.org/file/03589e4630d345c8ea475.png" group-title="央视频道",CGTN记录
@@ -124,7 +120,12 @@ http://ww.hanliu8.cn:8865/xinganjuezb.php?id=lgs
 http://ww.hanliu8.cn:8865/xinganjuezb.php?id=zxs
 #EXTINF:-1 tvg-name="重温经典" tvg-logo="https://image.5iclub.cloudns.org/file/bfc0f351ccfb852fb3d89.png" group-title="央视频道",重温经典
 http://ali.hlspull.yximgs.com/laoshu/awei_cwjd.flv
-
+#EXTINF:-1 tvg-name="CCTV5" tvg-logo="https://image.5iclub.cloudns.org/file/5dfeca628fff56e1c7a34.png" group-title="央视频道",CCTV-5 体育 𝟚
+http://[2409:8087:5e00:24::1e]:6060/000000001000/1000000001000004794/1.m3u8
+#EXTINF:-1 tvg-name="CCTV5+" tvg-logo="https://image.5iclub.cloudns.org/file/f31f3cd58d7697cfb4ad4.png" group-title="央视频道",CCTV-5+ 体育赛事 𝟚
+http://[2409:8087:5e00:24::1e]:6060/000000001000/1000000001000020505/1.m3u8
+#EXTINF:-1 tvg-name="CCTV16" tvg-logo="https://image.5iclub.cloudns.org/file/7afd697595c95f1d4fd69.png" group-title="央视频道",CCTV-16 奥林匹克 𝟚
+http://[2409:8087:5e00:24::1e]:6060/000000001000/1000000006000233001/1.m3u8
 
 #EXTINF:-1 tvg-name="北京卫视" tvg-logo="https://image.5iclub.cloudns.org/file/dab0b428d699498e69552.png" group-title="卫视频道",北京卫视
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226450/index.m3u8
@@ -212,15 +213,32 @@ http://hwylivehd.centv.cn/cetv2/2020tsytk.m3u8
 http://hwylivehd.centv.cn/cetv3/bjdm.m3u8
 #EXTINF:-1 tvg-name="中国教育4台" tvg-logo="https://image.5iclub.cloudns.org/file/6ca2b3792efa331e2e01a.png" group-title="卫视频道",CETV-4 
 http://hwylivehd.centv.cn/cetv4/zjpd.m3u8
+#EXTINF:-1 tvg-name="中国教育1台" tvg-logo="https://image.5iclub.cloudns.org/file/ea292ea7484c9397bc0b0.png" group-title="卫视频道",CETV-1 𝟚
+http://[2409:8087:1a0b:df::4020]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225652/index.m3u8
+#EXTINF:-1 tvg-name="中国教育2台" tvg-logo="https://image.5iclub.cloudns.org/file/d0f908a2f74deca4be609.png" group-title="卫视频道",CETV-2 𝟚
+http://[2409:8087:1a0b:df::4013]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226425/index.m3u8
+#EXTINF:-1 tvg-name="中国教育4台" tvg-logo="https://image.5iclub.cloudns.org/file/6ca2b3792efa331e2e01a.png" group-title="卫视频道",CETV-4 𝟚
+http://[2409:8087:1a0b:df::4020]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225783/index.m3u8
 
-#EXTINF:-1 tvg-name="爱上4K" tvg-logo="https://image.5iclub.cloudns.org/file/567376f2a56c4ab27dd09.png" tvg-logo="" group-title="数字频道",爱上4K
+#EXTINF:-1 tvg-name="爱上4K" tvg-logo="https://image.5iclub.cloudns.org/file/567376f2a56c4ab27dd09.png" tvg-logo="" group-title="视觉盛宴",爱上4K
 http://[2409:8087:5e01:34::21]:6610/ZTE_CMS/00000001000000060000000000000459/index.m3u8?IAS
-#EXTINF:-1 tvg-id="苏州4K" tvg-name="苏州4K" tvg-logo="https://image.5iclub.cloudns.org/file/257d7b79fb84837d399e4.png" group-title="数字频道",苏州•4K频道
+#EXTINF:-1 tvg-name="纯享4K" tvg-logo="https://image.5iclub.cloudns.org/file/adb7a4099a83263d78fca.png" group-title="视觉盛宴",纯享4K
+http://[2409:8087:5e00:24::1e]:6060/000000001000/1000000004000011651/1.m3u8
+#EXTINF:-1 tvg-id="苏州4K" tvg-name="苏州4K" tvg-logo="https://image.5iclub.cloudns.org/file/257d7b79fb84837d399e4.png" group-title="视觉盛宴",苏州•4K频道
 http://liveshowbak2.kan0512.com/ksznorecord/csztv4k_4k.m3u8
-#EXTINF:-1 tvg-name="欢笑剧场" tvg-logo="https://image.5iclub.cloudns.org/file/a804ce68b6009b5fa0ae7.png" group-title="数字频道",欢笑剧场4K
-https://itv.lat/hls?channel=hxjc-4k_8000&token=fbca23599065f5bd644b330db4e3b1f5
-#EXTINF:-1 tvg-name="4K超高清电影" tvg-logo="https://image.5iclub.cloudns.org/file/30ae26f4dbcc0e8e372d4.png" group-title="数字频道",4K超高清电影
+#EXTINF:-1 tvg-name="Clarity 4K" tvg-logo="https://image.5iclub.cloudns.org/file/b6c2c8fe5dc99d86bbdcf.png" group-title="视觉盛宴",Clarity 4K
+https://endpnt.com/hls/nasa4k60/playlist.m3u8
+#EXTINF:-1 tvg-name="Loupe 4K" tvg-logo="https://image.5iclub.cloudns.org/file/7554ec1426000482db1c5.png" group-title="视觉盛宴",Loupe 4K
+https://d2dw21aq0j0l5c.cloudfront.net/playlist.m3u8
+#EXTINF:-1 tvg-name="CCTV4K" tvg-logo="https://image.5iclub.cloudns.org/file/f80637196310f165af5af.png" group-title="央视频道",CCTV-4K 超高清
+http://27.222.3.214/liveali-tp4k.cctv.cn/live/4K10M.stream/playlist.m3u8
+#EXTINF:-1 tvg-name="CCTV16" tvg-logo="https://image.5iclub.cloudns.org/file/7afd697595c95f1d4fd69.png" group-title="视觉盛宴",CCTV-16 奥林匹克 4K
+http://123.189.36.4:9901/tsfile/live/1027_1.m3u8
+#EXTINF:-1 tvg-name="4K超高清电影" tvg-logo="https://image.5iclub.cloudns.org/file/30ae26f4dbcc0e8e372d4.png" group-title="视觉盛宴",4K超高清电影
 https://itv.lat/hls?channel=emdy4k_8000&token=fbca23599065f5bd644b330db4e3b1f5
+#EXTINF:-1 tvg-name="欢笑剧场" tvg-logo="https://image.5iclub.cloudns.org/file/a804ce68b6009b5fa0ae7.png" group-title="视觉盛宴",欢笑剧场 4K
+https://itv.lat/hls?channel=hxjc-4k_8000&token=fbca23599065f5bd644b330db4e3b1f5
+
 #EXTINF:-1 tvg-name="IPTV5+" tvg-logo="https://image.5iclub.cloudns.org/file/9ee53b216d3be0908232d.png" group-title="数字频道",IPTV5+ 体育赛事
 http://[2409:8087:5e00:24::1f]:6060/ZTE_CMS/00000001000000060000000000000461/index.m3u8
 #EXTINF:-1 tvg-name="CHC影迷电影" tvg-logo="https://image.5iclub.cloudns.org/file/bd2516dcc852eae61e4e4.png" group-title="数字频道",CHC影迷电影
@@ -237,16 +255,28 @@ http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/
 http://[2409:8087:5e08:24::12]:6610/000000001000/2000000002000000008/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000008&IASHttpSessionId=OTT19019320240419154124000281
 #EXTINF:-1 tvg-name="乐游" tvg-logo="https://image.5iclub.cloudns.org/file/6b26a9119a849287686fc.png" group-title="数字频道",乐游频道
 http://[2409:8087:5e08:24::12]:6610/000000001000/2000000002000000092/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000092&IASHttpSessionId=OTT19019320240419154124000281
+#EXTINF:-1 tvg-name="欢笑剧场" tvg-logo="https://image.5iclub.cloudns.org/file/e685750398ea834d07d2f.png" group-title="数字频道",欢笑剧场
+http://[2409:8087:5e00:24::1e]:6060/000000001000/5000000002000009455/1.m3u8
+#EXTINF:-1 tvg-name="都市剧场" tvg-logo="https://image.5iclub.cloudns.org/file/de30062dd44e9ab7f60ff.png" group-title="数字频道",都市剧场
+http://[2409:8087:5e00:24::1e]:6060/000000001000/5000000011000031111/1.m3u8
+#EXTINF:-1 tvg-name="金色学堂" tvg-logo="https://image.5iclub.cloudns.org/file/a2445d9b631de15386563.png" group-title="数字频道",金色学堂
+http://[2409:8087:5e00:24::1e]:6060/000000001000/5000000010000026105/1.m3u8
 #EXTINF:-1 tvg-name="卡酷少儿" tvg-logo="https://image.5iclub.cloudns.org/file/34eaf08c784e733b64688.png" group-title="数字频道",卡酷少儿
 http://[2409:8087:1a0b:df::4020]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225654/index.m3u8
 #EXTINF:-1 tvg-name="金鹰卡通" tvg-logo="https://image.5iclub.cloudns.org/file/b816e2fa8ba8f7b7fe330.png" group-title="数字频道",金鹰卡通
 http://[2409:8087:1a0b:df::4008]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225653/index.m3u8
 #EXTINF:-1 tvg-name="金鹰纪实" tvg-logo="https://image.5iclub.cloudns.org/file/feca1ec774d446e99dfec.png" group-title="数字频道",金鹰纪实
-http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN4766929BESTVSMGSMG/index.m3u8?m3u8_level=2
+http://[2409:8087:5e00:24::1e]:6060/000000001000/5000000011000031203/1.m3u8
 #EXTINF:-1 tvg-name="茶" tvg-logo="https://image.5iclub.cloudns.org/file/9f90b7721b11fab574ecd.png" group-title="数字频道",茶频道
-http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN638729d8aca53/index.m3u8?AuthInfo=9kOOdBn7MFF%2F2bWjKgahUSBx06ZL9Bo6JOM%2BSTjxZRIdUCZxTtaM%2Bza0L7mJjkPMmnEhAf%2Bi68sKjzRCbPoTU0E%2B6Pia2CkRtxgPs8Tmw7I
+http://[2409:8087:5e00:24::1e]:6060/000000001000/5000000011000031209/1.m3u8
+#EXTINF:-1 tvg-name="游戏风云" tvg-logo="https://image.5iclub.cloudns.org/file/0b3af780b5d969d9f0a83.png" group-title="数字频道",游戏风云
+http://[2409:8087:5e00:24::1e]:6060/000000001000/5000000011000031114/1.m3u8
+#EXTINF:-1 tvg-name="动漫秀场" tvg-logo="https://image.5iclub.cloudns.org/file/041f81bbdecc6b227e2c2.png" group-title="数字频道",动漫秀场
+http://[2409:8087:5e00:24::1e]:6060/000000001000/5000000011000031113/1.m3u8
+#EXTINF:-1 tvg-name="嘉佳卡通" tvg-logo="https://image.5iclub.cloudns.org/file/d7a086c8aa5791f9bd50b.png" group-title="数字频道",嘉佳卡通
+http://[2409:8087:5e00:24::1e]:6060/000000001000/1000000002000025964/1.m3u8
 #EXTINF:-1 tvg-name="快乐垂钓" tvg-logo="https://image.5iclub.cloudns.org/file/ce9c980daa1a518a83be3.png" group-title="数字频道",快乐垂钓
-http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN638729b6002c4/index.m3u8?m3u8_level=2
+http://[2409:8087:5e00:24::1e]:6060/000000001000/5000000011000031206/1.m3u8
 #EXTINF:-1 tvg-name="哒啵赛事" tvg-logo="https://image.5iclub.cloudns.org/file/b067eb2f6d8ab6a356165.png" group-title="数字频道",哒啵赛事
 http://[2409:8087:1a0b:df::4008]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225653/index.m3u8
 #EXTINF:-1 tvg-name="哒啵电竞" tvg-logo="https://image.5iclub.cloudns.org/file/a491de7f81b9a19dd4c12.png" group-title="数字频道",哒啵电竞
@@ -261,8 +291,6 @@ http://[2409:8087:1a0b:df::4006]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/
 http://[2409:8087:1a0b:df::4014]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225743/index.m3u8
 #EXTINF:-1 tvg-name="梨园" tvg-logo="https://image.5iclub.cloudns.org/file/6a3228959e9ad9e1b02fa.png" group-title="数字频道",梨园频道
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN6380788ba7bed/index.m3u8?AuthInfo=toEYVdLfxymUP2l9NZpQI5%2BK6T7j%2FlRm%2BvbM9VO7bA0q1S1k1f36SqqriM0FZoFSAJRfCt8SS7X6sTRmXb81a8O4H%2FdroDKjLoDeaMQdyJQ
-#EXTINF:-1 tvg-name="精彩影视" tvg-logo="https://image.yuwell.dynv6.net/file/e8cb9199797e3d509e591.png" group-title="数字频道",精彩影视
-http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000063/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000063&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
 #EXTINF:-1 tvg-name="求索记录" tvg-logo="https://image.5iclub.cloudns.org/file/7b3777ccf6fdc9b8fe0cd.png" group-title="数字频道",求索记录
 http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000010/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000010&IASHttpSessionId=OTT19019320240419154124000281
 #EXTINF:-1 tvg-name="求索动物" tvg-logo="https://image.5iclub.cloudns.org/file/d90086fae765af6d4cc3c.png" group-title="数字频道",求索动物
@@ -271,12 +299,8 @@ http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000009/index.m3u8?
 http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000011/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000011&IASHttpSessionId=OTT19019320240419154124000281
 #EXTINF:-1 tvg-name="求索生活" tvg-logo="https://image.5iclub.cloudns.org/file/4586e85e6000017d26cf4.png" group-title="数字频道",求索生活
 http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000008/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000008&IASHttpSessionId=OTT19019320240419154124000281
-#EXTINF:-1 tvg-name="动漫秀场" tvg-logo="https://image.5iclub.cloudns.org/file/041f81bbdecc6b227e2c2.png" group-title="数字频道",动漫秀场
-https://itv.lat/hls?channel=yybb-dmxc-H265&token=fbca23599065f5bd644b330db4e3b1f5
-#EXTINF:-1 tvg-name="都市剧场" tvg-logo="https://image.5iclub.cloudns.org/file/de30062dd44e9ab7f60ff.png" group-title="数字频道",都市剧场
-https://itv.lat/hls?channel=yxfydsjcHDH265&token=fbca23599065f5bd644b330db4e3b1f5
-#EXTINF:-1 tvg-name="嘉佳卡通" tvg-logo="https://image.5iclub.cloudns.org/file/d7a086c8aa5791f9bd50b.png" group-title="数字频道",嘉佳卡通
-https://itv.lat/hls?channel=jjkt_2000&token=fbca23599065f5bd644b330db4e3b1f5
+#EXTINF:-1 tvg-name="精彩影视" tvg-logo="https://image.5iclub.cloudns.org/file/e8cb9199797e3d509e591.png" group-title="数字频道",精彩影视
+http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000063/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000063&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
 #EXTINF:-1 tvg-name="家庭理财" tvg-logo="https://image.5iclub.cloudns.org/file/7b831f67f7572d3a78794.png" group-title="数字频道",家庭理财
 https://itv.lat/hls?channel=jtlc&token=fbca23599065f5bd644b330db4e3b1f5
 #EXTINF:-1 tvg-name="财富天下" tvg-logo="https://image.5iclub.cloudns.org/file/10a1e364ab0bf9a1ce907.png" group-title="数字频道",财富天下
