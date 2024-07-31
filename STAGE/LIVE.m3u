@@ -220,6 +220,33 @@ http://[2409:8087:1a0b:df::4013]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/
 #EXTINF:-1 tvg-name="中国教育4台" tvg-logo="https://image.5iclub.cloudns.org/file/6ca2b3792efa331e2e01a.png" group-title="卫视频道",CETV-4 𝟚
 http://[2409:8087:1a0b:df::4020]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225783/index.m3u8
 
+#EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV4K" tvg-logo="https://mirror.ghproxy.com/https://raw.githubusercontent.com/ClodQiu/LIVE/Grey/LOGO/CCTV4K.png" group-title="📺 4K•頻道",CCTV•4K
+http://159.75.85.63:5679/cctv4k.php
+#EXTINF:-1 tvg-id="CCTV16" tvg-name="CCTV16" tvg-logo="https://mirror.ghproxy.com/https://raw.githubusercontent.com/ClodQiu/LIVE/Grey/LOGO/CCTV16.png" group-title="📺 4K•頻道",CCTV16•4K
+http://zteres.sn.chinamobile.com:6060/000000001000/5000000008000023254/1.m3u8?channel-id=bestzb&Contentid=5000000008000023254&livemode=1&stbId=3
+#EXTINF:-1 tvg-id="苏州4K" tvg-name="苏州4K" tvg-logo="https://mirror.ghproxy.com/https://raw.githubusercontent.com/ClodQiu/LIVE/Grey/LOGO/苏州4K.png" group-title="📺 4K•頻道",苏州•4K
+http://liveshowbak2.kan0512.com/ksznorecord/csztv4k_4k.m3u8
+#EXTINF:-1 tvg-id="华数4K影院" tvg-name="华数4K影院" tvg-logo="https://mirror.ghproxy.com/https://raw.githubusercontent.com/ClodQiu/LIVE/Grey/LOGO/华数4K影院.png" group-title="📺 4K•頻道",华数TV•4K影院
+http://zteres.sn.chinamobile.com:6060/000000001000/6000000003000004748/index.m3u8?channel-id=wasusyt&Contentid=6000000003000004748&livemode=1&stbId=3
+#EXTINF:-1 tvg-id="纯享4K" tvg-name="纯享4K" tvg-logo="https://mirror.ghproxy.com/https://raw.githubusercontent.com/ClodQiu/LIVE/Grey/LOGO/纯享4K.png" group-title="📺 4K•頻道",纯享•4K
+http://zteres.sn.chinamobile.com:6060/000000001000/1000000004000011651/1.m3u8?channel-id=ystenlive&Contentid=1000000004000011651&livemode=1&stbId=3
+#EXTINF:-1 tvg-id="4K测试" tvg-name="华数4K测试" tvg-logo="https://mirror.ghproxy.com/https://raw.githubusercontent.com/ClodQiu/LIVE/Grey/LOGO/4K测试.png" group-title="📺 4K•頻道",4K•测试
+http://[2409:8087:5e01:34::23]:6610/ZTE_CMS/00000001000000060000000000000459/index.m3u8?IAS
+#EXTINF:-1 tvg-id="咪咕" tvg-name="咪咕视频4K Ⅰ" tvg-logo="https://mirror.ghproxy.com/https://raw.githubusercontent.com/ClodQiu/LIVE/Grey/LOGO/咪咕视频.png" group-title="📺 4K•頻道",咪咕直播4K Ⅰ
+http://[2409:8087:1a01:df::4001]/PLTV/88888888/224/3221225655/index.m3u8
+#EXTINF:-1 tvg-id="咪咕" tvg-name="咪咕视频4K Ⅱ" tvg-logo="https://mirror.ghproxy.com/https://raw.githubusercontent.com/ClodQiu/LIVE/Grey/LOGO/咪咕视频.png" group-title="📺 4K•頻道",咪咕直播4K Ⅱ
+http://[2409:8087:1a01:df::4005]/PLTV/88888888/224/3221225651/index.m3u8
+#EXTINF:-1,tvg-id="斗鱼4K影院" tvg-name="斗鱼4K影院" tvg-logo="https://mirror.ghproxy.com/https://raw.githubusercontent.com/ClodQiu/LIVE/Grey/LOGO/斗鱼直播.png" group-title="📺 4K•頻道",斗鱼•4K影院「广州」
+http://159.75.85.63:35455/douyu/9249162
+#EXTINF:-1,tvg-id="斗鱼4K影院" tvg-name="斗鱼4K影院" tvg-logo="https://mirror.ghproxy.com/https://raw.githubusercontent.com/ClodQiu/LIVE/Grey/LOGO/斗鱼直播.png" group-title="📺 4K•頻道",斗鱼•4K影院「香港」
+http://mmitv.top/test/douyu.php?id=9249162
+#EXTINF:-1 tvg-id="Love Nrture 4K" tvg-name="Love Nrture 4K" tvg-logo="https://mirror.ghproxy.com/https://raw.githubusercontent.com/ClodQiu/LIVE/Grey/LOGO/LoveNarure4K.png" group-title="📺 4K•頻道",Love Nrture 4K「自然」
+https://d18dyiwu97wm6q.cloudfront.net/playlist2160p.m3u8
+#EXTINF:-1,tvg-id="Fashion 4K" tvg-name="Fashion 4K" tvg-logo="https://mirror.ghproxy.com/https://raw.githubusercontent.com/ClodQiu/LIVE/Grey/LOGO/FashionTV.png" group-title="📺 4K•頻道",Fashion 4K「时尚」
+https://fash2043.cloudycdn.services/slive/ftv_ftv_4k_hevc_73d_42080_default_466_hls.smil/playlist.m3u8
+#EXTINF:-1,tvg-id="Loupe 4K" tvg-name="Loupe 4K" tvg-logo="https://mirror.ghproxy.com/https://raw.githubusercontent.com/ClodQiu/LIVE/Grey/LOGO/Loupe4K.png" group-title="📺 4K•頻道",Loupe 4K
+https://d2dw21aq0j0l5c.cloudfront.net/playlist_3840x2160.m3u8
+
 #EXTINF:-1 tvg-name="爱上4K" tvg-logo="https://image.5iclub.cloudns.org/file/567376f2a56c4ab27dd09.png" tvg-logo="" group-title="视觉盛宴",爱上4K
 http://[2409:8087:5e01:34::21]:6610/ZTE_CMS/00000001000000060000000000000459/index.m3u8?IAS
 #EXTINF:-1 tvg-name="纯享4K" tvg-logo="https://image.5iclub.cloudns.org/file/adb7a4099a83263d78fca.png" group-title="视觉盛宴",纯享4K
@@ -230,7 +257,7 @@ http://liveshowbak2.kan0512.com/ksznorecord/csztv4k_4k.m3u8
 https://endpnt.com/hls/nasa4k60/playlist.m3u8
 #EXTINF:-1 tvg-name="Loupe 4K" tvg-logo="https://image.5iclub.cloudns.org/file/7554ec1426000482db1c5.png" group-title="视觉盛宴",Loupe 4K
 https://d2dw21aq0j0l5c.cloudfront.net/playlist.m3u8
-#EXTINF:-1 tvg-name="CCTV4K" tvg-logo="https://image.5iclub.cloudns.org/file/f80637196310f165af5af.png" group-title="央视频道",CCTV-4K 超高清
+#EXTINF:-1 tvg-name="CCTV4K" tvg-logo="https://image.5iclub.cloudns.org/file/f80637196310f165af5af.png" group-title="视觉盛宴",CCTV-4K 超高清
 http://27.222.3.214/liveali-tp4k.cctv.cn/live/4K10M.stream/playlist.m3u8
 #EXTINF:-1 tvg-name="CCTV16" tvg-logo="https://image.5iclub.cloudns.org/file/7afd697595c95f1d4fd69.png" group-title="视觉盛宴",CCTV-16 奥林匹克 4K
 http://123.189.36.4:9901/tsfile/live/1027_1.m3u8
