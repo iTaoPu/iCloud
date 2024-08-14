@@ -207,6 +207,8 @@ http://[2409:8087:1a0b:df::4007]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/
 http://[2409:8087:5e01:34::22]:6610/ZTE_CMS/00000001000000060000000000000193/index.m3u8?IAS
 #EXTINF:-1 tvg-name="康巴卫视" tvg-logo="https://image.yuwell.dynv6.net/file/1328139e172261c38d9be.png" group-title="卫视频道",康巴卫视
 http://[2409:8087:1a0b:df::4005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225660/index.m3u8
+#EXTINF:-1 tvg-id="大湾区卫视" tvg-logo="https://image.yuwell.dynv6.net/file/6d7adb1460164b4c3cddf.png" group-title="广东频道",大湾区卫视
+http://[2409:8087:5e00:24::1e]:6060/000000001000/1000000002000011619/index.m3u8
 #EXTINF:-1 tvg-name="中国教育1台" tvg-logo="https://image.yuwell.dynv6.net/file/ea292ea7484c9397bc0b0.png" group-title="卫视频道",CETV-1
 http://mobilelive-ds.ysp.cctv.cn/ysp/2022823801.m3u8
 #EXTINF:-1 tvg-name="中国教育2台" tvg-logo="https://image.yuwell.dynv6.net/file/d0f908a2f74deca4be609.png" group-title="卫视频道",CETV-2
@@ -260,11 +262,11 @@ https://itv.lat/hls?channel=hxjc-4k_8000&token=fbca23599065f5bd644b330db4e3b1f5
 #EXTINF:-1 tvg-name="IPTV5+" tvg-logo="https://image.yuwell.dynv6.net/file/9ee53b216d3be0908232d.png" group-title="数字频道",IPTV5+ 体育赛事
 http://[2409:8087:5e00:24::1f]:6060/ZTE_CMS/00000001000000060000000000000461/index.m3u8
 #EXTINF:-1 tvg-name="CHC影迷电影" tvg-logo="https://image.yuwell.dynv6.net/file/bd2516dcc852eae61e4e4.png" group-title="数字频道",CHC影迷电影
-https://pi.0472.org/6/chcym.m3u8
+hhttps://pi.0472.org/chc/ym.m3u8
 #EXTINF:-1 tvg-name="CHC动作电影" tvg-logo="https://image.yuwell.dynv6.net/file/d3fe1eb96555ab7a0f25a.png" group-title="数字频道",CHC动作电影
-https://pi.0472.org/6/chcdz.m3u8
+https://pi.0472.org/chc/dz.m3u8
 #EXTINF:-1 tvg-name="CHC家庭影院" tvg-logo="https://image.yuwell.dynv6.net/file/54a48db2d660e045d4a3f.png" group-title="数字频道",CHC家庭影院
-https://pi.0472.org/6/chcjt.m3u8
+https://pi.0472.org/chc/jt.m3u8
 #EXTINF:-1 tvg-name="上海纪实人文" tvg-logo="https://image.yuwell.dynv6.net/file/057328ca006b7d1398124.png" group-title="数字频道",纪实人文
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225738/index.m3u8
 #EXTINF:-1 tvg-name="纪实科教" tvg-logo="https://image.yuwell.dynv6.net/file/b11189f0f1ad548c86837.png" group-title="数字频道",纪实科教
@@ -272,7 +274,7 @@ http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/
 #EXTINF:-1 tvg-name="劲爆体育" tvg-logo="https://image.yuwell.dynv6.net/file/e44f286ef3eaeaa317d7a.png" group-title="数字频道",劲爆体育
 http://[2409:8087:5e08:24::12]:6610/000000001000/2000000002000000008/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000008&IASHttpSessionId=OTT19019320240419154124000281
 #EXTINF:-1 tvg-name="乐游" tvg-logo="https://image.yuwell.dynv6.net/file/6b26a9119a849287686fc.png" group-title="数字频道",乐游频道
-http://[2409:8087:5e08:24::12]:6610/000000001000/2000000002000000092/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000092&IASHttpSessionId=OTT19019320240419154124000281
+http://[2409:8087:5e00:24::1e]:6060/000000001000/5000000011000031112/1.m3u8
 #EXTINF:-1 tvg-name="欢笑剧场" tvg-logo="https://image.yuwell.dynv6.net/file/e685750398ea834d07d2f.png" group-title="数字频道",欢笑剧场
 http://[2409:8087:5e00:24::1e]:6060/000000001000/5000000002000009455/1.m3u8
 #EXTINF:-1 tvg-name="都市剧场" tvg-logo="https://image.yuwell.dynv6.net/file/de30062dd44e9ab7f60ff.png" group-title="数字频道",都市剧场
@@ -328,9 +330,9 @@ https://itv.lat/hls?channel=mlyy&token=fbca23599065f5bd644b330db4e3b1f5
 #EXTINF:-1 tvg-name="生活时尚" tvg-logo="https://image.yuwell.dynv6.net/file/d5a58f6ca2fe0e4835fcc.png" group-title="数字频道",生活时尚
 https://itv.lat/hls?channel=shssH265&token=fbca23599065f5bd644b330db4e3b1f5
 #EXTINF:-1 tvg-name="四海钓鱼" tvg-logo="https://image.yuwell.dynv6.net/file/90037260c36d1a420309b.png" group-title="数字频道",四海钓鱼
-https://itv.lat/hls?channel=shdy&token=fbca23599065f5bd644b330db4e3b1f5
+http://119.98.133.156:8888/udp/239.69.1.244:11106
 #EXTINF:-1 tvg-name="天元围棋" tvg-logo="https://image.yuwell.dynv6.net/file/2392cd33041f0a1a7b15b.png" group-title="数字频道",天元围棋
-https://itv.lat/hls?channel=tywq_2000&token=fbca23599065f5bd644b330db4e3b1f5
+http://110.185.65.123:4443/udp/239.93.42.55:5140
 #EXTINF:-1 tvg-name="武术世界" tvg-logo="https://image.yuwell.dynv6.net/file/01c73988b77c7a988e1d0.png" group-title="数字频道",武术世界
 https://itv.lat/hls?channel=wssj&token=fbca23599065f5bd644b330db4e3b1f5
 #EXTINF:-1 tvg-name="先锋乒羽" tvg-logo="https://image.yuwell.dynv6.net/file/a23fe766c112ee4151456.png" group-title="数字频道",先锋乒羽
