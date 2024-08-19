@@ -87,7 +87,7 @@ http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/322
 #EXTINF:-1 tvg-name="CCTV17" tvg-logo="https://image.yuwell.dynv6.net/file/ac031ccd5894f9379cdcd.png" group-title="央视频道",CCTV-17 农业农村
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225765/index.m3u8
 #EXTINF:-1 tvg-name="CCTV4K" tvg-logo="https://image.yuwell.dynv6.net/file/f80637196310f165af5af.png" group-title="央视频道",CCTV-4K 超高清
-http://hlslive-tx-cdn.ysp.cctv.cn/ysp/2024081302.m3u8?key=txiptv&playlive=1&authid=0
+https://pi.0472.org/livetv/cctv4k.m3u8
 #EXTINF:-1 tvg-name="CGTN" tvg-logo="https://image.yuwell.dynv6.net/file/41bc9648ef40940d7c902.png" group-title="央视频道",CGTN英语
 https://0472.org/hls/cgtn.m3u8
 #EXTINF:-1 tvg-name="CGTN纪录" tvg-logo="https://image.yuwell.dynv6.net/file/03589e4630d345c8ea475.png" group-title="央视频道",CGTN记录
@@ -124,10 +124,9 @@ http://ali.hlspull.yximgs.com/laoshu/awei_cwjd.flv
 http://[2409:8087:5e00:24::1e]:6060/000000001000/1000000001000004794/1.m3u8
 #EXTINF:-1 tvg-name="CCTV5+" tvg-logo="https://image.yuwell.dynv6.net/file/f31f3cd58d7697cfb4ad4.png" group-title="央视频道",CCTV-5+ 体育赛事 𝟚
 http://[2409:8087:5e00:24::1e]:6060/000000001000/1000000001000020505/1.m3u8
-#EXTINF:-1 tvg-name="CCTV16" tvg-logo="https://image.yuwell.dynv6.net/file/7afd697595c95f1d4fd69.png" group-title="央视频道",CCTV-16 奥林匹克 𝟚
-http://[2409:8087:5e00:24::1e]:6060/000000001000/1000000006000233001/1.m3u8
-#EXTINF:-1 tvg-name="CCTV5" tvg-logo="https://image.yuwell.dynv6.net/file/5dfeca628fff56e1c7a34.png" group-title="央视频道",CCTV-5 IPv4
-http://112.13.84.36/5gtvtbv52.live.bestvcdn.com.cn/live/program/live/cctv5hd8m/8000000/mnf.m3u8
+#EXTINF:-1 tvg-name="CCTV16" tvg-logo="https://image.yuwell.dynv6.net/file/7afd697595c95f1d4fd69.png" group-
+#EXTINF:-1 tvg-name="重温经典" tvg-logo="https://image.yuwell.dynv6.net/file/bfc0f351ccfb852fb3d89.png" group-title="央视频道",重温经典 𝟚
+https://pi.0472.org/livetv/cwjd.m3u8
 
 #EXTINF:-1 tvg-name="北京卫视" tvg-logo="https://image.yuwell.dynv6.net/file/dab0b428d699498e69552.png" group-title="卫视频道",北京卫视
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226450/index.m3u8
@@ -239,7 +238,8 @@ https://d18dyiwu97wm6q.cloudfront.net/playlist2160p.m3u8
 #EXTINF:-1 tvg-name="Fashion 4K" tvg-logo="https://image.yuwell.dynv6.net/file/16703af4c4674e3fcaa39.png" group-title="视觉盛宴",Fashion 4K「时尚」
 https://fash2043.cloudycdn.services/slive/ftv_ftv_4k_hevc_73d_42080_default_466_hls.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="CCTV4K" tvg-logo="https://image.yuwell.dynv6.net/file/f80637196310f165af5af.png" group-title="视觉盛宴",CCTV-4K 超高清
-http://27.222.3.214/liveali-tp4k.cctv.cn/live/4K10M.stream/playlist.m3u8
+#EXTINF:-1 tvg-name="CCTV4K" tvg-logo="https://live.fanmingming.com/tv/CCTV4K.png" group-title="央视频道",CCTV-4K 超高清
+https://pi.0472.org/livetv/cctv4k.m3u8
 #EXTINF:-1 tvg-name="CCTV16" tvg-logo="https://image.yuwell.dynv6.net/file/7afd697595c95f1d4fd69.png" group-title="视觉盛宴",CCTV-16 奥林匹克 4K
 https://iptv.doyoulinkwantyousee.top:2672/stream/channelid/127146888?profile=pass
 #EXTINF:-1 tvg-name="BesTV 4K电影" tvg-logo="https://image.yuwell.dynv6.net/file/e24347b54fb47ca5c4556.png" group-title="视觉盛宴",BesTV 4K电影
@@ -740,8 +740,6 @@ http://pluslive1.sjzntv.cn/shenghuo/playlist.m3u8
 #EXTINF:-1 tvg-id="石家庄都市" tvg-name="石家庄都市" tvg-logo="https://image.yuwell.dynv6.net/file/22d3bedb93b9ba4282d34.png" group-title="河北频道",石家庄都市
 http://pluslive1.sjzntv.cn/dushi/playlist.m3u8
 
-#EXTINF:-1 tvg-id="大湾区卫视" tvg-logo="https://image.yuwell.dynv6.net/file/6d7adb1460164b4c3cddf.png" group-title="广东频道",大湾区卫视
-http://116.162.6.192/4403-txt.otvstream.otvcloud.com/otv/skcc/live/channel58/1300.m3u8
 #EXTINF:-1 tvg-id="广东体育" tvg-logo="https://image.yuwell.dynv6.net/file/c91a930aa236e33bf250b.png" group-title="广东频道",广东体育
 http://116.162.6.192/4403-txt.otvstream.otvcloud.com/otv/skcc/live/channel34/1300.m3u8
 #EXTINF:-1 tvg-id="广东珠江" tvg-logo="https://image.yuwell.dynv6.net/file/f3ce31616823584371516.png" group-title="广东频道",广东珠江
