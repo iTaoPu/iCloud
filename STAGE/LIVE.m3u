@@ -206,7 +206,7 @@ http://[2409:8087:1a0b:df::4007]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/
 http://[2409:8087:5e01:34::22]:6610/ZTE_CMS/00000001000000060000000000000193/index.m3u8?IAS
 #EXTINF:-1 tvg-name="康巴卫视" tvg-logo="https://image.yuwell.dynv6.net/file/1328139e172261c38d9be.png" group-title="卫视频道",康巴卫视
 http://[2409:8087:1a0b:df::4005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225660/index.m3u8
-#EXTINF:-1 tvg-id="大湾区卫视" tvg-logo="https://image.yuwell.dynv6.net/file/6d7adb1460164b4c3cddf.png" group-title="广东频道",大湾区卫视
+#EXTINF:-1 tvg-id="大湾区卫视" tvg-logo="https://image.yuwell.dynv6.net/file/6d7adb1460164b4c3cddf.png" group-title="卫视频道",大湾区卫视
 http://[2409:8087:5e00:24::1e]:6060/000000001000/1000000002000011619/index.m3u8
 #EXTINF:-1 tvg-name="中国教育1台" tvg-logo="https://image.yuwell.dynv6.net/file/ea292ea7484c9397bc0b0.png" group-title="卫视频道",CETV-1
 http://mobilelive-ds.ysp.cctv.cn/ysp/2022823801.m3u8
