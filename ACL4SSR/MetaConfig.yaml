@@ -56,16 +56,25 @@ dns:
     - "*"
     - "+.lan"
     - "+.local"
+    - "+.msftconnecttest.com",
+    - "+.msftncsi.com",
+    - "localhost.ptlogin2.qq.com",
+    - "localhost.sec.qq.com",
+    - "localhost.work.weixin.qq.com"
   nameserver:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
+    - https://doh.360.cn/dns-query
   proxy-server-nameserver:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
+    - https://doh.360.cn/dns-query
   nameserver-policy:
-    "geosite:cn,private":
+    "geosite:cn,private,geolocation-cn":
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
-    "geosite:geolocation-!cn":
+    - https://doh.360.cn/dns-query
+    "geosite: google,youtube,telegram,gfw,geolocation-!cn":
       - "https://dns.cloudflare.com/dns-query"
       - "https://dns.google/dns-query"
+      - "https://dns.adguard.com/dns-query"
