@@ -46,19 +46,12 @@ dns:
   enable: true
   ipv6: true
   respect-rules: true
-  use-system-hosts: false
-  cache-algorithm: arc
   enhanced-mode: fake-ip
   fake-ip-range: 28.0.0.1/8
   fake-ip-filter:
     - "*"
     - "+.lan"
     - "+.local"
-    - "+.msftconnecttest.com"
-    - "+.msftncsi.com"
-    - "localhost.ptlogin2.qq.com"
-    - "localhost.sec.qq.com"
-    - "localhost.work.weixin.qq.com"
   nameserver:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
@@ -66,20 +59,20 @@ dns:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
   nameserver-policy:
-    "geosite:cn,private,geolocation-cn":
+    "geosite:cn,private":
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
-    "geosite:google,youtube,telegram,gfw,geolocation-!cn":
+    "geosite:geolocation-!cn":
       - "https://dns.cloudflare.com/dns-query"
       - "https://dns.google/dns-query"
 
 proxy-providers:
-  Chrome.Hysteria:
+  GreatWall:
     type: http
-    url: "https://hy2.yuwell.dynv6.net/sub/merged_proxies_new.yaml"
-    path: ./Internet/Hysteria.yaml
+    url: "https://internet.yuwell.dynv6.net/list.meta.yml"
+    path: ./Internet/GreatWall.yaml
     interval: 86400
-    filter: "hysteria|hysteria2"
+    filter: "中国|🇨🇳|CN|cn|China|中华人民共和国|(?i)港|🇭🇰|HK|hk|Hong Kong|HongKong|hongkong|HKG|台|🇹🇼|新北|彰化|TW|tw|Taiwan|TPE|KHH|日本|🇯🇵|川日|东京|大阪|泉日|埼玉|沪日|深日|[^-]日|JP|Japan|Tokyo|NRT|KIX|🇰🇷|KR|Korea|KOR|Seoul|首尔|春川|韩|韓|ICN|美|🇺🇸|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|ATL|BUF|DFW|EWR|IAD|LAX|MCI|MIA|ORD|PHX|PDX|SEA|SJC|新加坡|坡|🇸🇬|狮城|SG|Singapore|SIN|AD|🇦🇩|AE|🇦🇪|AF|🇦🇫|AG|🇦🇬|AL|🇦🇱|AM|🇦🇲|AO|🇦🇴|AR|🇦🇷|AT|🇦🇹|AU|🇦🇺|AZ|🇦🇿|BA|🇧🇦|BB|🇧🇧|BD|🇧🇩|BE|🇧🇪|BF|🇧🇫|BG|🇧🇬|BH|🇧🇭|BI|🇧🇮|BJ|🇧🇯|BN|🇧🇳|BO|🇧🇴|BR|🇧🇷|BS|🇧🇸|BT|🇧🇹|BW|🇧🇼|BZ|🇧🇿|CA|🇨🇦|CD|🇨🇩|CF|🇨🇫|CG|🇨🇬|CH|🇨🇭|CI|🇨🇮|CL|🇨🇱|CM|🇨🇲|CO|🇨🇴|CR|🇨🇷|CV|🇨🇻|CY|🇨🇾|CZ|🇨🇿|DE|🇩🇪|DJ|🇩🇯|DK|🇩🇰|DM|🇩🇲|DO|🇩🇴|DZ|🇩🇿|EC|🇪🇨|EE|🇪🇪|EG|🇪🇬|ER|🇪🇷|ES|🇪🇸|ET|🇪🇹|FI|🇫🇮|FJ|🇫🇯|FM|🇫🇲|FR|🇫🇷|GA|🇬🇦|GB|🇬🇧|GD|🇬🇩|GE|🇬🇪|GH|🇬🇭|GM|🇬🇲|GN|🇬🇳|GQ|🇬🇶|GR|🇬🇷|GT|🇬🇹|GW|🇬🇼|GY|🇬🇾|HN|🇭🇳|HR|🇭🇷|HT|🇭🇹|HU|🇭🇺|ID|🇮🇩|IE|🇮🇪|IL|🇮🇱|IN|🇮🇳|IQ|🇮🇶|IS|🇮🇸|IT|🇮🇹|JM|🇯🇲|JO|🇯🇴|KE|🇰🇪|KG|🇰🇬|KH|🇰🇭|KI|🇰🇮|KM|🇰🇲|KN|🇰🇳|KW|🇰🇼|KZ|🇰🇿|LA|🇱🇦|LB|🇱🇧|LC|🇱🇨|LI|🇱🇮|LK|🇱🇰|LR|🇱🇷|LS|🇱🇸|LT|🇱🇹|LU|🇱🇺|LV|🇱🇻|LY|🇱🇾|MA|🇲🇦|MC|🇲🇨|MD|🇲🇩|ME|🇲🇪|MG|🇲🇬|MH|🇲🇭|MK|🇲🇰|ML|🇲🇱|MM|🇲🇲|MN|🇲🇳|MR|🇲🇷|MT|🇲🇹|MU|🇲🇺|MV|🇲🇻|MW|🇲🇼|MX|🇲🇽|MY|🇲🇾|MZ|🇲🇿|NA|🇳🇦|NE|🇳🇪|NG|🇳🇬|NI|🇳🇮|NL|🇳🇱|NO|🇳🇴|NP|🇳🇵|NR|🇳🇷|NZ|🇳🇿|OM|🇴🇲|PA|🇵🇦|PE|🇵🇪|PG|🇵🇬|PH|🇵🇭|PK|🇵🇰|PL|🇵🇱|PS|🇵🇸|PT|🇵🇹|PW|🇵🇼|PY|🇵🇾|QA|🇶🇦|RO|🇷🇴|RS|🇷🇸|RW|🇷🇼|SA|🇸🇦|SB|🇸🇧|SC|🇸🇨|SD|🇸🇩|SE|🇸🇪|SG|🇸🇬|SI|🇸🇮|SK|🇸🇰|SL|🇸🇱|SM|🇸🇲|SN|🇸🇳|SO|🇸🇴|SR|🇸🇷|SS|🇸🇸|ST|🇸🇹|SV|🇸🇻|SZ|🇸🇿|TD|🇹🇩|TG|🇹🇬|TH|🇹🇭|TJ|🇹🇯|TL|🇹🇱|TM|🇹🇲|TN|🇹🇳|TO|🇹🇴|TR|🇹🇷|TT|🇹🇹|TV|🇹🇻|TZ|🇹🇿|UA|🇺🇦|UG|🇺🇬|US|🇺🇸|UY|🇺🇾|UZ|🇺🇿|VA|🇻🇦|VC|🇻🇨|VN|🇻🇳|VU|🇻🇺|WS|🇼🇸|YE|🇾🇪|ZA|🇿🇦|ZM|🇿🇲|ZW|🇿🇼"
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
@@ -102,7 +95,7 @@ proxy-groups:
   - name: ☑️ 手动切换
     type: select
     use:
-      - Chrome.Hysteria
+      - GreatWall
     proxies: 
   - name: ♻️ 延迟选优
     type: url-test
@@ -110,7 +103,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     use:
-      - Chrome.Hysteria
+      - GreatWall
     proxies:
   - name: 🔯 故障转移
     type: fallback
@@ -118,7 +111,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     use:
-      - Chrome.Hysteria
+      - GreatWall
     proxies:
   - name: 🔮 负载均衡·散列
     type: load-balance
@@ -127,7 +120,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     use:
-      - Chrome.Hysteria
+      - GreatWall
     proxies:  
   - name: 🔮 负载均衡·轮询
     type: load-balance
@@ -136,7 +129,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     use:
-      - Chrome.Hysteria
+      - GreatWall
     proxies:
   - name: 🌍 国外媒体
     type: select
@@ -246,7 +239,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     use:
-      - Chrome.Hysteria
+      - GreatWall
     proxies:
       - DIRECT
   - name: 🇯🇵 日韩节点
@@ -257,7 +250,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     use:
-      - Chrome.Hysteria
+      - GreatWall
     proxies:
       - DIRECT
   - name: 🇺🇲 鹰酱节点
@@ -268,7 +261,7 @@ proxy-groups:
     interval: 300
     tolerance: 150
     use:
-      - Chrome.Hysteria
+      - GreatWall
     proxies:
       - DIRECT
   - name: 🇸🇬 狮城节点
@@ -279,7 +272,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     use:
-      - Chrome.Hysteria
+      - GreatWall
     proxies:
       - DIRECT
       
@@ -288,91 +281,91 @@ rule-providers:
     type: http
     behavior: domain
     url: "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
-    path: ./ruleset/reject.yaml
+    path: ./Ruleset/reject.yaml
     interval: 86400
 
   icloud:
     type: http
     behavior: domain
     url: "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt"
-    path: ./ruleset/icloud.yaml
+    path: ./Ruleset/icloud.yaml
     interval: 86400
 
   apple:
     type: http
     behavior: domain
     url: "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt"
-    path: ./ruleset/apple.yaml
+    path: ./Ruleset/apple.yaml
     interval: 86400
 
   google:
     type: http
     behavior: domain
     url: "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt"
-    path: ./ruleset/google.yaml
+    path: ./Ruleset/google.yaml
     interval: 86400
 
   proxy:
     type: http
     behavior: domain
     url: "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt"
-    path: ./ruleset/proxy.yaml
+    path: ./Ruleset/proxy.yaml
     interval: 86400
 
   direct:
     type: http
     behavior: domain
     url: "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt"
-    path: ./ruleset/direct.yaml
+    path: ./Ruleset/direct.yaml
     interval: 86400
 
   private:
     type: http
     behavior: domain
     url: "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt"
-    path: ./ruleset/private.yaml
+    path: ./Ruleset/private.yaml
     interval: 86400
 
   gfw:
     type: http
     behavior: domain
     url: "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt"
-    path: ./ruleset/gfw.yaml
+    path: ./Ruleset/gfw.yaml
     interval: 86400
 
   tld-not-cn:
     type: http
     behavior: domain
     url: "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt"
-    path: ./ruleset/tld-not-cn.yaml
+    path: ./Ruleset/tld-not-cn.yaml
     interval: 86400
 
   telegramcidr:
     type: http
     behavior: ipcidr
     url: "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt"
-    path: ./ruleset/telegramcidr.yaml
+    path: ./Ruleset/telegramcidr.yaml
     interval: 86400
 
   cncidr:
     type: http
     behavior: ipcidr
     url: "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt"
-    path: ./ruleset/cncidr.yaml
+    path: ./Ruleset/cncidr.yaml
     interval: 86400
 
   lancidr:
     type: http
     behavior: ipcidr
     url: "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
-    path: ./ruleset/lancidr.yaml
+    path: ./Ruleset/lancidr.yaml
     interval: 86400
 
   applications:
     type: http
     behavior: classical
     url: "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt"
-    path: ./ruleset/applications.yaml
+    path: ./Ruleset/applications.yaml
     interval: 86400
 
 rules:
