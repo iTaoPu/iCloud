@@ -74,7 +74,7 @@ dns:
       - "https://dns.google/dns-query"
 
 proxy-providers:
-  GreatWall:
+  Chrome.Hysteria:
     type: http
     url: "https://hy2.yuwell.dynv6.net/sub/merged_proxies_new.yaml"
     path: ./Internet/Hysteria.yaml
@@ -102,7 +102,7 @@ proxy-groups:
   - name: ☑️ 手动切换
     type: select
     use:
-      - GreatWall
+      - Chrome.Hysteria
     proxies: 
   - name: ♻️ 延迟选优
     type: url-test
@@ -110,7 +110,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     use:
-      - GreatWall
+      - Chrome.Hysteria
     proxies:
   - name: 🔯 故障转移
     type: fallback
@@ -118,7 +118,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     use:
-      - GreatWall
+      - Chrome.Hysteria
     proxies:
   - name: 🔮 负载均衡·散列
     type: load-balance
@@ -127,7 +127,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     use:
-      - GreatWall
+      - Chrome.Hysteria
     proxies:  
   - name: 🔮 负载均衡·轮询
     type: load-balance
@@ -136,7 +136,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     use:
-      - GreatWall
+      - Chrome.Hysteria
     proxies:
   - name: 🌍 国外媒体
     type: select
@@ -246,7 +246,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     use:
-      - GreatWall
+      - Hysteria
     proxies:
       - DIRECT
   - name: 🇯🇵 日韩节点
@@ -257,7 +257,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     use:
-      - GreatWall
+      - Hysteria
     proxies:
       - DIRECT
   - name: 🇺🇲 鹰酱节点
@@ -268,7 +268,7 @@ proxy-groups:
     interval: 300
     tolerance: 150
     use:
-      - GreatWall
+      - Hysteria
     proxies:
       - DIRECT
   - name: 🇸🇬 狮城节点
@@ -279,7 +279,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     use:
-      - GreatWall
+      - Hysteria
     proxies:
       - DIRECT
       
