@@ -280,91 +280,91 @@ rule-providers:
   reject:
     type: http
     behavior: domain
-    url: "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
+    url: "clash-rules.yuwell.cloudns.org/reject.txt"
     path: ./Ruleset/reject.yaml
     interval: 86400
 
   icloud:
     type: http
     behavior: domain
-    url: "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt"
+    url: "clash-rules.yuwell.cloudns.org/icloud.txt"
     path: ./Ruleset/icloud.yaml
     interval: 86400
 
   apple:
     type: http
     behavior: domain
-    url: "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt"
+    url: "clash-rules.yuwell.cloudns.org/apple.txt"
     path: ./Ruleset/apple.yaml
     interval: 86400
 
   google:
     type: http
     behavior: domain
-    url: "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt"
+    url: "clash-rules.yuwell.cloudns.org/google.txt"
     path: ./Ruleset/google.yaml
     interval: 86400
 
   proxy:
     type: http
     behavior: domain
-    url: "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt"
+    url: "clash-rules.yuwell.cloudns.org/proxy.txt"
     path: ./Ruleset/proxy.yaml
     interval: 86400
 
   direct:
     type: http
     behavior: domain
-    url: "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt"
+    url: "clash-rules.yuwell.cloudns.org/direct.txt"
     path: ./Ruleset/direct.yaml
     interval: 86400
 
   private:
     type: http
     behavior: domain
-    url: "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt"
+    url: "clash-rules.yuwell.cloudns.org/private.txt"
     path: ./Ruleset/private.yaml
     interval: 86400
 
   gfw:
     type: http
     behavior: domain
-    url: "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt"
+    url: "clash-rules.yuwell.cloudns.org/gfw.txt"
     path: ./Ruleset/gfw.yaml
     interval: 86400
 
   tld-not-cn:
     type: http
     behavior: domain
-    url: "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt"
+    url: "clash-rules.yuwell.cloudns.org/tld-not-cn.txt"
     path: ./Ruleset/tld-not-cn.yaml
     interval: 86400
 
   telegramcidr:
     type: http
     behavior: ipcidr
-    url: "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt"
+    url: "clash-rules.yuwell.cloudns.org/telegramcidr.txt"
     path: ./Ruleset/telegramcidr.yaml
     interval: 86400
 
   cncidr:
     type: http
     behavior: ipcidr
-    url: "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt"
+    url: "clash-rules.yuwell.cloudns.org/cncidr.txt"
     path: ./Ruleset/cncidr.yaml
     interval: 86400
 
   lancidr:
     type: http
     behavior: ipcidr
-    url: "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
+    url: "clash-rules.yuwell.cloudns.org/lancidr.txt"
     path: ./Ruleset/lancidr.yaml
     interval: 86400
 
   applications:
     type: http
     behavior: classical
-    url: "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt"
+    url: "clash-rules.yuwell.cloudns.org/applications.txt"
     path: ./Ruleset/applications.yaml
     interval: 86400
 
