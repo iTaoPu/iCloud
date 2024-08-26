@@ -246,7 +246,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     use:
-      - Hysteria
+      - Chrome.Hysteria
     proxies:
       - DIRECT
   - name: 🇯🇵 日韩节点
@@ -257,7 +257,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     use:
-      - Hysteria
+      - Chrome.Hysteria
     proxies:
       - DIRECT
   - name: 🇺🇲 鹰酱节点
@@ -268,7 +268,7 @@ proxy-groups:
     interval: 300
     tolerance: 150
     use:
-      - Hysteria
+      - Chrome.Hysteria
     proxies:
       - DIRECT
   - name: 🇸🇬 狮城节点
@@ -279,7 +279,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     use:
-      - Hysteria
+      - Chrome.Hysteria
     proxies:
       - DIRECT
       
