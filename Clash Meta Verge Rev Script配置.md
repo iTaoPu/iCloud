@@ -206,7 +206,7 @@ function main(config) {
     },
     {
       ...groupBaseOption,
-      "name": "🔮 负载均衡·散列",
+      "name": "🔮 负载均衡(散列)",
       "type": "load-balance",
       "strategy": "consistent-hashing",
       "include-all": true,
@@ -214,7 +214,7 @@ function main(config) {
     },
     {
       ...groupBaseOption,
-      "name": "🔮 负载均衡·轮询",
+      "name": "🔮 负载均衡(轮询)",
       "type": "load-balance",
       "strategy": "round-robin",
       "include-all": true,
@@ -265,7 +265,7 @@ function main(config) {
       "name": "🍃 应用净化",
       "type": "select",
       "proxies": ["REJECT", "DIRECT"],
-      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/bug.svg"
+      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/guard.svg"
     },
     {
       ...groupBaseOption,
