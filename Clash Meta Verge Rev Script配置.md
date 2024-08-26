@@ -2,16 +2,11 @@
 const domesticNameservers = [
   "https://dns.alidns.com/dns-query", // 阿里云公共DNS
   "https://doh.pub/dns-query", // 腾讯DNSPod
-  "https://doh.360.cn/dns-query" // 360安全DNS
 ];
 // 国外DNS服务器
 const foreignNameservers = [
-  "https://1.1.1.1/dns-query", // Cloudflare(主)
-  "https://1.0.0.1/dns-query", // Cloudflare(备)
-  "https://208.67.222.222/dns-query", // OpenDNS(主)
-  "https://208.67.220.220/dns-query", // OpenDNS(备)
-  "https://194.242.2.2/dns-query", // Mullvad(主)
-  "https://194.242.2.3/dns-query" // Mullvad(备)
+  "https://dns.cloudflare.com/dns-query", // Cloudflare DNS
+  "https://dns.google/dns-query", // Google DNS
 ];
 // DNS配置
 const dnsConfig = {
@@ -54,79 +49,79 @@ const ruleProviders = {
   "reject": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt",
+    "url": "https://loong.yuwell.cloudns.org/Clash.Rules/reject.txt",
     "path": "./ruleset/loyalsoldier/reject.yaml"
   },
   "icloud": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt",
+    "url": "https://loong.yuwell.cloudns.org/Clash.Rules/icloud.txt",
     "path": "./ruleset/loyalsoldier/icloud.yaml"
   },
   "apple": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt",
+    "url": "https://loong.yuwell.cloudns.org/Clash.Rules/apple.txt",
     "path": "./ruleset/loyalsoldier/apple.yaml"
   },
   "google": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt",
+    "url": "https://loong.yuwell.cloudns.org/Clash.Rules/google.txt",
     "path": "./ruleset/loyalsoldier/google.yaml"
   },
   "proxy": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt",
+    "url": "https://loong.yuwell.cloudns.org/Clash.Rules/proxy.txt",
     "path": "./ruleset/loyalsoldier/proxy.yaml"
   },
   "direct": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt",
+    "url": "https://loong.yuwell.cloudns.org/Clash.Rules/direct.txt",
     "path": "./ruleset/loyalsoldier/direct.yaml"
   },
   "private": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt",
+    "url": "https://loong.yuwell.cloudns.org/Clash.Rules/private.txt",
     "path": "./ruleset/loyalsoldier/private.yaml"
   },
   "gfw": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt",
+    "url": "https://loong.yuwell.cloudns.org/Clash.Rules/gfw.txt",
     "path": "./ruleset/loyalsoldier/gfw.yaml"
   },
   "tld-not-cn": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt",
+    "url": "https://loong.yuwell.cloudns.org/Clash.Rules/tld-not-cn.txt",
     "path": "./ruleset/loyalsoldier/tld-not-cn.yaml"
   },
   "telegramcidr": {
     ...ruleProviderCommon,
     "behavior": "ipcidr",
-    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt",
+    "url": "https://loong.yuwell.cloudns.org/Clash.Rules/telegramcidr.txt",
     "path": "./ruleset/loyalsoldier/telegramcidr.yaml"
   },
   "cncidr": {
     ...ruleProviderCommon,
     "behavior": "ipcidr",
-    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt",
+    "url": "https://loong.yuwell.cloudns.org/Clash.Rules/cncidr.txt",
     "path": "./ruleset/loyalsoldier/cncidr.yaml"
   },
   "lancidr": {
     ...ruleProviderCommon,
     "behavior": "ipcidr",
-    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt",
+    "url": "https://loong.yuwell.cloudns.org/Clash.Rules/lancidr.txt",
     "path": "./ruleset/loyalsoldier/lancidr.yaml"
   },
   "applications": {
     ...ruleProviderCommon,
     "behavior": "classical",
-    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt",
+    "url": "https://loong.yuwell.cloudns.org/Clash.Rules/applications.txt",
     "path": "./ruleset/loyalsoldier/applications.yaml"
   }
 };
@@ -185,9 +180,9 @@ function main(config) {
       ...groupBaseOption,
       "name": "🌐 节点选择",
       "type": "select",
-      "proxies": ["♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡(散列)", "🔮 负载均衡(轮询)"],
+      "proxies": ["♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡·散列", "🔮 负载均衡·轮询"],
       "include-all": true,
-      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"
+      "icon": "https://loong.yuwell.dynv6.net/IconSet/Area.png"
     },
     {
       ...groupBaseOption,
@@ -195,100 +190,100 @@ function main(config) {
       "type": "url-test",
       "tolerance": 100,
       "include-all": true,
-      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/speed.svg"
+      "icon": "https://loong.yuwell.dynv6.net/IconSet/Auto.png"
     },
     {
       ...groupBaseOption,
       "name": "🔯 故障转移",
       "type": "fallback",
       "include-all": true,
-      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/ambulance.svg"
+      "icon": "https://loong.yuwell.dynv6.net/IconSet/ambulance.png"
     },
     {
       ...groupBaseOption,
-      "name": "🔮 负载均衡(散列)",
+      "name": "🔮 负载均衡·散列",
       "type": "load-balance",
       "strategy": "consistent-hashing",
       "include-all": true,
-      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/merry_go.svg"
+      "icon": "https://loong.yuwell.dynv6.net/IconSet/merry_go.png"
     },
     {
       ...groupBaseOption,
-      "name": "🔮 负载均衡(轮询)",
+      "name": "🔮 负载均衡·轮询",
       "type": "load-balance",
       "strategy": "round-robin",
       "include-all": true,
-      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/balance.svg"
-    },
-    {
-      ...groupBaseOption,
-      "name": "📢 谷歌服务",
-      "type": "select",
-      "proxies": ["🌐 节点选择", "♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡(散列)", "🔮 负载均衡(轮询)", "🎯 全球直连"],
-      "include-all": true,
-      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/google.svg"
+      "icon": "https://loong.yuwell.dynv6.net/IconSet/balance.png"
     },
     {
       ...groupBaseOption,
       "name": "🌍 国外媒体",
       "type": "select",
-      "proxies": ["🌐 节点选择", "♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡(散列)", "🔮 负载均衡(轮询)", "🎯 全球直连"],
+      "proxies": ["🌐 节点选择", "♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡·散列", "🔮 负载均衡·轮询", "🎯 全球直连"],
       "include-all": true,
-      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/youtube.svg"
+      "icon": "https://loong.yuwell.dynv6.net/IconSet/World_Map.png"
     },
     {
       ...groupBaseOption,
-      "name": "📲 电报消息",
+      "name": "📢 谷歌服务",
       "type": "select",
-      "proxies": ["🌐 节点选择", "♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡(散列)", "🔮 负载均衡(轮询)", "🎯 全球直连"],
+      "proxies": ["🌐 节点选择", "♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡·散列", "🔮 负载均衡·轮询", "🎯 全球直连"],
       "include-all": true,
-      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/telegram.svg"
+      "icon": "https://loong.yuwell.dynv6.net/IconSet/google.png"
     },
     {
       ...groupBaseOption,
       "name": "Ⓜ️ 微软服务",
       "type": "select",
-      "proxies": ["🎯 全球直连", "🌐 节点选择", "♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡(散列)", "🔮 负载均衡(轮询)"],
+      "proxies": ["🎯 全球直连", "🌐 节点选择", "♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡·散列", "🔮 负载均衡·轮询"],
       "include-all": true,
-      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/microsoft.svg"
+      "icon": "https://loong.yuwell.dynv6.net/IconSet/microsoft.png"
     },
     {
       ...groupBaseOption,
       "name": "🍎 苹果服务",
       "type": "select",
-      "proxies": ["🌐 节点选择", "♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡(散列)", "🔮 负载均衡(轮询)", "🎯 全球直连"],
+      "proxies": ["🌐 节点选择", "♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡·散列", "🔮 负载均衡·轮询", "🎯 全球直连"],
       "include-all": true,
-      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/apple.svg"
+      "icon": "https://loong.yuwell.dynv6.net/IconSet/apple_blue.png"
     },
     {
       ...groupBaseOption,
-      "name": "🍃 应用净化",
+      "name": "📲 电报消息",
       "type": "select",
-      "proxies": ["REJECT", "DIRECT"],
-      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/guard.svg"
+      "proxies": ["🌐 节点选择", "♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡·散列", "🔮 负载均衡·轮询", "🎯 全球直连"],
+      "include-all": true,
+      "icon": "https://loong.yuwell.dynv6.net/IconSet/Telegram.png"
     },
     {
       ...groupBaseOption,
       "name": "🎯 全球直连",
       "type": "select",
-      "proxies": ["DIRECT", "🌐 节点选择", "♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡(散列)", "🔮 负载均衡(轮询)"],
+      "proxies": ["DIRECT", "🌐 节点选择", "♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡·散列", "🔮 负载均衡·轮询"],
       "include-all": true,
-      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/link.svg"
+      "icon": "https://loong.yuwell.dynv6.net/IconSet/link.png"
     },
     {
       ...groupBaseOption,
       "name": "🛑 全球拦截",
       "type": "select",
       "proxies": ["REJECT", "DIRECT"],
-      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/block.svg"
+      "icon": "https://loong.yuwell.dynv6.net/IconSet/Reject.png"
+    },
+    {
+      ...groupBaseOption,
+      "name": "🍃 应用净化",
+      "type": "select",
+      "proxies": ["REJECT", "DIRECT"],
+      "icon": "https://loong.yuwell.dynv6.net/IconSet/Hijacking.png"
     },
     {
       ...groupBaseOption,
       "name": "🐟 漏网之鱼",
       "type": "select",
-      "proxies": ["🌐 节点选择", "♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡(散列)", "🔮 负载均衡(轮询)", "🎯 全球直连"],
+      "proxies": ["🌐 节点选择", "♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡·散列", "🔮 负载均衡·轮询", "🎯 全球直连"],
       "include-all": true,
-      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/fish.svg"
+      "icon": "https://loong.yuwell.dynv6.net/IconSet/fish.png"
     }
   ];
 
