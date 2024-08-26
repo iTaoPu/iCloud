@@ -88,6 +88,7 @@ proxy-providers:
 proxy-groups:
   - name: 🌐 节点选择
     type: select
+    icon: https://loong.yuwell.dynv6.net/IconSet/Area.png
     proxies:
       - ♻️ 延迟选优
       - 🔯 故障转移
@@ -101,6 +102,7 @@ proxy-groups:
       - DIRECT
   - name: ☑️ 手动切换
     type: select
+    icon: https://loong.yuwell.dynv6.net/IconSet/Catnet.png
     use:
       - Chrome.Hysteria
     proxies: 
@@ -109,6 +111,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    icon: https://loong.yuwell.dynv6.net/IconSet/Auto.png
     use:
       - Chrome.Hysteria
     proxies:
@@ -117,6 +120,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    icon: https://loong.yuwell.dynv6.net/IconSet/ambulance.png
     use:
       - Chrome.Hysteria
     proxies:
@@ -126,6 +130,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    icon: https://loong.yuwell.dynv6.net/IconSet/merry_go.png
     use:
       - Chrome.Hysteria
     proxies:  
@@ -135,11 +140,13 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    icon: https://loong.yuwell.dynv6.net/IconSet/balance.png
     use:
       - Chrome.Hysteria
     proxies:
   - name: 🌍 国外媒体
     type: select
+    icon: https://loong.yuwell.dynv6.net/IconSet/World_Map.png
     proxies:
       - 🌐 节点选择
       - ♻️ 延迟选优
@@ -152,22 +159,9 @@ proxy-groups:
       - 🇺🇲 鹰酱节点
       - ☑️ 手动切换
       - 🎯 全球直连
-  - name: 📲 电报消息
-    type: select
-    proxies:
-      - 🌐 节点选择
-      - ♻️ 延迟选优
-      - 🔯 故障转移
-      - 🔮 负载均衡·散列
-      - 🔮 负载均衡·轮询
-      - 🇭🇰 港台节点
-      - 🇸🇬 狮城节点
-      - 🇯🇵 日韩节点
-      - 🇺🇲 鹰酱节点
-      - ☑️ 手动切换
-      - DIRECT
   - name: 📢 谷歌服务
     type: select
+    icon: https://loong.yuwell.dynv6.net/IconSet/google.png
     proxies:
       - 🌐 节点选择
       - ♻️ 延迟选优
@@ -182,6 +176,7 @@ proxy-groups:
       - 🎯 全球直连
   - name: Ⓜ️ 微软服务
     type: select
+    icon: https://loong.yuwell.dynv6.net/IconSet/microsoft.png
     proxies:
       - 🎯 全球直连
       - 🌐 节点选择
@@ -196,6 +191,7 @@ proxy-groups:
       - ☑️ 手动切换
   - name: 🍎 苹果服务
     type: select
+    icon: https://loong.yuwell.dynv6.net/IconSet/apple_blue.png
     proxies:
       - 🌐 节点选择
       - ♻️ 延迟选优
@@ -208,24 +204,43 @@ proxy-groups:
       - 🇺🇲 鹰酱节点
       - ☑️ 手动切换
       - 🎯 全球直连
+  - name: 📲 电报消息
+    type: select
+    icon: https://loong.yuwell.dynv6.net/IconSet/Telegram.png
+    proxies:
+      - 🌐 节点选择
+      - ♻️ 延迟选优
+      - 🔯 故障转移
+      - 🔮 负载均衡·散列
+      - 🔮 负载均衡·轮询
+      - 🇭🇰 港台节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日韩节点
+      - 🇺🇲 鹰酱节点
+      - ☑️ 手动切换
+      - DIRECT
   - name: 🎯 全球直连
     type: select
+    icon: https://loong.yuwell.dynv6.net/IconSet/link.png
     proxies:
       - DIRECT
       - 🌐 节点选择
       - ♻️ 延迟选优
   - name: 🛑 全球拦截
     type: select
+    icon: https://loong.yuwell.dynv6.net/IconSet/Reject.png
     proxies:
       - REJECT
       - DIRECT
   - name: 🍃 应用净化
     type: select
+    icon: https://loong.yuwell.dynv6.net/IconSet/Hijacking.png
     proxies:
       - REJECT
       - DIRECT
   - name: 🐟 漏网之鱼
     type: select
+    icon: https://loong.yuwell.dynv6.net/IconSet/fish.png
     proxies:
       - 🌐 节点选择
       - ♻️ 延迟选优
@@ -245,6 +260,7 @@ proxy-groups:
     filter: "中国|🇨🇳|CN|cn|China|中华人民共和国|(?i)港|🇭🇰|HK|hk|Hong Kong|HongKong|hongkong|HKG|台|🇹🇼|新北|彰化|TW|tw|Taiwan|TPE|KHH"
     interval: 300
     tolerance: 50
+    icon: https://loong.yuwell.dynv6.net/IconSet/HK.png
     use:
       - Chrome.Hysteria
     proxies:
@@ -256,6 +272,7 @@ proxy-groups:
     filter: "日本|🇯🇵|川日|东京|大阪|泉日|埼玉|沪日|深日|[^-]日|JP|Japan|Tokyo|NRT|KIX|🇰🇷|KR|Korea|KOR|Seoul|首尔|春川|韩|韓|ICN" 
     interval: 300
     tolerance: 50
+    icon: https://loong.yuwell.dynv6.net/IconSet/JP.png
     use:
       - Chrome.Hysteria
     proxies:
@@ -267,6 +284,7 @@ proxy-groups:
     filter: "美|🇺🇸|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|ATL|BUF|DFW|EWR|IAD|LAX|MCI|MIA|ORD|PHX|PDX|SEA|SJC"
     interval: 300
     tolerance: 150
+    icon: https://loong.yuwell.dynv6.net/IconSet/US.png
     use:
       - Chrome.Hysteria
     proxies:
@@ -278,6 +296,7 @@ proxy-groups:
     filter: "新加坡|坡|🇸🇬|狮城|SG|Singapore|SIN"
     interval: 300
     tolerance: 50
+    icon: https://loong.yuwell.dynv6.net/IconSet/SG.png
     use:
       - Chrome.Hysteria
     proxies:
