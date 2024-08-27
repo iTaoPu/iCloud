@@ -7,9 +7,9 @@ external-controller: 127.0.0.1:9090
 
 geodata-mode: true
 geox-url:
-  geoip: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip-lite.dat"
-  geosite: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"
-  mmdb: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country-lite.mmdb"
+  geoip: "https://loong.yuwell.cloudns.org/Meta.Rules.Dat/geoip-lite.dat"
+  geosite: "https://loong.yuwell.cloudns.org/Meta.Rules.Dat/geoip-lite.datgeosite.dat"
+  mmdb: "https://loong.yuwell.cloudns.org/Meta.Rules.Dat/geoip-lite.datcountry-lite.mmdb"
   asn: "https://fastly.jsdelivr.net/gh/xishang0128/geoip@release/GeoLite2-ASN.mmdb"
 
 find-process-mode: strict
