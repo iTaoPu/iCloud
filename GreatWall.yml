@@ -67,7 +67,7 @@ dns:
 proxy-providers:
   GreatWall:
     type: http
-    url: "https://internet.yuwell.dynv6.net/list.meta.yml"
+    url: "https://internet.loong.cloudns.org/list.meta.yml"
     path: ./Internet/GreatWall.yaml
     interval: 86400
     filter: "中国|🇨🇳|CN|cn|China|中华人民共和国|(?i)港|🇭🇰|HK|hk|Hong Kong|HongKong|hongkong|HKG|台|🇹🇼|新北|彰化|TW|tw|Taiwan|TPE|KHH|日本|🇯🇵|川日|东京|大阪|泉日|埼玉|沪日|深日|[^-]日|JP|Japan|Tokyo|NRT|KIX|🇰🇷|KR|Korea|KOR|Seoul|首尔|春川|韩|韓|ICN|美|🇺🇸|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|ATL|BUF|DFW|EWR|IAD|LAX|MCI|MIA|ORD|PHX|PDX|SEA|SJC|新加坡|坡|🇸🇬|狮城|SG|Singapore|SIN|AD|🇦🇩|AE|🇦🇪|AF|🇦🇫|AG|🇦🇬|AL|🇦🇱|AM|🇦🇲|AO|🇦🇴|AR|🇦🇷|AT|🇦🇹|AU|🇦🇺|AZ|🇦🇿|BA|🇧🇦|BB|🇧🇧|BD|🇧🇩|BE|🇧🇪|BF|🇧🇫|BG|🇧🇬|BH|🇧🇭|BI|🇧🇮|BJ|🇧🇯|BN|🇧🇳|BO|🇧🇴|BR|🇧🇷|BS|🇧🇸|BT|🇧🇹|BW|🇧🇼|BZ|🇧🇿|CA|🇨🇦|CD|🇨🇩|CF|🇨🇫|CG|🇨🇬|CH|🇨🇭|CI|🇨🇮|CL|🇨🇱|CM|🇨🇲|CO|🇨🇴|CR|🇨🇷|CV|🇨🇻|CY|🇨🇾|CZ|🇨🇿|DE|🇩🇪|DJ|🇩🇯|DK|🇩🇰|DM|🇩🇲|DO|🇩🇴|DZ|🇩🇿|EC|🇪🇨|EE|🇪🇪|EG|🇪🇬|ER|🇪🇷|ES|🇪🇸|ET|🇪🇹|FI|🇫🇮|FJ|🇫🇯|FM|🇫🇲|FR|🇫🇷|GA|🇬🇦|GB|🇬🇧|GD|🇬🇩|GE|🇬🇪|GH|🇬🇭|GM|🇬🇲|GN|🇬🇳|GQ|🇬🇶|GR|🇬🇷|GT|🇬🇹|GW|🇬🇼|GY|🇬🇾|HN|🇭🇳|HR|🇭🇷|HT|🇭🇹|HU|🇭🇺|ID|🇮🇩|IE|🇮🇪|IL|🇮🇱|IN|🇮🇳|IQ|🇮🇶|IS|🇮🇸|IT|🇮🇹|JM|🇯🇲|JO|🇯🇴|KE|🇰🇪|KG|🇰🇬|KH|🇰🇭|KI|🇰🇮|KM|🇰🇲|KN|🇰🇳|KW|🇰🇼|KZ|🇰🇿|LA|🇱🇦|LB|🇱🇧|LC|🇱🇨|LI|🇱🇮|LK|🇱🇰|LR|🇱🇷|LS|🇱🇸|LT|🇱🇹|LU|🇱🇺|LV|🇱🇻|LY|🇱🇾|MA|🇲🇦|MC|🇲🇨|MD|🇲🇩|ME|🇲🇪|MG|🇲🇬|MH|🇲🇭|MK|🇲🇰|ML|🇲🇱|MM|🇲🇲|MN|🇲🇳|MR|🇲🇷|MT|🇲🇹|MU|🇲🇺|MV|🇲🇻|MW|🇲🇼|MX|🇲🇽|MY|🇲🇾|MZ|🇲🇿|NA|🇳🇦|NE|🇳🇪|NG|🇳🇬|NI|🇳🇮|NL|🇳🇱|NO|🇳🇴|NP|🇳🇵|NR|🇳🇷|NZ|🇳🇿|OM|🇴🇲|PA|🇵🇦|PE|🇵🇪|PG|🇵🇬|PH|🇵🇭|PK|🇵🇰|PL|🇵🇱|PS|🇵🇸|PT|🇵🇹|PW|🇵🇼|PY|🇵🇾|QA|🇶🇦|RO|🇷🇴|RS|🇷🇸|RW|🇷🇼|SA|🇸🇦|SB|🇸🇧|SC|🇸🇨|SD|🇸🇩|SE|🇸🇪|SG|🇸🇬|SI|🇸🇮|SK|🇸🇰|SL|🇸🇱|SM|🇸🇲|SN|🇸🇳|SO|🇸🇴|SR|🇸🇷|SS|🇸🇸|ST|🇸🇹|SV|🇸🇻|SZ|🇸🇿|TD|🇹🇩|TG|🇹🇬|TH|🇹🇭|TJ|🇹🇯|TL|🇹🇱|TM|🇹🇲|TN|🇹🇳|TO|🇹🇴|TR|🇹🇷|TT|🇹🇹|TV|🇹🇻|TZ|🇹🇿|UA|🇺🇦|UG|🇺🇬|US|🇺🇸|UY|🇺🇾|UZ|🇺🇿|VA|🇻🇦|VC|🇻🇨|VN|🇻🇳|VU|🇻🇺|WS|🇼🇸|YE|🇾🇪|ZA|🇿🇦|ZM|🇿🇲|ZW|🇿🇼"
@@ -79,7 +79,7 @@ proxy-providers:
 proxy-groups:
   - name: 🌐 节点选择
     type: select
-    icon: https://loong.yuwell.dynv6.net/IconSet/Area.png
+    icon: https://icloud.loong.cloudns.org/IconSet/Area.png
     proxies:
       - ♻️ 延迟选优
       - 🔯 故障转移
@@ -93,7 +93,7 @@ proxy-groups:
       - DIRECT
   - name: ☑️ 手动切换
     type: select
-    icon: https://loong.yuwell.dynv6.net/IconSet/Catnet.png
+    icon: https://icloud.loong.cloudns.org/IconSet/Catnet.png
     use:
       - GreatWall
     proxies: 
@@ -102,7 +102,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    icon: https://loong.yuwell.dynv6.net/IconSet/Auto.png
+    icon: https://icloud.loong.cloudns.org/IconSet/Auto.png
     use:
       - GreatWall
     proxies:
@@ -111,7 +111,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    icon: https://loong.yuwell.dynv6.net/IconSet/ambulance.png
+    icon: https://icloud.loong.cloudns.org/IconSet/ambulance.png
     use:
       - GreatWall
     proxies:
@@ -121,7 +121,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    icon: https://loong.yuwell.dynv6.net/IconSet/merry_go.png
+    icon: https://icloud.loong.cloudns.org/IconSet/merry_go.png
     use:
       - GreatWall
     proxies:  
@@ -131,13 +131,13 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    icon: https://loong.yuwell.dynv6.net/IconSet/balance.png
+    icon: https://icloud.loong.cloudns.org/IconSet/balance.png
     use:
       - GreatWall
     proxies:
   - name: 🌍 国外媒体
     type: select
-    icon: https://loong.yuwell.dynv6.net/IconSet/World_Map.png
+    icon: https://icloud.loong.cloudns.org/IconSet/World_Map.png
     proxies:
       - 🌐 节点选择
       - ♻️ 延迟选优
@@ -152,7 +152,7 @@ proxy-groups:
       - 🎯 全球直连
   - name: 📢 谷歌服务
     type: select
-    icon: https://loong.yuwell.dynv6.net/IconSet/google.png
+    icon: https://icloud.loong.cloudns.org/IconSet/google.png
     proxies:
       - 🌐 节点选择
       - ♻️ 延迟选优
@@ -167,7 +167,7 @@ proxy-groups:
       - 🎯 全球直连
   - name: Ⓜ️ 微软服务
     type: select
-    icon: https://loong.yuwell.dynv6.net/IconSet/microsoft.png
+    icon: https://icloud.loong.cloudns.org/IconSet/microsoft.png
     proxies:
       - 🎯 全球直连
       - 🌐 节点选择
@@ -182,7 +182,7 @@ proxy-groups:
       - ☑️ 手动切换
   - name: 🍎 苹果服务
     type: select
-    icon: https://loong.yuwell.dynv6.net/IconSet/apple_blue.png
+    icon: https://icloud.loong.cloudns.org/IconSet/apple_blue.png
     proxies:
       - 🌐 节点选择
       - ♻️ 延迟选优
@@ -197,7 +197,7 @@ proxy-groups:
       - 🎯 全球直连
   - name: 📲 电报消息
     type: select
-    icon: https://loong.yuwell.dynv6.net/IconSet/Telegram.png
+    icon: https://icloud.loong.cloudns.org/IconSet/Telegram.png
     proxies:
       - 🌐 节点选择
       - ♻️ 延迟选优
@@ -212,26 +212,26 @@ proxy-groups:
       - DIRECT
   - name: 🎯 全球直连
     type: select
-    icon: https://loong.yuwell.dynv6.net/IconSet/link.png
+    icon: https://icloud.loong.cloudns.org/IconSet/link.png
     proxies:
       - DIRECT
       - 🌐 节点选择
       - ♻️ 延迟选优
   - name: 🛑 全球拦截
     type: select
-    icon: https://loong.yuwell.dynv6.net/IconSet/Reject.png
+    icon: https://icloud.loong.cloudns.org/IconSet/Reject.png
     proxies:
       - REJECT
       - DIRECT
   - name: 🍃 应用净化
     type: select
-    icon: https://loong.yuwell.dynv6.net/IconSet/Hijacking.png
+    icon: https://icloud.loong.cloudns.org/IconSet/Hijacking.png
     proxies:
       - REJECT
       - DIRECT
   - name: 🐟 漏网之鱼
     type: select
-    icon: https://loong.yuwell.dynv6.net/IconSet/fish.png
+    icon: https://icloud.loong.cloudns.org/IconSet/fish.png
     proxies:
       - 🌐 节点选择
       - ♻️ 延迟选优
@@ -251,7 +251,7 @@ proxy-groups:
     filter: "中国|🇨🇳|CN|cn|China|中华人民共和国|(?i)港|🇭🇰|HK|hk|Hong Kong|HongKong|hongkong|HKG|台|🇹🇼|新北|彰化|TW|tw|Taiwan|TPE|KHH"
     interval: 300
     tolerance: 50
-    icon: https://loong.yuwell.dynv6.net/IconSet/HK.png
+    icon: https://icloud.loong.cloudns.org/IconSet/HK.png
     use:
       - GreatWall
     proxies:
@@ -263,7 +263,7 @@ proxy-groups:
     filter: "日本|🇯🇵|川日|东京|大阪|泉日|埼玉|沪日|深日|[^-]日|JP|Japan|Tokyo|NRT|KIX|🇰🇷|KR|Korea|KOR|Seoul|首尔|春川|韩|韓|ICN" 
     interval: 300
     tolerance: 50
-    icon: https://loong.yuwell.dynv6.net/IconSet/JP.png
+    icon: https://icloud.loong.cloudns.org/IconSet/JP.png
     use:
       - GreatWall
     proxies:
@@ -275,7 +275,7 @@ proxy-groups:
     filter: "美|🇺🇸|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|ATL|BUF|DFW|EWR|IAD|LAX|MCI|MIA|ORD|PHX|PDX|SEA|SJC"
     interval: 300
     tolerance: 150
-    icon: https://loong.yuwell.dynv6.net/IconSet/US.png
+    icon: https://icloud.loong.cloudns.org/IconSet/US.png
     use:
       - GreatWall
     proxies:
@@ -287,7 +287,7 @@ proxy-groups:
     filter: "新加坡|坡|🇸🇬|狮城|SG|Singapore|SIN"
     interval: 300
     tolerance: 50
-    icon: https://loong.yuwell.dynv6.net/IconSet/SG.png
+    icon: https://icloud.loong.cloudns.org/IconSet/SG.png
     use:
       - GreatWall
     proxies:
