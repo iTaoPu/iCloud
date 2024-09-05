@@ -180,9 +180,17 @@ function main(config) {
       ...groupBaseOption,
       "name": "🌐 节点选择",
       "type": "select",
-      "proxies": ["♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡·散列", "🔮 负载均衡·轮询"],
-      "include-all": true,
+      "proxies": ["♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡·散列", "🔮 负载均衡·轮询", "DIRECT"],
+      "include-all": false,
       "icon": "https://loong.yuwell.dynv6.net/IconSet/Area.png"
+    },
+    {
+      ...groupBaseOption,
+      "name": "☑️ 手动切换",
+      "type": "select",
+      "proxies": ["REJECT", "DIRECT"],
+      "include-all": true,
+      "icon": "https://loong.yuwell.cloudns.org/iCloud/IconSet/Catnet.png"
     },
     {
       ...groupBaseOption,
