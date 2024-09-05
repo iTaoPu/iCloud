@@ -2,11 +2,13 @@
 const domesticNameservers = [
   "https://dns.alidns.com/dns-query", // 阿里云公共DNS
   "https://doh.pub/dns-query", // 腾讯DNSPod
+  "https://doh.360.cn/dns-query" // 360安全DNS
 ];
 // 国外DNS服务器
 const foreignNameservers = [
   "https://dns.cloudflare.com/dns-query", // Cloudflare DNS
   "https://dns.google/dns-query", // Google DNS
+  "https://doh.opendns.com/dns-query", //Open DNS
 ];
 // DNS配置
 const dnsConfig = {
