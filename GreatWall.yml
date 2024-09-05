@@ -209,7 +209,7 @@ proxy-groups:
       - 🇯🇵 日韩节点
       - 🇺🇲 鹰酱节点
       - ☑️ 手动切换
-      - DIRECT
+      - 🎯 全球直连
   - name: 🎯 全球直连
     type: select
     icon: https://loong.yuwell.cloudns.org/iCloud/IconSet/link.png
@@ -217,6 +217,14 @@ proxy-groups:
       - DIRECT
       - 🌐 节点选择
       - ♻️ 延迟选优
+      - 🔯 故障转移
+      - 🔮 负载均衡·散列
+      - 🔮 负载均衡·轮询
+      - 🇭🇰 港台节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日韩节点
+      - 🇺🇲 鹰酱节点
+      - ☑️ 手动切换
   - name: 🛑 全球拦截
     type: select
     icon: https://loong.yuwell.cloudns.org/iCloud/IconSet/Reject.png
