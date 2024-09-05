@@ -415,4 +415,4 @@ rules:
     - RULE-SET,telegramcidr,📲 电报消息,no-resolve
     - GEOIP,LAN,🎯 全球直连,no-resolve
     - GEOIP,CN,🎯 全球直连,no-resolve
-    -  MATCH,🐟 漏网之鱼
+    - MATCH,🐟 漏网之鱼
