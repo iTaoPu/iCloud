@@ -180,9 +180,9 @@ function main(config) {
       ...groupBaseOption,
       "name": "🌐 节点选择",
       "type": "select",
-      "proxies": ["♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡·散列", "🔮 负载均衡·轮询", "DIRECT"],
+      "proxies": ["♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡·散列", "🔮 负载均衡·轮询", "☑️ 手动切换", "DIRECT"],
       "include-all": false,
-      "icon": "https://loong.yuwell.dynv6.net/IconSet/Area.png"
+      "icon": "https://loong.yuwell.cloudns.org/iCloud/IconSet/Area.png"
     },
     {
       ...groupBaseOption,
@@ -198,14 +198,14 @@ function main(config) {
       "type": "url-test",
       "tolerance": 100,
       "include-all": true,
-      "icon": "https://loong.yuwell.dynv6.net/IconSet/Auto.png"
+      "icon": "https://loong.yuwell.cloudns.org/iCloud/IconSet/Auto.png"
     },
     {
       ...groupBaseOption,
       "name": "🔯 故障转移",
       "type": "fallback",
       "include-all": true,
-      "icon": "https://loong.yuwell.dynv6.net/IconSet/ambulance.png"
+      "icon": "https://loong.yuwell.cloudns.org/iCloud/IconSet/ambulance.png"
     },
     {
       ...groupBaseOption,
@@ -213,7 +213,7 @@ function main(config) {
       "type": "load-balance",
       "strategy": "consistent-hashing",
       "include-all": true,
-      "icon": "https://loong.yuwell.dynv6.net/IconSet/merry_go.png"
+      "icon": "https://loong.yuwell.cloudns.org/iCloud/IconSet/merry_go.png"
     },
     {
       ...groupBaseOption,
@@ -221,77 +221,77 @@ function main(config) {
       "type": "load-balance",
       "strategy": "round-robin",
       "include-all": true,
-      "icon": "https://loong.yuwell.dynv6.net/IconSet/balance.png"
+      "icon": "https://loong.yuwell.cloudns.org/iCloud/IconSet/balance.png"
     },
     {
       ...groupBaseOption,
       "name": "🌍 国外媒体",
       "type": "select",
-      "proxies": ["🌐 节点选择", "♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡·散列", "🔮 负载均衡·轮询", "🎯 全球直连"],
+      "proxies": ["🌐 节点选择", "♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡·散列", "🔮 负载均衡·轮询", "☑️ 手动切换", "🎯 全球直连"],
       "include-all": true,
-      "icon": "https://loong.yuwell.dynv6.net/IconSet/World_Map.png"
+      "icon": "https://loong.yuwell.cloudns.org/iCloud/IconSet/World_Map.png"
     },
     {
       ...groupBaseOption,
       "name": "📢 谷歌服务",
       "type": "select",
-      "proxies": ["🌐 节点选择", "♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡·散列", "🔮 负载均衡·轮询", "🎯 全球直连"],
+      "proxies": ["🌐 节点选择", "♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡·散列", "🔮 负载均衡·轮询", "☑️ 手动切换", "🎯 全球直连"],
       "include-all": true,
-      "icon": "https://loong.yuwell.dynv6.net/IconSet/google.png"
+      "icon": "https://loong.yuwell.cloudns.org/iCloud/IconSet/google.png"
     },
     {
       ...groupBaseOption,
       "name": "Ⓜ️ 微软服务",
       "type": "select",
-      "proxies": ["🎯 全球直连", "🌐 节点选择", "♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡·散列", "🔮 负载均衡·轮询"],
+      "proxies": ["🎯 全球直连", "🌐 节点选择", "♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡·散列", "🔮 负载均衡·轮询", "☑️ 手动切换", ],
       "include-all": true,
-      "icon": "https://loong.yuwell.dynv6.net/IconSet/microsoft.png"
+      "icon": "https://loong.yuwell.cloudns.org/iCloud/IconSet/microsoft.png"
     },
     {
       ...groupBaseOption,
       "name": "🍎 苹果服务",
       "type": "select",
-      "proxies": ["🌐 节点选择", "♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡·散列", "🔮 负载均衡·轮询", "🎯 全球直连"],
+      "proxies": ["🌐 节点选择", "♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡·散列", "🔮 负载均衡·轮询", "☑️ 手动切换", "🎯 全球直连"],
       "include-all": true,
-      "icon": "https://loong.yuwell.dynv6.net/IconSet/apple_blue.png"
+      "icon": "https://loong.yuwell.cloudns.org/iCloud/IconSet/apple_blue.png"
     },
     {
       ...groupBaseOption,
       "name": "📲 电报消息",
       "type": "select",
-      "proxies": ["🌐 节点选择", "♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡·散列", "🔮 负载均衡·轮询", "🎯 全球直连"],
+      "proxies": ["🌐 节点选择", "♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡·散列", "🔮 负载均衡·轮询", "☑️ 手动切换", "🎯 全球直连"],
       "include-all": true,
-      "icon": "https://loong.yuwell.dynv6.net/IconSet/Telegram.png"
+      "icon": "https://loong.yuwell.cloudns.org/iCloud/IconSet/Telegram.png"
     },
     {
       ...groupBaseOption,
       "name": "🎯 全球直连",
       "type": "select",
-      "proxies": ["DIRECT", "🌐 节点选择", "♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡·散列", "🔮 负载均衡·轮询"],
+      "proxies": ["DIRECT", "🌐 节点选择", "♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡·散列", "🔮 负载均衡·轮询", "☑️ 手动切换", ],
       "include-all": true,
-      "icon": "https://loong.yuwell.dynv6.net/IconSet/link.png"
+      "icon": "https://loong.yuwell.cloudns.org/iCloud/IconSet/link.png"
     },
     {
       ...groupBaseOption,
       "name": "🛑 全球拦截",
       "type": "select",
       "proxies": ["REJECT", "DIRECT"],
-      "icon": "https://loong.yuwell.dynv6.net/IconSet/Reject.png"
+      "icon": "https://loong.yuwell.cloudns.org/iCloud/IconSet/Reject.png"
     },
     {
       ...groupBaseOption,
       "name": "🍃 应用净化",
       "type": "select",
       "proxies": ["REJECT", "DIRECT"],
-      "icon": "https://loong.yuwell.dynv6.net/IconSet/Hijacking.png"
+      "icon": "https://loong.yuwell.cloudns.org/iCloud/IconSet/Hijacking.png"
     },
     {
       ...groupBaseOption,
       "name": "🐟 漏网之鱼",
       "type": "select",
-      "proxies": ["🌐 节点选择", "♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡·散列", "🔮 负载均衡·轮询", "🎯 全球直连"],
+      "proxies": ["🌐 节点选择", "♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡·散列", "🔮 负载均衡·轮询", "☑️ 手动切换", "🎯 全球直连"],
       "include-all": true,
-      "icon": "https://loong.yuwell.dynv6.net/IconSet/fish.png"
+      "icon": "https://loong.yuwell.cloudns.org/iCloud/IconSet/fish.png"
     }
   ];
 
