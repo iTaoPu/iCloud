@@ -398,7 +398,6 @@ rules:
     - DOMAIN-SUFFIX,gstatic.com,🌐 节点选择
     - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🌐 节点选择
     - DOMAIN-SUFFIX,github.io,🌐 节点选择
-    - DOMAIN,v2rayse.com,🌐 节点选择
     - RULE-SET,applications,🎯 全球直连
     - DOMAIN,clash.razord.top,🎯 全球直连
     - DOMAIN,yacd.haishan.me,🎯 全球直连
@@ -416,4 +415,4 @@ rules:
     - RULE-SET,telegramcidr,📲 电报消息,no-resolve
     - GEOIP,LAN,🎯 全球直连,no-resolve
     - GEOIP,CN,🎯 全球直连,no-resolve
-    - MATCH,🐟 漏网之鱼
+    -  MATCH,🐟 漏网之鱼
