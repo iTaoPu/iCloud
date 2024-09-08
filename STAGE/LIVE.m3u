@@ -272,7 +272,7 @@ http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/
 #EXTINF:-1 tvg-name="纪实科教" tvg-logo="https://image.5iclub.cloudns.org/file/b11189f0f1ad548c86837.png" group-title="数字频道",纪实科教
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225729/index.m3u8
 #EXTINF:-1 tvg-name="劲爆体育" tvg-logo="https://image.5iclub.cloudns.org/file/e44f286ef3eaeaa317d7a.png" group-title="数字频道",劲爆体育
-http://[2409:8087:5e08:24::12]:6610/000000001000/2000000002000000008/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000008&IASHttpSessionId=OTT19019320240419154124000281
+http://[2409:8087:5e01:24::16]:6610/000000001000/2000000002000000008/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000008&IASHttpSessionId=OTT19019320240419154124000281
 #EXTINF:-1 tvg-name="乐游" tvg-logo="https://image.5iclub.cloudns.org/file/6b26a9119a849287686fc.png" group-title="数字频道",乐游频道
 http://[2409:8087:5e00:24::1e]:6060/000000001000/5000000011000031112/1.m3u8
 #EXTINF:-1 tvg-name="欢笑剧场" tvg-logo="https://image.5iclub.cloudns.org/file/e685750398ea834d07d2f.png" group-title="数字频道",欢笑剧场
@@ -300,7 +300,7 @@ http://[2409:8087:5e00:24::1e]:6060/000000001000/5000000011000031206/1.m3u8
 #EXTINF:-1 tvg-name="哒啵赛事" tvg-logo="https://image.5iclub.cloudns.org/file/b067eb2f6d8ab6a356165.png" group-title="数字频道",哒啵赛事
 http://[2409:8087:1a0b:df::4008]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225653/index.m3u8
 #EXTINF:-1 tvg-name="哒啵电竞" tvg-logo="https://image.5iclub.cloudns.org/file/a491de7f81b9a19dd4c12.png" group-title="数字频道",哒啵电竞
-http://[2409:8087:5e08:24::12]:6610/000000001000/2000000003000000066/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000003000000066&IASHttpSessionId=OTT19019320240419154124000281
+http://[2409:8087:5e01:24::16]:6610/000000001000/2000000003000000066/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000003000000066&IASHttpSessionId=OTT19019320240419154124000281
 #EXTINF:-1 tvg-name="优漫卡通" tvg-logo="https://image.5iclub.cloudns.org/file/a2d2cfe55701d57af899f.png" group-title="数字频道",优漫卡通
 http://[2409:8087:1a0b:df::4005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225656/index.m3u8
 #EXTINF:-1 tvg-name="哈哈炫动" tvg-logo="https://image.5iclub.cloudns.org/file/24c9eb70d20656e1d7289.png" group-title="数字频道",哈哈炫动
@@ -312,15 +312,15 @@ http://[2409:8087:1a0b:df::4014]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/
 #EXTINF:-1 tvg-name="梨园" tvg-logo="https://image.5iclub.cloudns.org/file/6a3228959e9ad9e1b02fa.png" group-title="数字频道",梨园频道
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN6380788ba7bed/index.m3u8?AuthInfo=toEYVdLfxymUP2l9NZpQI5%2BK6T7j%2FlRm%2BvbM9VO7bA0q1S1k1f36SqqriM0FZoFSAJRfCt8SS7X6sTRmXb81a8O4H%2FdroDKjLoDeaMQdyJQ
 #EXTINF:-1 tvg-name="求索记录" tvg-logo="https://image.5iclub.cloudns.org/file/7b3777ccf6fdc9b8fe0cd.png" group-title="数字频道",求索记录
-http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000010/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000010&IASHttpSessionId=OTT19019320240419154124000281
+http://[2409:8087:5e01:24::16]:6610/000000001000/2000000004000000010/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000010&IASHttpSessionId=OTT19019320240419154124000281
 #EXTINF:-1 tvg-name="求索动物" tvg-logo="https://image.5iclub.cloudns.org/file/d90086fae765af6d4cc3c.png" group-title="数字频道",求索动物
-http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000009/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000009&IASHttpSessionId=OTT19019320240419154124000281
+http://[2409:8087:5e01:24::16]:6610/000000001000/2000000004000000009/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000009&IASHttpSessionId=OTT19019320240419154124000281
 #EXTINF:-1 tvg-name="求索科学" tvg-logo="https://image.5iclub.cloudns.org/file/bf1806ee7a5e66f8c3003.png" group-title="数字频道",求索科学
-http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000011/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000011&IASHttpSessionId=OTT19019320240419154124000281
+http://[2409:8087:5e01:24::16]:6610/000000001000/2000000004000000011/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000011&IASHttpSessionId=OTT19019320240419154124000281
 #EXTINF:-1 tvg-name="求索生活" tvg-logo="https://image.5iclub.cloudns.org/file/4586e85e6000017d26cf4.png" group-title="数字频道",求索生活
-http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000008/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000008&IASHttpSessionId=OTT19019320240419154124000281
+http://[2409:8087:5e01:24::16]:6610/000000001000/2000000004000000008/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000008&IASHttpSessionId=OTT19019320240419154124000281
 #EXTINF:-1 tvg-name="精彩影视" tvg-logo="https://image.5iclub.cloudns.org/file/e8cb9199797e3d509e591.png" group-title="数字频道",精彩影视
-http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000063/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000063&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
+http://[2409:8087:5e01:24::16]:6610/000000001000/2000000004000000063/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000063&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
 #EXTINF:-1 tvg-name="家庭理财" tvg-logo="https://image.5iclub.cloudns.org/file/7b831f67f7572d3a78794.png" group-title="数字频道",家庭理财
 https://itv.lat/hls?channel=jtlc&token=fbca23599065f5bd644b330db4e3b1f5
 #EXTINF:-1 tvg-name="财富天下" tvg-logo="https://image.5iclub.cloudns.org/file/10a1e364ab0bf9a1ce907.png" group-title="数字频道",财富天下
@@ -481,23 +481,23 @@ http://haian-tv-hls.cm.jstv.com/haian-tv/haaxwzh.m3u8
 http://rudong-tv-hls.cm.jstv.com/rudong-tv/rdxwzh.m3u8
 
 #EXTINF:-1 tvg-name="上海新闻综合" tvg-logo="https://image.5iclub.cloudns.org/file/4eee7c251dfaea1d5bca5.png" group-title="上海频道",上海新闻综合
-http://[2409:8087:5e08:24::11]:6610/000000001000/2000000002000000005/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000005&IASHttpSessionId=OTT19019320240419154124000281
+http://[2409:8087:5e01:24::16]:6610/000000001000/2000000002000000005/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000005&IASHttpSessionId=OTT19019320240419154124000281
 #EXTINF:-1 tvg-name="上海都市" tvg-logo="https://image.5iclub.cloudns.org/file/1c4cc04e4380b69c7149e.png" group-title="上海频道",上海都市
-http://[2409:8087:5e08:24::11]:6610/000000001000/2000000002000000012/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000012&IASHttpSessionId=OTT19019320240419154124000281
+http://[2409:8087:5e01:24::16]:6610/000000001000/2000000002000000012/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000012&IASHttpSessionId=OTT19019320240419154124000281
 #EXTINF:-1 tvg-name="上海外语" tvg-logo="https://image.5iclub.cloudns.org/file/7730a83b3e329488b4511.png" group-title="上海频道",上海外语
-http://[2409:8087:5e08:24::11]:6610/000000001000/2000000002000000001/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000001&IASHttpSessionId=OTT19019320240419154124000281
+http://[2409:8087:5e01:24::16]:6610/000000001000/2000000002000000001/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000001&IASHttpSessionId=OTT19019320240419154124000281
 #EXTINF:-1 tvg-name="七彩戏剧" tvg-logo="https://image.5iclub.cloudns.org/file/f8de2d2f6dee2b93815c9.png" group-title="上海频道",七彩戏剧
-http://[2409:8087:5e08:24::11]:6610/000000001000/2000000002000000010/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000010&IASHttpSessionId=OTT19019320240419154124000281
+http://[2409:8087:5e01:24::16]:6610/000000001000/2000000002000000010/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000010&IASHttpSessionId=OTT19019320240419154124000281
 #EXTINF:-1 tvg-name="五星体育" tvg-logo="https://image.5iclub.cloudns.org/file/03e0b18456a07067e9be4.png" group-title="上海频道",五星体育
-http://[2409:8087:5e08:24::11]:6610/000000001000/2000000002000000007/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000007&IASHttpSessionId=OTT19019320240419154124000281
+http://[2409:8087:5e01:24::16]:6610/000000001000/2000000002000000007/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000007&IASHttpSessionId=OTT19019320240419154124000281
 #EXTINF:-1 tvg-name="东方影视" tvg-logo="https://image.5iclub.cloudns.org/file/7845da8671e8e243db995.png" group-title="上海频道",东方影视
-http://[2409:8087:5e08:24::11]:6610/000000001000/2000000002000000013/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000013&IASHttpSessionId=OTT19019320240419154124000281
+http://[2409:8087:5e01:24::16]:6610/000000001000/2000000002000000013/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000013&IASHttpSessionId=OTT19019320240419154124000281
 #EXTINF:-1 tvg-name="东方财经" tvg-logo="https://image.5iclub.cloudns.org/file/1fef5387448887ba74e5f.png" group-title="上海频道",东方财经
-http://[2409:8087:5e08:24::11]:6610/000000001000/2000000002000000090/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000090&IASHttpSessionId=OTT19019320240419154124000281
+http://[2409:8087:5e01:24::16]:6610/000000001000/2000000002000000090/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000090&IASHttpSessionId=OTT19019320240419154124000281
 #EXTINF:-1 tvg-name="法治天地" tvg-logo="https://image.5iclub.cloudns.org/file/079f8d3a974ed0add11ac.png" group-title="上海频道",法治天地
-http://[2409:8087:5e08:24::11]:6610/000000001000/2000000002000000014/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000014&IASHttpSessionId=OTT19019320240419154124000281
+http://[2409:8087:5e01:24::16]:6610/000000001000/2000000002000000014/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000014&IASHttpSessionId=OTT19019320240419154124000281
 #EXTINF:-1 tvg-name="第一财经" tvg-logo="https://image.5iclub.cloudns.org/file/3cca5279a78a849334fc7.png" group-title="上海频道",第一财经
-http://[2409:8087:5e08:24::11]:6610/000000001000/2000000002000000004/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000004&IASHttpSessionId=OTT19019320240419154124000281
+http://[2409:8087:5e01:24::16]:6610/000000001000/2000000002000000004/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000004&IASHttpSessionId=OTT19019320240419154124000281
 #EXTINF:-1 tvg-name="东方购物" tvg-logo="https://image.5iclub.cloudns.org/file/84e5b51307e8cf03571c0.png" group-title="上海频道",东方购物
 http://ocj2.kksmg.com/ocj2/ocj2.m3u8
 #EXTINF:-1 tvg-id="上海金山" tvg-logo="https://image.5iclub.cloudns.org/file/5cf480392b55bad8b7277.png" group-title="上海频道",上海金山
