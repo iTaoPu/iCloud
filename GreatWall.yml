@@ -49,6 +49,11 @@ dns:
     - "*"
     - "+.lan"
     - "+.local"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - "localhost.ptlogin2.qq.com"
+    - "localhost.sec.qq.com"
+    - "localhost.work.weixin.qq.com"
   nameserver:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
