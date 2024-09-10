@@ -8,7 +8,7 @@ const domesticNameservers = [
 const foreignNameservers = [
   "https://dns.cloudflare.com/dns-query", // Cloudflare DNS
   "https://dns.google/dns-query", // Google DNS
-  "https://doh.opendns.com/dns-query" // Open DNS
+  "https://doh.dns.sb/dns-query" // Open DNS
 ];
 // DNS配置
 const dnsConfig = {

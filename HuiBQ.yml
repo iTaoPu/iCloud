@@ -70,7 +70,7 @@ dns:
     "geosite:geolocation-!cn":
       - "https://dns.cloudflare.com/dns-query"
       - "https://dns.google/dns-query"
-      - "https://doh.opendns.com/dns-query"
+      - "https://doh.dns.sb/dns-query"
 
 proxy-providers:
   HuiBQ:
