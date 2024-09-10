@@ -61,10 +61,10 @@ dns:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
   nameserver-policy:
-    "geosite:cn,private":
+    "geosite:private,cn,geolocation-cn":
       - https://dns.alidns.com/dns-query
       - https://doh.pub/dns-query
-    "geosite:geolocation-!cn":
+    "geosite:google,youtube,telegram,gfw,geolocation-!cn:":
       - "https://dns.cloudflare.com/dns-query"
       - "https://dns.google/dns-query"
 
