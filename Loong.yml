@@ -78,6 +78,15 @@ proxy-providers:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 300
+  GuanXi:
+    type: http
+    url: "https://url.loong.cloudns.org/GuanXi.yml"
+    path: ./Internet/GuanXi.yaml
+    interval: 10800
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
 
 proxy-groups:
   - name: 🌐 节点选择
@@ -99,6 +108,7 @@ proxy-groups:
     icon: https://loong.yuwell.cloudns.org/iCloud/IconSet/Catnet.png
     use:
       - HuiBQ
+      - GuanXi
     proxies: 
   - name: ♻️ 延迟选优
     type: url-test
@@ -108,6 +118,7 @@ proxy-groups:
     icon: https://loong.yuwell.cloudns.org/iCloud/IconSet/Auto.png
     use:
       - HuiBQ
+      - GuanXi
     proxies:
   - name: 🔯 故障转移
     type: fallback
@@ -117,6 +128,7 @@ proxy-groups:
     icon: https://loong.yuwell.cloudns.org/iCloud/IconSet/ambulance.png
     use:
       - HuiBQ
+      - GuanXi
     proxies:
   - name: 🔮 负载均衡·散列
     type: load-balance
@@ -127,6 +139,7 @@ proxy-groups:
     icon: https://loong.yuwell.cloudns.org/iCloud/IconSet/merry_go.png
     use:
       - HuiBQ
+      - GuanXi
     proxies:  
   - name: 🔮 负载均衡·轮询
     type: load-balance
@@ -137,6 +150,7 @@ proxy-groups:
     icon: https://loong.yuwell.cloudns.org/iCloud/IconSet/balance.png
     use:
       - HuiBQ
+      - GuanXi
     proxies:
   - name: 🌍 国外媒体
     type: select
@@ -265,6 +279,7 @@ proxy-groups:
     icon: https://loong.yuwell.cloudns.org/iCloud/IconSet/HK.png
     use:
       - HuiBQ
+      - GuanXi
     proxies:
       - DIRECT
   - name: 🇯🇵 日韩节点
@@ -277,6 +292,7 @@ proxy-groups:
     icon: https://loong.yuwell.cloudns.org/iCloud/IconSet/JP.png
     use:
       - HuiBQ
+      - GuanXi
     proxies:
       - DIRECT
   - name: 🇺🇲 鹰酱节点
@@ -289,6 +305,7 @@ proxy-groups:
     icon: https://loong.yuwell.cloudns.org/iCloud/IconSet/US.png
     use:
       - HuiBQ
+      - GuanXi
     proxies:
       - DIRECT
   - name: 🇸🇬 狮城节点
@@ -301,6 +318,7 @@ proxy-groups:
     icon: https://loong.yuwell.cloudns.org/iCloud/IconSet/SG.png
     use:
       - HuiBQ
+      - GuanXi
     proxies:
       - DIRECT
       
