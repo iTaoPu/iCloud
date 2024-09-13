@@ -69,11 +69,11 @@ dns:
       - "https://dns.google/dns-query"
 
 proxy-providers:
-  GreatWall:
+  HuiBQ:
     type: http
-    url: "https://loong.yuwell.cloudns.org/Great.Wall/list.meta.yml"
-    path: ./Internet/GreatWall.yaml
-    interval: 86400
+    url: "https://url.loong.cloudns.org/HuiBQ.yml"
+    path: ./Internet/HuiBQ.yaml
+    interval: 10800
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
@@ -98,7 +98,7 @@ proxy-groups:
     type: select
     icon: https://loong.yuwell.us.kg/IconSet/Catnet.png
     use:
-      - GreatWall
+      - HuiBQ
     proxies: 
   - name: ♻️ 延迟选优
     type: url-test
@@ -107,7 +107,7 @@ proxy-groups:
     tolerance: 50
     icon: https://loong.yuwell.us.kg/IconSet/Auto.png
     use:
-      - GreatWall
+      - HuiBQ
     proxies:
   - name: 🔯 故障转移
     type: fallback
@@ -116,7 +116,7 @@ proxy-groups:
     tolerance: 50
     icon: https://loong.yuwell.us.kg/IconSet/ambulance.png
     use:
-      - GreatWall
+      - HuiBQ
     proxies:
   - name: 🔮 负载均衡·散列
     type: load-balance
@@ -126,7 +126,7 @@ proxy-groups:
     tolerance: 50
     icon: https://loong.yuwell.us.kg/IconSet/merry_go.png
     use:
-      - GreatWall
+      - HuiBQ
     proxies:  
   - name: 🔮 负载均衡·轮询
     type: load-balance
@@ -136,7 +136,7 @@ proxy-groups:
     tolerance: 50
     icon: https://loong.yuwell.us.kg/IconSet/balance.png
     use:
-      - GreatWall
+      - HuiBQ
     proxies:
   - name: 🌍 国外媒体
     type: select
@@ -264,7 +264,7 @@ proxy-groups:
     tolerance: 50
     icon: https://loong.yuwell.us.kg/IconSet/HK.png
     use:
-      - GreatWall
+      - HuiBQ
     proxies:
       - DIRECT
   - name: 🇯🇵 日韩节点
@@ -276,7 +276,7 @@ proxy-groups:
     tolerance: 50
     icon: https://loong.yuwell.us.kg/IconSet/JP.png
     use:
-      - GreatWall
+      - HuiBQ
     proxies:
       - DIRECT
   - name: 🇺🇲 鹰酱节点
@@ -288,7 +288,7 @@ proxy-groups:
     tolerance: 150
     icon: https://loong.yuwell.us.kg/IconSet/US.png
     use:
-      - GreatWall
+      - HuiBQ
     proxies:
       - DIRECT
   - name: 🇸🇬 狮城节点
@@ -300,7 +300,7 @@ proxy-groups:
     tolerance: 50
     icon: https://loong.yuwell.us.kg/IconSet/SG.png
     use:
-      - GreatWall
+      - HuiBQ
     proxies:
       - DIRECT
       
