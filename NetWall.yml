@@ -71,7 +71,7 @@ dns:
 proxy-providers:
   HuiBQ:
     type: http
-    url: "https://url.loong.cloudns.org/HuiBQ.yml"
+    url: "https://url.yuwell.us.kg/HuiBQ.yml"
     path: ./Internet/HuiBQ.yaml
     interval: 10800
     health-check:
@@ -80,7 +80,7 @@ proxy-providers:
       interval: 300
   GuanXi:
     type: http
-    url: "https://url.loong.cloudns.org/GuanXi.yml"
+    url: "https://url.yuwell.us.kg/GuanXi.yml"
     path: ./Internet/GuanXi.yaml
     interval: 10800
     health-check:
@@ -91,7 +91,7 @@ proxy-providers:
 proxy-groups:
   - name: 🌐 节点选择
     type: select
-    icon: https://loong.yuwell.cloudns.org/iCloud/IconSet/Area.png
+    icon: https://loong.yuwell.us.kg/IconSet/Area.png
     proxies:
       - ♻️ 延迟选优
       - 🔯 故障转移
@@ -105,7 +105,7 @@ proxy-groups:
       - DIRECT
   - name: ☑️ 手动切换
     type: select
-    icon: https://loong.yuwell.cloudns.org/iCloud/IconSet/Catnet.png
+    icon: https://loong.yuwell.us.kg/IconSet/Catnet.png
     use:
       - HuiBQ
       - GuanXi
@@ -115,7 +115,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    icon: https://loong.yuwell.cloudns.org/iCloud/IconSet/Auto.png
+    icon: https://loong.yuwell.us.kg/IconSet/Auto.png
     use:
       - HuiBQ
       - GuanXi
@@ -125,7 +125,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    icon: https://loong.yuwell.cloudns.org/iCloud/IconSet/ambulance.png
+    icon: https://loong.yuwell.us.kg/IconSet/ambulance.png
     use:
       - HuiBQ
       - GuanXi
@@ -136,7 +136,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    icon: https://loong.yuwell.cloudns.org/iCloud/IconSet/merry_go.png
+    icon: https://loong.yuwell.us.kg/IconSet/merry_go.png
     use:
       - HuiBQ
       - GuanXi
@@ -147,14 +147,14 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    icon: https://loong.yuwell.cloudns.org/iCloud/IconSet/balance.png
+    icon: https://loong.yuwell.us.kg/IconSet/balance.png
     use:
       - HuiBQ
       - GuanXi
     proxies:
   - name: 🌍 国外媒体
     type: select
-    icon: https://loong.yuwell.cloudns.org/iCloud/IconSet/World_Map.png
+    icon: https://loong.yuwell.us.kg/IconSet/World_Map.png
     proxies:
       - 🌐 节点选择
       - ♻️ 延迟选优
@@ -169,7 +169,7 @@ proxy-groups:
       - 🎯 全球直连
   - name: 📢 谷歌服务
     type: select
-    icon: https://loong.yuwell.cloudns.org/iCloud/IconSet/google.png
+    icon: https://loong.yuwell.us.kg/IconSet/google.png
     proxies:
       - 🌐 节点选择
       - ♻️ 延迟选优
@@ -184,7 +184,7 @@ proxy-groups:
       - 🎯 全球直连
   - name: Ⓜ️ 微软服务
     type: select
-    icon: https://loong.yuwell.cloudns.org/iCloud/IconSet/microsoft.png
+    icon: https://loong.yuwell.us.kg/IconSet/microsoft.png
     proxies:
       - 🎯 全球直连
       - 🌐 节点选择
@@ -199,7 +199,7 @@ proxy-groups:
       - ☑️ 手动切换
   - name: 🍎 苹果服务
     type: select
-    icon: https://loong.yuwell.cloudns.org/iCloud/IconSet/apple_blue.png
+    icon: https://loong.yuwell.us.kg/IconSet/apple_blue.png
     proxies:
       - 🌐 节点选择
       - ♻️ 延迟选优
@@ -214,7 +214,7 @@ proxy-groups:
       - 🎯 全球直连
   - name: 📲 电报消息
     type: select
-    icon: https://loong.yuwell.cloudns.org/iCloud/IconSet/Telegram.png
+    icon: https://loong.yuwell.us.kg/IconSet/Telegram.png
     proxies:
       - 🌐 节点选择
       - ♻️ 延迟选优
@@ -229,7 +229,7 @@ proxy-groups:
       - 🎯 全球直连
   - name: 🎯 全球直连
     type: select
-    icon: https://loong.yuwell.cloudns.org/iCloud/IconSet/link.png
+    icon: https://loong.yuwell.us.kg/IconSet/link.png
     proxies:
       - DIRECT
       - 🌐 节点选择
@@ -244,19 +244,19 @@ proxy-groups:
       - ☑️ 手动切换
   - name: 🛑 全球拦截
     type: select
-    icon: https://loong.yuwell.cloudns.org/iCloud/IconSet/Reject.png
+    icon: https://loong.yuwell.us.kg/IconSet/Reject.png
     proxies:
       - REJECT
       - DIRECT
   - name: 🍃 应用净化
     type: select
-    icon: https://loong.yuwell.cloudns.org/iCloud/IconSet/Hijacking.png
+    icon: https://loong.yuwell.us.kg/IconSet/Hijacking.png
     proxies:
       - REJECT
       - DIRECT
   - name: 🐟 漏网之鱼
     type: select
-    icon: https://loong.yuwell.cloudns.org/iCloud/IconSet/fish.png
+    icon: https://loong.yuwell.us.kg/IconSet/fish.png
     proxies:
       - 🌐 节点选择
       - ♻️ 延迟选优
@@ -276,7 +276,7 @@ proxy-groups:
     filter: "中国|🇨🇳|CN|cn|China|中华人民共和国|(?i)港|🇭🇰|HK|hk|Hong Kong|HongKong|hongkong|HKG|台|🇹🇼|新北|彰化|TW|tw|Taiwan|TPE|KHH"
     interval: 300
     tolerance: 50
-    icon: https://loong.yuwell.cloudns.org/iCloud/IconSet/HK.png
+    icon: https://loong.yuwell.us.kg/IconSet/HK.png
     use:
       - HuiBQ
       - GuanXi
@@ -289,7 +289,7 @@ proxy-groups:
     filter: "日本|🇯🇵|川日|东京|大阪|泉日|埼玉|沪日|深日|[^-]日|JP|Japan|Tokyo|NRT|KIX|🇰🇷|KR|Korea|KOR|Seoul|首尔|春川|韩|韓|ICN" 
     interval: 300
     tolerance: 50
-    icon: https://loong.yuwell.cloudns.org/iCloud/IconSet/JP.png
+    icon: https://loong.yuwell.us.kg/IconSet/JP.png
     use:
       - HuiBQ
       - GuanXi
@@ -302,7 +302,7 @@ proxy-groups:
     filter: "美|🇺🇸|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|ATL|BUF|DFW|EWR|IAD|LAX|MCI|MIA|ORD|PHX|PDX|SEA|SJC"
     interval: 300
     tolerance: 150
-    icon: https://loong.yuwell.cloudns.org/iCloud/IconSet/US.png
+    icon: https://loong.yuwell.us.kg/IconSet/US.png
     use:
       - HuiBQ
       - GuanXi
@@ -315,7 +315,7 @@ proxy-groups:
     filter: "新加坡|坡|🇸🇬|狮城|SG|Singapore|SIN"
     interval: 300
     tolerance: 50
-    icon: https://loong.yuwell.cloudns.org/iCloud/IconSet/SG.png
+    icon: https://loong.yuwell.us.kg/IconSet/SG.png
     use:
       - HuiBQ
       - GuanXi
