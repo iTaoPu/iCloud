@@ -69,15 +69,6 @@ dns:
       - "https://dns.google/dns-query"
 
 proxy-providers:
-  HuiBQ:
-    type: http
-    url: "https://url.yuwell.cloudns.org/HuiBQ.yml"
-    path: ./Internet/HuiBQ.yaml
-    interval: 10800
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 300
   GuanXi:
     type: http
     url: "https://url.yuwell.cloudns.org/GuanXi.yml"
@@ -107,7 +98,6 @@ proxy-groups:
     type: select
     icon: https://loong.yuwell.us.kg/IconSet/Catnet.png
     use:
-      - HuiBQ
       - GuanXi
     proxies: 
   - name: ♻️ 延迟选优
@@ -117,7 +107,6 @@ proxy-groups:
     tolerance: 50
     icon: https://loong.yuwell.us.kg/IconSet/Auto.png
     use:
-      - HuiBQ
       - GuanXi
     proxies:
   - name: 🔯 故障转移
@@ -127,7 +116,6 @@ proxy-groups:
     tolerance: 50
     icon: https://loong.yuwell.us.kg/IconSet/ambulance.png
     use:
-      - HuiBQ
       - GuanXi
     proxies:
   - name: 🔮 负载均衡·散列
@@ -138,7 +126,6 @@ proxy-groups:
     tolerance: 50
     icon: https://loong.yuwell.us.kg/IconSet/merry_go.png
     use:
-      - HuiBQ
       - GuanXi
     proxies:  
   - name: 🔮 负载均衡·轮询
@@ -149,7 +136,6 @@ proxy-groups:
     tolerance: 50
     icon: https://loong.yuwell.us.kg/IconSet/balance.png
     use:
-      - HuiBQ
       - GuanXi
     proxies:
   - name: 🌍 国外媒体
@@ -278,7 +264,6 @@ proxy-groups:
     tolerance: 50
     icon: https://loong.yuwell.us.kg/IconSet/HK.png
     use:
-      - HuiBQ
       - GuanXi
     proxies:
       - DIRECT
@@ -291,7 +276,6 @@ proxy-groups:
     tolerance: 50
     icon: https://loong.yuwell.us.kg/IconSet/JP.png
     use:
-      - HuiBQ
       - GuanXi
     proxies:
       - DIRECT
@@ -304,7 +288,6 @@ proxy-groups:
     tolerance: 150
     icon: https://loong.yuwell.us.kg/IconSet/US.png
     use:
-      - HuiBQ
       - GuanXi
     proxies:
       - DIRECT
@@ -317,7 +300,6 @@ proxy-groups:
     tolerance: 50
     icon: https://loong.yuwell.us.kg/IconSet/SG.png
     use:
-      - HuiBQ
       - GuanXi
     proxies:
       - DIRECT
