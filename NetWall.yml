@@ -335,7 +335,7 @@ proxy-groups:
     filter: "奥地利|🇦🇹|AT|比利时|🇧🇪|BE|保加利亚|🇧🇬|BG|塞浦路斯|🇨🇾|CY|克罗地亚|🇭🇷|HR|捷克|🇨🇿|CZ|丹麦|🇩🇰|DK|爱沙尼亚|🇪🇪|EE|芬兰|🇫🇮|FI|法国|🇫🇷|FR|德国|🇩🇪|DE|希腊|🇬🇷|CR|匈牙利|🇭🇺|HU|爱尔兰|🇮🇪|IE|意大利|🇮🇹|IT|拉脱维亚|🇱🇻|LV|立陶宛|🇱🇹|LT|卢森堡|🇱🇺|LU|马耳他|🇲🇹|MT|荷兰|🇳🇱|NL|波兰|🇵🇱|PL|葡萄牙|🇵🇹|PT|罗马尼亚|🇷🇴|RO|斯洛伐克|🇸🇰|SK|斯洛文尼亚|🇸🇮|SI|西班牙|🇪🇸|ES|瑞典|🇸🇪|SE"
     interval: 300
     tolerance: 50
-    icon: https://loong.yuwell.us.kg/IconSet/SG.png
+    icon: https://loong.yuwell.us.kg/IconSet/EU.png
     use:
       - GuanXi
       - HuiBQ
