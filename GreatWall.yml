@@ -325,6 +325,10 @@ proxy-groups:
     interval: 300
     tolerance: 50
     icon: https://loong.yuwell.us.kg/IconSet/EU.png 
+    use:
+      - GreatWall
+    proxies:
+      - DIRECT
 
 rule-providers:
   reject:
