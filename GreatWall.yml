@@ -92,6 +92,7 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇯🇵 日韩节点
       - 🇺🇲 鹰酱节点
+      - 🇪🇺 欧盟节点
       - ☑️ 手动切换
       - DIRECT
   - name: ☑️ 手动切换
@@ -151,6 +152,7 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇯🇵 日韩节点
       - 🇺🇲 鹰酱节点
+      - 🇪🇺 欧盟节点
       - ☑️ 手动切换
       - 🎯 全球直连
   - name: 📢 谷歌服务
@@ -166,6 +168,7 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇯🇵 日韩节点
       - 🇺🇲 鹰酱节点
+      - 🇪🇺 欧盟节点
       - ☑️ 手动切换
       - 🎯 全球直连
   - name: Ⓜ️ 微软服务
@@ -182,6 +185,7 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇯🇵 日韩节点
       - 🇺🇲 鹰酱节点
+      - 🇪🇺 欧盟节点
       - ☑️ 手动切换
   - name: 🍎 苹果服务
     type: select
@@ -196,6 +200,7 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇯🇵 日韩节点
       - 🇺🇲 鹰酱节点
+      - 🇪🇺 欧盟节点
       - ☑️ 手动切换
       - 🎯 全球直连
   - name: 📲 电报消息
@@ -211,6 +216,7 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇯🇵 日韩节点
       - 🇺🇲 鹰酱节点
+      - 🇪🇺 欧盟节点
       - ☑️ 手动切换
       - 🎯 全球直连
   - name: 🎯 全球直连
@@ -227,6 +233,7 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇯🇵 日韩节点
       - 🇺🇲 鹰酱节点
+      - 🇪🇺 欧盟节点
       - ☑️ 手动切换
   - name: 🛑 全球拦截
     type: select
@@ -253,6 +260,7 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇯🇵 日韩节点
       - 🇺🇲 鹰酱节点
+      - 🇪🇺 欧盟节点
       - ☑️ 手动切换
       - 🎯 全球直连
   - name: 🇭🇰 港台节点
@@ -303,7 +311,15 @@ proxy-groups:
       - GreatWall
     proxies:
       - DIRECT
-      
+  - name: 🇪🇺 欧盟节点
+    type: load-balance
+    strategy: consistent-hashing
+    url: http://www.gstatic.com/generate_204
+    filter: "奥地利|🇦🇹|AT|比利时|🇧🇪|BE|保加利亚|🇧🇬|BG|塞浦路斯|🇨🇾|CY|克罗地亚|🇭🇷|HR|捷克|🇨🇿|CZ|丹麦|🇩🇰|DK|爱沙尼亚|🇪🇪|EE|芬兰|🇫🇮|FI|法国|🇫🇷|FR|德国|🇩🇪|DE|希腊|🇬🇷|CR|匈牙利|🇭🇺|HU|爱尔兰|🇮🇪|IE|意大利|🇮🇹|IT|拉脱维亚|🇱🇻|LV|立陶宛|🇱🇹|LT|卢森堡|🇱🇺|LU|马耳他|🇲🇹|MT|荷兰|🇳🇱|NL|波兰|🇵🇱|PL|葡萄牙|🇵🇹|PT|罗马尼亚|🇷🇴|RO|斯洛伐克|🇸🇰|SK|斯洛文尼亚|🇸🇮|SI|西班牙|🇪🇸|ES|瑞典|🇸🇪|SE"
+    interval: 300
+    tolerance: 50
+    icon: https://loong.yuwell.us.kg/IconSet/EU.png 
+
 rule-providers:
   reject:
     type: http
