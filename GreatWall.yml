@@ -77,7 +77,7 @@ dns:
 proxy-providers:
   GreatWall:
     type: http
-    url: "https://gp.yuwell.us.kg/Great.Wall/list.meta.yml"
+    url: "https://git.yuwell.cloudns.org/https://raw.githubusercontent.com/YuWell-Loong/Great.Wall/master/list.meta.yml"
     path: ./Internet/GreatWall.yaml
     interval: 86400
     health-check:
