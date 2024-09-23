@@ -53,7 +53,7 @@ http://gcalic.v.myalicdn.com/gc/ipanda1000_1td/index.m3u8
 #EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://image.5iclub.cloudns.org/file/f281c92fa229ca37d718e.png" group-title="央视频道",CCTV-1 综合
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226559/index.m3u8
 #EXTINF:-1 tvg-name="CCTV2" tvg-logo="https://image.5iclub.cloudns.org/file/94def2ffcccbf884a56c0.png" group-title="央视频道",CCTV-2 财经
-http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226540/index.m3u8
+http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010211/1.m3u8
 #EXTINF:-1 tvg-name="CCTV3" tvg-logo="https://image.5iclub.cloudns.org/file/910683d987602c1475e75.png" group-title="央视频道",CCTV-3 综艺
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226021/index.m3u8
 #EXTINF:-1 tvg-name="CCTV4" tvg-logo="https://image.5iclub.cloudns.org/file/ae51a1dc6fbbdd290ef8f.png" group-title="央视频道",CCTV-4 中文国际
@@ -1012,16 +1012,12 @@ https://live.ybtvyun.com/video/s10006-ff4eb5dba33d/index.m3u8
 #EXTINF:-1 tvg-id="延边汉语综合" tvg-logo="https://image.5iclub.cloudns.org/file/8b95183dad69edc1c7bbd.png" group-title="吉林频道",延边汉语综合
 https://live.ybtvyun.com/video/s10006-e9c6f9e4d53b/index.m3u8
 
-#EXTINF:-1 tvg-name="凤凰中文" tvg-logo="https://image.5iclub.cloudns.org/file/8049778e22ce336229471.png" group-title="港澳频道",凤凰中文 𝟙
-http://116.162.6.192/1.v.smtcdns.net/qctv.fengshows.cn/live/0701pcc72.m3u8
-#EXTINF:-1 tvg-name="凤凰中文" tvg-logo="https://image.5iclub.cloudns.org/file/8049778e22ce336229471.png" group-title="港澳频道",凤凰中文 𝟚
-http://116.162.6.191/zycfcdn.gdwlcloud.com/PLTV/88888888/224/3221226317/index.m3u8
-#EXTINF:-1 tvg-name="凤凰资讯" tvg-logo="https://image.5iclub.cloudns.org/file/114b0590cbf291e683958.png" group-title="港澳频道",凤凰资讯 𝟙
-http://116.162.6.192/1.v.smtcdns.net/qctv.fengshows.cn/live/0701pin72.m3u8
-#EXTINF:-1 tvg-name="凤凰资讯" tvg-logo="https://image.5iclub.cloudns.org/file/114b0590cbf291e683958.png" group-title="港澳频道",凤凰资讯 𝟚
-http://116.162.6.191/zycfcdn.gdwlcloud.com/PLTV/88888888/224/3221226320/index.m3u8
+#EXTINF:-1 tvg-name="凤凰中文" tvg-logo="https://image.5iclub.cloudns.org/file/8049778e22ce336229471.png" group-title="港澳频道",凤凰中文
+http://58.144.154.93/qctv.fengshows.cn/live/0701pcc72.m3u8
+#EXTINF:-1 tvg-name="凤凰资讯" tvg-logo="https://image.5iclub.cloudns.org/file/114b0590cbf291e683958.png" group-title="港澳频道",凤凰资讯
+http://58.144.154.93/qctv.fengshows.cn/live/0701pin72.m3u8
 #EXTINF:-1 tvg-name="凤凰香港" tvg-logo="https://image.5iclub.cloudns.org/file/9e0876c45e16f385b4501.png" group-title="港澳频道",凤凰香港
-http://116.162.6.192/1.v.smtcdns.net/qctv.fengshows.cn/live/0701phk72.m3u8
+http://58.144.154.93/qctv.fengshows.cn/live/0701phk72.m3u8
 #EXTINF:-1 tvg-name="香港卫视" tvg-logo="https://image.5iclub.cloudns.org/file/3f329f145e8b8eedd9501.png" group-title="港澳频道",香港卫视
 http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8
 #EXTINF:-1 tvg-name="C+" tvg-id="美亚C+" tvg-logo="https://image.5iclub.cloudns.org/file/b5e24553d5162b9fe3283.png" group-title="港澳频道", 美亚C+
