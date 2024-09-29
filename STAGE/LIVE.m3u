@@ -343,6 +343,14 @@ https://itv.lat/hls?channel=ycxsjH265&token=fbca23599065f5bd644b330db4e3b1f5
 https://itv.lat/hls?channel=jz_2000&token=fbca23599065f5bd644b330db4e3b1f5
 #EXTINF:-1 tvg-name="中国天气" tvg-logo="https://image.5iclub.cloudns.org/file/6a455735fab68dc09cadd.png" group-title="数字频道",中国天气
 https://itv.lat/hls?channel=zgqx&token=fbca23599065f5bd644b330db4e3b1f5
+#EXTINF:-1 tvg-name="晴彩竞技" tvg-logo="https://image.5iclub.cloudns.org/file/4e4804ecd97f4a971d60f-5405eec0b3c8791a9a.png" group-title="数字频道",晴彩竞技
+http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226124/index.m3u8
+#EXTINF:-1 tvg-name="晴彩篮球" tvg-logo="https://image.5iclub.cloudns.org/file/3eef5a8df116228a4aa55-6ce830e16a5cb0cc07.png" group-title="数字频道",晴彩篮球
+http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226147/index.m3u8
+#EXTINF:-1 tvg-name="晴彩青少" tvg-logo="https://image.5iclub.cloudns.orgundefined" group-title="数字频道",晴彩青少
+http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226508/index.m3u8
+#EXTINF:-1 tvg-name="晴彩广场舞" tvg-logo="https://image.5iclub.cloudns.org/file/d178ec4e8ef70bbf836fc-5a5a205b9af415af1e.png" group-title="数字频道",晴彩广场舞
+http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226472/index.m3u8
 #EXTINF:-1 tvg-name="精品导视" tvg-logo="https://image.5iclub.cloudns.org/file/9f357af2a4254e49fbd58.png" group-title="数字频道",精品导视
 https://itv.lat/hls?channel=jpdsH265&token=fbca23599065f5bd644b330db4e3b1f5
 
