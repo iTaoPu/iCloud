@@ -4,7 +4,7 @@
 ! Description: The DNS Filters
 ! License: Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
 ! Total lines: 696
-! Version: 1.5.3-release
+! Version: 1.5.3
 ! Version: 2024-09-30 08:08:08(GMT+8)
 
 
