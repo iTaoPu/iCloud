@@ -1,7 +1,7 @@
 !Title: AdRules 秋風がく山道 DNS List
 !Total lines: 696
 !Version: 1.5.3-release
-!Homepage: https://awavenue.top
+!Homepage: https://loong.yuwell.us.kg
 !Powerd by 5️⃣i計劃通行
 !License: Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
 !Version: 2024-09-30 08:08:08(GMT+8)
