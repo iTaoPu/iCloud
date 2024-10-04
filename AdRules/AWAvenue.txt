@@ -1,5 +1,4 @@
 !Title: AWAvenue AdRule DNS List
-!--------------------------------------
 !Total lines: 696
 !Version: 1.5.3-release
 !Homepage: https://awavenue.top
