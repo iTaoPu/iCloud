@@ -1,4 +1,4 @@
-!Title: AWAvenue AdRule DNS List
+!Title: AdRules 秋風がく山道 DNS List
 !Total lines: 696
 !Version: 1.5.3-release
 !Homepage: https://awavenue.top
