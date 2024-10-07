@@ -1,5 +1,5 @@
 ! Title: AdRules 秋風がく山道 DNS List
-! Homepage: https://adrules.5i計畫通行.cloudns.org
+! Homepage: https://5i計畫通行.net.cn
 ! Powerd by 5️⃣i計劃通行
 ! Description: The DNS Filters
 ! License: Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
