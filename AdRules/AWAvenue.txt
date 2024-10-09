@@ -3,9 +3,10 @@
 ! Powerd by 5️⃣i計劃通行
 ! Description: The DNS Filters
 ! License: Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
-! Total lines: 696
+! Total lines: 688
 ! Version: 1.5.3
 ! Version: 2024-10-09 08:08:08(GMT+8)
+
 
 
 ||1010pic.com^
