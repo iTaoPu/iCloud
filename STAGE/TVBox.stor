@@ -8,7 +8,7 @@
         {"url":"http://cdn.qiaoji8.com/tvbox.json","name":"🏓巧技.COM"},
         {"url":"http://tvbox.王二小放牛娃.top","name":"🐮王二小放牛娃.XYZ"},
         {"url":"http://我不是.摸鱼儿.top","name":"🐟摸鱼儿.TOP"},
-        {"url":"http://175.178.251.183:6689/tv.txt","name":"🐷猪猪lr.IP"},
-        {"url":"https://ghproxy.net/https://raw.githubusercontent.com/anaer/Meow/main/meow.json","name":"🐱喵呜.GIT"}
+        {"url":"https://raw.gitmirror.com/yuanzl77/TVBox-url/main/tv.txt","name":"🐷猪猪lr.IP"},
+        {"url":"https://raw.gitmirror.com/anaer/Meow/main/meow.json","name":"🐱喵呜.GIT"}
         ]
 }
