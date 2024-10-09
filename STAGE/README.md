@@ -24,10 +24,11 @@
 |[🦸‍♀️XIAOMI.小暴脾气.FUN]|[http://www.mpanso.com/小米/DEMO.json](http://www.mpanso.com/小米/DEMO.json)|源|
 |[🐈肥猫.COM]|[(http://肥猫.com)](http://肥猫.com)|源|
 |[🔞纯一骚零.TOP]|[https://100km.top/0](https://100km.top/0)|源|
-|[🆗屌炸天.TOP]|[https://ok321.top/tv](https://ok321.top/tv)|源|
 |[🥑菜妮丝.TOP]|[https://tv.菜妮丝.top](https://tv.菜妮丝.top)|源|
 |[🏓巧技.COM]|[http://cdn.qiaoji8.com/tvbox.json](http://cdn.qiaoji8.com/tvbox.json)|源|
 |[🐮王二小放牛娃.XYZ]|[http://tvbox.王二小放牛娃.xyz](http://tvbox.王二小放牛娃.xyz)|源|
+|[🐟摸鱼儿.TOP]|[http://我不是.摸鱼儿.top](http://我不是.摸鱼儿.top)|源|
+|[🐷猪猪lr.GIT]|[https://yuanzl77/TVBox-url/main/tv.txt](https://yuanzl77/TVBox-url/main/tv.txt)|源|
 |[🐱喵呜.GIT]|[https://raw.githubusercontent.com/anaer/Meow/main/meow.json](https://raw.githubusercontent.com/anaer/Meow/main/meow.json)|源|
 
 本项目不存储任何的流媒体内容，所有的法律责任与后果应由使用者自行承担。
