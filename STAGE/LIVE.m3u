@@ -343,13 +343,13 @@ https://itv.lat/hls?channel=ycxsjH265&token=fbca23599065f5bd644b330db4e3b1f5
 https://itv.lat/hls?channel=jz_2000&token=fbca23599065f5bd644b330db4e3b1f5
 #EXTINF:-1 tvg-name="中国天气" tvg-logo="https://image.5iclub.cloudns.org/file/6a455735fab68dc09cadd.png" group-title="数字频道",中国天气
 https://itv.lat/hls?channel=zgqx&token=fbca23599065f5bd644b330db4e3b1f5
-#EXTINF:-1 tvg-name="晴彩竞技" tvg-logo="https://image.5iclub.cloudns.org/file/dc02998a1a58537f0a87c-2d07c88c9835499cfa.png" group-title="数字频道",晴彩竞技
+#EXTINF:-1 tvg-name="睛彩竞技" tvg-logo="https://image.5iclub.cloudns.org/file/dc02998a1a58537f0a87c-2d07c88c9835499cfa.png" group-title="数字频道",睛彩竞技
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226124/index.m3u8
-#EXTINF:-1 tvg-name="晴彩篮球" tvg-logo="https://image.5iclub.cloudns.org/file/2db5fb471299fa598cfc9-9a29766a25c7626544.png" group-title="数字频道",晴彩篮球
+#EXTINF:-1 tvg-name="睛彩篮球" tvg-logo="https://image.5iclub.cloudns.org/file/2db5fb471299fa598cfc9-9a29766a25c7626544.png" group-title="数字频道"睛彩篮球
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226147/index.m3u8
-#EXTINF:-1 tvg-name="晴彩青少" tvg-logo="https://image.5iclub.cloudns.org/file/b8caf7313f4f0dc63f37f-c3f278286ed972f0fb.png" group-title="数字频道",晴彩青少
+#EXTINF:-1 tvg-name="睛彩青少" tvg-logo="https://image.5iclub.cloudns.org/file/b8caf7313f4f0dc63f37f-c3f278286ed972f0fb.png" group-title="数字频道",睛彩青少
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226508/index.m3u8
-#EXTINF:-1 tvg-name="晴彩广场舞" tvg-logo="https://image.5iclub.cloudns.org/file/46d5894d5339ff0421596-500e6c97f852d6fbb9.png" group-title="数字频道",晴彩广场舞
+#EXTINF:-1 tvg-name="睛彩广场舞" tvg-logo="https://image.5iclub.cloudns.org/file/46d5894d5339ff0421596-500e6c97f852d6fbb9.png" group-title="数字频道",睛彩广场舞
 http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226472/index.m3u8
 #EXTINF:-1 tvg-name="精品导视" tvg-logo="https://image.5iclub.cloudns.org/file/9f357af2a4254e49fbd58.png" group-title="数字频道",精品导视
 https://itv.lat/hls?channel=jpdsH265&token=fbca23599065f5bd644b330db4e3b1f5
