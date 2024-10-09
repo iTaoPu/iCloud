@@ -28,7 +28,7 @@
 |[🥑菜妮丝.TOP]|[https://tv.菜妮丝.top](https://tv.菜妮丝.top)|源|
 |[🏓巧技.COM]|[http://cdn.qiaoji8.com/tvbox.json](http://cdn.qiaoji8.com/tvbox.json)|源|
 |[🐮王二小放牛娃.XYZ]|[http://tvbox.王二小放牛娃.xyz](http://tvbox.王二小放牛娃.xyz)|源|
-|[🐱喵呜.GIT]|[https://anaer.github.io/Meow/meow.json](https://anaer.github.io/Meow/meow.json)|源|
+|[🐱喵呜.GIT]|[https://raw.githubusercontent.com/anaer/Meow/main/meow.json](https://raw.githubusercontent.com/anaer/Meow/main/meow.json)|源|
 
 本项目不存储任何的流媒体内容，所有的法律责任与后果应由使用者自行承担。
 
