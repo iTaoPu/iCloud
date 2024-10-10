@@ -77,7 +77,7 @@ dns:
 proxy-providers:
   GreatWall:
     type: http
-    url: "https://YuWell-Loong.GitHub.io/Great.Wall/list.meta.yml"
+    url: "https://iTaoPu.GitHub.io/Great.Wall/list.meta.yml"
     path: ./Internet/GreatWall.yaml
     interval: 86400
     health-check:
