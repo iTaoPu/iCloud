@@ -28,7 +28,7 @@
 |[🏓巧技.COM]|[http://cdn.qiaoji8.com/tvbox.json](http://cdn.qiaoji8.com/tvbox.json)|源|
 |[🐮王二小放牛娃.XYZ]|[http://tvbox.王二小放牛娃.xyz](http://tvbox.王二小放牛娃.xyz)|源|
 |[🐟摸鱼儿.TOP]|[http://我不是.摸鱼儿.top](http://我不是.摸鱼儿.top)|源|
-|[🐷猪猪lr.GIT]|[https://yuanzl77/TVBox-url/main/tv.txt](https://yuanzl77/TVBox-url/main/tv.txt)|源|
+|[🐷猪猪lr.GIT]|[https://raw.githubusercontent.com/yuanzl77/TVBox-url/main/tv.txt](https://raw.githubusercontent.com/yuanzl77/TVBox-url/main/tv.txt)|源|
 |[🐱喵呜.GIT]|[https://raw.githubusercontent.com/anaer/Meow/main/meow.json](https://raw.githubusercontent.com/anaer/Meow/main/meow.json)|源|
 
 本项目不存储任何的流媒体内容，所有的法律责任与后果应由使用者自行承担。
