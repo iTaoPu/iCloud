@@ -1,6 +1,6 @@
 ! Title: AdRules 秋風がく山道 DNS List
-! Homepage: https://5i計畫通行.net.cn
-! Powerd by 5️⃣i計劃通行
+! Homepage: https://`ll焦糖.先生.net.cn
+! Powerd by `ll焦糖.先生
 ! Description: The DNS Filters
 ! License: Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
 ! Total lines: 688
