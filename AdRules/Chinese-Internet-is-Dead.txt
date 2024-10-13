@@ -1,3 +1,10 @@
+! Title: AdRules 染尘のとおり道 uBlock Origin List
+! Homepage: https://`ll焦糖.先生.net.cn
+! Powerd by `ll焦糖.先生
+! Description: The uBlock Origin Filters
+! ------------------------------------
+! Version: 2024-10-09 08:08:08(GMT+8)
+
 title/歪歪动漫-/
 title/蜜糖网–/
 title/_套图岛/
