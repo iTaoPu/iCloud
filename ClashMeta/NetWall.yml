@@ -13,9 +13,9 @@ external-controller: 127.0.0.1:9090
 
 geodata-mode: true
 geox-url:
-  geoip: https://fastly.jsdelivr.net/gh/YuWell-Loong/Meta.Rules.Dat@release/geoip-lite.dat
-  geosite: https://fastly.jsdelivr.net/gh/YuWell-Loong/Meta.Rules.Dat@release/geosite.dat
-  mmdb: https://fastly.jsdelivr.net/gh/YuWell-Loong/Meta.Rules.Dat@release/country-lite.mmdb
+  geoip: https://fastly.jsdelivr.net/gh/iTaoPu/Meta.Rules.Dat@release/geoip-lite.dat
+  geosite: https://fastly.jsdelivr.net/gh/iTaoPu/Meta.Rules.Dat@release/geosite.dat
+  mmdb: https://fastly.jsdelivr.net/gh/iTaoPu/Meta.Rules.Dat@release/country-lite.mmdb
   asn: https://fastly.jsdelivr.net/gh/xishang0128/geoip@release/GeoLite2-ASN.mmdb
 
 find-process-mode: strict
@@ -77,7 +77,7 @@ dns:
 proxy-providers:
   GuanXi:
     type: http
-    url: "https://url.v1.mk/sub?target=clash&url=https%3A%2F%2Fwww.guanxi.cloudns.be%2Fapi%2Fv1%2Fclient%2Fsubscribe%2Ftoken%3D9e48312624d64c219f8e7u9af55b4k238bh7&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Mini.ini&rename=%60%E5%86%A0%E5%B8%8C%E9%A2%91%E9%81%93%405i%E8%A8%88%E7%95%AB%E9%80%9A%E8%A1%8C%60%60MFJD99%40Centre996%60%60MFJD666%40Crap996%60&emoji=true&list=false&xudp=false&udp=true&tfo=false&expand=true&scv=false&fdn=false&new_name=true"
+    url: "https://url.yuwell.cloudns.org/GuanXi.yml"
     path: ./Internet/GuanXi.yaml
     interval: 10800
     health-check:
@@ -86,7 +86,7 @@ proxy-providers:
       interval: 300
   HuiBQ:
     type: http
-    url: "https://subapi.fxxk.dedyn.io/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2FHuibq%2FTrojanLinks%2Fmaster%2Flinks%2Fssr%7Chttps%3A%2F%2Fraw.githubusercontent.com%2FHuibq%2FTrojanLinks%2Fmaster%2Flinks%2Fvmess&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Mini.ini&rename=%60Github%E6%90%9C%E7%B4%A2TrojanLinks%405i%E8%A8%88%E7%95%AB%E9%80%9A%E8%A1%8C%60&emoji=true&list=false&xudp=false&udp=true&tfo=false&expand=true&scv=false&fdn=false&new_name=true"
+    url: "https://url.yuwell.cloudns.org/HuiBQ.yml"
     path: ./Internet/HuiBQ.yaml
     interval: 10800
     health-check:
@@ -96,7 +96,7 @@ proxy-providers:
 proxy-groups:
   - name: 🌐 节点选择
     type: select
-    icon: https://fastly.jsdelivr.net/gh/YuWell-Loong/iCloud@Grey/IconSet/Area.png
+    icon: https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/Area.png
     proxies:
       - ♻️ 延迟选优
       - 🔯 故障转移
@@ -111,7 +111,7 @@ proxy-groups:
       - DIRECT
   - name: ☑️ 手动切换
     type: select
-    icon: https://fastly.jsdelivr.net/gh/YuWell-Loong/iCloud@Grey/IconSet/Catnet.png
+    icon: https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/Catnet.png
     use:
       - GuanXi
       - HuiBQ
@@ -121,7 +121,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    icon: https://fastly.jsdelivr.net/gh/YuWell-Loong/iCloud@Grey/IconSet/Auto.png
+    icon: https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/Auto.png
     use:
       - GuanXi
       - HuiBQ
@@ -131,7 +131,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    icon: https://fastly.jsdelivr.net/gh/YuWell-Loong/iCloud@Grey/IconSet/ambulance.png
+    icon: https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/ambulance.png
     use:
       - GuanXi
       - HuiBQ
@@ -142,7 +142,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    icon: https://fastly.jsdelivr.net/gh/YuWell-Loong/iCloud@Grey/IconSet/merry_go.png
+    icon: https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/merry_go.png
     use:
       - GuanXi
       - HuiBQ
@@ -153,14 +153,14 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    icon: https://fastly.jsdelivr.net/gh/YuWell-Loong/iCloud@Grey/IconSet/balance.png
+    icon: https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/balance.png
     use:
       - GuanXi
       - HuiBQ
     proxies:
   - name: 🌍 国外媒体
     type: select
-    icon: https://fastly.jsdelivr.net/gh/YuWell-Loong/iCloud@Grey/IconSet/World_Map.png
+    icon: https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/World_Map.png
     proxies:
       - 🌐 节点选择
       - ♻️ 延迟选优
@@ -176,7 +176,7 @@ proxy-groups:
       - 🎯 全球直连
   - name: 📢 谷歌服务
     type: select
-    icon: https://fastly.jsdelivr.net/gh/YuWell-Loong/iCloud@Grey/IconSet/google.png
+    icon: https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/google.png
     proxies:
       - 🌐 节点选择
       - ♻️ 延迟选优
@@ -192,7 +192,7 @@ proxy-groups:
       - 🎯 全球直连
   - name: Ⓜ️ 微软服务
     type: select
-    icon: https://fastly.jsdelivr.net/gh/YuWell-Loong/iCloud@Grey/IconSet/microsoft.png
+    icon: https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/microsoft.png
     proxies:
       - 🎯 全球直连
       - 🌐 节点选择
@@ -208,7 +208,7 @@ proxy-groups:
       - ☑️ 手动切换
   - name: 🍎 苹果服务
     type: select
-    icon: https://fastly.jsdelivr.net/gh/YuWell-Loong/iCloud@Grey/IconSet/apple_blue.png
+    icon: https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/apple_blue.png
     proxies:
       - 🌐 节点选择
       - ♻️ 延迟选优
@@ -224,7 +224,7 @@ proxy-groups:
       - 🎯 全球直连
   - name: 📲 电报消息
     type: select
-    icon: https://fastly.jsdelivr.net/gh/YuWell-Loong/iCloud@Grey/IconSet/Telegram.png
+    icon: https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/Telegram.png
     proxies:
       - 🌐 节点选择
       - ♻️ 延迟选优
@@ -240,7 +240,7 @@ proxy-groups:
       - 🎯 全球直连
   - name: 🎯 全球直连
     type: select
-    icon: https://fastly.jsdelivr.net/gh/YuWell-Loong/iCloud@Grey/IconSet/link.png
+    icon: https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/link.png
     proxies:
       - DIRECT
       - 🌐 节点选择
@@ -256,19 +256,19 @@ proxy-groups:
       - ☑️ 手动切换
   - name: 🛑 全球拦截
     type: select
-    icon: https://fastly.jsdelivr.net/gh/YuWell-Loong/iCloud@Grey/IconSet/Reject.png
+    icon: https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/Reject.png
     proxies:
       - REJECT
       - DIRECT
   - name: 🍃 应用净化
     type: select
-    icon: https://fastly.jsdelivr.net/gh/YuWell-Loong/iCloud@Grey/IconSet/Hijacking.png
+    icon: https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/Hijacking.png
     proxies:
       - REJECT
       - DIRECT
   - name: 🐟 漏网之鱼
     type: select
-    icon: https://fastly.jsdelivr.net/gh/YuWell-Loong/iCloud@Grey/IconSet/fish.png
+    icon: https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/fish.png
     proxies:
       - 🌐 节点选择
       - ♻️ 延迟选优
@@ -289,7 +289,7 @@ proxy-groups:
     filter: "中国|🇨🇳|CN|cn|China|中华人民共和国|(?i)港|🇭🇰|HK|hk|Hong Kong|HongKong|hongkong|HKG|台|🇹🇼|新北|彰化|TW|tw|Taiwan|TPE|KHH"
     interval: 300
     tolerance: 50
-    icon: https://fastly.jsdelivr.net/gh/YuWell-Loong/iCloud@Grey/IconSet/HK.png
+    icon: https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/HK.png
     use:
       - GuanXi
       - HuiBQ
@@ -302,7 +302,7 @@ proxy-groups:
     filter: "日本|🇯🇵|川日|东京|大阪|泉日|埼玉|沪日|深日|[^-]日|JP|Japan|Tokyo|NRT|KIX|🇰🇷|KR|Korea|KOR|Seoul|首尔|春川|韩|韓|ICN" 
     interval: 300
     tolerance: 50
-    icon: https://fastly.jsdelivr.net/gh/YuWell-Loong/iCloud@Grey/IconSet/JP.png
+    icon: https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/JP.png
     use:
       - GuanXi
       - HuiBQ
@@ -315,7 +315,7 @@ proxy-groups:
     filter: "美|🇺🇸|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|ATL|BUF|DFW|EWR|IAD|LAX|MCI|MIA|ORD|PHX|PDX|SEA|SJC"
     interval: 300
     tolerance: 150
-    icon: https://fastly.jsdelivr.net/gh/YuWell-Loong/iCloud@Grey/IconSet/US.png
+    icon: https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/US.png
     use:
       - GuanXi
       - HuiBQ
@@ -328,7 +328,7 @@ proxy-groups:
     filter: "新加坡|坡|🇸🇬|狮城|SG|Singapore|SIN"
     interval: 300
     tolerance: 50
-    icon: https://fastly.jsdelivr.net/gh/YuWell-Loong/iCloud@Grey/IconSet/SG.png
+    icon: https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/SG.png
     use:
       - GuanXi
       - HuiBQ
@@ -341,7 +341,7 @@ proxy-groups:
     filter: "英国|🇬🇧|GB|奥地利|🇦🇹|AT|比利时|🇧🇪|BE|保加利亚|🇧🇬|BG|塞浦路斯|🇨🇾|CY|克罗地亚|🇭🇷|HR|捷克|🇨🇿|CZ|丹麦|🇩🇰|DK|爱沙尼亚|🇪🇪|EE|芬兰|🇫🇮|FI|法国|🇫🇷|FR|德国|🇩🇪|DE|希腊|🇬🇷|CR|匈牙利|🇭🇺|HU|爱尔兰|🇮🇪|IE|意大利|🇮🇹|IT|拉脱维亚|🇱🇻|LV|立陶宛|🇱🇹|LT|卢森堡|🇱🇺|LU|马耳他|🇲🇹|MT|荷兰|🇳🇱|NL|波兰|🇵🇱|PL|葡萄牙|🇵🇹|PT|罗马尼亚|🇷🇴|RO|斯洛伐克|🇸🇰|SK|斯洛文尼亚|🇸🇮|SI|西班牙|🇪🇸|ES|瑞典|🇸🇪|SE"
     interval: 300
     tolerance: 50
-    icon: https://fastly.jsdelivr.net/gh/YuWell-Loong/iCloud@Grey/IconSet/EU.png
+    icon: https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/EU.png
     use:
       - GuanXi
       - HuiBQ
@@ -352,91 +352,91 @@ rule-providers:
   reject:
     type: http
     behavior: domain
-    url: "https://fastly.jsdelivr.net/gh/YuWell-Loong/Clash.Rules@release/reject.txt"
+    url: "https://fastly.jsdelivr.net/gh/iTaoPu/Clash.Rules@release/reject.txt"
     path: ./Ruleset/reject.yaml
     interval: 86400
 
   icloud:
     type: http
     behavior: domain
-    url: "https://fastly.jsdelivr.net/gh/YuWell-Loong/Clash.Rules@release/icloud.txt"
+    url: "https://fastly.jsdelivr.net/gh/iTaoPu/Clash.Rules@release/icloud.txt"
     path: ./Ruleset/icloud.yaml
     interval: 86400
 
   apple:
     type: http
     behavior: domain
-    url: "https://fastly.jsdelivr.net/gh/YuWell-Loong/Clash.Rules@release/apple.txt"
+    url: "https://fastly.jsdelivr.net/gh/iTaoPu/Clash.Rules@release/apple.txt"
     path: ./Ruleset/apple.yaml
     interval: 86400
 
   google:
     type: http
     behavior: domain
-    url: "https://fastly.jsdelivr.net/gh/YuWell-Loong/Clash.Rules@release/google.txt"
+    url: "https://fastly.jsdelivr.net/gh/iTaoPu/Clash.Rules@release/google.txt"
     path: ./Ruleset/google.yaml
     interval: 86400
 
   proxy:
     type: http
     behavior: domain
-    url: "https://fastly.jsdelivr.net/gh/YuWell-Loong/Clash.Rules@release/proxy.txt"
+    url: "https://fastly.jsdelivr.net/gh/iTaoPu/Clash.Rules@release/proxy.txt"
     path: ./Ruleset/proxy.yaml
     interval: 86400
 
   direct:
     type: http
     behavior: domain
-    url: "https://fastly.jsdelivr.net/gh/YuWell-Loong/Clash.Rules@release/direct.txt"
+    url: "https://fastly.jsdelivr.net/gh/iTaoPu/Clash.Rules@release/direct.txt"
     path: ./Ruleset/direct.yaml
     interval: 86400
 
   private:
     type: http
     behavior: domain
-    url: "https://fastly.jsdelivr.net/gh/YuWell-Loong/Clash.Rules@release/private.txt"
+    url: "https://fastly.jsdelivr.net/gh/iTaoPu/Clash.Rules@release/private.txt"
     path: ./Ruleset/private.yaml
     interval: 86400
 
   gfw:
     type: http
     behavior: domain
-    url: "https://fastly.jsdelivr.net/gh/YuWell-Loong/Clash.Rules@release/gfw.txt"
+    url: "https://fastly.jsdelivr.net/gh/iTaoPu/Clash.Rules@release/gfw.txt"
     path: ./Ruleset/gfw.yaml
     interval: 86400
 
   tld-not-cn:
     type: http
     behavior: domain
-    url: "https://fastly.jsdelivr.net/gh/YuWell-Loong/Clash.Rules@release/tld-not-cn.txt"
+    url: "https://fastly.jsdelivr.net/gh/iTaoPu/Clash.Rules@release/tld-not-cn.txt"
     path: ./Ruleset/tld-not-cn.yaml
     interval: 86400
 
   telegramcidr:
     type: http
     behavior: ipcidr
-    url: "https://fastly.jsdelivr.net/gh/YuWell-Loong/Clash.Rules@release/telegramcidr.txt"
+    url: "https://fastly.jsdelivr.net/gh/iTaoPu/Clash.Rules@release/telegramcidr.txt"
     path: ./Ruleset/telegramcidr.yaml
     interval: 86400
 
   cncidr:
     type: http
     behavior: ipcidr
-    url: "https://fastly.jsdelivr.net/gh/YuWell-Loong/Clash.Rules@release/cncidr.txt"
+    url: "https://fastly.jsdelivr.net/gh/iTaoPu/Clash.Rules@release/cncidr.txt"
     path: ./Ruleset/cncidr.yaml
     interval: 86400
 
   lancidr:
     type: http
     behavior: ipcidr
-    url: "https://fastly.jsdelivr.net/gh/YuWell-Loong/Clash.Rules@release/lancidr.txt"
+    url: "https://fastly.jsdelivr.net/gh/iTaoPu/Clash.Rules@release/lancidr.txt"
     path: ./Ruleset/lancidr.yaml
     interval: 86400
 
   applications:
     type: http
     behavior: classical
-    url: "https://fastly.jsdelivr.net/gh/YuWell-Loong/Clash.Rules@release/applications.txt"
+    url: "https://fastly.jsdelivr.net/gh/iTaoPu/Clash.Rules@release/applications.txt"
     path: ./Ruleset/applications.yaml
     interval: 86400
 
