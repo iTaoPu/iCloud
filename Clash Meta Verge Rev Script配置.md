@@ -30,6 +30,7 @@ const dnsConfig = {
     // 微信快速登录检测失败
     "localhost.work.weixin.qq.com"
   ],
+  "default-nameserver": ["223.5.5.5", "119.29.29.29", "1.1.1.1", "8.8.8.8"],
   "nameserver": [...domesticNameservers],
   "proxy-server-nameserver": [...domesticNameservers],
   "nameserver-policy": {
