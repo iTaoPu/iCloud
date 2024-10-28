@@ -16,7 +16,7 @@ geox-url:
   geoip: https://fastly.jsdelivr.net/gh/iTaoPu/Meta.Rules.Dat@release/geoip-lite.dat
   geosite: https://fastly.jsdelivr.net/gh/iTaoPu/Meta.Rules.Dat@release/geosite.dat
   mmdb: https://fastly.jsdelivr.net/gh/iTaoPu/Meta.Rules.Dat@release/country-lite.mmdb
-  asn: https://fastly.jsdelivr.net/gh/xishang0128/geoip@release/GeoLite2-ASN.mmdb
+  asn: https://fastly.jsdelivr.net/gh/iTaoPu/Meta.Rules.Dat@release/GeoLite2-ASN.mmdb
 
 find-process-mode: strict
 global-client-fingerprint: chrome
