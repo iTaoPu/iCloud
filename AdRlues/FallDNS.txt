@@ -1,4 +1,4 @@
-! Title: AdRules 橘猫のとおり道 DNS List
+! Title: AdRules 秋風がく山道 DNS List
 ! Homepage: https://`ll焦糖.先生.net.cn
 ! Powerd by `ll焦糖.先生
 ! Expires: Irregular
