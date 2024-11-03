@@ -2,7 +2,7 @@
 ! Homepage: https://`ll焦糖.先生.net.cn
 ! Powerd by `ll焦糖.先生
 ! Expires: Irregular
-! Description: The DNS Filters
+! Description: Use Adblock syntax to fight against various advertising SDKs in Android applications from the network level, prevent them from loading.
 ! ------------------------------------
 ! Total lines: 687
 ! Version: 1.5.7
