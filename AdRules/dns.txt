@@ -2,7 +2,7 @@
 ! Title: AdRules `ll叚娤.倖鍢 DNS List
 ! Homepage: https://`ll叚娤.倖鍢.net.cn
 ! Powerd by `ll焦糖.先生
-! Update Date: 2024-11-03
+! Update Date: 2024-11-05
 ! Description: The DNS Filters
 ! ------------------------------------
 ! Total lines: 3
