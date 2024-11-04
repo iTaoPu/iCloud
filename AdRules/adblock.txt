@@ -1,0 +1,11 @@
+[Adblock Plus 2.0]
+! Title: AdRules `ll叚娤.倖鍢 AdBlock List
+! Homepage: https://`ll叚娤.倖鍢.net.cn
+! Powerd by `ll焦糖.先生
+! Update Date: 2024-11-03
+! Description: The DNS Filters
+! ------------------------------------
+! Total lines: 1
+! Version: 0.0.1
+
+142.250.217.110:443$network,app=com.android.vending
