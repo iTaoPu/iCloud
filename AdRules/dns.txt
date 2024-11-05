@@ -3,7 +3,7 @@
 ! Homepage: https://`ll叚娤.倖鍢.net.cn
 ! Powerd by `ll焦糖.先生
 ! Update Date: 2024-11-05
-! Description: The DNS Filters
+! Description: List for blocking ads in the Chinese region
 ! ------------------------------------
 ! Total lines: 3
 ! Version: 0.0.1
