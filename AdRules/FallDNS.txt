@@ -5,7 +5,7 @@
 ! Description: Use Adblock syntax to fight against various advertising SDKs in Android applications from the network level, prevent them from loading.
 ! ------------------------------------
 ! Total lines: 690
-! Version: 1.5.8
+! Version: 1.5.9
 
 ||1010pic.com^
 ||16dd-advertise-1252317822.file.myqcloud.com^
@@ -21,6 +21,7 @@
 ||ad-imp.hismarttv.com^
 ||ad-scope.com^
 ||ad-scope.com.cn^
+||ad-sdk-config.youdao.com^
 ||ad-sdk.huxiu.com^
 ||ad.12306.cn^
 ||ad.51wnl.com^
@@ -296,7 +297,6 @@
 ||h-adashx.ut.taobao.com^
 ||h.trace.qq.com^
 ||hanlanad.com^
-||henzanapp.com^
 ||hexagon-analytics.com^
 ||hm.baidu.com^
 ||hmma.baidu.com^
