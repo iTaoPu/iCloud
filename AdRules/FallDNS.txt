@@ -1,9 +1,10 @@
 ! Title: AdRules 秋風がく山道 DNS List
 ! Homepage: https://`ll叚娤.倖鍢.net.cn
 ! Powerd by `ll焦糖.先生
-! Update Date: 2024-11-06
+! Expires: irregularly (update frequency)
 ! Description: Use Adblock syntax to fight against various advertising SDKs in Android applications from the network level, prevent them from loading.
 ! ------------------------------------
+! Update Date: 2024-11-06
 ! Total lines: 690
 ! Version: 1.5.9
 
