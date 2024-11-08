@@ -4,10 +4,14 @@
 ! Expires: irregularly (update frequency)
 ! Description: Use Adblock syntax to fight against various advertising SDKs in Android applications from the network level, prevent them from loading.
 ! ------------------------------------
-! Update Date: 2024-11-06
-! Total lines: 690
-! Version: 1.5.9
+! Update Date: 2024-11-08
+! Total lines: 698
+! Version: 1.6.0
 
+127.0.0.1 116.205.193.167
+127.0.0.1 123.56.23.22
+127.0.0.1 182.254.116.116
+127.0.0.1 203.205.137.89
 ||1010pic.com^
 ||16dd-advertise-1252317822.file.myqcloud.com^
 ||16dd-advertise-1252317822.image.myqcloud.com^
@@ -222,6 +226,7 @@
 ||cctv.adsunion.com^
 ||cdn-ad.wtzw.com^
 ||cdn-ads.oss-cn-shanghai.aliyuncs.com^
+||cdn-plugin-sync-upgrade-juui.hismarttv.com^
 ||cdn.ad.xiaomi.com^
 ||cdn.ynuf.aliapp.org^
 ||cfg.imtt.qq.com^
@@ -609,11 +614,13 @@
 ||union.baidu.com^
 ||update.avlyun.sec.miui.com^
 ||update.lejiao.tv^
+||upgrade-update.hismarttv.com^
 ||us.l.qq.com^
 ||v.adintl.cn^
 ||v.adx.hubcloud.com.cn^
 ||v1-ad.video.yximgs.com^
 ||v2-ad.video.yximgs.com^
+||v2-api-channel-launcher.hismarttv.com^
 ||v2.gdt.qq.com^
 ||v2mi.gdt.qq.com^
 ||v3-ad.video.yximgs.com^
@@ -623,6 +630,7 @@
 ||video.dispatch.tc.qq.com^
 ||virusinfo-cloudscan-cn.heytapmobi.com^
 ||vlive.qqvideo.tc.qq.com^
+||volc.bj.ad.track.66mobi.com^
 ||vungle.com^
 ||w.l.qq.com^
 ||w1.askwai.com^
