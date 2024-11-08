@@ -11,3 +11,4 @@
 
 142.250.217.110:443$network,app=com.android.vending
 203.208.39.194:443$network,app=com.android.vending
+203.208.50.34:443$network,app=com.android.vending
