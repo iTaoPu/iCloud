@@ -5,8 +5,8 @@
 ! Expires: irregularly (update frequency)
 ! Description: List for blocking ads in the Chinese region
 ! ------------------------------------
-! Update Date: 2024-11-05
-! Total lines: 2
+! Update Date: 2024-11-08
+! Total lines: 3
 ! Version: 0.0.1
 
 142.250.217.110:443$network,app=com.android.vending
