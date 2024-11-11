@@ -77,7 +77,7 @@ dns:
 proxy-providers:
   GuanXi:
     type: http
-    url: "https://url.yuwell.cloudns.org/GuanXi.yml"
+    url: "https://url.yuwell.cloudns.biz/GuanXi.yml"
     path: ./Internet/GuanXi.yaml
     interval: 10800
     health-check:
@@ -86,7 +86,7 @@ proxy-providers:
       interval: 300
   HuiBQ:
     type: http
-    url: "https://url.yuwell.cloudns.org/HuiBQ.yml"
+    url: "https://url.yuwell.cloudns.biz/HuiBQ.yml"
     path: ./Internet/HuiBQ.yaml
     interval: 10800
     health-check:
