@@ -1,5 +1,5 @@
 ! Title: AdRules 秋風がく山道 DNS List
-! Homepage: https://`||叚娤.倖鍢.net.cn
+! Homepage: https://🫧焦糖.先生ઇଓ.net.cn
 ! Powerd by 🫧焦糖.先生ઇଓ
 ! Expires: irregularly (update frequency)
 ! Description: Use Adblock syntax to fight against various advertising SDKs in Android applications from the network level, prevent them from loading.
