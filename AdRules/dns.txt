@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Title: AdRules `ll叚娤.倖鍢 DNS List
-! Homepage: https://`ll叚娤.倖鍢.net.cn
-! Powerd by `ll焦糖.先生
+! Title: AdRules 🫧焦糖.先生ઇଓ DNS List
+! Homepage: https://`||叚娤.倖鍢.net.cn
+! Powerd by 🫧焦糖.先生ઇଓ
 ! Expires: irregularly (update frequency)
 ! Description: List for blocking ads in the Chinese region
 ! ------------------------------------
