@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: AdRules 🫧焦糖.先生ઇଓ DNS List
-! Homepage: https://`||叚娤.倖鍢.net.cn
+! Homepage: https://🫧焦糖.先生ઇଓ.net.cn
 ! Powerd by 🫧焦糖.先生ઇଓ
 ! Expires: irregularly (update frequency)
 ! Description: List for blocking ads in the Chinese region
