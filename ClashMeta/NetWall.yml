@@ -92,14 +92,6 @@ proxy-providers:
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
-  iTaoPu:
-    type: http
-    url: "https://url.yuwell.cloudns.biz/iTaoPu.yml"
-    path: ./Internet/HuiBQ.yaml
-    interval: 10800
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
 
 proxy-groups:
   - name: 🌐 节点选择
@@ -123,7 +115,6 @@ proxy-groups:
     use:
       - GuanXi
       - HuiBQ
-      - iTaoPu
     proxies: 
   - name: ♻️ 延迟选优
     type: url-test
@@ -134,7 +125,6 @@ proxy-groups:
     use:
       - GuanXi
       - HuiBQ
-      - iTaoPu
     proxies:
   - name: 🔯 故障转移
     type: fallback
@@ -145,7 +135,6 @@ proxy-groups:
     use:
       - GuanXi
       - HuiBQ
-      - iTaoPu
     proxies:
   - name: 🔮 负载均衡·散列
     type: load-balance
@@ -157,7 +146,6 @@ proxy-groups:
     use:
       - GuanXi
       - HuiBQ
-      - iTaoPu
     proxies:  
   - name: 🔮 负载均衡·轮询
     type: load-balance
@@ -169,7 +157,6 @@ proxy-groups:
     use:
       - GuanXi
       - HuiBQ
-      - iTaoPu
     proxies:
   - name: 🌍 国外媒体
     type: select
