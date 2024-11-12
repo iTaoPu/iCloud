@@ -75,7 +75,7 @@ dns:
       - "https://dns.google/dns-query"
 
 proxy-providers:
-  GuanXi:
+  🧱翻墙社:
     type: http
     url: "https://url.yuwell.cloudns.biz/GuanXi.yml"
     path: ./Internet/GuanXi.yaml
@@ -84,7 +84,7 @@ proxy-providers:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 300
-  HuiBQ:
+  🦠特洛伊:
     type: http
     url: "https://url.yuwell.cloudns.biz/HuiBQ.yml"
     path: ./Internet/HuiBQ.yaml
@@ -113,8 +113,8 @@ proxy-groups:
     type: select
     icon: https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/Catnet.png
     use:
-      - GuanXi
-      - HuiBQ
+      - 🧱翻墙社
+      - 🦠特洛伊
     proxies: 
   - name: ♻️ 延迟选优
     type: url-test
@@ -123,8 +123,8 @@ proxy-groups:
     tolerance: 50
     icon: https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/Auto.png
     use:
-      - GuanXi
-      - HuiBQ
+      - 🧱翻墙社
+      - 🦠特洛伊
     proxies:
   - name: 🔯 故障转移
     type: fallback
@@ -133,8 +133,8 @@ proxy-groups:
     tolerance: 50
     icon: https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/ambulance.png
     use:
-      - GuanXi
-      - HuiBQ
+      - 🧱翻墙社
+      - 🦠特洛伊
     proxies:
   - name: 🔮 负载均衡·散列
     type: load-balance
@@ -144,8 +144,8 @@ proxy-groups:
     tolerance: 50
     icon: https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/merry_go.png
     use:
-      - GuanXi
-      - HuiBQ
+      - 🧱翻墙社
+      - 🦠特洛伊
     proxies:  
   - name: 🔮 负载均衡·轮询
     type: load-balance
@@ -155,8 +155,8 @@ proxy-groups:
     tolerance: 50
     icon: https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/balance.png
     use:
-      - GuanXi
-      - HuiBQ
+      - 🧱翻墙社
+      - 🦠特洛伊
     proxies:
   - name: 🌍 国外媒体
     type: select
@@ -291,8 +291,8 @@ proxy-groups:
     tolerance: 50
     icon: https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/HK.png
     use:
-      - GuanXi
-      - HuiBQ
+      - 🧱翻墙社
+      - 🦠特洛伊
     proxies:
       - DIRECT
   - name: 🇯🇵 日韩节点
@@ -304,8 +304,8 @@ proxy-groups:
     tolerance: 50
     icon: https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/JP.png
     use:
-      - GuanXi
-      - HuiBQ
+      - 🧱翻墙社
+      - 🦠特洛伊
     proxies:
       - DIRECT
   - name: 🇺🇲 鹰酱节点
@@ -317,8 +317,8 @@ proxy-groups:
     tolerance: 150
     icon: https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/US.png
     use:
-      - GuanXi
-      - HuiBQ
+      - 🧱翻墙社
+      - 🦠特洛伊
     proxies:
       - DIRECT
   - name: 🇸🇬 狮城节点
@@ -330,8 +330,8 @@ proxy-groups:
     tolerance: 50
     icon: https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/SG.png
     use:
-      - GuanXi
-      - HuiBQ
+      - 🧱翻墙社
+      - 🦠特洛伊
     proxies:
       - DIRECT
   - name: 🇪🇺 欧盟节点
@@ -343,8 +343,8 @@ proxy-groups:
     tolerance: 50
     icon: https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/EU.png
     use:
-      - GuanXi
-      - HuiBQ
+      - 🧱翻墙社
+      - 🦠特洛伊
     proxies:
       - DIRECT
    
