@@ -1,17 +1,13 @@
 ! Title: AdRules 秋風がく山道 DNS List
-! Homepage: https://🫧焦糖.先生ઇଓ.net.cn
+! Homepage: https://`||叚娤.倖鍢.net.cn
 ! Powerd by 🫧焦糖.先生ઇଓ
 ! Expires: irregularly (update frequency)
 ! Description: Use Adblock syntax to fight against various advertising SDKs in Android applications from the network level, prevent them from loading.
 ! ------------------------------------
-! Update Date: 2024-11-08
+! Update Date: 2024-11-15
 ! Total lines: 698
-! Version: 1.6.0
+! Version: 1.6.1
 
-127.0.0.1 116.205.193.167
-127.0.0.1 123.56.23.22
-127.0.0.1 182.254.116.116
-127.0.0.1 203.205.137.89
 ||1010pic.com^
 ||16dd-advertise-1252317822.file.myqcloud.com^
 ||16dd-advertise-1252317822.image.myqcloud.com^
@@ -269,6 +265,7 @@
 ||dxp.baidu.com^
 ||e.ad.xiaomi.com^
 ||eclick.baidu.com^
+||edge.ads.twitch.tv^
 ||ef-dongfeng.tanx.com^
 ||entry.baidu.com^
 ||errlog.umeng.com^
@@ -492,6 +489,7 @@
 ||roi.soulapp.cn^
 ||rpt.gdt.qq.com^
 ||rtb.voiceads.cn^
+||s.amazon-adsystem.com^
 ||s1.qq.com^
 ||s2.qq.com^
 ||s3.qq.com^
