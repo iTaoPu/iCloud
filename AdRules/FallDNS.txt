@@ -5,7 +5,7 @@
 ! Description: Use Adblock syntax to fight against various advertising SDKs in Android applications from the network level, prevent them from loading.
 ! ------------------------------------
 ! Update Date: 2024-11-15
-! Total lines: 698
+! Total lines: 696
 ! Version: 1.6.1
 
 ||1010pic.com^
