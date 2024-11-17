@@ -8,7 +8,6 @@
 ! Update Date: 2024-11-05
 ! Total lines: 3
 ! Version: 0.0.1
-  
 ||*.google.com^
 ||*.googleusercontent.com^ 
 ||*.googleapis.com^
