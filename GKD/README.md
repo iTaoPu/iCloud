@@ -39,9 +39,9 @@
 |-----|------|----|------|---------|-------|-------|
 |AIsouler的GKD订阅|666|AIsouler|从导入链接更新|[AIsouler](https://github.com/AIsouler/GKD_subscription)|[链接地址](https://raw.gitmirror.com/AIsouler/GKD_subscription/main/dist/AIsouler_gkd.json5)|仍在维护|
 |Adpro的GKD订阅|825|Adpro-Team|从导入链接更新|[Adpro-Team](https://github.com/Adpro-Team/GKD_subscription)|[链接地址](https://raw.gitmirror.com/Adpro-Team/GKD_subscription/main/dist/Adpro_gkd.json5)|停止维护|
-|奥怪的GKD订阅|86|aoguai|从导入链接更新|[aoguai](https://github.com/aoguai/subscription)|[链接地址](https://raw.gitmirror.com/aoguai/subscription/custom/dist/aoguai_gkd.json5)|仍在维护|
+|奥怪的GKD订阅|86|aoguai|从导入链接更新|[aoguai](https://github.com/aoguai/subscription)|[链接地址](https://raw.gitmirror.com/aoguai/subscription/custom/dist/aoguai_gkd.json5)|停止维护|
 |YaChengMu的GKD订阅|303|YaChengMu|由订阅内部规定链接更新|[YaChengMu](https://github.com/YaChengMu/subscription)|[链接地址](https://raw.gitmirror.com/YaChengMu/subscription/main/dist/gkd.json5)|仍在维护|
-|田所浩二的GKD订阅|114514|たどころ こうじ|由订阅内部规定链接更新|[gkd-sub-repo](https://github.com/gkd-sub-repo/114514_subscription)|[链接地址](https://raw.gitmirror.com/gkd-sub-repo/114514_subscription/main/dist/114514_gkd.json5)|仍在维护|
+|田所浩二的GKD订阅|114514|たどころ こうじ|由订阅内部规定链接更新|[gkd-sub-repo](https://github.com/gkd-sub-repo/114514_subscription)|[链接地址](https://raw.gitmirror.com/gkd-sub-repo/114514_subscription/main/dist/114514_gkd.json5)|停止维护|
 |梦念逍遥の订阅|1|梦念逍遥|由订阅内部规定链接更新|[MengNianxiaoyao](https://github.com/MengNianxiaoyao/gkd-subscription/tree/main)|[链接地址](https://raw.gitmirror.com/MengNianxiaoyao/gkd-subscription/main/dist/gkd.json5)|仍在维护|
 |甘霖的GKD订阅|233|ganlinte|由订阅内部规定链接更新|[ganlinte](https://github.com/ganlinte/GKD-subscription/tree/main)|[链接地址](https://raw.gitmirror.com/GKD-subscription/main/dist/ganlin_gkd.json5)|仍在维护|
 |Jamison Leo的GKD订阅|1025|Jamison Leo|由订阅内部规定链接更新|[Jamison Leo](https://github.com/JamisonLeo/GKD-subscription)|[链接地址](https://raw.gitmirror.com/JamisonLeo/GKD-subscription/main/subscription.json)|停止维护|
