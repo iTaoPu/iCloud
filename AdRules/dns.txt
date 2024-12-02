@@ -4,9 +4,9 @@
 ! Expires: irregularly (update frequency)
 ! Description: 记忆像是倒在掌心的水，不论你摊开还是紧握，终究还是会从指缝中一滴一滴流淌干净。
 ! ------------------------------------
-! Version: 0.0.1
+! Version: 0.0.2
 ! Update Date: 2024-11-05
-! Total lines: 3
+! Total lines: 12
 
 #Google
 ||*.google.com^
