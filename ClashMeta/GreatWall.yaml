@@ -63,16 +63,20 @@ dns:
   nameserver:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
+    - https://doh.360.cn/dns-query
   proxy-server-nameserver:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
+    - https://doh.360.cn/dns-query
   nameserver-policy:
-    "geosite:private,cn,geolocation-cn":
+    "geosite:cn,private":
       - https://dns.alidns.com/dns-query
       - https://doh.pub/dns-query
-    "geosite:google,youtube,telegram,gfw,geolocation-!cn:":
+      - https://doh.360.cn/dns-query
+    "geosite:geolocation-!cn":
       - "https://dns.cloudflare.com/dns-query"
       - "https://dns.google/dns-query"
+      - "https://doh.opendns.com/dns-query"
 
 proxy-providers:
   🦥萬里長城:
