@@ -8,19 +8,19 @@ DNS, IPv6	2a10:50c0::ad1:ff 和 2a10:50c0::ad2:ff
 DNS-over-HTTPS	https://dns.adguard-dns.com/dns-query	
 DNS-over-TLS	tls://dns.adguard-dns.com	
 DNS-over-QUIC	quic://dns.adguard-dns.com	
-DNSCrypt, IPv4	提供者: 2.dnscrypt.default.ns1.adguard.com IP: 94.140.14.14:5443	添加到 AdGuard
-DNSCrypt, IPv6	提供者: 2.dnscrypt.default.ns1.adguard.com IP: [2a10:50c0::ad1:ff]:5443	添加到 AdGuard
+DNSCrypt, IPv4	提供者: 2.dnscrypt.default.ns1.adguard.com IP: 94.140.14.14:5443	
+DNSCrypt, IPv6	提供者: 2.dnscrypt.default.ns1.adguard.com IP: [2a10:50c0::ad1:ff]:5443	
 家庭保护
 以下服务器提供默认功能 + 禁止成人网站 + 安全搜索功能。
 
 协议	地址	
-DNS, IPv4	94.140.14.15 和 94.140.15.16	添加到 AdGuard, 添加到 AdGuard VPN
+DNS, IPv4	94.140.14.15 和 94.140.15.16	
 DNS, IPv6	2a10:50c0::bad1:ff 和 2a10:50c0::bad2:ff	
 DNS-over-HTTPS	https://family.adguard-dns.com/dns-query	
 DNS-over-TLS	tls://family.adguard-dns.com	
 DNS-over-QUIC	quic://family.adguard-dns.com	
-DNSCrypt, IPv4	提供者：2.dnscrypt.family.ns1.adguard.com IP：94.140.14.15:5443	添加到 AdGuard
-DNSCrypt, IPv6	提供者: 2.dnscrypt.family.ns1.adguard.com IP: [2a10:50c0::bad1:ff]:5443	添加到 AdGuard
+DNSCrypt, IPv4	提供者：2.dnscrypt.family.ns1.adguard.com IP：94.140.14.15:5443	
+DNSCrypt, IPv6	提供者: 2.dnscrypt.family.ns1.adguard.com IP: [2a10:50c0::bad1:ff]:5443	
 无过滤
 以下服务器都能提供安全可靠的连接，但与「标准」和「家庭保护」服务器不同，它们无法过滤任何内容。
 
@@ -30,8 +30,8 @@ DNS, IPv6	2a10:50c0::bad1:ff 和 2a10:50c0::bad2:ff
 DNS-over-HTTPS	https://unfiltered.adguard-dns.com/dns-query	
 DNS-over-TLS	tls://unfiltered.adguard-dns.com	
 DNS-over-QUIC	quic://unfiltered.adguard-dns.com	
-DNSCrypt, IPv4	提供者: 2.dnscrypt.unfiltered.ns1.adguard.com IP: 94.140.14.140:5443	添加到AdGuard
-DNSCrypt, IPv6	提供者：2.dnscrypt.unfiltered.ns1.adguard.com IP：[2a10:50c0::1:ff]:5443	添加到AdGuard
+DNSCrypt, IPv4	提供者: 2.dnscrypt.unfiltered.ns1.adguard.com IP: 94.140.14.140:5443	
+DNSCrypt, IPv6	提供者：2.dnscrypt.unfiltered.ns1.adguard.com IP：[2a10:50c0::1:ff]:5443	
 Ali DNS
 Ali DNS 是免费的 DNS 递归解析系统，致力于为广大互联网用户提供“快速”、“稳定”、“安全”的 DNS 递归解析服务。 它包括 AliGuard 多种攻击防御策略，可以保护用户免受各种攻击和威胁。
 
@@ -40,7 +40,7 @@ DNS, IPv4	223.5.5.5 和 223.6.6.6
 DNS, IPv6	2400:3200::1 和 2400:3200:baba::1	
 DNS-over-HTTPS	https://dns.alidns.com/dns-query	
 DNS-over-TLS	tls://dns.alidns.com	
-DNS-over-QUIC	quic://dns.alidns.com:853	添加到 AdGuard, 添加到 AdGuard VPN
+DNS-over-QUIC	quic://dns.alidns.com:853	
 BebasID 提供的 BebasDNS
 BebasDNS 是一个位于印度尼西亚，支持 OpenNIC 域名的免费中立公共 DNS 解析器。 它由印度尼西亚网络中立社区 (Komunitas Internet Netral Indonesia, KINI) 创建，旨在为印尼用户提供免费的中立互联网连接。
 
@@ -50,7 +50,7 @@ BebasDNS 是一个位于印度尼西亚，支持 OpenNIC 域名的免费中立�
 协议	地址	
 DNS-over-HTTPS	https://dns.bebasid.com/dns-query	
 DNS-over-TLS	tls://dns.bebasid.com:853	
-DNSCrypt, IPv4	提供商：2.dnscrypt-cert.dns.bebasid.com IP 地址：103.87.68.194:8443	添加到 AdGuard
+DNSCrypt, IPv4	提供商：2.dnscrypt-cert.dns.bebasid.com IP 地址：103.87.68.194:8443	
 无过滤
 该变体无法过滤任何内容。
 
@@ -69,7 +69,7 @@ DNS-over-TLS	tls://antivirus.bebasid.com:853
 协议	地址	
 DNS-over-HTTPS	https://internetsehat.bebasid.com/dns-query	
 DNS-over-TLS	tls://internetsehat.bebasid.com:853	
-DNSCrypt, IPv4	提供商：2.dnscrypt-cert.internetsehat.bebasid.com IP 地址：103.87.68.196:8443	添加到 AdGuard
+DNSCrypt, IPv4	提供商：2.dnscrypt-cert.internetsehat.bebasid.com IP 地址：103.87.68.196:8443	
 具有广告过滤功能的家庭模式
 这是带有广告拦截器的 BebasDNS 家庭模式变体。
 
@@ -111,8 +111,8 @@ Cisco OpenDNS 是一个通过整合内容过滤和网络钓鱼防护等功能来
 协议	地址	
 DNS, IPv4	208.67.222.222 和 208.67.220.220	
 DNS, IPv6	2620:119:35::35 和 2620:119:53::53	
-DNSCrypt, IPv4	提供者：2.dnscrypt-cert.opendns.com IP 地址：208.67.220.220	添加到 AdGuard
-DNSCrypt, IPv6	提供者：2.dnscrypt-cert.opendns.com IP 地址：[2620:0:ccc::2]	添加到 AdGuard
+DNSCrypt, IPv4	提供者：2.dnscrypt-cert.opendns.com IP 地址：208.67.220.220	
+DNSCrypt, IPv6	提供者：2.dnscrypt-cert.opendns.com IP 地址：[2620:0:ccc::2]	
 DNS-over-HTTPS	https://doh.opendns.com/dns-query	
 DNS-over-TLS	tls://dns.opendns.com	
 FamilyShield
@@ -120,7 +120,7 @@ FamilyShield
 
 协议	地址	
 DNS, IPv4	208.67.222.123 和 208.67.220.123	
-DNSCrypt, IPv4	提供者：2.dnscrypt-cert.opendns.com IP 地址：208.67.220.123	添加到 AdGuard
+DNSCrypt, IPv4	提供者：2.dnscrypt-cert.opendns.com IP 地址：208.67.220.123	
 DNS-over-HTTPS	https://doh.familyshield.opendns.com/dns-query	
 DNS-over-TLS	tls://familyshield.opendns.com	
 Sandbox
@@ -143,8 +143,8 @@ CleanBrowsing 是一个提供私人定制过滤的 DNS 服务。 这项服务提
 协议	地址	
 DNS, IPv4	185.228.168.168 和 185.228.169.168	
 DNS, IPv6	2a0d:2a00:1:: 和 2a0d:2a00:2::	
-DNSCrypt, IPv4	提供者：cleanbrowsing.org IP 地址：185.228.168.168:8443	添加到 AdGuard
-DNSCrypt, IPv6	提供者：cleanbrowsing.org IP 地址：[2a0d:2a00:1::]:8443	添加到 AdGuard
+DNSCrypt, IPv4	提供者：cleanbrowsing.org IP 地址：185.228.168.168:8443	
+DNSCrypt, IPv6	提供者：cleanbrowsing.org IP 地址：[2a0d:2a00:1::]:8443	
 DNS-over-HTTPS	https://doh.cleanbrowsing.org/doh/family-filter/	
 DNS-over-TLS	tls://family-filter-dns.cleanbrowsing.org	
 成人过滤器
@@ -153,8 +153,8 @@ DNS-over-TLS	tls://family-filter-dns.cleanbrowsing.org
 协议	地址	
 DNS, IPv4	185.228.168.10 和 185.228.169.11	
 DNS, IPv6	2a0d:2a00:1::1 和 2a0d:2a00:2::1	
-DNSCrypt, IPv4	提供者：cleanbrowsing.org IP 地址：185.228.168.10:8443	添加到 AdGuard
-DNSCrypt, IPv6	提供者：cleanbrowsing.org IP 地址：[2a0d:2a00:1::1]:8443	添加到 AdGuard
+DNSCrypt, IPv4	提供者：cleanbrowsing.org IP 地址：185.228.168.10:8443	
+DNSCrypt, IPv6	提供者：cleanbrowsing.org IP 地址：[2a0d:2a00:1::1]:8443	
 DNS-over-HTTPS	https://doh.cleanbrowsing.org/doh/adult-filter/	
 DNS-over-TLS	tls://adult-filter-dns.cleanbrowsing.org	
 安全过滤器
@@ -174,7 +174,7 @@ DNS, IPv4	1.1.1.1 和 1.0.0.1
 DNS, IPv6	2606:4700:4700::1111 和 2606:4700:4700::1001	
 DNS-over-HTTPS, IPv4	https://dns.cloudflare.com/dns-query	
 DNS-over-HTTPS, IPv6	https://dns.cloudflare.com/dns-query	
-DNS-over-TLS	tls://one.one.one.one	添加到 AdGuard, 添加到 AdGuard VPN
+DNS-over-TLS	tls://one.one.one.one	
 仅阻止恶意软件
 协议	地址	
 DNS, IPv4	1.1.1.2 和 1.0.0.2	
@@ -192,7 +192,7 @@ Comodo Secure DNS 是一种域名解析服务，通过全球 DNS 服务器网络
 
 协议	地址	
 DNS, IPv4	8.26.56.26 和 8.20.247.20	
-DNSCrypt, IPv4	提供者：2.dnscrypt-cert.shield-2.dnsbycomodo.com IP 地址：8.20.247.2	添加到 AdGuard
+DNSCrypt, IPv4	提供者：2.dnscrypt-cert.shield-2.dnsbycomodo.com IP 地址：8.20.247.2	
 ControlD
 ControlD 是具有代理功能的可定制 DNS 服务。 这意味着它不仅能屏蔽各种内容（广告、色情等），还能解除对网站和服务的拦截。
 
@@ -221,10 +221,10 @@ DeCloudUs DNS
 DeCloudUs DNS 是一项 DNS 服务，让用户阻止任何想要的内容，同时默认保护用户和家人免受广告、跟踪器、恶意软件、网络钓鱼、恶意网站等的侵害。
 
 协议	地址	
-DNSCrypt, IPv4	供应商：2.dnscrypt-cert.DeCloudUs-test IP 地址:78.47.212.211:9443	添加到 AdGuard
-DNSCrypt, IPv6	供应商：2.dnscrypt-cert.DeCloudUs-test IP 地址: [2a01:4f8:13a:250b::30]:9443	添加到 AdGuard
-DNS-over-HTTPS	https://dns.decloudus.com/dns-query	添加到 AdGuard, 添加到 AdGuard VPN
-DNS-over-TLS	tls://dns.decloudus.com	添加到 AdGuard, 添加到 AdGuard VPN
+DNSCrypt, IPv4	供应商：2.dnscrypt-cert.DeCloudUs-test IP 地址:78.47.212.211:9443	
+DNSCrypt, IPv6	供应商：2.dnscrypt-cert.DeCloudUs-test IP 地址: [2a01:4f8:13a:250b::30]:9443	
+DNS-over-HTTPS	https://dns.decloudus.com/dns-query	
+DNS-over-TLS	tls://dns.decloudus.com	
 DNS Privacy
 促进、实施和部署 DNS Privacy 的协作开放项目。
 
@@ -259,7 +259,7 @@ DNS.SB 提供免费的 DNS 服务，无日志记录，启用 DNSSEC。
 DNS, IPv4	185.222.222.222 和 45.11.45.11	
 DNS, IPv6	2a09:: 和 2a11::	
 DNS-over-HTTPS	https://doh.dns.sb/dns-query	
-DNS-over-TLS	tls://dot.sb	添加到 AdGuard, 添加到 AdGuard VPN
+DNS-over-TLS	tls://dot.sb	
 DNSPod Public DNS+
 DNSPod Public DNS+ 是一家拥有多年域名解析服务开发经验的隐私友好型 DNS 提供商，旨在为用户提供更快速、准确、稳定的递归解析服务。
 
@@ -303,43 +303,43 @@ Hurricane Electric Public Recursor
 Hurricane Electric Public Recursor 是 Hurricane Electric 提供的一项免费的替代 DNS 服务，它采用了 Anycast 技术。
 
 协议	地址	
-DNS, IPv4	74.82.42.42	添加到 AdGuard, 添加到 AdGuard VPN
-DNS, IPv6	2001:470:20::2	添加到 AdGuard, 添加到 AdGuard VPN
-DNS-over-HTTPS	https://ordns.he.net/dns-query	添加到 AdGuard, 添加到 AdGuard VPN
-DNS-over-TLS	tls://ordns.he.net	添加到 AdGuard, 添加到 AdGuard VPN
+DNS, IPv4	74.82.42.42	
+DNS, IPv6	2001:470:20::2	
+DNS-over-HTTPS	https://ordns.he.net/dns-query	
+DNS-over-TLS	tls://ordns.he.net	
 Mullvad
 Mullvad 提供具有 QNAME 最小化功能的可公开访问 DNS，端点位于德国、新加坡、瑞典、英国和美国 (达拉斯和纽约)。
 
 无过滤
 协议	地址	
-DNS-over-HTTPS	https://dns.mullvad.net/dns-query	添加到 AdGuard, 添加到 AdGuard VPN
-DNS-over-TLS	tls://dns.mullvad.net	添加到 AdGuard, 添加到 AdGuard VPN
+DNS-over-HTTPS	https://dns.mullvad.net/dns-query	
+DNS-over-TLS	tls://dns.mullvad.net	
 广告拦截
 协议	地址	
-DNS-over-HTTPS	https://adblock.dns.mullvad.net/dns-query	添加到 AdGuard, 添加到 AdGuard VPN
-DNS-over-TLS	tls://adblock.dns.mullvad.net	添加到 AdGuard, 添加到 AdGuard VPN
+DNS-over-HTTPS	https://adblock.dns.mullvad.net/dns-query	
+DNS-over-TLS	tls://adblock.dns.mullvad.net	
 广告 + 恶意软件拦截
 协议	地址	
-DNS-over-HTTPS	https://base.dns.mullvad.net/dns-query	添加到 AdGuard, 添加到 AdGuard VPN
-DNS-over-TLS	tls://base.dns.mullvad.net	添加到 AdGuard, 添加到 AdGuard VPN
+DNS-over-HTTPS	https://base.dns.mullvad.net/dns-query	
+DNS-over-TLS	tls://base.dns.mullvad.net	
 广告 + 恶意软件 + 社交媒体拦截
 协议	地址	
-DNS-over-HTTPS	https://extended.dns.mullvad.net/dns-query	添加到 AdGuard, 添加到 AdGuard VPN
-DNS-over-TLS	tls://extended.dns.mullvad.net	添加到 AdGuard, 添加到 AdGuard VPN
+DNS-over-HTTPS	https://extended.dns.mullvad.net/dns-query	
+DNS-over-TLS	tls://extended.dns.mullvad.net	
 广告 + 恶意软件 + 成人 + 赌博拦截
 协议	地址	
-DNS-over-HTTPS	https://family.dns.mullvad.net/dns-query	添加到 AdGuard, 添加到 AdGuard VPN
-DNS-over-TLS	tls://family.dns.mullvad.net	添加到 AdGuard, 添加到 AdGuard VPN
+DNS-over-HTTPS	https://family.dns.mullvad.net/dns-query	
+DNS-over-TLS	tls://family.dns.mullvad.net	
 广告 + 恶意软件 + 成人 + 赌博 + 社交媒体拦截
 协议	地址	
-DNS-over-HTTPS	https://all.dns.mullvad.net/dns-query	添加到 AdGuard, 添加到 AdGuard VPN
-DNS-over-TLS	tls://all.dns.mullvad.net	添加到 AdGuard, 添加到 AdGuard VPN
+DNS-over-HTTPS	https://all.dns.mullvad.net/dns-query	
+DNS-over-TLS	tls://all.dns.mullvad.net	
 Nawala Childprotection DNS
 Nawala Childprotection DNS 是一种任播互联网过滤系统，保护儿童免受不当网站和虐待内容的侵害。
 
 协议	地址	
 DNS, IPv4	180.131.144.144 和 180.131.145.145	
-DNSCrypt, IPv4	提供商： 2.dnscrypt-cert.nawala.id IP 地址： 180.131.144.144	添加到 AdGuard
+DNSCrypt, IPv4	提供商： 2.dnscrypt-cert.nawala.id IP 地址： 180.131.144.144	
 Neustar Recursive DNS
 Neustar Recursive DNS 是一项免费的基于云的递归 DNS 服务，通过内置的安全和威胁情报，快速可靠地访问网站和在线应用程序。
 
@@ -391,14 +391,14 @@ Adaptive Filtering (ADA)
 建议大多数用户使用，过滤功能非常灵活，可拦截大多数广告网络、广告跟踪、恶意软件和网络钓鱼域。
 
 协议	地址	
-DNS-over-HTTPS	https://ada.openbld.net/dns-query	添加到 AdGuard
-DNS-over-TLS	tls://ada.openbld.net	添加到 AdGuard
+DNS-over-HTTPS	https://ada.openbld.net/dns-query	
+DNS-over-TLS	tls://ada.openbld.net	
 Strict Filtering (RIC)
 更严格的过滤策略，包括拦截广告、营销、跟踪器、点击诱饵、Coinhive、恶意域名和钓鱼域名。
 
 协议	地址	
-DNS-over-HTTPS	https://ric.openbld.net/dns-query	添加到 AdGuard
-DNS-over-TLS	tls://ric.openbld.net	添加到 AdGuard
+DNS-over-HTTPS	https://ric.openbld.net/dns-query	
+DNS-over-TLS	tls://ric.openbld.net	
 Quad9 DNS
 Quad9 DNS 是一个免费、递归、任意播放的 DNS 平台，提供高性能、隐私和安全保护，免受钓鱼和间谍软件的攻击。 Quad9 服务器不提供审查组件。
 
@@ -408,8 +408,8 @@ Quad9 DNS 是一个免费、递归、任意播放的 DNS 平台，提供高性�
 协议	地址	
 DNS, IPv4	9.9.9.9 和 149.112.112.112	
 DNS, IPv6	2620:fe::fe IP 地址：2620:fe::fe:9	
-DNSCrypt, IPv4	提供者：2.dnscrypt-cert.quad9.net IP 地址：9.9.9.9:8443	添加到 AdGuard
-DNSCrypt, IPv6	提供者：2.dnscrypt-cert.quad9.net IP 地址：[2620:fe::fe]: 8443	添加到 AdGuard
+DNSCrypt, IPv4	提供者：2.dnscrypt-cert.quad9.net IP 地址：9.9.9.9:8443	
+DNSCrypt, IPv6	提供者：2.dnscrypt-cert.quad9.net IP 地址：[2620:fe::fe]: 8443	
 DNS-over-HTTPS	https://dns.quad9.net/dns-query	
 DNS-over-TLS	tls://dns.quad9.net	
 不安全
@@ -418,8 +418,8 @@ DNS-over-TLS	tls://dns.quad9.net
 协议	地址	
 DNS, IPv4	9.9.9.10 和 149.112.112.10	
 DNS, IPv6	2620:fe::10 IP 地址：2620:fe::fe:10	
-DNSCrypt, IPv4	提供者：2.dnscrypt-cert.quad9.net IP 地址：9.9.9.10:8443	添加到 AdGuard
-DNSCrypt, IPv6	提供者： 2.dnscrypt-cert.quad9.net IP 地址：[2620:fe::fe:10]:8443	添加到 AdGuard
+DNSCrypt, IPv4	提供者：2.dnscrypt-cert.quad9.net IP 地址：9.9.9.10:8443	
+DNSCrypt, IPv6	提供者： 2.dnscrypt-cert.quad9.net IP 地址：[2620:fe::fe:10]:8443	
 DNS-over-HTTPS	https://dns10.quad9.net/dns-query	
 DNS-over-TLS	tls://dns10.quad9.net	
 ECS 支持
@@ -428,8 +428,8 @@ EDNS Client Subnet 是一种在发送到权威 DNS 服务器的请求中包含�
 协议	地址	
 DNS, IPv4	9.9.9.11 和 149.112.112.11	
 DNS, IPv6	2620:fe::11 IP 地址：2620:fe::fe:11	
-DNSCrypt, IPv4	提供者：2.dnscrypt-cert.quad9.net IP 地址：9.9.9.11:8443	添加到 AdGuard
-DNSCrypt, IPv6	提供商：2.dnscrypt-cert.quad9.net IP 地址：[2620:fe::fe]: 8443	添加到 AdGuard
+DNSCrypt, IPv4	提供者：2.dnscrypt-cert.quad9.net IP 地址：9.9.9.11:8443	
+DNSCrypt, IPv6	提供商：2.dnscrypt-cert.quad9.net IP 地址：[2620:fe::fe]: 8443	
 DNS-over-HTTPS	https://dns11.quad9.net/dns-query	
 DNS-over-TLS	tls://dns11.quad9.net	
 Quadrant Security
@@ -467,7 +467,7 @@ Safe Surfer 是一项 DNS 服务，可阻止 50 多个类别，例如色情、�
 
 协议	地址	
 DNS, IPv4	104.155.237.225 和 104.197.28.121	
-DNSCrypt, IPv4	提供商：2.dnscrypt-cert.safesurfer.co.nz IP 地址：104.197.28.121	添加到 AdGuard
+DNSCrypt, IPv4	提供商：2.dnscrypt-cert.safesurfer.co.nz IP 地址：104.197.28.121	
 360 Secure DNS
 360 Secure DNS 是行业领先的递归 DNS 服务，具有高级网络安全威胁防护。
 
@@ -486,8 +486,8 @@ Wikimedia DNS
 Wikimedia DNS 是由 Wikimedia 基金会运营的缓存、递归、公共的 DoH 和 DoT 解析器服务。它由 Wikimedia 基金会站点可靠性工程 (流量) 团队在所有六个 Wikimedia 数据中心上运行和管理，并采用了 Anycast 技术。
 
 协议	地址	
-DNS-over-HTTPS	https://wikimedia-dns.org/dns-query	添加到 AdGuard, 添加到 AdGuard VPN
-DNS-over-TLS	主机名: wikimedia-dns.org IPv4: 185.71.138.138 IPv6: 2001:67c:930::1	添加到 AdGuard, 添加到 AdGuard VPN
+DNS-over-HTTPS	https://wikimedia-dns.org/dns-query	
+DNS-over-TLS	主机名: wikimedia-dns.org IPv4: 185.71.138.138 IPv6: 2001:67c:930::1	
 Regional Resolvers
 Regional DNS 解析器通常专注于特定地理区域，为这些区域的用户提供优化的性能。 这些解析器通常由非营利组织、本地 ISP 或其他实体运营。
 
@@ -533,8 +533,8 @@ Comss.one DNS
 Comss.one DNS 是一个快速且安全的 DNS 服务，它能保护用户免受广告、跟踪和网络钓鱼。
 
 协议	地址	
-DNS-over-HTTPS	https://dns.controld.com/comss	添加到 AdGuard, 添加到 AdGuard VPN
-DNS-over-TLS	tls://comss.dns.controld.com	添加到 AdGuard, 添加到 AdGuard VPN
+DNS-over-HTTPS	https://dns.controld.com/comss	
+DNS-over-TLS	tls://comss.dns.controld.com	
 DNS-over-QUIC	quic://comss.dns.controld.com	
 CZ.NIC ODVR
 CZ.NIC ODVR CZ.NIC ODVR 是开放式的 DNSSEC 验证解析器。 CZ.NIC 既不收集任何个人数据，也不在设备发送个人数据的页面上收集信息。
@@ -558,8 +558,8 @@ DNS-over-HTTPS	https://dns-doh.dnsforfamily.com/dns-query
 DNS-over-TLS	tls://dns-dot.dnsforfamily.com	
 DNS, IPv4	94.130.180.225 和 78.47.64.161	
 DNS, IPv6	2a01:4f8:1c0c:40db::1 和 2a01:4f8:1c17:4df8::1	
-DNSCrypt, IPv4	提供商：dnsforfamily.com IP 地址：94.130.180.225	添加到 AdGuard
-DNSCrypt, IPv6	提供商： 1.dnsforfamily.com IP 地址：[2a01:4f8:1c0c:40db::1]	添加到 AdGuard
+DNSCrypt, IPv4	提供商：dnsforfamily.com IP 地址：94.130.180.225	
+DNSCrypt, IPv6	提供商： 1.dnsforfamily.com IP 地址：[2a01:4f8:1c0c:40db::1]	
 Fondation Restena DNS
 Restena DNS 服务器由 Restena Foundation 提供。
 
@@ -708,13 +708,13 @@ Arapurayil 是托管在印度孟买的个人 DNS 服务。
 无日志 | 过滤广告、跟踪器、网络钓鱼等 | DNSSEC | QNAME 最小化 | 无 EDNS 客户端子网
 
 协议	地址	
-DNSCrypt, IPv4	主机：2.dnscrypt-cert.dns.arapurayil.com IP 地址：3.7.156.128	添加到 AdGuard
+DNSCrypt, IPv4	主机：2.dnscrypt-cert.dns.arapurayil.com IP 地址：3.7.156.128	
 DNS-over-HTTPS	主机：https://dns.arapurayil.com/dns-query	
 Captnemo DNS
 Captnemo DNS 是运行在 Digital Ocean droplet BLR1 区域中的服务器。 由 Abhay Rana（又名 Nemo）维护。
 
 协议	地址	
-DNSCrypt, IPv4	提供商：2.dnscrypt-cert.captnemo.in IP 地址：139.59.48.222:4434	添加到 AdGuard
+DNSCrypt, IPv4	提供商：2.dnscrypt-cert.captnemo.in IP 地址：139.59.48.222:4434	
 Dandelion Sprout 的官方 DNS 服务器
 Dandelion Sprout 的官方 DNS 服务器是托管在挪威特隆赫姆的个人 DNS 服务，使用 AdGuard Home 基础设施。
 
@@ -747,14 +747,14 @@ FFMUC 由 Freifunk Mnchen 提供的免费 DNS 服务器。
 协议	地址	
 DNS-over-TLS, IPv4	主机名：tls://dot.ffmuc.net	
 DNS-over-HTTPS, IPv4	主机名：https://doh.ffmuc.net/dns-query	
-DNSCrypt, IPv4	提供商：2.dnscrypt-cert.ffmuc.net IP 地址：5.1.66.255:8443	添加到 AdGuard
-DNSCrypt, IPv6	供应商：2.dnscrypt-cert.fmuc.net IP 地址: [2001:678:e68:f000::]:8443	添加到 AdGuard
+DNSCrypt, IPv4	提供商：2.dnscrypt-cert.ffmuc.net IP 地址：5.1.66.255:8443	
+DNSCrypt, IPv6	供应商：2.dnscrypt-cert.fmuc.net IP 地址: [2001:678:e68:f000::]:8443	
 fvz DNS
 fvz DNS 是 Fusl 的公共主要 OpenNIC Tier2 任播 DNS 解析器。
 
 协议	地址	
-DNSCrypt, IPv4	提供商： 2.dnscrypt-cert.dnsrec.meo.ws IP 地址： 185.121.177.177:5353	添加到 AdGuard
-DNSCrypt, IPv4	提供商：2.dnscrypt-cert.dnsrec.meo.ws IP 地址： 169.239.202.202:5353	添加到 AdGuard
+DNSCrypt, IPv4	提供商： 2.dnscrypt-cert.dnsrec.meo.ws IP 地址： 185.121.177.177:5353	
+DNSCrypt, IPv4	提供商：2.dnscrypt-cert.dnsrec.meo.ws IP 地址： 169.239.202.202:5353	
 ibksturm DNS
 由 ibksturm 提供的 ibksturm DNS 测试服务器。 支持 OPENNIC、DNSSEC、无过滤、无日志记录。
 
@@ -762,7 +762,7 @@ ibksturm DNS
 DNS-over-TLS, IPv4	主机名：tls://ibksturm.synology.me IP 地址：213.196.191.96	
 DNS-over-QUIC, IPv4	主机名：quic://ibksturm.synology.me IP 地址：213.196.191.96	
 DNS-over-HTTPS, IPv4	主机名：https://ibksturm.synology.me/dns-query IP 地址：213.196.191.96	
-DNSCrypt, IPv4	提供商：2.dnscrypt-cert.ibksturm IP 地址：213.196.191.96:8443	添加到 AdGuard
+DNSCrypt, IPv4	提供商：2.dnscrypt-cert.ibksturm IP 地址：213.196.191.96:8443	
 Lelux DNS
 Lelux.fi 由 Elias Ojala 运营，芬兰。
 
@@ -803,8 +803,8 @@ OSZX DNS
 协议	地址	
 DNS, IPv4	51.38.83.141	
 DNS, IPv6	2001:41d0:801:2000::d64	
-DNSCrypt, IPv4	提供商： 2.dnscrypt-cert.oszx.co IP 地址： 51.38.83.141：5353	添加到 AdGuard
-DNSCrypt, IPv6	提供商：2.dnscrypt-cert.oszx.co IP 地址：[2001:41d0:801:2000::d64]:5353	添加到 AdGuard
+DNSCrypt, IPv4	提供商： 2.dnscrypt-cert.oszx.co IP 地址： 51.38.83.141：5353	
+DNSCrypt, IPv6	提供商：2.dnscrypt-cert.oszx.co IP 地址：[2001:41d0:801:2000::d64]:5353	
 DNS-over-HTTPS	https://dns.oszx.co/dns-query	
 DNS-over-TLS	tls://dns.oszx.co	
 PumpleX
@@ -813,8 +813,8 @@ PumpleX
 协议	地址	
 DNS, IPv4	51.38.82.198	
 DNS, IPv6	2001:41d0:801:2000::1b28	
-DNSCrypt, IPv4	提供商：2.dnscrypt-cert.pumplex.com IP 地址：51.38.82.198:5353	添加到 AdGuard
-DNSCrypt, IPv6	提供商：2.dnscrypt-cert.pumplex.com IP 地址：[2001:41d0:801:2000::1b28]:5353	添加到 AdGuard
+DNSCrypt, IPv4	提供商：2.dnscrypt-cert.pumplex.com IP 地址：51.38.82.198:5353	
+DNSCrypt, IPv6	提供商：2.dnscrypt-cert.pumplex.com IP 地址：[2001:41d0:801:2000::1b28]:5353	
 DNS-over-HTTPS	https://dns.pumplex.com/dns-query	
 DNS-over-TLS	tls://dns.pumplex.com	
 Privacy-First DNS
@@ -824,8 +824,8 @@ Privacy-First DNS 拦截超过十四万个广告、广告跟踪、恶意软件�
 协议	地址	位置
 DNS, IPv4	174.138.21.128	
 DNS, IPv6	2400:6180:0:d0::5f6e:4001	
-DNSCrypt, IPv4	提供商：2.dnscrypt-cert.dns.tiar.app IP 地址： 174.138.21.128	添加到 AdGuard
-DNSCrypt, IPv6	提供商：2.dnscrypt-cert.dns.tiar.app IP 地址：[2400:6180:0:d0::5f6e:4001]	添加到 AdGuard
+DNSCrypt, IPv4	提供商：2.dnscrypt-cert.dns.tiar.app IP 地址： 174.138.21.128	
+DNSCrypt, IPv6	提供商：2.dnscrypt-cert.dns.tiar.app IP 地址：[2400:6180:0:d0::5f6e:4001]	
 DNS-over-HTTPS	https://doh.tiarap.org/dns-query （通过第三方缓存）	
 DNS-over-HTTPS	https://doh.tiar.app/dns-query	
 DNS-over-QUIC	quic://doh.tiar.app	
@@ -834,8 +834,8 @@ DNS-over-TLS	tls://dot.tiar.app
 协议	地址	
 DNS, IPv4	172.104.93.80	
 DNS, IPv6	2400:8902::f03c:91ff:feda:c514	
-DNSCrypt, IPv4	提供商：2.dnscrypt-cert.jp.tiar.app IP 地址： 172.104.93.80	添加到 AdGuard
-DNSCrypt, IPv6	提供商：2.dnscrypt-cert.jp.tiar.app IP 地址：[2400:8902::f03c:91ff:feda:c514]	添加到 AdGuard
+DNSCrypt, IPv4	提供商：2.dnscrypt-cert.jp.tiar.app IP 地址： 172.104.93.80	
+DNSCrypt, IPv6	提供商：2.dnscrypt-cert.jp.tiar.app IP 地址：[2400:8902::f03c:91ff:feda:c514]	
 DNS-over-HTTPS	https://jp.tiarap.org/dns-query	
 DNS-over-HTTPS	https://jp.tiar.app/dns-query	
 DNS-over-TLS	tls://jp.tiar.app	
@@ -845,7 +845,7 @@ Seby DNS 是 Sebastian Schmidt 提供的一项注重隐私的 DNS 服务。 无�
 DNS 服务器 1
 协议	地址	
 DNS, IPv4	45.76.113.31	
-DNSCrypt, IPv4	提供商：2.dnscrypt-cert.dns.seby.io IP 地址：45.76.113.31	添加到 AdGuard
+DNSCrypt, IPv4	提供商：2.dnscrypt-cert.dns.seby.io IP 地址：45.76.113.31	
 DNS-over-TLS	tls://dot.seby.io	
 BlackMagicc DNS
 BlackMagicc DNS 是一个位于越南的 DNS 服务器，供个人和小规模使用。 它具有广告拦截、恶意软件/网络钓鱼保护、成人内容过滤和 DNSSEC 验证功能。
