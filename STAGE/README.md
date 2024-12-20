@@ -8,28 +8,34 @@
 |名称|地址|类型|
 | ------------ | ------------ | ------------ |
 |[fanmingming](https://github.com/fanmingming/live "fanmingming")|https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u|IPV6|
-|[YueChan](https://github.com/YueChan/Live "YueChan")|https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u|IPV6|
-|[Kimentanm](https://github.com/Kimentanm/aptv "Kimentanm")|https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u|IPV4/IPV6|
-|[joevess](https://github.com/joevess/IPTV "joevess")|https://raw.githubusercontent.com/joevess/IPTV/main/m3u/iptv.m3u|IPV4|
-|[Ftindy](https://github.com/Ftindy/IPTV-URL "Ftindy")|https://raw.githubusercontent.com/Ftindy/IPTV-URL/main/IPV6.m3u|IPV6|
-|[YanG-1989](https://github.com/YanG-1989/m3u "YanG-1989")|https://tv.iill.top//m3u/Gather|IPV6|
-|[wzsvip](https://github.com/wzsvip/wzsvip.github.io "wzsvip")|https://raw.githubusercontent.com/wzsvip/wzsvip.github.io/main/ipv4.m3u|IPV4|
-|[wzsvip](https://github.com/wzsvip/wzsvip.github.io "wzsvip")|https://raw.githubusercontent.com/wzsvip/wzsvip.github.io/main/ipv6.m3u|IPV6|
-|[ngo5](https://github.com/ngo5/IPTV "ngo5")|https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u|IPV4/IPV6|
+|[suxuang](https://github.com/suxuang/myIPTV "suxuang")|https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv6.m3u|IPV4/IPV6|
+|[YanG-1989](https://github.com/YanG-1989/m3u "YanG-1989")|https://tv.iill.top/m3u/Gather|IPV4/IPV6|
+|[AKTV](https://www.mytvsuper.com.mp "AKTV")|https://www.mytvsuper.com.mp|IPV4/IPV6|
+|[kakaxi-1](https://github.com/kakaxi-1/IPTV "kakaxi-1")|https://raw.githubusercontent.com/kakaxi-1/IPTV/main/ipv6.m3u|IPV6|
+|[vbskycn/iptv](https://github.com/vbskycn/iptv "vbskycn")|https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv6.m3u|IPV6|
+|[yuanzl77](https://github.com/yuanzl77/IPTV "yuanzl77")|https://raw.githubusercontent.com/yuanzl77/IPTV/raw/main/live.m3u|IPV4/IPV6|
+|[lalifeier](https://github.com/lalifeier/IPTV "lalifeier")|https://raw.githubusercontent.com/lalifeier/IPTV/main/m3u/IPTV.m3u|IPV4/IPV6|
+|[kimwang1978](https://github.com/kimwang1978/collect-tv-txt "kimwang1978")|https://raw.githubusercontent.com/kimwang1978/collect-tv-txt/main/live.m3u|IPV4/IPV6|
 
 ## TVBox源
 |名称|地址|类型|
 | ------------ | ------------ | ------------ |
-|[🍙饭太硬.COM]|[http://www.饭太硬.com/tv](http://www.饭太硬.com/tv)|源|
-|[🦸‍♀️XIAOMI.小暴脾气.FUN]|[http://www.mpanso.com/小米/DEMO.json](http://www.mpanso.com/小米/DEMO.json)|源|
+|[🍊橙宝宝.COM]|[http://git.acwing.com/xcz/xcz/-/raw/master/xcz.json](http://git.acwing.com/xcz/xcz/-/raw/master/xcz.json)|源|
+|[🍙饭太硬.NET]|[http://www.饭太硬.net/tv](http://www.饭太硬.net/tv)|源|
+|[🦸‍♀️XIAOMI.小暴脾气.FUN]|[http://mpanso.me/DEMO.json](http://mpanso.me/DEMO.json)|源|
 |[🐈肥猫.COM]|[(http://肥猫.com)](http://肥猫.com)|源|
 |[🔞纯一骚零.TOP]|[https://100km.top/0](https://100km.top/0)|源|
 |[🥑菜妮丝.TOP]|[https://tv.菜妮丝.top](https://tv.菜妮丝.top)|源|
 |[🏓巧技.COM]|[http://cdn.qiaoji8.com/tvbox.json](http://cdn.qiaoji8.com/tvbox.json)|源|
-|[🐮王二小放牛娃.XYZ]|[http://tvbox.王二小放牛娃.xyz](http://tvbox.王二小放牛娃.xyz)|源|
+|[🐮王二小放牛娃.XYZ]|[http://tvbox.王二小放牛娃.top](http://tvbox.王二小放牛娃.top)|源|
 |[🐟摸鱼儿.TOP]|[http://我不是.摸鱼儿.top](http://我不是.摸鱼儿.top)|源|
+|[🦉吃猫的鱼.DEV]|[https://d.kstore.dev/download/7213/吃猫的鱼](https://d.kstore.dev/download/7213/吃猫的鱼)|源|
+|[🦉🍁歐歌.TOP]|[https://tv.nxog.top/m](tv.nxog.top/m)|源|
+|[🍺蛤皮牛爷.IO]|[https://cyao2q.github.io/files/n.json](https://cyao2q.github.io/files/n.json)|源|
+|[🐱喵呜君.GIT]|[https://raw.githubusercontent.com/anaer/Meow/main/meow.json](https://raw.githubusercontent.com/anaer/Meow/main/meow.json)|源|
+|[🍋南风微笑.GIT]|[https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json](https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json)|源|
+|[🧿纳梅根良.GIT]|[https://raw.githubusercontent.com/namegenliang/dy/main/namegen.json](https://raw.githubusercontent.com/namegenliang/dy/main/namegen.json)|源|
 |[🐷猪猪lr.GIT]|[https://raw.githubusercontent.com/yuanzl77/TVBox-url/main/tv.txt](https://raw.githubusercontent.com/yuanzl77/TVBox-url/main/tv.txt)|源|
-|[🐱喵呜.GIT]|[https://raw.githubusercontent.com/anaer/Meow/main/meow.json](https://raw.githubusercontent.com/anaer/Meow/main/meow.json)|源|
 
 本项目不存储任何的流媒体内容，所有的法律责任与后果应由使用者自行承担。
 
