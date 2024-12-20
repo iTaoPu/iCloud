@@ -1,5 +1,6 @@
 {"urls": 
         [
+        {"url":"https://git.acwing.com/xcz/xcz/-/raw/master/xcz.json","name":"🍊橙宝宝.COM"},
         {"url":"http://www.xn--sss604efuw.net/tv","name":"🍙饭太硬.NET"},
         {"url":"https://mpanso.me/DEMO.json","name":"🦸‍♀️XIAOMI.小暴脾气.FUN"},
         {"url":"https://xn--z7x900a.com","name":"🐈肥猫.COM"},
@@ -13,6 +14,7 @@
         {"url":"https://cyao2q.github.io/files/n.json","name":"🍺蛤皮牛爷.GIT"},
         {"url":"https://fastly.jsdelivr.net/gh/anaer/Meow@main/meow.json","name":"🐱喵呜君.GIT"},
         {"url":"https://fastly.jsdelivr.net/gh/yoursmile66/TVBox@main/XC.json","name":"🍋南风微笑.GIT"},
+        {"url":"https://fastly.jsdelivr.net/gh/namegenliang/dy@main/namegen.json","name":"🧿纳梅根良.GIT"},
         {"url":"http://175.178.251.183:6689/tv.txt","name":"🐷猪猪lr.IP"}
         ]
 }
