@@ -9,8 +9,8 @@
 | ------------ | ------------ | ------------ |
 |[fanmingming](https://github.com/fanmingming/live "fanmingming")|https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u|IPV6|
 |[suxuang](https://github.com/suxuang/myIPTV "suxuang")|https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv6.m3u|IPV4/IPV6|
-|[YanG-1989](https://github.com/YanG-1989/m3u "YanG-1989")|https://tv.iill.top/m3u/Gather|IPV4/IPV6|
-|[AKTV](https://www.mytvsuper.com.mp "AKTV")|https://www.mytvsuper.com.mp|IPV4/IPV6|
+|[YanG-1989](https://yang-1989.eu.org "YanG-1989")|https://tv.iill.top/m3u/Gather|IPV4/IPV6|
+|[AKTV](https://www.mytvsuper.com.mp "AKTV")|https://www.mytvsuper.com.mp//m3u/Live.m3u|IPV4/IPV6|
 |[kakaxi-1](https://github.com/kakaxi-1/IPTV "kakaxi-1")|https://raw.githubusercontent.com/kakaxi-1/IPTV/main/ipv6.m3u|IPV6|
 |[vbskycn/iptv](https://github.com/vbskycn/iptv "vbskycn")|https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv6.m3u|IPV6|
 |[yuanzl77](https://github.com/yuanzl77/IPTV "yuanzl77")|https://raw.githubusercontent.com/yuanzl77/IPTV/raw/main/live.m3u|IPV4/IPV6|
