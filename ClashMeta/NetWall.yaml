@@ -81,8 +81,8 @@ dns:
 proxy-providers:
   🧱翻墙社:
     type: http
-    url: "https://url.yuwell.cloudns.biz/GuanXi.yml"
-    path: ./Internet/GuanXi.yaml
+    url: "https://url.yuwell.cloudns.biz/ShadowsocksR.yml"
+    path: ./Internet/ShadowsocksR.yml
     interval: 10800
     health-check:
       enable: true
@@ -90,8 +90,8 @@ proxy-providers:
       interval: 300
   🦠特洛伊:
     type: http
-    url: "https://url.yuwell.cloudns.biz/HuiBQ.yml"
-    path: ./Internet/HuiBQ.yaml
+    url: "https://url.yuwell.cloudns.biz/VMESS.yml"
+    path: ./Internet/VMESS.yml
     interval: 10800
     health-check:
       enable: true
