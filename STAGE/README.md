@@ -34,8 +34,8 @@
 |[🍺蛤皮牛爷.IO]|[https://cyao2q.github.io/files/n.json](https://cyao2q.github.io/files/n.json)|源|
 |[🐱喵呜君.GIT]|[https://raw.githubusercontent.com/anaer/Meow/main/meow.json](https://raw.githubusercontent.com/anaer/Meow/main/meow.json)|源|
 |[🍋南风微笑.GIT]|[https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json](https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json)|源|
-|[🧿纳梅根良.GIT]|[https://raw.githubusercontent.com/namegenliang/dy/main/namegen.json](https://raw.githubusercontent.com/namegenliang/dy/main/namegen.json)|源|
-|[🐷猪猪lr.GIT]|[https://raw.githubusercontent.com/yuanzl77/TVBox-url/main/tv.txt](https://raw.githubusercontent.com/yuanzl77/TVBox-url/main/tv.txt)|源|
+|[🧿纳梅根良.GIT]|[https://tvbox.catvod.com/catvod.json](https://tvbox.catvod.com/catvod.json)|源|
+|[🐷猪猪lr.IP]|[https://175.178.251.183:6689/tv.txt](https://175.178.251.183:6689/tv.txt)|源|
 
 本项目不存储任何的流媒体内容，所有的法律责任与后果应由使用者自行承担。
 
