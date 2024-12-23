@@ -379,7 +379,7 @@
     {"name": "cl","hosts": [  "magnet"],"regex": [  "最 新",  "直 播",  "更 新"]}
   ],
   "lives": [
-    {"name": "樂玩公社","type": 0,"url": "https://fanmingming.com/txt?url=https://itcoffe.github.io/LIVE/IPTV.m3u","playerType": 1,"ua": "okhttp/3.15","epg": "http://epg.112114.xyz/?ch={name}&date={date}","logo": "https://epg.112114.xyz/logo/{name}.png"
+    {"name": "樂玩公社","type": 0,"url": "https://fanmingming.com/txt?url=https://itcoffe.github.io/LIVE/IPTV.m3u","playerType": 1,"ua": "okhttp/3.15","epg": "https://itcoffe.github.io/LIVE/EPG.xml","logo": "https://epg.112114.xyz/logo/{name}.png"
     }
   ]
 }
