@@ -1,8 +1,8 @@
-//以下内容为互联网收集，只为自用。
+//✯ “閒”是生活的標點 ✯ -- 負責把冗長的日子切割成詩！
 {
-  "spider": "https://ghp.ci/https://raw.githubusercontent.com/vbskycn/tvbox/main/jar/MY自用标清.jar",
-  "wallpaper": "https://深色壁纸.xxooo.cf/",
-   "warningText": "资源来自网络，所有内容仅供学习使用，请勿用于违法及商业用途，请勿付费购买。",
+  "spider": "./Orange.jar;md5;7C6DBC73B47BCFF6A7744F6AECEDEBC2",
+  "wallpaper": "https://bing.img.run/uhd.php",
+   "warningText": "资源来自网络，所有内容仅供学习使用，请勿用于违法及商业用途，请勿付费购买",
    "sites": [
     {"key": "csp_douban","name": "🍊橙宝宝.COM.MP","type": 3,"api": "csp_DouDou","searchable": 0,"quickSearch": 0,"filterable": 0},
     {"key": "js_豆瓣","name": "🐼┃豆瓣┃推荐","type": 3,"api": "https://tv.zhoujie218.top/duocang/libs/js/drpy2.min.js","searchable": 1,"quickSearch": 0,"changeable": 0,"ext": "https://tv.zhoujie218.top/duocang/libs/js/豆瓣推荐.js"},
