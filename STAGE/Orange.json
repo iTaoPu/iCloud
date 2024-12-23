@@ -56,11 +56,11 @@
 {"key":"小学课堂","name":"📚小学┃课堂","type":3,"api":"csp_Bili","style":{"type":"rect","ratio":1.597},"searchable":0,"quickSearch":0,"changeable":0,"ext":{"json":"https://ghgo.xyz/raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/小学课堂.json"}},
 {"key":"初中课堂","name":"📚初中┃课堂","type":3,"api":"csp_Bili","style":{"type":"rect","ratio":1.597},"searchable":0,"quickSearch":0,"changeable":0,"ext":{"json":"https://ghgo.xyz/raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/初中课堂.json"}},
 {"key":"高中教育","name":"📚高中┃课堂","type":3,"api":"csp_Bili","style":{"type":"rect","ratio":1.597},"searchable":0,"quickSearch":0,"changeable":0,"ext":{"json":"https://ghgo.xyz/raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/高中课堂.json"}},
-{"key":"fan","name":"📌导航┃Vlink.CC/5iClub","type":3,"api":"csp_XPath","searchable":1,"quickSearch":0,"changeable":0},
+{"key":"fan","name":"📌导航┃Vlink.CC/5iClub","type":3,"api":"csp_XPath","searchable":1,"quickSearch":0,"changeable":0}
 ],
 
 "lives":[
-{"name": "樂玩公社","type": 0,"url": "https://fanmingming.com/txt?url=https://itcoffe.github.io/LIVE/IPTV.m3u","playerType": 1,"epg": "https://epg.5iclub.cloudns.biz/?ch={name}&date={date}","logo": "https://epg.112114.xyz/logo/{name}.png"},
+{"name": "5i計劃通行·樂玩公社㊙️","type": 0,"url": "https://fanmingming.com/txt?url=https://itcoffe.github.io/LIVE/IPTV.m3u","playerType": 1,"epg": "https://epg.5iclub.cloudns.biz/?ch={name}&date={date}","logo": "https://epg.112114.xyz/logo/{name}.png"},
 {"name": "❌ 俾条蕉你食… ❌","type": 0,"url": "https://tv.iill.top/m3u/Gather","playerType": 1,"epg": "https://epg.5iclub.cloudns.biz/?ch={name}&date={date}","logo": "https://epg.112114.xyz/logo/{name}.png"},
 {"name": "📺 AKTV IPTV研究所","type": 0,"url": "https://www.mytvsuper.com.mp/m3u/Live.m3u","playerType": 1,"epg": "https://epg.5iclub.cloudns.biz/?ch={name}&date={date}","logo": "https://epg.112114.xyz/logo/{name}.png"}
 ]
