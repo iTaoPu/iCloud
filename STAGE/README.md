@@ -7,7 +7,7 @@
 
 |名称|地址|类型|
 | ------------ | ------------ | ------------ |
-|[fanmingming](https://github.com/fanmingming/live "fanmingming")|https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u|IPV6|
+|[5i計劃通行 · 樂玩公社㊙️](https://live.5iclub.cloudns.org/LIVE "fanmingming")|https://live.5iclub.cloudns.org/LIVE/IPTV.m3u|IPV6|
 |[suxuang](https://github.com/suxuang/myIPTV "suxuang")|https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv6.m3u|IPV4/IPV6|
 |[YanG-1989](https://yang-1989.eu.org "YanG-1989")|https://tv.iill.top/m3u/Gather|IPV4/IPV6|
 |[AKTV](https://www.mytvsuper.com.mp "AKTV")|https://www.mytvsuper.com.mp//m3u/Live.m3u|IPV4/IPV6|
