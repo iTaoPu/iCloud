@@ -20,7 +20,7 @@
 ## TVBox源
 |名称|地址|类型|
 | ------------ | ------------ | ------------ |
-|[🍊橙宝宝.COM]|[http://git.acwing.com/xcz/xcz/-/raw/master/xcz.json](http://git.acwing.com/xcz/xcz/-/raw/master/xcz.json)|源|
+|[🍊橙宝宝.COM.MP]|[iTaoPu.Github.io/iCloud/STAGE/Orange.json](http://iTaoPu.Github.io/iCloud/STAGE/Orange.json)|源|
 |[🍙饭太硬.NET]|[http://www.饭太硬.net/tv](http://www.饭太硬.net/tv)|源|
 |[🦸‍♀️XIAOMI.小暴脾气.FUN]|[http://mpanso.me/DEMO.json](http://mpanso.me/DEMO.json)|源|
 |[🐈肥猫.COM]|[(http://肥猫.com)](http://肥猫.com)|源|
@@ -30,7 +30,7 @@
 |[🐮王二小放牛娃.XYZ]|[http://tvbox.王二小放牛娃.top](http://tvbox.王二小放牛娃.top)|源|
 |[🐟摸鱼儿.TOP]|[http://我不是.摸鱼儿.top](http://我不是.摸鱼儿.top)|源|
 |[🦉吃猫的鱼.DEV]|[https://d.kstore.dev/download/7213/吃猫的鱼](https://d.kstore.dev/download/7213/吃猫的鱼)|源|
-|[🦉🍁歐歌.TOP]|[https://tv.nxog.top/m](tv.nxog.top/m)|源|
+|[🍁歐歌.TOP]|[https://tv.nxog.top/m](tv.nxog.top/m)|源|
 |[🍺蛤皮牛爷.IO]|[https://cyao2q.github.io/files/n.json](https://cyao2q.github.io/files/n.json)|源|
 |[🐱喵呜君.GIT]|[https://raw.githubusercontent.com/anaer/Meow/main/meow.json](https://raw.githubusercontent.com/anaer/Meow/main/meow.json)|源|
 |[🍋南风微笑.GIT]|[https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json](https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json)|源|
