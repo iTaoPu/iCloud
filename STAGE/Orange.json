@@ -353,7 +353,7 @@
     {"name": "nm","hosts": [  "toutiaovod.com"],"regex": [  "video/tos/cn"]},
     {"name": "cl","hosts": [  "magnet"],"regex": [  "最 新",  "直 播",  "更 新"]}
   ],
-  "live": [
+  "lives": [
     {"name": "樂玩公社","type": 0,"url": "https://fanmingming.com/txt?url=https://itcoffe.github.io/LIVE/IPTV.m3u","playerType": 1,"ua": "okhttp/3.15","epg": "https://epg.5iclub.cloudns.biz/?ch={name}&date={date}","logo": "https://epg.112114.xyz/logo/{name}.png"
     }
   ]
