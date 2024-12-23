@@ -20,7 +20,7 @@
 ## TVBox源
 |名称|地址|类型|
 | ------------ | ------------ | ------------ |
-|[🍊橙宝宝.COM.MP]|[https://iCloud.yuwell.com.mp/STAGE/Orange.json](https://iCloud.yuwell.com.mp/STAGE/Orange.json)|源|
+|[🍊橙宝宝.COM.MP]|[https://loong.5iclub.cloudns.biz/iCloud/STAGE/Orange.json](https://loong.5iclub.cloudns.biz/iCloud/STAGE/Orange.json)|源|
 |[🍙饭太硬.NET]|[http://www.饭太硬.net/tv](http://www.饭太硬.net/tv)|源|
 |[🦸‍♀️XIAOMI.小暴脾气.FUN]|[http://mpanso.me/DEMO.json](http://mpanso.me/DEMO.json)|源|
 |[🐈肥猫.COM]|[(http://肥猫.com)](http://肥猫.com)|源|
