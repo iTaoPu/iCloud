@@ -4,11 +4,13 @@
   "wallpaper": "https://深色壁纸.xxooo.cf",
    "warningText": "资源来自网络，所有内容仅供学习使用，请勿用于违法及商业用途，请勿付费购买。",
    "sites": [
-     {"key": "csp_douban","name": "🍊橙宝宝.COM.MP","type": 3,"api": "csp_DouDou","searchable": 0,"quickSearch": 0,"filterable": 0},
+    {"key": "csp_douban","name": "🍊橙宝宝.COM.MP","type": 3,"api": "csp_DouDou","searchable": 0,"quickSearch": 0,"filterable": 0},
     {"key": "玩偶","name": "👽玩偶哥哥┃4K弹幕","type": 3,"api": "csp_WoGG","searchable": 1,"quickSearch": 1,"changeable": 0,"ext": {  "Cloud-drive": "tvfan/Cloud-drive.txt",  "from": "4k|auto",  "siteUrl": "https://www.wogg.net/",  "danMu": "弹"}
     },
-    {"key": "YGP","name": "🚀┃叨观┃新片","type": 3,"api": "csp_YGP","searchable": 0,"quickSearch": 0,"changeable": 0
-   },
+    {"key": "YGP","name": "🚀┃叨观荐影┃预告片","type": 3,"api": "csp_YGP","searchable": 0,"quickSearch": 0,"changeable": 0
+    },
+    {"key": "alllive","name": "📽️┃一直播┃LIVE","type": 3,"api": "csp_Alllive","playerType": 2,"searchable": 0,"quickSearch": 0,"changeable": 0
+    },
     {"key": "米搜","name": "🦋┃米盘┃搜搜","type": 3,"api": "csp_MIPanSo","searchable": 1,"quickSearch": 1,"changeable": 0,"ext": {  "Cloud-drive": "tvfan/Cloud-drive.txt",  "from": "4k|auto"}
     },
     {"key": "抠搜","name": "🍄┃抠抠┃搜搜","type": 3,"api": "csp_KkSs","searchable": 1,"quickSearch": 1,"changeable": 0,"ext": {  "Cloud-drive": "tvfan/Cloud-drive.txt",  "from": "4k|auto"}
@@ -375,5 +377,9 @@
     {"name": "dy","hosts": [  "douyin.com"],"regex": [  "is_play_url="]},
     {"name": "nm","hosts": [  "toutiaovod.com"],"regex": [  "video/tos/cn"]},
     {"name": "cl","hosts": [  "magnet"],"regex": [  "最 新",  "直 播",  "更 新"]}
+  ],
+  "lives": [
+    {"name": "樂玩公社","type": 0,"url": "https://fanmingming.com/txt?url=https://itcoffe.github.io/LIVE/IPTV.m3u","playerType": 1,"ua": "okhttp/3.15","epg": "http://epg.112114.xyz/?ch={name}&date={date}","logo": "https://epg.112114.xyz/logo/{name}.png"
+    }
   ]
 }
