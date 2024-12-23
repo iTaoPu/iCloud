@@ -3,7 +3,6 @@
 "spider": "./Orange.jar;md5;262a678665ac3d5c727a8c812b31dfdf",
 "wallpaper": "https://bing.img.run/uhd.php",
 "warningText": "资源来自网络，所有内容仅供学习使用，请勿用于违法及商业用途，请勿相信视频中广告，请勿付费购买",
-
 "sites":[
 {"key":"豆豆","name":"🍊橙宝宝.COM.MP","type": 3, "api": "csp_DouDou","searchable": 0,"quickSearch": 0,"filterable": 0},
 {"key":"玩偶","name":"👽玩偶哥哥┃4K弹幕","type":3,"api":"csp_WoGG","searchable":1,"quickSearch":1,"changeable":0, "ext": {"Cloud-drive":"tvfan/Cloud-drive.txt","from":"4k|auto","siteUrl":"https://www.wogg.net/","danMu":"弹"}},
