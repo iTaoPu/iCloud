@@ -56,7 +56,10 @@
 {"key":"小学课堂","name":"📚小学┃课堂","type":3,"api":"csp_Bili","style":{"type":"rect","ratio":1.597},"searchable":0,"quickSearch":0,"changeable":0,"ext":{"json":"https://ghgo.xyz/raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/小学课堂.json"}},
 {"key":"初中课堂","name":"📚初中┃课堂","type":3,"api":"csp_Bili","style":{"type":"rect","ratio":1.597},"searchable":0,"quickSearch":0,"changeable":0,"ext":{"json":"https://ghgo.xyz/raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/初中课堂.json"}},
 {"key":"高中教育","name":"📚高中┃课堂","type":3,"api":"csp_Bili","style":{"type":"rect","ratio":1.597},"searchable":0,"quickSearch":0,"changeable":0,"ext":{"json":"https://ghgo.xyz/raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/高中课堂.json"}},
-{"key":"fan","name":"📌导航┃Vlink.CC/5iClub","type":3,"api":"csp_XPath","searchable":1,"quickSearch":0,"changeable":0}
+{"key":"fan","name":"📌导航┃Vlink.CC/5iClub","type":3,"api":"csp_XPath","searchable":1,"quickSearch":0,"changeable":0},
+{"key":"fan","name":"🈲禁止用于违法及商业用途","type":3,"api":"csp_XPath","searchable":1,"quickSearch":0,"changeable":0},
+{"key":"fan","name":"⚠️请勿相信视频中广告","type":3,"api":"csp_XPath","searchable":1,"quickSearch":0,"changeable":0},
+{"key":"fan","name":"⛔请勿付费购买","type":3,"api":"csp_XPath","searchable":1,"quickSearch":0,"changeable":0} 
 ],
 
 "lives":[
