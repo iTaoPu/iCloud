@@ -64,7 +64,7 @@
 ],
 
 "lives":[
-{"name": "5i計劃通行·樂玩公社㊙️","type": 0,"url": "https://tvbox.5iclub.cloudns.biz/txt?url=https://live.5iclub.cloudns.biz/IPTV.m3u","playerType": 1,"epg": "https://epg.cloudns.biz/?ch={name}&date={date}","logo": "https://epg.112114.xyz/logo/{name}.png"},
+{"name": "5i計劃通行·樂玩公社㊙️","type": 0,"url": "https://tvbox.5iclub.cloudns.biz/txt?url=https://live.5iclub.cloudns.biz/IPTV.m3u","playerType": 1,"epg": "https://epg.5iclub.cloudns.biz/?ch={name}&date={date}","logo": "https://epg.112114.xyz/logo/{name}.png"},
 {"name": "❌ 俾条蕉你食… ❌","type": 0,"url": "https://tv.iill.top/m3u/Gather","playerType": 1,"epg": "https://epg.5iclub.cloudns.biz/?ch={name}&date={date}","logo": "https://epg.112114.xyz/logo/{name}.png"},
 {"name": "📺 AKTV IPTV研究所","type": 0,"url": "https://www.mytvsuper.com.mp/m3u/Live.m3u","playerType": 1,"epg": "https://epg.5iclub.cloudns.biz/?ch={name}&date={date}","logo": "https://epg.112114.xyz/logo/{name}.png"}
 ]
