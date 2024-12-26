@@ -1,6 +1,6 @@
 //✯ “閒”是生活的標點 ✯ -- 負責把冗長的日子切割成詩！
 {
-"spider": "https://iTaoPu.5iclub.us.kg/iCloud/STAGE/Orange.jar;md5;5187bb3bc6eba66ecb3785abb0d21431",
+"spider": "https://iTaoPu.5iclub.cloudns.biz/iCloud/STAGE/Orange.jar;md5;5187bb3bc6eba66ecb3785abb0d21431",
 "wallpaper": "https://bing.img.run/uhd.php",
 "warningText": "资源来自网络，所有内容仅供学习使用，禁止用于违法及商业用途，请勿相信视频中广告，请勿付费，谨防诈骗",
 "sites":[
@@ -64,8 +64,8 @@
 ],
 
 "lives":[
-{"name": "5i計劃通行·樂玩公社㊙️","type": 0,"url": "https://loong.5iclub.us.kg/txt?url=https://live.5iclub.us.kg/IPTV.m3u","playerType": 1,"epg": "https://epg.5iclub.us.kg/?ch={name}&date={date}","logo": "https://epg.112114.xyz/logo/{name}.png"},
-{"name": "❌ 俾条蕉你食… ❌","type": 0,"url": "https://tv.iill.top/m3u/Gather","playerType": 1,"epg": "https://epg.5iclub.us.kg/?ch={name}&date={date}","logo": "https://epg.112114.xyz/logo/{name}.png"},
-{"name": "📺 AKTV IPTV研究所","type": 0,"url": "https://www.mytvsuper.com.mp/m3u/Live.m3u","playerType": 1,"epg": "https://epg.5iclub.us.kg/?ch={name}&date={date}","logo": "https://epg.112114.xyz/logo/{name}.png"}
+{"name": "5i計劃通行·樂玩公社㊙️","type": 0,"url": "https://tvbox.5iclub.cloudns.biz/txt?url=https://live.5iclub.cloudns.biz/IPTV.m3u","playerType": 1,"epg": "https://epg.cloudns.biz/?ch={name}&date={date}","logo": "https://epg.112114.xyz/logo/{name}.png"},
+{"name": "❌ 俾条蕉你食… ❌","type": 0,"url": "https://tv.iill.top/m3u/Gather","playerType": 1,"epg": "https://epg.5iclub.cloudns.biz/?ch={name}&date={date}","logo": "https://epg.112114.xyz/logo/{name}.png"},
+{"name": "📺 AKTV IPTV研究所","type": 0,"url": "https://www.mytvsuper.com.mp/m3u/Live.m3u","playerType": 1,"epg": "https://epg.5iclub.cloudns.biz/?ch={name}&date={date}","logo": "https://epg.112114.xyz/logo/{name}.png"}
 ]
 }
