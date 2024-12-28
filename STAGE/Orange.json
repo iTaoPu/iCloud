@@ -1,10 +1,10 @@
 //✯ “閒”是生活的標點 ✯ -- 負責把冗長的日子切割成詩！
 {
-"spider": "https://TaoPu.5iclub.cloudns.biz/iCloud/STAGE/Orange.jar;md5;9136a7f6aec51c5b18e911121774ab5f",
+"spider": "./STAGE/Orange.jar;md5;9136a7f6aec51c5b18e911121774ab5f"，
 "wallpaper": "https://bing.img.run/uhd.php",
 "warningText": "资源来自网络，所有内容仅供学习使用，禁止用于违法及商业用途，请勿相信视频中广告，请勿付费，谨防诈骗",
 "sites":[
-{"key":"豆瓣","name":"🍊橙宝宝┃樂玩公社","type": 3, "api": "csp_DouDou","indexs":1,"searchable": 0,"quickSearch": 0,"filterable": 0},
+{"key":"豆豆豆","name":"🍊橙宝宝┃樂玩公社","type": 3, "api": "csp_DouDou","indexs":1,"searchable": 0,"quickSearch": 0,"filterable": 0},
 {"key":"玩偶","name":"👽玩偶哥哥┃4K弹幕","type":3,"api":"csp_WoGG","searchable":1,"quickSearch":1,"changeable":0, "ext": {"Cloud-drive":"tvfan/Cloud-drive.txt","from":"4k|auto","siteUrl":"https://www.wogg.net/","danMu":"弹"}},
 {"key":"YGP","name":"🚀叨观荐影┃预告片","type":3,"api":"csp_YGP","searchable":0,"quickSearch":0,"changeable":0},
 {"key":"alllive","name":"📽️一直播┃直播","type":3,"api":"csp_Alllive","playerType":2,"searchable":0,"quickSearch":0,"changeable":0},
@@ -22,7 +22,7 @@
 {"key":"热播","name":"📺热播┃多线","type":3,"api":"csp_AppTT","playerType":2,"searchable":1,"quickSearch":1,"changeable":1,"ext":"AO7TcBkd8I/B5wQc4Qma+pU="},
 {"key":"南瓜","name":"🎃南瓜┃多线","type":3,"api":"csp_NanGua","playerType":2,"searchable":1,"quickSearch":1,"changeable":1},
 {"key":"萌米","name":"👀萌米┃多线","type":3,"api":"csp_AppTT","playerType":2,"searchable":1,"quickSearch":1,"changeable":1,"ext":"AO7TcBkd8Iifux0Y8Qze6tVlMg=="},
-{"key":"欢视","name":"👓欢视┃多线","type":3,"api":"csp_AppTT","playerType":2,"searchable":1,"quickSearch":1,"changeable":1,"ext":"AO7TcBkd8I/B+Qsa7gqa+pU="}，
+{"key":"欢视","name":"👓欢视┃多线","type":3,"api":"csp_AppTT","playerType":2,"searchable":1,"quickSearch":1,"changeable":1,"ext":"AO7TcBkd8I/B+Qsa7gqa+pU="},
 {"key":"低端","name":"⏮️低端┃外剧","type":3,"api":"csp_Ddrk","playerType":"2","searchable":1,"quickSearch":1,"changeable":1},
 {"key":"可可","name":"👻可可┃多线","type":3,"api":"csp_Kekys","playerType":2,"searchable":1,"quickSearch":1,"changeable":1},
 {"key":"贱贱","name":"🐭贱贱┃P2P","type":3,"searchable":1,"quickSearch":1,"changeable":1,"playerType":"1","api":"https://ghgo.xyz/raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/drpy2.min.js","ext":"https://ghgo.xyz/raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/jp.js"},
@@ -62,6 +62,7 @@
 {"key":"注","name":"⚠️请勿付费 谨防诈骗","type":3,"api":"csp_XPath","searchable":1,"quickSearch":0,"changeable":0}
 ],
 
+"logo":"https://iCloud.yuwell.com.mp/STAGE/Cartoon_Police_Animation.gif",
 "lives":[
 {"name": "5i計劃通行·樂玩公社㊙️","type": 0,"url": "https://tvbox.5iclub.cloudns.biz/txt?url=https://live.5iclub.cloudns.biz/IPTV.m3u","playerType": 1,"epg": "https://epg.5iclub.cloudns.biz/?ch={name}&date={date}","logo": "https://epg.112114.xyz/logo/{name}.png"},
 {"name": "❌ 俾条蕉你食… ❌","type": 0,"url": "https://tv.iill.top/m3u/Gather","playerType": 1,"epg": "https://epg.5iclub.cloudns.biz/?ch={name}&date={date}","logo": "https://epg.112114.xyz/logo/{name}.png"},
