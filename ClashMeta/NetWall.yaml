@@ -17,7 +17,8 @@ geox-url:
   geosite: https://fastly.jsdelivr.net/gh/iTaoPu/Meta.Rules.Dat@release/geosite.dat
   mmdb: https://fastly.jsdelivr.net/gh/iTaoPu/Meta.Rules.Dat@release/country-lite.mmdb
   asn: https://fastly.jsdelivr.net/gh/iTaoPu/Meta.Rules.Dat@release/GeoLite2-ASN.mmdb
-
+geo-auto-update: true # 是否自动更新 geodata
+geo-update-interval: 24 # 更新间隔，单位：小时
 find-process-mode: strict
 global-client-fingerprint: chrome
 
