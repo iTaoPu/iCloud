@@ -9,9 +9,14 @@
 ! Total lines: 42
 
 #Google 黑名单 3
+||google.com^
+||google.com.*^
+||google*.com.*^
+||google*.*^
 ||*.google.com^
-||*.googleusercontent.com^ 
-||*.googleapis.com^
+||*.google.com.*^
+||*.google*.com.*^
+||*.google*.*^
 
 #Github 白名单 39
 @@||github.com^
