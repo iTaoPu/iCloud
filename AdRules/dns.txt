@@ -20,5 +20,5 @@
 @@||github.io^
 @@||github.blog^
 @@||githubstatus.com^
-@@||*.githubusercontent.com^
+@@||githubusercontent.com^
 
