@@ -6,28 +6,27 @@
 ! ------------------------------------
 ! Version: 01.03
 ! Update Date: 2025-01-03
-! Total lines: 42
+! Total lines: 19
 
-#Google 黑名单 8
+#Google 黑名单 10
 ||google.com^
+||google.*^
 ||google.com.*^
 ||google*.com.*^
 ||google*.*^
 ||*.google.com^
+||*.google.*^
 ||*.google.com.*^
 ||*.google*.com.*^
 ||*.google*.*^
 
-#Github 白名单 12
+#Github 白名单 8
 @@||github.com^
 @@||github.io^
 @@||github.blog^
+@@||githubstatus.com^
 @@||*.github.com^
 @@||*.github.io^
-@@||*3.github.blog^
+@@||*.github.blog^
 @@||*.githubusercontent.com^
-@@||github-*.s3.amazonaws.com^
-@@||github.githubassets.com^
-@@||github.global.ssl.fastly.net^
-@@||github.map.fastly.net^
-@@||githubstatus.com^
+
