@@ -6,27 +6,19 @@
 ! ------------------------------------
 ! Version: 01.03
 ! Update Date: 2025-01-03
-! Total lines: 18
+! Total lines: 10
 
-#Google 黑名单 10
+#Google 黑名单 5
 ||google.com^
 ||google.*^
 ||google.com.*^
 ||google*.com.*^
 ||google*.*^
-||*.google.com^
-||*.google.*^
-||*.google.com.*^
-||*.google*.com.*^
-||*.google*.*^
 
-#Github 白名单 8
+#Github 白名单 5
 @@||github.com^
 @@||github.io^
 @@||github.blog^
 @@||githubstatus.com^
-@@||*.github.com^
-@@||*.github.io^
-@@||*.github.blog^
 @@||*.githubusercontent.com^
 
