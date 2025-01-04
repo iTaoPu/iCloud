@@ -10,8 +10,8 @@
 
 #Google 黑名单 5
 ||google.com^
-||google.*^
 ||google.com.*^
 ||google*.com.*^
+||google.*^
 ||google*.*^
 
