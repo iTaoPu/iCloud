@@ -1,6 +1,6 @@
 //✯ “閒”是生活的標點 ✯ -- 負責把冗長的日子切割成詩！
 {
-"spider": "https://iCloud.yuwell.com.mp/STAGE/Orange.jar;md5;65e12949f9090ca4451bd04338542881",
+"spider": "https://iCloud.yuwell.com.mp/STAGE/Orange.jar;md5;ff90f08636149d5ad8dfa91af77b8955",
 "wallpaper": "https://bing.img.run/uhd.php",
 "warningText": "资源来自网络，所有内容仅供学习使用，禁止用于违法及商业用途，请勿相信视频中广告，请勿付费，谨防诈骗",
 
@@ -57,6 +57,7 @@
 {"key":"小学课堂","name":"📚小学┃课堂","type":3,"api":"csp_Bili","style":{"type":"rect","ratio":1.597},"searchable":0,"quickSearch":0,"changeable":0,"ext":{"json":"https://fastly.jsdelivr.net/gh/fantaiying7/EXT@main/小学课堂.json"}},
 {"key":"初中课堂","name":"📚初中┃课堂","type":3,"api":"csp_Bili","style":{"type":"rect","ratio":1.597},"searchable":0,"quickSearch":0,"changeable":0,"ext":{"json":"https://fastly.jsdelivr.net/gh/fantaiying7/EXT@main/初中课堂.json"}},
 {"key":"高中教育","name":"📚高中┃课堂","type":3,"api":"csp_Bili","style":{"type":"rect","ratio":1.597},"searchable":0,"quickSearch":0,"changeable":0,"ext":{"json":"https://fastly.jsdelivr.net/gh/fantaiying7/EXT@main/高中课堂.json"}},
+
 {"key":"航","name":"📌导航┃Vlink.CC/5iClub","type":3,"api":"csp_XPath","searchable":1,"quickSearch":0,"changeable":0},
 {"key":"禁","name":"🈲禁止用于违法及商业用途","type":3,"api":"csp_XPath","searchable":1,"quickSearch":0,"changeable":0},
 {"key":"鲸","name":"🐋请勿相信视频中广告","type":3,"api":"csp_XPath","searchable":1,"quickSearch":0,"changeable":0},
