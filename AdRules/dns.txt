@@ -6,7 +6,7 @@
 ! ------------------------------------
 ! Version: 01.14
 ! Update Date: 2025-01-14
-! Total lines: 501
+! Total lines: 518
 
 # Google 黑名单 5
 ||google.com^
@@ -15,7 +15,7 @@
 ||google.*^
 ||google*.*^
 
-# 晴雅がく山道 黑名单 496
+# 晴雅がく山道 黑名单 513
 ||adtrack.e.kuaishou.com^
 ||az4-upload.ksapisrv.com^
 ||gdfp.gifshow.com^
@@ -486,7 +486,6 @@
 ||appupgrade.vivo.com.cn^
 ||ads-drcn.platform.hihonorcloud.com^
 ||p66-ad.adkwai.com^
-||www.xiaohongshu.com^
 ||v3-be-pack.pglstatp-toutiao.com^
 ||upos-sz-static.bilivideo.com^
 ||upos-sz-staticcos.bilivideo.com^
@@ -512,3 +511,21 @@
 ||gorgon.youdao.com^
 ||log-yex.youdao.com^
 ||ad.mcloud.139.com^
+||ipv4.gdt.qq.com^
+||ad.tencentmusic.com^
+||sdk-event.beizi.biz^
+||adse.ximalaya.com^
+||e-ad-monitor.huya.com^
+||api.ad.xiaomi.com^
+||tracking.miui.com^
+||ipv6.shuzilm.cn^
+||tmead.y.qq.com^
+||tmeadcomm.y.qq.com^
+||adlog.vivo.com.cn^
+||megadatav7.ultralisk.cn^
+||adsdk.vivo.com.cn^
+||adxlog-adnet.vivo.com.cn^
+||ssp.vivo.com.cn^
+||brandadsstatic.vivo.com.cn^
+||ai-static.vivo.com.cn^
+||*.heytapdownload.com^
