@@ -4,9 +4,9 @@
 ! Expires: irregularly (update frequency)
 ! Description: 苦事不宣，乐事不扬，闲事不管！
 ! ------------------------------------
-! Version: 01.14
-! Update Date: 2025-01-14
-! Total lines: 518
+! Version: 01.15
+! Update Date: 2025-01-15
+! Total lines: 510
 
 # Google 黑名单 5
 ||google.com^
@@ -15,7 +15,7 @@
 ||google.*^
 ||google*.*^
 
-# 晴雅がく山道 黑名单 513
+# 晴雅がく山道 黑名单 505
 ||adtrack.e.kuaishou.com^
 ||az4-upload.ksapisrv.com^
 ||gdfp.gifshow.com^
@@ -93,10 +93,7 @@
 ||polaris.zijieapi.com^
 ||mon.zijieapi.com^
 ||log.zijieapi.com^
-||security.snssdk.com^
 ||tnc3-bjlgy.zijieapi.com^
-||tnc3-aliec2.bytedance.com^
-||tnc3-alisc1.zijieapi.com^
 ||tnc3-bjlgy.bytedance.com^
 ||tnc3-alisc1.bytedance.com^
 ||ads5-normal-lq.zijieapi.com^
@@ -107,19 +104,15 @@
 ||lf26-sf-be-pack-sign.pglstatp-toutiao.com^
 ||vod-settings.bytedanceapi.com^
 ||tnc0-bjlgy.zijieapi.com^
-||tnc0-alisc1.zijieapi.com^
 ||dm.pstatp.com^
 ||tnc0-aliec2.zijieapi.com^
 ||xiaoshuo.km.com^
 ||www.bayread.com^
 ||chengzijianzhan.com^
-||aweme.snssdk.com^
 ||lf3-analytics.bytescm.com^
 ||ad.toutiao.com^
-||vcs.zijieapi.com^
 ||dig.bdurl.net^
 ||zlink.toutiao.com^
-||ib.snssdk.com^
 ||abtest-ch.snssdk.com^
 ||ads3-normal-lq.zijieapi.com^
 ||gecko5-lq.zijieapi.com^
@@ -136,7 +129,6 @@
 ||bj.openstorage.cn^
 ||mon.ad.xelements.cn^
 ||vali-g1.cp31.ott.cibntv.net^
-||tnc3-aliec2.zijieapi.com^
 ||ad.lovefree.cc^
 ||ad.shunchangzhixing.com^
 ||msg.qy.net^
@@ -502,7 +494,6 @@
 ||aads.shuzilm.cn^
 ||audd.shuzilm.cn^
 ||janapi.jd.com^
-||lf-cdn-tos.bytescm.com^
 ||sdkcfg.adintl.cn^
 ||tx-cfg-u1.ubixioe.com^
 ||*adintl.cn^
@@ -528,4 +519,5 @@
 ||ssp.vivo.com.cn^
 ||brandadsstatic.vivo.com.cn^
 ||ai-static.vivo.com.cn^
-||*.heytapdownload.com^
+||diagnosis.ad.xiaomi.com^
+||*.ads.heytapmobi.com^
