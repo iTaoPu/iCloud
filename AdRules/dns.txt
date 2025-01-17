@@ -1,6 +1,6 @@
-! Title: AdRules 焦糖のとおり道 DNS List
-! Homepage: https://焦糖先生.net.cn
-! Powerd by 焦糖先生
+! Title: AdRules 叚娤.倖鍢 DNS List
+! Homepage: https://叚娤.倖鍢.net.cn
+! Powerd by 叚娤.倖鍢
 ! Expires: irregularly (update frequency)
 ! Description: 苦事不宣，乐事不扬，闲事不管！
 ! ------------------------------------
