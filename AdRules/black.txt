@@ -4,9 +4,9 @@
 ! Expires: irregularly (update frequency)
 ! Description: 苦事不宣，乐事不扬，闲事不管！
 ! ------------------------------------
-! Version: 03.25
-! Update Date: 2025-03-25
-! Total lines: 562
+! Version: 03.26
+! Update Date: 2025-03-26
+! Total lines: 567
 
 # i叚娤.倖鍢 名单 21
 
@@ -35,8 +35,7 @@
 ||pcmanager.microsoft.com^
 ||applicationinsights.azure.cn^
 
-# 晴雅がく山道 黑名单 541
-||adstats.tencentmusic.com^
+# 晴雅がく山道 黑名单 546
 ||*.ads.heytapmobi.com^
 ||*.applovin.com^
 ||*.jomoxc.com^
@@ -123,6 +122,7 @@
 ||ads5-normal.zijieapi.com^
 ||adsdk.vivo.com.cn^
 ||adsdkapi.dxys.pro^
+||adse.wsa.ximalaya.com^
 ||adse.ximalaya.com^
 ||adservice.sigmob.cn^
 ||adsfile.bssdlbig.kugou.com^
@@ -132,6 +132,7 @@
 ||adsmind.gdtimg.com^
 ||adsmind.ugdtimg.com^
 ||adstatis.99jiasu.com^
+||adstats.tencentmusic.com^
 ||adstrategy.biz.weibo.com^
 ||adtrack.e.kuaishou.com^
 ||advert.tadu.com^
@@ -173,6 +174,7 @@
 ||api.zhihu.com/ad-style-service
 ||api1.kwaixiaodian.com^
 ||api2.kwaixiaodian.com^
+||api5-normal-sinfonlineb.dcarapi.com^
 ||app-preload.iqiyi.com^
 ||appcloud2.zhihu.com^
 ||applog.zijieapi.com^
@@ -223,6 +225,7 @@
 ||cpro.baidustatic.com^
 ||crash.163.com^
 ||cs.iadsdk.apple.com^
+||ctrmi.cn^
 ||d.url.cn^
 ||data.ab.qq.com^
 ||data.flurry.com^
@@ -285,6 +288,8 @@
 ||iadsdk.apple.com^
 ||iadsdk.qtlcdn.com^
 ||iadworkbench-soak.iad.apple.com^
+||ib.snssdk.com^
+||ib-hl.snssdk.com^
 ||ichannel.snssdk.com^
 ||ii.gdt.qq.com^
 ||image.uczzd.cn^
@@ -311,6 +316,7 @@
 ||klink.volceapplog.com^
 ||kyy-dl.dzhread.cn^
 ||lalabaos1026.top^
+||landing.gdtimg.com^
 ||leads.baidu.com^
 ||lens.zhihu.com^
 ||lf-cdn-tos.bytescm.com^
@@ -443,6 +449,7 @@
 ||sf3-be-pack.pglstatp-toutiao.com^
 ||sf3-fe-tos.pglstatp-toutiao.com^
 ||shackapple.com^
+||signaltower.gdt.qq.com^
 ||sis-ipv6.jpush.cn^
 ||sis.jpush.io^
 ||smvconf.f.360.cn^
@@ -469,6 +476,8 @@
 ||t7z.cupid.iqiyi.com^
 ||tab.video.qq.com^
 ||tangram-config.gdt.qq.com^
+||tdid.m.qq.com^
+||test.y.qq.com^
 ||themis.hupu.com^
 ||thind.unityads.unity3d.com^
 ||tianshu.qq.com^
@@ -481,6 +490,7 @@
 ||tnc0-*.zijieapi.com^
 ||tnc0-aliec2.zijieapi.com^
 ||tnc0-bjlgy.zijieapi.com^
+||tnc3-aliec2.zijieapi.com^
 ||tnc3-alisc1.bytedance.com^
 ||tnc3-alisc1.zijieapi.com^
 ||tnc3-bjlgy.bytedance.com^
@@ -491,6 +501,7 @@
 ||tr.iadsdk.apple.com^
 ||tracking.miui.com^
 ||trpcpb.imtt.qq.com^
+||ttc.gdt.qq.com^
 ||tx-ad.a.yximgs.com^
 ||tx-cfg-u1.ubixioe.com^
 ||tyaqy.m.cn.miaozhen.com^
@@ -520,6 +531,7 @@
 ||vali-g1.cp31.ott.cibntv.net^
 ||valipl.cp31.ott.cibntv.net^
 ||vcode-od.vivo.com.cn^
+||vcs.zijieapi.com^
 ||vdn5-1.vzuu.com^
 ||vdn5.vzuu.com^
 ||vdn6.vzuu.com^
@@ -531,6 +543,7 @@
 ||vr.gdt.qq.com^
 ||vv6.video.qq.com^
 ||w1.gskwai.com^
+||w1.kskwai.com^
 ||w2.gskwai.com^
 ||wa.gtimg.com^
 ||wawe.in^
@@ -569,11 +582,3 @@
 ||zixun.imtt.qq.com^
 ||zlink.toutiao.com^
 ||zt.gifshow.com^
-||adse.wsa.ximalaya.com^
-||tdid.m.qq.com^
-||tnc3-aliec2.zijieapi.com^
-||ttc.gdt.qq.com^
-||test.y.qq.com^
-||landing.gdtimg.com^
-||signaltower.gdt.qq.com^
-||w1.kskwai.com^
