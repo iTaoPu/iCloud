@@ -69,8 +69,8 @@
 
 "logo":"https://fastly.ugreen.us.kg/iCloud/STAGE/Cartoon_Police_Animation.gif",
 "lives":[
-{"name": "樂玩公社㊙️·IPv4","type": 0,"url": "https://tvbox.5iclub.cloudns.biz/txt?url=https://live.5iclub.dedyn.io/IPTV.m3u","playerType": 1,"epg": "https://112114.5iclub.cloudns.biz/?ch={name}&date={date}","logo": "https://epg.112114.xyz/logo/{name}.png"},
-{"name": "樂玩公社㊙️·IPv6","type": 0,"url": "https://tvbox.5iclub.cloudns.biz/txt?url=https://live.ugreen.dedyn.io/IPTV.m3u","playerType": 1,"epg": "https://112114.5iclub.cloudns.biz/?ch={name}&date={date}","logo": "https://epg.112114.xyz/logo/{name}.png"},
+{"name": "樂玩公社㊙️·IPv4","type": 0,"url": "https://tvbox.5iclub.us.kg/txt?url=https://live.5iclub.dedyn.io/IPTV.m3u","playerType": 1,"epg": "https://112114.5iclub.cloudns.biz/?ch={name}&date={date}","logo": "https://epg.112114.xyz/logo/{name}.png"},
+{"name": "樂玩公社㊙️·IPv6","type": 0,"url": "https://tvbox.5iclub.us.kg/txt?url=https://live.ugreen.dedyn.io/IPTV.m3u","playerType": 1,"epg": "https://112114.5iclub.cloudns.biz/?ch={name}&date={date}","logo": "https://epg.112114.xyz/logo/{name}.png"},
 {"name": "❌ 俾条蕉你食… ❌","type": 0,"url": "https://tv.iill.top/m3u/Gather","playerType": 1,"epg": "https://112114.5iclub.cloudns.biz/?ch={name}&date={date}","logo": "https://epg.112114.xyz/logo/{name}.png"}
 ]
 }
