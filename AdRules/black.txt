@@ -23,6 +23,7 @@
 @@||*.cloudns.biz^
 @@||*.dedyn.io^
 @@||*.us.kg^
+@@||*.dpdns.org^
 
 # 黑名单
 ||google.com^
