@@ -6,7 +6,7 @@
 ! ------------------------------------
 ! Version: 03.26
 ! Update Date: 2025-03-26
-! Total lines: 568
+! Total lines: 569
 
 # i叚娤.倖鍢 名单 22
 
@@ -36,7 +36,7 @@
 ||pcmanager.microsoft.com^
 ||applicationinsights.azure.cn^
 
-# 晴雅がく山道 黑名单 546
+# 晴雅がく山道 黑名单 547
 ||*.ads.heytapmobi.com^
 ||*.applovin.com^
 ||*.jomoxc.com^
@@ -69,6 +69,7 @@
 ||abtest-ch.snssdk.com^
 ||abtest3-misc-lq.zijieapi.com^
 ||access.if.iqiyi.com^
+||aiclk.com^
 ||access1.tpns.tencent.com^
 ||activity.hdslb.com^
 ||activity.inads.cn^
