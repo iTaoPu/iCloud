@@ -6,10 +6,9 @@
 ! ------------------------------------
 ! Version: 03.26
 ! Update Date: 2025-03-26
-! Total lines: 569
+! Total lines: 568
 
 # i叚娤.倖鍢 名单 22
-
 # 白名单
 @@||doh.pub^
 @@||dot.pub^
@@ -36,7 +35,7 @@
 ||pcmanager.microsoft.com^
 ||applicationinsights.azure.cn^
 
-# 晴雅がく山道 黑名单 547
+# 晴雅がく山道 黑名单 546
 ||*.ads.heytapmobi.com^
 ||*.applovin.com^
 ||*.jomoxc.com^
@@ -299,7 +298,6 @@
 ||img-x.jd.com^
 ||img5.chkaja.com^
 ||ios.bugly.qq.com^
-||ipad^
 ||ipv4.gdt.qq.com^
 ||ipv6.shuzilm.cn^
 ||iqiyi-mipdx.cn.miaozhen.com^
