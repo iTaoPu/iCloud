@@ -106,7 +106,7 @@ dns:
 proxy-providers:
   🧱翻墙社:
     type: http
-    url: "https://smart.ugreen.us.kg/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2FHuibq%2FTrojanLinks%2Frefs%2Fheads%2Fmaster%2Flinks%2Fssr&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Mini.ini&rename=%60TrojanLinks%40%E6%A8%82%E7%8E%A9%E5%85%AC%E7%A4%BE%60&emoji=true&list=false&xudp=false&udp=true&tfo=false&expand=true&scv=false&fdn=false&new_name=true"
+    url: "https://smart.ugreen.me.uk/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2FHuibq%2FTrojanLinks%2Frefs%2Fheads%2Fmaster%2Flinks%2Fssr&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Mini.ini&rename=%60TrojanLinks%40%E6%A8%82%E7%8E%A9%E5%85%AC%E7%A4%BE%60&emoji=true&list=false&xudp=false&udp=true&tfo=false&expand=true&scv=false&fdn=false&new_name=true"
     path: ./Internet/ShadowsocksR.yml
     interval: 10800
     health-check:
@@ -115,7 +115,7 @@ proxy-providers:
       interval: 300
   🦠特洛伊:
     type: http
-    url: "https://smart.ugreen.us.kg/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2FHuibq%2FTrojanLinks%2Frefs%2Fheads%2Fmaster%2Flinks%2Fvmess&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Mini.ini&rename=`TrojanLinks%40%E6%A8%82%E7%8E%A9%E5%85%AC%E7%A4%BE`&emoji=true&list=false&xudp=false&udp=true&tfo=false&expand=true&scv=false&fdn=false&new_name=true"
+    url: "https://smart.ugreen.me.uk/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2FHuibq%2FTrojanLinks%2Frefs%2Fheads%2Fmaster%2Flinks%2Fvmess&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Mini.ini&rename=`TrojanLinks%40%E6%A8%82%E7%8E%A9%E5%85%AC%E7%A4%BE`&emoji=true&list=false&xudp=false&udp=true&tfo=false&expand=true&scv=false&fdn=false&new_name=true"
     path: ./Internet/VMESS.yml
     interval: 10800
     health-check:
