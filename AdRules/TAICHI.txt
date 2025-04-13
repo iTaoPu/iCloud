@@ -1,0 +1,36 @@
+! Title: AdRules i叚娤.倖鍢 TAICHI List
+! Homepage: https://i叚娤.倖鍢.net.cn
+! Powerd by i叚娤.倖鍢
+! Expires: irregularly (update frequency)
+! Description: 苦事不宣，乐事不扬，闲事不管！
+! ------------------------------------
+! Version: 04.13
+! Update Date: 2025-04-13
+! Total lines: 23
+
+# 白名单
+@@||doh.pub^
+@@||dot.pub^
+@@||doh.360.cn^
+@@||dot.360.cn^
+@@||dns.alidns.com^
+@@||doh.onedns.net^
+@@||dot.onedns.net^
+@@||*.com.mp^
+@@||*.netlib.re^
+@@||*.cloudns.biz^
+@@||*.dedyn.io^
+@@||*.us.kg^
+@@||*.dpdns.org^
+@@||*.me.uk^
+
+# 黑名单
+||google.com^
+||google.com.*^
+||google*.com.*^
+||google.*^
+||google*.*^
+||adobe.*^
+||coodesker.com^
+||pcmanager.microsoft.com^
+||applicationinsights.azure.cn^
