@@ -6,7 +6,7 @@
 ! ------------------------------------
 ! Version: 03.26
 ! Update Date: 2025-03-26
-! Total lines: 577
+! Total lines: 583
 
 # i叚娤.倖鍢 名单 22
 # 白名单
@@ -35,7 +35,7 @@
 ||pcmanager.microsoft.com^
 ||applicationinsights.azure.cn^
 
-# 晴雅がく山道 黑名单 555
+# 晴雅がく山道 黑名单 560
 ||*.ads.heytapmobi.com^
 ||*.applovin.com^
 ||*.jomoxc.com^
@@ -72,6 +72,7 @@
 ||access1.tpns.tencent.com^
 ||activity.hdslb.com^
 ||activity.inads.cn^
+||adtrack.quark.cn^
 ||ad-api.morefreegame.com^
 ||ad-ggtg-api.37.com.cn^
 ||ad-rs6-bjmt-platform34.idcyz.hb1.kwaidc.com^
@@ -591,3 +592,7 @@
 ||audid.umeng.com^
 ||msg.umengcloud.com^
 ||*ad.wtzw.com^
+||789.kakamobi.cn^
+||swallow.kakamobi.cn^
+||chat-platform-open.kakamobi.cn^
+||jiaxiao-awd.kakamobi.cn^
