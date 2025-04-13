@@ -106,7 +106,7 @@ dns:
 proxy-providers:
   🦥萬里長城:
     type: http
-    url: "https://iTaoPu.GitHub.io/Great.Wall/list.meta.yml"
+    url: "https://loong.ugreen.us.kg/Great.Wall/list.meta.yml"
     path: ./Internet/🦥萬里長城.yaml
     interval: 10800
     health-check:
