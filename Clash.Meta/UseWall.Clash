@@ -106,7 +106,7 @@ dns:
 proxy-providers:
   🕷渝翰林:
     type: http
-    url: "https://imperialb.in/r/crbvnnsm"
+    url: "https://smart.ugreen.us.kg/sub?target=clash&url=https%3A%2F%2Fimperialb.in%2Fr%2Fxwpnhgtd%7C&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Mini.ini&emoji=true&list=false&xudp=false&udp=true&tfo=false&expand=true&scv=false&fdn=false&new_name=true"
     path: ./Internet/🕷渝翰林.yaml
     interval: 10800
     health-check:
