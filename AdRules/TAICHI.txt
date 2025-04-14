@@ -31,6 +31,5 @@
 ||google.*^
 ||google*.*^
 ||adobe.*^
-||coodesker.com^
 ||pcmanager.microsoft.com^
 ||applicationinsights.azure.cn^
