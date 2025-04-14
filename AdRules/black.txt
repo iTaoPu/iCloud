@@ -1,12 +1,12 @@
-! Title: AdRules i叚娤.倖鍢 Black List
+! Title: AdRules i叚娤.倖鍢 TAICHI List
 ! Homepage: https://i叚娤.倖鍢.net.cn
 ! Powerd by i叚娤.倖鍢
 ! Expires: irregularly (update frequency)
 ! Description: 苦事不宣，乐事不扬，闲事不管！
 ! ------------------------------------
 ! Version: 04.13
-! Update Date: 2025-04-13
-! Total lines: 560
+! Update Date: 2025-04-14
+! Total lines: 568
 
 ||*.ads.heytapmobi.com^
 ||*.applovin.com^
@@ -568,3 +568,11 @@
 ||swallow.kakamobi.cn^
 ||chat-platform-open.kakamobi.cn^
 ||jiaxiao-awd.kakamobi.cn^
+||pangolin.snssdk.com^
+||extlog.snssdk.com^
+||*pglstatp-toutiao.com^
+||toblog.ctobsnssdk.com^
+||*pangolin*toutiao*.com^
+||adashbc.m.taobao.com^
+||tnc3-bjlgy.snssdk.com^
+||mssdk-bu.snssdk.com^
