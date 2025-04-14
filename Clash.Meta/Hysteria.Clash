@@ -106,7 +106,7 @@ dns:
 proxy-providers:
   🎏歇斯底里:
     type: http
-    url: "https://smart.ugreen.us.kg/sub?target=clash&url=https%3A%2F%2Fgob64.topmarco.tech&insert=false&config=https%3A%2F%2Fitaopu.github.io%2FiCloud%2FACL4SSR%2FACL4SSR_Online_MultiMode.ini&emoji=true&list=false&xudp=false&udp=true&tfo=false&expand=true&scv=false&fdn=false&new_name=true"
+    url: "https://subapi.cmliussss.net/sub?target=clash&url=https%3A%2F%2Fgob64.topmarco.tech&insert=false&config=https%3A%2F%2Fitaopu.github.io%2FiCloud%2FACL4SSR%2FACL4SSR_Online_MultiMode.ini&emoji=true&list=false&xudp=false&udp=true&tfo=false&expand=true&scv=false&fdn=false&new_name=true"
     path: ./Internet/🎏歇斯底里.yaml
     interval: 10800
     health-check:
