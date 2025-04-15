@@ -2,10 +2,10 @@
 ! Homepage: https://i叚娤.倖鍢.net.cn
 ! Powerd by i叚娤.倖鍢
 ! Expires: irregularly (update frequency)
-! Description: Completely blocks all Google-related domains (including YouTube).
+! Description: Completely blocks all Google-related domains (including YouTube)
 ! ------------------------------------
-! Version: 04.15
-! Update Date: 2025-04-15
+! Version: 1.0.14.52
+! Update Date:  2025-02-25
 ! Total lines: 1639
 
 ||*-android-context-data.googleapis.com^
