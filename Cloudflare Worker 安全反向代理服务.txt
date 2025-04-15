@@ -1,0 +1,45 @@
+const TARGET_HOST = '****'; // 目标域名
+
+addEventListener('fetch', event => {
+  event.respondWith(handleRequest(event.request));
+});
+
+async function handleRequest(request) {
+  // 1. 处理 OPTIONS 预检请求（CORS）
+  if (request.method === 'OPTIONS') {
+    return new Response(null, {
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+        'Access-Control-Allow-Headers': '*',
+        'Access-Control-Max-Age': '86400', // 缓存预检请求 24 小时
+      },
+    });
+  }
+
+  // 2. 构建目标 URL（强制 HTTPS）
+  const url = new URL(request.url);
+  url.host = TARGET_HOST;
+  url.protocol = 'https:'; // 强制 HTTPS
+
+  // 3. 过滤敏感头（防止泄露 Cookie/Token）
+  const safeHeaders = new Headers(request.headers);
+  safeHeaders.delete('Cookie');
+  safeHeaders.delete('Authorization');
+  safeHeaders.set('Host', TARGET_HOST); // 修正 Host 头
+
+  // 4. 发起代理请求
+  const modifiedRequest = new Request(url, {
+    headers: safeHeaders,
+    method: request.method,
+    body: request.body,
+    redirect: 'follow',
+  });
+
+  // 5. 获取响应并添加 CORS 头
+  const response = await fetch(modifiedRequest);
+  const modifiedResponse = new Response(response.body, response);
+  modifiedResponse.headers.set('Access-Control-Allow-Origin', '*');
+
+  return modifiedResponse;
+}
