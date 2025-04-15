@@ -1,6 +1,6 @@
 const TARGET_HOST = '****'; // 目标域名
 
-addEventListener('fetch', event => {
+addEventListener('fetch'， event => {
   event.respondWith(handleRequest(event.request));
 });
 
