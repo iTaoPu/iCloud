@@ -201,7 +201,6 @@ http://122.96.52.98:8006/JS_CUCC/G_HUBEI.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEk4
 #EXTINF:-1 group-title="卫视频道" tvg-logo="https://loong.ugreen.me.uk/TVlogo/img/Hebei.png" tvg-name="河北卫视",河北卫视
 http://122.96.52.98:8006/JS_CUCC/G_HEBEI.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEsF4b4x%2B7gd3f9B%2B0BA08CCAbs%2ByF7b29hFRLV23f6Vj&p=GITV&area=JS_CUCC
 
-
 #EXTINF:-1 group-title="教育频道" tvg-logo="https://loong.ugreen.me.uk/TVlogo/img/CETV1.png" tvg-name="CETV1",CETV-1
 http://122.96.52.98:8006/JS_CUCC/G_CETV-1.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEv1o35%2BVkhqZg4WpI44LgYQLxkknW%2BHqbwwyg1PzUQok&p=GITV&area=JS_CUCC
 #EXTINF:-1 group-title="教育频道" tvg-logo="https://loong.ugreen.me.uk/TVlogo/img/CETV2.png" tvg-name="CETV2",CETV-2
@@ -221,7 +220,7 @@ http://122.96.52.98:8006/JS_CUCC/G_JINYING.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtE
 http://122.96.52.98:8006/JS_CUCC/G_JIAJIA.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEjeasMvBuKP6GPZxFFWsFH4YUAl3uT6KyhhyA3GPqkYe&p=GITV&area=JS_CUCC
 #EXTINF:-1 group-title="少儿频道" tvg-logo="https://loong.ugreen.me.uk/TVlogo/img/ymkt.png" tvg-name="优漫卡通",优漫卡通
 http://122.96.52.98:8006/JS_CUCC/G_YOUMAN.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEoaYG6bplRDRKBOwZRNifGgYUAl3uT6KyhhyA3GPqkYe&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="少儿频道" tvg-logo="https://loong.ugreen.me.uk/TVlogo/img/hhxd.png" tvg-name="炫动卡通",炫动卡通
+#EXTINF:-1 group-title="少儿频道" tvg-logo="https://loong.ugreen.me.uk/TVlogo/img/hhxd.png" tvg-name="哈哈炫动",哈哈炫动
 http://122.96.52.98:8006/JS_CUCC/G_XUANDONG.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtElHAdYz2UZrlFf6hIAWx9LlYXTUjY6TEKXN37EwEhDWj&p=GITV&area=JS_CUCC
 
 #EXTINF:-1 group-title="江苏频道" tvg-logo="https://loong.ugreen.me.uk/TVlogo/img/Jiangsu.png" tvg-name="江苏卫视",江苏卫视高清
@@ -232,7 +231,7 @@ http://122.96.52.98:8006/JS_CUCC/G_JSCS.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtErf9
 http://122.96.52.98:8006/JS_CUCC/G_JSGG.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEnaaipXQfT6mvlq1T4j6uU3El4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
 #EXTINF:-1 group-title="江苏频道" tvg-logo="https://loong.ugreen.me.uk/TVlogo/img/Jiangsu4.png" tvg-name="江苏影视",江苏影视
 http://122.96.52.98:8006/JS_CUCC/G_JSYS.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEsbz4xIpXVtCFIMno2yuqVbEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="江苏频道" tvg-logo="https://loong.ugreen.me.uk/TVlogo/img/Jiangsu5.png" tvg-name="江苏体育休闲",江苏体育休闲
+#EXTINF:-1 group-title="江苏频道" tvg-logo="https://loong.ugreen.me.uk/TVlogo/img/Jiangsu5.png" tvg-name="江苏体育休闲",江苏体育·休闲
 http://122.96.52.98:8006/JS_CUCC/G_JSTY.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEoAQpkXItVA4eG3wN%2BSQc93El4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
 #EXTINF:-1 group-title="江苏频道" tvg-logo="https://loong.ugreen.me.uk/TVlogo/img/Jiangsu3.png" tvg-name="江苏综艺",江苏综艺
 http://122.96.52.98:8006/JS_CUCC/G_JSZY.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEncrSBfKQn4Q5ZoKMcKsr4jEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
@@ -240,12 +239,12 @@ http://122.96.52.98:8006/JS_CUCC/G_JSZY.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEncr
 http://122.96.52.98:8006/JS_CUCC/G_JSJY.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEjsYt23pVNf2zqF2rhGnDDHEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
 #EXTINF:-1 group-title="江苏频道" tvg-logo="https://loong.ugreen.me.uk/TVlogo/img/Nanjing1.png" tvg-name="南京新闻综合",南京新闻综合
 http://122.96.52.98:8006/JS_CUCC/G_NJXW.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEoMjcH0bdretQeGgwOgFK%2FnEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="江苏频道" tvg-logo="https://loong.ugreen.me.uk/TVlogo/img/Nanjing18.png" tvg-name="南京十八·生活",南京十八·生活
+#EXTINF:-1 group-title="江苏频道" tvg-logo="https://loong.ugreen.me.uk/TVlogo/img/Nanjing18.png" tvg-name="南京十八生活",南京十八·生活
 http://122.96.52.98:8006/JS_CUCC/G_NJSB.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEqlM1l%2BeoFKI8wnHz%2FUgbsbEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
 #EXTINF:-1 group-title="江苏频道" tvg-logo="https://loong.ugreen.me.uk/TVlogo/img/Nanjing2.png" tvg-name="南京教科",南京教科
 http://122.96.52.98:8006/JS_CUCC/G_NJJK.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEiGqx7T0gmg2iKRDXWqfssbEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="江苏频道" tvg-logo="https://loong.ugreen.me.uk/TVlogo/image/Nanjing9.png" tvg-name="南京文旅记录",南京文旅记录
-http://122.96.52.98:8006/JS_CUCC/G_NJYL.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEjFqfQRndUrBSsUh
+#EXTINF:-1 group-title="江苏频道" tvg-logo="https://loong.ugreen.me.uk/TVlogo/image/Nanjing9.png" tvg-name="南京文旅记录",南京文旅·记录
+http://122.96.52.98:8006/JS_CUCC/G_NJYL.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEjFqfQRndUrBSsUh%2BqRc5aPEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
 #EXTINF:-1 group-title="江苏频道" tvg-logo="https://loong.ugreen.me.uk/TVlogo/image/Nanjing10.png" tvg-name="南京影视",南京影视
 http://122.96.52.98:8006/JS_CUCC/G_NJYS.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEryOYppBCaGCbwBoicbAMYfEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
 #EXTINF:-1 group-title="江苏频道" tvg-logo="https://loong.ugreen.me.uk/TVlogo/img/Nanjing6.png" tvg-name="南京少儿",南京少儿
