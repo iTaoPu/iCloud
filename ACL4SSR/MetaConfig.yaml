@@ -72,7 +72,7 @@ dns:
     - https://doh.pub/dns-query
   fallback:
     - https://dns.alidns.com/dns-query
-    - https://dns.google/dns-query
+    - https://cloudflare-dns.com/dns-query
   use-hosts: false
   use-system-hosts: false
   fallback-filter:
@@ -86,7 +86,7 @@ dns:
       - +.youtube.com
   nameserver-policy:
     geosite:geolocation-!cn:
-      - https://dns.cloudflare.com/dns-query
+      - https://cloudflare-dns.com/dns-query
       - https://dns.google/dns-query
     private:
       - https://dns.alidns.com/dns-query
