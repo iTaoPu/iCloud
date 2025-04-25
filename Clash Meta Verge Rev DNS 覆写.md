@@ -18,14 +18,11 @@ fake-ip-filter:
 default-nameserver:
   - '119.29.29.29'
   - '223.5.5.5'
-  - '180.76.76.76'
   - '1.1.1.1'
-  - '208.67.222.222'
   - '8.8.8.8'
 nameserver:
   - 'https://dns.alidns.com/dns-query'
   - 'https://doh.pub/dns-query'
-  - 'https://doh.360.cn/dns-query'
 direct-nameserver-follow-policy: false
 fallback-filter:
   geoip: true
@@ -38,18 +35,14 @@ fallback-filter:
     - '+.youtube.com'
 fallback:
   - 'https://dns.alidns.com/dns-query'
-  - 'https://dns.google/dns-query'
-  - 'https://doh.opendns.com/dns-query'
+  - 'https://cloudflare-dns.com/dns-query'
 nameserver-policy:
   geosite:geolocation-!cn:
-    - 'https://dns.cloudflare.com/dns-query'
+    - 'https://cloudflare-dns.com/dns-query'
     - 'https://dns.google/dns-query'
-    - 'https://doh.opendns.com/dns-query'
   private:
     - 'https://dns.alidns.com/dns-query'
     - 'https://doh.pub/dns-query'
-    - 'https://doh.360.cn/dns-query'
 proxy-server-nameserver:
   - 'https://dns.alidns.com/dns-query'
   - 'https://doh.pub/dns-query'
-  - 'https://doh.360.cn/dns-query'
