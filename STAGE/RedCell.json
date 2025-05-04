@@ -1065,7 +1065,7 @@
       "name": "📌导航┃https://vlink.cc/樂玩公社",
       "type": 3,
       "api": "csp_XPath",
-      "searchable": 0,
+      "searchable": 1,
       "quickSearch": 0,
       "changeable": 0
     },
@@ -1074,7 +1074,7 @@
       "name": "🈲禁止用于违法及商业用途",
       "type": 3,
       "api": "csp_XPath",
-      "searchable": 0,
+      "searchable": 1,
       "quickSearch": 0,
       "changeable": 0
     },
@@ -1083,7 +1083,7 @@
       "name": "🐋请勿相信视频中广告",
       "type": 3,
       "api": "csp_XPath",
-      "searchable": 0,
+      "searchable": 1,
       "quickSearch": 0,
       "changeable": 0
     },
@@ -1092,8 +1092,8 @@
       "name": "⚠️请勿付费 谨防诈骗",
       "type": 3,
       "api": "csp_XPath",
-      "searchable": 0,
-      "quickSearch": 0
+      "searchable": 1,
+      "quickSearch": 0,
       "changeable": 0
     }
   ],
