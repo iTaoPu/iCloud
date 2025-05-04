@@ -7,10 +7,10 @@
             "name": "𝘿𝙪𝙃𝙚·LIVE",
             "type": 0,
             "url": "https://tv.youdu.fan:666/live/live.txt",
-            "epg": "http://112114.5iclub.us.kg/?ch={name}&date={date}"
+            "epg": "http://112114.5iclub.us.kg/?ch={name}&date={date}",
             "logo": "https://epg.112114.eu.org/logo/{name}.png"
         }
-],
+]，
   "sites": [
     {
       "key": "豆瓣",
