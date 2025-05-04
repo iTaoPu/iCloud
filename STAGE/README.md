@@ -7,7 +7,7 @@
 
 |名称|地址|类型|
 | ------------ | ------------ | ------------ |
-|[5i計劃通行·樂玩公社](https://live.5iclub.cloudns.biz "樂玩公社")|https://live.5iclub.cloudns.biz/IPTV.m3u|IPV4|
+|[5i計劃通行·樂玩公社](https://itv.5iclub.cloudns.biz "樂玩公社")|https://live.5iclub.cloudns.biz/IPTV.m3u|IPV4|
 |[fanmingming](https://github.com/fanmingming/live "fanmingming")|https://raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/m3u/ipv6.m3u|IPV6|
 |[suxuang](https://github.com/suxuang/myIPTV "suxuang")|https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv6.m3u|IPV4/IPV6|
 |[YanG-1989](https://yang-1989.eu.org "YanG-1989")|https://tv.iill.top/m3u/Gather|IPV4/IPV6|
@@ -22,20 +22,18 @@
 | ------------ | ------------ | ------------ |
 |[🍊橙宝宝.US.KG]|[https://loong.5iclub.cloudns.biz/iCloud/STAGE/Orange.json](https://loong.5iclub.cloudns.biz/iCloud/STAGE/Orange.json)|源|
 |[🍙饭太硬.NET]|[http://www.饭太硬.net/tv](http://www.饭太硬.net/tv)|源|
-|[🦸‍♀️XIAOMI.小暴脾气.FUN]|[http://mpanso.me/DEMO.json](http://mpanso.me/DEMO.json)|源|
+|[🌦晨雨律诗.GIT]|[http://cluntop.github.io/box.json](http://cluntop.github.io/box.json)|源|
 |[🐈肥猫.COM]|[(http://肥猫.com)](http://肥猫.com)|源|
 |[🔞纯一骚零.TOP]|[https://100km.top/0](https://100km.top/0)|源|
 |[🥑菜妮丝.TOP]|[https://tv.菜妮丝.top](https://tv.菜妮丝.top)|源|
+|[📽𝘿𝙪𝙃𝙚影视.COM]|[https://毒盒.com/tv](https://xn--8owq8u.com/tv)|源|
 |[🏓巧技.COM]|[http://cdn.qiaoji8.com/tvbox.json](http://cdn.qiaoji8.com/tvbox.json)|源|
 |[🐮王二小放牛娃.XYZ]|[http://tvbox.王二小放牛娃.top](http://tvbox.王二小放牛娃.top)|源|
 |[🐟摸鱼儿.TOP]|[http://我不是.摸鱼儿.top](http://我不是.摸鱼儿.top)|源|
-|[🦉吃猫的鱼.DEV]|[https://d.kstore.dev/download/7213/吃猫的鱼](https://d.kstore.dev/download/7213/吃猫的鱼)|源|
-|[🍁歐歌.TOP]|[https://tv.nxog.top/m](tv.nxog.top/m)|源|
-|[🍺蛤皮牛爷.IO]|[https://cyao2q.github.io/files/n.json](https://cyao2q.github.io/files/n.json)|源|
+|[👣漠星曜.GIT]|[https://cyao2q.github.io/files/n.json](https://cyao2q.github.io/files/n.json)|源|
 |[🐱喵呜君.GIT]|[https://raw.githubusercontent.com/anaer/Meow/main/meow.json](https://raw.githubusercontent.com/anaer/Meow/main/meow.json)|源|
 |[🍋南风微笑.GIT]|[https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json](https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json)|源|
 |[🧿纳梅根良.GIT]|[https://tvbox.catvod.com/catvod.json](https://tvbox.catvod.com/catvod.json)|源|
-|[🐷猪猪lr.IP]|[https://175.178.251.183:6689/tv.txt](https://175.178.251.183:6689/tv.txt)|源|
 
 本项目不存储任何的流媒体内容，所有的法律责任与后果应由使用者自行承担。
 
