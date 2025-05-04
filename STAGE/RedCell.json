@@ -1,5 +1,5 @@
 {
-  "spider": "https://iCloud.ugreen.us.kg/STAGE/Shrimp.jar;md5;42ef09340295f4070cedad37bf759ef3",
+  "spider": "https://iCloud.ugreen.us.kg/STAGE/RedCell.jar",
   "wallpaper": "https://bing.img.run/uhd.php",
   "warningText": "【𝙇𝙚𝙒𝙖𝙣】提示：📢资源来自网络，所有内容仅供学习使用，禁止用于违法及商业用途，请勿相信视频中广告，请勿付费，谨防诈骗",
 "lives":[
@@ -10,7 +10,7 @@
             "epg": "http://112114.5iclub.us.kg/?ch={name}&date={date}"
             "logo": "https://epg.112114.eu.org/logo/{name}.png"
         }
-],
+]，
   "sites": [
     {
       "key": "豆瓣",
