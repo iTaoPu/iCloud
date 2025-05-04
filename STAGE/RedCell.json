@@ -1071,7 +1071,7 @@
     },
     {
       "key": "禁",
-      "name": "🈲禁止用于违法及商业用途,
+      "name": "🈲禁止用于违法及商业用途",
       "type": 3,
       "api": "csp_XPath",
       "searchable": 0,
