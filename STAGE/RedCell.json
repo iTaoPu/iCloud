@@ -10,7 +10,7 @@
             "epg": "http://112114.5iclub.us.kg/?ch={name}&date={date}",
             "logo": "https://epg.112114.eu.org/logo/{name}.png"
         }
-]，
+],
   "sites": [
     {
       "key": "豆瓣",
