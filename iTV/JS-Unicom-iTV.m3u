@@ -35,7 +35,7 @@ http://122.96.52.98:8006/JS_CUCC/G_CCTV-15-HQ.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nn
 http://122.96.52.98:8006/JS_CUCC/G_CCTV-16-CQ.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEj7L5TMaaLEN8QSSnoeVsO94LedphZzylPEmlN2UDQol&p=GITV&area=JS_CUCC
 #EXTINF:-1 group-title="央视频道" tvg-logo="https://loong.ugreen.me.uk/TVlogo/img/CCTV17.png" tvg-name="CCTV17",CCTV-17高清
 http://122.96.52.98:8006/JS_CUCC/G_CCTV-17-HQ.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEvZuARt3SsS1lp07gslq8B54LedphZzylPEmlN2UDQol&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="央视频道" tvg-logo="https://loong.ugreen.me.uk/TVlogo/img/CGTN.png" tvg-name="CGTN新闻",CGTN新闻
+#EXTINF:-1 group-title="央视频道" tvg-logo="https://loong.ugreen.me.uk/TVlogo/img/CGTN.png" tvg-name="CGTN",CGTN新闻
 http://122.96.52.98:8006/JS_CUCC/G_CCTV-NEWS.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEq%2FOFGGWwmuEqZCpNU2lpMI02fQ712gaPW1S8iZfrxPb&p=GITV&area=JS_CUCC
 
 #EXTINF:-1 group-title="央视频道" tvg-logo="https://loong.ugreen.me.uk/TVlogo/img/CCTV1.png" tvg-name="CCTV1",CCTV-1
