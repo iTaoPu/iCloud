@@ -4,13 +4,12 @@
 ! Expires: irregularly (update frequency)
 ! Description: 苦事不宣，乐事不扬，闲事不管！
 ! ------------------------------------
-! Version: 1.3.6
-! Update Date: 2025-05-01
-! Total lines: 570
+! Version: 1.3.7
+! Update Date: 2025-05-08
+! Total lines: 569
 
 ||*.ads.heytapmobi.com^
 ||*.applovin.com^
-||*.jomoxc.com^
 ||*.juicyads.me^
 ||*.voiceads.cn^
 ||*/snscosdownload/*/reserved/*$app=com.tencent.mm
