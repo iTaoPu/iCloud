@@ -23,9 +23,9 @@ webview://https://tv.cctv.com/live/cctv5/
 #EXTINF:-1 tvg-name="CCTV5" tvg-logo="https://loong.5iclub.us.kg/TVlogo/img/CCTV5.png" group-title="央视频",CCTV-5 体育
 webview://https://yangshipin.cn/tv/home?pid=600001818
 
-#EXTINF:-1 tvg-name="CCTV5" tvg-logo="https://loong.5iclub.us.kg/TVlogo/img/CCTV5+.png" group-title="央视网" catchup="append" catchup-source="?stime=${(b)yyyyMMddHHmmss}&etime=${(e)yyyyMMddHHmmss}&type=lbacks",CCTV-5+ 体育赛事
+#EXTINF:-1 tvg-name="CCTV5" tvg-logo="https://loong.5iclub.us.kg/TVlogo/img/CCTV5plus.png" group-title="央视网" catchup="append" catchup-source="?stime=${(b)yyyyMMddHHmmss}&etime=${(e)yyyyMMddHHmmss}&type=lbacks",CCTV-5+ 体育赛事
 webview://https://tv.cctv.com/live/cctv5plus/
-#EXTINF:-1 tvg-name="CCTV5" tvg-logo="https://loong.5iclub.us.kg/TVlogo/img/CCTV5+.png" group-title="央视频",CCTV-5+ 体育赛事
+#EXTINF:-1 tvg-name="CCTV5" tvg-logo="https://loong.5iclub.us.kg/TVlogo/img/CCTV5plus.png" group-title="央视频",CCTV-5+ 体育赛事
 webview://https://yangshipin.cn/tv/home?pid=600001817
 
 #EXTINF:-1 tvg-name="CCTV6" tvg-logo="https://loong.5iclub.us.kg/TVlogo/img/CCTV6.png" group-title="央视网" catchup="append" catchup-source="?stime=${(b)yyyyMMddHHmmss}&etime=${(e)yyyyMMddHHmmss}&type=lbacks",CCTV-6 电影
