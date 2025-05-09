@@ -98,7 +98,7 @@ dns:
 proxy-providers:
   📿始於之旅:
     type: http
-    url: "https://woyooo-distribute.hf.space/api/v1/subscribe?token=ndod6tah602dnelk&target=clash&list=true"
+    url: "https://subapi.cmliussss.net/sub?target=clash&url=https%3A%2F%2Fwoyooo-distribute.hf.space%2Fapi%2Fv1%2Fsubscribe%3Ftoken%3Dndod6tah602dnelk%26target%3Dv2ray&insert=false&rename=%60wzdnzd%2Faggregator%40%E6%A8%82%E7%8E%A9%E5%85%AC%E7%A4%BE%60&emoji=true&list=false&xudp=false&udp=true&tfo=false&expand=true&scv=false&fdn=false&new_name=true"
     path: ./Internet/📿始於之旅.yaml
     interval: 10800
     health-check:
