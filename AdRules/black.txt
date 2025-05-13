@@ -4,9 +4,9 @@
 ! Expires: irregularly (update frequency)
 ! Description: 苦事不宣，乐事不扬，闲事不管！
 ! ------------------------------------
-! Version: 1.3.7
-! Update Date: 2025-05-08
-! Total lines: 569
+! Version: 1.3.8
+! Update Date: 2025-05-13
+! Total lines: 585
 
 ||*.ads.heytapmobi.com^
 ||*.applovin.com^
@@ -570,10 +570,26 @@
 ||pangolin.snssdk.com^
 ||extlog.snssdk.com^
 ||*pglstatp-toutiao.com^
-||toblog.ctobsnssdk.com^
 ||*pangolin*toutiao*.com^
 ||adashbc.m.taobao.com^
 ||tnc3-bjlgy.snssdk.com^
 ||mssdk-bu.snssdk.com^
-||optimus-ads-ykx.amap.com^
 ||amap-aos-info-nogw.amap.com^
+||ads.sohu.com^
+||whjzjx.cn^
+||ads.log.kafka.top^
+||ad.wx.com^
+||wximg.wxs.qq.com^
+||as.weixin.qq.com^
+||ads3-normal-lf.zijieapi.com^
+||tradplusad.com^
+||sb.adtidy.com^
+||miaozhen.com^
+||ads.x.com^
+||adservice.google.com^
+||adsfilebssdlbig.ali.kugou.com.wswebcdn.com^
+||adsfilebssdlbig.ali.kugou.com^
+||adservice.kugou.com^
+||remoteads.oss-cn-beijing.aliyuncs.com^
+||about.ads.microsoft.com^
+||ads-shopping.shouqianba.com^
