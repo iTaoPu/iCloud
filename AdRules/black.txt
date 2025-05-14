@@ -4,9 +4,9 @@
 ! Expires: irregularly (update frequency)
 ! Description: 苦事不宣，乐事不扬，闲事不管！
 ! ------------------------------------
-! Version: 1.3.8
-! Update Date: 2025-05-13
-! Total lines: 585
+! Version: 1.4.0
+! Update Date: 2025-05-14
+! Total lines: 600
 
 ||*.ads.heytapmobi.com^
 ||*.applovin.com^
@@ -593,3 +593,18 @@
 ||remoteads.oss-cn-beijing.aliyuncs.com^
 ||about.ads.microsoft.com^
 ||ads-shopping.shouqianba.com^
+||abeacdataort-stsdk.vivo.com.cn^
+||c.sayhi.360.cn^
+||rmonitor.qq.com^
+||download.qidian.com^
+||galileotelemetry.tencent.com^
+||unitelogreport.reader.qq.com^
+||bossaudioandcomic-1252317822.image.myqcloud.com^
+||ywab.reader.qq.com^
+||wkanx.com^
+||dsplog-adnet.vivo.com.cn^
+||monitor.v2.tcyad.com^
+||feeds.vivo.com.cn^
+||feedsplat.vivo.com.cn^
+||abeacdataort-stsdk.vivo.com.cn^
+||ads.sinaimg.cn^
