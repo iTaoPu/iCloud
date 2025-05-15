@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="https://itv.ugreen.me.uk/EPG.xml"
+#EXTM3U x-tvg-url="https://gitee.com/mytv-android/myepg/raw/master/output/epg.gz"
 
 #EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://loong.5iclub.us.kg/TVlogo/img/CCTV1.png" group-title="央视网" catchup="append" catchup-source="?stime=${(b)yyyyMMddHHmmss}&etime=${(e)yyyyMMddHHmmss}&type=lbacks",CCTV-1 综合
 webview://https://tv.cctv.com/live/cctv1/
@@ -543,3 +543,24 @@ webview://https://www.cztv.com/liveTV/111
 
 #EXTINF:-1 tvg-name="之江纪录" tvg-logo="https://loong.5iclub.us.kg/TVlogo/img/zhijiangjilu.png" group-title="浙江频道",之江纪录
 webview://https://www.cztv.com/liveTV/112
+
+#EXTINF:-1 tvg-name="成都新闻综合" tvg-logo="https://loong.5iclub.us.kg/TVlogo/img/Chengdu1.png" group-title="四川频道",成都新闻综合
+webview://https://www.cditv.cn/show/4845-563.html
+
+#EXTINF:-1 tvg-name="成都经济资讯" tvg-logo="https://loong.5iclub.us.kg/TVlogo/img/Chengdu2.png" group-title="四川频道",成都经济资讯
+webview://https://www.cditv.cn/show/4845-562.html
+
+#EXTINF:-1 tvg-name="成都都市生活" tvg-logo="https://loong.5iclub.us.kg/TVlogo/img/Chengdu3.png" group-title="四川频道",成都都市生活
+webview://https://www.cditv.cn/show/4845-561.html
+
+#EXTINF:-1 tvg-name="成都影视文艺" tvg-logo="https://loong.5iclub.us.kg/TVlogo/img/Chengdu4.png" group-title="四川频道",成都影视文艺
+webview://https://www.cditv.cn/show/4845-560.html
+
+#EXTINF:-1 tvg-name="成都公共" tvg-logo="https://loong.5iclub.us.kg/TVlogo/img/Chengdu5.png" group-title="四川频道",成都公共
+webview://https://www.cditv.cn/show/4845-559.html
+
+#EXTINF:-1 tvg-name="成都少儿" tvg-logo="https://loong.5iclub.us.kg/TVlogo/img/Chengdu6.png" group-title="四川频道",成都少儿
+webview://https://www.cditv.cn/show/4845-558.html
+
+#EXTINF:-1 tvg-name="蓉城先锋" tvg-logo="https://loong.5iclub.us.kg/TVlogo/img/蓉城先锋.png" group-title="四川频道",蓉城先锋
+webview://https://www.cditv.cn/show/4845-592.html
