@@ -256,25 +256,25 @@ webview://https://www.gdtv.cn/tvChannelDetail/15
 #EXTINF:-1 tvg-name="广东移动" tvg-logo="https://loong.5iclub.us.kg/TVlogo/img/Guangdong15.png" group-title="广东频道" http-user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/133.0.0.0",广东移动
 webview://https://www.gdtv.cn/tvChannelDetail/74
 
-#EXTINF:-1 tvg-name="荔枝台" tvg-logo="https://loong.5iclub.us.kg/TVlogo/image/LiChee.png" group-title="广东频道" http-user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/133.0.0.0",荔枝台
+#EXTINF:-1 tvg-name="荔枝台" tvg-logo="https://loong.5iclub.us.kg/TVlogo/img/LiChee.png" group-title="广东频道" http-user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/133.0.0.0",荔枝台
 webview://https://www.gdtv.cn/tvChannelDetail/100
 
-#EXTINF:-1 tvg-name="纪录片" tvg-logo="https://loong.5iclub.us.kg/TVlogo/image/LiChee.png" group-title="广东频道" http-user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/133.0.0.0",纪录片
+#EXTINF:-1 tvg-name="纪录片" tvg-logo="https://loong.5iclub.us.kg/TVlogo/img/LiChee.png" group-title="广东频道" http-user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/133.0.0.0",纪录片
 webview://https://www.gdtv.cn/tvChannelDetail/94
 
-#EXTINF:-1 tvg-name="GRTN健康频道" tvg-logo="https://loong.5iclub.us.kg/TVlogo/image/LiChee.png" group-title="广东频道" http-user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/133.0.0.0",GRTN健康频道
+#EXTINF:-1 tvg-name="GRTN健康频道" tvg-logo="https://loong.5iclub.us.kg/TVlogo/img/LiChee.png" group-title="广东频道" http-user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/133.0.0.0",GRTN健康频道
 webview://https://www.gdtv.cn/tvChannelDetail/99
 
-#EXTINF:-1 tvg-name="GRTN文化频道" tvg-logo="https://loong.5iclub.us.kg/TVlogo/image/LiChee.png" group-title="广东频道" http-user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/133.0.0.0",GRTN文化频道
+#EXTINF:-1 tvg-name="GRTN文化频道" tvg-logo="https://loong.5iclub.us.kg/TVlogo/img/LiChee.png" group-title="广东频道" http-user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/133.0.0.0",GRTN文化频道
 webview://https://www.gdtv.cn/tvChannelDetail/75
 
-#EXTINF:-1 tvg-name="GRTN生活频道" tvg-logo="https://loong.5iclub.us.kg/TVlogo/image/LiChee.png" group-title="广东频道" http-user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/133.0.0.0",GRTN生活频道
+#EXTINF:-1 tvg-name="GRTN生活频道" tvg-logo="https://loong.5iclub.us.kg/TVlogo/img/LiChee.png" group-title="广东频道" http-user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/133.0.0.0",GRTN生活频道
 webview://https://www.gdtv.cn/tvChannelDetail/102
 
-#EXTINF:-1 tvg-name="GRTN教育频道" tvg-logo="https://loong.5iclub.us.kg/TVlogo/image/LiChee.png" group-title="广东频道" http-user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/133.0.0.0",GRTN教育频道
+#EXTINF:-1 tvg-name="GRTN教育频道" tvg-logo="https://loong.5iclub.us.kg/TVlogo/img/LiChee.png" group-title="广东频道" http-user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/133.0.0.0",GRTN教育频道
 webview://https://www.gdtv.cn/tvChannelDetail/104
 
-#EXTINF:-1 tvg-name="广东新闻广播" tvg-logo="https://loong.5iclub.us.kg/TVlogo/image/LiChee.png" group-title="广东频道" http-user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/133.0.0.0",广东新闻广播
+#EXTINF:-1 tvg-name="广东新闻广播" tvg-logo="https://loong.5iclub.us.kg/TVlogo/img/LiChee.png" group-title="广东频道" http-user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/133.0.0.0",广东新闻广播
 webview://https://www.gdtv.cn/audioChannelDetail/85
 
 #EXTINF:-1 tvg-name="山东齐鲁" tvg-logo="https://loong.5iclub.us.kg/TVlogo/img/Shandong1.png" group-title="山东频道",山东齐鲁
@@ -484,10 +484,10 @@ webview://https://live.mgtv.com/?channelId=578
 #EXTINF:-1 tvg-name="快乐垂钓" tvg-logo="https://loong.5iclub.us.kg/TVlogo/img/Hunan11.png" group-title="湖南频道",快乐垂钓
 webview://https://live.mgtv.com/?channelId=218
 
-#EXTINF:-1 tvg-name="长沙新闻综合" tvg-logo="https://loong.5iclub.us.kg/TVlogo/image/ChangSha1.png" group-title="湖南频道",长沙新闻综合
+#EXTINF:-1 tvg-name="长沙新闻综合" tvg-logo="https://loong.5iclub.us.kg/TVlogo/img/ChangSha1.png" group-title="湖南频道",长沙新闻综合
 webview://https://live.mgtv.com/?channelId=269
 
-#EXTINF:-1 tvg-name="长沙政法" tvg-logo="https://loong.5iclub.us.kg/TVlogo/image/ChangSha2.png" group-title="湖南频道",长沙政法
+#EXTINF:-1 tvg-name="长沙政法" tvg-logo="https://loong.5iclub.us.kg/TVlogo/img/ChangSha2.png" group-title="湖南频道",长沙政法
 webview://https://live.mgtv.com/?channelId=254
 
 #EXTINF:-1 tvg-name="东方卫视" tvg-logo="https://loong.5iclub.us.kg/TVlogo/img/Dongfang.png" group-title="上海频道",东方卫视
