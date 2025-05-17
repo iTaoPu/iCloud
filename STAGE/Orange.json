@@ -68,6 +68,7 @@
 "logo":"https://iCloud.ugreen.us.kg/STAGE/Cartoon_Police_Animation.gif",
 "lives":[
 {"name": "𝙇𝙚𝙒𝙖𝙣·IPv4","type": 0,"url": "https://tvbox.5iclub.us.kg/txt?url=https://itv.shrimp.netlib.re/IPTV.m3u","playerType": 1,"epg": "https://112114.5iclub.us.kg/?ch={name}&date={date}","logo": "https://epg.112114.eu.org/logo/{name}.png"},
-{"name": "𝙇𝙚𝙒𝙖𝙣�·IPv6","type": 0,"url": "https://tvbox.5iclub.us.kg/txt?url=https://itv.ugreen.netlib.re/IPTV.m3u","playerType": 1,"epg": "https://112114.5iclub.us.kg/?ch={name}&date={date}","logo": "https://epg.112114.eu.org/logo/{name}.png"}
+{"name": "𝙇𝙚𝙒𝙖𝙣·IPv6","type": 0,"url": "https://tvbox.5iclub.us.kg/txt?url=https://itv.ugreen.netlib.re/IPTV.m3u","playerType": 1,"epg": "https://112114.5iclub.us.kg/?ch={name}&date={date}","logo": "https://epg.112114.eu.org/logo/{name}.png"},
+{"name": "𝙇𝙚𝙒𝙖𝙣·IPTV","type": 0,"url": "https://tvbox.5iclub.us.kg/txt?url=https://live.shrimp.netlib.re/best_sorted.m3u","playerType": 1,"epg": "https://112114.5iclub.us.kg/?ch={name}&date={date}","logo": "https://epg.112114.eu.org/logo/{name}.png"}
 ]
 }
