@@ -7,7 +7,15 @@
             "name": "𝘿𝙪𝙃𝙚·LIVE",
             "type": 0,
             "url": "https://tv.youdu.fan:666/live/live.txt",
-            "epg": "http://epg.112114.eu.org/?ch={name}&date={date}"
+            "epg": "http://epg.112114.eu.org/?ch={name}&date={date}",
+            "logo": "https://epg.112114.eu.org/logo/{name}.png"
+        },
+        {
+            "name": "𝘿𝙪𝙃𝙚·LIVE",
+            "type": 0,
+            "url": "https://tv.iill.top/m3u/Gather",
+            "epg": "http://epg.112114.eu.org/?ch={name}&date={date}",
+            "logo": "https://epg.112114.eu.org/logo/{name}.png"
         }
 ],
     "sites": [
