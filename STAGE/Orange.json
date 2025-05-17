@@ -1,7 +1,7 @@
 {
-"spider": "https://iCloud.ugreen.us.kg/STAGE/Orange.jar;md5;cc679f2d4e777778ecb5683d6089b3e2",
+"spider": "https://iCloud.ugreen.us.kg/STAGE/Orange.jar;md5;fc9133894e848ba4211a0487ef3ff18a",
 "wallpaper": "https://bing.img.run/uhd.php",
-"warningText": "【樂玩公社】提示：📢资源来自网络，所有内容仅供学习使用，禁止用于违法及商业用途，请勿相信视频中广告，请勿付费，谨防诈骗",
+"warningText": "【樂玩公社】提示：📢长期维护切勿贩卖",
 
 "sites":[
 {"key":"豆瓣","name":"🍊橙宝宝┃𝙇𝙚𝙒𝙖𝙣","type": 3, "api": "csp_DouDouGuard","indexs":1,"searchable": 0,"quickSearch": 0,"changeable":0},
@@ -59,7 +59,7 @@
 {"key":"初中课堂","name":"📚初中┃课堂","type":3,"api":"csp_BiliGuard","style":{"type":"rect","ratio":1.597},"searchable":0,"quickSearch":0,"changeable":0,"ext":{"json":"https://im.feelec.com.cn/res/file.html?id=2c9a91099293dce401946513bb2d1289"}},
 {"key":"高中教育","name":"📚高中┃课堂","type":3,"api":"csp_BiliGuard","style":{"type":"rect","ratio":1.597},"searchable":0,"quickSearch":0,"changeable":0,"ext":{"json":"https://im.feelec.com.cn/res/file.html?id=2c9a91099293dce401946513bd90128b"}},
 
-{"key":"航","name":"📌导航┃https://vlink.cc/樂玩公社","type":3,"api":"csp_XPath","searchable":1,"quickSearch":0,"changeable":0},
+{"key":"航","name":"📌导航┃https://vlink.cc/Shrimp","type":3,"api":"csp_XPath","searchable":1,"quickSearch":0,"changeable":0},
 {"key":"禁","name":"🈲禁止用于违法及商业用途","type":3,"api":"csp_XPath","searchable":1,"quickSearch":0,"changeable":0},
 {"key":"鲸","name":"🐋请勿相信视频中广告","type":3,"api":"csp_XPath","searchable":1,"quickSearch":0,"changeable":0},
 {"key":"注","name":"⚠️请勿付费 谨防诈骗","type":3,"api":"csp_XPath","searchable":1,"quickSearch":0,"changeable":0}
@@ -67,7 +67,7 @@
 
 "logo":"https://iCloud.ugreen.us.kg/STAGE/Cartoon_Police_Animation.gif",
 "lives":[
-{"name": "𝙇𝙚𝙒𝙖𝙣·IPv4","type": 0,"url": "https://tvbox.5iclub.us.kg/txt?url=https://itv.5iclub.zone.id/IPTV.m3u","playerType": 1,"epg": "https://112114.5iclub.us.kg/?ch={name}&date={date}","logo": "https://epg.112114.eu.org/logo/{name}.png"},
+{"name": "𝙇𝙚𝙒𝙖𝙣·IPv4","type": 0,"url": "https://tvbox.5iclub.us.kg/txt?url=https://itv.shrimp.netlib.re/IPTV.m3u","playerType": 1,"epg": "https://112114.5iclub.us.kg/?ch={name}&date={date}","logo": "https://epg.112114.eu.org/logo/{name}.png"},
 {"name": "𝙇𝙚𝙒𝙖𝙣�·IPv6","type": 0,"url": "https://tvbox.5iclub.us.kg/txt?url=https://itv.ugreen.netlib.re/IPTV.m3u","playerType": 1,"epg": "https://112114.5iclub.us.kg/?ch={name}&date={date}","logo": "https://epg.112114.eu.org/logo/{name}.png"}
 ]
 }
