@@ -1,100 +1,13 @@
  {
     "spider": "https://iCloud.ugreen.us.kg/STAGE/RedCell.jar",
     "wallpaper": "https://bing.img.run/uhd.php",
-    "warningText": "【樂玩公社】提示：📢资源来自网络，所有内容仅供学习使用，禁止用于违法及商业用途，请勿相信视频中广告，请勿付费，谨防诈骗",
+    "warningText": "【樂玩公社】提示：📢长期维护切勿贩卖",
 "lives":[
         {
             "name": "𝘿𝙪𝙃𝙚·LIVE",
             "type": 0,
             "url": "https://tv.youdu.fan:666/live/live.txt",
             "epg": "http://epg.112114.eu.org/?ch={name}&date={date}"
-            "logo": "https://epg.112114.eu.org/logo/{name}.png"
-        },
-    {
-      "name": "猫TV线路(EXO)",
-      "type": 0,
-      "url": "http://rihou.cc:567/gggg.nzk",
-      "playerType": 2,
-      "ua": "okhttp/3",
-      "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
-      "logo": "https://epg.112114.eu.org/logo/{name}.png"
-    },
-    {
-      "name": "猫TV线路(IJK)",
-      "type": 0,
-      "url": "http://rihou.cc:567/gggg.nzk",
-      "playerType": 1,
-      "ua": "okhttp/3",
-      "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
-      "logo": "https://epg.112114.eu.org/logo/{name}.png"
-    },
-        {
-            "name": "网络Live",
-            "type": 0,
-            "url": "https://tv.iill.top/m3u/Live",
-            "playerType": 2,
-            "timeout": 10
-        },
-        {
-            "name": "电视Live",
-            "type": 0,
-            "url": "https://tv.iill.top/m3u/Gather",
-            "playerType": 2,
-            "timeout": 10
-        },
-        {
-            "name": "范明明Live",
-            "type": 0,
-            "url": "https://live.fanmingming.cn/tv/m3u/ipv6.m3u",
-            "playerType": 2,
-            "timeout": 10
-        },
-        {
-            "name": "咪咕直播",
-            "type": 0,
-            "url": "https://yun.urldwz.com/f/Q6y3ca/migu.m3u",
-            "timeout": 10
-        },
-        {
-            "name": "虎牙一起看",
-            "type": 3,
-            "api": "csp_Feiyang",
-            "url": "https://yun.urldwz.com/f/BE9PSL/huyayqk.m3u",
-            "timeout": 10,
-            "ua": "okhttp/3.15"
-        },
-        {
-            "name": "斗鱼一起看",
-            "type": 3,
-            "api": "csp_Feiyang",
-            "url": "https://yun.urldwz.com/f/NR9qiA/douyuyqk.m3u",
-            "timeout": 10,
-            "ua": "okhttp/3.15"
-        },
-        {
-            "name": "YY轮播",
-            "type": 3,
-            "api": "csp_Feiyang",
-            "url": "https://yun.urldwz.com/f/dlkycZ/yylunbo.m3u",
-            "timeout": 10,
-            "ua": "okhttp/3.15"
-        },
-        {
-            "name": "B站直播",
-            "type": 3,
-            "api": "csp_Feiyang",
-            "url": "https://yun.urldwz.com/f/9XBkHK/bilibili.m3u",
-            "timeout": 10,
-            "ua": "okhttp/3.15"
-        },
-        {
-            "name": "APTV",
-            "type": 0,
-            "url": "https://gh-proxy.com/https://github.com/Kimentanm/aptv/raw/master/m3u/iptv.m3u",
-            "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
-            "logo": "https://epg.iill.top/logo/{name}.png",
-            "ua": "okhttp/3.15,AptvPlayer/1.4.0",
-            "timeout": 10
         }
 ],
     "sites": [
@@ -2943,39 +2856,17 @@
         },
        {
        "key": "航",
-      "name": "📌导航┃https://vlink.cc/樂玩公社",
-      "type": 3,
-      "api": "csp_XPath",
-      "searchable": 1,
-      "quickSearch": 0,
-      "changeable": 0
-    },
-    {
-      "key": "禁",
-      "name": "🈲禁止用于违法及商业用途",
-      "type": 3,
-      "api": "csp_XPath",
-      "searchable": 1,
-      "quickSearch": 0,
-      "changeable": 0
-    },
-    {
-      "key": "鲸",
-      "name": "🐋请勿相信视频中广告",
-      "type": 3,
-      "api": "csp_XPath",
-      "searchable": 1,
-      "quickSearch": 0,
-      "changeable": 0
-    },
-    {
-      "key": "注",
-      "name": "⚠️请勿付费 谨防诈骗",
-      "type": 3,
-      "api": "csp_XPath",
-      "searchable": 1,
-      "quickSearch": 0,
-      "changeable": 0
+       "name": "📌导航┃https://vlink.cc/樂玩公社",
+       "type": 3,
+       "api": "csp_XBPQ",
+       "ext": {
+       "请求头": "User-Agent$MOBILE_UA",
+       "编码": "UTF-8",
+       "分类": "电影$chfilm#电视剧$chtvs#综艺$chvariety#动漫$chcg#",  
+       "分类url": "https://www.cgong.com/{cateId}/{class}_{area}_{year}_gold_{catePg}.html",
+       "简介": "喜欢热闹还是喜欢安静！
+       " 
+      }
     }
     ],
     "parses": [
