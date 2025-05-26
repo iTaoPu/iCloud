@@ -99,7 +99,7 @@
     "sites": [
         {
             "key": "豆瓣",
-            "name": "🚂红细胞┃𝙇𝙚𝙒𝙖𝙣",
+            "name": "毒盒.com",
             "type": 3,
             "api": "csp_Douban",
             "searchable": 0
@@ -128,7 +128,7 @@
             "style": {
                 "type": "list"
             },
-            "ext": "https://毒盒.com/tv/json/alist.json"
+            "ext": "https://tv.youdu.fan:666/duhe/json/alist.json"
         },
         {
             "key": "球赛看球",
@@ -218,7 +218,7 @@
              "key": "文才",
              "name": "文才｜APP",
              "type": 3,
-             "api": "https://毒盒.com/tv/py/文才影视.py",
+             "api": "https://tv.youdu.fan:666/duhe/py/文才影视.py",
              "searchable": 1,
              "quickSearch": 1,
              "filterable": 1,
@@ -367,7 +367,7 @@
             "key": "哔哩视频",
             "name": "哔哩｜视频",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/哔哩视频.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/哔哩视频.py",
             "ext": {
                 "json": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
             }
@@ -386,7 +386,7 @@
                 "ratio": 1.433
             },
             "ext": {
-                "json": "https://毒盒.com/tv/json/哔哩合集.json",
+                "json": "https://tv.youdu.fan:666/duhe/json/哔哩合集.json",
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
             }
         },
@@ -398,7 +398,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://毒盒.com/tv/json/wogg.json"
+            "ext": "https://tv.youdu.fan:666/duhe/json/wogg.json"
         },
         {
             "key": "木偶",
@@ -408,7 +408,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://毒盒.com/tv/json/mogg.json"
+            "ext": "https://tv.youdu.fan:666/duhe/json/mogg.json"
         },
         {
             "key": "蜡笔",
@@ -419,7 +419,7 @@
             "quickSearch": 1,
             "filterable": 1,
             "changeable": 1,
-            "ext": "https://毒盒.com/tv/json/lb.json"
+            "ext": "https://tv.youdu.fan:666/duhe/json/lb.json"
         },
         {
             "key": "至臻",
@@ -430,7 +430,7 @@
             "quickSearch": 1,
             "filterable": 1,
             "changeable": 1,
-            "ext": "https://毒盒.com/tv/json/zz.json"
+            "ext": "https://tv.youdu.fan:666/duhe/json/zz.json"
         },
         {
             "key": "多多",
@@ -441,7 +441,7 @@
             "quickSearch": 1,
             "filterable": 1,
             "changeable": 1,
-            "ext": "https://毒盒.com/tv/json/yyds.json"
+            "ext": "https://tv.youdu.fan:666/duhe/json/yyds.json"
         },
         {
             "key": "欧哥",
@@ -452,7 +452,7 @@
             "quickSearch": 1,
             "filterable": 1,
             "changeable": 1,
-            "ext": "https://毒盒.com/tv/json/og.json"
+            "ext": "https://tv.youdu.fan:666/duhe/json/og.json"
         },
         {
             "key": "二小",
@@ -463,7 +463,7 @@
             "quickSearch": 1,
             "filterable": 1,
             "changeable": 1,
-            "ext": "https://毒盒.com/tv/json/ex.json"
+            "ext": "https://tv.youdu.fan:666/duhe/json/ex.json"
         },
         {
             "key": "百家",
@@ -474,7 +474,7 @@
             "quickSearch": 1,
             "filterable": 1,
             "changeable": 1,
-            "ext": "https://毒盒.com/tv/json/bj.json"
+            "ext": "https://tv.youdu.fan:666/duhe/json/bj.json"
         },
         {
             "key": "大玩",
@@ -485,7 +485,7 @@
             "quickSearch": 1,
             "filterable": 1,
             "changeable": 1,
-            "ext": "https://毒盒.com/tv/json/dawo.json"
+            "ext": "https://tv.youdu.fan:666/duhe/json/dawo.json"
         },
         {
             "key": "虎斑",
@@ -496,7 +496,7 @@
             "quickSearch": 1,
             "filterable": 1,
             "changeable": 1,
-            "ext": "https://毒盒.com/tv/json/hb.json"
+            "ext": "https://tv.youdu.fan:666/duhe/json/hb.json"
         },
         {
             "key": "闪电",
@@ -507,7 +507,7 @@
             "quickSearch": 1,
             "filterable": 1,
             "changeable": 1,
-            "ext": "https://毒盒.com/tv/json/sd.json"
+            "ext": "https://tv.youdu.fan:666/duhe/json/sd.json"
         },
         {
             "key": "下饭",
@@ -518,7 +518,7 @@
             "quickSearch": 1,
             "filterable": 1,
             "changeable": 1,
-            "ext": "https://毒盒.com/tv/json/xf.json"
+            "ext": "https://tv.youdu.fan:666/duhe/json/xf.json"
         },
         {
             "key": "团长",
@@ -543,7 +543,7 @@
                 "type": "list",
                 "ratio": 1.433
             },
-            "ext": "https://毒盒.com/tv/json/lj.json"
+            "ext": "https://tv.youdu.fan:666/duhe/json/lj.json"
         },
         {
             "key": "Pan1",
@@ -558,7 +558,7 @@
                 "type": "list",
                 "ratio": 1.433
             },
-            "ext": "https://毒盒.com/tv/json/pan1.json"
+            "ext": "https://tv.youdu.fan:666/duhe/json/pan1.json"
         },
         {
             "key": "夸父",
@@ -573,7 +573,7 @@
                 "type": "list",
                 "ratio": 1.433
             },
-            "ext": "https://毒盒.com/tv/json/kf.json"
+            "ext": "https://tv.youdu.fan:666/duhe/json/kf.json"
         },
         {
             "key": "趣盘",
@@ -605,7 +605,7 @@
                 "type": "list",
                 "ratio": 1.433
             },
-            "ext": "https://毒盒.com/tv/json/aliyunpansearch.json"
+            "ext": "https://tv.youdu.fan:666/duhe/json/aliyunpansearch.json"
         },
         {
             "key": "盘库",
@@ -624,8 +624,8 @@
             "key": "双星",
             "name": "双星｜4K弹幕",
             "type": 3,
-            "api": "https://毒盒.com/tv/js/cloud.min.js",
-            "ext": "https://毒盒.com/tv/js/双星.js",
+            "api": "https://tv.youdu.fan:666/duhe/js/cloud.min.js",
+            "ext": "https://tv.youdu.fan:666/duhe/js/双星.js",
             "style": {
                 "type": "list"
             }
@@ -634,11 +634,11 @@
             "key": "SVIP短剧",
             "name": "SVIP｜短剧",
             "type": 3,
-            "api": "https://毒盒.com/tv/drpy_libs/drpy2.min.js",
+            "api": "https://tv.youdu.fan:666/duhe/drpy_libs/drpy2.min.js",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://毒盒.com/tv/js/星芽短剧.js"
+            "ext": "https://tv.youdu.fan:666/duhe/js/星芽短剧.js"
         },
         {
             "key": "星芽短剧",
@@ -653,7 +653,7 @@
             "key": "河马短剧",
             "name": "河马｜短剧",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/河马短剧.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/河马短剧.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -664,7 +664,7 @@
             "key": "偷乐短剧",
             "name": "偷乐｜短剧",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/偷乐短剧.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/偷乐短剧.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -675,7 +675,7 @@
             "key": "爱看短剧",
             "name": "爱看｜短剧",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/爱看短剧.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/爱看短剧.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -687,7 +687,7 @@
             "name": "短剧网｜短剧",
             "type": 3,
             "api": "csp_XBPQ",
-            "ext": "https://毒盒.com/tv/XBPQ/短剧网.json"
+            "ext": "https://tv.youdu.fan:666/duhe/XBPQ/短剧网.json"
         },
         {
             "key": "短剧屋",
@@ -697,13 +697,13 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://毒盒.com/tv/XYQHiker/短剧屋.json"
+            "ext": "https://tv.youdu.fan:666/duhe/XYQHiker/短剧屋.json"
         },
        {
             "key": "红果短剧",
             "name": "红果｜短剧",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/红果短剧.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/红果短剧.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -714,7 +714,7 @@
             "key": "剧多短剧",
             "name": "剧多｜短剧",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/剧多短剧.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/剧多短剧.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -725,7 +725,7 @@
             "key": "蓝莓短剧",
             "name": "蓝莓｜短剧",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/蓝莓短剧.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/蓝莓短剧.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -736,7 +736,7 @@
             "key": "甜圈短剧",
             "name": "甜圈｜短剧",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/甜圈短剧.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/甜圈短剧.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -747,7 +747,7 @@
             "key": "河马短剧",
             "name": "河马｜短剧",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/河马短剧.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/河马短剧.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -758,8 +758,8 @@
             "key": "海马短剧",
             "name": "海马｜短剧",
             "type": 3,
-            "api": "https://毒盒.com/tv/js/drpy2.min.js",
-            "ext": "https://毒盒.com/tv/js/河马短剧.js"
+            "api": "https://tv.youdu.fan:666/duhe/js/drpy2.min.js",
+            "ext": "https://tv.youdu.fan:666/duhe/js/河马短剧.js"
         },
         {
             "key": "QD4K",
@@ -785,7 +785,7 @@
             "key": "金牌影视",
             "name": "金牌｜影视",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/金牌影视.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/金牌影视.py",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
@@ -798,7 +798,7 @@
             "key": "猎手影视",
             "name": "猎手｜影视",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/猎手影视.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/猎手影视.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -809,7 +809,7 @@
             "key": "火车影视",
             "name": "火车｜影视",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/火车影视.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/火车影视.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -820,7 +820,7 @@
             "key": "美帕影视",
             "name": "美帕｜影视",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/美帕影视.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/美帕影视.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -831,7 +831,7 @@
             "key": "嗨皮影视",
             "name": "嗨皮｜影视",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/嗨皮影视.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/嗨皮影视.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -842,7 +842,7 @@
             "key": "爱瓜PY",
             "name": "爱瓜｜APP",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/爱瓜影视.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/爱瓜影视.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -853,7 +853,7 @@
             "key": "绝对PY",
             "name": "绝对｜APP",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/绝对影视.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/绝对影视.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -864,7 +864,7 @@
             "key": "小苹果PY",
             "name": "水果｜APP",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/小苹果影视.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/小苹果影视.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -875,7 +875,7 @@
             "key": "云端PY",
             "name": "云端｜APP",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/云端影视.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/云端影视.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -886,7 +886,7 @@
             "key": "魔方影视",
             "name": "魔方｜APP",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/魔方影视.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/魔方影视.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -897,7 +897,7 @@
             "key": "边缘影视",
             "name": "边缘｜APP",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/边缘影视.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/边缘影视.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -908,7 +908,7 @@
             "key": "恋鱼影视",
             "name": "恋鱼｜APP",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/恋鱼影视.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/恋鱼影视.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -919,7 +919,7 @@
             "key": "若惜影视",
             "name": "若惜｜APP",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/若惜影视.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/若惜影视.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -930,7 +930,7 @@
             "key": "云速影视",
             "name": "云速｜APP",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/云速影视.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/云速影视.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -941,7 +941,7 @@
             "key": "国外影视",
             "name": "全球｜APP",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/国外剧.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/国外剧.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -952,7 +952,7 @@
             "key": "小红影视",
             "name": "小红｜APP",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/小红影视.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/小红影视.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -963,7 +963,7 @@
             "key": "旺旺影视",
             "name": "旺旺｜APP",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/旺旺影视.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/旺旺影视.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -974,7 +974,7 @@
             "key": "农牧影视",
             "name": "农牧｜APP",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/农民影视.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/农民影视.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -985,7 +985,7 @@
             "key": "零度影视",
             "name": "零度｜APP",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/零度影视.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/零度影视.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -996,7 +996,7 @@
             "key": "奇迹影视",
             "name": "奇迹｜APP",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/奇迹影视.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/奇迹影视.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -1007,7 +1007,7 @@
             "key": "剧粑粑影视",
             "name": "剧粑｜APP",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/剧粑粑影视.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/剧粑粑影视.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -1018,7 +1018,7 @@
             "key": "茶杯狐影视",
             "name": "茶杯｜APP",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/茶杯狐影视.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/茶杯狐影视.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -1029,7 +1029,7 @@
             "key": "骚火影视",
             "name": "骚火｜APP",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/骚火影视.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/骚火影视.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -1040,7 +1040,7 @@
             "key": "柯南影视",
             "name": "柯南｜APP",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/柯南影视.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/柯南影视.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -1051,7 +1051,7 @@
             "key": "央视影视",
             "name": "央视｜APP",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/央视影视.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/央视影视.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -1062,12 +1062,12 @@
 	    "key": "布雷影视",
 	    "name": "布雷｜影视",
 	    "type": 3,
-	    "api": "https://毒盒.com/tv/drpy_libs/drpy2.min.js",
+	    "api": "https://tv.youdu.fan:666/duhe/drpy_libs/drpy2.min.js",
 	    "searchable": 1,
 	    "quickSearch": 1,
 	    "filterable": 1,
 	    "order_num": 0,
-	    "ext": "https://毒盒.com/tv/js/布雷.js"
+	    "ext": "https://tv.youdu.fan:666/duhe/js/布雷.js"
          },
         {
             "key": "快看",
@@ -1226,8 +1226,8 @@
             "key": "采集之王",
             "name": "采集｜合集",
             "type": 3,
-            "api": "https://毒盒.com/tv/js/drpy2.min.js",
-            "ext": "https://毒盒.com/tv/js/采集之王.js?type=url&params=.https://毒盒.com/tv/json/采集静态.json$1$1"
+            "api": "https://tv.youdu.fan:666/duhe/js/drpy2.min.js",
+            "ext": "https://tv.youdu.fan:666/duhe/js/采集之王.js?type=url&params=.https://tv.youdu.fan:666/duhe/json/采集静态.json$1$1"
         },
         {
             "key": "爱看机器人",
@@ -1243,77 +1243,77 @@
             "name": "可可｜影视",
             "type": 3,
             "api": "csp_XBPQ",
-            "ext": "https://毒盒.com/tv/XBPQ/可可影视.json"
+            "ext": "https://tv.youdu.fan:666/duhe/XBPQ/可可影视.json"
         },
         {
             "key": "海纳影视",
             "name": "海纳｜影视",
             "type": 3,
             "api": "csp_XBPQ",
-            "ext": "https://毒盒.com/tv/XBPQ/海纳影视.json"
+            "ext": "https://tv.youdu.fan:666/duhe/XBPQ/海纳影视.json"
         },
         {
             "key": "面包影视",
             "name": "面包｜影视",
             "type": 3,
             "api": "csp_XBPQ",
-            "ext": "https://毒盒.com/tv/XBPQ/面包影视.json"
+            "ext": "https://tv.youdu.fan:666/duhe/XBPQ/面包影视.json"
         },
         {
             "key": "永乐影视",
             "name": "永乐｜影视",
             "type": 3,
             "api": "csp_XBPQ",
-            "ext": "https://毒盒.com/tv/XBPQ/永乐影视.json"
+            "ext": "https://tv.youdu.fan:666/duhe/XBPQ/永乐影视.json"
         },
         {
             "key": "雪糕影视",
             "name": "雪糕｜影视",
             "type": 3,
             "api": "csp_XBPQ",
-            "ext": "https://毒盒.com/tv/XBPQ/雪糕影视.json"
+            "ext": "https://tv.youdu.fan:666/duhe/XBPQ/雪糕影视.json"
         },
         {
             "key": "流光影视",
             "name": "流光｜影视",
             "type": 3,
             "api": "csp_XBPQ",
-            "ext": "https://毒盒.com/tv/XBPQ/流光影视.json"
+            "ext": "https://tv.youdu.fan:666/duhe/XBPQ/流光影视.json"
         },
         {
             "key": "流星影视",
             "name": "流星｜影视",
             "type": 3,
             "api": "csp_XBPQ",
-            "ext": "https://毒盒.com/tv/XBPQ/流星影视.json"
+            "ext": "https://tv.youdu.fan:666/duhe/XBPQ/流星影视.json"
         },
         {
             "key": "星辰影视",
             "name": "星辰｜影视",
             "type": 3,
             "api": "csp_XBPQ",
-            "ext": "https://毒盒.com/tv/XBPQ/星辰影视.json"
+            "ext": "https://tv.youdu.fan:666/duhe/XBPQ/星辰影视.json"
         },
         {
             "key": "巴蜀影视",
             "name": "巴蜀｜影视",
             "type": 3,
             "api": "csp_XBPQ",
-            "ext": "https://毒盒.com/tv/XBPQ/巴蜀影视.json"
+            "ext": "https://tv.youdu.fan:666/duhe/XBPQ/巴蜀影视.json"
         },
         {
             "key": "泥巴影视",
             "name": "泥巴｜影视",
             "type": 3,
             "api": "csp_XBPQ",
-            "ext": "https://毒盒.com/tv/XBPQ/泥巴影视.json"
+            "ext": "https://tv.youdu.fan:666/duhe/XBPQ/泥巴影视.json"
         },
         {
             "key": "随客影视",
             "name": "随客｜影视",
             "type": 3,
             "api": "csp_XBPQ",
-            "ext": "https://毒盒.com/tv/XBPQ/随客影视.json"
+            "ext": "https://tv.youdu.fan:666/duhe/XBPQ/随客影视.json"
         },
         {
             "key": "一起影视",
@@ -1339,8 +1339,8 @@
             "key": "魔力高清",
             "name": "魔力｜影视",
             "type": 3,
-            "api": "https://毒盒.com/tv/js/drpy2.min.js",
-            "ext": "https://毒盒.com/tv/js/魔力高清.js"
+            "api": "https://tv.youdu.fan:666/duhe/js/drpy2.min.js",
+            "ext": "https://tv.youdu.fan:666/duhe/js/魔力高清.js"
         },
         {
             "key": "骚火影视",
@@ -1350,14 +1350,14 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://毒盒.com/tv/XYQHiker/骚火影视.json"
+            "ext": "https://tv.youdu.fan:666/duhe/XYQHiker/骚火影视.json"
         },
         {
             "key": "剧圈圈",
             "name": "剧圈圈｜影视",
             "type": 3,
-            "api": "https://毒盒.com/tv/js/drpy2.min.js",
-            "ext": "https://毒盒.com/tv/js/剧圈圈.js"
+            "api": "https://tv.youdu.fan:666/duhe/js/drpy2.min.js",
+            "ext": "https://tv.youdu.fan:666/duhe/js/剧圈圈.js"
         },
         {
             "key": "1905",
@@ -1372,29 +1372,29 @@
             "key": "腾讯视频",
             "name": "腾讯｜视频",
             "type": 3,
-            "api": "https://毒盒.com/tv/js/drpy2.min.js",
-            "ext": "https://毒盒.com/tv/js/腾讯视频.js"
+            "api": "https://tv.youdu.fan:666/duhe/js/drpy2.min.js",
+            "ext": "https://tv.youdu.fan:666/duhe/js/腾讯视频.js"
         },
         {
             "key": "优酷视频",
             "name": "优酷｜视频",
             "type": 3,
-            "api": "https://毒盒.com/tv/js/drpy2.min.js",
-            "ext": "https://毒盒.com/tv/js/优酷视频.js"
+            "api": "https://tv.youdu.fan:666/duhe/js/drpy2.min.js",
+            "ext": "https://tv.youdu.fan:666/duhe/js/优酷视频.js"
         },
         {
             "key": "芒果视频",
             "name": "芒果｜视频",
             "type": 3,
-            "api": "https://毒盒.com/tv/js/drpy2.min.js",
-            "ext": "https://毒盒.com/tv/js/芒果视频.js"
+            "api": "https://tv.youdu.fan:666/duhe/js/drpy2.min.js",
+            "ext": "https://tv.youdu.fan:666/duhe/js/芒果视频.js"
         },
         {
             "key": "爱奇艺",
             "name": "爱奇异｜视频",
             "type": 3,
-            "api": "https://毒盒.com/tv/js/drpy2.min.js",
-            "ext": "https://毒盒.com/tv/js/爱奇艺.js"
+            "api": "https://tv.youdu.fan:666/duhe/js/drpy2.min.js",
+            "ext": "https://tv.youdu.fan:666/duhe/js/爱奇艺.js"
         },
         {
             "key": "三六零",
@@ -1885,7 +1885,7 @@
             "key": "嗷呜动漫",
             "name": "嗷呜｜动漫",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/嗷呜动漫.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/嗷呜动漫.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -1896,7 +1896,7 @@
             "key": "MiFunP动漫",
             "name": "MiFunP｜动漫",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/MiFunP.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/MiFunP.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -1907,7 +1907,7 @@
             "key": "CliCli动漫",
             "name": "CliCli｜动漫",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/CliCli动漫.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/CliCli动漫.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -1922,28 +1922,28 @@
             "style": {
                 "type": "list"
             },
-            "ext": "https://毒盒.com/tv/XBPQ/哆啦新番社.json"
+            "ext": "https://tv.youdu.fan:666/duhe/XBPQ/哆啦新番社.json"
         },
         {
             "key": "56动漫",
             "name": "56｜动漫",
             "type": 3,
-            "api": "https://毒盒.com/tv/js/drpy2.min.js",
-            "ext": "https://毒盒.com/tv/js/56动漫.js"
+            "api": "https://tv.youdu.fan:666/duhe/js/drpy2.min.js",
+            "ext": "https://tv.youdu.fan:666/duhe/js/56动漫.js"
         },
         {
             "key": "NT动漫",
             "name": "NT｜动漫",
             "type": 3,
-            "api": "https://毒盒.com/tv/js/drpy2.min.js",
-            "ext": "https://毒盒.com/tv/js/NT动漫.js"
+            "api": "https://tv.youdu.fan:666/duhe/js/drpy2.min.js",
+            "ext": "https://tv.youdu.fan:666/duhe/js/NT动漫.js"
         },
         {
             "key": "Anime1",
             "name": "A1｜动漫",
             "type": 3,
-            "api": "https://毒盒.com/tv/js/drpy2.min.js",
-            "ext": "https://毒盒.com/tv/js/Anime1.js"
+            "api": "https://tv.youdu.fan:666/duhe/js/drpy2.min.js",
+            "ext": "https://tv.youdu.fan:666/duhe/js/Anime1.js"
         },
         {
             "key": "曼波动漫",
@@ -2006,77 +2006,77 @@
             "name": "樱花｜动漫",
             "type": 3,
             "api": "csp_XBPQ",
-            "ext": "https://毒盒.com/tv/XBPQ/樱花动漫.json"
+            "ext": "https://tv.youdu.fan:666/duhe/XBPQ/樱花动漫.json"
         },
         {
             "key": "好看动漫",
             "name": "好看｜动漫",
             "type": 3,
-            "api": "https://毒盒.com/tv/js/drpy2.min.js",
-            "ext": "https://毒盒.com/tv/js/好看动漫.js"
+            "api": "https://tv.youdu.fan:666/duhe/js/drpy2.min.js",
+            "ext": "https://tv.youdu.fan:666/duhe/js/好看动漫.js"
         },
         {
             "key": "奇米动漫",
             "name": "奇米｜动漫",
             "type": 3,
-            "api": "https://毒盒.com/tv/js/drpy2.min.js",
-            "ext": "https://毒盒.com/tv/js/奇米动漫.js"
+            "api": "https://tv.youdu.fan:666/duhe/js/drpy2.min.js",
+            "ext": "https://tv.youdu.fan:666/duhe/js/奇米动漫.js"
         },
         {
             "key": "花子动漫",
             "name": "花子｜动漫",
             "type": 3,
-            "api": "https://毒盒.com/tv/js/drpy2.min.js",
-            "ext": "https://毒盒.com/tv/js/花子动漫.js"
+            "api": "https://tv.youdu.fan:666/duhe/js/drpy2.min.js",
+            "ext": "https://tv.youdu.fan:666/duhe/js/花子动漫.js"
         },
         {
             "key": "动画片",
             "name": "动画片｜动漫",
             "type": 3,
-            "api": "https://毒盒.com/tv/js/drpy2.min.js",
-            "ext": "https://毒盒.com/tv/js/动画片大全.js"
+            "api": "https://tv.youdu.fan:666/duhe/js/drpy2.min.js",
+            "ext": "https://tv.youdu.fan:666/duhe/js/动画片大全.js"
         },
         {
             "key": "路漫漫",
             "name": "路漫漫｜动漫",
             "type": 3,
-            "api": "https://毒盒.com/tv/js/drpy2.min.js",
-            "ext": "https://毒盒.com/tv/js/路漫漫.js"
+            "api": "https://tv.youdu.fan:666/duhe/js/drpy2.min.js",
+            "ext": "https://tv.youdu.fan:666/duhe/js/路漫漫.js"
         },
         {
             "key": "动漫岛",
             "name": "动漫岛｜动漫",
             "type": 3,
-            "api": "https://毒盒.com/tv/js/drpy2.min.js",
-            "ext": "https://毒盒.com/tv/js/动漫岛.js"
+            "api": "https://tv.youdu.fan:666/duhe/js/drpy2.min.js",
+            "ext": "https://tv.youdu.fan:666/duhe/js/动漫岛.js"
         },
         {
             "key": "去看吧",
             "name": "去看吧｜动漫",
             "type": 3,
-            "api": "https://毒盒.com/tv/js/drpy2.min.js",
-            "ext": "https://毒盒.com/tv/js/去看吧.js"
+            "api": "https://tv.youdu.fan:666/duhe/js/drpy2.min.js",
+            "ext": "https://tv.youdu.fan:666/duhe/js/去看吧.js"
         },
         {
             "key": "爱弹幕",
             "name": "爱弹幕｜动漫",
             "type": 3,
-            "api": "https://毒盒.com/tv/js/drpy2.min.js",
-            "ext": "https://毒盒.com/tv/js/爱弹幕.js"
+            "api": "https://tv.youdu.fan:666/duhe/js/drpy2.min.js",
+            "ext": "https://tv.youdu.fan:666/duhe/js/爱弹幕.js"
         },
         {
             "key": "异世界",
             "name": "异世界｜动漫",
             "type": 3,
-            "api": "https://毒盒.com/tv/js/drpy2.min.js",
-            "ext": "https://毒盒.com/tv/js/异世界.js"
+            "api": "https://tv.youdu.fan:666/duhe/js/drpy2.min.js",
+            "ext": "https://tv.youdu.fan:666/duhe/js/异世界.js"
         },
         {
             "key": "蜻蜓FM",
             "name": "蜻蜓｜FM",
             "type": 3,
-            "api": "https://毒盒.com/tv/js/drpy2.min.js",
-            "ext": "https://毒盒.com/tv/js/蜻蜓FM.js"
+            "api": "https://tv.youdu.fan:666/duhe/js/drpy2.min.js",
+            "ext": "https://tv.youdu.fan:666/duhe/js/蜻蜓FM.js"
         },
 {
       "key": "csp_Kugou",
@@ -2098,36 +2098,36 @@
             "key": "酷奇MV",
             "name": "酷奇｜听歌",
             "type": 3,
-            "api": "https://毒盒.com/tv/js/drpy2.min.js",
-            "ext": "https://毒盒.com/tv/js/酷奇MV.js"
+            "api": "https://tv.youdu.fan:666/duhe/js/drpy2.min.js",
+            "ext": "https://tv.youdu.fan:666/duhe/js/酷奇MV.js"
         },
         {
             "key": "播客",
             "name": "播客｜听歌",
             "type": 3,
-            "api": "https://毒盒.com/tv/js/drpy2.min.js",
-            "ext": "https://毒盒.com/tv/js/播客.js"
+            "api": "https://tv.youdu.fan:666/duhe/js/drpy2.min.js",
+            "ext": "https://tv.youdu.fan:666/duhe/js/播客.js"
         },
         {
             "key": "呦呦DJ",
             "name": "呦呦｜听歌",
             "type": 3,
-            "api": "https://毒盒.com/tv/js/drpy2.min.js",
-            "ext": "https://毒盒.com/tv/js/呦呦DJ.js"
+            "api": "https://tv.youdu.fan:666/duhe/js/drpy2.min.js",
+            "ext": "https://tv.youdu.fan:666/duhe/js/呦呦DJ.js"
         },
         {
             "key": "清风DJ",
             "name": "清风｜听歌",
             "type": 3,
-            "api": "https://毒盒.com/tv/js/drpy2.min.js",
-            "ext": "https://毒盒.com/tv/js/清风DJ.js"
+            "api": "https://tv.youdu.fan:666/duhe/js/drpy2.min.js",
+            "ext": "https://tv.youdu.fan:666/duhe/js/清风DJ.js"
         },
         {
             "key": "爱车MV",
             "name": "爱车｜听歌",
             "type": 3,
-            "api": "https://毒盒.com/tv/js/drpy2.min.js",
-            "ext": "https://毒盒.com/tv/js/爱车MV.js"
+            "api": "https://tv.youdu.fan:666/duhe/js/drpy2.min.js",
+            "ext": "https://tv.youdu.fan:666/duhe/js/爱车MV.js"
         },
         {
             "key": "哔哩哔哩相声",
@@ -2139,7 +2139,7 @@
             "filterable": 0,
             "ext": {
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt",
-                "json": "https://毒盒.com/tv/json/哔哩哔哩相声.json"
+                "json": "https://tv.youdu.fan:666/duhe/json/哔哩哔哩相声.json"
             },
             "style": {
                 "type": "rect",
@@ -2156,7 +2156,7 @@
             "filterable": 0,
             "ext": {
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt",
-                "json": "https://毒盒.com/tv/json/哔哩哔哩小品.json"
+                "json": "https://tv.youdu.fan:666/duhe/json/哔哩哔哩小品.json"
             },
             "style": {
                 "type": "rect",
@@ -2173,7 +2173,7 @@
             "filterable": 0,
             "ext": {
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt",
-                "json": "https://毒盒.com/tv/json/哔哩哔哩戏曲.json"
+                "json": "https://tv.youdu.fan:666/duhe/json/哔哩哔哩戏曲.json"
             },
             "style": {
                 "type": "rect",
@@ -2188,68 +2188,68 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://毒盒.com/tv/json/戏曲多多.json"
+            "ext": "https://tv.youdu.fan:666/duhe/json/戏曲多多.json"
         },
 {
 			"key": "央视大全",
 			"name": "大全｜央视",
 			"type": 3,
-			"api": "https://毒盒.com/tv/drpy_libs/drpy2.min.js",
+			"api": "https://tv.youdu.fan:666/duhe/drpy_libs/drpy2.min.js",
 			"searchable": 1,
 			"quickSearch": 1,
 			"filterable": 1,
 			"order_num": 0,
-			"ext": "https://毒盒.com/tv/js/央视大全.js"
+			"ext": "https://tv.youdu.fan:666/duhe/js/央视大全.js"
 		},
 		{
 			"key": "央视经济",
 			"name": "经济｜央视",
 			"type": 3,
-			"api": "https://毒盒.com/tv/drpy_libs/drpy2.min.js",
+			"api": "https://tv.youdu.fan:666/duhe/drpy_libs/drpy2.min.js",
 			"searchable": 1,
 			"quickSearch": 1,
 			"filterable": 1,
 			"order_num": 0,
-			"ext": "https://毒盒.com/tv/js/央视经济.js"
+			"ext": "https://tv.youdu.fan:666/duhe/js/央视经济.js"
 		},
 		{
 			"key": "央视新闻",
 			"name": "新闻｜央视",
 			"type": 3,
-			"api": "https://毒盒.com/tv/drpy_libs/drpy2.min.js",
+			"api": "https://tv.youdu.fan:666/duhe/drpy_libs/drpy2.min.js",
 			"searchable": 1,
 			"quickSearch": 1,
 			"filterable": 1,
 			"order_num": 0,
-			"ext": "https://毒盒.com/tv/js/央视新闻.js"
+			"ext": "https://tv.youdu.fan:666/duhe/js/央视新闻.js"
 		},	
 		{
 			"key": "央视少儿",
 			"name": "少儿｜央视",
 			"type": 3,
-			"api": "https://毒盒.com/tv/drpy_libs/drpy2.min.js",
+			"api": "https://tv.youdu.fan:666/duhe/drpy_libs/drpy2.min.js",
 			"searchable": 1,
 			"quickSearch": 1,
 			"filterable": 1,
 			"order_num": 0,
-			"ext": "https://毒盒.com/tv/js/央视少儿.js"
+			"ext": "https://tv.youdu.fan:666/duhe/js/央视少儿.js"
 		},
 		{
 			"key": "央视综合",
 			"name": "综合｜央视",
 			"type": 3,
-			"api": "https://毒盒.com/tv/drpy_libs/drpy2.min.js",
+			"api": "https://tv.youdu.fan:666/duhe/drpy_libs/drpy2.min.js",
 			"searchable": 1,
 			"quickSearch": 1,
 			"filterable": 1,
 			"order_num": 0,
-			"ext": "https://毒盒.com/tv/js/央视综合.js"
+			"ext": "https://tv.youdu.fan:666/duhe/js/央视综合.js"
 		},
         {
             "key": "看球PY",
             "name": "球球｜看球",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/球球.py",
+            "api": "https://tv.youdu.fan:666/duhe/py/球球.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -2271,57 +2271,57 @@
             "key": "88看球",
             "name": "88｜看球",
             "type": 3,
-            "api": "https://毒盒.com/tv/js/drpy2.min.js",
+            "api": "https://tv.youdu.fan:666/duhe/js/drpy2.min.js",
             "style": {
                 "type": "list"
             },
-            "ext": "https://毒盒.com/tv/js/88看球.js"
+            "ext": "https://tv.youdu.fan:666/duhe/js/88看球.js"
         },
         {
             "key": "310直播",
             "name": "310｜看球",
             "type": 3,
-            "api": "https://毒盒.com/tv/js/drpy2.min.js",
+            "api": "https://tv.youdu.fan:666/duhe/js/drpy2.min.js",
             "style": {
                 "type": "list"
             },
-            "ext": "https://毒盒.com/tv/js/310直播.js"
+            "ext": "https://tv.youdu.fan:666/duhe/js/310直播.js"
         },
         {
             "key": "360吧",
             "name": "360｜看球",
             "type": 3,
-            "api": "https://毒盒.com/tv/js/drpy2.min.js",
+            "api": "https://tv.youdu.fan:666/duhe/js/drpy2.min.js",
             "style": {
                 "type": "list"
             },
-            "ext": "https://毒盒.com/tv/js/360吧.js"
+            "ext": "https://tv.youdu.fan:666/duhe/js/360吧.js"
         },
         {
             "key": "武享吧",
             "name": "格斗｜直播",
             "type": 3,
-            "api": "https://毒盒.com/tv/js/drpy2.min.js",
+            "api": "https://tv.youdu.fan:666/duhe/js/drpy2.min.js",
             "style": {
                 "type": "list"
             },
-            "ext": "https://毒盒.com/tv/js/武享吧.js"
+            "ext": "https://tv.youdu.fan:666/duhe/js/武享吧.js"
         },
         {
             "key": "JRKAN直播",
             "name": "JRKAN｜直播",
             "type": 3,
-            "api": "https://毒盒.com/tv/js/drpy2.min.js",
+            "api": "https://tv.youdu.fan:666/duhe/js/drpy2.min.js",
             "style": {
                 "type": "list"
             },
-            "ext": "https://毒盒.com/tv/js/JRKAN直播.js"
+            "ext": "https://tv.youdu.fan:666/duhe/js/JRKAN直播.js"
         },
         {
             "key": "网络直播",
             "name": "网络｜直播",
             "type": 3,
-            "api": "https://毒盒.com/tv/py/网络直播.py"
+            "api": "https://tv.youdu.fan:666/duhe/py/网络直播.py"
         },
         {
             "key": "快手直播",
@@ -2341,18 +2341,18 @@
       "key": "虎牙",
       "name": "虎牙｜直播",
       "type": 3,
-      "api": "https://毒盒.com/tv/drpy_libs/drpy22.min.js",
+      "api": "https://tv.youdu.fan:666/duhe/drpy_libs/drpy22.min.js",
       "searchable": 0,
       "quickSearch": 0,
       "filterable": 1,
-      "ext": "https://毒盒.com/tv/js/huyazhibo.js"
+      "ext": "https://tv.youdu.fan:666/duhe/js/huyazhibo.js"
     },
     {
       "key": "斗鱼js",
       "name": "斗鱼｜直播",
       "type": 3,
-      "api": "https://毒盒.com/tv/drpy_libs/drpy22.min.js",
-      "ext": "https://毒盒.com/tv/js/斗鱼直播.js",
+      "api": "https://tv.youdu.fan:666/duhe/drpy_libs/drpy22.min.js",
+      "ext": "https://tv.youdu.fan:666/duhe/js/斗鱼直播.js",
       "style": {
         "type": "rect",
         "ratio": 1.755
@@ -2367,31 +2367,31 @@
 			"key": "博看听书网",
 			"name": "博看｜小说",
 			"type": 3,
-			"api": "https://毒盒.com/tv/drpy_libs/drpy2.min.js",
+			"api": "https://tv.youdu.fan:666/duhe/drpy_libs/drpy2.min.js",
 			"searchable": 1,
 			"quickSearch": 1,
 			"filterable": 1,
 			"order_num": 0,
-			"ext": "https://毒盒.com/tv/js/博看听书.js"
+			"ext": "https://tv.youdu.fan:666/duhe/js/博看听书.js"
 		},
         {
 	"key": "爱上听书网",
 	"name": "听书｜小说",
 	"type": 3,
-	"api": "https://毒盒.com/tv/drpy_libs/drpy2.min.js",
+	"api": "https://tv.youdu.fan:666/duhe/drpy_libs/drpy2.min.js",
 	"searchable": 1,
 	"quickSearch": 1,
 	"filterable": 1,
 	"order_num": 0,
-	"ext": "https://毒盒.com/tv/js/爱上你听书网[听].js"
+	"ext": "https://tv.youdu.fan:666/duhe/js/爱上你听书网[听].js"
 		},
 
         {
             "key": "兔小贝",
             "name": "兔小贝｜幼教",
             "type": 3,
-            "api": "https://毒盒.com/tv/js/drpy2.min.js",
-            "ext": "https://毒盒.com/tv/js/兔小贝.js",
+            "api": "https://tv.youdu.fan:666/duhe/js/drpy2.min.js",
+            "ext": "https://tv.youdu.fan:666/duhe/js/兔小贝.js",
             "style": {
                 "type": "rect",
                 "ratio": 1.597
@@ -2401,8 +2401,8 @@
             "key": "贝乐虎",
             "name": "贝乐虎｜幼教",
             "type": 3,
-            "api": "https://毒盒.com/tv/js/drpy2.min.js",
-            "ext": "https://毒盒.com/tv/js/贝乐虎.js",
+            "api": "https://tv.youdu.fan:666/duhe/js/drpy2.min.js",
+            "ext": "https://tv.youdu.fan:666/duhe/js/贝乐虎.js",
             "style": {
                 "type": "rect",
                 "ratio": 1.597
@@ -2418,7 +2418,7 @@
             "filterable": 1,
             "ext": {
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt",
-                "json": "https://毒盒.com/tv/json/儿童拼音.json"
+                "json": "https://tv.youdu.fan:666/duhe/json/儿童拼音.json"
             },
             "style": {
                 "type": "rect",
@@ -2435,7 +2435,7 @@
             "filterable": 1,
             "ext": {
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt",
-                "json": "https://毒盒.com/tv/json/儿童识字.json"
+                "json": "https://tv.youdu.fan:666/duhe/json/儿童识字.json"
             },
             "style": {
                 "type": "rect",
@@ -2452,7 +2452,7 @@
             "filterable": 1,
             "ext": {
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt",
-                "json": "https://毒盒.com/tv/json/儿童英语.json"
+                "json": "https://tv.youdu.fan:666/duhe/json/儿童英语.json"
             },
             "style": {
                 "type": "rect",
@@ -2469,7 +2469,7 @@
             "filterable": 1,
             "ext": {
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt",
-                "json": "https://毒盒.com/tv/json/儿童硬笔.json"
+                "json": "https://tv.youdu.fan:666/duhe/json/儿童硬笔.json"
             },
             "style": {
                 "type": "rect",
@@ -2486,7 +2486,7 @@
             "filterable": 1,
             "ext": {
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt",
-                "json": "https://毒盒.com/tv/json/儿童思维.json"
+                "json": "https://tv.youdu.fan:666/duhe/json/儿童思维.json"
             },
             "style": {
                 "type": "rect",
@@ -2503,7 +2503,7 @@
             "filterable": 1,
             "ext": {
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt",
-                "json": "https://毒盒.com/tv/json/儿童口才.json"
+                "json": "https://tv.youdu.fan:666/duhe/json/儿童口才.json"
             },
             "style": {
                 "type": "rect",
@@ -2520,7 +2520,7 @@
             "filterable": 1,
             "ext": {
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt",
-                "json": "https://毒盒.com/tv/json/儿童编程.json"
+                "json": "https://tv.youdu.fan:666/duhe/json/儿童编程.json"
             },
             "style": {
                 "type": "rect",
@@ -2537,7 +2537,7 @@
             "filterable": 1,
             "ext": {
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt",
-                "json": "https://毒盒.com/tv/json/儿童武术.json"
+                "json": "https://tv.youdu.fan:666/duhe/json/儿童武术.json"
             },
             "style": {
                 "type": "rect",
@@ -2554,7 +2554,7 @@
             "filterable": 1,
             "ext": {
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt",
-                "json": "https://毒盒.com/tv/json/少儿教育.json"
+                "json": "https://tv.youdu.fan:666/duhe/json/少儿教育.json"
             },
             "style": {
                 "type": "rect",
@@ -2571,7 +2571,7 @@
             "filterable": 1,
             "ext": {
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt",
-                "json": "https://毒盒.com/tv/json/小学课堂.json"
+                "json": "https://tv.youdu.fan:666/duhe/json/小学课堂.json"
             },
             "style": {
                 "type": "rect",
@@ -2588,7 +2588,7 @@
             "filterable": 1,
             "ext": {
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt",
-                "json": "https://毒盒.com/tv/json/初中课堂.json"
+                "json": "https://tv.youdu.fan:666/duhe/json/初中课堂.json"
             },
             "style": {
                 "type": "rect",
@@ -2605,7 +2605,7 @@
             "filterable": 1,
             "ext": {
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt",
-                "json": "https://毒盒.com/tv/json/高中课堂.json"
+                "json": "https://tv.youdu.fan:666/duhe/json/高中课堂.json"
             },
             "style": {
                 "type": "rect",
@@ -2622,7 +2622,7 @@
             "filterable": 1,
             "ext": {
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt",
-                "json": "https://毒盒.com/tv/json/外语课堂.json"
+                "json": "https://tv.youdu.fan:666/duhe/json/外语课堂.json"
             },
             "style": {
                 "type": "rect",
@@ -2639,7 +2639,7 @@
             "filterable": 1,
             "ext": {
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt",
-                "json": "https://毒盒.com/tv/json/小灯塔百科.json"
+                "json": "https://tv.youdu.fan:666/duhe/json/小灯塔百科.json"
             },
             "style": {
                 "type": "rect",
@@ -2656,7 +2656,7 @@
             "filterable": 1,
             "ext": {
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt",
-                "json": "https://毒盒.com/tv/json/小灯塔科学.json"
+                "json": "https://tv.youdu.fan:666/duhe/json/小灯塔科学.json"
             },
             "style": {
                 "type": "rect",
@@ -2673,7 +2673,7 @@
             "filterable": 1,
             "ext": {
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt",
-                "json": "https://毒盒.com/tv/json/小灯塔地理.json"
+                "json": "https://tv.youdu.fan:666/duhe/json/小灯塔地理.json"
             },
             "style": {
                 "type": "rect",
@@ -2690,7 +2690,7 @@
             "filterable": 1,
             "ext": {
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt",
-                "json": "https://毒盒.com/tv/json/小灯塔国学.json"
+                "json": "https://tv.youdu.fan:666/duhe/json/小灯塔国学.json"
             },
             "style": {
                 "type": "rect",
@@ -2707,7 +2707,7 @@
             "filterable": 1,
             "ext": {
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt",
-                "json": "https://毒盒.com/tv/json/小灯塔人文.json"
+                "json": "https://tv.youdu.fan:666/duhe/json/小灯塔人文.json"
             },
             "style": {
                 "type": "rect",
@@ -2730,7 +2730,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://毒盒.com/tv/XBPQ/修罗影视.json"
+            "ext": "https://tv.youdu.fan:666/duhe/XBPQ/修罗影视.json"
         },
         {
             "key": "七味",
@@ -2796,7 +2796,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://毒盒.com/tv/XYQHiker/电影港.json"
+            "ext": "https://tv.youdu.fan:666/duhe/XYQHiker/电影港.json"
         },
         {
             "key": "狐狸君",
@@ -2807,7 +2807,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://毒盒.com/tv/XBPQ/狐狸君.json"
+            "ext": "https://tv.youdu.fan:666/duhe/XBPQ/狐狸君.json"
         },
         {
             "key": "布谷TV",
@@ -2817,7 +2817,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://毒盒.com/tv/XBPQ/布谷TV.json"
+            "ext": "https://tv.youdu.fan:666/duhe/XBPQ/布谷TV.json"
         },
         {
             "key": "BT天堂",
@@ -2827,7 +2827,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://毒盒.com/tv/XYQHiker/BT天堂.json"
+            "ext": "https://tv.youdu.fan:666/duhe/XYQHiker/BT天堂.json"
         },
         {
             "key": "Mp4电影",
@@ -2877,7 +2877,7 @@
                 "type": "list",
                 "ratio": 1.433
             },
-            "ext": "https://毒盒.com/tv/json/aliShare.json"
+            "ext": "https://tv.youdu.fan:666/duhe/json/aliShare.json"
         },
         {
             "key": "夸克云盘",
@@ -2891,7 +2891,7 @@
                 "type": "list",
                 "ratio": 1.433
             },
-            "ext": "https://毒盒.com/tv/json/quarkShare.json"
+            "ext": "https://tv.youdu.fan:666/duhe/json/quarkShare.json"
         },
         {
             "key": "UC",
@@ -2905,7 +2905,7 @@
                 "type": "list",
                 "ratio": 1.433
             },
-            "ext": "https://毒盒.com/tv/json/ucShare.json"
+            "ext": "https://tv.youdu.fan:666/duhe/json/ucShare.json"
         },
         {
             "key": "百度云盘",
@@ -2924,8 +2924,8 @@
             "key": "短剧合集",
             "name": "短剧｜云盘",
             "type": 3,
-            "api": "https://毒盒.com/tv/js/cloud.min.js",
-            "ext": "https://毒盒.com/tv/js/短剧合集.js",
+            "api": "https://tv.youdu.fan:666/duhe/js/cloud.min.js",
+            "ext": "https://tv.youdu.fan:666/duhe/js/短剧合集.js",
             "style": {
                 "type": "list"
             }
@@ -2934,8 +2934,8 @@
             "key": "短剧大全",
             "name": "短剧｜夸克",
             "type": 3,
-            "api": "https://毒盒.com/tv/js/cloud.min.js",
-            "ext": "https://毒盒.com/tv/js/短剧大全.js",
+            "api": "https://tv.youdu.fan:666/duhe/js/cloud.min.js",
+            "ext": "https://tv.youdu.fan:666/duhe/js/短剧大全.js",
             "style": {
                 "type": "list"
             }
