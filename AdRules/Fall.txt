@@ -5,8 +5,8 @@
 ! Description: 极致的体积控制，超高的命中率，极低的硬件要求！
 ! ------------------------------------
 ! Version: 1.6.6-release
-! Update Date: 2025-06-19
-! Total lines: 849
+! Update Date: 2025-06-28
+! Total lines: 848
 
 ||1500020991.vodplayer.wxamedia.com^
 ||1500022744.vodplayer.wxamedia.com^
@@ -837,7 +837,6 @@
 ||ytx-file.110route.cn^
 ||zeus.ad.xiaomi.com^
 ||zhihu-web-analytics.zhihu.com^
-/.*.*.shouji.sogou.com/
 /.*.1rtb.com/
 /.*.a.market.xiaomi.com/
 /.*.ad.gameley.com/
