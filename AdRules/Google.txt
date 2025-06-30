@@ -4,9 +4,9 @@
 ! Expires: irregularly (update frequency)
 ! Description: Completely blocks all Google-related domains (including YouTube)
 ! ------------------------------------
-! Version: 1.0.14.52
-! Update Date:  2025-02-25
-! Total lines: 1639
+! Version: 1.0.14.53
+! Update Date:  2025-06-30
+! Total lines: 1640
 
 ||*-android-context-data.googleapis.com^
 ||*-chromecontentsuggestions-pa.googleapis.com^
@@ -335,6 +335,7 @@
 ||screenwiseselect.com^
 ||screenwisetrends.com^
 ||screenwisetrendspanel.com^
+||share.google^
 ||simtransfer.goog^
 ||slides.new^
 ||sre.google^
