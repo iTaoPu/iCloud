@@ -64,11 +64,8 @@
 {"key":"注","name":"⚠️请勿付费 谨防诈骗","type":3,"api":"csp_XPath","searchable":1,"quickSearch":0,"changeable":0}
 ],
 
-"logo":"https://iCloud.ugreen.us.kg/STAGE/Cartoon_Police_Animation.gif",
+"logo":"https://icloud.shrimp.cloudns.biz/STAGE/Cartoon_Police_Animation.gif",
 "lives":[
-{"name": "𝙇𝙚𝙒𝙖𝙣·IPv4","type": 0,"url": "https://tvbox.5iclub.us.kg/txt?url=https://itv.shrimp.netlib.re/IPTV.m3u","playerType": 1,"epg": "https://epg.112114.eu.org/?ch={name}&date={date}","logo": "https://epg.112114.eu.org/logo/{name}.png"},
-{"name": "𝙇𝙚𝙒𝙖𝙣·IPv6","type": 0,"url": "https://tvbox.5iclub.us.kg/txt?url=https://itv.ugreen.netlib.re/IPTV.m3u","playerType": 1,"epg": "https://epg.112114.eu.org/?ch={name}&date={date}","logo": "https://epg.112114.eu.org/logo/{name}.png"},
-{"name": "𝙇𝙚𝙒𝙖𝙣·YGTV","type": 0,"url": "https://tvbox.5iclub.us.kg/txt?url=https://itv.shrimp.netlib.re/YGTV.m3u","playerType": 1,"epg": "https://epg.112114.eu.org/?ch={name}&date={date}","logo": "https://epg.112114.eu.org/logo/{name}.png"},
-{"name": "𝙇𝙚𝙒𝙖𝙣·IPTV","type": 0,"url": "https://tvbox.5iclub.us.kg/txt?url=https://live.shrimp.netlib.re/best_sorted.m3u","playerType": 1,"epg": "https://epg.112114.eu.org/?ch={name}&date={date}","logo": "https://epg.112114.eu.org/logo/{name}.png"}
+{"name": "𝙇𝙚𝙒𝙖𝙣·WebView","type": 0,"url": "https://tvbox.5iclub.us.kg/txt?url=https://icloud.ugreen.netlib.re/iTV/WebView.m3u","playerType": 1,"epg": "https://epg.112114.eu.org/?ch={name}&date={date}","logo": "https://epg.112114.eu.org/logo/{name}.png"}
 ]
 }
