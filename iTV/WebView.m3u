@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="https://epg.shrimp.cloudns.biz,https://erw.shrimp.cloudns.biz" catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}"
+#EXTM3U x-tvg-url="https://erw.shrimp.cloudns.biz/epg.xml,https://112114.shrimp.cloudns.biz/epg.xml" catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}"
 
 #EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://logo.shrimp.cloudns.biz/img/CCTV1.png" group-title="央视网" catchup="append" catchup-source="?stime=${(b)yyyyMMddHHmmss}&etime=${(e)yyyyMMddHHmmss}&type=lbacks",CCTV-1 综合
 webview://https://tv.cctv.com/live/cctv1/
