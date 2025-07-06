@@ -18,7 +18,7 @@
         {"url":"https://cluntop.github.io/tvbox/box.json","name":"🌦晨雨律诗.GIT"},
         {"url":"https://cyao2q.github.io/files/n.json","name":"👣漠星曜.GIT"},
         {"url":"https://lem85930.github.io/JN/lem.json","name":"🍋雷蒙影视.GIT"},
-        {"url":"https://cdn.jsdelivr.net/gh/anaer/Meow@main/meow.json","name":"🐱喵呜君.GIT"},
-        {"url":"https://cdn.jsdelivr.net/gh/yoursmile66/TVBox@main/XC.json","name":"🍋南风微笑.GIT"}
+        {"url":"https://fastly.jsdelivr.net/gh/anaer/Meow@main/meow.json","name":"🐱喵呜君.GIT"},
+        {"url":"https://fastly.jsdelivr.net/gh/yoursmile66/TVBox@main/XC.json","name":"🍋南风微笑.GIT"}
         ]
 }
