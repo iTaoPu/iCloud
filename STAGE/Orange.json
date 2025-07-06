@@ -66,6 +66,6 @@
 
 "logo":"https://icloud.shrimp.cloudns.biz/STAGE/Cartoon_Police_Animation.gif",
 "lives":[
-{"name": "𝙇𝙚𝙒𝙖𝙣·Internet iTV","type": 0,"url": "https://tvbox.5iclub.us.kg/txt?url=https://live.shrimp.netlib.re/Internet_iTV.m3u","playerType": 1,"epg": "https://epg.112114.eu.org/?ch={name}&date={date}","logo": "https://epg.112114.eu.org/logo/{name}.png"}
+{"name": "𝙇𝙚𝙒𝙖𝙣·Internet iTV","type": 0,"url": "https://live.5iclub.us.kg/Internet_iTV.txt","playerType": 1,"epg": "https://epg.112114.eu.org/?ch={name}&date={date}","logo": "https://epg.112114.eu.org/logo/{name}.png"}
 ]
 }
