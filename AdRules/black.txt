@@ -5,8 +5,8 @@
 ! Description: 苦事不宣，乐事不扬，闲事不管！
 ! ------------------------------------
 ! Version: 1.4.6
-! Update Date: 2025-05-29
-! Total lines: 614
+! Update Date: 2025-07-11
+! Total lines: 613
 
 ||10.130.208.223^
 ||106.11.23.107^
@@ -572,7 +572,6 @@
 ||webcast-open.douyin.com^
 ||webcast5-open-lf.douyin.com^
 ||webview.unityads.unity3d.com^
-||whjzjx.cn^
 ||win.gdt.qq.com^
 ||wkanx.com^
 ||wn.pos.baidu.com^
