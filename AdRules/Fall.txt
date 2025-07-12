@@ -5,8 +5,8 @@
 ! Description: 极致的体积控制，超高的命中率，极低的硬件要求！
 ! ------------------------------------
 ! Version: 1.6.6-release
-! Update Date: 2025-07-10
-! Total lines: 847
+! Update Date: 2025-07-12
+! Total lines: 848
 
 ||1500020991.vodplayer.wxamedia.com^
 ||1500022744.vodplayer.wxamedia.com^
@@ -302,6 +302,7 @@
 ||data.mistat.india.xiaomi.com^
 ||data.mistat.rus.xiaomi.com^
 ||data.mistat.xiaomi.com^
+||datacollection.uve.weibo.com^
 ||datk.anythinktech.com^
 ||dc.sigmob.cn^
 ||de.tynt.com^
@@ -708,7 +709,6 @@
 ||tdsdk.xdrig.com^
 ||telemetry.sdk.inmobi.com^
 ||tencent-dtv.m.cn.miaozhen.com^
-||terms-drcn.platform.dbankcloud.cn^
 ||test.ad.xiaomi.com^
 ||test.e.ad.xiaomi.com^
 ||tj.b.qq.com^
