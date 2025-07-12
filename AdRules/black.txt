@@ -4,9 +4,9 @@
 ! Expires: irregularly (update frequency)
 ! Description: 苦事不宣，乐事不扬，闲事不管！
 ! ------------------------------------
-! Version: 1.4.6
-! Update Date: 2025-07-11
-! Total lines: 613
+! Version: 1.4.7
+! Update Date: 2025-07-12
+! Total lines: 621
 
 ||10.130.208.223^
 ||106.11.23.107^
@@ -51,6 +51,7 @@
 ||ad.hzyoka.com^
 ||ad.lovefree.cc^
 ||ad.mcloud.139.com^
+||oceanengine.com^
 ||ad.oceanengine.com^
 ||ad.qq.com^
 ||ad.shunchangzhixing.com^
@@ -621,3 +622,10 @@
 ||mesu.apple.com^
 ||lf-leads-fe-scm.bytecdn.com^
 ||adjust.com^
+||adsdk.whjzjx.cn^
+||xvadtrack.xingya.com.cn^
+||getui.net^
+||getui.com^
+||getui.cn^
+||umeng.com^
+||shytkjgs.com^
