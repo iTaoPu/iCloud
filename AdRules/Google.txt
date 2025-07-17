@@ -4,9 +4,9 @@
 ! Expires: irregularly (update frequency)
 ! Description: Completely blocks all Google-related domains (including YouTube)
 ! ------------------------------------
-! Version: 1.0.14.53
-! Update Date:  2025-06-30
-! Total lines: 1640
+! Version: 1.0.35
+! Update Date:  2025-07-18
+! Total lines: 1638
 
 ||*-android-context-data.googleapis.com^
 ||*-chromecontentsuggestions-pa.googleapis.com^
@@ -361,7 +361,6 @@
 ||firebase.com^
 ||firebase.dev^
 ||firebase.io^
-||firebaseanalytics.com^
 ||firebaseapp.com^
 ||firebaseio.com^
 ||00hrf5vjtk.com^
@@ -1590,7 +1589,6 @@
 ||ytimg.com^
 ||fitbit.com^
 ||GCP02-NF-01.corp.fitbit.com^
-||GlobalVPN.corp.fitbit.com^
 ||USVPNEast.corp.fitbit.com^
 ||USVPNEAST.corp.fitbit.com^
 ||USVPNWest.corp.fitbit.com^
