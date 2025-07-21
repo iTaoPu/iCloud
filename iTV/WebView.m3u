@@ -565,5 +565,5 @@ webview://https://www.cditv.cn/show/4845-558.html
 #EXTINF:-1 tvg-name="蓉城先锋" tvg-logo="https://logo.shrimp.cloudns.biz/img/RongChengXF.png" group-title="🚃四川频道",蓉城先锋
 webview://https://www.cditv.cn/show/4845-592.html
 
-#EXTINF:-1 tvg-name="Webview检测" tvg-logo="https://logo.shrimp.cloudns.biz/img/Webview.png" group-title="⛔Webview检测",Webview检测
+#EXTINF:-1 tvg-name="Webview检测" tvg-logo="https://logo.shrimp.cloudns.biz/img/Webview.png" group-title="♻️Webview检测",Webview检测
 webview://https://passer-by.com/browser
