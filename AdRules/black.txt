@@ -4,9 +4,9 @@
 ! Expires: irregularly (update frequency)
 ! Description: 苦事不宣，乐事不扬，闲事不管！
 ! ------------------------------------
-! Version: 1.4.7
-! Update Date: 2025-07-12
-! Total lines: 621
+! Version: 1.5.0
+! Update Date: 2025-07-21
+! Total lines: 651
 
 ||10.130.208.223^
 ||106.11.23.107^
@@ -129,7 +129,6 @@
 ||ai-static.vivo.com.cn^
 ||aiclk.com^
 ||als.baidu.com^
-||amap-aos-info-nogw.amap.com^
 ||amdcopen.m.taobao.com^
 ||analytics.woozooo.com^
 ||android.bugly.qq.com^
@@ -371,7 +370,6 @@
 ||opencollective.com^
 ||openlog.cashcatads.com^
 ||optimus-ads-ykx.amap.com^
-||optimus-ads.amap.com^
 ||orbit.jd.com^
 ||ossgw.alicdn.com^
 ||oth.str.mdt.qq.com^
@@ -401,7 +399,6 @@
 ||polaris.zijieapi.com^
 ||pre-cache.video.iqiyi.com^
 ||pro.bugly.qq.com^
-||pstatp.com^
 ||public-bjy-rs-kce-node1466.idchb1az2.hb1.kwaidc.com^
 ||public.gdtimg.com^
 ||push.gifshow.com^
@@ -618,7 +615,6 @@
 ||c.etoolads.cn^
 ||ads-acc.qqbrowser.qq.com^
 ||adsfilebssdlbig.tx.kugou.com^
-||optimus-ads.amap.com^
 ||mesu.apple.com^
 ||lf-leads-fe-scm.bytecdn.com^
 ||adjust.com^
@@ -629,3 +625,37 @@
 ||getui.cn^
 ||umeng.com^
 ||shytkjgs.com^
+||cainiao-app-logs.cn-zhangjiakou.dualstack.log.aliyuncs.com^
+||adashx.ut.cainiao.com^
+||accscdn.m.taobao.com^
+||admonitor-feedback.cn-hangzhou.log.aliyuncs.com^
+||polaris5-normal-hl.zijieapi.com^
+||inbox.clashofclans.cn^
+||coc-ws.broker.tplay.qq.com^
+||jsonatm-wss.broker.tplay.qq.com^
+||xsgdt.play.aiseet.atianqi.com^
+||xsgdt.play.aiseet.atianqi.com^
+||lives.l.aiseet.atianqi.com^
+||ad.xelements.cn^
+||lives.l.aiseet.atianqi.com^
+||ads-drcn.platform.hihonorcloud.com^
+||k0ub7yecy34y98z.djvod.ndcimgs.com^
+||p2.eckwai.com^
+||djvod.ndcimgs.com^
+||wvcwop.zbbznk.xyz^
+||124124fgh56u34.e2y4h7.com^
+||pick.isxyrzo.com^
+||sdefm2ikfmn2i34n2.ser023.com^
+||map.thb205.com^
+||fall.faj135.com^
+||d3upkyrv5jl3rn.cloudfront.net^
+||dispatch-api-online.vemarsdev.com^
+||fcapi.jpush.cn^
+||abtest.ytkjsh.com^
+||adsrv.kurogames.com^
+||t-dsp.pinduoduo.com^
+||config.ab.qq.com^
+||ugd.gtimg.com^
+||ugc-upload.3g.qq.com^
+||rumt-zh.com^
+||richmedia.video.qq.com^
