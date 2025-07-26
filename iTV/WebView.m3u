@@ -567,3 +567,6 @@ webview://https://www.cditv.cn/show/4845-592.html
 
 #EXTINF:-1 tvg-name="Webview检测" tvg-logo="https://logo.shrimp.cloudns.biz/img/Webview.png" group-title="♻️Webview检测",Webview检测
 webview://https://passer-by.com/browser
+
+#EXTINF:-1 tvg-name="浙江卫视" tvg-logo="https://logo.shrimp.cloudns.biz/img/Zhejiang.png" group-title="🏫河南城建学院",浙江卫视
+webview://http://iptv.huuc.edu.cn/player.html?channel=zjhd
