@@ -4,7 +4,7 @@
 ! Expires: irregularly (update frequency)
 ! Description: Completely blocks all Google-related domains (including YouTube)
 ! ------------------------------------
-! Version: 1.0.35
+! Version: 1.0.14.55
 ! Update Date:  2025-07-18
 ! Total lines: 1638
 
