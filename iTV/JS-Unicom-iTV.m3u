@@ -2,6 +2,10 @@
 
 #EXTINF:-1 tvg-id="温馨提示" tvg-name="温馨提示" tvg-logo="https://logo.shrimp.cloudns.biz/img/温馨提示.png" group-title="🦧温馨提示",温馨提示
 https://itcoffe.5iclub.us.kg/Loong/iTV/Disclaimer.mp4
+#EXTINF:-1 tvg-id="谨防诈骗" tvg-name="谨防诈骗" tvg-logo="https://logo.shrimp.cloudns.biz/img/谨防诈骗.png" group-title="🦧温馨提示",谨防诈骗
+https://itcoffe.5iclub.us.kg/Loong/iTV/Disclaimer.mp4
+#EXTINF:-1 tvg-id="禁止蕉绿" tvg-name="禁止蕉绿" tvg-logo="https://logo.shrimp.cloudns.biz/img/禁止蕉绿.png" group-title="🦧温馨提示",禁止蕉绿
+https://itcoffe.5iclub.us.kg/Loong/iTV/Disclaimer.mp4
 
 #EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.shrimp.cloudns.biz/img/CCTV1.png" tvg-name="CCTV1",CCTV-1高清
 http://122.96.52.98:8006/JS_CUCC/G_CCTV-1-CQ.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEkAFVn1RP2d2uoo%2Foo97iAsu0HPDaI8IXtpvkDaFJ1bH&p=GITV&area=JS_CUCC
