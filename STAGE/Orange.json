@@ -1,5 +1,5 @@
 {
-"spider": "https://icloud.shrimp.cloudns.biz/STAGE/Orange.jar;md5;53ad14bb641d6ad5b1a76ea48f35cb7d",
+"spider": "https://icloud.ugreen.cloudns.biz/STAGE/Orange.jar;md5;53ad14bb641d6ad5b1a76ea48f35cb7d",
 "wallpaper": "https://bing.img.run/uhd.php",
 "warningText": "【樂玩公社】提示：📢长期维护切勿贩卖",
 
@@ -64,7 +64,7 @@
 {"key":"注","name":"⚠️请勿付费 谨防诈骗","type":3,"api":"csp_XPath","searchable":1,"quickSearch":0,"changeable":0}
 ],
 
-"logo":"https://icloud.shrimp.cloudns.biz/STAGE/Cartoon_Police_Animation.gif",
+"logo":"https://icloud.ugreen.cloudns.biz/STAGE/Cartoon_Police_Animation.gif",
 "lives":[
 {"name": "𝙇𝙚𝙒𝙖𝙣·Internet iTV","type": 0,"url": "https://itv.shrimp.cloudns.biz/Internet_iTV.txt","playerType": 1,"epg": "https://epg.112114.eu.org/?ch={name}&date={date}","logo": "https://epg.112114.eu.org/logo/{name}.png"},
 {"name": "𝙇𝙚𝙒𝙖𝙣·Keep iTV","type": 0,"url": "https://itv.shrimp.cloudns.biz/Keep_iTV.txt","playerType": 1,"epg": "https://epg.112114.eu.org/?ch={name}&date={date}","logo": "https://epg.112114.eu.org/logo/{name}.png"}
