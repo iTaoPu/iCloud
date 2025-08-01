@@ -4,24 +4,10 @@
 ! Expires: irregularly (update frequency)
 ! Description: 苦事不宣，乐事不扬，闲事不管！
 ! ------------------------------------
-! Version: 1.5.0
-! Update Date: 2025-07-21
-! Total lines: 651
+! Version: 1.5.1
+! Update Date: 2025-08-01
+! Total lines: 636
 
-||10.130.208.223^
-||106.11.23.107^
-||111.51.128.172^
-||113-116-50-196-yf81c2bb.nodeedge.cn:9512^
-||119.28.83.28:8099^
-||120.232.202.5^
-||120.232.202.6^
-||120.232.202.7^
-||120.232.207.80^
-||120.232.210.151^
-||120.232.210.153^
-||120.232.210.155^
-||183.232.114.245^
-||183.240.223.132^
 ||789.kakamobi.cn^
 ||a1.alibabausercontent.com^
 ||a6-remad.qm989.com^
@@ -584,7 +570,6 @@
 ||www.view-apple.com^
 ||wxa.wxs.qq.com^
 ||wximg.wxs.qq.com^
-||wxsmw.wxs.qq.com^
 ||xiaoshuo.km.com^
 ||xlog.jd.com^
 ||xpgw-mob-xcdn.cp31.ott.cibntv.net^
