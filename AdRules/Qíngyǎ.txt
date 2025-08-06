@@ -4,8 +4,8 @@
 ! Expires: irregularly (update frequency)
 ! Description: 苦事不宣，乐事不扬，闲事不管！
 ! ------------------------------------
-! Version: 1.5.1
-! Update Date: 2025-08-01
+! Version: 1.5.2
+! Update Date: 2025-08-06
 ! Total lines: 636
 
 ||789.kakamobi.cn^
@@ -412,7 +412,6 @@
 ||sb.adtidy.com^
 ||sc.laoqj.top^
 ||scs-x.iqiyi.com^
-||sdk-api.beizi.biz^
 ||sdk-e.play.aiseet.atianqi.com^
 ||sdk-event.beizi.biz^
 ||sdk.1rtb.net^
@@ -644,3 +643,4 @@
 ||ugc-upload.3g.qq.com^
 ||rumt-zh.com^
 ||richmedia.video.qq.com^
+||ad.xelements.cn^
