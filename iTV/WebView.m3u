@@ -674,11 +674,20 @@ webview://https://www.ncmc.nbtv.cn/gbds/folder8458/NBTV3/index.shtml
 #EXTINF:-1 tvg-name="NBTV4" tvg-logo="https://logo.ugreen.cloudns.biz/img/NBTV4.png" group-title="🚐浙江频道",宁波影视剧
 webview://https://www.ncmc.nbtv.cn/gbds/folder8458/NBTV4/index.shtml
 
+#EXTINF:-1 tvg-name="绍兴新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/绍兴新闻综合.png" group-title="🚐浙江频道",绍兴新闻综合
+webview://https://www.shaoxing.com.cn/app/tv/78
+
+#EXTINF:-1 tvg-name="绍兴文化影视" tvg-logo="https://logo.ugreen.cloudns.biz/img/绍兴文化影视.png" group-title="🚐浙江频道",绍兴文化影视
+webview://https://www.shaoxing.com.cn/app/tv/74
+
+#EXTINF:-1 tvg-name="绍兴公共" tvg-logo="https://logo.ugreen.cloudns.biz/img/绍兴公共.png" group-title="🚐浙江频道",绍兴公共
+webview://https://www.shaoxing.com.cn/app/tv/75
+
 #EXTINF:-1 tvg-name="余姚新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/余姚新闻综合.png" group-title="🚐浙江频道",余姚新闻综合
-https://www.quklive.com/cloud/h5/1718767387926372
+webview://https://www.qukanvideo.com/cloud/h5/1718767387926372
 
 #EXTINF:-1 tvg-name="姚江文化" tvg-logo="https://logo.ugreen.cloudns.biz/img/姚江文化.png" group-title="🚐浙江频道",姚江文化
-https://www.quklive.com/cloud/h5/1728440422705076
+webview://https://www.qukanvideo.com/cloud/h5/1728440422705076
 
 #EXTINF:-1 tvg-name="成都新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/Chengdu1.png" group-title="🚃四川频道",成都新闻综合
 webview://https://www.cditv.cn/show/4845-563.html
