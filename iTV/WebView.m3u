@@ -284,6 +284,48 @@ webview://https://www.gdtv.cn/tvChannelDetail/104
 #EXTINF:-1 tvg-name="广东新闻广播" tvg-logo="https://logo.ugreen.cloudns.biz/img/LiChee.png" group-title="🚅广东频道" http-user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/133.0.0.0",广东新闻广播
 webview://https://www.gdtv.cn/audioChannelDetail/85
 
+#EXTINF:-1 tvg-name="广东综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/Guangzhou1.png" group-title="🚅广东频道",广东综合
+webview://https://app.gztv.com/plusshare/#/tvDetail?code=3000
+
+#EXTINF:-1 tvg-name="广东新闻" tvg-logo="https://logo.ugreen.cloudns.biz/img/Guangzhou2.png" group-title="🚅广东频道",广东新闻
+webview://https://app.gztv.com/plusshare/#/tvDetail?code=3002
+
+#EXTINF:-1 tvg-name="广东影视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Guangzhou5.png" group-title="🚅广东频道",广东影视
+webview://https://app.gztv.com/plusshare/#/tvDetail?code=3006
+
+#EXTINF:-1 tvg-name="广东法治" tvg-logo="https://logo.ugreen.cloudns.biz/img/Guangzhou3.png" group-title="🚅广东频道",广东法治
+webview://https://app.gztv.com/plusshare/#/tvDetail?code=3003
+
+#EXTINF:-1 tvg-name="南国都市" tvg-logo="https://logo.ugreen.cloudns.biz/img/Guangzhou6.png" group-title="🚅广东频道",南国都市4K
+webview://https://app.gztv.com/plusshare/#/tvDetail?code=3004
+
+#EXTINF:-1 tvg-name="深圳卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shenzhen.png" group-title="🚅广东频道",深圳卫视4K
+webview://https://www.sztv.com.cn/dianshi.shtml?id=24725
+
+#EXTINF:-1 tvg-name="深圳卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shenzhen.png" group-title="🚅广东频道",深圳卫视
+webview://https://www.sztv.com.cn/dianshi.shtml?id=7867
+
+#EXTINF:-1 tvg-name="深圳都市" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shenzhen1.png" group-title="🚅广东频道",深圳都市
+webview://https://www.sztv.com.cn/dianshi.shtml?id=7868
+
+#EXTINF:-1 tvg-name="深圳电视剧" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shenzhen2.png" group-title="🚅广东频道",深圳电视剧
+webview://https://www.sztv.com.cn/dianshi.shtml?id=7880
+
+#EXTINF:-1 tvg-name="深圳财经" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shenzhen4.png" group-title="🚅广东频道",深圳财经
+webview://https://www.sztv.com.cn/dianshi.shtml?id=7871
+
+#EXTINF:-1 tvg-name="深圳少儿" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shenzhen6.png" group-title="🚅广东频道",深圳少儿
+webview://https://www.sztv.com.cn/dianshi.shtml?id=7881
+
+#EXTINF:-1 tvg-name="深圳移动电视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shenzhen12.png" group-title="🚅广东频道",深圳移动电视
+webview://https://www.sztv.com.cn/dianshi.shtml?id=7869
+
+#EXTINF:-1 tvg-name="宜和购物" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shenzhen16.png" group-title="🚅广东频道",宜和购物
+webview://https://www.sztv.com.cn/dianshi.shtml?id=7878
+
+#EXTINF:-1 tvg-name="深圳国际" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shenzhen7.png" group-title="🚅广东频道",深圳国际
+webview://https://www.sztv.com.cn/dianshi.shtml?id=7944
+
 #EXTINF:-1 tvg-name="山东齐鲁" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shandong1.png" group-title="🚝山东频道",山东齐鲁
 webview://https://v.iqilu.com/live/qlpd/
 
@@ -374,16 +416,16 @@ webview://https://www.nbs.cn/live/?channel=文旅纪录频道
 #EXTINF:-1 tvg-name="少儿频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing6.png" group-title="🚂江苏频道",南京少儿频道
 webview://https://www.nbs.cn/live/?channel=少儿频道
 
-#EXTINF:-1 tvg-name="徐州1套" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing6.png" group-title="🚂江苏频道",徐州1套
-webview://http://www.wifixz.com/tv/
+#EXTINF:-1 tvg-name="徐州1套" tvg-logo="https://logo.ugreen.cloudns.biz/img/徐州1套.png" group-title="🚂江苏频道",徐州1套
+webview://http://www.wifixz.com/tv
 
-#EXTINF:-1 tvg-name="徐州2套" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing6.png" group-title="🚂江苏频道",徐州2套
+#EXTINF:-1 tvg-name="徐州2套" tvg-logo="https://logo.ugreen.cloudns.biz/img/徐州2套.png" group-title="🚂江苏频道",徐州2套
 https://pull.nicewifi.cn/live/xztv02.flv
 
-#EXTINF:-1 tvg-name="徐州3套" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing6.png" group-title="🚂江苏频道",徐州3套
+#EXTINF:-1 tvg-name="徐州3套" tvg-logo="https://logo.ugreen.cloudns.biz/img/徐州3套.png" group-title="🚂江苏频道",徐州3套
 https://pull.nicewifi.cn/live/xztv03.flv
 
-#EXTINF:-1 tvg-name="徐州4套" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing6.png" group-title="🚂江苏频道",徐州4套
+#EXTINF:-1 tvg-name="徐州4套" tvg-logo="https://logo.ugreen.cloudns.biz/img/徐州4套.png" group-title="🚂江苏频道",徐州4套
 https://pull.nicewifi.cn/live/xztv04.flv
 
 #EXTINF:-1 tvg-name="北京卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Beijing0.png" group-title="🚒北京频道",北京卫视
