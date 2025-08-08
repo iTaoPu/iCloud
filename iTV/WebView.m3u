@@ -362,6 +362,9 @@ webview://https://static.yft.ndoe.cn/hd/ysx/#/?channelType=0&channelld=8
 #EXTINF:-1 tvg-name="云浮文旅" tvg-logo="https://logo.ugreen.cloudns.biz/img/云浮文旅.png" group-title="🚅广东频道",云浮文旅
 webview://https://static.yft.ndoe.cn/hd/ysx/#/?channelType=0&channelld=9
 
+#EXTINF:-1 tvg-name="山东卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shandong.png" group-title="🚝山东频道",山东卫视
+webview://https://v.iqilu.com/live/sdtv/
+
 #EXTINF:-1 tvg-name="山东齐鲁" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shandong1.png" group-title="🚝山东频道",山东齐鲁
 webview://https://v.iqilu.com/live/qlpd/
 
@@ -385,6 +388,54 @@ webview://https://v.iqilu.com/live/shpd/
 
 #EXTINF:-1 tvg-name="山东综艺" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shandong7.png" group-title="🚝山东频道",山东综艺
 webview://https://v.iqilu.com/live/zypd/
+
+#EXTINF:-1 tvg-name="QTV1" tvg-logo="https://logo.ugreen.cloudns.biz/img/QTV1.png" group-title="🚝山东频道",青岛1套
+webview://https://www.qtv.com.cn/live/tv/index.shtml
+
+#EXTINF:-1 tvg-name="QTV2" tvg-logo="https://logo.ugreen.cloudns.biz/img/QTV2.png" group-title="🚝山东频道",青岛2套
+webview://https://www.qtv.com.cn/live/tv/tv_qtv2.shtml
+
+#EXTINF:-1 tvg-name="QTV3" tvg-logo="https://logo.ugreen.cloudns.biz/img/QTV3.png" group-title="🚝山东频道",青岛3套
+webview://https://www.qtv.com.cn/live/tv/tv_qtv3.shtml
+
+#EXTINF:-1 tvg-name="QTV4" tvg-logo="https://logo.ugreen.cloudns.biz/img/QTV4.png" group-title="🚝山东频道",青岛4套
+webview://https://www.qtv.com.cn/live/tv/tv_qtv42.shtml
+
+#EXTINF:-1 tvg-name="QTV5" tvg-logo="https://logo.ugreen.cloudns.biz/img/QTV5.png" group-title="🚝山东频道",青岛5套
+webview://https://www.qtv.com.cn/live/tv/tv_qtv5.shtml
+
+#EXTINF:-1 tvg-name="QTV6" tvg-logo="https://logo.ugreen.cloudns.biz/img/QTV6.png" group-title="🚝山东频道",青岛6套
+webview://https://www.qtv.com.cn/live/tv/tv_qtv6.shtml
+
+#EXTINF:-1 tvg-name="临沂经济" tvg-logo="https://logo.ugreen.cloudns.biz/img/临沂经济.png" group-title="🚝山东频道",临沂经济
+webview://https://www.ilinyi.net/cms/tv/36417907
+
+#EXTINF:-1 tvg-name="临沂公共" tvg-logo="https://logo.ugreen.cloudns.biz/img/临沂公共.png" group-title="🚝山东频道",临沂公共
+webview://https://www.ilinyi.net/cms/tv/1020769
+
+#EXTINF:-1 tvg-name="临沂综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/临沂综合.png" group-title="🚝山东频道",临沂综合
+webview://https://www.ilinyi.net/cms/tv/1020403
+
+#EXTINF:-1 tvg-name="潍坊新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/潍坊新闻综合.png" group-title="🚝山东频道",潍坊新闻综合
+webview://https://www.wfcmw.cn/wfrtv_pdLive.html?tv=1
+
+#EXTINF:-1 tvg-name="潍坊经济生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/潍坊经济生活.png" group-title="🚝山东频道",潍坊经济生活
+webview://https://www.wfcmw.cn/wfrtv_pdLive.html?tv=2
+
+#EXTINF:-1 tvg-name="潍坊影视综艺" tvg-logo="https://logo.ugreen.cloudns.biz/img/潍坊影视综艺.png" group-title="🚝山东频道",潍坊影视综艺
+webview://https://www.wfcmw.cn/wfrtv_pdLive.html?tv=3
+
+#EXTINF:-1 tvg-name="潍坊科教文旅" tvg-logo="https://logo.ugreen.cloudns.biz/img/潍坊科教文旅.png" group-title="🚝山东频道",潍坊科教文旅
+webview://https://www.wfcmw.cn/wfrtv_pdLive.html?tv=4
+
+#EXTINF:-1 tvg-name="威海都市生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/威海都市生活.png" group-title="🚝山东频道",威海都市生活
+webview://https://iapp.weihai.tv/share/dHZsLTE1Ny0z.html
+
+#EXTINF:-1 tvg-name="威海海洋" tvg-logo="https://logo.ugreen.cloudns.biz/img/威海海洋旅.png" group-title="🚝山东频道",威海海洋
+webview://https://iapp.weihai.tv/share/dHZsLTE1Ny0xMg.html
+
+#EXTINF:-1 tvg-name="聊城综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/聊城综合.png" group-title="🚝山东频道",聊城综合
+webview://https://www.lcxw.cn/kands
 
 #EXTINF:-1 tvg-name="陕西卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shanxi.png" group-title="🚌陕西频道",陕西卫视
 webview://http://live.snrtv.com/?channel=陕西卫视
