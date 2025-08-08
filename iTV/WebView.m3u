@@ -378,7 +378,13 @@ webview://https://www.nbs.cn/live/?channel=少儿频道
 webview://http://www.wifixz.com/tv/
 
 #EXTINF:-1 tvg-name="徐州2套" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing6.png" group-title="🚂江苏频道",徐州2套
-https://pull.nicewifi.cn/live/xztv01.flv
+https://pull.nicewifi.cn/live/xztv02.flv
+
+#EXTINF:-1 tvg-name="徐州3套" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing6.png" group-title="🚂江苏频道",徐州3套
+https://pull.nicewifi.cn/live/xztv03.flv
+
+#EXTINF:-1 tvg-name="徐州4套" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing6.png" group-title="🚂江苏频道",徐州4套
+https://pull.nicewifi.cn/live/xztv04.flv
 
 #EXTINF:-1 tvg-name="北京卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Beijing0.png" group-title="🚒北京频道",北京卫视
 webview://https://www.brtn.cn/btv/btvsy_index?channel=北京卫视
@@ -582,5 +588,4 @@ webview://https://www.cditv.cn/show/4845-558.html
 webview://https://www.cditv.cn/show/4845-592.html
 
 #EXTINF:-1 tvg-name="Webview检测" tvg-logo="https://logo.ugreen.cloudns.biz/img/Webview.png" group-title="♻️Webview检测",Webview检测
-
 webview://https://passer-by.com/browser
