@@ -731,7 +731,7 @@ webview://https://live.fjtv.net/dsjpd/
 #EXTINF:-1 tvg-name="福建旅游" tvg-logo="https://logo.ugreen.cloudns.biz/img/Fujian5.png" group-title="🚃福建频道",福建旅游
 webview://https://live.fjtv.net/dspd
 
-#EXTINF:-1 tvg-name="福建经济" tvg-logo="https://logo.ugreen.cloudns.biz/img/Fujian6.png" group-title="🚃福建频道",福建经济
+#EXTINF:-1 tvg-name="福建经济生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/Fujian6.png" group-title="🚃福建频道",福建经济生活
 webview://https://live.fjtv.net/jspd
 
 #EXTINF:-1 tvg-name="福建体育" tvg-logo="https://logo.ugreen.cloudns.biz/img/Fujian7.png" group-title="🚃福建频道",福建体育
@@ -739,6 +739,30 @@ webview://https://live.fjtv.net/typd
 
 #EXTINF:-1 tvg-name="福建少儿" tvg-logo="https://logo.ugreen.cloudns.biz/img/Fujian8.png" group-title="🚃福建频道",福建少儿
 webview://https://live.fjtv.net/sepd
+
+#EXTINF:-1 tvg-name="泉州新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/泉州新闻综合.png" group-title="🚃福建频道",泉州新闻综合
+webview://https://www.qztv.cn/index/Medias/index/media_id/wq95wqbDnMKyd8KiwqzChnt0w5nChcKowoHCoQ/stream_name/news.html
+
+#EXTINF:-1 tvg-name="泉州闽南语" tvg-logo="https://logo.ugreen.cloudns.biz/img/泉州闽南语.png" group-title="🚃福建频道",泉州闽南语
+webview://https://www.qztv.cn/index/Medias/index/media_id/wq95wqbDnMKyd8KiwqzChnt0w5nChcKofcKh/stream_name/mny.html
+
+#EXTINF:-1 tvg-name="宁德新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/宁德新闻综合.png" group-title="🚃福建频道",宁德新闻综合
+webview://https://share.nddst.com/?_hgOutLink=live/livedetail&channel_id=41
+
+#EXTINF:-1 tvg-name="宁德文化旅游" tvg-logo="https://logo.ugreen.cloudns.biz/img/宁德文化旅游.png" group-title="🚃福建频道",宁德文化旅游
+webview://https://share.nddst.com/?_hgOutLink=live/livedetail&channel_id=42
+
+#EXTINF:-1 tvg-name="晋江电视台" tvg-logo="https://logo.ugreen.cloudns.biz/img/晋江电视台.png" group-title="🚃福建频道",晋江电视台
+webview://http://www.jinjiang.tv/live
+
+#EXTINF:-1 tvg-name="莆田1套" tvg-logo="https://logo.ugreen.cloudns.biz/img/莆田1套.png" group-title="🚃福建频道",莆田1套
+webview://https://www.ptbtv.com/live/pt1t
+
+#EXTINF:-1 tvg-name="莆田2套" tvg-logo="https://logo.ugreen.cloudns.biz/img/莆田2套.png" group-title="🚃福建频道",莆田2套
+webview://https://www.ptbtv.com/live/pt2t
+
+#EXTINF:-1 tvg-name="莆田仙游" tvg-logo="https://logo.ugreen.cloudns.biz/img/莆田仙游.png" group-title="🚃福建频道",莆田仙游
+webview://https://www.ptbtv.com/live/xyds
 
 #EXTINF:-1 tvg-name="Webview检测" tvg-logo="https://logo.ugreen.cloudns.biz/img/Webview.png" group-title="♻️Webview检测",Webview检测
 webview://https://passer-by.com/browser
