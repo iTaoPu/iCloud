@@ -656,11 +656,29 @@ webview://https://tv.hoolo.tv/hzsh
 #EXTINF:-1 tvg-name="杭州影视" tvg-logo="https://logo.ugreen.cloudns.biz/img/HanZhou4.png" group-title="🚐浙江频道",杭州影视
 webview://https://tv.hoolo.tv/utv
 
-#EXTINF:-1 tvg-name="杭州青少体育" tvg-logo="https://logo.ugreen.cloudns.biz/img/HanZhou5.png" group-title="🚐浙江频道",杭州青少体育
+#EXTINF:-1 tvg-name="杭州青少体育" tvg-logo="https://logo.ugreen.cloudns.biz/img/HanZhou5.png" group-title="🚐浙江频道",杭州青少·体育
 webview://https://tv.hoolo.tv/hzse
 
-#EXTINF:-1 tvg-name="杭州移动电视" tvg-logo="https://logo.ugreen.cloudns.biz/img/HanZhou6.png" group-title="🚐浙江频道",杭州青移动电视
+#EXTINF:-1 tvg-name="杭州移动电视" tvg-logo="https://logo.ugreen.cloudns.biz/img/HanZhou6.png" group-title="🚐浙江频道",杭州移动电视
 webview://https://tv.hoolo.tv/ydds
+
+#EXTINF:-1 tvg-name="NBTV1" tvg-logo="https://logo.ugreen.cloudns.biz/img/NBTV1.png" group-title="🚐浙江频道",宁波新闻综合
+webview://https://www.ncmc.nbtv.cn/gbds/folder8458/NBTV1/index.shtml
+
+#EXTINF:-1 tvg-name="NBTV2" tvg-logo="https://logo.ugreen.cloudns.biz/img/NBTV2.png" group-title="🚐浙江频道",宁波经济生活
+webview://https://www.ncmc.nbtv.cn/gbds/folder8458/NBTV2/index.shtml
+
+#EXTINF:-1 tvg-name="NBTV3" tvg-logo="https://logo.ugreen.cloudns.biz/img/NBTV3.png" group-title="🚐浙江频道",宁波都市文体
+webview://https://www.ncmc.nbtv.cn/gbds/folder8458/NBTV3/index.shtml
+
+#EXTINF:-1 tvg-name="NBTV4" tvg-logo="https://logo.ugreen.cloudns.biz/img/NBTV4.png" group-title="🚐浙江频道",宁波影视剧
+webview://https://www.ncmc.nbtv.cn/gbds/folder8458/NBTV4/index.shtml
+
+#EXTINF:-1 tvg-name="余姚新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/余姚新闻综合.png" group-title="🚐浙江频道",余姚新闻综合
+https://www.quklive.com/cloud/h5/1718767387926372
+
+#EXTINF:-1 tvg-name="姚江文化" tvg-logo="https://logo.ugreen.cloudns.biz/img/姚江文化.png" group-title="🚐浙江频道",姚江文化
+https://www.quklive.com/cloud/h5/1728440422705076
 
 #EXTINF:-1 tvg-name="成都新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/Chengdu1.png" group-title="🚃四川频道",成都新闻综合
 webview://https://www.cditv.cn/show/4845-563.html
