@@ -19,6 +19,8 @@ webview://https://yangshipin.cn/tv/home?pid=600001800
 
 #EXTINF:-1 tvg-name="CCTV3" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV3.png" group-title="🎥央视网",CCTV-3 综艺
 webview://https://tv.cctv.com/live/cctv3/
+#EXTINF:-1 tvg-name="CCTV3" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV3.png" group-title="📽️央视频",CCTV-3 综艺
+webview://https://yangshipin.cn/tv/home?pid=600001801
 
 #EXTINF:-1 tvg-name="CCTV4" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV4.png" group-title="🎥央视网",CCTV-4 中文国际
 webview://https://tv.cctv.com/live/cctv4/
@@ -89,11 +91,19 @@ webview://https://yangshipin.cn/tv/home?pid=600001815
 webview://https://tv.cctv.com/live/cctv16/
 #EXTINF:-1 tvg-name="CCTV16" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV16.png" group-title="📽️央视频",CCTV-16 奥林匹克
 webview://https://yangshipin.cn/tv/home?pid=600098637
+#EXTINF:-1 tvg-name="CCTV16" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV16+.png" group-title="📽️央视频",CCTV-16 4K
+webview://https://yangshipin.cn/tv/home?pid=600099502
 
 #EXTINF:-1 tvg-name="CCTV17" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV17.png" group-title="🎥央视网",CCTV-17 农业农村
 webview://https://tv.cctv.com/live/cctv17/
 #EXTINF:-1 tvg-name="CCTV17" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV17.png" group-title="📽️央视频",CCTV-17 农业农村
 webview://https://yangshipin.cn/tv/home?pid=600001810
+
+#EXTINF:-1 tvg-name="CCTV4K" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV4K.png" group-title="📽️央视频",CCTV4K
+webview://https://yangshipin.cn/tv/home?pid=600002264
+
+#EXTINF:-1 tvg-name="CCTV8K" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV8K.png" group-title="📽️央视频",CCTV8K
+webview://https://yangshipin.cn/tv/home?pid=600156816
 
 #EXTINF:-1 tvg-name="CCTV4欧洲" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV4oz.png" group-title="🎥央视网",CCTV-4 中文国际 (欧)
 webview://https://tv.cctv.com/live/cctveurope/index.shtml
@@ -104,7 +114,7 @@ webview://https://tv.cctv.com/live/cctvamerica/
 #EXTINF:-1 tvg-name="CGTN" tvg-logo="https://logo.ugreen.cloudns.biz/img/CGTN.png" group-title="📽️央视频",CGTN英语
 webview://https://yangshipin.cn/tv/home?pid=600014550
 
-#EXTINF:-1 tvg-name="CGTN纪录" tvg-logo="https://logo.ugreen.cloudns.biz/img/CGTNjilu.png" group-title="📽️央视频",CGTN记录
+#EXTINF:-1 tvg-name="CGTN纪录" tvg-logo="https://logo.ugreen.cloudns.biz/img/CGTNjilu.png" group-title="📽️央视频",CGTN外语纪录
 webview://https://yangshipin.cn/tv/home?pid=600084781
 
 #EXTINF:-1 tvg-name="CGTN俄语" tvg-logo="https://logo.ugreen.cloudns.biz/img/CGTNey.png" group-title="📽️央视频",CGTN俄语
@@ -113,10 +123,10 @@ webview://https://yangshipin.cn/tv/home?pid=600084758
 #EXTINF:-1 tvg-name="CGTN法语" tvg-logo="https://logo.ugreen.cloudns.biz/img/CGTNfy.png" group-title="📽️央视频",CGTN法语
 webview://https://yangshipin.cn/tv/home?pid=600084704
 
-#EXTINF:-1 tvg-name="CGTN西语" tvg-logo="https://logo.ugreen.cloudns.biz/img/CGTNxbyy.png" group-title="📽️央视频",CGTN西语
+#EXTINF:-1 tvg-name="CGTN西语" tvg-logo="https://logo.ugreen.cloudns.biz/img/CGTNxbyy.png" group-title="📽️央视频",CGTN西班牙语
 webview://https://yangshipin.cn/tv/home?pid=600084744
 
-#EXTINF:-1 tvg-name="CGTN阿语" tvg-logo="https://logo.ugreen.cloudns.biz/img/CGTNalby.png" group-title="📽️央视频",CGTN阿语
+#EXTINF:-1 tvg-name="CGTN阿语" tvg-logo="https://logo.ugreen.cloudns.biz/img/CGTNalby.png" group-title="📽️央视频",CGTN阿拉伯语
 webview://https://yangshipin.cn/tv/home?pid=600084782
 
 #EXTINF:-1 tvg-name="风云剧场" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTVfyjc.png" group-title="📽️央视频",CCTV 风云剧场
@@ -127,6 +137,36 @@ webview://https://yangshipin.cn/tv/home?pid=600099655
 
 #EXTINF:-1 tvg-name="怀旧剧场" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTVhjjc.png" group-title="📽️央视频",CCTV 怀旧剧场
 webview://https://yangshipin.cn/tv/home?pid=600099620
+
+#EXTINF:-1 tvg-name="世界地理" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTVsjdl.png" group-title="📽️央视频",CCTV 世界地理
+webview://https://yangshipin.cn/tv/home?pid=600099637
+
+#EXTINF:-1 tvg-name="风云音乐" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTVfyyy.png" group-title="📽️央视频",CCTV 风云音乐
+webview://https://yangshipin.cn/tv/home?pid=600099660
+
+#EXTINF:-1 tvg-name="兵器科教" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTVbqkj.png" group-title="📽️央视频",CCTV 兵器科教
+webview://https://yangshipin.cn/tv/home?pid=600099649
+
+#EXTINF:-1 tvg-name="风云足球" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTVfyzq.png" group-title="📽️央视频",CCTV 风云足球
+webview://https://yangshipin.cn/tv/home?pid=600099636
+
+#EXTINF:-1 tvg-name="高尔夫网球" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTVgefwq.png" group-title="📽️央视频",CCTV 高尔夫·网球
+webview://https://yangshipin.cn/tv/home?pid=600099659
+
+#EXTINF:-1 tvg-name="女性时尚" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTVnxss.png" group-title="📽️央视频",CCTV 女性时尚
+webview://https://yangshipin.cn/tv/home?pid=600099650
+
+#EXTINF:-1 tvg-name="央视文化精品" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTVyswhjp.png" group-title="📽️央视频",CCTV 央视文化精品
+webview://https://yangshipin.cn/tv/home?pid=600099653
+
+#EXTINF:-1 tvg-name="央视台球" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTVystq.png" group-title="📽️央视频",CCTV 央视台球
+webview://https://yangshipin.cn/tv/home?pid=600099652
+
+#EXTINF:-1 tvg-name="电视指南" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTVdszn.png" group-title="📽️央视频",CCTV 电视指南
+webview://https://yangshipin.cn/tv/home?pid=600099656
+
+#EXTINF:-1 tvg-name="卫生健康" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTVwsjk.png" group-title="📽️央视频",CCTV 卫生健康
+webview://https://yangshipin.cn/tv/home?pid=600099651
 
 #EXTINF:-1 tvg-name="北京卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Beijing.png" group-title="📡卫视频道",北京卫视
 webview://https://yangshipin.cn/tv/home?pid=600002309
@@ -220,6 +260,12 @@ webview://https://yangshipin.cn/tv/home?pid=600190406
 
 #EXTINF:-1 tvg-name="西藏卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Xizang.png" group-title="📡卫视频道",西藏卫视
 webview://https://yangshipin.cn/tv/home?pid=600190403
+
+#EXTINF:-1 tvg-name="新疆卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Xinjiang.png" group-title="📡卫视频道",新疆卫视
+webview://https://yangshipin.cn/tv/home?pid=600152138
+
+#EXTINF:-1 tvg-name="CETV-1" tvg-logo="https://logo.ugreen.cloudns.biz/img/CETV1.png" group-title="📡卫视频道",CETV-1
+webview://https://yangshipin.cn/tv/home?pid=600152138
 
 #EXTINF:-1 tvg-name="广东卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Guangdong0.png" group-title="🚌广东频道",广东卫视
 webview://https://www.gdtv.cn/tvChannelDetail/43
