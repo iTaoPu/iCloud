@@ -506,15 +506,6 @@ webview://https://www.nbs.cn/live/?channel=少儿频道
 #EXTINF:-1 tvg-name="徐州1套" tvg-logo="https://logo.ugreen.cloudns.biz/img/徐州1套.png" group-title="🚂江苏频道",徐州1套
 webview://http://www.wifixz.com/tv
 
-#EXTINF:-1 tvg-name="徐州2套" tvg-logo="https://logo.ugreen.cloudns.biz/img/徐州2套.png" group-title="🚂江苏频道",徐州2套
-webview://https://pull.nicewifi.cn/live/xztv02.flv
-
-#EXTINF:-1 tvg-name="徐州3套" tvg-logo="https://logo.ugreen.cloudns.biz/img/徐州3套.png" group-title="🚂江苏频道",徐州3套
-webview://https://pull.nicewifi.cn/live/xztv03.flv
-
-#EXTINF:-1 tvg-name="徐州4套" tvg-logo="https://logo.ugreen.cloudns.biz/img/徐州4套.png" group-title="🚂江苏频道",徐州4套
-webview://https://pull.nicewifi.cn/live/xztv04.flv
-
 #EXTINF:-1 tvg-name="北京卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Beijing0.png" group-title="🚒北京频道",北京卫视
 webview://https://www.brtn.cn/btv/btvsy_index?channel=北京卫视
 
@@ -815,6 +806,47 @@ webview://https://www.ptbtv.com/live/pt2t
 #EXTINF:-1 tvg-name="莆田仙游" tvg-logo="https://logo.ugreen.cloudns.biz/img/莆田仙游.png" group-title="🚍福建频道",莆田仙游
 webview://https://www.ptbtv.com/live/xyds
 
-#EXTINF:-1 tvg-name="Webview检测" tvg-logo="https://logo.ugreen.cloudns.biz/img/Webview.png" group-title="♻️Webview检测",Webview检测
+#EXTINF:-1 tvg-name="河北卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Hebei.png" group-title="🚆河北频道",河北卫视
+webview://https://www.hebtv.com/19/19js/st/xdszb/index.shtml?index=0
 
+#EXTINF:-1 tvg-name="河北经济生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/Hebei1.png" group-title="🚆河北频道",河北经济生活
+webview://https://www.hebtv.com/19/19js/st/xdszb/index.shtml?index=1
+
+#EXTINF:-1 tvg-name="河北三农" tvg-logo="https://logo.ugreen.cloudns.biz/img/nmpd.png" group-title="🚆河北频道",河北三农
+webview://https://www.hebtv.com/19/19js/st/xdszb/index.shtml?index=2
+
+#EXTINF:-1 tvg-name="河北都市" tvg-logo="https://logo.ugreen.cloudns.biz/img/Hebei2.png" group-title="🚆河北频道",河北都市
+webview://https://www.hebtv.com/19/19js/st/xdszb/index.shtml?index=3
+
+#EXTINF:-1 tvg-name="河北影视剧" tvg-logo="https://logo.ugreen.cloudns.biz/img/Hebei3.png" group-title="🚆河北频道",河北影视剧
+webview://https://www.hebtv.com/19/19js/st/xdszb/index.shtml?index=4
+
+#EXTINF:-1 tvg-name="河北少儿" tvg-logo="https://logo.ugreen.cloudns.biz/img/Hebei4.png" group-title="🚆河北频道",河北少儿
+webview://https://www.hebtv.com/19/19js/st/xdszb/index.shtml?index=5
+
+#EXTINF:-1 tvg-name="河北文旅公共" tvg-logo="https://logo.ugreen.cloudns.biz/img/Hebei5.png" group-title="🚆河北频道",河北文旅公共
+webview://https://www.hebtv.com/19/19js/st/xdszb/index.shtml?index=6
+
+#EXTINF:-1 tvg-name="三佳购物" tvg-logo="https://logo.ugreen.cloudns.biz/img/SanJiaGW.png" group-title="🚆河北频道",三佳购物
+webview://https://www.hebtv.com/19/19js/st/xdszb/index.shtml?index=7
+
+#EXTINF:-1 tvg-name="张家口新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/张家口新闻综合.png" group-title="🚆河北频道",张家口新闻综合
+webview://https://www.zjkgdcs.com/Live/index?liveid=1
+
+#EXTINF:-1 tvg-name="张家口公共" tvg-logo="https://logo.ugreen.cloudns.biz/img/张家口公共.png" group-title="🚆河北频道",张家口公共
+webview://https://www.zjkgdcs.com/Live/index?liveid=7
+
+#EXTINF:-1 tvg-name="合肥新闻" tvg-logo="https://logo.ugreen.cloudns.biz/img/合肥新闻.png" group-title="🚆河北频道",合肥新闻
+webview://https://app.hfbtc.cn/shows/2/1.html
+
+#EXTINF:-1 tvg-name="合肥生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/合肥生活.png" group-title="🚆河北频道",合肥生活
+webview://https://app.hfbtc.cn/shows/2/2.html
+
+#EXTINF:-1 tvg-name="合肥科创" tvg-logo="https://logo.ugreen.cloudns.biz/img/合肥科创.png" group-title="🚆河北频道",合肥科创
+webview://https://app.hfbtc.cn/shows/2/3.html
+
+#EXTINF:-1 tvg-name="合肥教育法制" tvg-logo="https://logo.ugreen.cloudns.biz/img/合肥教育法制.png" group-title="🚆河北频道",合肥教育法制
+webview://https://app.hfbtc.cn/shows/2/4.html
+
+#EXTINF:-1 tvg-name="Webview检测" tvg-logo="https://logo.ugreen.cloudns.biz/img/Webview.png" group-title="♻️Webview检测",Webview检测
 webview://https://passer-by.com/browser
