@@ -374,6 +374,12 @@ webview://https://www.nbs.cn/live/?channel=文旅纪录频道
 #EXTINF:-1 tvg-name="少儿频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing6.png" group-title="🚂江苏频道",南京少儿频道
 webview://https://www.nbs.cn/live/?channel=少儿频道
 
+#EXTINF:-1 tvg-name="徐州1套" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing6.png" group-title="🚂江苏频道",徐州1套
+webview://http://www.wifixz.com/tv/
+
+#EXTINF:-1 tvg-name="徐州2套" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing6.png" group-title="🚂江苏频道",徐州2套
+webview://http://www.wifixz.com/tv/
+
 #EXTINF:-1 tvg-name="北京卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Beijing0.png" group-title="🚒北京频道",北京卫视
 webview://https://www.brtn.cn/btv/btvsy_index?channel=北京卫视
 
@@ -520,6 +526,9 @@ webview://https://live.kankanews.com/huikan?id=4
 
 #EXTINF:-1 tvg-name="哈哈炫动" tvg-logo="https://logo.ugreen.cloudns.biz/img/hhxd.png" group-title="🚅上海频道",哈哈炫动
 webview://https://live.kankanews.com/huikan?id=9
+
+#EXTINF:-1 tvg-name="上海教育" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shanghai6.png" group-title="🚅上海频道",上海教育
+webview://https://www.setv.sh.cn/#/tvshow
 
 #EXTINF:-1 tvg-name="浙江卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Zhejiang.png" group-title="🚐浙江频道",浙江卫视
 webview://https://www.cztv.com/liveTV/101
