@@ -611,7 +611,7 @@ webview://https://www.wuhubtv.com/folder1194/#
 https://live3.wuhunews.cn/news/sd/live.m3u8?auth_key=1754670297-a57892a49f0348ba8318e0db95ec5ba5-0-d84b72989d0c7ec32031214730cc0b69
 
 #EXTINF:-1 tvg-name="芜湖生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/芜湖生活.png" group-title="🚑安徽频道",芜湖生活
-https://live3.wuhunews.cn/news/sd/live.m3u8?auth_key=1754670221-c63c174b48524857b7f863094d009ef4-0-e9e9e9d0f4b7c678aeda600278a7c6af
+https://live3.wuhunews.cn/channel3/sd/live.m3u8?auth_key=1754670791-39656690709045ecb1e39d9142f7457c-0-a13c4e704db126be8b38b23388e39de8
 
 #EXTINF:-1 tvg-name="广西卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Guangxi.png" group-title="🚕广西频道",广西卫视
 webview://https://tv.gxtv.cn/channel/channelivePlay_e7a7ab7df9fe11e88bcfe41f13b60c62.html
