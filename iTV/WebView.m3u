@@ -431,7 +431,7 @@ webview://https://www.wfcmw.cn/wfrtv_pdLive.html?tv=4
 #EXTINF:-1 tvg-name="威海都市生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/威海都市生活.png" group-title="🚝山东频道",威海都市生活
 webview://https://iapp.weihai.tv/share/dHZsLTE1Ny0z.html
 
-#EXTINF:-1 tvg-name="威海海洋" tvg-logo="https://logo.ugreen.cloudns.biz/img/威海海洋旅.png" group-title="🚝山东频道",威海海洋
+#EXTINF:-1 tvg-name="威海海洋" tvg-logo="https://logo.ugreen.cloudns.biz/img/威海海洋.png" group-title="🚝山东频道",威海海洋
 webview://https://iapp.weihai.tv/share/dHZsLTE1Ny0xMg.html
 
 #EXTINF:-1 tvg-name="聊城综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/聊城综合.png" group-title="🚝山东频道",聊城综合
@@ -816,4 +816,5 @@ webview://https://www.ptbtv.com/live/pt2t
 webview://https://www.ptbtv.com/live/xyds
 
 #EXTINF:-1 tvg-name="Webview检测" tvg-logo="https://logo.ugreen.cloudns.biz/img/Webview.png" group-title="♻️Webview检测",Webview检测
+
 webview://https://passer-by.com/browser
