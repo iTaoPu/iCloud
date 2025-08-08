@@ -505,6 +505,16 @@ webview://https://www.nbs.cn/live/?channel=少儿频道
 
 #EXTINF:-1 tvg-name="徐州1套" tvg-logo="https://logo.ugreen.cloudns.biz/img/徐州1套.png" group-title="🚂江苏频道",徐州1套
 webview://http://www.wifixz.com/tv
+https://pull.nicewifi.cn/live/xztv01.flv
+
+#EXTINF:-1 tvg-name="徐州2套" tvg-logo="https://logo.ugreen.cloudns.biz/img/徐州2套.png" group-title="🚂江苏频道",徐州2套
+https://pull.nicewifi.cn/live/xztv02.flv
+
+#EXTINF:-1 tvg-name="徐州3套" tvg-logo="https://logo.ugreen.cloudns.biz/img/徐州3套.png" group-title="🚂江苏频道",徐州3套
+https://pull.nicewifi.cn/live/xztv03.flv
+
+#EXTINF:-1 tvg-name="徐州4套" tvg-logo="https://logo.ugreen.cloudns.biz/img/徐州4套.png" group-title="🚂江苏频道",徐州4套
+https://pull.nicewifi.cn/live/xztv04.flv
 
 #EXTINF:-1 tvg-name="北京卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Beijing0.png" group-title="🚒北京频道",北京卫视
 webview://https://www.brtn.cn/btv/btvsy_index?channel=北京卫视
@@ -556,6 +566,38 @@ webview://https://h5.ahtv.cn/folder9000/folder20193?channel_id=70
 
 #EXTINF:-1 tvg-name="移动电视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Anhui7.png" group-title="🚑安徽频道" http-user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/133.0.0.0",移动电视
 webview://https://h5.ahtv.cn/folder9000/folder20193?channel_id=68
+
+#EXTINF:-1 tvg-name="张家口新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/张家口新闻综合.png" group-title="🚑安徽频道",张家口新闻综合
+webview://https://www.zjkgdcs.com/Live/index?liveid=1
+
+#EXTINF:-1 tvg-name="张家口公共" tvg-logo="https://logo.ugreen.cloudns.biz/img/张家口公共.png" group-title="🚑安徽频道",张家口公共
+webview://https://www.zjkgdcs.com/Live/index?liveid=7
+
+#EXTINF:-1 tvg-name="合肥新闻" tvg-logo="https://logo.ugreen.cloudns.biz/img/合肥新闻.png" group-title="🚑安徽频道",合肥新闻
+webview://https://app.hfbtc.cn/shows/2/1.html
+
+#EXTINF:-1 tvg-name="合肥生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/合肥生活.png" group-title="🚑安徽频道",合肥生活
+webview://https://app.hfbtc.cn/shows/2/2.html
+
+#EXTINF:-1 tvg-name="合肥科创" tvg-logo="https://logo.ugreen.cloudns.biz/img/合肥科创.png" group-title="🚑安徽频道",合肥科创
+webview://https://app.hfbtc.cn/shows/2/3.html
+
+#EXTINF:-1 tvg-name="合肥教育法制" tvg-logo="https://logo.ugreen.cloudns.biz/img/合肥教育法制.png" group-title="🚑安徽频道",合肥教育法制
+webview://https://app.hfbtc.cn/shows/2/4.html
+
+#EXTINF:-1 tvg-name="池州新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/池州新闻综合.png" group-title="🚑安徽频道",池州新闻综合
+webview://https://www.chiznews.com/radio-television
+https://wdcz.chiznews.com/tv-api/live/xwzh.flv
+
+#EXTINF:-1 tvg-name="池州文教生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/池州文教生活.png" group-title="🚑安徽频道",池州文教生活
+https://wdcz.chiznews.com/tv-api/live/wjsh.flv
+
+#EXTINF:-1 tvg-name="淮北经济生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/淮北经济生活.png" group-title="🚑安徽频道",淮北经济生活
+webview://https://www.hbnews.net/tv
+https://vms-x.hbnews.net/video/JJSH/index.m3u8
+
+#EXTINF:-1 tvg-name="淮北新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/淮北新闻综合.png" group-title="🚑安徽频道",淮北新闻综合
+https://vms-x.hbnews.net/video/xwzh/index.m3u8
 
 #EXTINF:-1 tvg-name="广西卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Guangxi.png" group-title="🚕广西频道",广西卫视
 webview://https://tv.gxtv.cn/channel/channelivePlay_e7a7ab7df9fe11e88bcfe41f13b60c62.html
@@ -829,24 +871,6 @@ webview://https://www.hebtv.com/19/19js/st/xdszb/index.shtml?index=6
 
 #EXTINF:-1 tvg-name="三佳购物" tvg-logo="https://logo.ugreen.cloudns.biz/img/SanJiaGW.png" group-title="🚆河北频道",三佳购物
 webview://https://www.hebtv.com/19/19js/st/xdszb/index.shtml?index=7
-
-#EXTINF:-1 tvg-name="张家口新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/张家口新闻综合.png" group-title="🚆河北频道",张家口新闻综合
-webview://https://www.zjkgdcs.com/Live/index?liveid=1
-
-#EXTINF:-1 tvg-name="张家口公共" tvg-logo="https://logo.ugreen.cloudns.biz/img/张家口公共.png" group-title="🚆河北频道",张家口公共
-webview://https://www.zjkgdcs.com/Live/index?liveid=7
-
-#EXTINF:-1 tvg-name="合肥新闻" tvg-logo="https://logo.ugreen.cloudns.biz/img/合肥新闻.png" group-title="🚆河北频道",合肥新闻
-webview://https://app.hfbtc.cn/shows/2/1.html
-
-#EXTINF:-1 tvg-name="合肥生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/合肥生活.png" group-title="🚆河北频道",合肥生活
-webview://https://app.hfbtc.cn/shows/2/2.html
-
-#EXTINF:-1 tvg-name="合肥科创" tvg-logo="https://logo.ugreen.cloudns.biz/img/合肥科创.png" group-title="🚆河北频道",合肥科创
-webview://https://app.hfbtc.cn/shows/2/3.html
-
-#EXTINF:-1 tvg-name="合肥教育法制" tvg-logo="https://logo.ugreen.cloudns.biz/img/合肥教育法制.png" group-title="🚆河北频道",合肥教育法制
-webview://https://app.hfbtc.cn/shows/2/4.html
 
 #EXTINF:-1 tvg-name="Webview检测" tvg-logo="https://logo.ugreen.cloudns.biz/img/Webview.png" group-title="♻️Webview检测",Webview检测
 webview://https://passer-by.com/browser
