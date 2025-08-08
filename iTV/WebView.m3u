@@ -341,6 +341,9 @@ webview://https://www.hyrtv.cn/itv/ggds
 #EXTINF:-1 tvg-name="清远新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/清远新闻综合.png" group-title="🚅广东频道",清远新闻综合
 webview://http://h5.qyrb.cn/h5/nfzmy-television-and-radio/#/?channelld=1
 
+#EXTINF:-1 tvg-name="清远文旅生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/清远文旅生活.png" group-title="🚅广东频道",清远文旅生活
+webview://http://h5.qyrb.cn/h5/nfzmy-television-and-radio/#/?channelld=3
+
 #EXTINF:-1 tvg-name="揭阳综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/揭阳综合.png" group-title="🚅广东频道",揭阳综合
 webview://https://www.jyrtv.tv/fccommon/Home/detail?site_id=75&detail_type=7&cid=11
 
