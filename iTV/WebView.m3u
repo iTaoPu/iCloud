@@ -330,7 +330,7 @@ webview://https://www.sztv.com.cn/dianshi.shtml?id=7944
 webview://https://dgrtv.sun0769.com/index.php/online2/4
 
 #EXTINF:-1 tvg-name="东莞生活资讯" tvg-logo="https://logo.ugreen.cloudns.biz/img/Dongguangshzx.png" group-title="🚅广东频道",东莞生活资讯
-webview://https://dgrtv.sun0769.com/index.php/online2/4
+webview://https://dgrtv.sun0769.com/index.php/online2/5
 
 #EXTINF:-1 tvg-name="河源综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/河源综合.png" group-title="🚅广东频道",河源综合
 webview://https://www.hyrtv.cn/itv/zhds
@@ -339,13 +339,13 @@ webview://https://www.hyrtv.cn/itv/zhds
 webview://https://www.hyrtv.cn/itv/ggds
 
 #EXTINF:-1 tvg-name="清远新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/清远新闻综合.png" group-title="🚅广东频道",清远新闻综合
-webview://http://h5.qyrd.cn/h5/nfzmy-television-and-radio/#?channelld=1
+webview://http://h5.qyrd.cn/h5/nfzmy-television-and-radio/#/?channelld=1
 
 #EXTINF:-1 tvg-name="揭阳综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/揭阳综合.png" group-title="🚅广东频道",揭阳综合
-webview://http://h5.qyrd.cn/h5/nfzmy-television-and-radio/#?channelld=1
+webview://https://www.jyrtv.tv/fccommon/Home/detail?site_id75&detail_type=7&cid=11
 
 #EXTINF:-1 tvg-name="揭阳公共" tvg-logo="https://logo.ugreen.cloudns.biz/img/揭阳公共.png" group-title="🚅广东频道",揭阳公共
-webview://http://h5.qyrd.cn/h5/nfzmy-television-and-radio/#?channelld=1
+webview://https://www.jyrtv.tv/fccommon/Home/detail?site_id75&detail_type=7&cid=12
 
 #EXTINF:-1 tvg-name="山东齐鲁" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shandong1.png" group-title="🚝山东频道",山东齐鲁
 webview://https://v.iqilu.com/live/qlpd/
