@@ -602,14 +602,11 @@ https://vms-x.hbnews.net/video/xwzh/index.m3u8
 #EXTINF:-1 tvg-name="亳州综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/亳州综合.png" group-title="🚑安徽频道",亳州综合
 webview://https://www.ahbztv.com/televisi0n.html
 
-#EXTINF:-1 tvg-name="亳州农村" tvg-logo="https://logo.ugreen.cloudns.biz/img/亳州农村.png" group-title="🚑安徽频道",亳州农村
-https://tfo42408X873dXa010X3X8000X0X0X2a-bzlivetv1ahbztvcom.100ycdn.com/bzlivetv1.ahbztv.com/live/418.m3u8?t=1754662287&k=1b70cbcad615ff507928ebe04ff4c259&wsSession=0c3af91a1af0866b9a6e1b1d-175466229167097&wsIPSercert=d7e2f84b83c171b45052f4fc72e35c73&wsiphost=local&wsBindIP=1
-
 #EXTINF:-1 tvg-name="芜湖新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/芜湖新闻综合.png" group-title="🚑安徽频道",芜湖新闻综合
 webview://https://www.wuhubtv.com/folder1194/#
 
 #EXTINF:-1 tvg-name="芜湖生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/芜湖生活.png" group-title="🚑安徽频道",芜湖生活
-https://live3.wuhunews.cn/channel3/sd/live.m3u8?auth_key=1754671042-0c41cd6c180345ca89b4d264a385c1e8-0-ce715c5a749361c3cc03f59cb3da3820
+https://live3.wuhunews.cn/channel3/sd/live.m3u8
 
 #EXTINF:-1 tvg-name="广西卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Guangxi.png" group-title="🚕广西频道",广西卫视
 webview://https://tv.gxtv.cn/channel/channelivePlay_e7a7ab7df9fe11e88bcfe41f13b60c62.html
