@@ -335,7 +335,7 @@ webview://https://dgrtv.sun0769.com/index.php/online2/5
 #EXTINF:-1 tvg-name="河源综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/河源综合.png" group-title="🚅广东频道",河源综合
 webview://https://www.hyrtv.cn/itv/zhds
 
-#EXTINF:-1 tvg-name="河源公共" tvg-logo="https://logo.ugreen.cloudns.biz/img/河源公共.png" group-title="🚅广东频道",河源公共
+#EXTINF:-1 tvg-name="河源生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/河源生活.png" group-title="🚅广东频道",河源生活
 webview://https://www.hyrtv.cn/itv/ggds
 
 #EXTINF:-1 tvg-name="清远新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/清远新闻综合.png" group-title="🚅广东频道",清远新闻综合
@@ -346,6 +346,18 @@ webview://https://www.jyrtv.tv/fccommon/Home/detail?site_id=75&detail_type=7&cid
 
 #EXTINF:-1 tvg-name="揭阳公共" tvg-logo="https://logo.ugreen.cloudns.biz/img/揭阳公共.png" group-title="🚅广东频道",揭阳公共
 webview://https://www.jyrtv.tv/fccommon/Home/detail?site_id=75&detail_type=7&cid=12
+
+#EXTINF:-1 tvg-name="肇庆综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/肇庆综合.png" group-title="🚅广东频道",肇庆综合
+webview://https://zqh5.xjrb.com/h5/nfzmy-television-and-radio/#/?channelld=33
+
+#EXTINF:-1 tvg-name="肇庆生活服务" tvg-logo="https://logo.ugreen.cloudns.biz/img/肇庆生活服务.png" group-title="🚅广东频道",肇庆生活服务
+webview://https://zqh5.xjrb.com/h5/nfzmy-television-and-radio/#/?channelld=34
+
+#EXTINF:-1 tvg-name="云浮综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/云浮综合.png" group-title="🚅广东频道",云浮综合
+webview://https://static.yft.ndoe.cn/hd/ysx/#/?channelType=0&channelld=8
+
+#EXTINF:-1 tvg-name="云浮文旅" tvg-logo="https://logo.ugreen.cloudns.biz/img/云浮文旅.png" group-title="🚅广东频道",云浮文旅
+webview://https://static.yft.ndoe.cn/hd/ysx/#/?channelType=0&channelld=9
 
 #EXTINF:-1 tvg-name="山东齐鲁" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shandong1.png" group-title="🚝山东频道",山东齐鲁
 webview://https://v.iqilu.com/live/qlpd/
