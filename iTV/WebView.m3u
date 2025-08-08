@@ -644,6 +644,24 @@ webview://https://www.cztv.com/liveTV/111
 #EXTINF:-1 tvg-name="之江纪录" tvg-logo="https://logo.ugreen.cloudns.biz/img/zhijiangjilu.png" group-title="🚐浙江频道",之江纪录
 webview://https://www.cztv.com/liveTV/112
 
+#EXTINF:-1 tvg-name="杭州综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/杭州综合.png" group-title="🚐浙江频道",杭州综合
+webview://https://tv.hoolo.tv
+
+#EXTINF:-1 tvg-name="杭州西湖明珠" tvg-logo="https://logo.ugreen.cloudns.biz/img/杭州西湖明珠.png" group-title="🚐浙江频道",杭州西湖明珠
+webview://https://tv.hoolo.tv/xhmz
+
+#EXTINF:-1 tvg-name="杭州生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/杭州生活.png" group-title="🚐浙江频道",杭州生活
+webview://https://tv.hoolo.tv/hzsh
+
+#EXTINF:-1 tvg-name="杭州影视" tvg-logo="https://logo.ugreen.cloudns.biz/img/杭州影视.png" group-title="🚐浙江频道",杭州影视
+webview://https://tv.hoolo.tv/utv
+
+#EXTINF:-1 tvg-name="杭州青少体育" tvg-logo="https://logo.ugreen.cloudns.biz/img/杭州青少体育.png" group-title="🚐浙江频道",杭州青少体育
+webview://https://tv.hoolo.tv/hzse
+
+#EXTINF:-1 tvg-name="杭州移动电视" tvg-logo="https://logo.ugreen.cloudns.biz/img/杭州移动电视.png" group-title="🚐浙江频道",杭州青移动电视
+webview://https://tv.hoolo.tv/ydds
+
 #EXTINF:-1 tvg-name="成都新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/Chengdu1.png" group-title="🚃四川频道",成都新闻综合
 webview://https://www.cditv.cn/show/4845-563.html
 
