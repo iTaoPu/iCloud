@@ -523,22 +523,28 @@ http://stream.snrtv.com/sxbc-yd-guBYZ9.m3u8
 webview://http://live.snrtv.com/6
 
 #EXTINF:-1 tvg-name="西安新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/西安新闻综合.png" group-title="🚌陕西频道",西安新闻综合
-webview://https://v.xiancity.cn/folder8/folder39/folder29
+webview://https://v.xiancity.cn/folder8/folder39/folder29/
+https://stream.xiancity.cn/live/1/index.m3u8
 
 #EXTINF:-1 tvg-name="西安都市" tvg-logo="https://logo.ugreen.cloudns.biz/img/西安都市.png" group-title="🚌陕西频道",西安都市
-webview://https://v.xiancity.cn/folder8/folder39/folder30
+webview://https://v.xiancity.cn/folder8/folder39/folder30/
+https://stream.xiancity.cn/live/2/index.m3u8
 
 #EXTINF:-1 tvg-name="西安商务资讯" tvg-logo="https://logo.ugreen.cloudns.biz/img/西安商务资讯.png" group-title="🚌陕西频道",西安商务资讯
-webview://https://v.xiancity.cn/folder8/folder39/folder31
+webview://https://v.xiancity.cn/folder8/folder39/folder31/
+https://stream.xiancity.cn/live/3/index.m3u8
 
 #EXTINF:-1 tvg-name="西安戏剧影视" tvg-logo="https://logo.ugreen.cloudns.biz/img/西安戏剧影视.png" group-title="🚌陕西频道",西安戏剧影视
-webview://https://v.xiancity.cn/folder8/folder39/folder32
+webview://https://v.xiancity.cn/folder8/folder39/folder32/
+https://stream.xiancity.cn/live/4/index.m3u8
 
 #EXTINF:-1 tvg-name="西安丝路" tvg-logo="https://logo.ugreen.cloudns.biz/img/西安丝路.png" group-title="🚌陕西频道",西安丝路
-webview://https://v.xiancity.cn/folder8/folder39/folder33
+webview://https://v.xiancity.cn/folder8/folder39/folder33/
+https://stream.xiancity.cn/live/5/index.m3u8
 
 #EXTINF:-1 tvg-name="西安移动电视" tvg-logo="https://logo.ugreen.cloudns.biz/img/西安移动电视.png" group-title="🚌陕西频道",西安移动电视
 webview://https://v.xiancity.cn/folder8/
+https://stream.xiancity.cn/live/7/index.m3u8
 
 #EXTINF:-1 tvg-name="江苏卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jiangsu.png" group-title="🚂江苏频道",江苏卫视
 webview://https://live.jstv.com?channel=江苏卫视
@@ -1152,6 +1158,7 @@ webview://http://h5-yc.newsyc.com/front-cloudlive-manage-h5/index.html?id=636127
 
 #EXTINF:-1 tvg-name="重庆新闻" tvg-logo="https://logo.ugreen.cloudns.biz/img/Chongqing2.png" group-title="🚃重庆频道",重庆新闻
 webview://https://www.cbg.cn/web/list/4918/1.html?5DEFC70C1A4AOD5173881C62BD4ACAD0
+
 
 #EXTINF:-1 tvg-name="Webview检测" tvg-logo="https://logo.ugreen.cloudns.biz/img/Webview.png" group-title="♻️Webview检测",Webview检测
 webview://https://passer-by.com/browser
