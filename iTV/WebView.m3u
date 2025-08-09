@@ -942,5 +942,23 @@ webview://https://www.hnntv.cn/live.html?playType=livePlay&channelId=6&referPage
 #EXTINF:-1 tvg-name="海南少儿" tvg-logo="https://logo.ugreen.cloudns.biz/img/Hainan5.png" group-title="🚑海南频道",海南少儿
 webview://https://www.hnntv.cn/live.html?playType=livePlay&channelId=7&referPage=home
 
+#EXTINF:-1 tvg-name="哈尔滨新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/haerbin-1.png" group-title="🚕黑龙江频道",哈尔滨新闻综合
+webview://https://www.hrbtv.net/folder79/folder81
+
+#EXTINF:-1 tvg-name="哈尔滨生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/haerbin-2.png" group-title="🚕黑龙江频道",哈尔滨生活
+webview://https://www.hrbtv.net/folder79/folder85
+
+#EXTINF:-1 tvg-name="哈尔滨影视" tvg-logo="https://logo.ugreen.cloudns.biz/img/haerbin-3.png" group-title="🚕黑龙江频道",哈尔滨影视
+webview://https://www.hrbtv.net/folder79/folder87
+
+#EXTINF:-1 tvg-name="吉林卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jilin.png" group-title="🚚吉林频道",吉林卫视
+webview://https://www.jlntv.cn/tv?id=104
+
+#EXTINF:-1 tvg-name="吉林都市" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jilin2.png" group-title="🚚吉林频道",吉林都市
+https://hls.avap.jilintv.cn/zqvk7vpj/channel/7e8474e6daea44ccaa5aa2300191439e/1.m3u8
+
+#EXTINF:-1 tvg-name="吉林生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jilin3.png" group-title="🚚吉林频道",吉林生活
+https://hls.avap.jilintv.cn/zqvk7vpj/channel/0a76740c72b74fabae611845aa21e06a/1.m3u8
+
 #EXTINF:-1 tvg-name="Webview检测" tvg-logo="https://logo.ugreen.cloudns.biz/img/Webview.png" group-title="♻️Webview检测",Webview检测
 webview://https://passer-by.com/browser
