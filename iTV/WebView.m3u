@@ -986,5 +986,24 @@ webview://https://www.chinactv.com/live/1442880767035355137.html
 #EXTINF:-1 tvg-name="长春市民生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/长春市民生活.png" group-title="🚚吉林频道",长春市民生活
 webview://https://www.chinactv.com/live/1442880854423678977.html
 
+#EXTINF:-1 tvg-name="山西卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shanxi_.png" group-title="🦼山西频道",山西卫视
+webview://https://www.sxrtv.com/tv/index.shtml
+https://livehhhttps.sxrtv.com/lsdream/q8RVWgs/1000/5sqzR0W.m3u8
+
+#EXTINF:-1 tvg-name="黄河电视台" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shanxi_hh.png" group-title="🦼山西频道",黄河电视台
+https://livehhhttps.sxrtv.com/lsdream/lce1mC4/800/6tlze0m.m3u8
+
+#EXTINF:-1 tvg-name="山西经济与科教" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shanxi_1.png" group-title="🦼山西频道",经济与科教
+https://livehhhttps.sxrtv.com/lsdream/4j01KWX/800/m413z00.m3u8
+
+#EXTINF:-1 tvg-name="山西影视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shanxi_2.png" group-title="🦼山西频道",山西影视
+https://livehhhttps.sxrtv.com/lsdream/Md571Kv/800/54iMz50.m3u8
+
+#EXTINF:-1 tvg-name="山西社会与法治" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shanxi_3.png" group-title="🦼山西频道",社会与法治
+https://livehhhttps.sxrtv.com/lsdream/p4y5do9/500/qdpzy00.m3u8
+
+#EXTINF:-1 tvg-name="山西文体生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shanxi_6.png" group-title="🦼山西频道",文体生活
+https://livehhhttps.sxrtv.com/lsdream/agmpyEk/800/12oazm0.m3u8
+
 #EXTINF:-1 tvg-name="Webview检测" tvg-logo="https://logo.ugreen.cloudns.biz/img/Webview.png" group-title="♻️Webview检测",Webview检测
 webview://https://passer-by.com/browser
