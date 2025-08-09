@@ -69,6 +69,7 @@
 "logo":"https://icloud.shrimp.cloudns.biz/STAGE/Cartoon_Police_Animation.gif",
 "lives":[
 {"name": "𝙇𝙚𝙒𝙖𝙣·Internet iTV","type": 0,"url": "https://itv.shrimp.cloudns.biz/Internet_iTV.txt","playerType": 1,"epg": "https://epg.112114.eu.org/?ch={name}&date={date}","logo": "https://epg.112114.eu.org/logo/{name}.png"},
+{"name": "𝙇𝙚𝙒𝙖𝙣·LiTV","type": 0,"url": "https://itv.shrimp.cloudns.biz/LiTV.txt","playerType": 1,"epg": "https://epg.112114.eu.org/?ch={name}&date={date}","logo": "https://epg.112114.eu.org/logo/{name}.png"},
 {"name": "𝙇𝙚𝙒𝙖𝙣·Keep iTV","type": 0,"url": "https://itv.shrimp.cloudns.biz/Keep_iTV.txt","playerType": 1,"epg": "https://epg.112114.eu.org/?ch={name}&date={date}","logo": "https://epg.112114.eu.org/logo/{name}.png"}
 ]
 }
