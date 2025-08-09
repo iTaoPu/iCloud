@@ -450,9 +450,6 @@ webview://https://www.qtv.com.cn/live/tv/tv_qtv42.shtml
 #EXTINF:-1 tvg-name="QTV5" tvg-logo="https://logo.ugreen.cloudns.biz/img/QTV5.png" group-title="🦽山东频道",青岛5套
 webview://https://www.qtv.com.cn/live/tv/tv_qtv5.shtml
 
-#EXTINF:-1 tvg-name="QTV6" tvg-logo="https://logo.ugreen.cloudns.biz/img/QTV6.png" group-title="🦽山东频道",青岛6套
-webview://https://www.qtv.com.cn/live/tv/tv_qtv6.shtml
-
 #EXTINF:-1 tvg-name="临沂经济" tvg-logo="https://logo.ugreen.cloudns.biz/img/临沂经济.png" group-title="🦽山东频道",临沂经济
 webview://https://www.ilinyi.net/cms/tv/36417907
 
@@ -650,9 +647,6 @@ webview://https://www.ahbztv.com/televisi0n.html
 
 #EXTINF:-1 tvg-name="芜湖新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/芜湖新闻综合.png" group-title="🚈安徽频道",芜湖新闻综合
 webview://https://www.wuhubtv.com/folder1194/#
-
-#EXTINF:-1 tvg-name="芜湖生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/芜湖生活.png" group-title="🚈安徽频道",芜湖生活
-https://live3.wuhunews.cn/channel3/sd/live.m3u8?auth_key=1754671042-0c41cd6c180345ca89b4d264a385c1e8-0-ce715c5a749361c3cc03f59cb3da3820
 
 #EXTINF:-1 tvg-name="广西卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Guangxi.png" group-title="🚎广西频道",广西卫视
 webview://https://tv.gxtv.cn/channel/channelivePlay_e7a7ab7df9fe11e88bcfe41f13b60c62.html
