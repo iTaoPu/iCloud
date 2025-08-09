@@ -954,11 +954,33 @@ webview://https://www.hrbtv.net/folder79/folder87
 #EXTINF:-1 tvg-name="吉林卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jilin.png" group-title="🚚吉林频道",吉林卫视
 webview://https://www.jlntv.cn/tv?id=104
 
+#EXTINF:-1 tvg-name="吉林都市" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jilin.png" group-title="🚚吉林频道",吉林都市
+webview://https://www.jlntv.cn/tv?id=104
+https://hls.avap.jilintv.cn/zqvk7vpj/channel/7e8474e6daea44ccaa5aa2300191439e/1.m3u8
+
+#EXTINF:-1 tvg-name="延边卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jilin.png" group-title="🚚吉林频道",延边卫视
+https://stream2.jlntv.cn/jlyb/sd/live.m3u8
+
 #EXTINF:-1 tvg-name="吉林新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jilin3.png" group-title="🚚吉林频道",吉林新闻综合
 https://stream2.jlntv.cn/jilin1/sd/live.m3u8
 
+#EXTINF:-1 tvg-name="辽源新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jilin2.png" group-title="🚚吉林频道",辽源新闻综合
+https://stream2.jlntv.cn/liaoyuan1/sd/live.m3u8
+
 #EXTINF:-1 tvg-name="长春综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jilin2.png" group-title="🚚吉林频道",长春综合
 https://stream2.jlntv.cn/jlcc/sd/live.m3u8
+
+#EXTINF:-1 tvg-name="四平新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jilin2.png" group-title="🚚吉林频道",四平新闻综合
+https://stream2.jlntv.cn/sptv/sd/live.m3u8
+
+#EXTINF:-1 tvg-name="白山新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jilin2.png" group-title="🚚吉林频道",白山新闻综合
+https://live-master.jlntv.cn/thhd/sd/live.m3u8
+
+#EXTINF:-1 tvg-name="通化新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jilin2.png" group-title="🚚吉林频道",通化新闻综合
+https://stream2.jlntv.cn/baishan1/sd/live.m3u8
+
+#EXTINF:-1 tvg-name="白城新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jilin2.png" group-title="🚚吉林频道",白城新闻综合
+https://stream2.jlntv.cn/baicheng1/sd/live.m3u8
 
 #EXTINF:-1 tvg-name="Webview检测" tvg-logo="https://logo.ugreen.cloudns.biz/img/Webview.png" group-title="♻️Webview检测",Webview检测
 webview://https://passer-by.com/browser
