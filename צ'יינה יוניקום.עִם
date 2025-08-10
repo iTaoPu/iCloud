@@ -286,26 +286,27 @@ http://122.96.52.98:8006/JS_CUCC/G_JSTY.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEoAQ
 http://122.96.52.98:8006/JS_CUCC/G_JSZY.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEncrSBfKQn4Q5ZoKMcKsr4jEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
 #EXTINF:-1 group-title="🚂江苏频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jiangsu7.png" tvg-name="江苏教育",江苏教育
 http://122.96.52.98:8006/JS_CUCC/G_JSJY.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEjsYt23pVNf2zqF2rhGnDDHEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="🚂江苏频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing1.png" tvg-name="南京新闻综合",南京新闻综合
-http://122.96.52.98:8006/JS_CUCC/G_NJXW.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEoMjcH0bdretQeGgwOgFK%2FnEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="🚂江苏频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing2.png" tvg-name="南京教科",南京教科
-http://122.96.52.98:8006/JS_CUCC/G_NJJK.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEiGqx7T0gmg2iKRDXWqfssbEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="🚂江苏频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing9.png" tvg-name="南京文旅纪录",南京文旅·纪录
-http://122.96.52.98:8006/JS_CUCC/G_NJYL.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEjFqfQRndUrBSsUh%2BqRc5aPEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="🚂江苏频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing10.png" tvg-name="南京影视",南京影视
-http://122.96.52.98:8006/JS_CUCC/G_NJYS.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEryOYppBCaGCbwBoicbAMYfEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="🚂江苏频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing18.png" tvg-name="南京十八生活",南京十八·生活
-http://122.96.52.98:8006/JS_CUCC/G_NJSB.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEqlM1l%2BeoFKI8wnHz%2FUgbsbEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="🚂江苏频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing6.png" tvg-name="南京少儿",南京少儿
-http://122.96.52.98:8006/JS_CUCC/G_NJSE.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtErV9ZZLHPB2iNJDmdQ9xIhzEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
 
-#EXTINF:-1 group-title="🚂江苏频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/HAOxiangGou.png" tvg-name="南京信息",好享购物
+# 🚓南京频道
+#EXTINF:-1 group-title="🚓南京频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing1.png" tvg-name="南京新闻综合",南京新闻综合
+http://122.96.52.98:8006/JS_CUCC/G_NJXW.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEoMjcH0bdretQeGgwOgFK%2FnEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
+#EXTINF:-1 group-title="🚓南京频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing2.png" tvg-name="南京教科",南京教科
+http://122.96.52.98:8006/JS_CUCC/G_NJJK.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEiGqx7T0gmg2iKRDXWqfssbEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
+#EXTINF:-1 group-title="🚓南京频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing9.png" tvg-name="南京文旅纪录",南京文旅·纪录
+http://122.96.52.98:8006/JS_CUCC/G_NJYL.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEjFqfQRndUrBSsUh%2BqRc5aPEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
+#EXTINF:-1 group-title="🚓南京频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing10.png" tvg-name="南京影视",南京影视
+http://122.96.52.98:8006/JS_CUCC/G_NJYS.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEryOYppBCaGCbwBoicbAMYfEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
+#EXTINF:-1 group-title="🚓南京频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing18.png" tvg-name="南京十八生活",南京十八·生活
+http://122.96.52.98:8006/JS_CUCC/G_NJSB.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEqlM1l%2BeoFKI8wnHz%2FUgbsbEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
+#EXTINF:-1 group-title="🚓南京频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing6.png" tvg-name="南京少儿",南京少儿
+http://122.96.52.98:8006/JS_CUCC/G_NJSE.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtErV9ZZLHPB2iNJDmdQ9xIhzEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
+#EXTINF:-1 group-title="🚓南京频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/HAOxiangGou.png" tvg-name="南京信息",好享购物
 http://122.96.52.98:8006/JS_CUCC/G_HAOXIANG.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEoaZ3RBb4IpVIYdSjn1GrfxYXTUjY6TEKXN37EwEhDWj&p=GITV&area=JS_CUCC
 
-#EXTINF:-1 tvg-name="南通新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/南通新闻综合.png" group-title="🚂江苏频道",南通一套·新闻综合
+# 🚒南通频道
+#EXTINF:-1 tvg-name="南通新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/南通新闻综合.png" group-title="🚒南通频道",南通一套·新闻综合
 https://cm-live.ntjoy.com/live/4f1.m3u8
-#EXTINF:-1 tvg-name="南通社教" tvg-logo="https://logo.ugreen.cloudns.biz/img/南通社教.png" group-title="🚂江苏频道",南通二套·社教
+#EXTINF:-1 tvg-name="南通社教" tvg-logo="https://logo.ugreen.cloudns.biz/img/南通社教.png" group-title="🚒南通频道",南通二套·社教
 https://cm-live.ntjoy.com/live/4f3.m3u8
-#EXTINF:-1 tvg-name="南通公共崇川" tvg-logo="https://logo.ugreen.cloudns.biz/img/南通公共崇川.png" group-title="🚂江苏频道",南通三套·公共 崇川
+#EXTINF:-1 tvg-name="南通公共崇川" tvg-logo="https://logo.ugreen.cloudns.biz/img/南通公共崇川.png" group-title="🚒南通频道",南通三套·公共 崇川
 https://cm-live.ntjoy.com/live/4f5.m3u8
-
