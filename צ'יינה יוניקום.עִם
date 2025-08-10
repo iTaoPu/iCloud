@@ -272,7 +272,7 @@ http://122.96.52.98:8006/JS_CUCC/G_YOUMAN.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEo
 http://122.96.52.98:8006/JS_CUCC/G_XUANDONG.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtElHAdYz2UZrlFf6hIAWx9LlYXTUjY6TEKXN37EwEhDWj&p=GITV&area=JS_CUCC
 
 # 🚂江苏频道
-#EXTINF:-1 group-title="🚂江苏频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jiangsu.png" tvg-name="江苏卫视",江苏卫视 HD
+#EXTINF:-1 group-title="🚂江苏频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jiangsu9.png" tvg-name="江苏卫视",江苏卫视 HD
 http://122.96.52.98:8006/JS_CUCC/G_JIANGSU-HD.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtElCWthYRb1KKeprmYzrIdHpMbaR389oSCXqlFcK2rwtb&p=GITV&area=JS_CUCC
 #EXTINF:-1 group-title="🚂江苏频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jiangsu2.png" tvg-name="江苏城市",江苏城市
 http://122.96.52.98:8006/JS_CUCC/G_JSCS.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtErf9B6OvkNf7eoPnVhcls1vEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
@@ -308,3 +308,4 @@ https://cm-live.ntjoy.com/live/4f1.m3u8
 https://cm-live.ntjoy.com/live/4f3.m3u8
 #EXTINF:-1 tvg-name="南通公共崇川" tvg-logo="https://logo.ugreen.cloudns.biz/img/南通公共崇川.png" group-title="🚂江苏频道",南通三套·公共 崇川
 https://cm-live.ntjoy.com/live/4f5.m3u8
+
