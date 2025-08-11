@@ -355,11 +355,17 @@ https://huaiyin-tv-replay.cm.jstv.com/huaiyin-tv/huaiyinf.m3u8
 
 # 🚚镇江频道
 #EXTINF:-1 tvg-name="句容新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/句容新闻综合.png" group-title="🚚镇江频道",句容·新闻综合
+http://jrlive.jrntv.com/live/jrxwzh/chunklist.m3u8
 http://jrlive.jrntv.com/live/_definst_/jrxwzhs/playlist.m3u8
 #EXTINF:-1 tvg-name="句容生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/句容生活.png" group-title="🚚镇江频道",句容·生活
+http://jrlive.jrntv.com/live/shenghuo/chunklist.m3u8
 http://jrlive.jrntv.com/live/_definst_/shenghuos/playlist.m3u8
 #EXTINF:-1 tvg-name="丹阳党建" tvg-logo="https://logo.ugreen.cloudns.biz/img/丹阳党建.png" group-title="🚚镇江频道",句容·党建
+http://jrlive.jrntv.com/live/dangjian/chunklist.m3u8
 http://jrlive.jrntv.com/live/_definst_/dangjians/playlist.m3u8
+#EXTINF:-1 tvg-name="句容影院" tvg-logo="https://logo.ugreen.cloudns.biz/img/句容影院.png" group-title="🚚镇江频道",句容·影院
+http://jrlive.jrntv.com/live/yingshi/chunklist.m3u8
+http://jrlive.jrntv.com/live/_definst_/yingshis/chunklist.m3u8
 #EXTINF:-1 tvg-name="丹阳新闻" tvg-logo="https://logo.ugreen.cloudns.biz/img/丹阳新闻.png" group-title="🚚镇江频道",丹阳·新闻
 http://danyang-tv-hls.cm.jstv.com/danyang-tv/danyangtv.m3u8
 
@@ -370,6 +376,8 @@ http://jintan-tv-ori-hls.jstv.com/jintan-tv-ori/jintan_xw.m3u8
 # 🚙无锡频道
 #EXTINF:-1 tvg-name="宜兴新闻" tvg-logo="https://logo.ugreen.cloudns.biz/img/宜兴新闻.png" group-title="🚙无锡频道",宜兴·新闻
 https://yixing-tv-ori-hls.jstv.com/yixing-tv-ori/yixing_xw.m3u8
+#EXTINF:-1 tvg-name="宜兴紫砂" tvg-logo="https://logo.ugreen.cloudns.biz/img/宜兴紫砂.png" group-title="🚙无锡频道",宜兴·紫砂
+http://yixing-tv-ori-hls.jstv.com/yixing-tv-ori/yixing_zs.m3u8
 
 # 🚗连云港频道
 #EXTINF:-1 tvg-name="赣榆新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/赣榆新闻综合.png" group-title="🚗连云港频道",赣榆·新闻综合
@@ -384,3 +392,11 @@ http://gaoyou-tv-hls.cm.jstv.com/gaoyou-tv/gaoyouxw.m3u8
 http://dongtai-tv-hls.cm.jstv.com/dongtai-tv/dongtaizonghe.m3u8
 #EXTINF:-1 tvg-name="大丰公共" tvg-logo="https://logo.ugreen.cloudns.biz/img/大丰公共.png" group-title="🚜盐城频道",大丰·公共
 http://dafeng-tv-hls.cm.jstv.com/dafeng-tv/dafenget.m3u8
+#EXTINF:-1 tvg-name="滨海新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/滨海新闻综合.png" group-title="🚜盐城频道",滨海·新闻综合
+http://binhai-tv-hls.cm.jstv.com/binhai-tv/news.m3u8
+
+# 🏍️泰州频道
+#EXTINF:-1 tvg-name="泰州新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/泰州新闻综合.png" group-title="🏍️泰州频道",泰州一套·新闻综合
+http://stream1.mytaizhou.net/xwzh/playlist.m3u8
+#EXTINF:-1 tvg-name="泰州影视娱乐" tvg-logo="https://logo.ugreen.cloudns.biz/img/泰州影视娱乐.png" group-title="🏍️泰州频道",泰州三套·影视娱乐
+http://stream1.mytaizhou.net/ysyl/playlist.m3u8
