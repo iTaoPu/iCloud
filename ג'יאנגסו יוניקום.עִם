@@ -271,22 +271,22 @@ http://122.96.52.98:8006/JS_CUCC/G_YOUMAN.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEo
 #EXTINF:-1 group-title="🚧少儿频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/hhxd.png" tvg-name="哈哈炫动",哈哈炫动
 http://122.96.52.98:8006/JS_CUCC/G_XUANDONG.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtElHAdYz2UZrlFf6hIAWx9LlYXTUjY6TEKXN37EwEhDWj&p=GITV&area=JS_CUCC
 
-# 🚂江苏频道
-#EXTINF:-1 group-title="🚂江苏频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jiangsu9.png" tvg-name="江苏卫视",江苏卫视 HD
+# 🚌江苏频道
+#EXTINF:-1 group-title="🚌江苏频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jiangsu9.png" tvg-name="江苏卫视",江苏卫视 HD
 http://122.96.52.98:8006/JS_CUCC/G_JIANGSU-HD.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtElCWthYRb1KKeprmYzrIdHpMbaR389oSCXqlFcK2rwtb&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="🚂江苏频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jiangsu2.png" tvg-name="江苏城市",江苏城市
+#EXTINF:-1 group-title="🚌江苏频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jiangsu2.png" tvg-name="江苏城市",江苏城市
 http://122.96.52.98:8006/JS_CUCC/G_JSCS.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtErf9B6OvkNf7eoPnVhcls1vEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="🚂江苏频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jiangsu1.png" tvg-name="江苏新闻",江苏新闻
+#EXTINF:-1 group-title="🚌江苏频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jiangsu1.png" tvg-name="江苏新闻",江苏新闻
 http://122.96.52.98:8006/JS_CUCC/G_JSGG.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEnaaipXQfT6mvlq1T4j6uU3El4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="🚂江苏频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jiangsu4.png" tvg-name="江苏影视",江苏影视
+#EXTINF:-1 group-title="🚌江苏频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jiangsu4.png" tvg-name="江苏影视",江苏影视
 http://122.96.52.98:8006/JS_CUCC/G_JSYS.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEsbz4xIpXVtCFIMno2yuqVbEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="🚂江苏频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jiangsu5.png" tvg-name="江苏体育休闲",江苏体育·休闲
+#EXTINF:-1 group-title="🚌江苏频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jiangsu5.png" tvg-name="江苏体育休闲",江苏体育·休闲
 http://122.96.52.98:8006/JS_CUCC/G_JSTY.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEoAQpkXItVA4eG3wN%2BSQc93El4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="🚂江苏频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jiangsu3.png" tvg-name="江苏综艺",江苏综艺
+#EXTINF:-1 group-title="🚌江苏频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jiangsu3.png" tvg-name="江苏综艺",江苏综艺
 http://122.96.52.98:8006/JS_CUCC/G_JSZY.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEncrSBfKQn4Q5ZoKMcKsr4jEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="🚂江苏频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jiangsu7.png" tvg-name="江苏教育",江苏教育
+#EXTINF:-1 group-title="🚌江苏频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jiangsu7.png" tvg-name="江苏教育",江苏教育
 http://122.96.52.98:8006/JS_CUCC/G_JSJY.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEjsYt23pVNf2zqF2rhGnDDHEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="🚂江苏频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/HAOxiangGou.png" tvg-name="南京信息",好享购物
+#EXTINF:-1 group-title="🚌江苏频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/HAOxiangGou.png" tvg-name="南京信息",好享购物
 http://122.96.52.98:8006/JS_CUCC/G_HAOXIANG.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEoaZ3RBb4IpVIYdSjn1GrfxYXTUjY6TEKXN37EwEhDWj&p=GITV&area=JS_CUCC
 
 # 🛺南京频道
@@ -302,5 +302,6 @@ http://122.96.52.98:8006/JS_CUCC/G_NJYS.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEryO
 http://122.96.52.98:8006/JS_CUCC/G_NJSB.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEqlM1l%2BeoFKI8wnHz%2FUgbsbEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
 #EXTINF:-1 group-title="🛺南京频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing6.png" tvg-name="南京少儿",南京少儿
 http://122.96.52.98:8006/JS_CUCC/G_NJSE.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtErV9ZZLHPB2iNJDmdQ9xIhzEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
+
 
 
