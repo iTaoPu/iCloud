@@ -247,28 +247,28 @@ http://122.96.52.98:8006/JS_CUCC/G_NONGLIN.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtE
 #EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Yanbian.png" tvg-name="延边卫视",延边卫视
 http://122.96.52.98:8006/JS_CUCC/G_YANBIAN.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEtfnNLUhqvr5DhrV6Ru5HyqxTZEnSNJCJ6fNvBQEArTZ&p=GITV&area=JS_CUCC
 
-# 🏟️教育频道
-#EXTINF:-1 group-title="🏟️教育频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CETV1.png" tvg-name="CETV1",CETV-1
+# 🏛️教育频道
+#EXTINF:-1 group-title="🏛️教育频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CETV1.png" tvg-name="CETV1",CETV-1
 http://122.96.52.98:8006/JS_CUCC/G_CETV-1.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEv1o35%2BVkhqZg4WpI44LgYQLxkknW%2BHqbwwyg1PzUQok&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="🏟️教育频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CETV2.png" tvg-name="CETV2",CETV-2
+#EXTINF:-1 group-title="🏛️教育频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CETV2.png" tvg-name="CETV2",CETV-2
 http://122.96.52.98:8006/JS_CUCC/G_CETV-2.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEgWtscwZsLIeCX4lNPPVSa8LxkknW%2BHqbwwyg1PzUQok&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="🏟️教育频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CETV3.png" tvg-name="CETV3",CETV-3
+#EXTINF:-1 group-title="🏛️教育频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CETV3.png" tvg-name="CETV3",CETV-3
 http://122.96.52.98:8006/JS_CUCC/G_CETV-3.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEtKB43Jj647OcHilv0oxiEALxkknW%2BHqbwwyg1PzUQok&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="🏟️教育频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CETV4.png" tvg-name="CETV4",CETV-4
+#EXTINF:-1 group-title="🏛️教育频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CETV4.png" tvg-name="CETV4",CETV-4
 http://122.96.52.98:8006/JS_CUCC/G_CETV-4.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEiByI341AZF720jOgKAMqfALxkknW%2BHqbwwyg1PzUQok&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="🏟️教育频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shandongjy.png" tvg-name="山东教育",山东教育卫视
+#EXTINF:-1 group-title="🏛️教育频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shandongjy.png" tvg-name="山东教育",山东教育卫视
 http://122.96.52.98:8006/JS_CUCC/G_SDETV.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEg6%2Bh5nlom5Ljf0wuj86QlA3CITGH3H4QrNyNYWLeTps&p=GITV&area=JS_CUCC
 
-# 🛩️少儿频道
-#EXTINF:-1 group-title="🛩️少儿频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/kakushaoer.png" tvg-name="卡酷少儿",卡酷少儿
+# 🚧少儿频道
+#EXTINF:-1 group-title="🚧少儿频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/kakushaoer.png" tvg-name="卡酷少儿",卡酷少儿
 http://122.96.52.98:8006/JS_CUCC/G_KAKU.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEvCRWHH5zs7t0tvZkMZOkqLEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="🛩️少儿频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Hunan10.png" tvg-name="金鹰卡通",金鹰卡通
+#EXTINF:-1 group-title="🚧少儿频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Hunan10.png" tvg-name="金鹰卡通",金鹰卡通
 http://122.96.52.98:8006/JS_CUCC/G_JINYING.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEhq0dyfDyv%2BvSb71EJmi%2FwuxTZEnSNJCJ6fNvBQEArTZ&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="🛩️少儿频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/jjkt.png" tvg-name="嘉佳卡通",嘉佳卡通
+#EXTINF:-1 group-title="🚧少儿频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/jjkt.png" tvg-name="嘉佳卡通",嘉佳卡通
 http://122.96.52.98:8006/JS_CUCC/G_JIAJIA.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEjeasMvBuKP6GPZxFFWsFH4YUAl3uT6KyhhyA3GPqkYe&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="🛩️少儿频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/ymkt.png" tvg-name="优漫卡通",优漫卡通
+#EXTINF:-1 group-title="🚧少儿频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/ymkt.png" tvg-name="优漫卡通",优漫卡通
 http://122.96.52.98:8006/JS_CUCC/G_YOUMAN.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEoaYG6bplRDRKBOwZRNifGgYUAl3uT6KyhhyA3GPqkYe&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="🛩️少儿频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/hhxd.png" tvg-name="哈哈炫动",哈哈炫动
+#EXTINF:-1 group-title="🚧少儿频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/hhxd.png" tvg-name="哈哈炫动",哈哈炫动
 http://122.96.52.98:8006/JS_CUCC/G_XUANDONG.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtElHAdYz2UZrlFf6hIAWx9LlYXTUjY6TEKXN37EwEhDWj&p=GITV&area=JS_CUCC
 
 # 🚂江苏频道
@@ -302,3 +302,4 @@ http://122.96.52.98:8006/JS_CUCC/G_NJYS.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEryO
 http://122.96.52.98:8006/JS_CUCC/G_NJSB.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEqlM1l%2BeoFKI8wnHz%2FUgbsbEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
 #EXTINF:-1 group-title="🛺南京频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing6.png" tvg-name="南京少儿",南京少儿
 http://122.96.52.98:8006/JS_CUCC/G_NJSE.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtErV9ZZLHPB2iNJDmdQ9xIhzEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
+
