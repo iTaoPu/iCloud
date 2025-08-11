@@ -322,5 +322,8 @@ https://pull.nicewifi.cn/live/xztv02.flv
 https://pull.nicewifi.cn/live/xztv03.flv
 #EXTINF:-1 tvg-name="徐州四套" tvg-logo="https://logo.ugreen.cloudns.biz/img/徐州4套.png" group-title="🚜徐州频道",徐州四套·公共
 https://pull.nicewifi.cn/live/xztv04.flv
+#EXTINF:-1 tvg-name="沛县新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/沛县新闻综合.png" group-title="🚜徐州频道",沛县·新闻综合
+http://peixian-tv-hls.cm.jstv.com/peixian-tv/pxzh.flv
 
 # 🚐苏州频道
+
