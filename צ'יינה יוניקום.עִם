@@ -314,7 +314,7 @@ https://cm-live.ntjoy.com/live/4f1.m3u8
 https://cm-live.ntjoy.com/live/4f3.m3u8
 #EXTINF:-1 tvg-name="南通公共崇川" tvg-logo="https://logo.ugreen.cloudns.biz/img/南通公共崇川.png" group-title="🚒南通频道",南通三套·公共 崇川
 https://cm-live.ntjoy.com/live/4f5.m3u8
-#EXTINF:-1 tvg-name="如东综合频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/rudongxwzh.png" group-title="🚒南通频道",如东·综合频道
+#EXTINF:-1 tvg-name="如东综合频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/rudongxwzh.png" group-title="🚒南通频道",如东一套·综合频道
 http://rudong-tv-hls.cm.jstv.com/rudong-tv/rdxwzh.m3u8
 
 # 🚜徐州频道
@@ -374,3 +374,17 @@ https://yixing-tv-ori-hls.jstv.com/yixing-tv-ori/yixing_zs.m3u8
 # 🚗连云港频道
 #EXTINF:-1 tvg-name="赣榆新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/赣榆新闻综合.png" group-title="🚗连云港频道",赣榆·新闻综合
 https://ganyu-tv-hls.cm.jstv.com/ganyu-tv/ganyutv.m3u8
+
+# 🛺扬州频道
+#EXTINF:-1 tvg-name="高邮综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/高邮综合.png" group-title="🛺扬州频道",高邮·综合
+http://gaoyou-tv-hls.cm.jstv.com/gaoyou-tv/gaoyouxw.m3u8
+
+# 🚜盐城频道
+#EXTINF:-1 tvg-name="东台综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/东台综合.png" group-title="🚜盐城频道",东台·综合
+http://dongtai-tv-hls.cm.jstv.com/dongtai-tv/dongtaizonghe.m3u8
+#EXTINF:-1 tvg-name="大丰公共" tvg-logo="https://logo.ugreen.cloudns.biz/img/大丰公共.png" group-title="🚜盐城频道",大丰·公共
+http://dafeng-tv-hls.cm.jstv.com/dafeng-tv/dafenget.m3u8
+
+# 🏍️泰州频道
+#EXTINF:-1 tvg-name="姜堰新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/姜堰新闻综合.png" group-title="🏍️泰州频道",姜堰·新闻综合
+https://jiangyan-tv-hls.cm.jstv.com/jiangyan-tv/jiangyanzh.m3u8
