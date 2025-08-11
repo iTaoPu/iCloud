@@ -311,28 +311,34 @@ https://cm-live.ntjoy.com/live/4f3.m3u8
 #EXTINF:-1 tvg-name="南通公共崇川" tvg-logo="https://logo.ugreen.cloudns.biz/img/南通公共崇川.png" group-title="🚒南通频道",南通三套·公共 崇川
 https://cm-live.ntjoy.com/live/4f5.m3u8
 #EXTINF:-1 tvg-name="如东综合频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/rudongxwzh.png" group-title="🚒南通频道",如东·综合频道
-http://rudong-tv-hls.cm.jstv.com/rudong-tv/rdxwzh.flv
+http://rudong-tv-hls.cm.jstv.com/rudong-tv/rdxwzh.m3u8
 
 # 🚜徐州频道
 #EXTINF:-1 tvg-name="徐州一套" tvg-logo="https://logo.ugreen.cloudns.biz/img/徐州1套.png" group-title="🚜徐州频道",徐州一套·新闻综合
-https://pull.nicewifi.cn/live/xztv01.flv
+https://pull.nicewifi.cn/live/xztv01.m3u8
 #EXTINF:-1 tvg-name="徐州二套" tvg-logo="https://logo.ugreen.cloudns.biz/img/徐州2套.png" group-title="🚜徐州频道",徐州二套·经济生活
-https://pull.nicewifi.cn/live/xztv02.flv
+https://pull.nicewifi.cn/live/xztv02.m3u8
 #EXTINF:-1 tvg-name="徐州三套" tvg-logo="https://logo.ugreen.cloudns.biz/img/徐州3套.png" group-title="🚜徐州频道",徐州三套·文艺影视
-https://pull.nicewifi.cn/live/xztv03.flv
+https://pull.nicewifi.cn/live/xztv03.m3u8
 #EXTINF:-1 tvg-name="徐州四套" tvg-logo="https://logo.ugreen.cloudns.biz/img/徐州4套.png" group-title="🚜徐州频道",徐州四套·公共
-https://pull.nicewifi.cn/live/xztv04.flv
+https://pull.nicewifi.cn/live/xztv04.m3u8
 #EXTINF:-1 tvg-name="沛县新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/沛县新闻综合.png" group-title="🚜徐州频道",沛县·新闻综合
-http://peixian-tv-hls.cm.jstv.com/peixian-tv/pxzh.flv
+http://peixian-tv-hls.cm.jstv.com/peixian-tv/pxzh.m3u8
 
 # 🚐宿迁频道
 #EXTINF:-1 tvg-name="泗阳综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/泗阳综合.png" group-title="🚐宿迁频道",泗阳·综合
-http://siyang-tv-hls.cm.jstv.com/siyang-tv/siyangzh.flv
+http://siyang-tv-hls.cm.jstv.com/siyang-tv/siyangzh.m3u8
 #EXTINF:-1 tvg-name="泗阳资讯" tvg-logo="https://logo.ugreen.cloudns.biz/img/泗阳资讯.png" group-title="🚐宿迁频道",泗阳·资讯
-http://siyang-tv-hls.cm.jstv.com/siyang-tv/siyangzx.flv
+http://siyang-tv-hls.cm.jstv.com/siyang-tv/siyangzx.m3u8
 #EXTINF:-1 tvg-name="泗洪综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/泗洪综合.png" group-title="🚐宿迁频道",泗洪·综合
-http://sihong-tv-hls.cm.jstv.com/sihong-tv/sihongxinwenzonghe.flv$720P
+http://sihong-tv-hls.cm.jstv.com/sihong-tv/sihongxinwenzonghe.m3u8
 #EXTINF:-1 tvg-name="沭阳综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/沭阳综合.png" group-title="🚐宿迁频道",沭阳·综合
-http://shuyang-tv-hls.cm.jstv.com/shuyang-tv/shuyangzh.flv
+http://shuyang-tv-hls.cm.jstv.com/shuyang-tv/shuyangzh.m3u8
 
+# 🚕淮安频道
+#EXTINF:-1 tvg-name="涟水综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/涟水综合.png" group-title="🚕淮安频道",涟水·综合
+http://lianshui-tv-hls.cm.jstv.com/lianshui-tv/lsxw.m3u8
 
+# 🚚镇江频道
+#EXTINF:-1 tvg-name="丹阳新闻" tvg-logo="https://logo.ugreen.cloudns.biz/img/丹阳新闻.png" group-title="🚕淮安频道",丹阳·新闻
+http://danyang-tv-hls.cm.jstv.com/danyang-tv/danyangtv.m3u8
