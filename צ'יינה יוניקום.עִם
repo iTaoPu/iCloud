@@ -331,7 +331,8 @@ http://siyang-tv-hls.cm.jstv.com/siyang-tv/siyangzh.flv
 #EXTINF:-1 tvg-name="泗阳资讯" tvg-logo="https://logo.ugreen.cloudns.biz/img/泗阳资讯.png" group-title="🚐宿迁频道",泗阳·资讯
 http://siyang-tv-hls.cm.jstv.com/siyang-tv/siyangzx.flv
 #EXTINF:-1 tvg-name="泗洪综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/泗洪综合.png" group-title="🚐宿迁频道",泗洪·综合
-http://sihong-tv-hls.cm.jstv.com/sihong-tv/sihongxinwenzonghe.flv$1080P
+http://sihong-tv-hls.cm.jstv.com/sihong-tv/sihongxinwenzonghe.flv$720P
 #EXTINF:-1 tvg-name="沭阳综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/沭阳综合.png" group-title="🚐宿迁频道",沭阳·综合
 http://shuyang-tv-hls.cm.jstv.com/shuyang-tv/shuyangzh.flv
+
 
