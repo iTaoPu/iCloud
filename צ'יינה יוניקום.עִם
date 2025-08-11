@@ -353,10 +353,11 @@ http://lianshui-tv-hls.cm.jstv.com/lianshui-tv/lsxw.m3u8
 #EXTINF:-1 tvg-name="句容新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/句容新闻综合.png" group-title="🚚镇江频道",句容·新闻综合
 http://jrlive.jrntv.com/live/_definst_/jrxwzhs/playlist.m3u8
 #EXTINF:-1 tvg-name="句容生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/句容生活.png" group-title="🚚镇江频道",句容·生活
-,http://jrlive.jrntv.com/live/_definst_/shenghuos/playlist.m3u8
+,http://jrlive.jrntv.com/live/_definst_/shenghuo/playlist.m3u8
 #EXTINF:-1 tvg-name="丹阳新闻" tvg-logo="https://logo.ugreen.cloudns.biz/img/丹阳新闻.png" group-title="🚚镇江频道",丹阳·新闻
 http://danyang-tv-hls.cm.jstv.com/danyang-tv/danyangtv.m3u8
 
 # 🚌常州频道
 #EXTINF:-1 tvg-name="金坛综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/金坛综合.png" group-title="🚌常州频道",金坛·综合
 http://jintan-tv-ori-hls.jstv.com/jintan-tv-ori/jintan_xw.m3u8
+
