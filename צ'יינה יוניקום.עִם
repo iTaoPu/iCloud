@@ -310,3 +310,17 @@ https://cm-live.ntjoy.com/live/4f1.m3u8
 https://cm-live.ntjoy.com/live/4f3.m3u8
 #EXTINF:-1 tvg-name="南通公共崇川" tvg-logo="https://logo.ugreen.cloudns.biz/img/南通公共崇川.png" group-title="🚒南通频道",南通三套·公共 崇川
 https://cm-live.ntjoy.com/live/4f5.m3u8
+#EXTINF:-1 tvg-name="如东综合频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/rudongxwzh.png" group-title="🚒南通频道",如东·综合频道
+http://rudong-tv-hls.cm.jstv.com/rudong-tv/rdxwzh.flv
+
+# 🚜徐州频道
+#EXTINF:-1 tvg-name="徐州一套" tvg-logo="https://logo.ugreen.cloudns.biz/img/徐州1套.png" group-title="🚜徐州频道",徐州一套·新闻综合
+https://pull.nicewifi.cn/live/xztv01.flv
+#EXTINF:-1 tvg-name="徐州二套" tvg-logo="https://logo.ugreen.cloudns.biz/img/徐州2套.png" group-title="🚜徐州频道",徐州二套·经济生活
+https://pull.nicewifi.cn/live/xztv02.flv
+#EXTINF:-1 tvg-name="徐州三套" tvg-logo="https://logo.ugreen.cloudns.biz/img/徐州3套.png" group-title="🚜徐州频道",徐州三套·文艺影视
+https://pull.nicewifi.cn/live/xztv03.flv
+#EXTINF:-1 tvg-name="徐州四套" tvg-logo="https://logo.ugreen.cloudns.biz/img/徐州4套.png" group-title="🚜徐州频道",徐州四套·公共
+https://pull.nicewifi.cn/live/xztv04.flv
+
+# 🚐苏州频道
