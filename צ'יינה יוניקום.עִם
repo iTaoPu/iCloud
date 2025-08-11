@@ -302,6 +302,8 @@ http://122.96.52.98:8006/JS_CUCC/G_NJSB.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEqlM
 http://122.96.52.98:8006/JS_CUCC/G_NJSE.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtErV9ZZLHPB2iNJDmdQ9xIhzEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
 #EXTINF:-1 group-title="🚓南京频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/HAOxiangGou.png" tvg-name="南京信息",好享购物
 http://122.96.52.98:8006/JS_CUCC/G_HAOXIANG.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEoaZ3RBb4IpVIYdSjn1GrfxYXTUjY6TEKXN37EwEhDWj&p=GITV&area=JS_CUCC
+#EXTINF:-1 group-title="🚓南京频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/江宁新闻综合.png" tvg-name="江宁新闻综合",江宁·新闻综合
+https://jiangning-tv-hls.cm.jstv.com/jiangning-tv/jnxwzh.m3u8
 
 # 🚒南通频道
 #EXTINF:-1 tvg-name="南通新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/南通新闻综合.png" group-title="🚒南通频道",南通一套·新闻综合
@@ -324,6 +326,14 @@ https://pull.nicewifi.cn/live/xztv03.m3u8
 https://pull.nicewifi.cn/live/xztv04.m3u8
 #EXTINF:-1 tvg-name="沛县新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/沛县新闻综合.png" group-title="🚜徐州频道",沛县·新闻综合
 http://peixian-tv-hls.cm.jstv.com/peixian-tv/pxzh.m3u8
+#EXTINF:-1 tvg-name="睢宁综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/睢宁综合.png" group-title="🚜徐州频道",睢宁·综合
+http://suining-tv-hls.cm.jstv.com/suining-tv/suiningzh.m3u8
+#EXTINF:-1 tvg-name="睢宁三农" tvg-logo="https://logo.ugreen.cloudns.biz/img/睢宁综合.png" group-title="🚜徐州频道",睢宁·三农
+http://suining-tv-hls.cm.jstv.com/suining-tv/suiningsn.m3u8
+#EXTINF:-1 tvg-name="睢宁生活教育" tvg-logo="https://logo.ugreen.cloudns.biz/img/睢宁生活教育.png" group-title="🚜徐州频道",睢宁·生活教育
+http://suining-tv-hls.cm.jstv.com/suining-tv/suiningsh.m3u8
+#EXTINF:-1 tvg-name="睢宁资讯" tvg-logo="https://logo.ugreen.cloudns.biz/img/睢宁资讯.png" group-title="🚜徐州频道",睢宁·资讯
+http://suining-tv-hls.cm.jstv.com/suining-tv/suiningys.m3u8
 
 # 🚐宿迁频道
 #EXTINF:-1 tvg-name="泗阳综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/泗阳综合.png" group-title="🚐宿迁频道",泗阳·综合
@@ -340,5 +350,5 @@ http://shuyang-tv-hls.cm.jstv.com/shuyang-tv/shuyangzh.m3u8
 http://lianshui-tv-hls.cm.jstv.com/lianshui-tv/lsxw.m3u8
 
 # 🚚镇江频道
-#EXTINF:-1 tvg-name="丹阳新闻" tvg-logo="https://logo.ugreen.cloudns.biz/img/丹阳新闻.png" group-title="🚕淮安频道",丹阳·新闻
+#EXTINF:-1 tvg-name="丹阳新闻" tvg-logo="https://logo.ugreen.cloudns.biz/img/丹阳新闻.png" group-title="🚚镇江频道",丹阳·新闻
 http://danyang-tv-hls.cm.jstv.com/danyang-tv/danyangtv.m3u8
