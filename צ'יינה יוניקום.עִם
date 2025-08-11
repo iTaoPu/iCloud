@@ -286,6 +286,8 @@ http://122.96.52.98:8006/JS_CUCC/G_JSTY.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEoAQ
 http://122.96.52.98:8006/JS_CUCC/G_JSZY.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEncrSBfKQn4Q5ZoKMcKsr4jEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
 #EXTINF:-1 group-title="🚂江苏频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jiangsu7.png" tvg-name="江苏教育",江苏教育
 http://122.96.52.98:8006/JS_CUCC/G_JSJY.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEjsYt23pVNf2zqF2rhGnDDHEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
+#EXTINF:-1 group-title="🚂江苏频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/HAOxiangGou.png" tvg-name="好享购物",好享购物
+http://122.96.52.98:8006/JS_CUCC/G_HAOXIANG.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEoaZ3RBb4IpVIYdSjn1GrfxYXTUjY6TEKXN37EwEhDWj&p=GITV&area=JS_CUCC
 
 # 🚓南京频道
 #EXTINF:-1 group-title="🚓南京频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing1.png" tvg-name="南京新闻综合",南京新闻综合
@@ -300,8 +302,6 @@ http://122.96.52.98:8006/JS_CUCC/G_NJYS.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEryO
 http://122.96.52.98:8006/JS_CUCC/G_NJSB.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEqlM1l%2BeoFKI8wnHz%2FUgbsbEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
 #EXTINF:-1 group-title="🚓南京频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing6.png" tvg-name="南京少儿",南京少儿
 http://122.96.52.98:8006/JS_CUCC/G_NJSE.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtErV9ZZLHPB2iNJDmdQ9xIhzEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="🚓南京频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/HAOxiangGou.png" tvg-name="南京信息",好享购物
-http://122.96.52.98:8006/JS_CUCC/G_HAOXIANG.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEoaZ3RBb4IpVIYdSjn1GrfxYXTUjY6TEKXN37EwEhDWj&p=GITV&area=JS_CUCC
 
 # 🗺️南京频道
 #EXTINF:-1 tvg-name="江宁综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/江宁综合.png" group-title="🚒地方频道",江宁·综合
@@ -344,7 +344,7 @@ http://shuyang-tv-hls.cm.jstv.com/shuyang-tv/shuyangzh.m3u8
 # 🗺️淮安频道
 #EXTINF:-1 tvg-name="金湖新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/金湖综合.png" group-title="🚒地方频道",金湖·新闻综合
 http://jinhu-tv-hls.cm.jstv.com/jinhu-tv/jinhuzh.m3u8
-#EXTINF:-1 tvg-name="涟水综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/涟水综合.png" group-title="🚒地方频道道",涟水·综合
+#EXTINF:-1 tvg-name="涟水综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/涟水综合.png" group-title="🚒地方频道",涟水·综合
 http://lianshui-tv-hls.cm.jstv.com/lianshui-tv/lsxw.m3u8
 #EXTINF:-1 tvg-name="淮阴综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/淮阴综合.png" group-title="🚒地方频道",淮阴·综合
 https://huaiyin-tv-replay.cm.jstv.com/huaiyin-tv/huaiyinf.m3u8
@@ -394,4 +394,3 @@ http://dongtai-tv-hls.cm.jstv.com/dongtai-tv/dongtaizonghe.m3u8
 http://dafeng-tv-hls.cm.jstv.com/dafeng-tv/dafenget.m3u8
 #EXTINF:-1 tvg-name="滨海新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/滨海新闻综合.png" group-title="🚒地方频道",滨海·新闻综合
 http://binhai-tv-hls.cm.jstv.com/binhai-tv/news.m3u8
-
