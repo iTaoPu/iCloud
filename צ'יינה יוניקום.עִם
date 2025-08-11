@@ -286,7 +286,7 @@ http://122.96.52.98:8006/JS_CUCC/G_JSTY.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEoAQ
 http://122.96.52.98:8006/JS_CUCC/G_JSZY.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEncrSBfKQn4Q5ZoKMcKsr4jEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
 #EXTINF:-1 group-title="🚂江苏频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jiangsu7.png" tvg-name="江苏教育",江苏教育
 http://122.96.52.98:8006/JS_CUCC/G_JSJY.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEjsYt23pVNf2zqF2rhGnDDHEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="🚂江苏频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/HAOxiangGou.png" tvg-name="好享购物",好享购物
+#EXTINF:-1 group-title="🚂江苏频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/HAOxiangGou.png" tvg-name="南京信息",好享购物
 http://122.96.52.98:8006/JS_CUCC/G_HAOXIANG.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEoaZ3RBb4IpVIYdSjn1GrfxYXTUjY6TEKXN37EwEhDWj&p=GITV&area=JS_CUCC
 
 # 🚓南京频道
@@ -310,17 +310,17 @@ https://jiangning-tv-hls.cm.jstv.com/jiangning-tv/jnxwzh.m3u8
 https://lishui-tv-hls.cm.jstv.com/lishui-tv/lsxwzh.m3u8
 
 # 🗺️南通频道
-#EXTINF:-1 tvg-name="如东综合频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/rudongxwzh.png" group-title="🚒地方频道",如东一套·综合频道
+#EXTINF:-1 tvg-name="如东综合频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/rudongxwzh.png" group-title="🚒地方频道",如东·综合频道
 http://rudong-tv-hls.cm.jstv.com/rudong-tv/rdxwzh.m3u8
 
 # 🗺️徐州频道
-#EXTINF:-1 tvg-name="徐州一套" tvg-logo="https://logo.ugreen.cloudns.biz/img/徐州1套.png" group-title="🚒地方频道",徐州一套·新闻综合
+#EXTINF:-1 tvg-name="徐州新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/徐州1套.png" group-title="🚒地方频道",徐州·新闻综合
 https://pull.nicewifi.cn/live/xztv01.m3u8
-#EXTINF:-1 tvg-name="徐州二套" tvg-logo="https://logo.ugreen.cloudns.biz/img/徐州2套.png" group-title="🚒地方频道",徐州二套·经济生活
+#EXTINF:-1 tvg-name="徐州经济生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/徐州2套.png" group-title="🚒地方频道",徐州·经济生活
 https://pull.nicewifi.cn/live/xztv02.m3u8
-#EXTINF:-1 tvg-name="徐州三套" tvg-logo="https://logo.ugreen.cloudns.biz/img/徐州3套.png" group-title="🚒地方频道",徐州三套·文艺影视
+#EXTINF:-1 tvg-name="徐州文艺影视" tvg-logo="https://logo.ugreen.cloudns.biz/img/徐州3套.png" group-title="🚒地方频道",徐州·文艺影视
 https://pull.nicewifi.cn/live/xztv03.m3u8
-#EXTINF:-1 tvg-name="徐州四套" tvg-logo="https://logo.ugreen.cloudns.biz/img/徐州4套.png" group-title="🚒地方频道",徐州四套·公共
+#EXTINF:-1 tvg-name="徐州公共" tvg-logo="https://logo.ugreen.cloudns.biz/img/徐州4套.png" group-title="🚒地方频道",徐州·公共
 https://pull.nicewifi.cn/live/xztv04.m3u8
 #EXTINF:-1 tvg-name="沛县新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/沛县新闻综合.png" group-title="🚒地方频道",沛县·新闻综合
 http://peixian-tv-hls.cm.jstv.com/peixian-tv/pxzh.m3u8
