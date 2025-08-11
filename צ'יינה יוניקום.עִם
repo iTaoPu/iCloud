@@ -357,7 +357,7 @@ https://huaiyin-tv-replay.cm.jstv.com/huaiyin-tv/huaiyinf.m3u8
 #EXTINF:-1 tvg-name="句容新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/句容新闻综合.png" group-title="🚚镇江频道",句容·新闻综合
 http://jrlive.jrntv.com/live/_definst_/jrxwzhs/playlist.m3u8
 #EXTINF:-1 tvg-name="句容生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/句容生活.png" group-title="🚚镇江频道",句容·生活
-,http://jrlive.jrntv.com/live/_definst_/shenghuo/playlist.m3u8
+http://jrlive.jrntv.com/live/_definst_/shenghuos/playlist.m3u8
 #EXTINF:-1 tvg-name="丹阳新闻" tvg-logo="https://logo.ugreen.cloudns.biz/img/丹阳新闻.png" group-title="🚚镇江频道",丹阳·新闻
 http://danyang-tv-hls.cm.jstv.com/danyang-tv/danyangtv.m3u8
 
@@ -366,10 +366,8 @@ http://danyang-tv-hls.cm.jstv.com/danyang-tv/danyangtv.m3u8
 http://jintan-tv-ori-hls.jstv.com/jintan-tv-ori/jintan_xw.m3u8
 
 # 🚙无锡频道
-#EXTINF:-1 tvg-name="宜兴新闻" tvg-logo="https://logo.ugreen.cloudns.biz/img/宜兴新闻.png" group-title="🚙无锡频道",宜兴·新闻
+#EXTINF:-1 tvg-name="宜兴新闻" tvg-logo="https://logo.ugreen.cloudns.biz/img/宜兴新闻.png" group-title="🚙无锡频道",宜兴·新闻新闻
 https://yixing-tv-ori-hls.jstv.com/yixing-tv-ori/yixing_xw.m3u8
-#EXTINF:-1 tvg-name="宜兴紫砂" tvg-logo="https://logo.ugreen.cloudns.biz/img/宜兴紫砂.png" group-title="🚙无锡频道",宜兴·紫砂
-https://yixing-tv-ori-hls.jstv.com/yixing-tv-ori/yixing_zs.m3u8
 
 # 🚗连云港频道
 #EXTINF:-1 tvg-name="赣榆新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/赣榆新闻综合.png" group-title="🚗连云港频道",赣榆·新闻综合
