@@ -9,101 +9,101 @@ https://itcoffe.5iclub.us.kg/Loong/iTV/Disclaimer.mp4
 https://itcoffe.5iclub.us.kg/Loong/iTV/Disclaimer.mp4
 
 # 📺央视频道
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV1.png" tvg-name="CCTV1",CCTV-1 CQ
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV1.png" tvg-name="CCTV1",CCTV-1·综合 CQ
 http://122.96.52.98:8006/JS_CUCC/G_CCTV-1-CQ.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEkAFVn1RP2d2uoo%2Foo97iAsu0HPDaI8IXtpvkDaFJ1bH&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV1.png" tvg-name="CCTV1",CCTV-1
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV1.png" tvg-name="CCTV1",CCTV-1·综合
 http://122.96.52.98:8006/JS_CUCC/G_CCTV-1.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEr0O33cTzHngKVeC%2BpkEGGAYUAl3uT6KyhhyA3GPqkYe&p=GITV&area=JS_CUCC
 
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV2.png" tvg-name="CCTV2",CCTV-2 CQ
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV2.png" tvg-name="CCTV2",CCTV-2·财经 CQ
 http://122.96.52.98:8006/JS_CUCC/G_CCTV-2-CQ.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEjLjmqq5VFTNlTRTIYZuPFEu0HPDaI8IXtpvkDaFJ1bH&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV2.png" tvg-name="CCTV2",CCTV-2 HQ
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV2.png" tvg-name="CCTV2",CCTV-2·财经 HQ
 http://122.96.52.98:8006/JS_CUCC/G_CCTV-2-HQ.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEgwqdXJuN6bi6tfgWhbeDhs04ctvOE2aPjA%2F%2B%2BXXw1nH&p=GITV&area=JS_CUCC
 
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV3.png" tvg-name="CCTV3",CCTV-3 CQ
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV3.png" tvg-name="CCTV3",CCTV-3·综艺 CQ
 http://122.96.52.98:8006/JS_CUCC/G_CCTV-3-CQ.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEgPYh7UYWZPIIdnB%2FiAqXWou0HPDaI8IXtpvkDaFJ1bH&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV3.png" tvg-name="CCTV3",CCTV-3 HQ
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV3.png" tvg-name="CCTV3",CCTV-3·综艺 HQ
 http://122.96.52.98:8006/JS_CUCC/G_CCTV-3-HQ.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEiC5KyJleyIffsaVcNhS%2FJk04ctvOE2aPjA%2F%2B%2BXXw1nH&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV3.png" tvg-name="CCTV3",CCTV-3
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV3.png" tvg-name="CCTV3",CCTV-3·综艺
 http://122.96.52.98:8006/JS_CUCC/CCTV-3.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEtV0mC1nal5AWJURADPySNLEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
 
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV4.png" tvg-name="CCTV4",CCTV-4 CQ
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV4.png" tvg-name="CCTV4",CCTV-4·中文国际 CQ
 http://122.96.52.98:8006/JS_CUCC/G_CCTV-4-CQ.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEoaYUhARSOAZvaB4bPLfRG0u0HPDaI8IXtpvkDaFJ1bH&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV4.png" tvg-name="CCTV4",CCTV-4 HQ
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV4.png" tvg-name="CCTV4",CCTV-4·中文国际 HQ
 http://122.96.52.98:8006/JS_CUCC/G_CCTV-4-HQ.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEm2D6ehZ%2Fm6uG04mUXeIzUE04ctvOE2aPjA%2F%2B%2BXXw1nH&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV4.png" tvg-name="CCTV4",CCTV-4
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV4.png" tvg-name="CCTV4",CCTV-4·中文国际
 http://122.96.52.98:8006/JS_CUCC/CCTV-4.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEhYiizerQ3gw0P1ZNM%2Fhj6vEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
 
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV5.png" tvg-name="CCTV5",CCTV-5 CQ
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV5.png" tvg-name="CCTV5",CCTV-5·体育 CQ
 http://122.96.52.98:8006/JS_CUCC/G_CCTV-5-CQ.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEozMH5mDAJP6SltbUTv3nN8u0HPDaI8IXtpvkDaFJ1bH&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV5.png" tvg-name="CCTV5",CCTV-5 HQ
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV5.png" tvg-name="CCTV5",CCTV-5·体育 HQ
 http://122.96.52.98:8006/JS_CUCC/G_CCTV-5-HQ.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEuLBiWJLb2Xs%2Fj68hSxh8s980u7QUbxN5sCUdpV6z2MK&p=GITV&area=JS_CUCC
 
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV5plus.png" tvg-name="CCTV5+",CCTV5+ CQ
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV5plus.png" tvg-name="CCTV5+",CCTV5+·体育赛事 CQ
 http://122.96.52.98:8006/JS_CUCC/G_CCTV-5PLUS-CQ.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEp4x3ZVhpAE%2BHYVoOre4TusAXe%2BeZvUgolzXkq%2By75Rg&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV5plus.png" tvg-name="CCTV5+",CCTV-5+
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV5plus.png" tvg-name="CCTV5+",CCTV-5+·体育赛事
 http://122.96.52.98:8006/JS_CUCC/G_CCTV-5PLUS.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEiH21ihWCb02eaLByFFgton8x5jrzqcco72EqzcdA%2Bsf&p=GITV&area=JS_CUCC
 
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV6.png" tvg-name="CCTV6",CCTV-6 CQ
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV6.png" tvg-name="CCTV6",CCTV-6·电影 CQ
 http://122.96.52.98:8006/JS_CUCC/G_CCTV-6-CQ.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEuwxwaoCGJY2cCtI9leQXrQu0HPDaI8IXtpvkDaFJ1bH&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV6.png" tvg-name="CCTV6",CCTV-6 HQ
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV6.png" tvg-name="CCTV6",CCTV-6·电影 HQ
 http://122.96.52.98:8006/JS_CUCC/G_CCTV-6-HQ.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEs08JDfw3s7WN3MnDGyc%2FSg04ctvOE2aPjA%2F%2B%2BXXw1nH&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV6.png" tvg-name="CCTV6",CCTV-6
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV6.png" tvg-name="CCTV6",CCTV-6·电影
 http://122.96.52.98:8006/JS_CUCC/CCTV-6.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEmMpAc2q1hNubfPYZhLOb1%2FEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
 
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV7.png" tvg-name="CCTV7",CCTV-7 HQ
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV7.png" tvg-name="CCTV7",CCTV-7·国防军事 HQ
 http://122.96.52.98:8006/JS_CUCC/G_CCTV-7-HQ.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEo%2FnZmofd%2BrCFtc8Q50vu3Au0HPDaI8IXtpvkDaFJ1bH&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV7.png" tvg-name="CCTV7",CCTV-7
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV7.png" tvg-name="CCTV7",CCTV-7·国防军事
 http://122.96.52.98:8006/JS_CUCC/CCTV-7.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEnvSgPE%2FSUz5RwSWN%2F9gnfXEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
 
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV8.png" tvg-name="CCTV8",CCTV-8 CQ
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV8.png" tvg-name="CCTV8",CCTV-8·电视剧 CQ
 http://122.96.52.98:8006/JS_CUCC/G_CCTV-8-CQ.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEsFjysg6lHm9n5%2FvwbWNDQ0u0HPDaI8IXtpvkDaFJ1bH&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV8.png" tvg-name="CCTV8",CCTV-8 HQ
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV8.png" tvg-name="CCTV8",CCTV-8·电视剧 HQ
 http://122.96.52.98:8006/JS_CUCC/G_CCTV-8-HQ.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEjRHl42BlkGJajq1an8WD9s04ctvOE2aPjA%2F%2B%2BXXw1nH&p=GITV&area=JS_CUCC
 
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV9.png" tvg-name="CCTV9",CCTV-9 HQ
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV9.png" tvg-name="CCTV9",CCTV-9·纪录 HQ
 http://122.96.52.98:8006/JS_CUCC/G_CCTV-9-HQ.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtElGagliwFIk%2BluGBbGdVUbc02fQ712gaPW1S8iZfrxPb&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV9.png" tvg-name="CCTV9",CCTV-9
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV9.png" tvg-name="CCTV9",CCTV-9·纪录
 http://122.96.52.98:8006/JS_CUCC/G_CCTV-9.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEqSxitBDRao9cZu91w5ovqEYUAl3uT6KyhhyA3GPqkYe&p=GITV&area=JS_CUCC
 
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV10.png" tvg-name="CCTV10",CCTV-10 HQ
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV10.png" tvg-name="CCTV10",CCTV-10·科教 HQ
 http://122.96.52.98:8006/JS_CUCC/G_CCTV-10-HQ.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtErwM4PQmmUbDAbEG18NJ7ON4LedphZzylPEmlN2UDQol&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV10.png" tvg-name="CCTV10",CCTV-10
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV10.png" tvg-name="CCTV10",CCTV-10·科教
 http://122.96.52.98:8006/JS_CUCC/CCTV-10.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEpkkW5fl2b5O6g2W9aDD5JU3CITGH3H4QrNyNYWLeTps&p=GITV&area=JS_CUCC
 
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV11.png" tvg-name="CCTV11",CCTV-11 HQ
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV11.png" tvg-name="CCTV11",CCTV-11·戏曲 HQ
 http://122.96.52.98:8006/JS_CUCC/G_CCTV-11-HQ.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEglwOR0THVROxuCQpsWEgp14LedphZzylPEmlN2UDQol&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV11.png" tvg-name="CCTV11",CCTV-11
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV11.png" tvg-name="CCTV11",CCTV-11·戏曲
 http://122.96.52.98:8006/JS_CUCC/CCTV-11.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEihp3wJoSvxNOieQXVyZm9M3CITGH3H4QrNyNYWLeTps&p=GITV&area=JS_CUCC
 
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV12.png" tvg-name="CCTV12",CCTV-12 HD
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV12.png" tvg-name="CCTV12",CCTV-12·社会与法 HD
 http://122.96.52.98:8006/JS_CUCC/G_CCTV-12-HD.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEvskw9SxptiBzf0Vc8ipYKN4LedphZzylPEmlN2UDQol&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV12.png" tvg-name="CCTV12",CCTV-12
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV12.png" tvg-name="CCTV12",CCTV-12·社会与法
 http://122.96.52.98:8006/JS_CUCC/CCTV-12.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEgLx7yngoHabzsHoVzJ7rjA3CITGH3H4QrNyNYWLeTps&p=GITV&area=JS_CUCC
 
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV13.png" tvg-name="CCTV13",CCTV-13 HQ
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV13.png" tvg-name="CCTV13",CCTV-13·新闻 HQ
 http://122.96.52.98:8006/JS_CUCC/G_CCTV-13-HQ.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEkjL6a8QWp3FPxxMdEg8%2F3R4LedphZzylPEmlN2UDQol&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV13.png" tvg-name="CCTV13",CCTV-13
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV13.png" tvg-name="CCTV13",CCTV-13·新闻
 http://122.96.52.98:8006/JS_CUCC/CCTV-13.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEvc16C%2BvDeDvx%2FCpJSGbwJo3CITGH3H4QrNyNYWLeTps&p=GITV&area=JS_CUCC
 
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV14.png" tvg-name="CCTV14",CCTV-14 HD
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV14.png" tvg-name="CCTV14",CCTV-14·少儿 HD
 http://122.96.52.98:8006/JS_CUCC/G_CCTV-14-HD.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEo3RDHuXMRWK8VyFam4v%2FtV4LedphZzylPEmlN2UDQol&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV14.png" tvg-name="CCTV14",CCTV-14
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV14.png" tvg-name="CCTV14",CCTV-14·少儿
 http://122.96.52.98:8006/JS_CUCC/G_CCTV-14.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEoD9ET%2Fxx1xfq9p9fkelR8gLl1kgfSDeytwXvPwn2c6i&p=GITV&area=JS_CUCC
 
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV15.png" tvg-name="CCTV15",CCTV-15 HQ
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV15.png" tvg-name="CCTV15",CCTV-15·音乐 HQ
 http://122.96.52.98:8006/JS_CUCC/G_CCTV-15-HQ.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEr2cMh1na7Xi9YCb22Tii5B4LedphZzylPEmlN2UDQol&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV10.png" tvg-name="CCTV15",CCTV-15
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV15.png" tvg-name="CCTV15",CCTV-15·音乐
 http://122.96.52.98:8006/JS_CUCC/G_CCTV-15.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEnO2QfmJhn9rzsvMT8s8LNALl1kgfSDeytwXvPwn2c6i&p=GITV&area=JS_CUCC
 
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV16.png" tvg-name="CCTV16",CCTV-16 CQ
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV16.png" tvg-name="CCTV16",CCTV-16·奥林匹克 CQ
 http://122.96.52.98:8006/JS_CUCC/G_CCTV-16-CQ.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEj7L5TMaaLEN8QSSnoeVsO94LedphZzylPEmlN2UDQol&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV10.png" tvg-name="CCTV16",CCTV-16 HQ
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV16.png" tvg-name="CCTV16",CCTV-16·奥林匹克 HQ
 http://122.96.52.98:8006/JS_CUCC/G_CCTV-16-HQ.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEprOy1thJK05Ys6n3CjtSJlMbaR389oSCXqlFcK2rwtb&p=GITV&area=JS_CUCC
 
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV17.png" tvg-name="CCTV17",CCTV-17 HQ
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV17.png" tvg-name="CCTV17",CCTV-17·农业农村 HQ
 http://122.96.52.98:8006/JS_CUCC/G_CCTV-17-HQ.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEvZuARt3SsS1lp07gslq8B54LedphZzylPEmlN2UDQol&p=GITV&area=JS_CUCC
 
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CGTN.png" tvg-name="CGTN",CGTN-新闻
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/CGTN.png" tvg-name="CGTN",CGTN·新闻
 http://122.96.52.98:8006/JS_CUCC/G_CCTV-NEWS.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEq%2FOFGGWwmuEqZCpNU2lpMI02fQ712gaPW1S8iZfrxPb&p=GITV&area=JS_CUCC
 
 # 📡卫视频道
@@ -294,7 +294,7 @@ http://122.96.52.98:8006/JS_CUCC/G_HAOXIANG.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbt
 http://122.96.52.98:8006/JS_CUCC/G_NJXW.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEoMjcH0bdretQeGgwOgFK%2FnEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
 #EXTINF:-1 group-title="🛺南京频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing2.png" tvg-name="南京教科",南京教科
 http://122.96.52.98:8006/JS_CUCC/G_NJJK.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEiGqx7T0gmg2iKRDXWqfssbEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="🛺南京频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing9.png" tvg-name="南京文旅纪录",南京文旅·纪录
+#EXTINF:-1 group-title="🛺南京频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing9.png" tvg-name="南京文旅纪录",南京文旅纪录
 http://122.96.52.98:8006/JS_CUCC/G_NJYL.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEjFqfQRndUrBSsUh%2BqRc5aPEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
 #EXTINF:-1 group-title="🛺南京频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing10.png" tvg-name="南京影视",南京影视
 http://122.96.52.98:8006/JS_CUCC/G_NJYS.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEryOYppBCaGCbwBoicbAMYfEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
@@ -302,6 +302,3 @@ http://122.96.52.98:8006/JS_CUCC/G_NJYS.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEryO
 http://122.96.52.98:8006/JS_CUCC/G_NJSB.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEqlM1l%2BeoFKI8wnHz%2FUgbsbEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
 #EXTINF:-1 group-title="🛺南京频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing6.png" tvg-name="南京少儿",南京少儿
 http://122.96.52.98:8006/JS_CUCC/G_NJSE.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtErV9ZZLHPB2iNJDmdQ9xIhzEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
-
-
-
