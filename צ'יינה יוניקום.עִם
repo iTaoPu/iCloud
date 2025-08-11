@@ -304,6 +304,8 @@ http://122.96.52.98:8006/JS_CUCC/G_NJSE.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtErV9
 http://122.96.52.98:8006/JS_CUCC/G_HAOXIANG.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEoaZ3RBb4IpVIYdSjn1GrfxYXTUjY6TEKXN37EwEhDWj&p=GITV&area=JS_CUCC
 #EXTINF:-1 group-title="🚓南京频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/江宁综合.png" tvg-name="江宁综合",江宁·综合
 https://jiangning-tv-hls.cm.jstv.com/jiangning-tv/jnxwzh.m3u8
+#EXTINF:-1 group-title="🚓南京频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/溧水新闻综合.png" tvg-name="溧水新闻综合",溧水·新闻综合
+https://lishui-tv-hls.cm.jstv.com/lishui-tv/lsxwzh.m3u8
 
 # 🚒南通频道
 #EXTINF:-1 tvg-name="南通新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/南通新闻综合.png" group-title="🚒南通频道",南通一套·新闻综合
@@ -344,10 +346,12 @@ http://sihong-tv-hls.cm.jstv.com/sihong-tv/sihongxinwenzonghe.m3u8
 http://shuyang-tv-hls.cm.jstv.com/shuyang-tv/shuyangzh.m3u8
 
 # 🚕淮安频道
-#EXTINF:-1 tvg-name="金湖综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/金湖综合.png" group-title="🚕淮安频道",金湖·综合
+#EXTINF:-1 tvg-name="金湖新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/金湖综合.png" group-title="🚕淮安频道",金湖·新闻综合
 http://jinhu-tv-hls.cm.jstv.com/jinhu-tv/jinhuzh.m3u8
 #EXTINF:-1 tvg-name="涟水综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/涟水综合.png" group-title="🚕淮安频道",涟水·综合
 http://lianshui-tv-hls.cm.jstv.com/lianshui-tv/lsxw.m3u8
+#EXTINF:-1 tvg-name="淮阴综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/淮阴综合.png" group-title="🚕淮安频道",淮阴·综合
+https://huaiyin-tv-replay.cm.jstv.com/huaiyin-tv/huaiyinf.m3u8
 
 # 🚚镇江频道
 #EXTINF:-1 tvg-name="句容新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/句容新闻综合.png" group-title="🚚镇江频道",句容·新闻综合
@@ -361,3 +365,12 @@ http://danyang-tv-hls.cm.jstv.com/danyang-tv/danyangtv.m3u8
 #EXTINF:-1 tvg-name="金坛综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/金坛综合.png" group-title="🚌常州频道",金坛·综合
 http://jintan-tv-ori-hls.jstv.com/jintan-tv-ori/jintan_xw.m3u8
 
+# 🚙无锡频道
+#EXTINF:-1 tvg-name="宜兴新闻" tvg-logo="https://logo.ugreen.cloudns.biz/img/宜兴新闻.png" group-title="🚙无锡频道",宜兴·新闻
+https://yixing-tv-ori-hls.jstv.com/yixing-tv-ori/yixing_xw.m3u8
+#EXTINF:-1 tvg-name="宜兴紫砂" tvg-logo="https://logo.ugreen.cloudns.biz/img/宜兴紫砂.png" group-title="🚙无锡频道",宜兴·紫砂
+https://yixing-tv-ori-hls.jstv.com/yixing-tv-ori/yixing_zs.m3u8
+
+# 🚗连云港频道
+#EXTINF:-1 tvg-name="赣榆新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/赣榆新闻综合.png" group-title="🚗连云港频道",赣榆·新闻综合
+https://ganyu-tv-hls.cm.jstv.com/ganyu-tv/ganyutv.m3u8
