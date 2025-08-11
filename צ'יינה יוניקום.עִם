@@ -325,5 +325,12 @@ https://pull.nicewifi.cn/live/xztv04.flv
 #EXTINF:-1 tvg-name="沛县新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/沛县新闻综合.png" group-title="🚜徐州频道",沛县·新闻综合
 http://peixian-tv-hls.cm.jstv.com/peixian-tv/pxzh.flv
 
-# 🚐苏州频道
-
+# 🚐宿迁频道
+#EXTINF:-1 tvg-name="泗阳综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/泗阳综合.png" group-title="🚐宿迁频道",泗阳·综合
+http://siyang-tv-hls.cm.jstv.com/siyang-tv/siyangzh.flv
+#EXTINF:-1 tvg-name="泗阳资讯" tvg-logo="https://logo.ugreen.cloudns.biz/img/泗阳资讯.png" group-title="🚐宿迁频道",泗阳·资讯
+http://siyang-tv-hls.cm.jstv.com/siyang-tv/siyangzx.flv
+#EXTINF:-1 tvg-name="泗洪新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/泗洪新闻综合.png" group-title="🚐宿迁频道",泗洪·新闻综合
+http://sihong-tv-hls.cm.jstv.com/sihong-tv/sihongxinwenzonghe.flv
+#EXTINF:-1 tvg-name="沭阳综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/沭阳综合.png" group-title="🚐宿迁频道",沭阳·综合
+http://shuyang-tv-hls.cm.jstv.com/shuyang-tv/shuyangzh.flv
