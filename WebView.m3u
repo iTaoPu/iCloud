@@ -365,29 +365,29 @@ webview://https://v.iqilu.com/live/yspd/
 webview://https://v.iqilu.com/live/shpd/
 #EXTINF:-1 tvg-name="山东综艺" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shandong7.png" group-title="🛺山东频道",山东综艺
 webview://https://v.iqilu.com/live/zypd/
-#EXTINF:-1 tvg-name="QTV1" tvg-logo="https://logo.ugreen.cloudns.biz/img/QTV1.png" group-title="🦽山东频道",青岛1套
+#EXTINF:-1 tvg-name="QTV1" tvg-logo="https://logo.ugreen.cloudns.biz/img/QTV1.png" group-title="🛺山东频道",青岛1套
 webview://https://www.qtv.com.cn/live/tv/
-#EXTINF:-1 tvg-name="QTV2" tvg-logo="https://logo.ugreen.cloudns.biz/img/QTV2.png" group-title="🦽山东频道",青岛2套
+#EXTINF:-1 tvg-name="QTV2" tvg-logo="https://logo.ugreen.cloudns.biz/img/QTV2.png" group-title="🛺山东频道",青岛2套
 webview://https://www.qtv.com.cn/live/tv/tv_qtv2.shtml
-#EXTINF:-1 tvg-name="QTV3" tvg-logo="https://logo.ugreen.cloudns.biz/img/QTV3.png" group-title="🦽山东频道",青岛3套
+#EXTINF:-1 tvg-name="QTV3" tvg-logo="https://logo.ugreen.cloudns.biz/img/QTV3.png" group-title="🛺山东频道",青岛3套
 webview://https://www.qtv.com.cn/live/tv/tv_qtv3.shtml
-#EXTINF:-1 tvg-name="QTV4" tvg-logo="https://logo.ugreen.cloudns.biz/img/QTV4.png" group-title="🦽山东频道",青岛4套
+#EXTINF:-1 tvg-name="QTV4" tvg-logo="https://logo.ugreen.cloudns.biz/img/QTV4.png" group-title="🛺山东频道",青岛4套
 webview://https://www.qtv.com.cn/live/tv/tv_qtv4.shtml
-#EXTINF:-1 tvg-name="QTV5" tvg-logo="https://logo.ugreen.cloudns.biz/img/QTV5.png" group-title="🦽山东频道",青岛5套
+#EXTINF:-1 tvg-name="QTV5" tvg-logo="https://logo.ugreen.cloudns.biz/img/QTV5.png" group-title="🛺山东频道",青岛5套
 webview://https://www.qtv.com.cn/live/tv/tv_qtv5.shtml
-#EXTINF:-1 tvg-name="奥帆中心" tvg-logo="https://logo.ugreen.cloudns.biz/img/爱青岛.png" group-title="🦽山东频道",奥帆中心
+#EXTINF:-1 tvg-name="奥帆中心" tvg-logo="https://logo.ugreen.cloudns.biz/img/爱青岛.png" group-title="🛺山东频道",奥帆中心
 webview://https://www.qtv.com.cn/live/system/2017/04/28/014282223.shtml
-#EXTINF:-1 tvg-name="太平角海岬" tvg-logo="https://logo.ugreen.cloudns.biz/img/爱青岛.png" group-title="🦽山东频道",太平角海岬
+#EXTINF:-1 tvg-name="太平角海岬" tvg-logo="https://logo.ugreen.cloudns.biz/img/爱青岛.png" group-title="🛺山东频道",太平角海岬
 webview://https://www.qtv.com.cn/live/system/2021/10/28/015799150.shtml
-#EXTINF:-1 tvg-name="五四广场" tvg-logo="https://logo.ugreen.cloudns.biz/img/爱青岛.png" group-title="🦽山东频道",五四广场
+#EXTINF:-1 tvg-name="五四广场" tvg-logo="https://logo.ugreen.cloudns.biz/img/爱青岛.png" group-title="🛺山东频道",五四广场
 webview://https://www.qtv.com.cn/live/system/2017/04/28/014282221.shtml
-#EXTINF:-1 tvg-name="电视塔风光·空中看太平湾畔" tvg-logo="https://logo.ugreen.cloudns.biz/img/爱青岛.png" group-title="🦽山东频道",电视塔风光·空中看太平湾畔
+#EXTINF:-1 tvg-name="电视塔风光·空中看太平湾畔" tvg-logo="https://logo.ugreen.cloudns.biz/img/爱青岛.png" group-title="🛺山东频道",电视塔风光·空中看太平湾畔
 webview://hhttps://www.qtv.com.cn/live/system/2017/04/28/014282264.shtml
-#EXTINF:-1 tvg-name="市南·快速路大润发、南京路方向" tvg-logo="https://logo.ugreen.cloudns.biz/img/爱青岛.png" group-title="🦽山东频道",市南·快速路大润发、南京路方向
+#EXTINF:-1 tvg-name="市南·快速路大润发、南京路方向" tvg-logo="https://logo.ugreen.cloudns.biz/img/爱青岛.png" group-title="🛺山东频道",市南·快速路大润发、南京路方向
 webview://https://www.qtv.com.cn/live/system/2017/04/29/014283886.shtml
-#EXTINF:-1 tvg-name="市南·胶宁高架福州路口南段" tvg-logo="https://logo.ugreen.cloudns.biz/img/爱青岛.png" group-title="🦽山东频道",市南·胶宁高架福州路口南段
+#EXTINF:-1 tvg-name="市南·胶宁高架福州路口南段" tvg-logo="https://logo.ugreen.cloudns.biz/img/爱青岛.png" group-title="🛺山东频道",市南·胶宁高架福州路口南段
 webview://https://www.qtv.com.cn/live/system/2017/04/29/014283895.shtml
-#EXTINF:-1 tvg-name="市南·胶宁高架银川西路、宁夏路下桥口" tvg-logo="https://logo.ugreen.cloudns.biz/img/爱青岛.png" group-title="🦽山东频道",市南·胶宁高架银川西路、宁夏路下桥口
+#EXTINF:-1 tvg-name="市南·胶宁高架银川西路、宁夏路下桥口" tvg-logo="https://logo.ugreen.cloudns.biz/img/爱青岛.png" group-title="🛺山东频道",市南·胶宁高架银川西路、宁夏路下桥口
 webview://https://www.qtv.com.cn/live/system/2017/04/29/014283894.shtml
 
 # 🚌陕西频道
@@ -754,6 +754,13 @@ webview://https://www.xjtvs.com.cn/column/tv/434?channelId=17
 webview://https://www.xjtvs.com.cn/column/tv/434?channelId=21
 #EXTINF:-1 tvg-name="新疆少儿" tvg-logo="https://logo.ugreen.cloudns.biz/img/Xinjiang10.png" group-title="🚘新疆频道",新疆少儿
 webview://https://www.xjtvs.com.cn/column/tv/434?channelId=23
+
+# 🏎️青海频道
+#EXTINF:-1 tvg-name="西宁新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/Xining_1.png" group-title="🏎️青海频道",西宁新闻综合
+webview://https://www.xntv.tv/xnxwpd
+#EXTINF:-1 tvg-name="西宁生活服务" tvg-logo="https://logo.ugreen.cloudns.biz/img/Xining_2.png" group-title="🏎️青海频道",西宁生活服务
+webview://https://www.xntv.tv/xnshpd
+
 
 # ♻️Webview检测
 #EXTINF:-1 tvg-name="Webview检测" tvg-logo="https://logo.ugreen.cloudns.biz/img/Webview.png" group-title="♻️Webview检测",Webview检测
