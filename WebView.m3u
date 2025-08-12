@@ -411,18 +411,18 @@ webview://https://live.mgtv.com/?channelId=269
 #EXTINF:-1 tvg-name="长沙政法" tvg-logo="https://logo.ugreen.cloudns.biz/img/ChangSha2.png" group-title="🚙湖南频道",长沙政法
 webview://https://live.mgtv.com/?channelId=254
 
-# 🚲上海频道
-#EXTINF:-1 tvg-name="东方卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/东方卫视.png" group-title="🚲上海频道",东方卫视
+# 🏍️上海频道
+#EXTINF:-1 tvg-name="东方卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/东方卫视.png" group-title="🏍️上海频道",东方卫视
 webview://https://live.kankanews.com/huikan?id=1
-#EXTINF:-1 tvg-name="新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shanghai1.png" group-title="🚲上海频道",新闻综合
+#EXTINF:-1 tvg-name="新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shanghai1.png" group-title="🏍️上海频道",新闻综合
 webview://https://live.kankanews.com/huikan?id=2
-#EXTINF:-1 tvg-name="第一财经" tvg-logo="https://logo.ugreen.cloudns.biz/img/dycj.png" group-title="🚲上海频道",第一财经
+#EXTINF:-1 tvg-name="第一财经" tvg-logo="https://logo.ugreen.cloudns.biz/img/dycj.png" group-title="🏍️上海频道",第一财经
 webview://https://live.kankanews.com/huikan?id=5
-#EXTINF:-1 tvg-name="新纪实" tvg-logo="https://logo.ugreen.cloudns.biz/img/jsrw.png" group-title="🚲上海频道",新纪实
+#EXTINF:-1 tvg-name="新纪实" tvg-logo="https://logo.ugreen.cloudns.biz/img/jsrw.png" group-title="🏍️上海频道",新纪实
 webview://https://live.kankanews.com/huikan?id=12
-#EXTINF:-1 tvg-name="五星体育" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shanghai5.png" group-title="🚲上海频道",五星体育
+#EXTINF:-1 tvg-name="五星体育" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shanghai5.png" group-title="🏍️上海频道",五星体育
 webview://https://live.kankanews.com/huikan?id=10
-#EXTINF:-1 tvg-name="魔都眼" tvg-logo="https://logo.ugreen.cloudns.biz/img/魔都眼.png" group-title="🚲上海频道",魔都眼
+#EXTINF:-1 tvg-name="魔都眼" tvg-logo="https://logo.ugreen.cloudns.biz/img/魔都眼.png" group-title="🏍️上海频道",魔都眼
 webview://https://live.kankanews.com/huikan?id=11
 
 # 🚞浙江频道
@@ -570,14 +570,6 @@ webview://https://www.gzstv.com/tv/ch05
 webview://https://www.gzstv.com/tv/ch06
 #EXTINF:-1 tvg-name="贵州移动电视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Guizhou9.png" group-title="🚐贵州频道",贵州移动电视
 webview://https://www.gzstv.com/tv/ch13
-
-# 🏍️宁夏频道
-#EXTINF:-1 tvg-name="银川公共" tvg-logo="https://logo.ugreen.cloudns.biz/img/银川公共.png" group-title="🏍️宁夏频道",银川公共
-webview://https://www.qukanvideo.com/cloud/h5/1731639141671136
-#EXTINF:-1 tvg-name="银川生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/银川生活.png" group-title="🏍️宁夏频道",银川生活
-webview://https://www.qukanvideo.com/cloud/h5/1731638744888001
-#EXTINF:-1 tvg-name="银川文体" tvg-logo="https://logo.ugreen.cloudns.biz/img/银川文体.png" group-title="🏍️宁夏频道",银川文体
-webview://https://www.qukanvideo.com/cloud/h5/172844378694532
 
 # ♻️Webview检测
 #EXTINF:-1 tvg-name="Webview检测" tvg-logo="https://logo.ugreen.cloudns.biz/img/Webview.png" group-title="♻️Webview检测",Webview检测
