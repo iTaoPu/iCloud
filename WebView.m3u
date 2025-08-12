@@ -249,11 +249,11 @@ webview://https://live.ipanda.com/zxwz/milu/index.shtml
 webview://https://live.ipanda.com/zxwz/bmxs/index.shtml
 
 # 🚂江苏频道
-#EXTINF:-1 tvg-name="江苏卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jiangsu9.png" group-title="🚂江苏频道",卫视
+#EXTINF:-1 tvg-name="江苏卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/江苏卫视.png" group-title="🚂江苏频道",江苏卫视
 webview://https://live.jstv.com
-#EXTINF:-1 tvg-name="江苏城市" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jiangsu2.png" group-title="🚂江苏频道",城市
+#EXTINF:-1 tvg-name="江苏城市" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jiangsu2.png" group-title="🚂江苏频道",江苏城市
 webview://https://live.jstv.com/?channelId=669
-#EXTINF:-1 tvg-name="江苏综艺" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jiangsu3.png" group-title="🚂江苏频道",综艺
+#EXTINF:-1 tvg-name="江苏综艺" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jiangsu3.png" group-title="🚂江苏频道",江苏综艺
 webview://https://live.jstv.com/?channelId=663
 #EXTINF:-1 tvg-name="江苏影视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jiangsu4.png" group-title="🚂江苏频道",江苏影视
 webview://https://live.jstv.com/?channelId=664
@@ -382,7 +382,7 @@ webview://https://tv.gxtv.cn/channel/channelivePlay_67eace939278435bb4bca90800fb
 # 🚙湖南频道
 #EXTINF:-1 tvg-name="金鹰卡通" tvg-logo="https://logo.ugreen.cloudns.biz/img/Hunan10.png" group-title="🚙湖南频道",金鹰卡通
 webview://https://live.mgtv.com/?channelId=287
-#EXTINF:-1 tvg-name="湖南快乐购" tvg-logo="https://logo.ugreen.cloudns.biz/img/湖南快乐购.png" group-title="🚙湖南频道",快乐购
+#EXTINF:-1 tvg-name="湖南快乐购" tvg-logo="https://logo.ugreen.cloudns.biz/img/快乐购.png" group-title="🚙湖南频道",快乐购
 webview://https://live.mgtv.com/?channelId=267
 #EXTINF:-1 tvg-name="湖南经视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Hunan1.png" group-title="🚙湖南频道",湖南经视
 webview://https://live.mgtv.com/?channelId=280
