@@ -308,24 +308,24 @@ webview://https://www.gdtv.cn/tvChannelDetail/75
 #EXTINF:-1 tvg-name="GRTN生活频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/GRTN生活频道.png" group-title="🚈广东频道",GRTN生活频道
 webview://https://www.gdtv.cn/tvChannelDetail/102
 
-# 🦽山东频道
-#EXTINF:-1 tvg-name="山东卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/山东卫视.png" group-title="🦽山东频道",山东卫视
+# 🛺山东频道
+#EXTINF:-1 tvg-name="山东卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/山东卫视.png" group-title="🛺山东频道",山东卫视
 webview://https://v.iqilu.com/live/sdtv/
-#EXTINF:-1 tvg-name="山东齐鲁" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shandong1.png" group-title="🦽山东频道",山东齐鲁
+#EXTINF:-1 tvg-name="山东齐鲁" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shandong1.png" group-title="🛺山东频道",山东齐鲁
 webview://https://v.iqilu.com/live/qlpd/
-#EXTINF:-1 tvg-name="山东新闻" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shandong4.png" group-title="🦽山东频道",山东新闻
+#EXTINF:-1 tvg-name="山东新闻" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shandong4.png" group-title="🛺山东频道",山东新闻
 webview://https://v.iqilu.com/live/ggpd/
-#EXTINF:-1 tvg-name="山东农科" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shandong3.png" group-title="🦽山东频道",山东农科
+#EXTINF:-1 tvg-name="山东农科" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shandong3.png" group-title="🛺山东频道",山东农科
 webview://https://v.iqilu.com/live/nkpd/
-#EXTINF:-1 tvg-name="山东少儿" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shandong5.png" group-title="🦽山东频道",山东少儿
+#EXTINF:-1 tvg-name="山东少儿" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shandong5.png" group-title="🛺山东频道",山东少儿
 webview://https://v.iqilu.com/live/sepd/
-#EXTINF:-1 tvg-name="山东体育" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shandong2.png" group-title="🦽山东频道",山东体育
+#EXTINF:-1 tvg-name="山东体育" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shandong2.png" group-title="🛺山东频道",山东体育
 webview://https://v.iqilu.com/live/typd/
-#EXTINF:-1 tvg-name="山东文旅" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shandong6.png" group-title="🦽山东频道",山东文旅
+#EXTINF:-1 tvg-name="山东文旅" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shandong6.png" group-title="🛺山东频道",山东文旅
 webview://https://v.iqilu.com/live/yspd/
-#EXTINF:-1 tvg-name="山东生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shandong8.png" group-title="🦽山东频道",山东生活
+#EXTINF:-1 tvg-name="山东生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shandong8.png" group-title="🛺山东频道",山东生活
 webview://https://v.iqilu.com/live/shpd/
-#EXTINF:-1 tvg-name="山东综艺" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shandong7.png" group-title="🦽山东频道",山东综艺
+#EXTINF:-1 tvg-name="山东综艺" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shandong7.png" group-title="🛺山东频道",山东综艺
 webview://https://v.iqilu.com/live/zypd/
 
 # 🚌陕西频道
