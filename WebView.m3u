@@ -277,6 +277,8 @@ webview://https://www.nbs.cn/live/?id=109153
 webview://https://www.nbs.cn/live/?id=110093
 #EXTINF:-1 tvg-name="南京少儿" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing6.png" group-title="🚂江苏频道",南京少儿频道
 webview://https://www.nbs.cn/live/?id=110095
+#EXTINF:-1 tvg-name="南通新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/南通新闻综合.png" group-title="🚂江苏频道",南通新闻综合
+webview://https://www.ntjoy.com/ntw/broadcastTvs.html?menuCode=ntw005
 #EXTINF:-1 tvg-name="苏州新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/苏州新闻综合.png" group-title="🚂江苏频道",苏州新闻综合
 webview://http://www.csztv.com/zhibo1.shtml
 #EXTINF:-1 tvg-name="苏州社会经济" tvg-logo="https://logo.ugreen.cloudns.biz/img/苏州社会经济.png" group-title="🚂江苏频道",苏州社会经济
