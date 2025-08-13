@@ -791,6 +791,39 @@ webview://https://www.xntv.tv/xnxwpd
 #EXTINF:-1 tvg-name="西宁生活服务" tvg-logo="https://logo.ugreen.cloudns.biz/img/Xining_2.png" group-title="🏎️青海频道",西宁生活服务
 webview://https://www.xntv.tv/xnshpd
 
+# 🚔河南频道
+#EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://logo.ugreen.cloudns.biz/img/Xining_1.png" group-title="🚔河南频道",CCTV-1 综合·党建
+webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=1
+#EXTINF:-1 tvg-name="CCTV3" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV3.png" group-title="🚔河南频道",CCTV-3 综艺·党建
+webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=2
+#EXTINF:-1 tvg-name="CCTV5" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV5.png" group-title="🚔河南频道",CCTV-5 体育·党建
+webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=3
+#EXTINF:-1 tvg-name="CCTV6" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV6.png" group-title="🚔河南频道",CCTV-6 电影·党建
+webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=4
+#EXTINF:-1 tvg-name="CCTV7" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV7.png" group-title="🚔河南频道",CCTV-7 国防军事·党建
+webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=5
+#EXTINF:-1 tvg-name="CCTV9" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV9.png" group-title="🚔河南频道",CCTV-9 纪录·党建
+webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=6
+#EXTINF:-1 tvg-name="CCTV10" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV10.png" group-title="🚔河南频道",CCTV-10 科教·党建
+webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=7
+#EXTINF:-1 tvg-name="CCTV11" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV11.png" group-title="🚔河南频道",CCTV-11 戏曲·党建
+webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=8
+#EXTINF:-1 tvg-name="CCTV12" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV12.png" group-title="🚔河南频道",CCTV-12 社会与法·党建
+webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=9
+#EXTINF:-1 tvg-name="CCTV13" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV13.png" group-title="🚔河南频道",CCTV-13 新闻·党建
+webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=10
+#EXTINF:-1 tvg-name="北京卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/北京卫视.png" group-title="🚔河南频道",北京卫视·党建
+webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=11
+#EXTINF:-1 tvg-name="浙江卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/浙江卫视.png" group-title="🚔河南频道",浙江卫视·党建
+webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=12
+#EXTINF:-1 tvg-name="河南卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/河南卫视.png" group-title="🚔河南频道",河南卫视·党建
+webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=14
+#EXTINF:-1 tvg-name="河南都市" tvg-logo="https://logo.ugreen.cloudns.biz/img/河南都市.png" group-title="🚔河南频道",河南都市·党建
+webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=13
+#EXTINF:-1 tvg-name="河南民生" tvg-logo="https://logo.ugreen.cloudns.biz/img/河南民生.png" group-title="🚔河南频道",河南民生·党建
+webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=15
+#EXTINF:-1 tvg-name="河南戏曲" tvg-logo="https://logo.ugreen.cloudns.biz/img/河南戏曲.png" group-title="🚔河南频道",河南戏曲·党建
+webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=16
 
 # ♻️Webview检测
 #EXTINF:-1 tvg-name="Webview检测" tvg-logo="https://logo.ugreen.cloudns.biz/img/Webview.png" group-title="♻️Webview检测",Webview检测
