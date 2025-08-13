@@ -277,6 +277,24 @@ webview://https://www.nbs.cn/live/?id=109153
 webview://https://www.nbs.cn/live/?id=110093
 #EXTINF:-1 tvg-name="南京少儿" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing6.png" group-title="🚂江苏频道",南京少儿频道
 webview://https://www.nbs.cn/live/?id=110095
+#EXTINF:-1 tvg-name="苏州新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/苏州新闻综合.png" group-title="🚂江苏频道",苏州新闻综合
+webview://http://www.csztv.com/zhibo1.shtml
+#EXTINF:-1 tvg-name="苏州社会经济" tvg-logo="https://logo.ugreen.cloudns.biz/img/苏州社会经济.png" group-title="🚂江苏频道",苏州社会经济
+webview://http://www.csztv.com/zhibo2.shtml
+#EXTINF:-1 tvg-name="苏州文化生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/苏州文化生活.png" group-title="🚂江苏频道",苏州文化生活
+webview://http://www.csztv.com/zhibo3.shtml
+#EXTINF:-1 tvg-name="苏州生活资讯" tvg-logo="https://logo.ugreen.cloudns.biz/img/苏州生活资讯.png" group-title="🚂江苏频道",苏州生活资讯
+webview://http://www.csztv.com/zhibo4.shtml
+#EXTINF:-1 tvg-name="无锡新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/无锡新闻综合.png" group-title="🚂江苏频道",无锡新闻综合
+webview://https://v2.thmz.com/folder4/folder27/
+#EXTINF:-1 tvg-name="无锡都市资讯" tvg-logo="https://logo.ugreen.cloudns.biz/img/无锡都市资讯.png" group-title="🚂江苏频道",无锡都市资讯
+webview://https://v2.thmz.com/folder4/folder26/
+#EXTINF:-1 tvg-name="无锡娱乐" tvg-logo="https://logo.ugreen.cloudns.biz/img/无锡娱乐.png" group-title="🚂江苏频道",无锡娱乐
+webview://https://v2.thmz.com/folder4/folder1162/
+#EXTINF:-1 tvg-name="无锡经济" tvg-logo="https://logo.ugreen.cloudns.biz/img/无锡经济.png" group-title="🚂江苏频道",无锡经济
+webview://https://v2.thmz.com/folder4/folder25/
+#EXTINF:-1 tvg-name="无锡生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/无锡生活.png" group-title="🚂江苏频道",无锡生活
+webview://https://v2.thmz.com/folder4/folder24/
 #EXTINF:-1 tvg-name="徐州一套" tvg-logo="https://logo.ugreen.cloudns.biz/img/徐州1套.png" group-title="🚂江苏频道",徐州新闻综合
 webview://http://www.wifixz.com/tv/
 #EXTINF:-1 tvg-name="盐城一套" tvg-logo="https://logo.ugreen.cloudns.biz/img/盐城新闻综合.png" group-title="🚂江苏频道",盐城新闻综合
