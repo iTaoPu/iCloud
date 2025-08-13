@@ -303,3 +303,11 @@ http://122.96.52.98:8006/JS_CUCC/G_NJSB.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEqlM
 #EXTINF:-1 group-title="🛺南京频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing6.png" tvg-name="南京少儿",南京少儿
 http://122.96.52.98:8006/JS_CUCC/G_NJSE.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtErV9ZZLHPB2iNJDmdQ9xIhzEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
 
+# 🛺南通频道
+#EXTM3U x-tvg-url="https://epg.catvod.com/epg.xml"
+#EXTINF:-1 tvg-name="南通新闻综合" tvg-logo="https://logo.catvod.com/南通新闻综合.png" group-title="🛺南通频道",南通一套·新闻综合
+https://cm-live.ntjoy.com/live/4f1.m3u8
+#EXTINF:-1 tvg-name="南通二套" tvg-logo="https://logo.catvod.com/南通社会教育.png" group-title="🛺南通频道",南通二套·社教
+https://cm-live.ntjoy.com/live/4f3.m3u8
+#EXTINF:-1 tvg-name="南通公共" tvg-logo="https://logo.catvod.com/南通公共.png" group-title="🛺南通频道",南通三套·公共
+https://cm-live.ntjoy.com/live/4f5.m3u8
