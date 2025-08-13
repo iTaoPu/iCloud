@@ -680,6 +680,12 @@ webview://https://www.gzstv.com/tv/ch05
 webview://https://www.gzstv.com/tv/ch06
 #EXTINF:-1 tvg-name="贵州移动电视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Guizhou9.png" group-title="🚐贵州频道",贵州移动电视
 webview://https://www.gzstv.com/tv/ch13
+#EXTINF:-1 tvg-name="贵阳新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/贵阳新闻综合.png" group-title="🚐贵州频道",贵阳新闻综合
+webview://https://web.guangdianyun.tv/tv/3398?uin=4263
+#EXTINF:-1 tvg-name="贵阳经济生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/贵阳经济生活.png" group-title="🚐贵州频道",贵阳经济生活
+webview://https://web.guangdianyun.tv/tv/3399?uin=4263
+#EXTINF:-1 tvg-name="贵阳都市" tvg-logo="https://logo.ugreen.cloudns.biz/img/贵阳都市.png" group-title="🚐贵州频道",贵阳都市
+webview://https://web.guangdianyun.tv/tv/3400?uin=4263
 
 # 🛵安徽频道
 #EXTINF:-1 tvg-name="安徽卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/安徽卫视.png" group-title="🛵安徽频道",安徽卫视
