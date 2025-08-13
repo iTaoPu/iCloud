@@ -792,7 +792,7 @@ webview://https://www.xntv.tv/xnxwpd
 webview://https://www.xntv.tv/xnshpd
 
 # 🚔河南频道
-#EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://logo.ugreen.cloudns.biz/img/Xining_1.png" group-title="🚔河南频道",CCTV-1 综合·党建
+#EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV1.png" group-title="🚔河南频道",CCTV-1 综合·党建
 webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=1
 #EXTINF:-1 tvg-name="CCTV3" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV3.png" group-title="🚔河南频道",CCTV-3 综艺·党建
 webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=2
