@@ -279,6 +279,8 @@ webview://https://www.nbs.cn/live/?id=110093
 webview://https://www.nbs.cn/live/?id=110095
 #EXTINF:-1 tvg-name="徐州一套" tvg-logo="https://logo.ugreen.cloudns.biz/img/徐州1套.png" group-title="🚂江苏频道",徐州新闻综合
 webview://http://www.wifixz.com/tv/
+#EXTINF:-1 tvg-name="盐城一套" tvg-logo="https://logo.ugreen.cloudns.biz/img/盐城新闻综合.png" group-title="🚂江苏频道",盐城新闻综合
+webview://https://www.0515yc.cn/folder147/folder148/folder156/
 
 # 🚈广东频道
 #EXTINF:-1 tvg-name="广东卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/广东卫视.png" group-title="🚈广东频道",广东卫视
