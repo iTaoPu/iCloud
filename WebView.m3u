@@ -444,7 +444,7 @@ webview://https://www.gdtv.cn/tvChannelDetail/75
 #EXTINF:-1 tvg-name="GRTN生活频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/GRTN生活频道.png" group-title="🚈广东频道",GRTN生活频道
 webview://https://www.gdtv.cn/tvChannelDetail/102
 #EXTINF:-1 tvg-name="广州综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/Guangzhou1.png" group-title="🚈广东频道",广州综合
-webview://https://app.gztv.com/plusshare/#/tvDetail?code=3000
+webview://https://app.gztv.com/plusshare/#/tvDetail
 #EXTINF:-1 tvg-name="广州新闻" tvg-logo="https://logo.ugreen.cloudns.biz/img/Guangzhou2.png" group-title="🚈广东频道",广州新闻
 webview://https://app.gztv.com/plusshare/#/tvDetail?code=3002
 #EXTINF:-1 tvg-name="广州影视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Guangzhou5.png" group-title="🚈广东频道",广东影视
@@ -769,6 +769,20 @@ webview://https://www.hnntv.cn/live.html?playType=livePlay&channelId=6&referPage
 webview://https://www.hnntv.cn/live.html?playType=livePlay&channelId=7&referPage=home
 
 # 🚕黑龙江频道
+#EXTINF:-1 tvg-name="黑龙江卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/黑龙江卫视.png" group-title="🚕黑龙江频道",黑龙江卫视
+webview://https://www.hljtv.com/live/folder418/
+#EXTINF:-1 tvg-name="黑龙江文体" tvg-logo="https://logo.ugreen.cloudns.biz/img/Heilongjiang2.png" group-title="🚕黑龙江频道",黑龙江文体
+webview://https://www.hljtv.com/live/folder423/
+#EXTINF:-1 tvg-name="黑龙江影视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Heilongjiang3png" group-title="🚕黑龙江频道",黑龙江影视
+webview://https://www.hljtv.com/live/folder425/
+#EXTINF:-1 tvg-name="黑龙江新闻法治" tvg-logo="https://logo.ugreen.cloudns.biz/img/Heilongjiang1.png" group-title="🚕黑龙江频道",黑龙江新闻法治
+webview://https://www.hljtv.com/live/folder424/
+#EXTINF:-1 tvg-name="黑龙江都市" tvg-logo="https://logo.ugreen.cloudns.biz/img/Heilongjiang4.png" group-title="🚕黑龙江频道",黑龙江都市
+webview://https://www.hljtv.com/live/folder419/
+#EXTINF:-1 tvg-name="黑龙江农业科教" tvg-logo="https://logo.ugreen.cloudns.biz/img/Heilongjiang8.png" group-title="🚕黑龙江频道",黑龙江农业·科教
+webview://https://www.hljtv.com/live/folder420/
+#EXTINF:-1 tvg-name="黑龙江少儿" tvg-logo="https://logo.ugreen.cloudns.biz/img/Heilongjiang6.png" group-title="🚕黑龙江频道",黑龙江少儿
+webview://https://www.hljtv.com/live/folder422/
 #EXTINF:-1 tvg-name="哈尔滨新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/haerbin-1.png" group-title="🚕黑龙江频道",哈尔滨新闻综合
 webview://https://www.hrbtv.net/folder79/folder81
 #EXTINF:-1 tvg-name="哈尔滨生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/haerbin-2.png" group-title="🚕黑龙江频道",哈尔滨生活
@@ -919,6 +933,8 @@ webview://https://www.xntv.tv/xnxwpd
 webview://https://www.xntv.tv/xnshpd
 
 # 🚔河南频道
+#EXTINF:-1 tvg-name="河南卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/河南卫视.png" group-title="🚔河南频道",河南卫视
+webview://https://static.hntv.tv/kds/#/
 #EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV1.png" group-title="🚔河南频道",CCTV-1 综合·党建
 webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=1
 #EXTINF:-1 tvg-name="CCTV3" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV3.png" group-title="🚔河南频道",CCTV-3 综艺·党建
