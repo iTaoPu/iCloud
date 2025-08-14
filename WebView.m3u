@@ -674,7 +674,7 @@ webview://https://www.nntv.cn/live/nntv_ds/
 rtmp://live.gxrb.com.cn/tv/nntv_yssh
 #EXTINF:-1 tvg-name="南宁影视娱乐" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanningysyl.png" group-title="🚎广西频道",南宁影视娱乐
 webview://https://www.nntv.cn/live/nntv_ys/
-rtmp://hls.nntv.cn/nnlive/YSYL_244
+rtmp://live.gxrb.com.cn/tv/nntv_ysyl
 #EXTINF:-1 tvg-name="南宁公共" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanninggg.png" group-title="🚎广西频道",南宁公共
 webview://https://www.nntv.cn/live/nntv_gg/
 rtmp://live.gxrb.com.cn/tv/nntv_gg
@@ -1099,7 +1099,7 @@ rtmp://tv.lasatv.cn/channellive/lszhpd
 #EXTINF:-1 tvg-name="拉萨藏语综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/拉萨藏语综合.png" group-title="🏝️西藏频道",拉萨藏语综合
 rtmp://tv.lasatv.cn/channellive/lszypd
 #EXTINF:-1 tvg-name="拉萨文旅" tvg-logo="https://logo.ugreen.cloudns.biz/img/拉萨文旅.png" group-title="🏝️西藏频道",拉萨文旅
-tmp://tv.lasatv.cn/channellive/lswlpd
+rtmp://tv.lasatv.cn/channellive/lswlpd
 
 # ♻️Webview检测
 #EXTINF:-1 tvg-name="Webview检测" tvg-logo="https://logo.ugreen.cloudns.biz/img/Webview.png" group-title="♻️Webview检测",Webview检测
