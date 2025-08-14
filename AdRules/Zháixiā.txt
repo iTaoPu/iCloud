@@ -1,4 +1,4 @@
-! Title: AdRules i叚娤.倖鍢がく山道 Blank List
+! Title: AdRules 宅蝦のとおり道 Blank List
 ! Homepage: https://i叚娤.倖鍢.net.cn
 ! Powerd by i叚娤.倖鍢
 ! Expires: irregularly (update frequency)
@@ -6,6 +6,7 @@
 ! ------------------------------------
 ! Update Date: 2025-08-15
 
+! 𝟙.宅蝦侃侃侃
 @@||ugreen.pp.ua^
 @@||ugreen.us.kg^
 @@||5iclub.us.kg^
@@ -16,5 +17,5 @@
 @@||shrimp.cloudns.biz^
 @@||ugreen.dedyn.io^
 @@||shrimp.dedyn.io^
-# 
+! 𝟚.白名單
 @@||p.ytelc.com^
