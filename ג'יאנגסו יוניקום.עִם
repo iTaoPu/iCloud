@@ -119,7 +119,6 @@ http://122.96.52.98:8006/JS_CUCC/ZJWS-HD.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEnE
 
 #EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Hunan.png" tvg-name="湖南卫视",湖南卫视 HD
 http://122.96.52.98:8006/JS_CUCC/G_HUNAN-CQ.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEpvKElGYWiZ5gdKgfgfTV%2F9YXTUjY6TEKXN37EwEhDWj&p=GITV&area=JS_CUCC
-%2BqRc5aPEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
 #EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Hunan.png" tvg-name="湖南卫视",湖南卫视 HD
 http://122.96.52.98:8006/JS_CUCC/HNWS-HD.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEv%2FBvc4PvDgO7DYGtrmNF0Wb81ufElMrCkVylhMcfT%2BR&p=GITV&area=JS_CUCC
 
@@ -302,3 +301,4 @@ http://122.96.52.98:8006/JS_CUCC/G_NJYS.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEryO
 http://122.96.52.98:8006/JS_CUCC/G_NJSB.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEqlM1l%2BeoFKI8wnHz%2FUgbsbEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
 #EXTINF:-1 group-title="🛺南京频道" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing6.png" tvg-name="南京少儿",南京少儿
 http://122.96.52.98:8006/JS_CUCC/G_NJSE.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtErV9ZZLHPB2iNJDmdQ9xIhzEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
+
