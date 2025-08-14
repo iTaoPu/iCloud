@@ -389,7 +389,6 @@ webview://http://www.csztv.com/zhibo2.shtml
 webview://http://www.csztv.com/zhibo3.shtml
 #EXTINF:-1 tvg-name="苏州生活资讯" tvg-logo="https://logo.ugreen.cloudns.biz/img/苏州生活资讯.png" group-title="🚂江苏频道",苏州生活资讯
 webview://http://www.csztv.com/zhibo4.shtml
-rtmp://csztv.2500sz.com:1935/live/c04
 #EXTINF:-1 tvg-name="无锡新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/无锡新闻综合.png" group-title="🚂江苏频道",无锡新闻综合
 webview://https://v2.thmz.com/folder4/folder27/
 webview://https://bb-share.wifiwx.com/wxbb/share/live/?channel_id=4
@@ -674,6 +673,7 @@ webview://https://www.nntv.cn/live/nntv_ds/
 webview://https://www.nntv.cn/live/nntv_ys/
 #EXTINF:-1 tvg-name="南宁公共" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanninggg.png" group-title="🚎广西频道",南宁公共
 webview://https://www.nntv.cn/live/nntv_gg/
+rtmp://live.gxrb.com.cn/tv/nntv_gg
 
 # 🚙湖南频道
 #EXTINF:-1 tvg-name="金鹰卡通" tvg-logo="https://logo.ugreen.cloudns.biz/img/Hunan10.png" group-title="🚙湖南频道",金鹰卡通
