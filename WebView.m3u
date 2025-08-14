@@ -394,12 +394,18 @@ webview://https://v2.thmz.com/folder4/folder27/
 webview://https://bb-share.wifiwx.com/wxbb/share/live/?channel_id=4
 #EXTINF:-1 tvg-name="无锡都市资讯" tvg-logo="https://logo.ugreen.cloudns.biz/img/无锡都市资讯.png" group-title="🚂江苏频道",无锡都市资讯
 webview://https://v2.thmz.com/folder4/folder26/
+webview://http://bb-share.wifiwx.com/wxbb/share/live?channel_id=9
 #EXTINF:-1 tvg-name="无锡娱乐" tvg-logo="https://logo.ugreen.cloudns.biz/img/无锡娱乐.png" group-title="🚂江苏频道",无锡娱乐
 webview://https://v2.thmz.com/folder4/folder1162/
+webview://http://bb-share.wifiwx.com/wxbb/share/live?channel_id=8
 #EXTINF:-1 tvg-name="无锡经济" tvg-logo="https://logo.ugreen.cloudns.biz/img/无锡经济.png" group-title="🚂江苏频道",无锡经济
 webview://https://v2.thmz.com/folder4/folder25/
+webview://http://bb-share.wifiwx.com/wxbb/share/live?channel_id=11
 #EXTINF:-1 tvg-name="无锡生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/无锡生活.png" group-title="🚂江苏频道",无锡生活
 webview://https://v2.thmz.com/folder4/folder24/
+webview://http://bb-share.wifiwx.com/wxbb/share/live?channel_id=10
+#EXTINF:-1 tvg-name="无锡移动电视" tvg-logo="https://logo.ugreen.cloudns.biz/img/无锡移动电视.png" group-title="🚂江苏频道",无锡移动
+webview://https://live.wifiwx.com/m2/?page=live&id=494
 #EXTINF:-1 tvg-name="徐州一套" tvg-logo="https://logo.ugreen.cloudns.biz/img/徐州1套.png" group-title="🚂江苏频道",徐州新闻综合
 webview://http://www.wifixz.com/tv/
 #EXTINF:-1 tvg-name="盐城一套" tvg-logo="https://logo.ugreen.cloudns.biz/img/盐城新闻综合.png" group-title="🚂江苏频道",盐城新闻综合
@@ -412,11 +418,11 @@ webview://https://h5yc.0515yc.cn/front-cloudlive-manage-h5/index.html?id=5938004
 #EXTINF:-1 tvg-name="常州新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/常州新闻综合.png" group-title="🚂江苏频道",常州新闻综合
 webview://https://www.cztv.tv/channel.html
 webview://https://site01.cbxmt.cn/channel/channel.html
-#EXTINF:-1 tvg-name="扬州新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/扬州新闻综合.png" group-title="🚂江苏频道",扬州新闻综合
+#EXTINF:-1 tvg-name="扬州一套" tvg-logo="https://logo.ugreen.cloudns.biz/img/扬州新闻综合.png" group-title="🚂江苏频道",扬州新闻综合
 webview://https://pc.96189.com/maintab/livel?cid=235
-#EXTINF:-1 tvg-name="扬州城市" tvg-logo="https://logo.ugreen.cloudns.biz/img/扬州城市.png" group-title="🚂江苏频道",扬州城市
+#EXTINF:-1 tvg-name="扬州二套" tvg-logo="https://logo.ugreen.cloudns.biz/img/扬州城市.png" group-title="🚂江苏频道",扬州城市
 webview://https://pc.96189.com/maintab/livel?cid=291
-#EXTINF:-1 tvg-name="扬州生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/扬州生活.png" group-title="🚂江苏频道",扬州生活
+#EXTINF:-1 tvg-name="扬州三套" tvg-logo="https://logo.ugreen.cloudns.biz/img/扬州生活.png" group-title="🚂江苏频道",扬州生活
 webview://https://pc.96189.com/maintab/livel?cid=236
 #EXTINF:-1 tvg-name="扬州江都" tvg-logo="https://logo.ugreen.cloudns.biz/img/扬州江都.png" group-title="🚂江苏频道",扬州江都
 webview://https://pc.96189.com/maintab/livel?cid=290
@@ -454,6 +460,13 @@ webview://https://m.miguvideo.com/m/liveDetail/838153729
 webview://https://m.miguvideo.com/m/liveDetail/639731747
 #EXTINF:-1 tvg-name="淮安综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/淮安综合.png" group-title="🚁咪咕江苏",淮安综合
 webview://https://m.miguvideo.com/m/liveDetail/639731826
+#EXTINF:-1 tvg-name="泰州新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/泰州新闻综合.png" group-title="🚁咪咕江苏",泰州新闻综合
+webview://https://m.miguvideo.com/m/liveDetail/639731818
+#EXTINF:-1 tvg-name="宿迁综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/宿迁综合.png" group-title="🚁咪咕江苏",宿迁综合
+webview://https://m.miguvideo.com/m/liveDetail/639731832
+webview://https://m.sqsjt.net/tv/detail/10000.html?spx=691166a4f36ef592aa04f69d5d78ee95
+#EXTINF:-1 tvg-name="连云港新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/连云港新闻综合.png" group-title="🚁咪咕江苏",连云港新闻综合
+webview://https://m.miguvideo.com/m/liveDetail/639731715
 
 # 🚈广东频道
 #EXTINF:-1 tvg-name="广东卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/广东卫视.png" group-title="🚈广东频道",广东卫视
