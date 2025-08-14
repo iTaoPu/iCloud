@@ -202,8 +202,6 @@ webview://https://yangshipin.cn/tv/home?pid=600152138
 #EXTINF:-1 tvg-name="CETV-1" tvg-logo="https://logo.ugreen.cloudns.biz/img/CETV1.png" group-title="📡卫视频道",CETV-1
 webview://https://yangshipin.cn/tv/home?pid=600152138
 
-Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 Mobile Safari/537.36
-
 # 🚟咪咕央视
 #EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV1.png" group-title="🚟咪咕央视",CCTV-1 综合
 webview://https://m.miguvideo.com/m/liveDetail/608807420
