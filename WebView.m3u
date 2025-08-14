@@ -667,14 +667,13 @@ webview://https://tv.gxtv.cn/channel/channelivePlay_80d0ffb42c114eaf9663708629ff
 webview://https://tv.gxtv.cn/channel/channelivePlay_67eace939278435bb4bca90800fb4225.html
 #EXTINF:-1 tvg-name="南宁新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanningxwzh.png" group-title="🚎广西频道",南宁新闻综合
 webview://https://www.nntv.cn/live/nntv_xw/
-rtmp://hls.nntv.cn/nnlive/XWZH_24
 rtmp://live.gxrb.com.cn/tv/nntv
 #EXTINF:-1 tvg-name="南宁文旅生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanningwlsh.png" group-title="🚎广西频道",南宁文旅生活
 webview://https://www.nntv.cn/live/nntv_ds/
 rtmp://live.gxrb.com.cn/tv/nntv_yssh
 #EXTINF:-1 tvg-name="南宁影视娱乐" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanningysyl.png" group-title="🚎广西频道",南宁影视娱乐
 webview://https://www.nntv.cn/live/nntv_ys/
-rtmp://live.gxrb.com.cn/tv/nntv_ysyl
+rtmp://live.gxrb.com.cn/tv/nntv_ys
 #EXTINF:-1 tvg-name="南宁公共" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanninggg.png" group-title="🚎广西频道",南宁公共
 webview://https://www.nntv.cn/live/nntv_gg/
 rtmp://live.gxrb.com.cn/tv/nntv_gg
