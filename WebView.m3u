@@ -389,6 +389,7 @@ webview://http://www.csztv.com/zhibo2.shtml
 webview://http://www.csztv.com/zhibo3.shtml
 #EXTINF:-1 tvg-name="苏州生活资讯" tvg-logo="https://logo.ugreen.cloudns.biz/img/苏州生活资讯.png" group-title="🚂江苏频道",苏州生活资讯
 webview://http://www.csztv.com/zhibo4.shtml
+rtmp://csztv.2500sz.com:1935/live/c04
 #EXTINF:-1 tvg-name="无锡新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/无锡新闻综合.png" group-title="🚂江苏频道",无锡新闻综合
 webview://https://v2.thmz.com/folder4/folder27/
 webview://https://bb-share.wifiwx.com/wxbb/share/live/?channel_id=4
@@ -1088,10 +1089,14 @@ webview://https://lanzhoubcnew.zainanjing365.com/share/live/detailTv?resourceId=
 #EXTINF:-1 tvg-name="兰州文旅" tvg-logo="https://logo.ugreen.cloudns.biz/img/兰州文旅.png" group-title="🚡甘肃频道",兰州文旅
 webview://https://lanzhoubcnew.zainanjing365.com/share/live/detailTv?resourceId=14&appscheme=gdmm-ailanzhou
 
-#EXTINF:-1 tvg-name="拉萨藏语综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/拉萨藏语综合.png" group-title="🚡甘肃频道",拉萨藏语综合
+# 🏝️西藏频道
+#EXTINF:-1 tvg-name="拉萨汉语综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/拉萨汉语综合.png" group-title="🏝️西藏频道",拉萨汉语综合
+rtmp://tv.lasatv.cn/channellive/lszhpd
+#EXTINF:-1 tvg-name="拉萨藏语综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/拉萨藏语综合.png" group-title="🏝️西藏频道",拉萨藏语综合
 rtmp://tv.lasatv.cn/channellive/lszypd
+#EXTINF:-1 tvg-name="拉萨文旅" tvg-logo="https://logo.ugreen.cloudns.biz/img/拉萨文旅.png" group-title="🏝️西藏频道",拉萨文旅
+tmp://tv.lasatv.cn/channellive/lswlpd
 
 # ♻️Webview检测
 #EXTINF:-1 tvg-name="Webview检测" tvg-logo="https://logo.ugreen.cloudns.biz/img/Webview.png" group-title="♻️Webview检测",Webview检测
 webview://https://passer-by.com/browser
-
