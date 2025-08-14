@@ -204,7 +204,7 @@ webview://https://yangshipin.cn/tv/home?pid=600152138
 
 # 🚟咪咕央视
 #EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV1.png" group-title="🚟咪咕央视",CCTV-1 综合
-webview://https://m.miguvideo.com/m/liveDetail/608807420?channelId=10010001005
+webview://https://m.miguvideo.com/m/liveDetail/608807420
 
 # 🗺️国际教育
 #EXTINF:-1 tvg-name="国际教育汉语文化" tvg-logo="https://logo.ugreen.cloudns.biz/img/CEC汉语文化.png" group-title="🗺️国际教育",国际教育·汉语文化
@@ -843,4 +843,5 @@ webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=16
 
 # ♻️Webview检测
 #EXTINF:-1 tvg-name="Webview检测" tvg-logo="https://logo.ugreen.cloudns.biz/img/Webview.png" group-title="♻️Webview检测",Webview检测
+
 webview://https://passer-by.com/browser
