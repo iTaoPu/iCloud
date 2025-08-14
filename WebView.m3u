@@ -773,7 +773,7 @@ webview://https://www.hnntv.cn/live.html?playType=livePlay&channelId=7&referPage
 webview://https://www.hljtv.com/live/folder418/
 #EXTINF:-1 tvg-name="黑龙江文体" tvg-logo="https://logo.ugreen.cloudns.biz/img/Heilongjiang2.png" group-title="🚕黑龙江频道",黑龙江文体
 webview://https://www.hljtv.com/live/folder423/
-#EXTINF:-1 tvg-name="黑龙江影视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Heilongjiang3png" group-title="🚕黑龙江频道",黑龙江影视
+#EXTINF:-1 tvg-name="黑龙江影视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Heilongjiang3.png" group-title="🚕黑龙江频道",黑龙江影视
 webview://https://www.hljtv.com/live/folder425/
 #EXTINF:-1 tvg-name="黑龙江新闻法治" tvg-logo="https://logo.ugreen.cloudns.biz/img/Heilongjiang1.png" group-title="🚕黑龙江频道",黑龙江新闻法治
 webview://https://www.hljtv.com/live/folder424/
