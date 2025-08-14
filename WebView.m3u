@@ -7,6 +7,8 @@ https://itcoffe.5iclub.us.kg/Loong/iTV/Disclaimer.mp4
 https://itcoffe.5iclub.us.kg/Loong/iTV/Disclaimer.mp4
 #EXTINF:-1 tvg-id="禁止蕉绿" tvg-name="禁止蕉绿" tvg-logo="https://logo.ugreen.cloudns.biz/img/禁止蕉绿.png" group-title="🦧温馨提示",禁止蕉绿
 https://itcoffe.5iclub.us.kg/Loong/iTV/Disclaimer.mp4
+#EXTINF:-1 tvg-id="禁止蕉绿" tvg-name="禁止蕉绿" tvg-logo="https://logo.ugreen.cloudns.biz/img/禁止蕉绿.png" group-title="🦧温馨提示",禁止蕉绿
+webview://https://lanzhoubcnew.zainanjing365.com/share/live/detailTv?resourceId=12&appscheme=gdmm-ailanzhou
 
 # 🎥央视网
 #EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV1.png" group-title="🎥央视网",CCTV-1 综合
@@ -91,7 +93,7 @@ webview://https://yangshipin.cn/tv/home?pid=600001810
 webview://https://yangshipin.cn/tv/home?pid=600002264
 #EXTINF:-1 tvg-name="CCTV8K" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV8K.png" group-title="📽️央视频",CCTV8K
 webview://https://yangshipin.cn/tv/home?pid=600156816
-#EXTINF:-1 tvg-name="CGTN" tvg-logo="https://logo.ugreen.cloudns.biz/img/CGTN.png" group-title="📽️央视频",CGTN英语
+#EXTINF:-1 tvg-name="CGTN" tvg-logo="https://logo.ugreen.cloudns.biz/img/CGTN.png" group-title="📽️央视频",CGTN
 webview://https://yangshipin.cn/tv/home?pid=600014550
 #EXTINF:-1 tvg-name="CGTN纪录" tvg-logo="https://logo.ugreen.cloudns.biz/img/CGTNjilu.png" group-title="📽️央视频",CGTN外语纪录
 webview://https://yangshipin.cn/tv/home?pid=600084781
@@ -205,6 +207,92 @@ webview://https://yangshipin.cn/tv/home?pid=600152138
 # 🚟咪咕央视
 #EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV1.png" group-title="🚟咪咕央视",CCTV-1 综合
 webview://https://m.miguvideo.com/m/liveDetail/608807420
+#EXTINF:-1 tvg-name="CCTV2" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV2.png" group-title="🚟咪咕央视",CCTV-2 财经
+webview://https://m.miguvideo.com/m/liveDetail/631780532
+#EXTINF:-1 tvg-name="CCTV3" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV3.png" group-title="🚟咪咕央视",CCTV-3 综艺
+webview://https://m.miguvideo.com/m/liveDetail/624878271
+#EXTINF:-1 tvg-name="CCTV4" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV4.png" group-title="🚟咪咕央视",CCTV-4 中文国际
+webview://https://m.miguvideo.com/m/liveDetail/631780421
+#EXTINF:-1 tvg-name="CCTV5" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV5.png" group-title="🚟咪咕央视",CCTV-5 体育
+webview://https://m.miguvideo.com/m/liveDetail/641886683
+#EXTINF:-1 tvg-name="CCTV5" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV5plus.png" group-title="🚟咪咕央视",CCTV-5+ 体育赛事
+webview://https://m.miguvideo.com/m/liveDetail/641886773
+#EXTINF:-1 tvg-name="CCTV6" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV6.png" group-title="🚟咪咕央视",CCTV-6 电影
+webview://https://m.miguvideo.com/m/liveDetail/624878396
+#EXTINF:-1 tvg-name="CCTV7" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV7.png" group-title="🚟咪咕央视",CCTV-7 国防军事
+webview://https://m.miguvideo.com/m/liveDetail/673168121
+#EXTINF:-1 tvg-name="CCTV8" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV8.png" group-title="🚟咪咕央视",CCTV-8 电视剧
+webview://https://m.miguvideo.com/m/liveDetail/624878356
+#EXTINF:-1 tvg-name="CCTV9" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV9.png" group-title="🚟咪咕央视",CCTV-9 纪录
+webview://https://m.miguvideo.com/m/liveDetail/673168140
+#EXTINF:-1 tvg-name="CCTV10" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV10.png" group-title="🚟咪咕央视",CCTV-10 科教
+webview://https://m.miguvideo.com/m/liveDetail/624878405
+#EXTINF:-1 tvg-name="CCTV11" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV11.png" group-title="🚟咪咕央视",CCTV-11 戏曲
+webview://https://m.miguvideo.com/m/liveDetail/667987558
+#EXTINF:-1 tvg-name="CCTV12" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV12.png" group-title="🚟咪咕央视",CCTV-12 社会与法
+webview://https://m.miguvideo.com/m/liveDetail/673168185
+#EXTINF:-1 tvg-name="CCTV13" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV13.png" group-title="🚟咪咕央视",CCTV-13 新闻
+webview://https://m.miguvideo.com/m/liveDetail/608807423
+#EXTINF:-1 tvg-name="CCTV14" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV14.png" group-title="🚟咪咕央视",CCTV-14 少儿
+webview://https://m.miguvideo.com/m/liveDetail/624878440
+#EXTINF:-1 tvg-name="CCTV15" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV15.png" group-title="🚟咪咕央视",CCTV-15 音乐
+webview://https://m.miguvideo.com/m/liveDetail/673168223
+#EXTINF:-1 tvg-name="CCTV17" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV17.png" group-title="🚟咪咕央视",CCTV-17 农业农村
+webview://https://m.miguvideo.com/m/liveDetail/673168256
+#EXTINF:-1 tvg-name="CCTV4欧洲" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV4oz.png" group-title="🚟咪咕央视",CCTV-4 中文国际 (欧)
+webview://https://m.miguvideo.com/m/liveDetail/608807419
+#EXTINF:-1 tvg-name="CCTV4美洲" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV4mz.png" group-title="🚟咪咕央视",CCTV-4 中文国际 (美)
+webview://https://m.miguvideo.com/m/liveDetail/608807416
+#EXTINF:-1 tvg-name="CGTN" tvg-logo="https://logo.ugreen.cloudns.biz/img/CGTN.png" group-title="🚟咪咕央视",CGTN
+webview://https://m.miguvideo.com/m/liveDetail/609017205
+#EXTINF:-1 tvg-name="CGTN纪录" tvg-logo="https://logo.ugreen.cloudns.biz/img/CGTNjilu.png" group-title="🚟咪咕央视",CGTN外语纪录
+webview://https://m.miguvideo.com/m/liveDetail/609006487
+#EXTINF:-1 tvg-name="CGTN俄语" tvg-logo="https://logo.ugreen.cloudns.biz/img/CGTNey.png" group-title="🚟咪咕央视",CGTN俄语
+webview://https://m.miguvideo.com/m/liveDetail/609006446
+#EXTINF:-1 tvg-name="CGTN法语" tvg-logo="https://logo.ugreen.cloudns.biz/img/CGTNfy.png" group-title="🚟咪咕央视",CGTN法语
+webview://https://m.miguvideo.com/m/liveDetail/609006476
+#EXTINF:-1 tvg-name="CGTN西语" tvg-logo="https://logo.ugreen.cloudns.biz/img/CGTNxbyy.png" group-title="🚟咪咕央视",CGTN西班牙语
+webview://ttps://m.miguvideo.com/m/liveDetail/609006450
+#EXTINF:-1 tvg-name="CGTN阿语" tvg-logo="https://logo.ugreen.cloudns.biz/img/CGTNalby.png" group-title="🚟咪咕央视",CGTN阿拉伯语
+webview://https://m.miguvideo.com/m/liveDetail/609154345
+#EXTINF:-1 tvg-name="中央新影老故事" tvg-logo="https://logo.ugreen.cloudns.biz/img/CNDlgs.png" group-title="🚟咪咕央视",中央新影·老故事
+webview://https://m.miguvideo.com/m/liveDetail/884121956
+#EXTINF:-1 tvg-name="中央新影发现之旅" tvg-logo="https://logo.ugreen.cloudns.biz/img/CNDfxzl.png" group-title="🚟咪咕央视",中央新影·发现之旅
+webview://https://m.miguvideo.com/m/liveDetail/624878970
+#EXTINF:-1 tvg-name="中央新影中学生" tvg-logo="https://logo.ugreen.cloudns.biz/img/CNDzxs.png" group-title="🚟咪咕央视",中央新影·中学生
+webview://https://m.miguvideo.com/m/liveDetail/708869532
+
+# 🚠咪咕卫视
+#EXTINF:-1 tvg-name="江苏卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jiangsu.png" group-title="🚠咪咕卫视",江苏卫视
+webview://https://m.miguvideo.com/m/liveDetail/623899368
+#EXTINF:-1 tvg-name="东方卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Dongfang.png" group-title="🚠咪咕卫视",东方卫视
+webview://https://m.miguvideo.com/m/liveDetail/651632648
+#EXTINF:-1 tvg-name="湖北卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Hubei.png" group-title="🚠咪咕卫视",湖北卫视
+webview://https://m.miguvideo.com/m/liveDetail/947472496
+#EXTINF:-1 tvg-name="广东卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Guangdong.png" group-title="🚠咪咕卫视",广东卫视
+webview://https://m.miguvideo.com/m/liveDetail/608831231
+#EXTINF:-1 tvg-name="海南卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Hainan.png" group-title="🚠咪咕卫视",海南卫视
+webview://https://m.miguvideo.com/m/liveDetail/947472502
+#EXTINF:-1 tvg-name="河南卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Henan.png" group-title="🚠咪咕卫视",河南卫视
+webview://https://m.miguvideo.com/m/liveDetail/790187291
+#EXTINF:-1 tvg-name="东南卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Dongnan.png" group-title="🚠咪咕卫视",福建东南卫视
+webview://https://m.miguvideo.com/m/liveDetail/849116810
+#EXTINF:-1 tvg-name="江西卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jiangxi.png" group-title="🚠咪咕卫视",江西卫视
+webview://https://m.miguvideo.com/m/liveDetail/783847495
+#EXTINF:-1 tvg-name="陕西卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shanxi.png" group-title="🚠咪咕卫视",陕西卫视
+webview://https://m.miguvideo.com/m/liveDetail/738910838
+#EXTINF:-1 tvg-name="青海卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Qinghai.png" group-title="🚠咪咕卫视",青海卫视
+webview://https://m.miguvideo.com/m/liveDetail/947472506
+#EXTINF:-1 tvg-name="大湾区卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Guangdong10.png" group-title="🚠咪咕卫视",大湾区卫视
+webview://https://m.miguvideo.com/m/liveDetail/608917627
+#EXTINF:-1 tvg-name="海峡卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/海峡卫视.png" group-title="🚠咪咕卫视",海峡卫视
+webview://https://m.miguvideo.com/m/liveDetail/849119120
+#EXTINF:-1 tvg-name="CETV-1" tvg-logo="https://logo.ugreen.cloudns.biz/img/CETV1.png" group-title="🚠咪咕卫视",CETV-1
+webview://https://m.miguvideo.com/m/liveDetail/923287154
+#EXTINF:-1 tvg-name="CETV-1" tvg-logo="https://logo.ugreen.cloudns.biz/img/CETV1.png" group-title="🚠咪咕卫视",CETV-2
+webview://https://m.miguvideo.com/m/liveDetail/923287211
+#EXTINF:-1 tvg-name="CETV-1" tvg-logo="https://logo.ugreen.cloudns.biz/img/CETV1.png" group-title="🚠咪咕卫视",CETV-4
+webview://https://m.miguvideo.com/m/liveDetail/923287339
 
 # 🗺️国际教育
 #EXTINF:-1 tvg-name="国际教育汉语文化" tvg-logo="https://logo.ugreen.cloudns.biz/img/CEC汉语文化.png" group-title="🗺️国际教育",国际教育·汉语文化
@@ -385,6 +473,22 @@ webview://https://www.sztv.com.cn/dianshi.shtml?id=7869
 webview://https://www.sztv.com.cn/dianshi.shtml?id=7944
 #EXTINF:-1 tvg-name="宜和购物" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shenzhen16.png" group-title="🚈广东频道",宜和购物
 webview://https://www.sztv.com.cn/dianshi.shtml?id=7878
+
+# 🛥️北京频道
+#EXTINF:-1 tvg-name="北京卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/北京卫视.png" group-title="🛥️北京频道",北京卫视
+webview://https://www.btime.com/btv/btvsy_index
+#EXTINF:-1 tvg-name="北京文艺" tvg-logo="https://logo.ugreen.cloudns.biz/img/Beijing3.png" group-title="🛥️北京频道",北京文艺
+webview://http://p.ytelc.com/169l/bj/btv.php?id=btv2
+#EXTINF:-1 tvg-name="北京文艺" tvg-logo="https://logo.ugreen.cloudns.biz/img/Beijing4.png" group-title="🛥️北京频道",北京文艺
+webview://http://p.ytelc.com/169l/bj/btv.php?id=btv4
+#EXTINF:-1 tvg-name="北京财经" tvg-logo="https://logo.ugreen.cloudns.biz/img/Beijing2.png" group-title="🛥️北京频道",北京财经
+webview://http://p.ytelc.com/169l/bj/btv.php?id=btv5
+#EXTINF:-1 tvg-name="北京生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/Beijing7.png" group-title="🛥️北京频道",北京生活
+webview://http://p.ytelc.com/169l/bj/btv.php?id=btv7
+#EXTINF:-1 tvg-name="北京新闻" tvg-logo="https://logo.ugreen.cloudns.biz/img/Beijing1.png" group-title="🛥️北京频道",北京新闻
+webview://http://p.ytelc.com/169l/bj/btv.php?id=btv9
+#EXTINF:-1 tvg-name="北京纪实科教" tvg-logo="https://logo.ugreen.cloudns.biz/img/Beijing5.png" group-title="🛥️北京频道",北京纪实科教
+webview://http://p.ytelc.com/169l/bj/btv.php?id=btv11
 
 # 🛺山东频道
 #EXTINF:-1 tvg-name="山东卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/山东卫视.png" group-title="🛺山东频道",山东卫视
@@ -622,6 +726,15 @@ webview://https://live.fjtv.net/jspd
 webview://https://live.fjtv.net/typd
 #EXTINF:-1 tvg-name="福建少儿" tvg-logo="https://logo.ugreen.cloudns.biz/img/Fujian8.png" group-title="🚝福建频道",福建少儿
 webview://https://live.fjtv.net/sepd
+#EXTINF:-1 tvg-name="福州新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/福州新闻综合.png" group-title="🚝福建频道",福州新闻综合
+webview://https://www.zohi.tv/app/tv/804
+webview://https://app.zohi.tv/video/videojs/index?site_id=10001&id=804
+#EXTINF:-1 tvg-name="福州都市生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/福州都市生活.png" group-title="🚝福建频道",福州都市生活
+webview://https://www.zohi.tv/app/tv/801
+webview://https://app.zohi.tv/video/videojs/index?site_id=10001&id=801
+#EXTINF:-1 tvg-name="福州少儿" tvg-logo="https://logo.ugreen.cloudns.biz/img/Fujian8.png" group-title="🚝福建频道",福州少儿
+webview://https://www.zohi.tv/app/tv/795
+webview://https://app.zohi.tv/video/videojs/index?site_id=10001&id=795
 
 # 🚒河北频道
 #EXTINF:-1 tvg-name="河北卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/河北卫视.png" group-title="🚒河北频道",河北卫视
@@ -843,5 +956,4 @@ webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=16
 
 # ♻️Webview检测
 #EXTINF:-1 tvg-name="Webview检测" tvg-logo="https://logo.ugreen.cloudns.biz/img/Webview.png" group-title="♻️Webview检测",Webview检测
-
 webview://https://passer-by.com/browser
