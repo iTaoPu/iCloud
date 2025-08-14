@@ -403,8 +403,17 @@ webview://https://v2.thmz.com/folder4/folder24/
 webview://http://www.wifixz.com/tv/
 #EXTINF:-1 tvg-name="盐城一套" tvg-logo="https://logo.ugreen.cloudns.biz/img/盐城新闻综合.png" group-title="🚂江苏频道",盐城新闻综合
 webview://https://www.0515yc.cn/folder147/folder148/folder156/
+webview://https://h5yc.0515yc.cn/front-cloudlive-manage-h5/index.html?id=593799805264744448&company#/
+#EXTINF:-1 tvg-name="盐城二套" tvg-logo="https://logo.ugreen.cloudns.biz/img/盐城法制生活.png" group-title="🚂江苏频道",盐城法制生活
+webview://https://h5yc.0515yc.cn/front-cloudlive-manage-h5/index.html?id=593800300318445568&company#/
+#EXTINF:-1 tvg-name="盐城三套" tvg-logo="https://logo.ugreen.cloudns.biz/img/盐城城市公共.png" group-title="🚂江苏频道",盐城城市公共
+webview://https://h5yc.0515yc.cn/front-cloudlive-manage-h5/index.html?id=593799805264744448&company#/
 #EXTINF:-1 tvg-name="常州新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/常州新闻综合.png" group-title="🚂江苏频道",常州新闻综合
-webview://https://sharekcz.cztv.tv/kds?channelId=1&date=2024-10-04&programId=67778
+webview://https://www.cztv.tv/channel.html
+webview://https://site01.cbxmt.cn/channel/channel.html
+
+#EXTINF:-1 tvg-name="扬州新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/扬州新闻综合.png" group-title="🚂江苏频道",扬州新闻综合
+webview://https://pc.96189.com/maintab/livel?cid=235
 
 # 🚁咪咕江苏
 #EXTINF:-1 tvg-name="江苏城市" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jiangsu2.png" group-title="🚁咪咕江苏",江苏城市
@@ -423,11 +432,11 @@ webview://https://m.miguvideo.com/m/liveDetail/626064707
 webview://https://m.miguvideo.com/m/liveDetail/626064703
 #EXTINF:-1 tvg-name="江苏国际" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jiangsu6.png" group-title="🚁咪咕江苏",江苏国际
 webview://https://m.miguvideo.com/m/liveDetail/626064674
-#EXTINF:-1 tvg-name="南京新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing1.png" group-title="🚂江苏频道",南京新闻综合
+#EXTINF:-1 tvg-name="南京新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing1.png" group-title="🚁咪咕江苏",南京新闻综合
 webview://https://m.miguvideo.com/m/liveDetail/838109047
-#EXTINF:-1 tvg-name="南京十八生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing18.png" group-title="🚂江苏频道",南京十八·生活
+#EXTINF:-1 tvg-name="南京十八生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing18.png" group-title="🚁咪咕江苏",南京十八·生活
 webview://https://m.miguvideo.com/m/liveDetail/838151753
-#EXTINF:-1 tvg-name="南京教科" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing2.png" group-title="🚂江苏频道",南京教科
+#EXTINF:-1 tvg-name="南京教科" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanjing2.png" group-title="🚁咪咕江苏",南京教科
 webview://https://m.miguvideo.com/m/liveDetail/838153729
 
 # 🚈广东频道
