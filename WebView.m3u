@@ -432,6 +432,8 @@ webview://https://glive.habctv.com/tv/803?uin=1610
 webview://https://glive.habctv.com/tv/808?uin=1610
 #EXTINF:-1 tvg-name="淮安影视娱乐" tvg-logo="https://logo.ugreen.cloudns.biz/img/淮安影视娱乐.png" group-title="🚂江苏频道",淮安影视娱乐
 webview://https://glive.habctv.com/tv/902?uin=1610
+#EXTINF:-1 tvg-name="海安新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/海安新闻综合.png" group-title="🚂江苏频道",海安新闻综合
+https://haian-tv-hls.cm.jstv.com:443/haian-tv/haafm.m3u8
 
 # 🚁咪咕江苏
 #EXTINF:-1 tvg-name="江苏城市" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jiangsu2.png" group-title="🚁咪咕江苏",江苏城市
@@ -464,7 +466,6 @@ webview://https://m.miguvideo.com/m/liveDetail/639731826
 webview://https://m.miguvideo.com/m/liveDetail/639731818
 #EXTINF:-1 tvg-name="宿迁综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/宿迁综合.png" group-title="🚁咪咕江苏",宿迁综合
 webview://https://m.miguvideo.com/m/liveDetail/639731832
-webview://https://m.sqsjt.net/tv/detail/10000.html?spx=691166a4f36ef592aa04f69d5d78ee95
 #EXTINF:-1 tvg-name="连云港新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/连云港新闻综合.png" group-title="🚁咪咕江苏",连云港新闻综合
 webview://https://m.miguvideo.com/m/liveDetail/639731715
 
