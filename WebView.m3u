@@ -432,8 +432,6 @@ webview://https://glive.habctv.com/tv/803?uin=1610
 webview://https://glive.habctv.com/tv/808?uin=1610
 #EXTINF:-1 tvg-name="淮安影视娱乐" tvg-logo="https://logo.ugreen.cloudns.biz/img/淮安影视娱乐.png" group-title="🚂江苏频道",淮安影视娱乐
 webview://https://glive.habctv.com/tv/902?uin=1610
-#EXTINF:-1 tvg-name="海安新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/海安新闻综合.png" group-title="🚂江苏频道",海安新闻综合
-https://haian-tv-hls.cm.jstv.com:443/haian-tv/haafm.m3u8
 
 # 🚁咪咕江苏
 #EXTINF:-1 tvg-name="江苏城市" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jiangsu2.png" group-title="🚁咪咕江苏",江苏城市
@@ -924,7 +922,7 @@ webview://https://app.hfbtc.cn/shows/2/4.html
 # 🚚吉林频道
 #EXTINF:-1 tvg-name="吉林卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/吉林卫视.png" group-title="🚚吉林频道",吉林卫视
 webview://https://www.jlntv.cn/tv
-#EXTINF:-1 tvg-name="吉林新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/吉林新闻综合.png" group-title="🚚吉林频道",吉林新闻综合
+#EXTINF:-1 tvg-name="吉林市新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/吉林新闻综合.png" group-title="🚚吉林频道",吉林市新闻综合
 webview://https://www.jlcgbdstxmt.com/application/tvradio/h5/detail.html?type=tv&id=11
 #EXTINF:-1 tvg-name="长春城市慢直播" tvg-logo="https://logo.ugreen.cloudns.biz/img/中国长春.png" group-title="🚚吉林频道",长春城市慢直播
 webview://https://www.chinactv.com/live/1621014101264121858.html
@@ -958,6 +956,8 @@ webview://https://www.jxntv.cn/live/#/jxtv7
 webview://https://www.jxntv.cn/live/#/tcpd
 #EXTINF:-1 tvg-name="风尚购物" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jiangxi10.png" group-title="🚛江西频道",风尚购物
 webview://https://www.jxntv.cn/live/#/fsgw
+#EXTINF:-1 tvg-name="江西教育" tvg-logo="https://logo.ugreen.cloudns.biz/img/Jiangxi22.png" group-title="🚛江西频道",江西教育
+webview://https://live.jxeduyun.com/lives/XlaoRd
 
 # 🛻宁夏频道
 #EXTINF:-1 tvg-name="宁夏卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/宁夏卫视.png" group-title="🛻宁夏频道",宁夏卫视
@@ -994,6 +994,10 @@ webview://https://www.xjtvs.com.cn/column/tv/434?channelId=21
 webview://https://www.xjtvs.com.cn/column/tv/434?channelId=23
 
 # 🏎️青海频道
+#EXTINF:-1 tvg-name="青海都市" tvg-logo="https://logo.ugreen.cloudns.biz/img/Qinghai2.png" group-title="🏎️青海频道",青海都市
+webview://http://www.qhbtv.com/new_index/live/folder2648/
+#EXTINF:-1 tvg-name="安多卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Anduo.png" group-title="🏎️青海频道",安多卫视
+webview://http://www.qhtb.cn/onlin/
 #EXTINF:-1 tvg-name="西宁新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/Xining_1.png" group-title="🏎️青海频道",西宁新闻综合
 webview://https://www.xntv.tv/xnxwpd
 #EXTINF:-1 tvg-name="西宁生活服务" tvg-logo="https://logo.ugreen.cloudns.biz/img/Xining_2.png" group-title="🏎️青海频道",西宁生活服务
