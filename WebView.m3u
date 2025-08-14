@@ -203,7 +203,7 @@ webview://https://yangshipin.cn/tv/home?pid=600152138
 webview://https://yangshipin.cn/tv/home?pid=600152138
 
 # 🚟咪咕央视
-#EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV1.png" group-title="🚟咪咕央视",CCTV-1 综合
+#EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV1.png" group-title="🚟咪咕央视" http-user-agent="Mozilla/5.0 (Linux; Android 12; SAMSUNG Galaxy S24 Ultra) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 Mobile Safari/537.36",CCTV-1 综合
 webview://https://m.miguvideo.com/m/liveDetail/608807420
 #EXTINF:-1 tvg-name="CCTV2" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV2.png" group-title="🚟咪咕央视",CCTV-2 财经
 webview://https://m.miguvideo.com/m/liveDetail/631780532
@@ -1102,3 +1102,4 @@ rtmp://tv.lasatv.cn/channellive/lswlpd
 # ♻️Webview检测
 #EXTINF:-1 tvg-name="Webview检测" tvg-logo="https://logo.ugreen.cloudns.biz/img/Webview.png" group-title="♻️Webview检测",Webview检测
 webview://https://passer-by.com/browser
+
