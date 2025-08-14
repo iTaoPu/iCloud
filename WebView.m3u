@@ -934,8 +934,9 @@ webview://https://www.xntv.tv/xnshpd
 
 # 🚔河南频道
 #EXTINF:-1 tvg-name="河南卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/河南卫视.png" group-title="🚔河南频道",河南卫视
-webview://https://static.hntv.tv/kds/#/
-webview://https://static.hntv.tv/total/television/?id=145
+webview://https://static.hntv.tv/kds/
+#EXTINF:-1 tvg-name="郑州都市生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/郑州都市生活.png" group-title="🚔河南频道",郑州都市生活
+webview://https://4k.zztv.tv/tv/4k-urbanLife
 #EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV1.png" group-title="🚔河南频道",CCTV-1 综合·党建
 webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=1
 #EXTINF:-1 tvg-name="CCTV3" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV3.png" group-title="🚔河南频道",CCTV-3 综艺·党建
@@ -980,4 +981,3 @@ webview://https://lanzhoubcnew.zainanjing365.com/share/live/detailTv?resourceId=
 # ♻️Webview检测
 #EXTINF:-1 tvg-name="Webview检测" tvg-logo="https://logo.ugreen.cloudns.biz/img/Webview.png" group-title="♻️Webview检测",Webview检测
 webview://https://passer-by.com/browser
-
