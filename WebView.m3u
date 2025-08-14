@@ -520,38 +520,62 @@ webview://https://app.gztv.com/plusshare/#/tvDetail?code=3004
 webview://https://app.gztv.com/plusshare/#/tvDetail?code=3003
 #EXTINF:-1 tvg-name="深圳卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/深圳卫视4K.png" group-title="🚈广东频道",深圳卫视4K
 webview://https://www.sztv.com.cn/dianshi.shtml?id=24725
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/sz.js?id=szws4k
 #EXTINF:-1 tvg-name="深圳卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/深圳卫视.png" group-title="🚈广东频道",深圳卫视
 webview://https://www.sztv.com.cn/dianshi.shtml?id=7867
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/sz.js?id=szws
 #EXTINF:-1 tvg-name="深圳都市" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shenzhen1.png" group-title="🚈广东频道",深圳都市
 webview://https://www.sztv.com.cn/dianshi.shtml?id=7868
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/sz.js?id=szds
 #EXTINF:-1 tvg-name="深圳电视剧" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shenzhen2.png" group-title="🚈广东频道",深圳电视剧
 webview://https://www.sztv.com.cn/dianshi.shtml?id=7880
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/sz.js?id=szdsj
 #EXTINF:-1 tvg-name="深圳财经" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shenzhen4.png" group-title="🚈广东频道",深圳财经
 webview://https://www.sztv.com.cn/dianshi.shtml?id=7871
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/sz.js?id=szcjsh
 #EXTINF:-1 tvg-name="深圳少儿" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shenzhen6.png" group-title="🚈广东频道",深圳少儿
 webview://https://www.sztv.com.cn/dianshi.shtml?id=7881
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/sz.js?id=szse
 #EXTINF:-1 tvg-name="深圳移动电视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shenzhen12.png" group-title="🚈广东频道",深圳移动电视
 webview://https://www.sztv.com.cn/dianshi.shtml?id=7869
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/sz.js?id=szyd
 #EXTINF:-1 tvg-name="深圳国际" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shenzhen7.png" group-title="🚈广东频道",深圳国际
 webview://https://www.sztv.com.cn/dianshi.shtml?id=7944
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/sz.js?id=szgj
 #EXTINF:-1 tvg-name="宜和购物" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shenzhen16.png" group-title="🚈广东频道",宜和购物
 webview://https://www.sztv.com.cn/dianshi.shtml?id=7878
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/sz.js?id=yhgw
 
 # 🛥️北京频道
+#EXTINF:-1 tvg-name="北京纪实科教" tvg-logo="https://logo.ugreen.cloudns.biz/img/Beijing9.png" group-title="🛥️北京频道",北京纪实科教8K
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/btv8k.js
+#EXTINF:-1 tvg-name="北京卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/北京卫视4K.png" group-title="🛥️北京频道",北京卫视4K
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/bjtime.js?id=bjws4k
 #EXTINF:-1 tvg-name="北京卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/北京卫视.png" group-title="🛥️北京频道",北京卫视
 webview://https://www.btime.com/btv/btvsy_index
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/bjtime.js?id=bjws
 #EXTINF:-1 tvg-name="北京文艺" tvg-logo="https://logo.ugreen.cloudns.biz/img/Beijing3.png" group-title="🛥️北京频道",北京文艺
 webview://http://p.ytelc.com/169l/bj/btv.php?id=btv2
-#EXTINF:-1 tvg-name="北京文艺" tvg-logo="https://logo.ugreen.cloudns.biz/img/Beijing4.png" group-title="🛥️北京频道",北京文艺
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/bjtime.js?id=bjwy
+#EXTINF:-1 tvg-name="北京影视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Beijing4.png" group-title="🛥️北京频道",北京影视
 webview://http://p.ytelc.com/169l/bj/btv.php?id=btv4
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/bjtime.js?id=bjys
 #EXTINF:-1 tvg-name="北京财经" tvg-logo="https://logo.ugreen.cloudns.biz/img/Beijing2.png" group-title="🛥️北京频道",北京财经
 webview://http://p.ytelc.com/169l/bj/btv.php?id=btv5
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/bjtime.js?id=bjcj
 #EXTINF:-1 tvg-name="北京生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/Beijing7.png" group-title="🛥️北京频道",北京生活
 webview://http://p.ytelc.com/169l/bj/btv.php?id=btv7
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/bjtime.js?id=bjsh
 #EXTINF:-1 tvg-name="北京新闻" tvg-logo="https://logo.ugreen.cloudns.biz/img/Beijing1.png" group-title="🛥️北京频道",北京新闻
 webview://http://p.ytelc.com/169l/bj/btv.php?id=btv9
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/bjtime.js?id=bjxw
 #EXTINF:-1 tvg-name="北京纪实科教" tvg-logo="https://logo.ugreen.cloudns.biz/img/Beijing5.png" group-title="🛥️北京频道",北京纪实科教
 webview://http://p.ytelc.com/169l/bj/btv.php?id=btv11
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/bjtime.js?id=bjjs
+#EXTINF:-1 tvg-name="北京体育休闲" tvg-logo="https://logo.ugreen.cloudns.biz/img/Beijing6.png" group-title="🛥️北京频道",北京体育休闲
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/bjtime.js?id=bjty
+#EXTINF:-1 tvg-name="卡酷动画" tvg-logo="https://logo.ugreen.cloudns.biz/img/kakushaoer.png" group-title="🛥️北京频道",卡酷动画
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/bjtime.js?id=bjkk
 
 # 🛺山东频道
 #EXTINF:-1 tvg-name="山东卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/山东卫视.png" group-title="🛺山东频道",山东卫视
@@ -716,21 +740,30 @@ webview://https://web.guangdianyun.tv/tv/?id=348&uin=1648
 # 🏍️上海频道
 #EXTINF:-1 tvg-name="东方卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/东方卫视.png" group-title="🏍️上海频道",东方卫视
 webview://https://live.kankanews.com/huikan?id=1
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/sh.js?id=dfws
 #EXTINF:-1 tvg-name="上海新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shanghai1.png" group-title="🏍️上海频道",上海新闻综合
 webview://https://live.kankanews.com/huikan?id=2
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/sh.js?id=xwzh
 #EXTINF:-1 tvg-name="第一财经" tvg-logo="https://logo.ugreen.cloudns.biz/img/dycj.png" group-title="🏍️上海频道",第一财经
 webview://https://live.kankanews.com/huikan?id=5
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/sh.js?id=dycj
 #EXTINF:-1 tvg-name="新纪实" tvg-logo="https://logo.ugreen.cloudns.biz/img/jsrw.png" group-title="🏍️上海频道",新纪实
 webview://https://live.kankanews.com/huikan?id=12
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/sh.js?id=xjs
 #EXTINF:-1 tvg-name="五星体育" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shanghai5.png" group-title="🏍️上海频道",五星体育
 webview://https://live.kankanews.com/huikan?id=10
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/sh.js?id=wxty
 #EXTINF:-1 tvg-name="上海都市" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shanghai2.png" group-title="🏍️上海频道",上海都市
 webview://https://live.kankanews.com/huikan?id=4
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/sh.js?id=ds
+#EXTINF:-1 tvg-name="乐游" tvg-logo="https://logo.ugreen.cloudns.biz/img/leyou.png" group-title="🏍️上海频道",乐游
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/sh.js?id=ly
 #EXTINF:-1 tvg-name="哈哈炫动" tvg-logo="https://logo.ugreen.cloudns.biz/img/hhxd.png" group-title="🏍️上海频道",哈哈炫动
 webview://https://live.kankanews.com/huikan?id=9
 #EXTINF:-1 tvg-name="魔都眼" tvg-logo="https://logo.ugreen.cloudns.biz/img/魔都眼.png" group-title="🏍️上海频道",魔都眼
 webview://https://live.kankanews.com/huikan?id=11
 webview://https://www.shanghaieye.cn/Live
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/sh.js?id=mdy
 
 # 🚢咪咕上海
 #EXTINF:-1 tvg-name="上海新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shanghai1.png" group-title="🚢咪咕上海",上海新闻综合
@@ -778,23 +811,30 @@ webview://https://www.sctv-8.com.cn/_iframe/iframe_mp4.aspx?iid=6377305028072347
 #EXTINF:-1 tvg-name="成都新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/Chengdu1.png" group-title="🚄四川频道",成都新闻综合
 webview://https://www.cditv.cn/show/4845-563.html
 webview://https://wap.cditv.cn/tvDetail?app_id=1&t=rmt_live&v=4801;;547
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/cdtv.js?url=https%3A%2F%2Fcdn1.cditv.cn%2Fcdtv1high%2FCDTV1High.flv%2Fplaylist.m3u8
 #EXTINF:-1 tvg-name="成都经济资讯" tvg-logo="https://logo.ugreen.cloudns.biz/img/Chengdu2.png" group-title="🚄四川频道",成都经济资讯
 webview://https://www.cditv.cn/show/4845-562.html
 webview://https://wap.cditv.cn/tvDetail?app_id=1&t=rmt_live&v=4801;;548
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/cdtv.js?url=https%3A%2F%2Fcdn1.cditv.cn%2Fcdtv2high%2FCDTV2High.flv%2Fplaylist.m3u8
 #EXTINF:-1 tvg-name="成都都市生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/Chengdu3.png" group-title="🚄四川频道",成都都市生活
 webview://https://www.cditv.cn/show/4845-561.html
 webview://https://wap.cditv.cn/tvDetail?app_id=1&t=rmt_live&v=4801;;549
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/cdtv.js?url=https%3A%2F%2Fcdn1.cditv.cn%2Fcdtv3high%2FCDTV3High.flv%2Fplaylist.m3u8
 #EXTINF:-1 tvg-name="成都影视文艺" tvg-logo="https://logo.ugreen.cloudns.biz/img/Chengdu4.png" group-title="🚄四川频道",成都影视文艺
 webview://https://www.cditv.cn/show/4845-560.html
 webview://https://wap.cditv.cn/tvDetail?app_id=1&t=rmt_live&v=4801;;550
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/cdtv.js?url=https%3A%2F%2Fcdn1.cditv.cn%2Fcdtv4high%2FCDTV4High.flv%2Fplaylist.m3u8
 #EXTINF:-1 tvg-name="成都公共" tvg-logo="https://logo.ugreen.cloudns.biz/img/Chengdu5.png" group-title="🚄四川频道",成都公共
 webview://https://www.cditv.cn/show/4845-559.html
 webview://https://wap.cditv.cn/tvDetail?app_id=1&t=rmt_live&v=4801;;551
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/cdtv.js?url=https%3A%2F%2Fcdn1.cditv.cn%2Fcdtv5high%2FCDTV5High.flv%2Fplaylist.m3u8
 #EXTINF:-1 tvg-name="成都少儿" tvg-logo="https://logo.ugreen.cloudns.biz/img/Chengdu6.png" group-title="🚄四川频道",成都少儿
 webview://https://www.cditv.cn/show/4845-558.html
 webview://https://wap.cditv.cn/tvDetail?app_id=1&t=rmt_live&v=4801;;552
+#EXTINF:-1 group-title="成都" tvg-name="成都少儿" tvg-logo="https://raw.githubusercontent.com/mytv-android/myTVlogo/refs/heads/main/img/成都少儿.png",成都少儿
 #EXTINF:-1 tvg-name="蓉城先锋" tvg-logo="https://logo.ugreen.cloudns.biz/img/RongChengXF.png" group-title="🚄四川频道",蓉城先锋
 webview://https://www.cditv.cn/show/4845-592.html
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/cdtv.js?url=https%3A%2F%2Fcdn1.cditv.cn%2Fdangjiaohigh%2FdangjiaoHigh.flv%2Fplaylist.m3u8
 
 # 🚝福建频道
 #EXTINF:-1 tvg-name="东南卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/东南卫视.png" group-title="🚝福建频道",东南卫视
@@ -902,18 +942,25 @@ webview://https://news.hbtv.com.cn/app/tv/438
 # 🚐贵州频道
 #EXTINF:-1 tvg-name="贵州卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/贵州卫视.png" group-title="🚐贵州频道",贵州卫视
 webview://https://www.gzstv.com/tv/ch01
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/gz.js?id=ch01
 #EXTINF:-1 tvg-name="贵州公共" tvg-logo="https://logo.ugreen.cloudns.biz/img/Guizhou1.png" group-title="🚐贵州频道",贵州公共
 webview://https://www.gzstv.com/tv/ch02
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/gz.js?id=ch01
 #EXTINF:-1 tvg-name="贵州文艺" tvg-logo="https://logo.ugreen.cloudns.biz/img/Guizhou2.png" group-title="🚐贵州频道",贵州文艺
 webview://https://www.gzstv.com/tv/ch03
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/gz.js?id=ch03
 #EXTINF:-1 tvg-name="贵州大众生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/Guizhou3.png" group-title="🚐贵州频道",贵州大众生活
 webview://https://www.gzstv.com/tv/ch04
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/gz.js?id=ch04
 #EXTINF:-1 tvg-name="贵州生态乡村" tvg-logo="https://logo.ugreen.cloudns.biz/img/Guizhou11.png" group-title="🚐贵州频道",贵州生态·乡村
 webview://https://www.gzstv.com/tv/ch05
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/gz.js?id=ch05
 #EXTINF:-1 tvg-name="贵州科教健康" tvg-logo="https://logo.ugreen.cloudns.biz/img/Guizhou5.png" group-title="🚐贵州频道",贵州科教健康
 webview://https://www.gzstv.com/tv/ch06
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/gz.js?id=ch06
 #EXTINF:-1 tvg-name="贵州移动电视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Guizhou9.png" group-title="🚐贵州频道",贵州移动电视
 webview://https://www.gzstv.com/tv/ch13
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/gz.js?id=ch13
 #EXTINF:-1 tvg-name="贵阳新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/贵阳新闻综合.png" group-title="🚐贵州频道",贵阳新闻综合
 webview://https://web.guangdianyun.tv/tv/3398?uin=4263
 #EXTINF:-1 tvg-name="贵阳经济生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/贵阳经济生活.png" group-title="🚐贵州频道",贵阳经济生活
@@ -1020,18 +1067,25 @@ webview://https://www.qukanvideo.com/cloud/h5/172844378694532
 # 🚘新疆频道
 #EXTINF:-1 tvg-name="新疆卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/新疆卫视.png" group-title="🚘新疆频道",新疆卫视·汉语新闻综合
 webview://https://www.xjtvs.com.cn/column/tv/434?channelId=1
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/xj.js?id=xjws
 #EXTINF:-1 tvg-name="新疆维吾尔语新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/Xinjiang1.png" group-title="🚘新疆频道",新疆维吾尔语新闻综合
 webview://https://www.xjtvs.com.cn/column/tv/434?channelId=3
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/xj.js?id=xjwyzh
 #EXTINF:-1 tvg-name="新疆哈萨克语新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/Xinjiang2.png" group-title="🚘新疆频道",新疆哈萨克语新闻综合
 webview://https://www.xjtvs.com.cn/column/tv/434?channelId=4
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/xj.js?id=xjhyzh
 #EXTINF:-1 tvg-name="新疆汉语综艺" tvg-logo="https://logo.ugreen.cloudns.biz/img/Xinjiang3.png" group-title="🚘新疆频道",新疆汉语综艺
 webview://https://www.xjtvs.com.cn/column/tv/434?channelId=16
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/xj.js?id=xjzy
 #EXTINF:-1 tvg-name="新疆维吾尔语影视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Xinjiang4.png" group-title="🚘新疆频道",新疆维吾尔语影视
 webview://https://www.xjtvs.com.cn/column/tv/434?channelId=17
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/xj.js?id=xjwyys
 #EXTINF:-1 tvg-name="新疆汉语体育健康" tvg-logo="https://logo.ugreen.cloudns.biz/img/Xinjiang8.png" group-title="🚘新疆频道",新疆汉语体育健康
 webview://https://www.xjtvs.com.cn/column/tv/434?channelId=21
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/xj.js?id=xjtyjk
 #EXTINF:-1 tvg-name="新疆少儿" tvg-logo="https://logo.ugreen.cloudns.biz/img/Xinjiang10.png" group-title="🚘新疆频道",新疆少儿
 webview://https://www.xjtvs.com.cn/column/tv/434?channelId=23
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/xj.js?id=xjse
 #EXTINF:-1 tvg-name="兵团卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Bingtuan.png" group-title="🚘新疆频道",兵团卫视
 webview://https://www.btzx.com.cn/2024new/new_zhibo/index.shtml
 #EXTINF:-1 tvg-name="乌鲁木齐汉语综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/乌鲁木齐汉语综合.png" group-title="🚘新疆频道",乌鲁木齐汉语综合
