@@ -18,4 +18,5 @@
 @@||ugreen.dedyn.io^
 @@||shrimp.dedyn.io^
 ! 𝟚.白名單
-@@||p.ytelc.com^
+@@||ytelc.com^
+
