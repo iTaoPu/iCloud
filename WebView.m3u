@@ -673,7 +673,6 @@ webview://https://www.nntv.cn/live/nntv_ds/
 rtmp://live.gxrb.com.cn/tv/nntv_yssh
 #EXTINF:-1 tvg-name="南宁影视娱乐" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanningysyl.png" group-title="🚎广西频道",南宁影视娱乐
 webview://https://www.nntv.cn/live/nntv_ys/
-rtmp://live.gxrb.com.cn/tv/nntv_ys
 #EXTINF:-1 tvg-name="南宁公共" tvg-logo="https://logo.ugreen.cloudns.biz/img/Nanninggg.png" group-title="🚎广西频道",南宁公共
 webview://https://www.nntv.cn/live/nntv_gg/
 rtmp://live.gxrb.com.cn/tv/nntv_gg
