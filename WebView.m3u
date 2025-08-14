@@ -1089,8 +1089,9 @@ webview://https://lanzhoubcnew.zainanjing365.com/share/live/detailTv?resourceId=
 webview://https://lanzhoubcnew.zainanjing365.com/share/live/detailTv?resourceId=14&appscheme=gdmm-ailanzhou
 
 #EXTINF:-1 tvg-name="拉萨藏语综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/拉萨藏语综合.png" group-title="🚡甘肃频道",拉萨藏语综合
-webview://rtmp://tv.lasatv.cn/channellive/lszypd
+rtmp://tv.lasatv.cn/channellive/lszypd
 
 # ♻️Webview检测
 #EXTINF:-1 tvg-name="Webview检测" tvg-logo="https://logo.ugreen.cloudns.biz/img/Webview.png" group-title="♻️Webview检测",Webview检测
 webview://https://passer-by.com/browser
+
