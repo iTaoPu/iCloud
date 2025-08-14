@@ -550,26 +550,26 @@ javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/btv8k.js
 #EXTINF:-1 tvg-name="北京卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/北京卫视4K.png" group-title="🛥️北京频道",北京卫视4K
 javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/bjtime.js?id=bjws4k
 #EXTINF:-1 tvg-name="北京卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/北京卫视.png" group-title="🛥️北京频道",北京卫视
-webview://https://www.btime.com/btv/btvsy_index
 javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/bjtime.js?id=bjws
+webview://https://www.btime.com/btv/btvsy_index
 #EXTINF:-1 tvg-name="北京文艺" tvg-logo="https://logo.ugreen.cloudns.biz/img/Beijing3.png" group-title="🛥️北京频道",北京文艺
-webview://http://p.ytelc.com/169l/bj/btv.php?id=btv2
 javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/bjtime.js?id=bjwy
+webview://http://p.ytelc.com/169l/bj/btv.php?id=btv2
 #EXTINF:-1 tvg-name="北京影视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Beijing4.png" group-title="🛥️北京频道",北京影视
-webview://http://p.ytelc.com/169l/bj/btv.php?id=btv4
 javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/bjtime.js?id=bjys
+webview://http://p.ytelc.com/169l/bj/btv.php?id=btv4
 #EXTINF:-1 tvg-name="北京财经" tvg-logo="https://logo.ugreen.cloudns.biz/img/Beijing2.png" group-title="🛥️北京频道",北京财经
-webview://http://p.ytelc.com/169l/bj/btv.php?id=btv5
 javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/bjtime.js?id=bjcj
-#EXTINF:-1 tvg-name="北京生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/Beijing7.png" group-title="🛥️北京频道",北京生活
-webview://http://p.ytelc.com/169l/bj/btv.php?id=btv7
+webview://http://p.ytelc.com/169l/bj/btv.php?id=btv5
+#EXTINF:-1 tvg-name="北京生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/Beijing7.png" group-title="🛥️北京频道",北京i生活
 javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/bjtime.js?id=bjsh
+webview://http://p.ytelc.com/169l/bj/btv.php?id=btv7
 #EXTINF:-1 tvg-name="北京新闻" tvg-logo="https://logo.ugreen.cloudns.biz/img/Beijing1.png" group-title="🛥️北京频道",北京新闻
-webview://http://p.ytelc.com/169l/bj/btv.php?id=btv9
 javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/bjtime.js?id=bjxw
+webview://http://p.ytelc.com/169l/bj/btv.php?id=btv9
 #EXTINF:-1 tvg-name="北京纪实科教" tvg-logo="https://logo.ugreen.cloudns.biz/img/Beijing5.png" group-title="🛥️北京频道",北京纪实科教
-webview://http://p.ytelc.com/169l/bj/btv.php?id=btv11
 javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/bjtime.js?id=bjjs
+webview://http://p.ytelc.com/169l/bj/btv.php?id=btv3
 #EXTINF:-1 tvg-name="北京体育休闲" tvg-logo="https://logo.ugreen.cloudns.biz/img/Beijing6.png" group-title="🛥️北京频道",北京体育休闲
 javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/bjtime.js?id=bjty
 #EXTINF:-1 tvg-name="卡酷动画" tvg-logo="https://logo.ugreen.cloudns.biz/img/kakushaoer.png" group-title="🛥️北京频道",卡酷动画
