@@ -7,8 +7,6 @@ https://itcoffe.5iclub.us.kg/Loong/iTV/Disclaimer.mp4
 https://itcoffe.5iclub.us.kg/Loong/iTV/Disclaimer.mp4
 #EXTINF:-1 tvg-id="禁止蕉绿" tvg-name="禁止蕉绿" tvg-logo="https://logo.ugreen.cloudns.biz/img/禁止蕉绿.png" group-title="🦧温馨提示",禁止蕉绿
 https://itcoffe.5iclub.us.kg/Loong/iTV/Disclaimer.mp4
-#EXTINF:-1 tvg-id="禁止蕉绿" tvg-name="禁止蕉绿" tvg-logo="https://logo.ugreen.cloudns.biz/img/禁止蕉绿.png" group-title="🦧温馨提示",禁止蕉绿
-webview://https://lanzhoubcnew.zainanjing365.com/share/live/detailTv?resourceId=12&appscheme=gdmm-ailanzhou
 
 # 🎥央视网
 #EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://logo.ugreen.cloudns.biz/img/CCTV1.png" group-title="🎥央视网",CCTV-1 综合
@@ -732,7 +730,7 @@ webview://https://app.zohi.tv/video/videojs/index?site_id=10001&id=804
 #EXTINF:-1 tvg-name="福州都市生活" tvg-logo="https://logo.ugreen.cloudns.biz/img/福州都市生活.png" group-title="🚝福建频道",福州都市生活
 webview://https://www.zohi.tv/app/tv/801
 webview://https://app.zohi.tv/video/videojs/index?site_id=10001&id=801
-#EXTINF:-1 tvg-name="福州少儿" tvg-logo="https://logo.ugreen.cloudns.biz/img/Fujian8.png" group-title="🚝福建频道",福州少儿
+#EXTINF:-1 tvg-name="福州少儿" tvg-logo="https://logo.ugreen.cloudns.biz/img/福州少儿.png" group-title="🚝福建频道",福州少儿
 webview://https://www.zohi.tv/app/tv/795
 webview://https://app.zohi.tv/video/videojs/index?site_id=10001&id=795
 
@@ -953,6 +951,14 @@ webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=13
 webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=15
 #EXTINF:-1 tvg-name="河南戏曲" tvg-logo="https://logo.ugreen.cloudns.biz/img/河南戏曲.png" group-title="🚔河南频道",河南戏曲·党建
 webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=16
+
+# 🚡甘肃频道
+#EXTINF:-1 tvg-name="甘肃卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/甘肃卫视.png" group-title="🚡甘肃频道",甘肃卫视
+webview://https://www.gstv.com.cn/zxc.jhtml
+#EXTINF:-1 tvg-name="兰州新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/兰州新闻综合.png" group-title="🚡甘肃频道",兰州新闻综合
+webview://https://lanzhoubcnew.zainanjing365.com/share/live/detailTv?resourceId=12&appscheme=gdmm-ailanzhou
+#EXTINF:-1 tvg-name="兰州文旅" tvg-logo="https://logo.ugreen.cloudns.biz/img/兰州文旅.png" group-title="🚡甘肃频道",兰州文旅
+webview://https://lanzhoubcnew.zainanjing365.com/share/live/detailTv?resourceId=14&appscheme=gdmm-ailanzhou
 
 # ♻️Webview检测
 #EXTINF:-1 tvg-name="Webview检测" tvg-logo="https://logo.ugreen.cloudns.biz/img/Webview.png" group-title="♻️Webview检测",Webview检测
