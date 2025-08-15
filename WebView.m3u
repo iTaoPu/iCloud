@@ -312,7 +312,7 @@ webview://https://web.guangdianyun.tv/tv/3782?uin=4251
 #EXTINF:-1 tvg-name="1905极限反转" tvg-logo="https://logo.ugreen.cloudns.biz/img/1905电影网.png" group-title="🚤数字频道",1905·极限反转
 webview://https://m.1905.com/m/xl/live/
 #EXTINF:-1 tvg-name="1905环球经典" tvg-logo="https://logo.ugreen.cloudns.biz/img/1905电影网.png" group-title="🚤数字频道",1905·环球经典
-webview://https://m.1905.com/m/1905tv/live/
+webview://https://m.1905.com/1905tv/live/
 
 # 🐼熊猫频道
 #EXTINF:-1 tvg-name="iPanda" tvg-logo="https://logo.ugreen.cloudns.biz/img/iPanda.png" group-title="🐼熊猫频道",中国大熊猫保护研究中心·24小时直播
@@ -1185,4 +1185,5 @@ rtmp://tv.lasatv.cn/channellive/lswlpd
 # ♻️Webview检测
 #EXTINF:-1 tvg-name="Webview检测" tvg-logo="https://logo.ugreen.cloudns.biz/img/Webview.png" group-title="♻️Webview检测",Webview检测
 webview://https://passer-by.com/browser
+
 
