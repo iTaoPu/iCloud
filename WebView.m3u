@@ -296,26 +296,22 @@ webview://https://m.miguvideo.com/m/liveDetail/923287339
 #EXTINF:-1 tvg-name="国际教育汉语文化" tvg-logo="https://logo.ugreen.cloudns.biz/img/CEC汉语文化.png" group-title="🗺️国际教育",国际教育·汉语文化
 webview://http://m3u8.cec-tv.com.cn/?url=http://play.cec-tv.com.cn/channel/cec-tv1.m3u8
 http://play.cec-tv.com.cn/channel/cec-tv1.m3u8
-video://http://play.cec-tv.com.cn/channel/cec-tv1.m3u8
 #EXTINF:-1 tvg-name="国际教育国际旅游" tvg-logo="https://logo.ugreen.cloudns.biz/img/CEC国际旅游.png" group-title="🗺️国际教育",国际教育·国际旅游
 webview://http://m3u8.cec-tv.com.cn/?url=http://play.cec-tv.com.cn/channel/cec-tv2.m3u8
 http://play.cec-tv.com.cn/channel/cec-tv3.m3u8
-video://http://play.cec-tv.com.cn/channel/cec-tv2.m3u8
 #EXTINF:-1 tvg-name="国际教育国际教育" tvg-logo="https://logo.ugreen.cloudns.biz/img/CEC国际教育.png" group-title="🗺️国际教育",国际教育·国际教育
 webview://http://m3u8.cec-tv.com.cn/?url=http://play.cec-tv.com.cn/channel/cec-tv3.m3u8
 http://play.cec-tv.com.cn/channel/cec-tv3.m3u8
-video://http://play.cec-tv.com.cn/channel/cec-tv3.m3u8
 #EXTINF:-1 tvg-name="国际教育国际健康" tvg-logo="https://logo.ugreen.cloudns.biz/img/CEC国际健康.png" group-title="🗺️国际教育",国际教育·国际健康
 webview://http://m3u8.cec-tv.com.cn/?url=http://play.cec-tv.com.cn/channel/cec-tv4.m3u8
 http://play.cec-tv.com.cn/channel/cec-tv4.m3u8
-video://http://play.cec-tv.com.cn/channel/cec-tv4.m3u8
 #EXTINF:-1 tvg-name="国际教育美食文化" tvg-logo="https://logo.ugreen.cloudns.biz/img/CEC美食文化.png" group-title="🗺️国际教育",国际教育·美食文化
 webview://https://web.guangdianyun.tv/tv/3782?uin=4251
 
 # 🚤数字频道
-#EXTINF:-1 tvg-name="1905极限反转" tvg-logo="https://logo.ugreen.cloudns.biz/img/1905电影.png" group-title="🚤数字频道",1905·极限反转
+#EXTINF:-1 tvg-name="1905极限反转" tvg-logo="https://logo.ugreen.cloudns.biz/img/1905电影网.png" group-title="🚤数字频道",1905·极限反转
 webview://https://m.1905.com/m/xl/live/
-#EXTINF:-1 tvg-name="1905环球经典" tvg-logo="https://logo.ugreen.cloudns.biz/img/1905电影.png" group-title="🚤数字频道",1905·环球经典
+#EXTINF:-1 tvg-name="1905环球经典" tvg-logo="https://logo.ugreen.cloudns.biz/img/1905电影网.png" group-title="🚤数字频道",1905·环球经典
 webview://https://m.1905.com/m/1905tv/live/
 
 # 🐼熊猫频道
