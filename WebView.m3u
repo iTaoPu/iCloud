@@ -1182,9 +1182,13 @@ rtmp://tv.lasatv.cn/channellive/lszypd
 #EXTINF:-1 tvg-name="拉萨文旅" tvg-logo="https://logo.ugreen.cloudns.biz/img/拉萨文旅.png" group-title="🏝️西藏频道",拉萨文旅
 rtmp://tv.lasatv.cn/channellive/lswlpd
 
+#EXTINF:-1 tvg-name="内蒙古新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/内蒙古新闻综合.png" group-title="🏝️内蒙古频道",内蒙古新闻综合
+webview://http://tv.haoqu99.com/e/extend/tv.php?id=28407
+
 # ♻️Webview检测
 #EXTINF:-1 tvg-name="Webview检测" tvg-logo="https://logo.ugreen.cloudns.biz/img/Webview.png" group-title="♻️Webview检测",Webview检测
 webview://https://passer-by.com/browser
+
 
 
 
