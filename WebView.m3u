@@ -772,10 +772,10 @@ webview://https://live.kankanews.com/huikan?id=9
 javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/sh.js?id=mdy
 webview://https://live.kankanews.com/huikan?id=11
 webview://https://www.shanghaieye.cn/Live
-#EXTINF:-1 tvg-name="上海教育" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shanghai6png" group-title="🏍️上海频道",上海教育
+#EXTINF:-1 tvg-name="上海教育" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shanghai6.png" group-title="🏍️上海频道",上海教育
 webview://https://tvi.ct.ws/shanghaijiaoyu.html
 
-# 🚢上海频道·MIGU
+# 🏍️上海·咪咕
 #EXTINF:-1 tvg-name="上海新闻综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/Shanghai1.png" group-title="🏍️上海·咪咕",上海新闻综合
 webview://https://m.miguvideo.com/m/liveDetail/651632657
 
@@ -1185,5 +1185,6 @@ rtmp://tv.lasatv.cn/channellive/lswlpd
 # ♻️Webview检测
 #EXTINF:-1 tvg-name="Webview检测" tvg-logo="https://logo.ugreen.cloudns.biz/img/Webview.png" group-title="♻️Webview检测",Webview检测
 webview://https://passer-by.com/browser
+
 
 
