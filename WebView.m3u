@@ -287,7 +287,7 @@ webview://https://m.miguvideo.com/m/liveDetail/608917627
 webview://https://m.miguvideo.com/m/liveDetail/849119120
 #EXTINF:-1 tvg-name="CETV1" tvg-logo="https://logo.ugreen.cloudns.biz/img/CETV1.png" group-title="📡卫视·咪咕",CETV-1
 webview://https://m.miguvideo.com/m/liveDetail/923287154
-#EXTINF:-1 tvg-name="CETV2" tvg-logo="https://logo.ugreen.cloudns.biz/img/CETV2png" group-title="📡卫视·咪咕",CETV-2
+#EXTINF:-1 tvg-name="CETV2" tvg-logo="https://logo.ugreen.cloudns.biz/img/CETV2.png" group-title="📡卫视·咪咕",CETV-2
 webview://https://m.miguvideo.com/m/liveDetail/923287211
 #EXTINF:-1 tvg-name="CETV4" tvg-logo="https://logo.ugreen.cloudns.biz/img/CETV4.png" group-title="📡卫视·咪咕",CETV-4
 webview://https://m.miguvideo.com/m/liveDetail/923287339
@@ -1185,4 +1185,5 @@ rtmp://tv.lasatv.cn/channellive/lswlpd
 # ♻️Webview检测
 #EXTINF:-1 tvg-name="Webview检测" tvg-logo="https://logo.ugreen.cloudns.biz/img/Webview.png" group-title="♻️Webview检测",Webview检测
 webview://https://passer-by.com/browser
+
 
