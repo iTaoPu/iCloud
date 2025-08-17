@@ -518,19 +518,19 @@ webview://https://www.gdtv.cn/tvChannelDetail/75
 webview://https://www.gdtv.cn/tvChannelDetail/102
 #EXTINF:-1 tvg-name="广州综合" tvg-logo="https://logo.ugreen.cloudns.biz/img/Guangzhou1.png" group-title="🚈广东频道",广州综合
 webview://https://app.gztv.com/plusshare/#/tvDetail
-javascript://https://gitee.com/mytv-android/mytvJS/raw/main/js/guangzhou.js?id=zhonghe
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/guangzhou.js?id=zhonghe
 #EXTINF:-1 tvg-name="广州新闻" tvg-logo="https://logo.ugreen.cloudns.biz/img/Guangzhou2.png" group-title="🚈广东频道",广州新闻
 webview://https://app.gztv.com/plusshare/#/tvDetail?code=3002
-javascript://https://gitee.com/mytv-android/mytvJS/raw/main/js/guangzhou.js?id=xinwen
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/guangzhou.js?id=xinwen
 #EXTINF:-1 tvg-name="广州影视" tvg-logo="https://logo.ugreen.cloudns.biz/img/Guangzhou5.png" group-title="🚈广东频道",广东影视
 webview://https://app.gztv.com/plusshare/#/tvDetail?code=3006
-javascript://https://gitee.com/mytv-android/mytvJS/raw/main/js/guangzhou.js?id=yingshi
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/guangzhou.js?id=yingshi
 #EXTINF:-1 tvg-name="广州法治" tvg-logo="https://logo.ugreen.cloudns.biz/img/Guangzhou3.png" group-title="🚈广东频道",广州法治
 webview://https://app.gztv.com/plusshare/#/tvDetail?code=3004
-javascript://https://gitee.com/mytv-android/mytvJS/raw/main/js/guangzhou.js?id=fazhi
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/guangzhou.js?id=fazhi
 #EXTINF:-1 tvg-name="南国都市" tvg-logo="https://logo.ugreen.cloudns.biz/img/Guangzhou6.png" group-title="🚈广东频道",南国都市4K
 webview://https://app.gztv.com/plusshare/#/tvDetail?code=3003
-javascript://https://gitee.com/mytv-android/mytvJS/raw/main/js/guangzhou.js?id=shenghuo
+javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/guangzhou.js?id=shenghuo
 #EXTINF:-1 tvg-name="深圳卫视" tvg-logo="https://logo.ugreen.cloudns.biz/img/深圳卫视4K.png" group-title="🚈广东频道",深圳卫视4K
 webview://https://www.sztv.com.cn/dianshi.shtml?id=24725
 javascript://https://fastly.jsdelivr.net/gh/mytv-android/mytvJS@main/js/sz.js?id=szws4k
