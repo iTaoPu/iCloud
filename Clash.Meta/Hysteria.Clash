@@ -98,7 +98,7 @@ dns:
 proxy-providers:
   🎏歇斯底里:
     type: http
-    url: "https://goclash.topmarco.tech"
+    url: "https://raw.githubusercontent.com/Misaka-blog/chromego_merge/main/sub/merged_proxies_new.yaml"
     path: ./Internet/🎏歇斯底里.yaml
     interval: 10800
     health-check:
