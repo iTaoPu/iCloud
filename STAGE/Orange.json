@@ -1,5 +1,5 @@
 {
-"spider": "https://icloud.jsdelivr.dpdns.org/STAGE/Orange.jar;md5;81614a4982ac5fd02d64f075e87c9150",
+"spider": "https://icloud.jsdelivr.dpdns.org/STAGE/Orange.jar;md5;bcaa35ff60c87f537cf509da3c40411e",
 "wallpaper": "https://bing.img.run/uhd.php",
 "warningText": "【樂玩公社】提示：📢长期维护切勿贩卖",
 
@@ -57,6 +57,8 @@
 {"key":"dr_兔小贝","name":"📚儿童┃启蒙","type":3,"api":"https://wget.la/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/drpy2.min.js","ext":"https://wget.la/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/%E5%85%94%E5%B0%8F%E8%B4%9D.js","style":{"type":"rect","ratio":1.597},"searchable": 0,"quickSearch": 0,"changeable":0},
 {"key":"少儿教育","name":"📚少儿┃教育","type":3,"api":"csp_BiliGuard","style":{"type":"rect","ratio":1.597},"searchable":0,"quickSearch":0,"changeable":0,"ext":{"json":"https://scrm-community.oss-cn-shenzhen.aliyuncs.com/miniso-vendor/20250818-675236-05edd84dd04d48f0b394a11d0a6098f6.json"}},
 {"key":"小学课堂","name":"📚小学┃课堂","type":3,"api":"csp_BiliGuard","style":{"type":"rect","ratio":1.597},"searchable":0,"quickSearch":0,"changeable":0,"ext":{"json":"https://scrm-community.oss-cn-shenzhen.aliyuncs.com/miniso-vendor/20250818-417036-ab02e4b2c6494f69a83e84dbe371ff82.json"}},
+{"key":"初中课堂","name":"📚初中┃课堂","type":3,"api":"csp_BiliGuard","style":{"type":"rect","ratio":1.597},"searchable":0,"quickSearch":0,"changeable":0,"ext":{"json":"https://scrm-community.oss-cn-shenzhen.aliyuncs.com/miniso-vendor/20250818-368432-c7a7bcfa51154bf9bdb98888d3f26000.json"}},
+{"key":"高中教育","name":"📚高中┃课堂","type":3,"api":"csp_BiliGuard","style":{"type":"rect","ratio":1.597},"searchable":0,"quickSearch":0,"changeable":0,"ext":{"json":"https://scrm-community.oss-cn-shenzhen.aliyuncs.com/miniso-vendor/20250818-691234-03d78c46fc2f458d81b895121c27d088.json"}},
 
 {"key":"航","name":"📌导航┃https://vlink.cc/Shrimp","type":3,"api":"csp_XPath","searchable":1,"quickSearch":0,"changeable":0},
 {"key":"禁","name":"🈲禁止用于违法及商业用途","type":3,"api":"csp_XPath","searchable":1,"quickSearch":0,"changeable":0},
