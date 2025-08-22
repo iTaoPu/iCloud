@@ -20,5 +20,6 @@
 @@||jsdelivr.dpdns.org^
 @@||5iclub.dpdns.org^
 @@||ugreen.ctrl.li^
-@@||5iclub.ctrl.li/^
+@@||5iclub.ctrl.li^
 ! 𝟚.白名單
+
