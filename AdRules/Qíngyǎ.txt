@@ -4,9 +4,9 @@
 ! Expires: irregularly (update frequency)
 ! Description: 苦事不宣，乐事不扬，闲事不管！
 ! ------------------------------------
-! Version: 1.5.4
-! Update Date: 2025-08-20
-! Total lines: 644
+! Version: 1.5.6
+! Update Date: 2025-08-25
+! Total lines: 652
 
 ||789.kakamobi.cn^
 ||a1.alibabausercontent.com^
@@ -652,3 +652,11 @@
 ||ltscsy.qq.com^
 ||ugccsy.qq.com^
 ||ads.privacy.qq.com^
+||tracker.yfanads.com^
+||ads-dot.midongtech.com^
+||ad.midongtech.com^
+||ads.midongtech.com^
+||midongtech.com^
+||midongtech.xyz^
+||pgdt.gtimg.cn^
+||ugd.gtimg.com^
