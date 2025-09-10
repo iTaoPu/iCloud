@@ -1,11 +1,11 @@
 {
-"spider": "https://icloud.jsdelivr.dpdns.org/STAGE/Orange.jar;md5;a32b2d023ce4f29772f74e84f9c5d00f",
+"spider": "https://icloud.jsdelivr.dpdns.org/STAGE/Orange.jar;md5;98ca59a872d6d4d89c8c7e2aafb4dae1",
 "wallpaper": "https://bing.img.run/uhd.php",
 "warningText": "【樂玩公社】提示：📢长期维护切勿贩卖",
 
 "sites":[
 {"key":"豆瓣","name":"🍊橙宝宝┃𝙇𝙚𝙒𝙖𝙣","type": 3, "api": "csp_DouDouGuard","indexs":1,"searchable": 0,"quickSearch": 0,"changeable":0},
-{"key":"豆","name":"修复看球 低端【神秘的哥哥们】","type": 3, "api": "csp_DouDouGuard","indexs":1,"searchable": 0,"quickSearch": 0,"changeable":0},
+{"key":"豆","name":"修复夸克免费vip【神秘的哥哥们】","type": 3, "api": "csp_DouDouGuard","indexs":1,"searchable": 0,"quickSearch": 0,"changeable":0},
 {"key":"玩偶","name":"👽玩偶哥哥┃4K弹幕","type":3,"api":"csp_WoGGGuard","timeout":30,"searchable":1,"quickSearch":1,"changeable":0, "ext": {"Cloud-drive":"tvfan/Cloud-drive.txt","from":"4k|auto","siteUrl":"https://www.wogg.com/","danMu":"弹"}},
 {"key":"YGP","name":"🚀叨观荐影┃预告片","type":3,"api":"csp_YGPGuard","searchable":0,"quickSearch":0,"changeable":0},
 {"key":"alllive","name":"📽️一直播┃直播","type":3,"api":"csp_AllliveGuard","playerType":2,"searchable":0,"quickSearch":0,"changeable":0},
