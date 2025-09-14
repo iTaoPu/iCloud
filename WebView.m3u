@@ -336,7 +336,6 @@ webview://https://live.wifiwx.com/m2/?page=live&id=494
 webview://http://www.wifixz.com/tv/
 https://pull.nicewifi.cn/live/xztv01.flv
 #EXTINF:-1 tvg-name="徐州二套" tvg-logo="https://logo.jsdelivr.dpdns.org/img/徐州2套.png" group-title="🚂江苏频道",徐州经济生活
-webview://http://www.wifixz.com/tv/
 https://pull.nicewifi.cn/live/xztv02.flv
 #EXTINF:-1 tvg-name="徐州三套" tvg-logo="https://logo.jsdelivr.dpdns.org/img/徐州3套.png" group-title="🚂江苏频道",徐州文旅影视
 https://pull.nicewifi.cn/live/xztv03.flv
