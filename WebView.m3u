@@ -301,7 +301,9 @@ webview://https://www.nbs.cn/live/?id=109153
 webview://https://www.nbs.cn/live/?id=110093
 #EXTINF:-1 tvg-name="南京少儿" tvg-logo="https://logo.jsdelivr.dpdns.org/img/Nanjing6.png" group-title="🚂江苏频道",南京少儿
 webview://https://www.nbs.cn/live/?id=110095
-#EXTINF:-1 tvg-name="南通新闻综合" tvg-logo="https://logo.jsdelivr.dpdns.org/img/南通新闻综合.png" group-title="🚂江苏频道",南通新闻综合
+#EXTINF:-1 tvg-name="南通新闻综合" tvg-logo="https://logo.jsdelivr.dpdns.org/img/南通新闻综合.png" group-title="🚂江苏频道",南通一套·新闻综合
+webview://https://www.ntjoy.com/ntw/broadcastTvs.html?menuCode=ntw005
+#EXTINF:-1 tvg-name="南通新闻综合" tvg-logo="https://logo.jsdelivr.dpdns.org/img/南通新闻综合.png" group-title="🚂江苏频道",南通二套·社教
 webview://https://www.ntjoy.com/ntw/broadcastTvs.html?menuCode=ntw005
 #EXTINF:-1 tvg-name="苏州新闻综合" tvg-logo="https://logo.jsdelivr.dpdns.org/img/苏州新闻综合.png" group-title="🚂江苏频道",苏州新闻综合
 webview://http://www.csztv.com/zhibo1.shtml
