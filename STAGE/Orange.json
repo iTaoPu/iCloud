@@ -5,7 +5,7 @@
 
 "sites":[
 {"key":"豆瓣","name":"🍊橙宝宝┃𝙇𝙚𝙒𝙖𝙣","type": 3, "api": "csp_DouDouGuard","indexs":1,"searchable": 0,"quickSearch": 0,"changeable":0},
-{"key":"豆","name":"修复夸克免费vip【神秘的哥哥们】","type": 3, "api": "csp_DouDouGuard","indexs":1,"searchable": 0,"quickSearch": 0,"changeable":0},
+{"key":"豆","name":"夸父有问题的看公众号推文【神秘的哥哥们】","type": 3, "api": "csp_DouDouGuard","indexs":1,"searchable": 0,"quickSearch": 0,"changeable":0},
 {"key":"玩偶","name":"👽玩偶哥哥┃4K弹幕","type":3,"api":"csp_WoGGGuard","timeout":30,"searchable":1,"quickSearch":1,"changeable":0, "ext": {"Cloud-drive":"tvfan/Cloud-drive.txt","from":"4k|auto","siteUrl":"https://www.wogg.com/","danMu":"弹"}},
 {"key":"YGP","name":"🚀叨观荐影┃预告片","type":3,"api":"csp_YGPGuard","searchable":0,"quickSearch":0,"changeable":0},
 {"key":"alllive","name":"📽️一直播┃直播","type":3,"api":"csp_AllliveGuard","playerType":2,"searchable":0,"quickSearch":0,"changeable":0},
@@ -35,8 +35,8 @@
 {"key":"88","name":"⚽88┃看球","type":3,"api":"csp_Sir88Guard","timeout":15,"searchable":0,"changeable":0,"style":{"type":"list"}},
 {"key":"看球","name":"⚽手机┃看球","type":3,"api":"csp_KanqiuGuard","timeout":15,"searchable":0,"changeable":0,"style":{"type":"list"}},
 {"key":"MTV","name":"🎧明星┃MV","type":3,"api":"csp_BiliGuard","style":{"type":"rect","ratio":1.597},"searchable":0,"quickSearch":0,"changeable":0,"ext":{"json":"https://nos.netease.com/ysf/5af5fbe12a88b7c45aa1c21e6551826c.txt"}},
-{"key":"虎牙直播js","name":"🐯虎牙┃直播","type":3,"api":"https://wget.la/raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/drpy2.js","ext":"https://wget.la/raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/huya2.js","style":{"type":"rect","ratio":1.755},"timeout":15,"playerType":"2","searchable": 0,"quickSearch": 0,"changeable":0},
-{"key":"斗鱼js","name":"🐟斗鱼┃直播","type":3,"api":"https://wget.la/raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/drpy2.min.js","ext":"https://wget.la/raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/斗鱼直播.js","style":{"type":"rect","ratio":1.755},"timeout":15,"playerType":"2","searchable": 0,"quickSearch": 0,"changeable":0},
+{"key":"虎牙直播js","name":"🐯虎牙┃直播","type":3,"api":"https://ghfast.top/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/drpy2.js","ext":"https://ghfast.top/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/huya2.js","style":{"type":"rect","ratio":1.755},"timeout":15,"playerType":"2","searchable": 0,"quickSearch": 0,"changeable":0},
+{"key":"斗鱼js","name":"🐟斗鱼┃直播","type":3,"api":"https://ghfast.top/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/drpy2.min.js","ext":"https://ghfast.top/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/斗鱼直播.js","style":{"type":"rect","ratio":1.755},"timeout":15,"playerType":"2","searchable": 0,"quickSearch": 0,"changeable":0},
 {"key":"有声小说","name":"🎧有声┃小说","type":3,"api":"csp_Tingshu275Guard","searchable":0,"quickSearch":0,"changeable":0},
 {"key":"Aid","name":"🚑急救┃教学","type":3,"api":"csp_FirstAidGuard","searchable":0,"quickSearch":0,"changeable":0,"style": { "type": "rect", "ratio":3.8}},
 
@@ -51,7 +51,7 @@
 {"key":"YiSo","name":"😹易搜┃阿狸","type":3,"api":"csp_YiSoGuard","searchable":1,"quickSearch":1,"changeable":0,"ext": {"Cloud-drive":"tvfan/Cloud-drive.txt","from":"4k|auto"}},
 {"key":"push_agent","name":"🛴手机┃推送","type":3,"api":"csp_PushGuard","searchable":0,"quickSearch":0,"ext": {"Cloud-drive":"tvfan/Cloud-drive.txt","from":"4k|auto"}},
 
-{"key":"dr_兔小贝","name":"📚儿童┃启蒙","type":3,"api":"https://wget.la/raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/drpy2.min.js","ext":"https://wget.la/raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/%E5%85%94%E5%B0%8F%E8%B4%9D.js","style":{"type":"rect","ratio":1.597},"searchable": 0,"quickSearch": 0,"changeable":0},
+{"key":"dr_兔小贝","name":"📚儿童┃启蒙","type":3,"api":"https://ghfast.top/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/drpy2.min.js","ext":"https://ghfast.top/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/%E5%85%94%E5%B0%8F%E8%B4%9D.js","style":{"type":"rect","ratio":1.597},"searchable": 0,"quickSearch": 0,"changeable":0},
 {"key":"少儿教育","name":"📚少儿┃教育","type":3,"api":"csp_BiliGuard","style":{"type":"rect","ratio":1.597},"searchable":0,"quickSearch":0,"changeable":0,"ext":{"json":"https://nos.netease.com/ysf/89370c8ddf36b5e1beb4d71adb921bda.txt"}},
 {"key":"小学课堂","name":"📚小学┃课堂","type":3,"api":"csp_BiliGuard","style":{"type":"rect","ratio":1.597},"searchable":0,"quickSearch":0,"changeable":0,"ext":{"json":"https://nos.netease.com/ysf/d7a21cf34ede56f5c686ecfba5fc7e3f.txt"}},
 {"key":"初中课堂","name":"📚初中┃课堂","type":3,"api":"csp_BiliGuard","style":{"type":"rect","ratio":1.597},"searchable":0,"quickSearch":0,"changeable":0,"ext":{"json":"https://nos.netease.com/ysf/8f55d520f8d70056695740ef151744a7.txt"}},
