@@ -7,6 +7,8 @@ https://iCloud.jsdelivr.dpdns.org/video/Disclaimer.mp4
 https://iCloud.jsdelivr.dpdns.org/video/Disclaimer.mp4
 #EXTINF:-1 tvg-id="禁止蕉绿" tvg-name="禁止蕉绿" tvg-logo="https://logo.jsdelivr.dpdns.org/img/禁止蕉绿.png" group-title="🦧温馨提示",禁止蕉绿
 https://iCloud.jsdelivr.dpdns.org/video/Disclaimer.mp4
+#EXTINF:-1,tvg-id="重温经典" tvg-name="重温经典" tvg-logo="https://logo.jsdelivr.dpdns.org/img/重温经典.png" group-title="🦧温馨提示",重温经典
+http://php.jdshipin.com/TVOD/iptv.php?id=cwjd
 
 # 📺央视频道
 #EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.jsdelivr.dpdns.org/img/CCTV1.png" tvg-name="CCTV1",CCTV-1·综合 HD

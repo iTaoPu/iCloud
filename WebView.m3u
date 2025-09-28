@@ -1085,5 +1085,3 @@ rtmp://tv.lasatv.cn/channellive/lswlpd
 # ♻️Webview检测
 #EXTINF:-1 tvg-name="Webview检测" tvg-logo="https://logo.jsdelivr.dpdns.org/img/Webview.png" group-title="♻️Webview检测",Webview检测
 webview://https://passer-by.com/browser
-
-
