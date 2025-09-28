@@ -223,8 +223,6 @@ webview://https://web.guangdianyun.tv/tv/3782?uin=4251
 https://tylive.kan0512.com/norecord/csztv4k_4k.m3u8
 #EXTINF:-1,tvg-id="重温经典" tvg-name="重温经典" tvg-logo="https://logo.jsdelivr.dpdns.org/img/重温经典.png" group-title="🚤数字频道",重温经典
 http://php.jdshipin.com/TVOD/iptv.php?id=cwjd
-#EXTINF:-1,tvg-id="重温经典" tvg-name="重温经典" tvg-logo="https://logo.jsdelivr.dpdns.org/img/重温经典.png" group-title="🚤数字频道",重温经典 1
-http://push-rtmp-hs-spe-f5.douyincdn.com/live/awei_cwjd.flv
 #EXTINF:-1 tvg-name="1905极限反转" tvg-logo="https://logo.jsdelivr.dpdns.org/img/1905电影网.png" group-title="🚤数字频道",1905·极限反转
 webview://https://m.1905.com/m/xl/live/
 
@@ -1087,4 +1085,5 @@ rtmp://tv.lasatv.cn/channellive/lswlpd
 # ♻️Webview检测
 #EXTINF:-1 tvg-name="Webview检测" tvg-logo="https://logo.jsdelivr.dpdns.org/img/Webview.png" group-title="♻️Webview检测",Webview检测
 webview://https://passer-by.com/browser
+
 
