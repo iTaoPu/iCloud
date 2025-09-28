@@ -83,24 +83,17 @@ http://iptv.huuc.edu.cn/hls/btv11hd.m3u8
 # 🗺️特色频道
 #EXTINF:-1 tvg-name="凤凰中文" tvg-logo="https://logo.jsdelivr.dpdns.org/img/Phoenix1.png" group-title="🗺️特色频道",凤凰卫视·中文
 http://iptv.huuc.edu.cn/hls/fhzw.m3u8
-
 #EXTINF:-1 tvg-name="凤凰资讯" tvg-logo="https://logo.jsdelivr.dpdns.org/img/Phoenix2.png" group-title="🗺️特色频道",凤凰卫视·资讯
 http://iptv.huuc.edu.cn/hls/fhzx.m3u8
-
 #EXTINF:-1 tvg-name="凤凰电影" tvg-logo="https://logo.jsdelivr.dpdns.org/img/Phoenix4.png" group-title="🗺️特色频道",凤凰卫视·电影
 http://iptv.huuc.edu.cn/hls/fhdy.m3u8
-
 #EXTINF:-1 tvg-name="Discovery" tvg-logo="https://logo.jsdelivr.dpdns.org/img/Discovery.png" group-title="🗺️特色频道",Discovery
 http://iptv.huuc.edu.cn/hls/discovery.m3u8
-
 #EXTINF:-1 tvg-name="Natgeo" tvg-logo="https://logo.jsdelivr.dpdns.org/img/NATGEO.png" group-title="🗺️特色频道",国家地理
 http://iptv.huuc.edu.cn/hls/natlgeo.m3u8
-
 #EXTINF:-1 tvg-name="Startv" tvg-logo="https://logo.jsdelivr.dpdns.org/img/Startv.png" group-title="🗺️特色频道",星空卫视
 http://iptv.huuc.edu.cn/hls/startv.m3u8
-
 #EXTINF:-1 tvg-name="Channel [V]" tvg-logo="https://logo.jsdelivr.dpdns.org/img/ChannelV.png" group-title="🗺️特色频道",Channel [V]
 http://iptv.huuc.edu.cn/hls/channelv.m3u8
-
 #EXTINF:-1 tvg-name="StarSports" tvg-logo="https://logo.jsdelivr.dpdns.org/img/StarSports.png" group-title="🗺️特色频道",StarSports
 http://iptv.huuc.edu.cn/hls/starsports.m3u8
