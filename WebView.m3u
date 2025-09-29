@@ -307,10 +307,6 @@ webview://https://www.nbs.cn/live/?id=110093
 webview://https://www.nbs.cn/live/?id=110095
 #EXTINF:-1 tvg-name="南通新闻综合" tvg-logo="https://logo.jsdelivr.dpdns.org/img/南通新闻综合.png" group-title="🚂江苏频道",南通一套·新闻综合
 webview://https://www.ntjoy.com/ntw/broadcastTvs.html?menuCode=ntw005
-#EXTINF:-1 tvg-name="南通新闻综合" tvg-logo="https://logo.jsdelivr.dpdns.org/img/南通社教.png" group-title="🚂江苏频道",南通二套·社教
-webview://https://www.ntjoy.com/ntw/broadcastTvs.html?menuCode=ntw005
-#EXTINF:-1 tvg-name="南通新闻综合" tvg-logo="https://logo.jsdelivr.dpdns.org/img/南通公共崇川.png" group-title="🚂江苏频道",南通三套·公共崇川
-webview://https://www.ntjoy.com/ntw/broadcastTvs.html?menuCode=ntw005
 #EXTINF:-1 tvg-name="苏州新闻综合" tvg-logo="https://logo.jsdelivr.dpdns.org/img/苏州新闻综合.png" group-title="🚂江苏频道",苏州新闻综合
 webview://http://www.csztv.com/zhibo1.shtml
 #EXTINF:-1 tvg-name="苏州社会经济" tvg-logo="https://logo.jsdelivr.dpdns.org/img/苏州社会经济.png" group-title="🚂江苏频道",苏州社会经济
@@ -1081,10 +1077,13 @@ webview://https://lanzhoubcnew.zainanjing365.com/share/live/detailTv?resourceId=
 # 🏝️西藏频道
 #EXTINF:-1 tvg-name="拉萨汉语综合" tvg-logo="https://logo.jsdelivr.dpdns.org/img/拉萨汉语综合.png" group-title="🏝️西藏频道",拉萨汉语综合
 rtmp://tv.lasatv.cn/channellive/lszhpd
+https://tvfile.lasatv.cn/nmip-media/channellive/channel104335/playlist.m3u8
 #EXTINF:-1 tvg-name="拉萨藏语综合" tvg-logo="https://logo.jsdelivr.dpdns.org/img/拉萨藏语综合.png" group-title="🏝️西藏频道",拉萨藏语综合
 rtmp://tv.lasatv.cn/channellive/lszypd
+https://tvfile.lasatv.cn/nmip-media/channellive/channel101894/playlist.m3u8
 #EXTINF:-1 tvg-name="拉萨文旅" tvg-logo="https://logo.jsdelivr.dpdns.org/img/拉萨文旅.png" group-title="🏝️西藏频道",拉萨文旅
 rtmp://tv.lasatv.cn/channellive/lswlpd
+https://tvfile.lasatv.cn/nmip-media/channellive/channel103157/playlist.m3u8
 
 # 🎏内蒙古频道
 #EXTINF:-1 tvg-name="内蒙古卫视" tvg-logo="https://logo.jsdelivr.dpdns.org/img/内蒙古卫视.png" group-title="🎏内蒙古频道",内蒙古卫视
