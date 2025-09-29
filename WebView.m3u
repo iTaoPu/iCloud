@@ -105,7 +105,7 @@ webview://https://yangshipin.cn/tv/home?pid=600084744
 webview://https://yangshipin.cn/tv/home?pid=600084782
 
 # 💰付费频道
-#EXTINF:-1 tvg-name="CCTV16" tvg-logo="https://logo.jsdelivr.dpdns.org/img/CCTV16+.png" group-title="💰付费频道",CCTV-16 4K
+#EXTINF:-1 tvg-name="CCTV16" tvg-logo="https://logo.jsdelivr.dpdns.org/img/CCTV16+.png" group-title="💰付费频道",CCTV-16·4K超高清
 webview://https://yangshipin.cn/tv/home?pid=600099502
 #EXTINF:-1 tvg-name="风云剧场" tvg-logo="https://logo.jsdelivr.dpdns.org/img/CCTVfyjc.png" group-title="💰付费频道",CCTV 风云剧场
 webview://https://yangshipin.cn/tv/home?pid=600099658
@@ -385,7 +385,7 @@ webview://https://www.gdtv.cn/tvChannelDetail/51
 webview://https://www.gdtv.cn/tvChannelDetail/46
 #EXTINF:-1 tvg-name="广东影视" tvg-logo="https://logo.jsdelivr.dpdns.org/img/Guangdong3.png" group-title="🚈广东频道",广东影视
 webview://https://www.gdtv.cn/tvChannelDetail/53
-#EXTINF:-1 tvg-name="广东4K超高清" tvg-logo="https://logo.jsdelivr.dpdns.org/img/Guangdong4.png" group-title="🚈广东频道",广东4K超高清
+#EXTINF:-1 tvg-name="广东4K超高清" tvg-logo="https://logo.jsdelivr.dpdns.org/img/Guangdong4.png" group-title="🚈广东频道",广东·4K超高清
 webview://https://www.gdtv.cn/tvChannelDetail/16
 #EXTINF:-1 tvg-name="广东少儿" tvg-logo="https://logo.jsdelivr.dpdns.org/img/Guangdong6.png" group-title="🚈广东频道",广东少儿
 webview://https://www.gdtv.cn/tvChannelDetail/54
@@ -397,7 +397,7 @@ webview://https://www.gdtv.cn/tvChannelDetail/15
 webview://https://www.gdtv.cn/tvChannelDetail/74
 #EXTINF:-1 tvg-name="南方购物" tvg-logo="https://logo.jsdelivr.dpdns.org/img/Guangdong16.png" group-title="🚈广东频道",南方购物
 webview://https://www.gdtv.cn/tvChannelDetail/42
-#EXTINF:-1 tvg-name="荔枝台" tvg-logo="https://logo.jsdelivr.dpdns.org/img/LiChee.png" group-title="🚈广东频道",荔枝台
+#EXTINF:-1 tvg-name="荔枝台" tvg-logo="https://logo.jsdelivr.dpdns.org/img/LiChee.png" group-title="🚈广东频道",经典剧
 webview://https://www.gdtv.cn/tvChannelDetail/100
 #EXTINF:-1 tvg-name="纪录片" tvg-logo="https://logo.jsdelivr.dpdns.org/img/LiChee纪录片.png" group-title="🚈广东频道",纪录片
 webview://https://www.gdtv.cn/tvChannelDetail/94
@@ -419,10 +419,10 @@ javascript://https://wget.la/https://raw.githubusercontent.com/mytv-android/mytv
 #EXTINF:-1 tvg-name="广州法治" tvg-logo="https://logo.jsdelivr.dpdns.org/img/Guangzhou3.png" group-title="🚈广东频道",广州法治
 webview://https://app.gztv.com/plusshare/#/tvDetail?code=3004
 javascript://https://wget.la/https://raw.githubusercontent.com/mytv-android/mytvJS/refs/heads/main/js/guangzhou.js?id=fazhi
-#EXTINF:-1 tvg-name="南国都市" tvg-logo="https://logo.jsdelivr.dpdns.org/img/Guangzhou6.png" group-title="🚈广东频道",南国都市4K
+#EXTINF:-1 tvg-name="南国都市" tvg-logo="https://logo.jsdelivr.dpdns.org/img/Guangzhou6.png" group-title="🚈广东频道",南国都市·4K超高清
 webview://https://app.gztv.com/plusshare/#/tvDetail?code=3003
 javascript://https://wget.la/https://raw.githubusercontent.com/mytv-android/mytvJS/refs/heads/main/js/guangzhou.js?id=shenghuo
-#EXTINF:-1 tvg-name="深圳卫视" tvg-logo="https://logo.jsdelivr.dpdns.org/img/深圳卫视4K.png" group-title="🚈广东频道",深圳卫视4K
+#EXTINF:-1 tvg-name="深圳卫视" tvg-logo="https://logo.jsdelivr.dpdns.org/img/深圳卫视4K.png" group-title="🚈广东频道",深圳卫视·4K超高清
 webview://https://www.sztv.com.cn/dianshi.shtml?id=24725
 javascript://https://wget.la/https://raw.githubusercontent.com/mytv-android/mytvJS/refs/heads/main/js/sz.js?id=szws4k
 #EXTINF:-1 tvg-name="深圳卫视" tvg-logo="https://logo.jsdelivr.dpdns.org/img/深圳卫视.png" group-title="🚈广东频道",深圳卫视
@@ -451,9 +451,9 @@ webview://https://www.sztv.com.cn/dianshi.shtml?id=7878
 javascript://https://wget.la/https://raw.githubusercontent.com/mytv-android/mytvJS/refs/heads/main/js/sz.js?id=yhgw
 
 # 🛥️北京频道
-#EXTINF:-1 tvg-name="北京纪实科教" tvg-logo="https://logo.jsdelivr.dpdns.org/img/Beijing9.png" group-title="🛥️北京频道",北京纪实科教8K
+#EXTINF:-1 tvg-name="北京纪实科教" tvg-logo="https://logo.jsdelivr.dpdns.org/img/Beijing9.png" group-title="🛥️北京频道",北京纪实科教·8K超高清
 javascript://https://wget.la/https://raw.githubusercontent.com/mytv-android/mytvJS/refs/heads/main/js/btv8k.js
-#EXTINF:-1 tvg-name="北京卫视" tvg-logo="https://logo.jsdelivr.dpdns.org/img/北京卫视4K.png" group-title="🛥️北京频道",北京卫视4K
+#EXTINF:-1 tvg-name="北京卫视" tvg-logo="https://logo.jsdelivr.dpdns.org/img/北京卫视4K.png" group-title="🛥️北京频道",北京卫视·4K超高清
 javascript://https://wget.la/https://raw.githubusercontent.com/mytv-android/mytvJS/refs/heads/main/js/bjtime.js?id=bjws4k
 #EXTINF:-1 tvg-name="北京卫视" tvg-logo="https://logo.jsdelivr.dpdns.org/img/北京卫视.png" group-title="🛥️北京频道",北京卫视
 javascript://https://wget.la/https://raw.githubusercontent.com/mytv-android/mytvJS/refs/heads/main/js/bjtime.js?id=bjws
@@ -1087,8 +1087,3 @@ rtmp://tv.lasatv.cn/channellive/lswlpd
 # ♻️Webview检测
 #EXTINF:-1 tvg-name="Webview检测" tvg-logo="https://logo.jsdelivr.dpdns.org/img/Webview.png" group-title="♻️Webview检测",Webview检测
 webview://https://passer-by.com/browser
-
-
-
-
-
