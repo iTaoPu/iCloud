@@ -275,6 +275,8 @@ webview://https://live.ipanda.com/zxwz/bmxs/index.shtml
 # 🚂江苏频道
 #EXTINF:-1 tvg-name="江苏卫视" tvg-logo="https://logo.jsdelivr.dpdns.org/img/江苏卫视.png" group-title="🚂江苏频道",江苏卫视
 webview://https://live.jstv.com
+#EXTINF:-1 tvg-name="江苏卫视" tvg-logo="https://logo.jsdelivr.dpdns.org/img/江苏卫视4K.png" group-title="🚂江苏频道",江苏卫视·4K超高清
+webview://https://live.jstv.com/?channelId=676
 #EXTINF:-1 tvg-name="江苏城市" tvg-logo="https://logo.jsdelivr.dpdns.org/img/Jiangsu2.png" group-title="🚂江苏频道",江苏城市
 webview://https://live.jstv.com/?channelId=669
 #EXTINF:-1 tvg-name="江苏综艺" tvg-logo="https://logo.jsdelivr.dpdns.org/img/Jiangsu3.png" group-title="🚂江苏频道",江苏综艺
@@ -1085,6 +1087,7 @@ rtmp://tv.lasatv.cn/channellive/lswlpd
 # ♻️Webview检测
 #EXTINF:-1 tvg-name="Webview检测" tvg-logo="https://logo.jsdelivr.dpdns.org/img/Webview.png" group-title="♻️Webview检测",Webview检测
 webview://https://passer-by.com/browser
+
 
 
 
