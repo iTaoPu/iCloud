@@ -66,7 +66,6 @@
 "logo":"https://icloud.jsdelivr.dpdns.org/STAGE/Cartoon_Police_Animation.gif",
 "lives":[
 {"name": "𝙇𝙚𝙒𝙖𝙣·Internet iTV","type": 0,"url": "https://itv.5iclub.dpdns.org/Internet_iTV.txt","playerType": 1,"epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}","logo": "https://logo.5iclub.dpdns.org/tv/{name}.png"},
-{"name": "𝙇𝙚𝙒𝙖𝙣·LiTV","type": 0,"url": "https://itv.5iclub.dpdns.org/LiTV.txt","playerType": 1,"epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}","logo": "https://logo.5iclub.dpdns.org/tv/{name}.png"},
-{"name": "𝙇𝙚𝙒𝙖𝙣·Keep iTV","type": 0,"url": "https://itv.5iclub.dpdns.org/Keep_iTV.txt","playerType": 1,"epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}","logo": "https://logo.5iclub.dpdns.org/tv/{name}.png"}
+{"name": "𝙇𝙚𝙒𝙖𝙣·LiTV","type": 0,"url": "https://itv.5iclub.dpdns.org/LiTV.txt","playerType": 1,"epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}","logo": "https://logo.5iclub.dpdns.org/tv/{name}.png"}
 ]
 }
