@@ -1091,7 +1091,7 @@ rtmp://tv.lasatv.cn/channellive/lswlpd
 webview://https://www.nmtv.cn/liveTv
 
 # 🛎️云南频道
-#EXTINF:-1 tvg-name="云南卫视" tvg-logo="https://logo.jsdelivr.dpdns.org/img/Yunnan..png" group-title="🛎️云南频道",云南卫视
+#EXTINF:-1 tvg-name="云南卫视" tvg-logo="https://logo.jsdelivr.dpdns.org/img/Yunnan.png" group-title="🛎️云南频道",云南卫视
 webview://https://www.yntv.cn/live.html
 
 # ♻️Webview检测
