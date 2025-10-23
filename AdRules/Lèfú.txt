@@ -1,4 +1,4 @@
-! Title: AdRules i叚娤.倖鍢 Blank List
+! Title: AdRules 樂鍢のとおり道 Blank List
 ! Homepage: https://i叚娤.倖鍢.net.cn
 ! Powerd by i叚娤.倖鍢
 ! Expires: irregularly (update frequency)
@@ -18,3 +18,4 @@
 @||*.ugreen.netlib.re^
 @||*.shrimp.hidns.co^
 @||*.ugreen.hidns.co^
+
