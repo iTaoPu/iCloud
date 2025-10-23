@@ -7,15 +7,14 @@
 ! Version: 1.1.1
 ! Update Date: 2025-10-23
 
-@||*.ugreen.pp.ua^
+@||ugreen.pp.ua^
 
-@||*.ugreen.us.kg^
-@||*.5iclub.us.kg^
-@||*.5iclub.dpdns.org^
-@||*.jsdelivr.dpdns.org^
+@||ugreen.us.kg^
+@||5iclub.us.kg^
+@||5iclub.dpdns.org^
+@||jsdelivr.dpdns.org^
 
-@||*.shrimp.netlib.re^
-@||*.ugreen.netlib.re^
-@||*.shrimp.hidns.co^
-@||*.ugreen.hidns.co^
-
+@||shrimp.netlib.re^
+@||ugreen.netlib.re^
+@||shrimp.hidns.co^
+@||ugreen.hidns.co^
