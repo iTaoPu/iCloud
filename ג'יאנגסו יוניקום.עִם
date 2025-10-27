@@ -161,7 +161,7 @@ http://122.96.52.98:8006/JS_CUCC/G_SHANDONG-CQ.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6n
 #EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.jsdelivr.dpdns.org/img/Shandong.png" tvg-name="山东卫视",山东卫视
 http://122.96.52.98:8006/JS_CUCC/SDWS.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEgJnugaB6lU2RiDy8HHtphWh6T6Tk%2FxC%2FR7C%2FVai0Y0n&p=GITV&area=JS_CUCC
 
-#EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.jsdelivr.dpdns.org/img/Heilongjiang.png" tvg-name="黑龙江卫视",黑龙江卫视  CQ
+#EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.jsdelivr.dpdns.org/img/Heilongjiang.png" tvg-name="黑龙江卫视",黑龙江卫视 CQ
 http://122.96.52.98:8006/JS_CUCC/G_HEILONGJIANG-CQ.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEjIJG6TGS8K9nHRTabedgo5tE8skulJrPPJnh%2Bpgatn9&p=GITV&area=JS_CUCC
 #EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.jsdelivr.dpdns.org/img/Heilongjiang.png" tvg-name="黑龙江卫视",黑龙江卫视 HD
 http://122.96.52.98:8006/JS_CUCC/HLJWS-HD.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEuQYFtMskgEdx9i0%2F4S2ZWELxkknW%2BHqbwwyg1PzUQok&p=GITV&area=JS_CUCC
@@ -186,10 +186,10 @@ http://122.96.52.98:8006/JS_CUCC/G_TIANJIN-CQ.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nn
 #EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.jsdelivr.dpdns.org/img/Tianjin.png" tvg-name="天津卫视",天津卫视
 http://122.96.52.98:8006/JS_CUCC/TJWS.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEpjTJQR1uuuqJkJgUr5HKn2h6T6Tk%2FxC%2FR7C%2FVai0Y0n&p=GITV&area=JS_CUCC
 
-#EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.jsdelivr.dpdns.org/img/Jiangxi.png" tvg-name="江西卫视",江西卫视
-http://122.96.52.98:8006/JS_CUCC/JXWS.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEs8TwUzD65tYkhvFWQxElCWh6T6Tk%2FxC%2FR7C%2FVai0Y0n&p=GITV&area=JS_CUCC
 #EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.jsdelivr.dpdns.org/img/Jiangxi.png" tvg-name="江西卫视",江西卫视 CQ
 http://122.96.52.98:8006/JS_CUCC/G_JIANGXI-CQ.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEjwe5POuS0%2FZquuTeN6RjT1Rh8qf%2BgGyioJpkBVK226g&p=GITV&area=JS_CUCC
+#EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.jsdelivr.dpdns.org/img/Jiangxi.png" tvg-name="江西卫视",江西卫视
+http://122.96.52.98:8006/JS_CUCC/JXWS.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEs8TwUzD65tYkhvFWQxElCWh6T6Tk%2FxC%2FR7C%2FVai0Y0n&p=GITV&area=JS_CUCC
 
 #EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.jsdelivr.dpdns.org/img/Hubei.png" tvg-name="湖北卫视",湖北卫视 CQ
 http://122.96.52.98:8006/JS_CUCC/G_HUBEI-CQ.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEhiwo1rxJM5kmI3wVOY8TOIQaHAEACuZbe%2FR8zzHoaHM&p=GITV&area=JS_CUCC
@@ -252,7 +252,7 @@ http://122.96.52.98:8006/JS_CUCC/G_YANBIAN.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtE
 
 # 🏰教育频道
 #EXTINF:-1 group-title="🏰教育频道" tvg-logo="https://logo.jsdelivr.dpdns.org/img/CETV1.png" tvg-name="CETV1",CETV-1 综合教育
-http://jscucc-livod.dispatcher.gitv.tv/gitv_live/G_CCTV-1/G_CCTV-1.m3u8?p=GITV&area=JS_CUCC
+http://122.96.52.98:8006/JS_CUCC/G_CETV-1.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEv1o35%2BVkhqZg4WpI44LgYQLxkknW%2BHqbwwyg1PzUQok&p=GITV&area=JS_CUCC
 #EXTINF:-1 group-title="🏰教育频道" tvg-logo="https://logo.jsdelivr.dpdns.org/img/CETV2.png" tvg-name="CETV2",CETV-2 空中课堂
 http://122.96.52.98:8006/JS_CUCC/G_CETV-2.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEgWtscwZsLIeCX4lNPPVSa8LxkknW%2BHqbwwyg1PzUQok&p=GITV&area=JS_CUCC
 #EXTINF:-1 group-title="🏰教育频道" tvg-logo="https://logo.jsdelivr.dpdns.org/img/CETV3.png" tvg-name="CETV3",CETV-3 教育服务
@@ -305,4 +305,3 @@ http://122.96.52.98:8006/JS_CUCC/G_NJYS.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEryO
 http://122.96.52.98:8006/JS_CUCC/G_NJSB.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEqlM1l%2BeoFKI8wnHz%2FUgbsbEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
 #EXTINF:-1 group-title="🛺南京频道" tvg-logo="https://logo.jsdelivr.dpdns.org/img/Nanjing6.png" tvg-name="南京少儿",南京少儿
 http://122.96.52.98:8006/JS_CUCC/G_NJSE.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtErV9ZZLHPB2iNJDmdQ9xIhzEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
-
