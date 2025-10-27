@@ -1,12 +1,12 @@
 {
-"spider": "https://icloud.jsdelivr.dpdns.org/STAGE/Orange.jar;md5;fd35d684cfbeb7ed76d53a16e29db42e",
+"spider": "https://icloud.jsdelivr.dpdns.org/STAGE/Orange.jar;md5;80d8f6a16e8fc3745fbbaaf6b07acdd8",
 "wallpaper": "https://bing.img.run/uhd.php",
 "warningText": "【樂玩公社】提示：📢长期维护切勿贩卖",
 
 "sites":[
 {"key":"豆瓣","name":"🍊橙宝宝┃𝙇𝙚𝙒𝙖𝙣","type": 3, "api": "csp_DouDouGuard","indexs":1,"searchable": 0,"quickSearch": 0,"changeable":0},
 {"key":"MyDrive","name":"🗂我的云盘┃我配置","type":3,"api":"csp_MyDriveGuard","changeable":0,"indexs":0,"searchable":1,"style":{"type":"oval"},"ext":{"Cloud-drive":"tvfan/Cloud-drive.txt"}},
-{"key":"玩偶","name":"👽玩偶哥哥┃4K弹幕","type":3,"api":"csp_WoGGGuard","timeout":30,"searchable":1,"quickSearch":1,"changeable":0, "ext": {"Cloud-drive":"tvfan/Cloud-drive.txt","from":"4k|auto","siteUrl":"https://www.wogg.com/","danMu":"弹"}},
+{"key":"玩偶","name":"👽玩偶哥哥┃4K弹幕","type":3,"api":"csp_WoGGGuard","timeout":30,"searchable":1,"quickSearch":1,"changeable":0, "ext": {"Cloud-drive":"tvfan/Cloud-drive.txt","from":"4k|auto"}},
 {"key":"YGP","name":"🚀叨观荐影┃预告片","type":3,"api":"csp_YGPGuard","searchable":0,"quickSearch":0,"changeable":0},
 {"key":"alllive","name":"📽️一直播┃直播","type":3,"api":"csp_AllliveGuard","playerType":2,"searchable":0,"quickSearch":0,"changeable":0},
 {"key":"seed","name":"💡聚剧剧┃三盘","type":3,"api":"csp_SeedhubGuard","changeable":0,"ext":"5++kwLhNYm9UrO9wh7Dl7eKamTee4s/5","searchable":1,"quickSearch":1,"changeable":0, "indexs":0,"style":{"type":"list"}},
@@ -24,7 +24,7 @@
 {"key":"下饭","name":"🍙下饭┃多线","type":3,"api":"csp_AppSxGuard","searchable":1,"quickSearch":1,"filterable":1,"ext":"rfOX1voDIQhH8epBwpmIsuStuSyZxtH332ksdImjS1xHcE9fpWVy8fNjc+8DhNI67j3SJZRGjnM="},
 {"key":"糯米","name":"🍓糯米┃多线","type":3,"api":"csp_NmyswvGuard","timeout":15,"searchable":1,"quickSearch":1,"changeable":1},
 //{"key":"即看","name":"🐻即看┃多线","type":3,"api":"csp_AppSxGuard","timeout":15,"searchable":1,"quickSearch":0,"changeable":0,"ext":"rfOX1voDIQhH8epBwtCFsub1+2maloq8lmJuL821WUsZJAZft2UtrrwhKK5Zxt1toWyFctBUmThhuDAjVuU="},
-{"key":"奥特","name":"🏝奥特┃多线","type": 3,"api":"csp_AueteGuard","timeout":15,"searchable":1,"quickSearch":1,"changeable":1,"ext":"https://auete.com/"},
+{"key":"奥特","name":"🏝奥特┃多线","type": 3,"api":"csp_AueteGuard","timeout":15,"searchable":1,"quickSearch":1,"changeable":1},
 {"key":"荐片","name":"🐭荐片┃P2P","type":3,"api":"csp_JPJGuard","timeout":15,"playerType":2,"searchable":1,"quickSearch":1,"changeable":0},
 {"key":"新6V","name":"🧲新6V┃磁力","type":3,"api":"csp_SixVGuard","timeout":15,"searchable":1,"quickSearch":1,"changeable":0,"ext": "https://www.xb6v.com/"},
 {"key":"Dm84","name":"🚌巴士┃动漫","type":3,"api":"csp_Dm84Guard","timeout":15,"searchable":1,"quickSearch":1,"changeable":1},
