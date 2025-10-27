@@ -31,12 +31,8 @@ http://iptv.huuc.edu.cn/hls/cctv6hd.m3u8
 http://iptv.huuc.edu.cn/hls/cctv7hd.m3u8
 #EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.jsdelivr.dpdns.org/img/CCTV8.png" tvg-name="CCTV8",CCTV-8·电视剧 HD
 http://iptv.huuc.edu.cn/hls/cctv8hd.m3u8
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.jsdelivr.dpdns.org/img/CCTV9.png" tvg-name="CCTV10",CCTV-9·纪录 HD
-http://iptv.huuc.edu.cn/hls/cctv9hd.m3u8
 #EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.jsdelivr.dpdns.org/img/CCTV10.png" tvg-name="CCTV10",CCTV-10·科教 HD
 http://iptv.huuc.edu.cn/hls/cctv10hd.m3u8
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.jsdelivr.dpdns.org/img/CCTV11.png" tvg-name="CCTV11",CCTV-11·戏曲 HD
-http://iptv.huuc.edu.cn/hls/cctv11hd.m3u8
 #EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.jsdelivr.dpdns.org/img/CCTV12.png" tvg-name="CCTV12",CCTV-12·社会与法 HD
 http://iptv.huuc.edu.cn/hls/cctv12hd.m3u8
 #EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.jsdelivr.dpdns.org/img/CCTV13.png" tvg-name="CCTV13",CCTV-13·新闻 HD
@@ -78,8 +74,6 @@ http://iptv.huuc.edu.cn/hls/jxhd.m3u8
 
 # 🗿北京频道
 #EXTINF:-1 tvg-name="北京文艺" tvg-logo="https://logo.jsdelivr.dpdns.org/img/Beijing3.png" group-title="🗿北京频道",BRTV·文艺 HD
-http://iptv.huuc.edu.cn/hls/btv1hd.m3u8
-#EXTINF:-1 tvg-name="北京文艺" tvg-logo="https://logo.jsdelivr.dpdns.org/img/Beijing3.png" group-title="🗿北京频道",BRTV·文艺 HD
 http://iptv.huuc.edu.cn/hls/btv2hd.m3u8
 #EXTINF:-1 tvg-name="北京影视" tvg-logo="https://logo.jsdelivr.dpdns.org/img/Beijing4.png" group-title="🗿北京频道",BRTV·影视 HD
 http://iptv.huuc.edu.cn/hls/btv4hd.m3u8
@@ -105,5 +99,6 @@ http://iptv.huuc.edu.cn/hls/startv.m3u8
 http://iptv.huuc.edu.cn/hls/channelv.m3u8
 #EXTINF:-1 tvg-name="StarSports" tvg-logo="https://logo.jsdelivr.dpdns.org/img/StarSports.png" group-title="🗺️特色频道",StarSports
 http://iptv.huuc.edu.cn/hls/starsports.m3u8
+
 
 
