@@ -1,6 +1,5 @@
 {"urls": 
         [
-        {"url":"https://icloud.jsdelivr.dpdns.org/STAGE/Orange.json","name":"🍊橙宝宝.𝙇𝙚𝙒𝙖𝙣"},
         {"url":"http://www.xn--sss604efuw.com/tv","name":"🍙饭太硬.COM"},
         {"url":"https://xn--8owq8u.com/tv","name":"📽𝘿𝙪𝙃𝙚影视.COM"},
         {"url":"http://tvbox.xn--4kq62z5rby2qupq9ub.top","name":"🐮王二小放牛娃.TOP"},
@@ -19,4 +18,5 @@
         {"url":"https://fastly.jsdelivr.net/gh/anaer/Meow@main/meow.json","name":"🐱喵呜君.GIT"},
         {"url":"https://fastly.jsdelivr.net/gh/yoursmile66/TVBox@main/XC.json","name":"🍋南风微笑.GIT"}
         ]
+
 }
