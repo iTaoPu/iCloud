@@ -4,9 +4,9 @@
 ! Expires: irregularly (update frequency)
 ! Description: 苦事不宣，乐事不扬，闲事不管！
 ! ------------------------------------
-! Version: 1.6.6
-! Update Date: 2025-10-27
-! Total lines: 691
+! Version: 1.6.8
+! Update Date: 2025-11-14
+! Total lines: 689
 
 ||789.kakamobi.cn^
 ||a1.alibabausercontent.com^
@@ -593,7 +593,6 @@
 ||getui.com^
 ||getui.cn^
 ||umeng.com^
-||shytkjgs.com^
 ||cainiao-app-logs.cn-zhangjiakou.dualstack.log.aliyuncs.com^
 ||adashx.ut.cainiao.com^
 ||accscdn.m.taobao.com^
@@ -663,7 +662,6 @@
 ||openapi.vivo.com.cn^
 ||adnetstatic.vivo.com.cn^
 ||risk-fp-openapi.vivo.com.cn^
-||findermp.video.qq.com^
 ||appstoreort-stsdk.vivo.com.cn^
 ||shua-music.shinet.cn^
 ||onrt-stsdk.vivo.com.cn^
