@@ -13,11 +13,10 @@
         {"url":"https://tvbox.catvod.com/catvod.json","name":"⚓猫视听.COM"},
         {"url":"http://ok321.top/ok","name":"🦥OK猫影.TOP"},
         {"url":"https://9xi4o.tk/tvbox.json","name":"🥨盐枭株式.TK"},
-        {"url":"https://raw.gh.registry.cyou/cluntop/tvbox/main/box.json","name":"🌦晨雨律诗.GIT"},
-        {"url":"https://raw.gh.registry.cyou/n3rddd/N3RD/master/JN/lem.json","name":"🍋雷蒙影视.GIT"},
-        {"url":"https://raw.gh.registry.cyou/anaer/Meow/main/meow.json","name":"🐱喵呜君.GIT"},
-        {"url":"https://raw.gh.registry.cyou/yoursmile66/TVBox/main/XC.json","name":"🍋南风微笑.GIT"}
+        {"url":"https://cdn.jsdelivr.net/gh/cluntop/tvbox@main/box.json","name":"🌦晨雨律诗.GIT"},
+        {"url":"https://cdn.jsdelivr.net/gh/n3rddd/N3RD@master/JN/lem.json","name":"🍋雷蒙影视.GIT"},
+        {"url":"https://cdn.jsdelivr.net/gh/anaer/Meow@main/meow.json","name":"🐱喵呜君.GIT"},
+        {"url":"https://cdn.jsdelivr.net/gh/yoursmile66/TVBox@main/XC.json","name":"🍋南风微笑.GIT"}
         ]
 
 }
-
