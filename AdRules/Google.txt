@@ -4,9 +4,9 @@
 ! Expires: irregularly (update frequency)
 ! Description: Completely blocks all Google-related domains (including YouTube)
 ! ------------------------------------
-! Version: 1.0.14.57
-! Update Date:  2025-10-14
-! Total lines: 1633
+! Version: 1.0.14.58
+! Update Date:  2025-11-15
+! Total lines: 1638
 
 ||adgoogle.net^
 ||crashlytics.com^
@@ -20,7 +20,6 @@
 ||googletagmanager.com^
 ||googletagservices.com^
 ||googlevads-cn.com^
-||speechs3proto*-pa.googleapis.com^
 ||android.com^
 ||kormo.com^
 ||rivet.area120.com^
@@ -1641,3 +1640,9 @@
 ||wwn-api.nest.com^
 ||www.nest.com^
 ||jibemobile.com^
+||c.tenor.com^
+||g.tenor.com^
+||media.tenor.co^
+||media.tenor.com^
+||media1.tenor.co^
+||media1.tenor.com^
