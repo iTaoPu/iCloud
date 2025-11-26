@@ -1,12 +1,12 @@
-#EXTM3U x-tvg-url="https://itv.sspai.pp.ua/epg.xml" catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}"
+#EXTM3U x-tvg-url="https://itv.sspai.dpdns.org/epg.xml" catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}"
 
 # 🦧温馨提示
 #EXTINF:-1 tvg-id="温馨提示" tvg-name="温馨提示" tvg-logo="https://logo.sspai.dpdns.org/img/温馨提示.png" group-title="🦧温馨提示",温馨提示
-https://iCloud.sspai.pp.ua/video/Disclaimer.mp4
+https://iCloud.sspai.dpdns.org/video/Disclaimer.mp4
 #EXTINF:-1 tvg-id="谨防诈骗" tvg-name="谨防诈骗" tvg-logo="https://logo.sspai.dpdns.org/img/谨防诈骗.png" group-title="🦧温馨提示",谨防诈骗
-https://iCloud.sspai.pp.ua/video/Disclaimer.mp4
+https://iCloud.sspai.dpdns.org/video/Disclaimer.mp4
 #EXTINF:-1 tvg-id="禁止蕉绿" tvg-name="禁止蕉绿" tvg-logo="https://logo.sspai.dpdns.org/img/禁止蕉绿.png" group-title="🦧温馨提示",禁止蕉绿
-https://iCloud.sspai.pp.ua/video/Disclaimer.mp4
+https://iCloud.sspai.dpdns.org/video/Disclaimer.mp4
 #EXTINF:-1,tvg-id="重温经典" tvg-name="重温经典" tvg-logo="https://logo.sspai.dpdns.org/img/重温经典.png" group-title="🦧温馨提示",重温经典 ²⁰²⁵
 http://php.jdshipin.com/TVOD/iptv.php?id=cwjd
 #EXTINF:-1,tvg-id="重温经典" tvg-name="重温经典" tvg-logo="https://logo.sspai.dpdns.org/img/重温经典.png" group-title="🦧温馨提示",重温经典 ²⁰²⁶
