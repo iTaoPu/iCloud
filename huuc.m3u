@@ -6,7 +6,7 @@ https://cloudflare.tv/hls/live.m3u8
 #EXTINF:-1 tvg-id="谨防诈骗" tvg-name="谨防诈骗" tvg-logo="https://logo.sspai.dpdns.org/img/谨防诈骗.png" group-title="🦧温馨提示",谨防诈骗
 https://cloudflare.tv/hls/live.m3u8
 #EXTINF:-1 tvg-id="禁止蕉绿" tvg-name="禁止蕉绿" tvg-logo="https://logo.sspai.dpdns.org/img/禁止蕉绿.png" group-title="🦧温馨提示",禁止蕉绿
-https://d2wh06mmk97552.cloudfront.net/playlist/bamusaAAA-bamus-lovenature-lg/playlist.m3u8
+https://cloudflare.tv/hls/live.m3u8
 #EXTINF:-1,tvg-id="重温经典" tvg-name="重温经典" tvg-logo="https://logo.sspai.dpdns.org/img/重温经典.png" group-title="🦧温馨提示",重温经典 ²⁰²⁵
 http://php.jdshipin.com/TVOD/iptv.php?id=cwjd
 #EXTINF:-1,tvg-id="重温经典" tvg-name="重温经典" tvg-logo="https://logo.sspai.dpdns.org/img/重温经典.png" group-title="🦧温馨提示",重温经典 ²⁰²⁶
@@ -99,6 +99,7 @@ http://iptv.huuc.edu.cn/hls/startv.m3u8
 http://iptv.huuc.edu.cn/hls/channelv.m3u8
 #EXTINF:-1 tvg-name="StarSports" tvg-logo="https://logo.sspai.dpdns.org/img/StarSports.png" group-title="🗺️特色频道",StarSports
 http://iptv.huuc.edu.cn/hls/starsports.m3u8
+
 
 
 
