@@ -1,103 +1,103 @@
-#EXTM3U x-tvg-url="https://itv.sspai.netlib.re/epg.xml" catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}"
+#EXTM3U x-tvg-url="https://itv.sspai.dpdns.org/epg.xml" catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}"
 
 # 🦧温馨提示
-#EXTINF:-1 tvg-id="温馨提示" tvg-name="温馨提示" tvg-logo="https://logo.sspai.netlib.re/img/温馨提示.png" group-title="🦧温馨提示",温馨提示
+#EXTINF:-1 tvg-id="温馨提示" tvg-name="温馨提示" tvg-logo="https://logo.sspai.pp.ua/img/温馨提示.png" group-title="🦧温馨提示",温馨提示
 https://cloudflare.tv/hls/live.m3u8
-#EXTINF:-1 tvg-id="谨防诈骗" tvg-name="谨防诈骗" tvg-logo="https://logo.sspai.netlib.re/img/谨防诈骗.png" group-title="🦧温馨提示",谨防诈骗
+#EXTINF:-1 tvg-id="谨防诈骗" tvg-name="谨防诈骗" tvg-logo="https://logo.sspai.pp.ua/img/谨防诈骗.png" group-title="🦧温馨提示",谨防诈骗
 https://cloudflare.tv/hls/live.m3u8
-#EXTINF:-1 tvg-id="禁止蕉绿" tvg-name="禁止蕉绿" tvg-logo="https://logo.sspai.netlib.re/img/禁止蕉绿.png" group-title="🦧温馨提示",禁止蕉绿
+#EXTINF:-1 tvg-id="禁止蕉绿" tvg-name="禁止蕉绿" tvg-logo="https://logo.sspai.pp.ua/img/禁止蕉绿.png" group-title="🦧温馨提示",禁止蕉绿
 https://cloudflare.tv/hls/live.m3u8
-#EXTINF:-1,tvg-id="重温经典" tvg-name="重温经典" tvg-logo="https://logo.sspai.netlib.re/img/重温经典.png" group-title="🦧温馨提示",重温经典 ²⁰²⁵
+#EXTINF:-1,tvg-id="重温经典" tvg-name="重温经典" tvg-logo="https://logo.sspai.pp.ua/img/重温经典.png" group-title="🦧温馨提示",重温经典 ²⁰²⁵
 http://php.jdshipin.com/TVOD/iptv.php?id=cwjd
-#EXTINF:-1,tvg-id="重温经典" tvg-name="重温经典" tvg-logo="https://logo.sspai.netlib.re/img/重温经典.png" group-title="🦧温馨提示",重温经典 ²⁰²⁶
+#EXTINF:-1,tvg-id="重温经典" tvg-name="重温经典" tvg-logo="https://logo.sspai.pp.ua/img/重温经典.png" group-title="🦧温馨提示",重温经典 ²⁰²⁶
 https://other.chinacert.cftest5.cn/cwjd.m3u8
 
 # 📺央视频道
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.sspai.netlib.re/img/CCTV1.png" tvg-name="CCTV1",CCTV-1·综合 HD
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.sspai.pp.ua/img/CCTV1.png" tvg-name="CCTV1",CCTV-1·综合 HD
 http://iptv.huuc.edu.cn/hls/cctv1hd.m3u8
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.sspai.netlib.re/img/CCTV2.png" tvg-name="CCTV2",CCTV-2·财经 HD
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.sspai.pp.ua/img/CCTV2.png" tvg-name="CCTV2",CCTV-2·财经 HD
 http://iptv.huuc.edu.cn/hls/cctv2hd.m3u8
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.sspai.netlib.re/img/CCTV3.png" tvg-name="CCTV3",CCTV-3·综艺 HD
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.sspai.pp.ua/img/CCTV3.png" tvg-name="CCTV3",CCTV-3·综艺 HD
 http://iptv.huuc.edu.cn/hls/cctv3hd.m3u8
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.sspai.netlib.re/img/CCTV4.png" tvg-name="CCTV4",CCTV-4·中文国际 HD
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.sspai.pp.ua/img/CCTV4.png" tvg-name="CCTV4",CCTV-4·中文国际 HD
 http://iptv.huuc.edu.cn/hls/cctv4hd.m3u8
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.sspai.netlib.re/img/CCTV5.png" tvg-name="CCTV5",CCTV-5·体育 HD
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.sspai.pp.ua/img/CCTV5.png" tvg-name="CCTV5",CCTV-5·体育 HD
 http://iptv.huuc.edu.cn/hls/cctv5hd.m3u8
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.sspai.netlib.re/img/CCTV5plus.png" tvg-name="CCTV5+",CCTV5+·体育赛事 HD
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.sspai.pp.ua/img/CCTV5plus.png" tvg-name="CCTV5+",CCTV5+·体育赛事 HD
 http://iptv.huuc.edu.cn/hls/cctv5phd.m3u8
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.sspai.netlib.re/img/CCTV6.png" tvg-name="CCTV6",CCTV-6·电影 HD
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.sspai.pp.ua/img/CCTV6.png" tvg-name="CCTV6",CCTV-6·电影 HD
 http://iptv.huuc.edu.cn/hls/cctv6hd.m3u8
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.sspai.netlib.re/img/CCTV7.png" tvg-name="CCTV7",CCTV-7·国防军事 HD
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.sspai.pp.ua/img/CCTV7.png" tvg-name="CCTV7",CCTV-7·国防军事 HD
 http://iptv.huuc.edu.cn/hls/cctv7hd.m3u8
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.sspai.netlib.re/img/CCTV8.png" tvg-name="CCTV8",CCTV-8·电视剧 HD
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.sspai.pp.ua/img/CCTV8.png" tvg-name="CCTV8",CCTV-8·电视剧 HD
 http://iptv.huuc.edu.cn/hls/cctv8hd.m3u8
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.sspai.netlib.re/img/CCTV10.png" tvg-name="CCTV10",CCTV-10·科教 HD
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.sspai.pp.ua/img/CCTV10.png" tvg-name="CCTV10",CCTV-10·科教 HD
 http://iptv.huuc.edu.cn/hls/cctv10hd.m3u8
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.sspai.netlib.re/img/CCTV12.png" tvg-name="CCTV12",CCTV-12·社会与法 HD
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.sspai.pp.ua/img/CCTV12.png" tvg-name="CCTV12",CCTV-12·社会与法 HD
 http://iptv.huuc.edu.cn/hls/cctv12hd.m3u8
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.sspai.netlib.re/img/CCTV13.png" tvg-name="CCTV13",CCTV-13·新闻 HD
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.sspai.pp.ua/img/CCTV13.png" tvg-name="CCTV13",CCTV-13·新闻 HD
 http://iptv.huuc.edu.cn/hls/cctv13hd.m3u8
-#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.sspai.netlib.re/img/CCTV14.png" tvg-name="CCTV14",CCTV-14·少儿 HD
+#EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.sspai.pp.ua/img/CCTV14.png" tvg-name="CCTV14",CCTV-14·少儿 HD
 http://iptv.huuc.edu.cn/hls/cctv14hd.m3u8
 
 # 📡卫视频道
-#EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.sspai.netlib.re/img/Beijing.png" tvg-name="北京卫视",北京卫视 HD
+#EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.sspai.pp.ua/img/Beijing.png" tvg-name="北京卫视",北京卫视 HD
 http://iptv.huuc.edu.cn/hls/btv1hd.m3u8
-#EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.sspai.netlib.re/img/Hunan.png" tvg-name="湖南卫视",湖南卫视 HD
+#EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.sspai.pp.ua/img/Hunan.png" tvg-name="湖南卫视",湖南卫视 HD
 http://iptv.huuc.edu.cn/hls/hunanhd.m3u8
-#EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.sspai.netlib.re/img/Zhejiang.png" tvg-name="浙江卫视",浙江卫视 HD
+#EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.sspai.pp.ua/img/Zhejiang.png" tvg-name="浙江卫视",浙江卫视 HD
 http://iptv.huuc.edu.cn/hls/zjhd.m3u8
-#EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.sspai.netlib.re/img/Jiangsu.png" tvg-name="江苏卫视",江苏卫视 HD
+#EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.sspai.pp.ua/img/Jiangsu.png" tvg-name="江苏卫视",江苏卫视 HD
 http://iptv.huuc.edu.cn/hls/jshd.m3u8
-#EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.sspai.netlib.re/img/Dongfang.png" tvg-name="东方卫视",东方卫视 HD
+#EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.sspai.pp.ua/img/Dongfang.png" tvg-name="东方卫视",东方卫视 HD
 http://iptv.huuc.edu.cn/hls/dfhd.m3u8
-#EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.sspai.netlib.re/img/Anhui.png" tvg-name="安徽卫视",安徽卫视 HD
+#EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.sspai.pp.ua/img/Anhui.png" tvg-name="安徽卫视",安徽卫视 HD
 http://iptv.huuc.edu.cn/hls/ahhd.m3u8
-#EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.sspai.netlib.re/img/Heilongjiang.png" tvg-name="黑龙江卫视",黑龙江卫视 HD
+#EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.sspai.pp.ua/img/Heilongjiang.png" tvg-name="黑龙江卫视",黑龙江卫视 HD
 http://iptv.huuc.edu.cn/hls/hljhd.m3u8
-#EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.sspai.netlib.re/img/Liaoning.png" tvg-name="辽宁卫视",辽宁卫视 HD
+#EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.sspai.pp.ua/img/Liaoning.png" tvg-name="辽宁卫视",辽宁卫视 HD
 http://iptv.huuc.edu.cn/hls/lnhd.m3u8
-#EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.sspai.netlib.re/img/Shenzhen.png" tvg-name="深圳卫视",深圳卫视 HD
+#EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.sspai.pp.ua/img/Shenzhen.png" tvg-name="深圳卫视",深圳卫视 HD
 http://iptv.huuc.edu.cn/hls/szhd.m3u8
-#EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.sspai.netlib.re/img/Hubei.png" tvg-name="湖北卫视",湖北卫视 HD
+#EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.sspai.pp.ua/img/Hubei.png" tvg-name="湖北卫视",湖北卫视 HD
 http://iptv.huuc.edu.cn/hls/hbhd.m3u8
-#EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.sspai.netlib.re/img/Shandong.png" tvg-name="山东卫视",山东卫视 HD
+#EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.sspai.pp.ua/img/Shandong.png" tvg-name="山东卫视",山东卫视 HD
 http://iptv.huuc.edu.cn/hls/sdhd.m3u8
-#EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.sspai.netlib.re/img/Chongqing.png" tvg-name="重庆卫视",重庆卫视 HD
+#EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.sspai.pp.ua/img/Chongqing.png" tvg-name="重庆卫视",重庆卫视 HD
 http://iptv.huuc.edu.cn/hls/cqhd.m3u8
-#EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.sspai.netlib.re/img/Xinjiang.png" tvg-name="四川卫视",四川卫视 HD
+#EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.sspai.pp.ua/img/Xinjiang.png" tvg-name="四川卫视",四川卫视 HD
 http://iptv.huuc.edu.cn/hls/schd.m3u8
-#EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.sspai.netlib.re/img/Dongnan.png" tvg-name="东南卫视",东南卫视 HD
+#EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.sspai.pp.ua/img/Dongnan.png" tvg-name="东南卫视",东南卫视 HD
 http://iptv.huuc.edu.cn/hls/dnhd.m3u8
-#EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.sspai.netlib.re/img/Jiangxi.png" tvg-name="江西卫视",江西卫视 HD
+#EXTINF:-1 group-title="📡卫视频道" tvg-logo="https://logo.sspai.pp.ua/img/Jiangxi.png" tvg-name="江西卫视",江西卫视 HD
 http://iptv.huuc.edu.cn/hls/jxhd.m3u8
 
 # 🗿北京频道
-#EXTINF:-1 tvg-name="北京文艺" tvg-logo="https://logo.sspai.netlib.re/img/Beijing3.png" group-title="🗿北京频道",BRTV·文艺 HD
+#EXTINF:-1 tvg-name="北京文艺" tvg-logo="https://logo.sspai.pp.ua/img/Beijing3.png" group-title="🗿北京频道",BRTV·文艺 HD
 http://iptv.huuc.edu.cn/hls/btv2hd.m3u8
-#EXTINF:-1 tvg-name="北京影视" tvg-logo="https://logo.sspai.netlib.re/img/Beijing4.png" group-title="🗿北京频道",BRTV·影视 HD
+#EXTINF:-1 tvg-name="北京影视" tvg-logo="https://logo.sspai.pp.ua/img/Beijing4.png" group-title="🗿北京频道",BRTV·影视 HD
 http://iptv.huuc.edu.cn/hls/btv4hd.m3u8
-#EXTINF:-1 tvg-name="北京新闻" tvg-logo="https://logo.sspai.netlib.re/img/Beijing1.png" group-title="🗿北京频道",BRTV·新闻 HD
+#EXTINF:-1 tvg-name="北京新闻" tvg-logo="https://logo.sspai.pp.ua/img/Beijing1.png" group-title="🗿北京频道",BRTV·新闻 HD
 http://iptv.huuc.edu.cn/hls/btv9hd.m3u8
-#EXTINF:-1 tvg-name="北京体育休闲" tvg-logo="https://logo.sspai.netlib.re/img/Beijing6.png" group-title="🗿北京频道",BRTV·体育休闲 HD
+#EXTINF:-1 tvg-name="北京体育休闲" tvg-logo="https://logo.sspai.pp.ua/img/Beijing6.png" group-title="🗿北京频道",BRTV·体育休闲 HD
 http://iptv.huuc.edu.cn/hls/btv11hd.m3u8
 
 # 🗺️特色频道
-#EXTINF:-1 tvg-name="凤凰中文" tvg-logo="https://logo.sspai.netlib.re/img/Phoenix1.png" group-title="🗺️特色频道",凤凰卫视·中文
+#EXTINF:-1 tvg-name="凤凰中文" tvg-logo="https://logo.sspai.pp.ua/img/Phoenix1.png" group-title="🗺️特色频道",凤凰卫视·中文
 http://iptv.huuc.edu.cn/hls/fhzw.m3u8
-#EXTINF:-1 tvg-name="凤凰资讯" tvg-logo="https://logo.sspai.netlib.re/img/Phoenix2.png" group-title="🗺️特色频道",凤凰卫视·资讯
+#EXTINF:-1 tvg-name="凤凰资讯" tvg-logo="https://logo.sspai.pp.ua/img/Phoenix2.png" group-title="🗺️特色频道",凤凰卫视·资讯
 http://iptv.huuc.edu.cn/hls/fhzx.m3u8
-#EXTINF:-1 tvg-name="凤凰电影" tvg-logo="https://logo.sspai.netlib.re/img/Phoenix4.png" group-title="🗺️特色频道",凤凰卫视·电影
+#EXTINF:-1 tvg-name="凤凰电影" tvg-logo="https://logo.sspai.pp.ua/img/Phoenix4.png" group-title="🗺️特色频道",凤凰卫视·电影
 http://iptv.huuc.edu.cn/hls/fhdy.m3u8
-#EXTINF:-1 tvg-name="Discovery" tvg-logo="https://logo.sspai.netlib.re/img/Discovery.png" group-title="🗺️特色频道",Discovery
+#EXTINF:-1 tvg-name="Discovery" tvg-logo="https://logo.sspai.pp.ua/img/Discovery.png" group-title="🗺️特色频道",Discovery
 http://iptv.huuc.edu.cn/hls/discovery.m3u8
-#EXTINF:-1 tvg-name="Natgeo" tvg-logo="https://logo.sspai.netlib.re/img/NATGEO.png" group-title="🗺️特色频道",国家地理
+#EXTINF:-1 tvg-name="Natgeo" tvg-logo="https://logo.sspai.pp.ua/img/NATGEO.png" group-title="🗺️特色频道",国家地理
 http://iptv.huuc.edu.cn/hls/natlgeo.m3u8
-#EXTINF:-1 tvg-name="Startv" tvg-logo="https://logo.sspai.netlib.re/img/Startv.png" group-title="🗺️特色频道",星空卫视
+#EXTINF:-1 tvg-name="Startv" tvg-logo="https://logo.sspai.pp.ua/img/Startv.png" group-title="🗺️特色频道",星空卫视
 http://iptv.huuc.edu.cn/hls/startv.m3u8
-#EXTINF:-1 tvg-name="Channel [V]" tvg-logo="https://logo.sspai.netlib.re/img/ChannelV.png" group-title="🗺️特色频道",Channel [V]
+#EXTINF:-1 tvg-name="Channel [V]" tvg-logo="https://logo.sspai.pp.ua/img/ChannelV.png" group-title="🗺️特色频道",Channel [V]
 http://iptv.huuc.edu.cn/hls/channelv.m3u8
-#EXTINF:-1 tvg-name="StarSports" tvg-logo="https://logo.sspai.netlib.re/img/StarSports.png" group-title="🗺️特色频道",StarSports
+#EXTINF:-1 tvg-name="StarSports" tvg-logo="https://logo.sspai.pp.ua/img/StarSports.png" group-title="🗺️特色频道",StarSports
 http://iptv.huuc.edu.cn/hls/starsports.m3u8
 
 
