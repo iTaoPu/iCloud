@@ -14,7 +14,7 @@ https://other.chinacert.cftest5.cn/cwjd.m3u8
 
 # 📺央视频道
 #EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.sspai.pp.ua/img/CCTV1.png" tvg-name="CCTV1",CCTV-1·综合 CQ
-http://122.96.52.98:8006/JS_CUCC/G_CCTV-1-CQ.m3u8?p=GITV&area=JS_CUCC
+http://122.96.52.98:8006/JS_CUCC/G_CCTV-1-CQ.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEkAFVn1RP2d2uoo%2Foo97iAsu0HPDaI8IXtpvkDaFJ1bH&p=GITV&area=JS_CUCC
 #EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.sspai.pp.ua/img/CCTV1.png" tvg-name="CCTV1",CCTV-1·综合
 http://122.96.52.98:8006/JS_CUCC/G_CCTV-1.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEr0O33cTzHngKVeC%2BpkEGGAYUAl3uT6KyhhyA3GPqkYe&p=GITV&area=JS_CUCC
 
@@ -305,5 +305,6 @@ http://122.96.52.98:8006/JS_CUCC/G_NJYS.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEryO
 http://122.96.52.98:8006/JS_CUCC/G_NJSB.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEqlM1l%2BeoFKI8wnHz%2FUgbsbEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
 #EXTINF:-1 group-title="🛺南京频道" tvg-logo="https://logo.sspai.pp.ua/img/Nanjing6.png" tvg-name="南京少儿",南京少儿
 http://122.96.52.98:8006/JS_CUCC/G_NJSE.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtErV9ZZLHPB2iNJDmdQ9xIhzEl4iMNl0LfXN60kch0at8&p=GITV&area=JS_CUCC
+
 
 
