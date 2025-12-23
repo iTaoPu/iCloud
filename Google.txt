@@ -4,9 +4,9 @@
 ! Expires: irregularly (update frequency)
 ! Description: Completely blocks all Google-related domains (including YouTube)
 ! ------------------------------------
-! Version: 1.0.14.58
-! Update Date:  2025-11-15
-! Total lines: 1638
+! Version: 1.0.14.59
+! Update Date:  2025-12-28
+! Total lines: 1640
 
 ||adgoogle.net^
 ||crashlytics.com^
@@ -31,6 +31,7 @@
 ||2mdn.net^
 ||agnss.goog^
 ||ai.com^
+||antigravity.google^
 ||apigee.com^
 ||apigee.net^
 ||app-measurement.com^
@@ -72,6 +73,7 @@
 ||google.ac^
 ||google.ad^
 ||google.ae^
+||google.ai^
 ||google.al^
 ||google.am^
 ||google.as^
