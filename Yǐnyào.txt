@@ -6,7 +6,10 @@
 ! ------------------------------------
 ! Version: 1.9.8.7-Final
 ! Update Date: 1987-08-22
-! Total lines: 13
+! Total lines: 14
+
+# VLink ✯ 國內鏈接/二維碼 ✯
+@@||vlink.cc^
 
 # Cloudflare 蜂巢·隱曜
 @@||sspai.net.cn^
@@ -16,6 +19,7 @@
 @@||ugreen.us.kg^
 @@||ugreen.hidns.co^
 @@||7.c.1.1.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa^
+
 # Cloudflare 蜂巢·靖宸
 @@||ifanr.pp.ua^
 @@||5iclub.us.kg^
