@@ -1,4 +1,4 @@
-! Title: AdRules 隱曜がく山道 iTLD List
+! Title: AdRules ! 隱曜がく山道 iTLD List
 ! Homepage: https://i叚娤.倖鍢.net.cn
 ! Powerd by i叚娤.倖鍢
 ! Expires: irregularly (update frequency)
@@ -16,10 +16,10 @@
 @@||ugreen.us.kg^
 @@||ugreen.hidns.co^
 @@||7.c.1.1.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa^
-# Cloudflare 菜鳥驛站
+# Cloudflare 蜂巢·靖宸
+@@||ifanr.pp.ua^
 @@||5iclub.us.kg^
 @@||5iclub.dpdns.org^
-@@||ifanr.pp.ua^
 @@||jsdelivr.dpdns.org^
 @@||shrimp.hidns.co^
 @@||7.e.a.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa^
