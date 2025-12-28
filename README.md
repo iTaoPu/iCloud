@@ -18,4 +18,7 @@
 ### 💡致谢：
 - GitHub及互联网其他资源[`特别感谢`]
 
+<p align="center">
+  <img src="https://iTaoPu.Github.io/言家稗子-标准色版.png" alt="微信公眾號" />
+</p>
 
