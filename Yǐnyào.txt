@@ -11,6 +11,9 @@
 # VLink ✯ 國內鏈接/二維碼 ✯
 @@||vlink.cc^
 
+# CDN ✯ 快速/可靠/自动化 ✯
+@@||jsdelivr.net^
+
 # Cloudflare 蜂巢·隱曜
 @@||sspai.net.cn^
 @@||sspai.pp.ua^
