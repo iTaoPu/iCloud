@@ -4,9 +4,9 @@
 ! Expires: irregularly (update frequency)
 ! Description: Completely blocks all Google-related domains (including YouTube)
 ! ------------------------------------
-! Version: 1.0.14.60
-! Update Date:  2025-12-24
-! Total lines: 1641
+! Version: 1.0.14.61
+! Update Date:  2025-12-29
+! Total lines: 1640
 
 ||adgoogle.net^
 ||crashlytics.com^
@@ -307,7 +307,6 @@
 ||loon.com^
 ||near.by^
 ||ns-tld1.charlestonroadregistry.com^
-||papy.co.jp^
 ||partnerplustoolkit.com^
 ||partners-aunz.com^
 ||partnersaunz.com^
