@@ -6,10 +6,7 @@
 ! ------------------------------------
 ! Version: 1.9.8.7-Final
 ! Update Date: 1987-08-22
-! Total lines: 14
-
-# VLink ✯ 國內鏈接/二維碼 ✯
-@@||vlink.cc^
+! Total lines: 15
 
 # CDN ✯ 快速/可靠/自动化 ✯
 @@||jsdelivr.net^
