@@ -6,10 +6,7 @@
 ! ------------------------------------
 ! Version: 1.9.8.7-Final
 ! Update Date: 1987-08-22
-! Total lines: 15
-
-# CDN ✯ 快速/可靠/自动化 ✯
-@@||jsdelivr.net^
+! Total lines: 19
 
 # Cloudflare 蜂巢·隱曜
 @@||sspai.net.cn^
@@ -19,6 +16,8 @@
 @@||ugreen.us.kg^
 @@||ugreen.hidns.co^
 @@||7.c.1.1.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa^
+@@||sspai.indevs.in^
+@@||sspai.us.ci^
 
 # Cloudflare 蜂巢·靖宸
 @@||ifanr.pp.ua^
@@ -27,3 +26,7 @@
 @@||jsdelivr.dpdns.org^
 @@||shrimp.hidns.co^
 @@||7.e.a.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa^
+@@||5iclub.indevs.in^
+@@||ifanr.indevs.in^
+@@||5iclub.us.ci^
+@@||ifanr.us.ci^
