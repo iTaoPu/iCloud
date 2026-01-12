@@ -5,8 +5,8 @@
 ! Description: 时间在变，人也在变，不管我们如何努力，回不去就是回不去。
 ! ------------------------------------
 ! Version: 1.9.8.7-Final
-! Update Date: 1987-08-22
-! Total lines: 19
+! Update Date: 2026
+! Total lines: 16
 
 # Cloudflare 蜂巢·隱曜
 @@||sspai.net.cn^
@@ -16,7 +16,6 @@
 @@||ugreen.us.kg^
 @@||ugreen.hidns.co^
 @@||7.c.1.1.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa^
-@@||sspai.indevs.in^
 @@||sspai.us.ci^
 
 # Cloudflare 蜂巢·靖宸
@@ -26,7 +25,5 @@
 @@||jsdelivr.dpdns.org^
 @@||shrimp.hidns.co^
 @@||7.e.a.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa^
-@@||5iclub.indevs.in^
-@@||ifanr.indevs.in^
 @@||5iclub.us.ci^
 @@||ifanr.us.ci^
