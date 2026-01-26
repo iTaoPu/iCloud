@@ -6,7 +6,7 @@
 ! ------------------------------------
 ! Version: 1.9.8.7-Final
 ! Update Date: 2026
-! Total lines: 16
+! Total lines: 19
 
 # Cloudflare 蜂巢·隱曜
 @@||sspai.net.cn^
@@ -17,6 +17,7 @@
 @@||ugreen.hidns.co^
 @@||7.c.1.1.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa^
 @@||sspai.us.ci^
+@@||sspai.indevs.in^
 
 # Cloudflare 蜂巢·靖宸
 @@||ifanr.pp.ua^
@@ -27,3 +28,5 @@
 @@||7.e.a.0.4.2.0.0.0.7.4.0.1.0.0.2.ip6.arpa^
 @@||5iclub.us.ci^
 @@||ifanr.us.ci^
+@@||5iclub.indevs.in^
+@@||ifanr.indevs.in^
