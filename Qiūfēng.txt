@@ -5,8 +5,8 @@
 ! Description: 极致的体积控制，超高的命中率，极低的硬件要求！
 ! ------------------------------------
 ! Version: 1.6.9-release
-! Update Date: 2025-12-24
-! Total lines: 902
+! Update Date: 2026-01-26
+! Total lines: 901
 
 ||1500020991.vodplayer.wxamedia.com^
 ||1500022744.vodplayer.wxamedia.com^
@@ -267,7 +267,6 @@
 ||browser.events.data.msn.com^
 ||browsercfg-drcn.cloud.dbankcloud.cn^
 ||bsrv.qq.com^
-||bugly.qq.com^
 ||business-api.tiktok.com^
 ||c.bidtoolads.com^
 ||c.etoolads.cn^
