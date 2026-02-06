@@ -8,14 +8,6 @@ https://cloudflare.tv/hls/live.m3u8
 #EXTINF:-1 tvg-id="禁止蕉绿" tvg-name="禁止蕉绿" tvg-logo="https://logo.sspai.dpdns.org/img/禁止蕉绿.png" group-title="🦧温馨提示",禁止蕉绿
 https://cloudflare.tv/hls/live.m3u8
 
-# 🐫4K⇑频道
-#EXTINF:-1 tvg-id="苏州4K" tvg-name="苏州4K" tvg-logo="https://logo.sspai.dpdns.org/img/Suzhou4K.png" group-title="🐫4K⇑频道",苏州4K ²⁰²⁵
-https://live-auth.51kandianshi.com/szgd/csztv4k_4k.m3u8
-#EXTINF:-1 tvg-id="苏州4K" tvg-name="苏州4K" tvg-logo="https://logo.sspai.dpdns.org/img/Suzhou4K.png" group-title="🐫4K⇑频道",苏州4K ²⁰²⁶
-https://tylive.kan0512.com/norecord/csztv4k_4k.m3u8
-#EXTINF:-1 tvg-id="纯享4K" tvg-name="纯享4K" tvg-logo="https://logo.sspai.dpdns.org/img/cx4k.png" group-title="🐫4K⇑频道",纯享4K
-https://event.pull.hebtv.com:443/live/live101.m3u8
-
 # 📺央视频道
 #EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.sspai.dpdns.org/img/CCTV1.png" tvg-name="CCTV1",CCTV-1·综合 CQ
 http://122.96.52.98:8006/JS_CUCC/G_CCTV-1-CQ.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEkAFVn1RP2d2uoo%2Foo97iAsu0HPDaI8IXtpvkDaFJ1bH&p=GITV&area=JS_CUCC
@@ -275,8 +267,6 @@ http://122.96.52.98:8006/JS_CUCC/G_JINYING.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtE
 http://122.96.52.98:8006/JS_CUCC/G_JIAJIA.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEjeasMvBuKP6GPZxFFWsFH4YUAl3uT6KyhhyA3GPqkYe&p=GITV&area=JS_CUCC
 #EXTINF:-1 group-title="🚧少儿频道" tvg-logo="https://logo.sspai.dpdns.org/img/ymkt.png" tvg-name="优漫卡通",优漫卡通
 http://122.96.52.98:8006/JS_CUCC/G_YOUMAN.m3u8?Authinfo=%2BLV5NjPbEZEr5hC6nnbtEoaYG6bplRDRKBOwZRNifGgYUAl3uT6KyhhyA3GPqkYe&p=GITV&area=JS_CUCC
-#EXTINF:-1 group-title="🚧少儿频道" tvg-logo="https://logo.sspai.dpdns.org/img/hhxd.png" tvg-name="哈哈炫动",哈哈炫动
-http://122.96.52.98:8006/JS_CUCC/G_XUANDONG.m3u8?Authinfo=lTT6TmsazNdzm1y59EXB6cP2zfDtuiyoXk0omRkggBIg8ceS2R8bsoP7b%2FU3VsNm&p=GITV&area=JS_CUCC
 
 # 🚌江苏频道
 #EXTINF:-1 group-title="🚌江苏频道" tvg-logo="https://logo.sspai.dpdns.org/img/Jiangsu9.png" tvg-name="江苏卫视",江苏卫视 HD
