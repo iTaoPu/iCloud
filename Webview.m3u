@@ -217,7 +217,7 @@ webview://https://web.guangdianyun.tv/tv/3782?uin=4251
 # 🐼熊猫频道
 #EXTINF:-1 tvg-name="iPanda" tvg-logo="https://logo.sspai.dpdns.org/img/iPanda.png" group-title="🐼熊猫频道",中国大熊猫保护研究中心·24小时直播
 webview://https://live.ipanda.com/xmwl/index.shtml
-#EXTINF:-1 tvg-name="iPanda" tvg-logo="https://logo.sspai.dpdns.org/img/iPanda.png" group-title="🐼熊猫频道",中国大熊猫保护研究中心·恩恩
+#EXTINF:-1 tvg-name="iPanda" tvg-logo="https://logo.sspai.dpdns.org/img/iPanda.png" group-title="🐼熊猫频道",中国大熊猫保护研究中心·淑琴
 webview://https://live.ipanda.com/xmwl/03/index.shtml
 #EXTINF:-1 tvg-name="iPanda" tvg-logo="https://logo.sspai.dpdns.org/img/iPanda.png" group-title="🐼熊猫频道",中国大熊猫保护研究中心·春雨 吉福.A
 webview://https://live.ipanda.com/xmwl/01/index.shtml
