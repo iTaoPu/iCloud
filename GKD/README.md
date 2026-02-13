@@ -40,9 +40,9 @@
 |订阅名|订阅标识|作者|更新来源|Github仓库|订阅链接|维护状态|
 |-----|------|----|------|---------|-------|-------|
 |AIsouler的GKD订阅|666|AIsouler|从导入链接更新|[AIsouler](https://github.com/AIsouler/GKD_subscription)|[链接地址](https://fastly.jsdelivr.net/gh/AIsouler/GKD_subscription@main/dist/AIsouler_gkd.json5)|停止维护|
-|听雨的GKD订阅|666|lisrain|从导入链接更新|[lisrain](https://github.com/lisrain/GKD_subscription)|[链接地址](https://fastly.jsdelivr.net/gh/lisrain/GKD_subscription@main/dist/gkd.json5)|仍在维护|
-|BennettChina的GKD订阅|666|BennettChina|从导入链接更新|[BennettChina](https://github.com/BennettChina/gkd-subscription)|[链接地址](https://fastly.jsdelivr.net/gh/BennettChina/gkd-subscription@main/dist/gkd.json5)|仍在维护|
-|Lin-arm的GKD订阅|666|Lin-arm|从导入链接更新|[Lin-arm](https://github.com/Lin-arm/gkd-Rules)|[链接地址](https://fastly.jsdelivr.net/gh/Lin-arm/gkd-Rules@main/dist/gkd.json5)|仍在维护|
+|听雨的GKD订阅|5678|lisrain|从导入链接更新|[lisrain](https://github.com/lisrain/GKD_subscription)|[链接地址](https://fastly.jsdelivr.net/gh/lisrain/GKD_subscription@main/dist/gkd.json5)|仍在维护|
+|BennettChina的GKD订阅|614090852|BennettChina|从导入链接更新|[BennettChina](https://github.com/BennettChina/gkd-subscription)|[链接地址](https://fastly.jsdelivr.net/gh/BennettChina/gkd-subscription@main/dist/gkd.json5)|仍在维护|
+|Lin-arm的GKD订阅|777|Lin-arm|从导入链接更新|[Lin-arm](https://github.com/Lin-arm/gkd-Rules)|[链接地址](https://fastly.jsdelivr.net/gh/Lin-arm/gkd-Rules@main/dist/gkd.json5)|仍在维护|
 |Adpro的GKD订阅|825|Adpro-Team|从导入链接更新|[Adpro-Team](https://github.com/Adpro-Team/GKD_subscription)|[链接地址](https://fastly.jsdelivr.net/gh/Adpro-Team/GKD_subscription@main/dist/Adpro_gkd.json5)|停止维护|
 |奥怪的GKD订阅|86|aoguai|从导入链接更新|[aoguai](https://github.com/aoguai/subscription)|[链接地址](https://fastly.jsdelivr.net/gh/aoguai/subscription@custom/dist/aoguai_gkd.json5)|仍在维护|
 |YaChengMu的GKD订阅|303|YaChengMu|由订阅内部规定链接更新|[YaChengMu](https://github.com/YaChengMu/subscription)|[链接地址](https://fastly.jsdelivr.net/gh/YaChengMu/subscription@main/dist/gkd.json5)|停止维护|
@@ -66,6 +66,7 @@
 即：署名-非商业性使用-相同方式共享 4.0 协议
 
 [点此查看协议全文](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.zh-hans)
+
 
 
 
