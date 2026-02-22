@@ -97,7 +97,7 @@ webview://https://yangshipin.cn/tv/home?pid=600084744
 webview://https://yangshipin.cn/tv/home?pid=600084782
 
 # 💰付费频道
-#EXTINF:-1 tvg-name="CCTV16" tvg-logo="https://logo.sspai.dpdns.org/img/CCTV16+.png" group-title="💰付费频道",CCTV-16 4K
+#EXTINF:-1 tvg-name="CCTV16" tvg-logo="https://logo.sspai.dpdns.org/img/CCTV16+.png" group-title="💰付费频道",CCTV-16 奥林匹克 4K
 webview://https://yangshipin.cn/tv/home?pid=600099502
 #EXTINF:-1 tvg-name="风云剧场" tvg-logo="https://logo.sspai.dpdns.org/img/CCTVfyjc.png" group-title="💰付费频道",CCTV 风云剧场
 webview://https://yangshipin.cn/tv/home?pid=600099658
