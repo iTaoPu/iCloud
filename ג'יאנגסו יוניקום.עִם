@@ -10,7 +10,7 @@ https://icloud.yuwell.dpdns.org/温馨提示.mp4
 https://cloudflare.tv/hls/live.m3u8
 #EXTINF:-1 tvg-id="重温经典" tvg-name="重温经典" tvg-logo="https://logo.sspai.dpdns.org/img/重温经典.png" group-title="🦧温馨提示",重温经典²⁰²⁵
 http://8.138.7.223/tv/cwjd.php
-#EXTINF:-1 tvg-id="重温经典" tvg-name="重温经典" tvg-logo="https://logo.sspai.dpdns.org/img/重温经典.png" group-title="🦧温馨提示",重温经典²⁰²6
+#EXTINF:-1 tvg-id="重温经典" tvg-name="重温经典" tvg-logo="https://logo.sspai.dpdns.org/img/重温经典.png" group-title="🦧温馨提示",重温经典²⁰²⁶
 http://112.27.235.94:8000/hls/50/index.m3u8
 
 # 📺央视频道
