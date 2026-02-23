@@ -8,6 +8,10 @@ https://icloud.yuwell.dpdns.org/温馨提示.mp4
 https://icloud.yuwell.dpdns.org/温馨提示.mp4
 #EXTINF:-1 tvg-id="Cloudflare TV" tvg-name="Cloudflare TV" tvg-logo="https://logo.sspai.dpdns.org/img/CloudflareTV.png" group-title="🦧温馨提示",Cloudflare TV
 https://cloudflare.tv/hls/live.m3u8
+#EXTINF:-1 tvg-id="重温经典" tvg-name="重温经典" tvg-logo="https://logo.sspai.dpdns.org/img/重温经典.png" group-title="🦧温馨提示",重温经典²⁰²⁵
+http://8.138.7.223/tv/cwjd.php
+#EXTINF:-1 tvg-id="重温经典" tvg-name="重温经典" tvg-logo="https://logo.sspai.dpdns.org/img/重温经典.png" group-title="🦧温馨提示",重温经典²⁰²6
+http://112.27.235.94:8000/hls/50/index.m3u8
 
 # 📺央视频道
 #EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.sspai.dpdns.org/img/CCTV1.png" tvg-name="CCTV1",CCTV-1·综合 CQ
