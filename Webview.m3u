@@ -1,11 +1,11 @@
 #EXTM3U x-tvg-url="https://itv.sspai.indevs.in/epg.xml" catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}"
 
 #EXTINF:-1 tvg-id="温馨提示" tvg-name="温馨提示" tvg-logo="https://logo.sspai.dpdns.org/img/温馨提示.png" group-title="🦧温馨提示",温馨提示
-https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/温馨提示.mp4
+https://iCloud.yuwell.dpdns.org/温馨提示.mp4
 #EXTINF:-1 tvg-id="谨防诈骗" tvg-name="谨防诈骗" tvg-logo="https://logo.sspai.dpdns.org/img/谨防诈骗.png" group-title="🦧温馨提示",谨防诈骗
-https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/温馨提示.mp4
+https://iCloud.yuwell.dpdns.org/温馨提示.mp4
 #EXTINF:-1 tvg-id="禁止蕉绿" tvg-name="禁止蕉绿" tvg-logo="https://logo.sspai.dpdns.org/img/禁止蕉绿.png" group-title="🦧温馨提示",禁止蕉绿
-https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/温馨提示.mp4
+https://iCloud.yuwell.dpdns.org/温馨提示.mp4
 #EXTINF:-1 tvg-id="Cloudflare TV" tvg-name="Cloudflare TV" tvg-logo="https://logo.sspai.dpdns.org/img/CloudflareTV.png" group-title="🦧温馨提示",Cloudflare TV
 https://cloudflare.tv/hls/live.m3u8
 #EXTINF:-1 tvg-id="重温经典" tvg-name="重温经典" tvg-logo="https://logo.sspai.dpdns.org/img/重温经典.png" group-title="🦧温馨提示",重温经典²⁰²⁵
@@ -13,7 +13,7 @@ http://8.138.7.223/tv/cwjd.php
 #EXTINF:-1 tvg-id="重温经典" tvg-name="重温经典" tvg-logo="https://logo.sspai.dpdns.org/img/重温经典.png" group-title="🦧温馨提示",重温经典²⁰²⁶
 http://112.27.235.94:8000/hls/50/index.m3u8
 
-# 🎥央视网
+# 🎥央视·央视网
 #EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://logo.sspai.dpdns.org/img/CCTV1.png" group-title="🎥央视网",CCTV-1 综合
 webview://https://tv.cctv.com/live/cctv1/
 #EXTINF:-1 tvg-name="CCTV2" tvg-logo="https://logo.sspai.dpdns.org/img/CCTV2.png" group-title="🎥央视网",CCTV-2 财经
@@ -55,7 +55,7 @@ webview://https://tv.cctv.com/live/cctveurope/index.shtml
 #EXTINF:-1 tvg-name="CCTV4美洲" tvg-logo="https://logo.sspai.dpdns.org/img/CCTV4mz.png" group-title="🎥央视网",CCTV-4 中文国际 (美)
 webview://https://tv.cctv.com/live/cctvamerica/
 
-# 📽️央视频
+# 📽️央视·央视频
 #EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://logo.sspai.dpdns.org/img/CCTV1.png" group-title="📽️央视频",CCTV-1 综合
 webview://https://yangshipin.cn/tv/home?pid=600001859
 #EXTINF:-1 tvg-name="CCTV2" tvg-logo="https://logo.sspai.dpdns.org/img/CCTV2.png" group-title="📽️央视频",CCTV-2 财经
@@ -109,7 +109,7 @@ webview://https://yangshipin.cn/tv/home?pid=600084744
 #EXTINF:-1 tvg-name="CGTN阿语" tvg-logo="https://logo.sspai.dpdns.org/img/CGTNalby.png" group-title="📽️央视频",CGTN阿拉伯语
 webview://https://yangshipin.cn/tv/home?pid=600084782
 
-# 💰付费频道
+# 💰付费·央视频
 #EXTINF:-1 tvg-name="CCTV16" tvg-logo="https://logo.sspai.dpdns.org/img/CCTV16+.png" group-title="💰付费频道",CCTV-16 奥林匹克 4K
 webview://https://yangshipin.cn/tv/home?pid=600099502
 #EXTINF:-1 tvg-name="风云剧场" tvg-logo="https://logo.sspai.dpdns.org/img/CCTVfyjc.png" group-title="💰付费频道",CCTV 风云剧场
@@ -139,7 +139,7 @@ webview://https://yangshipin.cn/tv/home?pid=600099656
 #EXTINF:-1 tvg-name="卫生健康" tvg-logo="https://logo.sspai.dpdns.org/img/CCTVwsjk.png" group-title="💰付费频道",CCTV 卫生健康
 webview://https://yangshipin.cn/tv/home?pid=600099651
 
-# 📡卫视频道
+# 📡卫视·央视频
 #EXTINF:-1 tvg-name="北京卫视" tvg-logo="https://logo.sspai.dpdns.org/img/Beijing.png" group-title="📡卫视频道",北京卫视
 webview://https://yangshipin.cn/tv/home?pid=600002309
 #EXTINF:-1 tvg-name="江苏卫视" tvg-logo="https://logo.sspai.dpdns.org/img/Jiangsu.png" group-title="📡卫视频道",江苏卫视
@@ -207,7 +207,7 @@ webview://https://yangshipin.cn/tv/home?pid=600152138
 #EXTINF:-1 tvg-name="CETV1" tvg-logo="https://logo.sspai.dpdns.org/img/CETV1.png" group-title="📡卫视频道",CETV-1
 webview://https://yangshipin.cn/tv/home?pid=600152138
 
-# 🗺️国际教育
+# 🗺️国际教育频道
 #EXTINF:-1 tvg-name="国际教育汉语文化" tvg-logo="https://logo.sspai.dpdns.org/img/CEC汉语文化.png" group-title="🗺️国际教育",国际教育·汉语文化
 webview://http://m3u8.cec-tv.com.cn/?url=http://play.cec-tv.com.cn/channel/cec-tv1.m3u8
 #EXTINF:-1 tvg-name="国际教育国际旅游" tvg-logo="https://logo.sspai.dpdns.org/img/CEC国际旅游.png" group-title="🗺️国际教育",国际教育·国际旅游
