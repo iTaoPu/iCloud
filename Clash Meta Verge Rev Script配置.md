@@ -135,8 +135,6 @@ const rules = [
   "DOMAIN-SUFFIX,coodesker.com,🛑 全球拦截", // 酷呆桌面
   "DOMAIN-SUFFIX,adobe.io,🛑 全球拦截", // Adobe.io
   "DOMAIN-SUFFIX,adobe.com,🛑 全球拦截", // Adobe.com
-  "DOMAIN-SUFFIX,pcmanager.microsoft.com,🛑 全球拦截", // 微软电脑管家
-  "DOMAIN-SUFFIX,applicationinsights.azure.cn,🛑 全球拦截", // 微软云平台
   // Loyalsoldier 规则集
   "RULE-SET,applications,🎯 全球直连",
   "RULE-SET,private,🎯 全球直连",
@@ -305,4 +303,5 @@ function main(config) {
 
   // 返回修改后的配置
   return config;
+
 }
