@@ -4,18 +4,23 @@
 # 配置作者：https://t.me/CNiao_bot
 # 适用版本：所有可使用 Meta(MiHoMo) 核心的程序
 
+# 端口设置
 mixed-port: 7890
 ipv6: true
 allow-lan: true
 unified-delay: false
 tcp-concurrent: true
 external-controller: 127.0.0.1:9090
-log-level: info
 
-# 使用软件内置GEO数据库，无需外部下载
+# Geo 数据库设置（使用本地内置文件，禁用自动下载）
 geodata-mode: true
-# 不配置geox-url - 使用内置资源
-# geo-auto-update: false  # 不再需要自动更新
+geo-auto-update: false          # 关闭自动更新，使用本地文件
+# geox-url 部分已注释，避免下载
+# geox-url:
+#   geoip: ...
+#   geosite: ...
+#   mmdb: ...
+#   asn: ...
 
 find-process-mode: strict
 global-client-fingerprint: chrome
@@ -24,6 +29,7 @@ profile:
   store-selected: true
   store-fake-ip: true
 
+# 流量嗅探
 sniffer:
   enable: true
   sniff:
@@ -35,6 +41,7 @@ sniffer:
     QUIC:
       ports: [443, 8443]
 
+# TUN 模式（透明代理）
 tun:
   enable: true
   stack: mixed
@@ -45,6 +52,7 @@ tun:
   auto-redirect: true
   auto-detect-interface: true
 
+# DNS 配置（关键：direct-nameserver-follow-policy: false 防泄露）
 dns:
   enable: true
   listen: :53
@@ -69,7 +77,7 @@ dns:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
   fallback:
-    - https://cloudflare-dns.com/dns-query
+    - https://dns.alidns.com/dns-query
     - https://dns.google/dns-query
   use-hosts: false
   use-system-hosts: false
@@ -85,17 +93,14 @@ dns:
       - +.github.com
       - +.telegram.org
   nameserver-policy:
-    "geosite:geolocation-!cn":
+    geosite:geolocation-!cn:
       - https://cloudflare-dns.com/dns-query
       - https://dns.google/dns-query
-    "geosite:category-ads-all":
-      - https://dns.alidns.com/dns-query
-    "geosite:private":
+    private:
       - https://dns.alidns.com/dns-query
       - https://doh.pub/dns-query
   proxy-server-nameserver:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
-
+  # 关键修复：直连域名不使用 nameserver-policy 中的 DNS，避免泄露
   direct-nameserver-follow-policy: false
-
