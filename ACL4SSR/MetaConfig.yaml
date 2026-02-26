@@ -10,15 +10,13 @@ allow-lan: true
 unified-delay: false
 tcp-concurrent: true
 external-controller: 127.0.0.1:9090
+log-level: info
 
+# 使用软件内置GEO数据库，无需外部下载
 geodata-mode: true
-geox-url:
-  geoip: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip-lite.dat
-  geosite: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat
-  mmdb: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country-lite.mmdb
-  asn: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/GeoLite2-ASN.mmdb
-geo-auto-update: true # 是否自动更新 geodata
-geo-update-interval: 24 # 更新间隔，单位：小时
+# 不配置geox-url - 使用内置资源
+# geo-auto-update: false  # 不再需要自动更新
+
 find-process-mode: strict
 global-client-fingerprint: chrome
 
@@ -63,7 +61,6 @@ dns:
     - localhost.sec.qq.com
     - localhost.work.weixin.qq.com
   default-nameserver:
-    - 119.29.29.29
     - 223.5.5.5
     - 1.1.1.1
     - 8.8.8.8
@@ -71,7 +68,7 @@ dns:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
   fallback:
-    - https://dns.alidns.com/dns-query
+    - https://cloudflare-dns.com/dns-query
     - https://dns.google/dns-query
   use-hosts: false
   use-system-hosts: false
@@ -84,11 +81,15 @@ dns:
     domain:
       - +.google.com
       - +.youtube.com
+      - +.github.com
+      - +.telegram.org
   nameserver-policy:
-    geosite:geolocation-!cn:
+    "geosite:geolocation-!cn":
       - https://cloudflare-dns.com/dns-query
       - https://dns.google/dns-query
-    private:
+    "geosite:category-ads-all":
+      - https://dns.alidns.com/dns-query
+    "geosite:private":
       - https://dns.alidns.com/dns-query
       - https://doh.pub/dns-query
   proxy-server-nameserver:
@@ -96,3 +97,4 @@ dns:
     - https://doh.pub/dns-query
 
   direct-nameserver-follow-policy: false
+
