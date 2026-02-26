@@ -14,13 +14,13 @@ external-controller: 127.0.0.1:9090
 
 # Geo 数据库设置（使用本地内置文件，禁用自动下载）
 geodata-mode: true
-geo-auto-update: false          # 关闭自动更新，使用本地文件
-# geox-url 部分已注释，避免下载
-# geox-url:
-#   geoip: ...
-#   geosite: ...
-#   mmdb: ...
-#   asn: ...
+geox-url:
+  geoip: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@release/geoip-lite.dat
+  geosite: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@release/geosite.dat
+  mmdb: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@release/country-lite.mmdb
+  asn: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@release/GeoLite2-ASN.mmdb
+geo-auto-update: true # 是否自动更新 geodata
+geo-update-interval: 24 # 更新间隔，单位：小时
 
 find-process-mode: strict
 global-client-fingerprint: chrome
@@ -104,3 +104,4 @@ dns:
     - https://doh.pub/dns-query
   # 关键修复：直连域名不使用 nameserver-policy 中的 DNS，避免泄露
   direct-nameserver-follow-policy: false
+
