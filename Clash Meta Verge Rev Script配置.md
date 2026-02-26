@@ -43,6 +43,7 @@ const dnsConfig = {
       "gfw",
       "google",
       "youtube",
+      "github",
       "telegram"
     ]
   },
@@ -326,3 +327,4 @@ function main(config) {
   // 返回修改后的配置
   return config;
 }
+
