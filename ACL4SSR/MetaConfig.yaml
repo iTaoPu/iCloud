@@ -61,6 +61,7 @@ dns:
     - localhost.sec.qq.com
     - localhost.work.weixin.qq.com
   default-nameserver:
+    - 119.29.29.29
     - 223.5.5.5
     - 1.1.1.1
     - 8.8.8.8
