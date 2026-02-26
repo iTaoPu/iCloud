@@ -12,7 +12,7 @@ unified-delay: false
 tcp-concurrent: true
 external-controller: 127.0.0.1:9090
 
-# Geo 数据库设置（使用本地内置文件，禁用自动下载）
+# Geo 数据库设置
 geodata-mode: true
 geox-url:
   geoip: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@release/geoip-lite.dat
@@ -104,4 +104,5 @@ dns:
     - https://doh.pub/dns-query
   # 关键修复：直连域名不使用 nameserver-policy 中的 DNS，避免泄露
   direct-nameserver-follow-policy: false
+
 
