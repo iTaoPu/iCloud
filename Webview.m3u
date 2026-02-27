@@ -166,7 +166,7 @@ webview://https://yangshipin.cn/tv/home?pid=600002481
 webview://https://yangshipin.cn/tv/home?pid=600002516
 #EXTINF:-1 tvg-name="河南卫视" tvg-logo="https://logo.sspai.dpdns.org/img/Henan.png" group-title="📡卫视·央视频",河南卫视
 webview://https://yangshipin.cn/tv/home?pid=600002525
-#EXTINF:-1 tvg-name="东南卫视" tvg-logo="https://logo.sspai.dpdns.org/img/Dongnan.png" group-title="📡卫视·央视频",福建东南卫视
+#EXTINF:-1 tvg-name="东南卫视" tvg-logo="https://logo.sspai.dpdns.org/img/Dongnan.png" group-title="📡卫视·央视频",东南卫视
 webview://https://yangshipin.cn/tv/home?pid=600002484
 #EXTINF:-1 tvg-name="贵州卫视" tvg-logo="https://logo.sspai.dpdns.org/img/Guizhou.png" group-title="📡卫视·央视频",贵州卫视
 webview://https://yangshipin.cn/tv/home?pid=600002490
