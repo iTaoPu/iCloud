@@ -1,5 +1,5 @@
 // 目标域名（仅域名，不含协议和路径，可包含端口）
-const TARGET_HOST = 'api.example.com';  // 请修改为实际域名
+const TARGET_HOST = '******';  // 请修改为实际域名
 
 // 是否强制使用 HTTPS（设为 false 则保持原始请求协议，或自动跟随重定向）
 const FORCE_HTTPS = true;
@@ -73,3 +73,4 @@ async function handleRequest(request) {
     });
   }
 }
+
