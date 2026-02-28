@@ -1,45 +1,75 @@
-const TARGET_HOST = '****'; // 目标域名
+// 目标域名（仅域名，不含协议和路径，可包含端口）
+const TARGET_HOST = 'api.example.com';  // 请修改为实际域名
 
-addEventListener('fetch'， event => {
+// 是否强制使用 HTTPS（设为 false 则保持原始请求协议，或自动跟随重定向）
+const FORCE_HTTPS = true;
+
+addEventListener('fetch', event => {
   event.respondWith(handleRequest(event.request));
 });
 
 async function handleRequest(request) {
-  // 1. 处理 OPTIONS 预检请求（CORS）
+  // 处理 OPTIONS 预检请求
   if (request.method === 'OPTIONS') {
     return new Response(null, {
       headers: {
         'Access-Control-Allow-Origin': '*',
         'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
         'Access-Control-Allow-Headers': '*',
-        'Access-Control-Max-Age': '86400', // 缓存预检请求 24 小时
+        'Access-Control-Max-Age': '86400',
       },
     });
   }
 
-  // 2. 构建目标 URL（强制 HTTPS）
-  const url = new URL(request.url);
-  url.host = TARGET_HOST;
-  url.protocol = 'https:'; // 强制 HTTPS
+  try {
+    // 1. 构建目标 URL
+    const url = new URL(request.url);
+    url.host = TARGET_HOST;                 // 替换域名（保留端口）
+    url.protocol = FORCE_HTTPS ? 'https:' : url.protocol;
 
-  // 3. 过滤敏感头（防止泄露 Cookie/Token）
-  const safeHeaders = new Headers(request.headers);
-  safeHeaders.delete('Cookie');
-  safeHeaders.delete('Authorization');
-  safeHeaders.set('Host', TARGET_HOST); // 修正 Host 头
+    // 2. 过滤敏感头并准备新头部
+    const safeHeaders = new Headers(request.headers);
+    safeHeaders.delete('Cookie');
+    safeHeaders.delete('Authorization');
+    safeHeaders.set('Host', TARGET_HOST);   // 设置正确的 Host
 
-  // 4. 发起代理请求
-  const modifiedRequest = new Request(url, {
-    headers: safeHeaders,
-    method: request.method,
-    body: request.body,
-    redirect: 'follow',
-  });
+    // 3. 构造请求参数（GET/HEAD 不带 body）
+    const requestInit = {
+      method: request.method,
+      headers: safeHeaders,
+      redirect: 'follow',                    // 自动跟随重定向
+    };
+    if (!['GET', 'HEAD'].includes(request.method)) {
+      requestInit.body = request.body;
+    }
 
-  // 5. 获取响应并添加 CORS 头
-  const response = await fetch(modifiedRequest);
-  const modifiedResponse = new Response(response.body, response);
-  modifiedResponse.headers.set('Access-Control-Allow-Origin', '*');
+    // 4. 发起代理请求
+    const response = await fetch(url, requestInit);
 
-  return modifiedResponse;
+    // 5. 创建新响应，添加 CORS 头
+    const newResponse = new Response(response.body, {
+      status: response.status,
+      statusText: response.statusText,
+      headers: response.headers,
+    });
+    newResponse.headers.set('Access-Control-Allow-Origin', '*');
+    // 可选：添加 Vary 头，避免缓存问题
+    newResponse.headers.append('Vary', 'Origin');
+
+    return newResponse;
+
+  } catch (error) {
+    // 6. 返回详细的错误信息（仅用于调试，生产环境可精简）
+    return new Response(JSON.stringify({
+      error: 'Proxy error',
+      message: error.message,
+      stack: error.stack,
+    }), {
+      status: 502,
+      headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+      },
+    });
+  }
 }
