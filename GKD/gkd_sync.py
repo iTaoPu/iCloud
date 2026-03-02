@@ -4,7 +4,7 @@
 GKD 订阅同步脚本（存放于GKD目录）
 功能：自动检查上游版本并更新本地订阅文件
 - 主文件(Guīzé.stor)：JSON5紧凑格式（无隔行，匹配上游）
-- 版本文件(Guīzé.version.stor)：无引号纯键值格式
+- 版本文件(Guīzé.version.stor)：{id: 2015, version: 版本号} 无引号格式
 """
 
 import json5
@@ -60,21 +60,19 @@ def get_upstream_version():
         sys.exit(1)
 
 def get_local_version():
-    """读取无引号格式的版本文件，提取version值"""
+    """读取自定义无引号格式的版本文件，提取version值"""
     try:
         if os.path.exists(LOCAL_VERSION_FILE):
             print(f"📂 正在读取本地版本文件: {LOCAL_VERSION_FILE}")
-            # 按行读取纯文本格式的版本文件
+            # 读取文件内容并清理空白字符
             with open(LOCAL_VERSION_FILE, "r", encoding="utf-8") as f:
-                lines = f.readlines()
+                content = f.read().replace(" ", "").replace("\n", "")
             
             local_version = 0
-            # 解析每行内容，提取version值
-            for line in lines:
-                line = line.strip()
-                if line.startswith("version:"):
-                    local_version = int(line.split(":", 1)[1].strip())
-                    break
+            # 解析version值（匹配 "version:数字" 格式）
+            if "version:" in content:
+                version_part = content.split("version:")[1].split(",")[0].split("}")[0]
+                local_version = int(version_part.strip())
             
             print(f"✅ 本地当前版本: {local_version}")
             return local_version
@@ -86,7 +84,7 @@ def get_local_version():
         return 0
 
 def update_subscription(upstream_version):
-    """下载并更新订阅文件，版本文件生成无引号格式"""
+    """下载并更新订阅文件，版本文件生成指定的无引号格式"""
     try:
         print(f"📥 正在下载上游订阅文件: {UPSTREAM_SUB_URL}")
         resp = requests.get(UPSTREAM_SUB_URL, timeout=TIMEOUT_SUBSCRIPTION)
@@ -105,13 +103,15 @@ def update_subscription(upstream_version):
             json5.dump(data, f, ensure_ascii=False, indent=None)
         print(f"✅ 已保存主订阅文件: {LOCAL_SUB_FILE}（格式与上游一致，无隔行）")
         
-        # 生成无引号的版本文件（纯文本键值格式）
-        version_content = f"""id: 2015
-version: {upstream_version}"""
+        # 生成指定格式的版本文件（{id: 2015, version: 版本号}）
+        version_content = """{
+  id: 2015,
+  version: %s
+}""" % upstream_version
         
         with open(LOCAL_VERSION_FILE, "w", encoding="utf-8") as f:
             f.write(version_content)
-        print(f"✅ 已保存版本文件: {LOCAL_VERSION_FILE}（无引号纯键值格式）")
+        print(f"✅ 已保存版本文件: {LOCAL_VERSION_FILE}（指定无引号格式）")
         
         # 创建更新标记文件（GKD目录内）
         with open(UPDATE_FLAG_FILE, "w") as f:
@@ -157,7 +157,7 @@ def main():
         print(f"\n📢 发现新版本！开始更新...")
         update_success = update_subscription(upstream_ver)
         if update_success:
-            print("\n✅ 同步完成！版本文件为无引号格式")
+            print("\n✅ 同步完成！版本文件格式为 {id: 2015, version: 版本号}")
             sys.exit(0)
         else:
             print("\n❌ 同步失败！请检查错误信息")
