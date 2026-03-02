@@ -1,0 +1,122 @@
+name: AWAvenue Daily Update
+
+# 触发条件：每3天自动运行 + 手动触发
+on:
+  schedule:
+    - cron: "0 6 */3 * *"  # 每3天 UTC 18:00（北京时间凌晨2点）运行
+  workflow_dispatch:
+
+# 显式赋予写入权限（复用GKD验证过的逻辑）
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync-black-filter:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. 检出仓库（指定Grey分支）
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: Grey
+          persist-credentials: true
+
+      # 2. 设置Python环境
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      # 3. 安装依赖（保持环境一致性）
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install json5 requests
+
+      # 4. 下载远程AWAvenue广告规则文件（带代理+重试）
+      - name: Download remote AWAvenue filter file
+        run: |
+          echo "📥 下载AWAvenue-Ads-Rule.txt到仓库根目录..."
+          # 优先用代理，确保国内可访问
+          PROXY_URL="https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt"
+          ORIGIN_URL="https://wget.la/raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt"
+          
+          # 下载并验证文件完整性
+          curl -sL --retry 10 --connect-timeout 30 "$PROXY_URL" -o "temp_black_filter.txt"
+          RULE_COUNT=$(wc -l < "temp_black_filter.txt")
+          
+          if [ $RULE_COUNT -lt 10 ]; then
+            echo "⚠️ 代理地址规则不完整，尝试原地址..."
+            curl -sL --retry 5 --connect-timeout 20 "$ORIGIN_URL" -o "temp_black_filter.txt"
+            RULE_COUNT=$(wc -l < "temp_black_filter.txt")
+          fi
+          
+          # 最终验证
+          if [ $RULE_COUNT -ge 10 ]; then
+            echo "✅ AWAvenue规则下载成功，共 $RULE_COUNT 行"
+            touch .black_filter_download_success  # 创建下载成功标记文件
+          else
+            echo "❌ AWAvenue规则下载失败/不完整，终止流程"
+            exit 1
+          fi
+
+      # 5. 执行Python脚本（生成black.txt）
+      - name: Run black filter sync script
+        id: sync
+        if: hashFiles('.black_filter_download_success') != ''
+        run: |
+          echo "🚀 执行.github/workflows/update_black_filter.py..."
+          # 执行脚本（根目录运行）
+          python .github/workflows/update_black_filter.py
+          
+          # 提取版本号并验证生成的文件
+          NEW_VERSION=$(grep "^NEW_VERSION=" black_script_output.log | cut -d'=' -f2 || echo "1.0.0.0")
+          BLACK_RULE_COUNT=$(wc -l < "black.txt")
+          echo "✅ 生成的black.txt包含 $BLACK_RULE_COUNT 行规则"
+          
+          echo "$NEW_VERSION" > .black_update_success
+          echo "NEW_VERSION=$NEW_VERSION" >> $GITHUB_OUTPUT
+
+      # 6. 提交并推送（修复rebase冲突，复用GKD逻辑）
+      - name: Commit and push changes to Grey branch
+        if: hashFiles('.black_update_success') != ''
+        run: |
+          # 配置Git身份
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # 切换到Grey分支
+          git checkout Grey
+          
+          # 核心：暂存修改→拉取最新→恢复修改（解决rebase冲突）
+          git stash push -u -m "temp stash for black.txt update"
+          git pull origin Grey --rebase || echo "远程Grey分支无更新，跳过rebase"
+          git stash pop || (echo "⚠️ 暂存恢复失败，直接添加文件" && git add black.txt)
+          
+          # 读取版本号
+          NEW_VERSION=$(cat .black_update_success)
+          
+          # 添加生成的black.txt
+          git add black.txt || true
+          
+          # 检查变更（无变更则跳过推送）
+          if git diff --staged --quiet; then
+            echo "ℹ️  black.txt无变更，跳过推送"
+            exit 0
+          fi
+          
+          # 提交（注明版本号）
+          git commit -m "🔄 自动更新black.txt至版本 v${NEW_VERSION}" --allow-empty
+          
+          # 推送（原生git push，稳定无权限问题）
+          git push origin Grey
+          echo "🚀 black.txt已推送到Grey分支！"
+
+      # 7. 清理临时文件
+      - name: Cleanup temporary files
+        if: always()
+        run: |
+          rm -f temp_black_filter.txt .black_filter_download_success .black_update_success black_script_output.log || true
+          echo "🧹 临时文件清理完成"
