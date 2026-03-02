@@ -122,10 +122,9 @@ def main():
 ! Homepage: https://i叚娤.倖鍢.net.cn
 ! Powerd by i叚娤.倖鍢
 ! Expires: 3 day
-! Description: 完整拦截Google/YouTube相关广告、跟踪域名
+! Description: Completely blocks all Google-related domains (including YouTube).
 ! Version: {new_version}
 ! Update Time:  {beijing_time}
-! Upstream Version: {upstream_ver}
 ! ------------------------------------
 
 """
