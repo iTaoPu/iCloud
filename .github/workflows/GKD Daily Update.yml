@@ -16,12 +16,11 @@ jobs:
         with:
           fetch-depth: 0  # 获取完整提交历史
 
-      # 2. 设置Python环境
+      # 2. 设置Python环境（移除cache配置，解决报错）
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.10"
-          cache: "pip"  # 缓存依赖包，加速运行
+          python-version: "3.10"  # 移除cache配置
 
       # 3. 安装依赖包
       - name: Install dependencies
