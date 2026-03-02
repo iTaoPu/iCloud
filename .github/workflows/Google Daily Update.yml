@@ -1,116 +1,130 @@
 name: Google Daily Update
 on:
   schedule:
-    - cron: '0 18 * * *'  # 北京时间2点
-  workflow_dispatch:
+    - cron: '0 18 * * *'  # 北京时间凌晨2点触发（UTC 18:00）
+  workflow_dispatch:      # 手动触发开关
 
 jobs:
   fetch-modify-push:
     runs-on: ubuntu-latest
     env:
-      TZ: Asia/Shanghai
+      TZ: Asia/Shanghai   # 全局设置为北京时间
 
     steps:
-      # 步骤1：拉取仓库（确保脚本文件被检出）
+      # 步骤1：拉取仓库代码（确保独立Python脚本被检出）
       - name: 拉取仓库代码
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          persist-credentials: true
+          persist-credentials: true  # 保留Git凭证，确保推送权限
 
-      # 步骤2：检查脚本文件是否存在（核心：解决exit code 5的首要原因）
-      - name: 验证Python脚本路径
+      # 步骤2：严格检查独立Python脚本是否存在（核心：无临时脚本）
+      - name: 检查独立Python脚本
         run: |
           SCRIPT_PATH=".github/workflows/update_google_filter.py"
+          # 仅检查，不创建临时脚本，不存在则直接终止
           if [ -f "$SCRIPT_PATH" ]; then
-            echo "✅ Python脚本存在：$SCRIPT_PATH"
-            # 检查脚本语法（提前发现错误）
-            python -m py_compile "$SCRIPT_PATH" || echo "⚠️ 脚本语法有错误，但继续运行"
+            echo "✅ 独立Python脚本存在：$SCRIPT_PATH"
+            # 预检查脚本语法，提前发现错误
+            if ! python -m py_compile "$SCRIPT_PATH"; then
+              echo "❌ Python脚本语法错误，请先修复脚本！"
+              exit 1  # 语法错误直接终止，不继续执行
+            fi
           else
-            echo "❌ Python脚本不存在：$SCRIPT_PATH"
-            # 紧急创建临时脚本，避免工作流中断
-            cat > "$SCRIPT_PATH" << EOF
-#!/usr/bin/env python3
-print("NEW_VERSION=1.0.0.0")
-print("CURRENT_DATE=$(date +%Y-%m-%d)")
-with open("Google.txt", "w") as f:
-    f.write("! Title: AdRules i叚娤.倖鍢 Google List\\n! Version: 1.0.0.0\\n! Update Date: $(date +%Y-%m-%d)")
-EOF
-            echo "✅ 已创建临时Python脚本"
+            echo "❌ 独立Python脚本不存在：$SCRIPT_PATH"
+            echo "⚠️ 请将update_google_filter.py放置在.github/workflows目录下！"
+            exit 1  # 脚本不存在直接终止，符合「py单独放置」要求
           fi
 
-      # 步骤3：配置Python环境
-      - name: 配置Python
+      # 步骤3：配置Python环境（无缓存，避免依赖文件报错）
+      - name: 配置Python环境
         uses: actions/setup-python@v5
         with:
           python-version: "3.10"
 
-      # 步骤4：下载远程文件（增加日志）
-      - name: 下载filter_37.txt
+      # 步骤4：下载远程过滤规则文件（带重试和验证）
+      - name: 下载远程filter_37.txt
         run: |
-          echo "📥 开始下载远程文件..."
+          echo "📥 开始下载远程过滤规则文件..."
+          # 多次重试+超时，确保下载稳定
           curl -sL --retry 5 --connect-timeout 20 \
             "https://raw.githubusercontent.com/AdguardTeam/HostlistsRegistry/main/assets/filter_37.txt" \
             -o "temp_filter.txt"
-          # 验证文件
+          
+          # 验证文件有效性，无效则终止
           if [ -s "temp_filter.txt" ]; then
             echo "✅ 远程文件下载成功，大小：$(du -h temp_filter.txt | awk '{print $1}')"
           else
-            echo "⚠️ 远程文件下载失败，创建空文件避免脚本报错"
-            touch "temp_filter.txt"
+            echo "❌ 远程文件下载失败或为空！"
+            exit 1
           fi
 
-      # 步骤5：运行Python脚本（核心：捕获所有错误，强制返回0）
+      # 步骤5：执行独立Python脚本（仅依赖预先放置的py文件）
       - name: 执行Python脚本生成Google.txt
         id: gen
         run: |
-          echo "🚀 开始执行Python脚本..."
-          # 执行脚本，捕获所有输出和错误
+          echo "🚀 执行独立Python脚本处理文件..."
+          # 执行脚本并捕获输出（无临时脚本，仅用独立py）
           python .github/workflows/update_google_filter.py > script_output.log 2>&1
           SCRIPT_EXIT_CODE=$?
-          echo "脚本退出码：$SCRIPT_EXIT_CODE"
-          echo "脚本输出日志："
-          cat script_output.log
           
-          # 提取版本号和时间（容错：默认值）
-          NEW_VERSION=$(grep "^NEW_VERSION=" script_output.log | cut -d'=' -f2 || echo "1.0.0.0")
-          CURRENT_DATE=$(grep "^CURRENT_DATE=" script_output.log | cut -d'=' -f2 || echo "$(date +%Y-%m-%d)")
+          # 脚本执行失败则终止
+          if [ $SCRIPT_EXIT_CODE -ne 0 ]; then
+            echo "❌ Python脚本执行失败，退出码：$SCRIPT_EXIT_CODE"
+            echo "📝 脚本输出日志："
+            cat script_output.log
+            exit 1
+          fi
           
-          # 设置步骤输出
+          # 提取脚本输出的版本号和时间（仅从独立脚本输出读取）
+          NEW_VERSION=$(grep "^NEW_VERSION=" script_output.log | cut -d'=' -f2)
+          CURRENT_DATE=$(grep "^CURRENT_DATE=" script_output.log | cut -d'=' -f2)
+          
+          # 验证提取结果，无效则终止
+          if [ -z "$NEW_VERSION" ] || [ -z "$CURRENT_DATE" ]; then
+            echo "❌ 无法从Python脚本提取版本号/时间！"
+            cat script_output.log
+            exit 1
+          fi
+          
+          # 设置为步骤输出，供后续使用
           echo "NEW_VERSION=$NEW_VERSION" >> $GITHUB_OUTPUT
           echo "CURRENT_DATE=$CURRENT_DATE" >> $GITHUB_OUTPUT
           
-          # 验证Google.txt是否生成
+          # 验证生成的Google.txt
           if [ -f "Google.txt" ]; then
             echo "✅ Google.txt生成成功，头部内容："
             head -10 Google.txt
           else
-            echo "⚠️ Google.txt未生成，手动创建基础文件"
-            echo -e "! Title: AdRules i叚娤.倖鍢 Google List\n! Version: $NEW_VERSION\n! Update Date: $CURRENT_DATE" > Google.txt
+            echo "❌ Google.txt未生成！"
+            exit 1
           fi
 
-      # 步骤6：推送至Grey分支（容错逻辑）
-      - name: 推送至Grey分支
+      # 步骤6：推送至Grey分支（强制关联+权限保障）
+      - name: 推送修改到Grey分支
         run: |
-          # 配置Git
+          # 配置Git身份（固定）
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # 强制设置远程地址（token认证，解决权限问题）
           git remote set-url origin https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
           
-          # 切换/创建Grey分支
+          # 强制创建/切换到Grey分支
           git checkout -B Grey
           
-          # 提交并推送
+          # 提交并强制推送（确保成功）
           git add Google.txt
-          git commit -m "chore: 更新Google.txt 版本号${{ steps.gen.outputs.NEW_VERSION }} 北京时间${{ steps.gen.outputs.CURRENT_DATE }}" --allow-empty
+          git commit -m "chore: 更新Google.txt 版本号${{ steps.gen.outputs.NEW_VERSION }} 北京时间${{ steps.gen.outputs.CURRENT_DATE }}"
           git push -f origin Grey
-          echo "✅ 推送完成"
+          
+          echo "✅ 成功推送到Grey分支！"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # 步骤7：清理文件
+      # 步骤7：清理临时文件（无论成败都执行）
       - name: 清理临时文件
         if: always()
         run: |
           rm -f temp_filter.txt script_output.log
-          echo "✅ 清理完成"
+          echo "✅ 临时文件清理完成！"
