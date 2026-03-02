@@ -1,0 +1,93 @@
+# 工作流名称
+name: Google Daily Update
+# 触发条件：每天凌晨2点定时触发 + 手动触发
+on:
+  schedule:
+    - cron: '0 14 * * *'  # UTC时间14点 = 上海时间22点（可自行调整）
+  workflow_dispatch:      # 手动触发开关
+
+jobs:
+  fetch-modify-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 拉取仓库代码
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 安装必要工具
+        run: |
+          sudo apt update && sudo apt install -y jq curl git
+
+      - name: 拉取目标远程文件
+        run: |
+          curl -sL "https://raw.githubusercontent.com/AdguardTeam/HostlistsRegistry/main/assets/filter_37.txt" -o "temp_filter.txt"
+          echo "远程文件拉取完成"
+
+      - name: 处理文件内容并生成Google.txt
+        run: |
+          # 定义自定义头部信息
+          CUSTOM_TITLE="! Title: AdRules i叚娤.倖鍢 Google List"
+          CUSTOM_HOMEPAGE="! Homepage: https://i叚娤.倖鍢.net.cn"
+          CUSTOM_POWERD="! Powerd by i叚娤.倖鍢"
+          CUSTOM_EXPIRES="! Expires: irregularly (update frequency)"
+          CUSTOM_DESC="! Description: Completely blocks all Google-related domains (including YouTube)"
+          CUSTOM_SPLIT="! ------------------------------------"
+          
+          # 核心修改：精准获取上海时间（UTC+8），格式：2026-01-26
+          # 方式1：直接设置时区为上海（推荐，更稳定）
+          export TZ='Asia/Shanghai'
+          CURRENT_DATE=$(date +"%Y-%m-%d")
+          # 若需要带时分秒（如2026-01-26 10:30:00），可改为：
+          # CURRENT_DATE=$(date +"%Y-%m-%d %H:%M:%S")
+          
+          # 版本号自增逻辑（不变）
+          if [ -f "Google.txt" ]; then
+            OLD_VERSION=$(grep -E '^! Version: ' Google.txt | sed 's/! Version: //g')
+            IFS='.' read -r -a VER_PARTS <<< "$OLD_VERSION"
+            LAST_PART=${VER_PARTS[-1]}
+            NEW_LAST_PART=$((LAST_PART + 1))
+            VER_PARTS[-1]=$NEW_LAST_PART
+            NEW_VERSION=$(IFS='.'; echo "${VER_PARTS[*]}")
+          else
+            NEW_VERSION="1.0.0.0"
+          fi
+          
+          # 拼接新头部（Update Date标注为上海时间）
+          NEW_HEADER="
+$CUSTOM_TITLE
+$CUSTOM_HOMEPAGE
+$CUSTOM_POWERD
+$CUSTOM_EXPIRES
+$CUSTOM_DESC
+$CUSTOM_SPLIT
+! Version: $NEW_VERSION
+! Update Date (Shanghai Time):  $CURRENT_DATE
+          "
+          
+          # 处理规则内容并生成文件
+          sed -n '/^! Version: /,$!b; /^! Update Date: /,$p' temp_filter.txt | sed '1,2d' > temp_rules.txt
+          echo -e "$NEW_HEADER" > Google.txt
+          cat temp_rules.txt >> Google.txt
+          
+          # 清理临时文件
+          rm -f temp_filter.txt temp_rules.txt
+          echo "Google.txt生成完成，上海时间：$CURRENT_DATE，版本号：$NEW_VERSION"
+
+      - name: 提交并推送代码到Grey分支
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          # 确保切换到Grey分支（关键！）
+          git checkout Grey || git checkout -b Grey
+          # 检查文件修改并推送
+          if git status --porcelain | grep -q "Google.txt"; then
+            git add Google.txt
+            git commit -m "chore: 更新Google.txt 版本号$NEW_VERSION 上海时间$CURRENT_DATE"
+            git push -u origin Grey
+            echo "推送Grey分支成功"
+          else
+            echo "无文件修改，无需推送"
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
