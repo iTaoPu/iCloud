@@ -41,7 +41,7 @@ jobs:
           echo "📥 下载filter_37.txt到仓库根目录..."
           # 带重试+代理，确保下载成功
           curl -sL --retry 10 --connect-timeout 30 \
-            "https://raw.fastgit.org/AdguardTeam/HostlistsRegistry/main/assets/filter_37.txt" \
+            "https://adguardteam.github.io/HostlistsRegistry/assets/filter_37.txt" \
             -o "temp_filter.txt"
           
           # 验证文件（失败则创建空文件不终止）
