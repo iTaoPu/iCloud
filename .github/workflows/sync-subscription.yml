@@ -1,0 +1,79 @@
+name: 同步并修改订阅
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'   # 每6小时运行一次（可根据需要调整）
+  workflow_dispatch:          # 允许手动触发
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+
+      - name: 设置 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: 安装依赖（json5 解析库）
+        run: pip install json5
+
+      - name: 下载原始文件
+        run: curl -L -o gkd.json5 "https://raw.githubusercontent.com/Lin-arm/GKD_subscription/main/dist/gkd.json5"
+
+      - name: 生成修改后的文件
+        run: |
+          cat > generate.py << 'EOF'
+          import json5
+          import json
+
+          # 读取原始 JSON5 文件
+          with open('gkd.json5', 'r', encoding='utf-8') as f:
+              data = json5.load(f)
+
+          # 提取版本号
+          version = data.get('version', 0)
+
+          # 复制原数据并替换指定字段
+          new_data = data.copy()
+          new_data.update({
+              'id': 2015,
+              'name': '少数π⁺ 🌀Guīzé訂閱−禁止傳播',
+              'author': '少数π⁺',
+              'checkUpdateUrl': './Guīzé.version.stor',
+              'supportUri': 'https://iCloud.ifanr.us.ci/GKD'
+          })
+
+          # 写入 Guīzé.stor（JSON 格式，保留缩进）
+          with open('Guīzé.stor', 'w', encoding='utf-8') as f:
+              json.dump(new_data, f, ensure_ascii=False, indent=2)
+
+          # 写入 Guīzé.version.stor
+          version_data = {
+              'id': 2015,
+              'version': version
+          }
+          with open('Guīzé.version.stor', 'w', encoding='utf-8') as f:
+              json.dump(version_data, f, ensure_ascii=False, indent=2)
+          EOF
+          python generate.py
+
+      - name: 检查是否有文件变动
+        id: git-check
+        run: |
+          git add Guīzé.stor Guīzé.version.stor
+          if git diff --staged --quiet; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: 提交并推送（如有变动）
+        if: steps.git-check.outputs.has_changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -m "自动更新订阅：同步上游版本 $(jq -r .version Guīzé.version.stor)"
+          git push
