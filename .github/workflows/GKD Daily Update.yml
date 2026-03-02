@@ -6,21 +6,29 @@ on:
     - cron: "0 */6 * * *"
   workflow_dispatch:
 
+# 赋予工作流足够的写入权限
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   sync-subscription:
     runs-on: ubuntu-latest
     steps:
-      # 1. 检出仓库代码（包含独立的gkd_sync.py文件）
+      # 1. 检出仓库代码（指定Grey分支）
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # 获取完整提交历史
+          fetch-depth: 0
+          ref: Grey  # 明确指定检出Grey分支
+          # 如需使用PAT，取消注释下面这行（替换为你的密钥名）
+          # token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
-      # 2. 设置Python环境（移除cache配置，解决报错）
+      # 2. 设置Python环境
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.10"  # 移除cache配置
+          python-version: "3.10"
 
       # 3. 安装依赖包
       - name: Install dependencies
@@ -28,33 +36,45 @@ jobs:
           python -m pip install --upgrade pip
           pip install json5 requests
 
-      # 4. 执行独立的同步脚本
+      # 4. 执行同步脚本
       - name: Run GKD sync script
         run: python gkd_sync.py
 
-      # 5. 提交并推送更新（仅当有更新时执行）
-      - name: Commit and push changes
+      # 5. 提交并推送更新到Grey分支
+      - name: Commit and push changes to Grey branch
         if: hashFiles('.update_success') != ''
         run: |
           # 配置Git身份
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # 获取更新后的版本号
+          # 切换到Grey分支（双重确认）
+          git checkout Grey
+          
+          # 拉取Grey分支最新代码，避免冲突
+          git pull origin Grey --rebase
+          
+          # 获取更新版本号
           NEW_VERSION=$(cat .update_success)
           
           # 添加更新的文件
-          git add Guīzé.stor Guīzé.version.stor
+          git add Guīzé.stor Guīzé.version.stor .update_success || true
+          
+          # 检查是否有实际变更
+          if git diff --staged --quiet; then
+            echo "ℹ️  没有需要提交的变更"
+            exit 0
+          fi
           
           # 提交变更
-          git commit -m "🔄 自动更新GKD订阅至版本 v${NEW_VERSION}"
+          git commit -m "🔄 自动更新GKD订阅至版本 v${NEW_VERSION}" --allow-empty
           
-          # 推送变更到仓库
-          git push
+          # 推送到Grey分支（核心修改：替换为Grey）
+          git push origin Grey
           
-          echo "🚀 更新已成功推送到仓库！"
+          echo "🚀 更新已成功推送到Grey分支！"
 
-      # 6. 清理临时文件（无论是否更新都执行）
+      # 6. 清理临时文件
       - name: Cleanup temporary files
         if: always()
         run: |
