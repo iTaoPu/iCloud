@@ -1,4 +1,4 @@
-name: 拉取并修改Google过滤规则生成Google.txt
+name: Google Daily Update
 on:
   schedule:
     - cron: '0 18 * * *'  # 北京时间2点
