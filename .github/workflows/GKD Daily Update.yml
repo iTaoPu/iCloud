@@ -75,7 +75,7 @@ jobs:
           fi
           
           # 提交变更（注明版本文件仅含id和version）
-          git commit -m "🔄 自动更新GKD订阅至版本 v${NEW_VERSION}（版本文件仅保留id和version）" --allow-empty
+          git commit -m "🔄 自动更新GKD订阅至版本 v${NEW_VERSION}" --allow-empty
           
           # 推送到Grey分支
           git push origin Grey
