@@ -1,106 +1,80 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-极简容错版：确保脚本不报错，exit code 0
+独立脚本：处理Google.txt生成逻辑
+存放路径：.github/workflows/update_google_filter.py
 """
 import os
 from datetime import datetime, timedelta
 
-# ========== 核心配置 ==========
-CUSTOM_HEADER = """! Title: AdRules i叚娤.倖鍢 Google List
+def get_beijing_time():
+    """获取北京时间（UTC+8），返回YYYY-MM-DD格式"""
+    return (datetime.utcnow() + timedelta(hours=8)).strftime("%Y-%m-%d")
+
+def increment_version():
+    """从现有Google.txt读取版本号并自增最后一位，无文件则返回初始版本"""
+    default_version = "1.0.0.0"
+    if not os.path.exists("Google.txt"):
+        return default_version
+    
+    try:
+        with open("Google.txt", "r", encoding="utf-8") as f:
+            for line in f:
+                if line.startswith("! Version:"):
+                    # 提取版本号并自增最后一位
+                    version = line.strip().split(":")[1].strip()
+                    parts = version.split(".")
+                    parts[-1] = str(int(parts[-1]) + 1)
+                    return ".".join(parts)
+        return default_version
+    except Exception:
+        return default_version
+
+def process_filter_file():
+    """核心逻辑：读取temp_filter.txt，生成Google.txt"""
+    # 1. 基础信息
+    beijing_date = get_beijing_time()
+    new_version = increment_version()
+    
+    # 2. 读取远程临时文件（必须存在，工作流已验证）
+    with open("temp_filter.txt", "r", encoding="utf-8") as f:
+        raw_content = f.read()
+    
+    # 3. 提取核心规则（跳过原头部）
+    rule_content = ""
+    lines = raw_content.split("\n")
+    start_extract = False
+    for line in lines:
+        if start_extract:
+            rule_content += line + "\n"
+        # 找到原Update Date后开始提取规则
+        if line.startswith("! Update Date:"):
+            start_extract = True
+    
+    # 4. 拼接自定义头部
+    custom_header = f"""! Title: AdRules i叚娤.倖鍢 Google List
 ! Homepage: https://i叚娤.倖鍢.net.cn
 ! Powerd by i叚娤.倖鍢
 ! Expires: irregularly (update frequency)
 ! Description: Completely blocks all Google-related domains (including YouTube)
-! ------------------------------------"""
-# ========== 核心函数 ==========
-def get_beijing_time():
-    """获取北京时间，容错处理"""
-    try:
-        return (datetime.utcnow() + timedelta(hours=8)).strftime("%Y-%m-%d")
-    except:
-        return datetime.now().strftime("%Y-%m-%d")
-
-def get_version():
-    """获取版本号，容错处理"""
-    version = "1.0.0.0"
-    try:
-        if os.path.exists("Google.txt"):
-            with open("Google.txt", "r", encoding="utf-8") as f:
-                for line in f:
-                    if line.startswith("! Version:"):
-                        version = line.strip().split(":")[1].strip()
-                        # 版本号自增（最后一位+1）
-                        parts = version.split(".")
-                        parts[-1] = str(int(parts[-1]) + 1)
-                        version = ".".join(parts)
-                        break
-    except:
-        pass
-    return version
-
-def main():
-    """主函数：确保无论如何都生成Google.txt"""
-    # 1. 基础信息
-    beijing_date = get_beijing_time()
-    new_version = get_version()
-    
-    # 2. 读取远程文件（容错：文件不存在则用空内容）
-    raw_content = ""
-    if os.path.exists("temp_filter.txt"):
-        try:
-            with open("temp_filter.txt", "r", encoding="utf-8") as f:
-                raw_content = f.read()
-        except:
-            raw_content = ""
-    
-    # 3. 提取规则（去掉原头部，容错处理）
-    rule_content = ""
-    try:
-        # 找到原头部结束位置，保留后面的内容
-        lines = raw_content.split("\n")
-        start_idx = 0
-        for i, line in enumerate(lines):
-            if line.startswith("! Update Date:"):
-                start_idx = i + 1
-                break
-        rule_content = "\n".join(lines[start_idx:]).strip()
-    except:
-        rule_content = raw_content  # 提取失败则用原内容
-    
-    # 4. 拼接最终内容（确保格式正确）
-    final_content = f"""
-{CUSTOM_HEADER}
+! ------------------------------------
 ! Version: {new_version}
 ! Update Date (Beijing Time):  {beijing_date}
 
-{rule_content}
-""".strip() + "\n"  # 末尾加换行
+{rule_content.strip()}"""
     
-    # 5. 写入文件（强制写入，确保成功）
-    try:
-        with open("Google.txt", "w", encoding="utf-8") as f:
-            f.write(final_content)
-    except Exception as e:
-        # 极端情况：写入失败则创建空文件
-        with open("Google.txt", "w", encoding="utf-8") as f:
-            f.write(f"{CUSTOM_HEADER}\n! Version: {new_version}\n! Update Date (Beijing Time):  {beijing_date}\n")
+    # 5. 写入最终文件
+    with open("Google.txt", "w", encoding="utf-8") as f:
+        f.write(custom_header)
     
-    # 6. 输出环境变量（供工作流读取）
+    # 6. 输出环境变量格式的内容（供工作流读取）
     print(f"NEW_VERSION={new_version}")
     print(f"CURRENT_DATE={beijing_date}")
-    print("✅ 脚本执行成功，生成Google.txt")
-    return 0
+    print("✅ 脚本执行成功，Google.txt生成完成")
 
 if __name__ == "__main__":
-    # 全局异常捕获：确保脚本exit code 0
     try:
-        exit(main())
+        process_filter_file()
     except Exception as e:
-        print(f"⚠️ 脚本执行异常：{str(e)}")
-        # 强制生成基础Google.txt，避免工作流失败
-        with open("Google.txt", "w", encoding="utf-8") as f:
-            f.write(f"{CUSTOM_HEADER}\n! Version: 1.0.0.0\n! Update Date (Beijing Time):  {get_beijing_time()}\n")
-        print(f"NEW_VERSION=1.0.0.0")
-        print(f"CURRENT_DATE={get_beijing_time()}")
-        exit(0)  # 强制返回0，避免exit code 5
+        print(f"❌ 脚本执行失败：{str(e)}")
+        exit(1)  # 失败则返回非0，工作流会终止
