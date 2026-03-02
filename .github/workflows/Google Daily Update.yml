@@ -1,9 +1,9 @@
 name: 拉取并修改Google过滤规则生成Google.txt
 
-# 触发条件：每6小时自动运行 + 手动触发（和GKD一致）
+# 触发条件：每6小时自动运行 + 手动触发
 on:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "0 18 */3 * *" # 每3天 UTC 18:00（北京时间凌晨2点）运行一次
   workflow_dispatch:
 
 # 复用GKD的权限声明（核心：显式赋予写入权限）
