@@ -38,8 +38,9 @@ jobs:
 
       # 4. 进入GKD目录执行同步脚本
       - name: Run GKD sync script (in GKD directory)
+        id: sync
         run: |
-          # 确保GKD目录存在（如果手动创建过可省略）
+          # 确保GKD目录存在
           mkdir -p GKD
           # 进入GKD目录执行脚本
           cd GKD
@@ -47,7 +48,7 @@ jobs:
 
       # 5. 提交并推送GKD目录下的所有更新
       - name: Commit and push changes to Grey branch
-        if: hashFiles('.update_success') != ''
+        if: hashFiles('GKD/.update_success') != ''
         run: |
           # 配置Git身份
           git config --global user.name "github-actions[bot]"
@@ -59,11 +60,13 @@ jobs:
           # 拉取Grey分支最新代码
           git pull origin Grey --rebase
           
-          # 获取更新版本号
+          # 进入GKD目录获取更新版本号
+          cd GKD
           NEW_VERSION=$(cat .update_success)
+          cd ..
           
-          # 添加GKD目录下的所有相关文件（脚本+生成的订阅文件）
-          git add GKD/gkd_sync.py GKD/Guīzé.stor GKD/Guīzé.version.stor .update_success || true
+          # 添加GKD目录下的所有相关文件
+          git add GKD/ || true
           
           # 检查是否有实际变更
           if git diff --staged --quiet; then
@@ -71,7 +74,7 @@ jobs:
             exit 0
           fi
           
-          # 提交变更（注明所有文件在GKD目录）
+          # 提交变更
           git commit -m "🔄 自动更新GKD订阅至版本 v${NEW_VERSION}（所有文件保存在GKD目录）" --allow-empty
           
           # 推送到Grey分支
@@ -79,9 +82,9 @@ jobs:
           
           echo "🚀 更新已成功推送到Grey分支！所有文件保存在GKD目录"
 
-      # 6. 清理临时文件
+      # 6. 清理临时文件（GKD目录内的标记文件）
       - name: Cleanup temporary files
         if: always()
         run: |
-          rm -f .update_success || true
+          rm -f GKD/.update_success || true
           echo "🧹 临时文件清理完成"
