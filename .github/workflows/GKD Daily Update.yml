@@ -10,7 +10,7 @@ jobs:
   sync-subscription:
     runs-on: ubuntu-latest
     steps:
-      # 1. 检出仓库代码
+      # 1. 检出仓库代码（包含独立的gkd_sync.py文件）
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
@@ -20,7 +20,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.10"  # 与脚本兼容的版本
+          python-version: "3.10"
           cache: "pip"  # 缓存依赖包，加速运行
 
       # 3. 安装依赖包
@@ -29,159 +29,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install json5 requests
 
-      # 4. 执行同步脚本（核心步骤）
-      - name: Run sync script
-        id: sync
-        run: |
-          # 将完整的Python脚本写入文件
-          cat > gkd_sync.py << 'EOF'
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-import json5
-import requests
-import json
-import os
-import sys
-
-# ===================== 配置区域 =====================
-UPSTREAM_VERSION_URL = "https://raw.githubusercontent.com/Lin-arm/GKD_subscription/main/dist/gkd.version.json5"
-UPSTREAM_SUB_URL = "https://raw.githubusercontent.com/Lin-arm/GKD_subscription/main/dist/gkd.json5"
-LOCAL_VERSION_FILE = "Guīzé.version.stor"
-LOCAL_SUB_FILE = "Guīzé.stor"
-
-CUSTOM_CONFIG = {
-    "id": 2015,
-    "name": "少数π⁺ 🌀Guīzé訂閱−禁止傳播",
-    "author": "少数π⁺",
-    "checkUpdateUrl": "./Guīzé.version.stor",
-    "supportUri": "https://iCloud.ifanr.us.ci"
-}
-
-TIMEOUT_VERSION = 10
-TIMEOUT_SUBSCRIPTION = 30
-# ====================================================
-
-def get_upstream_version():
-    try:
-        print(f"📡 正在获取上游版本信息: {UPSTREAM_VERSION_URL}")
-        resp = requests.get(UPSTREAM_VERSION_URL, timeout=TIMEOUT_VERSION)
-        resp.raise_for_status()
-        data = json5.loads(resp.text)
-        upstream_version = int(data.get("version", 0))
-        print(f"✅ 上游最新版本: {upstream_version}")
-        return upstream_version
-    except requests.exceptions.Timeout:
-        print(f"❌ 超时：获取上游版本信息超时（{TIMEOUT_VERSION}秒）")
-        sys.exit(1)
-    except requests.exceptions.RequestException as e:
-        print(f"❌ 网络错误：获取上游版本失败 - {e}")
-        sys.exit(1)
-    except Exception as e:
-        print(f"❌ 解析错误：解析版本信息失败 - {e}")
-        sys.exit(1)
-
-def get_local_version():
-    try:
-        if os.path.exists(LOCAL_VERSION_FILE):
-            print(f"📂 正在读取本地版本文件: {LOCAL_VERSION_FILE}")
-            with open(LOCAL_VERSION_FILE, "r", encoding="utf-8") as f:
-                data = json.load(f)
-            local_version = int(data.get("version", 0))
-            print(f"✅ 本地当前版本: {local_version}")
-            return local_version
-        else:
-            print(f"ℹ️  本地版本文件不存在，默认版本号：0")
-            return 0
-    except Exception as e:
-        print(f"⚠️  读取本地版本失败（{e}），默认版本号：0")
-        return 0
-
-def update_subscription(upstream_version):
-    try:
-        print(f"📥 正在下载上游订阅文件: {UPSTREAM_SUB_URL}")
-        resp = requests.get(UPSTREAM_SUB_URL, timeout=TIMEOUT_SUBSCRIPTION)
-        resp.raise_for_status()
-        data = json5.loads(resp.text)
-        print(f"✅ 成功下载订阅文件，大小：{len(resp.text)} 字节")
-        
-        data.update(CUSTOM_CONFIG)
-        data["version"] = upstream_version
-        
-        with open(LOCAL_SUB_FILE, "w", encoding="utf-8") as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
-        print(f"✅ 已保存主订阅文件: {LOCAL_SUB_FILE}")
-        
-        version_data = {
-            "id": data["id"],
-            "name": data["name"],
-            "version": data["version"],
-            "author": data["author"],
-            "checkUpdateUrl": data["checkUpdateUrl"],
-            "supportUri": data["supportUri"]
-        }
-        
-        with open(LOCAL_VERSION_FILE, "w", encoding="utf-8") as f:
-            json.dump(version_data, f, ensure_ascii=False, indent=2)
-        print(f"✅ 已保存版本文件: {LOCAL_VERSION_FILE}")
-        
-        # 创建更新标记文件，供后续步骤判断
-        with open(".update_success", "w") as f:
-            f.write(f"{upstream_version}")
-        
-        return True
-    except requests.exceptions.Timeout:
-        print(f"❌ 超时：下载订阅文件超时（{TIMEOUT_SUBSCRIPTION}秒）")
-        return False
-    except requests.exceptions.RequestException as e:
-        print(f"❌ 网络错误：下载订阅失败 - {e}")
-        return False
-    except Exception as e:
-        print(f"❌ 更新失败：{e}")
-        import traceback
-        traceback.print_exc()
-        return False
-
-def main():
-    print("=" * 50)
-    print("🎯 开始GKD订阅同步检查")
-    print("=" * 50)
-    
-    local_ver = get_local_version()
-    upstream_ver = get_upstream_version()
-    
-    print("\n🔍 版本对比结果：")
-    print(f"   本地版本: {local_ver}")
-    print(f"   上游版本: {upstream_ver}")
-    
-    if upstream_ver > local_ver:
-        print(f"\n📢 发现新版本！开始更新...")
-        update_success = update_subscription(upstream_ver)
-        if update_success:
-            print("\n✅ 同步完成！所有文件已更新")
-            sys.exit(0)
-        else:
-            print("\n❌ 同步失败！请检查错误信息")
-            sys.exit(1)
-    elif upstream_ver == local_ver:
-        print("\n✅ 本地已是最新版本，无需更新")
-        sys.exit(0)
-    else:
-        print(f"\n⚠️  警告：本地版本({local_ver})高于上游版本({upstream_ver})")
-        sys.exit(0)
-
-if __name__ == "__main__":
-    try:
-        main()
-    except KeyboardInterrupt:
-        print("\n\n🛑 用户中断操作")
-        sys.exit(1)
-    except Exception as e:
-        print(f"\n❌ 程序异常退出：{e}")
-        sys.exit(1)
-EOF
-
-          # 执行同步脚本
-          python gkd_sync.py
+      # 4. 执行独立的同步脚本
+      - name: Run GKD sync script
+        run: python gkd_sync.py
 
       # 5. 提交并推送更新（仅当有更新时执行）
       - name: Commit and push changes
@@ -194,8 +44,8 @@ EOF
           # 获取更新后的版本号
           NEW_VERSION=$(cat .update_success)
           
-          # 检查文件变更
-          git add "${{ env.LOCAL_SUB_FILE }}" "${{ env.LOCAL_VERSION_FILE }}"
+          # 添加更新的文件
+          git add Guīzé.stor Guīzé.version.stor
           
           # 提交变更
           git commit -m "🔄 自动更新GKD订阅至版本 v${NEW_VERSION}"
@@ -203,14 +53,11 @@ EOF
           # 推送变更到仓库
           git push
           
-          # 清理临时文件
-          rm -f .update_success gkd_sync.py
-          
           echo "🚀 更新已成功推送到仓库！"
 
       # 6. 清理临时文件（无论是否更新都执行）
-      - name: Cleanup
+      - name: Cleanup temporary files
         if: always()
         run: |
-          rm -f .update_success gkd_sync.py || true
+          rm -f .update_success || true
           echo "🧹 临时文件清理完成"
