@@ -41,7 +41,7 @@ jobs:
           echo "📥 下载Google广告拦截规则文件..."
           # 优先用代理，确保国内可访问
           PROXY_URL="https://adguardteam.github.io/HostlistsRegistry/assets/filter_37.txt"
-          ORIGIN_URL="https://raw.githubusercontent.com/AdguardTeam/HostlistsRegistry/main/assets/filter_37.txt"
+          ORIGIN_URL="https://wget.la/raw.githubusercontent.com/AdguardTeam/HostlistsRegistry/main/assets/filter_37.txt"
           
           # 下载并验证规则行数（广告规则至少有10行）
           curl -sL --retry 10 --connect-timeout 30 "$PROXY_URL" -o "temp_filter.txt"
