@@ -118,7 +118,7 @@ def main():
     
     # 7. 内容有变更，生成新文件（版本号跟随上游）
     beijing_time = get_beijing_time()
-    custom_header = f"""! Title: AdRules i叚娤.倖鍢 Google 广告拦截规则
+    custom_header = f"""! Title: AdRules i叚娤.倖鍢 Google List
 ! Homepage: https://i叚娤.倖鍢.net.cn
 ! Powerd by i叚娤.倖鍢
 ! Expires: irregularly (update frequency)
