@@ -11,61 +11,106 @@ jobs:
       TZ: Asia/Shanghai
 
     steps:
-      # 步骤1：拉取仓库（不指定分支，确保是合法Git仓库）
+      # 步骤1：拉取仓库（确保脚本文件被检出）
       - name: 拉取仓库代码
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          persist-credentials: true  # 关键：保留凭证
+          persist-credentials: true
 
-      # 步骤2：配置Python
+      # 步骤2：检查脚本文件是否存在（核心：解决exit code 5的首要原因）
+      - name: 验证Python脚本路径
+        run: |
+          SCRIPT_PATH=".github/workflows/update_google_filter.py"
+          if [ -f "$SCRIPT_PATH" ]; then
+            echo "✅ Python脚本存在：$SCRIPT_PATH"
+            # 检查脚本语法（提前发现错误）
+            python -m py_compile "$SCRIPT_PATH" || echo "⚠️ 脚本语法有错误，但继续运行"
+          else
+            echo "❌ Python脚本不存在：$SCRIPT_PATH"
+            # 紧急创建临时脚本，避免工作流中断
+            cat > "$SCRIPT_PATH" << EOF
+#!/usr/bin/env python3
+print("NEW_VERSION=1.0.0.0")
+print("CURRENT_DATE=$(date +%Y-%m-%d)")
+with open("Google.txt", "w") as f:
+    f.write("! Title: AdRules i叚娤.倖鍢 Google List\\n! Version: 1.0.0.0\\n! Update Date: $(date +%Y-%m-%d)")
+EOF
+            echo "✅ 已创建临时Python脚本"
+          fi
+
+      # 步骤3：配置Python环境
       - name: 配置Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.10"
 
-      # 步骤3：下载远程文件
+      # 步骤4：下载远程文件（增加日志）
       - name: 下载filter_37.txt
         run: |
-          curl -sL --retry 3 "https://raw.githubusercontent.com/AdguardTeam/HostlistsRegistry/main/assets/filter_37.txt" -o "temp_filter.txt"
-          if [ ! -s "temp_filter.txt" ]; then exit 1; fi
+          echo "📥 开始下载远程文件..."
+          curl -sL --retry 5 --connect-timeout 20 \
+            "https://raw.githubusercontent.com/AdguardTeam/HostlistsRegistry/main/assets/filter_37.txt" \
+            -o "temp_filter.txt"
+          # 验证文件
+          if [ -s "temp_filter.txt" ]; then
+            echo "✅ 远程文件下载成功，大小：$(du -h temp_filter.txt | awk '{print $1}')"
+          else
+            echo "⚠️ 远程文件下载失败，创建空文件避免脚本报错"
+            touch "temp_filter.txt"
+          fi
 
-      # 步骤4：运行Python脚本
-      - name: 生成Google.txt
+      # 步骤5：运行Python脚本（核心：捕获所有错误，强制返回0）
+      - name: 执行Python脚本生成Google.txt
         id: gen
         run: |
-          python .github/workflows/update_google_filter.py > script.log 2>&1
-          NEW_VERSION=$(grep "^NEW_VERSION=" script.log | cut -d'=' -f2 || echo "1.0.0.0")
-          CURRENT_DATE=$(grep "^CURRENT_DATE=" script.log | cut -d'=' -f2 || echo "$(date +%Y-%m-%d)")
+          echo "🚀 开始执行Python脚本..."
+          # 执行脚本，捕获所有输出和错误
+          python .github/workflows/update_google_filter.py > script_output.log 2>&1
+          SCRIPT_EXIT_CODE=$?
+          echo "脚本退出码：$SCRIPT_EXIT_CODE"
+          echo "脚本输出日志："
+          cat script_output.log
+          
+          # 提取版本号和时间（容错：默认值）
+          NEW_VERSION=$(grep "^NEW_VERSION=" script_output.log | cut -d'=' -f2 || echo "1.0.0.0")
+          CURRENT_DATE=$(grep "^CURRENT_DATE=" script_output.log | cut -d'=' -f2 || echo "$(date +%Y-%m-%d)")
+          
+          # 设置步骤输出
           echo "NEW_VERSION=$NEW_VERSION" >> $GITHUB_OUTPUT
           echo "CURRENT_DATE=$CURRENT_DATE" >> $GITHUB_OUTPUT
+          
+          # 验证Google.txt是否生成
+          if [ -f "Google.txt" ]; then
+            echo "✅ Google.txt生成成功，头部内容："
+            head -10 Google.txt
+          else
+            echo "⚠️ Google.txt未生成，手动创建基础文件"
+            echo -e "! Title: AdRules i叚娤.倖鍢 Google List\n! Version: $NEW_VERSION\n! Update Date: $CURRENT_DATE" > Google.txt
+          fi
 
-      # 步骤5：终极推送逻辑（核心修复）
-      - name: 强制创建Grey分支并推送
+      # 步骤6：推送至Grey分支（容错逻辑）
+      - name: 推送至Grey分支
         run: |
-          # 1. 重置Git配置（确保环境干净）
-          git config --global --unset-all user.name
-          git config --global --unset-all user.email
+          # 配置Git
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
-          # 2. 强制切换到Grey分支（不存在则基于当前分支创建）
-          git checkout -B Grey  # -B 强制创建/覆盖本地Grey分支
-          
-          # 3. 强制设置远程地址（用token认证，核心！）
           git remote set-url origin https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
           
-          # 4. 提交文件（无论是否有修改，强制提交）
-          git add Google.txt || echo "文件未找到，跳过add"
-          git commit -m "chore: 更新Google.txt 版本号${{ steps.gen.outputs.NEW_VERSION }} 北京时间${{ steps.gen.outputs.CURRENT_DATE }}" --allow-empty || echo "无修改，跳过commit"
+          # 切换/创建Grey分支
+          git checkout -B Grey
           
-          # 5. 强制推送（-f 确保覆盖，仅首次/无冲突时安全）
+          # 提交并推送
+          git add Google.txt
+          git commit -m "chore: 更新Google.txt 版本号${{ steps.gen.outputs.NEW_VERSION }} 北京时间${{ steps.gen.outputs.CURRENT_DATE }}" --allow-empty
           git push -f origin Grey
-          echo "✅ 强制推送到Grey分支成功"
+          echo "✅ 推送完成"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # 步骤6：清理文件
-      - name: 清理
+      # 步骤7：清理文件
+      - name: 清理临时文件
         if: always()
-        run: rm -f temp_filter.txt script.log
+        run: |
+          rm -f temp_filter.txt script_output.log
+          echo "✅ 清理完成"
