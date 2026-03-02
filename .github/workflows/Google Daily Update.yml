@@ -1,108 +1,107 @@
 # 工作流名称
-name: Google Daily Update.yml
+name: Google Daily Update
 
 # 触发条件：北京时间定时触发 + 手动触发
 on:
   schedule:
     # 北京时间每天凌晨2点触发（UTC时间18:00）
-    # 换算规则：UTC时间 = 北京时间 - 8小时（负数则+24）
-    # 常用替换示例：
-    # 北京时间 08:00 → UTC 00:00 → cron: '0 0 * * *'
-    # 北京时间 12:00 → UTC 04:00 → cron: '0 4 * * *'
-    # 北京时间 20:00 → UTC 12:00 → cron: '0 12 * * *'
-    # 北京时间 22:00 → UTC 14:00 → cron: '0 14 * * *'
     - cron: '0 18 * * *'
-  workflow_dispatch:  # 手动触发开关（在Actions页面可点击运行）
+  workflow_dispatch:  # 手动触发开关
 
-# 工作流执行任务
 jobs:
   fetch-modify-push:
-    # 运行环境：Ubuntu最新版
     runs-on: ubuntu-latest
-    # 全局环境变量（确保时间相关操作基于北京时间）
     env:
-      TZ: Asia/Shanghai
+      TZ: Asia/Shanghai  # 全局设置北京时间
 
     steps:
-      # 步骤1：拉取仓库代码并切换到Grey分支
+      # 步骤1：拉取仓库代码（兼容Grey分支不存在的情况）
       - name: 拉取仓库代码（Grey分支）
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # 拉取所有历史提交（用于版本号校验）
-          ref: Grey       # 直接指定拉取Grey分支（不存在则后续自动创建）
+          fetch-depth: 0
+          # 先尝试拉取Grey分支，不存在则拉取默认分支（main/master）
+          ref: ${{ github.event.inputs.branch || 'Grey' }}
 
-      # 步骤2：配置Python环境（运行处理脚本）
+      # 步骤2：配置Python环境（关闭pip缓存，解决无依赖文件报错）
       - name: 安装并配置Python环境
         uses: actions/setup-python@v5
         with:
-          python-version: "3.10"  # 兼容Python 3.8+，可按需修改
-          cache: "pip"            # 缓存pip依赖，加速运行
+          python-version: "3.10"
+          # 移除cache配置，避免查找requirements.txt/pyproject.toml
+          # cache: "pip"  # 注释掉这行，解决"无匹配文件"报错
 
-      # 步骤3：下载远程filter_37.txt文件到仓库根目录
+      # 步骤3：下载远程filter_37.txt文件（增加失败重试）
       - name: 拉取远程Google过滤规则文件
         run: |
-          # 静默下载，失败则重试3次
-          curl -sL --retry 3 "https://raw.githubusercontent.com/AdguardTeam/HostlistsRegistry/main/assets/filter_37.txt" -o "temp_filter.txt"
-          # 验证文件是否下载成功
+          # 静默下载，失败重试3次，超时10秒
+          curl -sL --retry 3 --connect-timeout 10 \
+            "https://raw.githubusercontent.com/AdguardTeam/HostlistsRegistry/main/assets/filter_37.txt" \
+            -o "temp_filter.txt"
+          # 验证文件是否有效
           if [ -s "temp_filter.txt" ]; then
-            echo "✅ 远程文件下载成功，文件大小：$(du -h temp_filter.txt | awk '{print $1}')"
+            echo "✅ 远程文件下载成功，大小：$(du -h temp_filter.txt | awk '{print $1}')"
           else
-            echo "❌ 远程文件下载失败或文件为空"
+            echo "❌ 远程文件下载失败或为空"
             exit 1
           fi
 
-      # 步骤4：运行workflows目录下的Python脚本处理文件
+      # 步骤4：运行Python脚本生成Google.txt
       - name: 执行Python脚本生成Google.txt
         run: |
-          # 调用.github/workflows/目录下的处理脚本
+          # 检查Python脚本是否存在
+          if [ ! -f ".github/workflows/update_google_filter.py" ]; then
+            echo "❌ Python脚本不存在：.github/workflows/update_google_filter.py"
+            exit 1
+          fi
+          # 执行脚本
           python .github/workflows/update_google_filter.py
-          # 提取版本号和更新时间（用于提交信息）
+          # 提取版本号和时间
           NEW_VERSION=$(grep -E '^! Version: ' Google.txt | sed 's/! Version: //g')
           CURRENT_DATE=$(grep -E '^! Update Date \(Beijing Time\): ' Google.txt | sed 's/! Update Date (Beijing Time):  //g')
-          # 写入环境变量，供后续步骤使用
           echo "NEW_VERSION=$NEW_VERSION" >> $GITHUB_ENV
           echo "CURRENT_DATE=$CURRENT_DATE" >> $GITHUB_ENV
-          # 验证生成的文件
-          echo "✅ 生成的Google.txt头部信息："
+          # 验证生成结果
           head -10 Google.txt
 
-      # 步骤5：提交修改并推送到Grey分支
+      # 步骤5：确保切换到Grey分支（关键：解决分支不存在问题）
+      - name: 切换/创建Grey分支
+        run: |
+          # 若Grey分支不存在，基于当前分支创建
+          git checkout Grey || git checkout -b Grey
+          echo "✅ 当前分支：$(git branch --show-current)"
+
+      # 步骤6：提交并推送修改到Grey分支
       - name: 提交并推送修改到Grey分支
         run: |
-          # 配置Git用户身份（Actions机器人）
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # 检查Google.txt是否有修改
           if git status --porcelain | grep -q "Google.txt"; then
-            # 添加文件到暂存区
             git add Google.txt
-            # 提交修改（含版本号和时间）
             git commit -m "chore: 更新Google.txt 版本号${{ env.NEW_VERSION }} 北京时间${{ env.CURRENT_DATE }}"
-            # 推送至Grey分支（首次推送自动创建分支并关联）
+            # 推送（首次推送自动关联远程Grey分支）
             git push -u origin Grey
-            echo "✅ 成功推送到Grey分支，提交信息：chore: 更新Google.txt 版本号${{ env.NEW_VERSION }} 北京时间${{ env.CURRENT_DATE }}"
+            echo "✅ 成功推送到Grey分支"
           else
             echo "ℹ️ Google.txt无修改，无需推送"
           fi
         env:
-          # GitHub内置令牌，无需手动配置
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # 步骤6：清理临时文件（无论前面步骤成败都执行）
+      # 步骤7：清理临时文件
       - name: 清理临时文件
         if: always()
         run: |
           rm -f temp_filter.txt
           echo "✅ 临时文件清理完成"
 
-      # 步骤7：输出运行结果（便于日志排查）
-      - name: 输出最终运行信息
+      # 步骤8：输出运行日志
+      - name: 输出运行总结
         if: always()
         run: |
-          echo "📝 工作流运行总结："
-          echo "   触发方式：${{ github.event_name }}"
-          echo "   运行分支：Grey"
-          echo "   生成版本：${{ env.NEW_VERSION || '未生成' }}"
-          echo "   更新时间：${{ env.CURRENT_DATE || '未更新' }}"
-          echo "   运行状态：${{ job.status }}"
+          echo "📝 运行总结："
+          echo "   分支：$(git branch --show-current)"
+          echo "   版本：${{ env.NEW_VERSION || '未生成' }}"
+          echo "   时间：${{ env.CURRENT_DATE || '未更新' }}"
+          echo "   状态：${{ job.status }}"
