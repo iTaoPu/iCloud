@@ -1,4 +1,4 @@
-! Title: AdRules i叚娤.倖鍢 Google 广告拦截规则
+! Title: AdRules i叚娤.倖鍢 Google List
 ! Homepage: https://i叚娤.倖鍢.net.cn
 ! Powerd by i叚娤.倖鍢
 ! Expires: 3 day
