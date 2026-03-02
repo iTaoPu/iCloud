@@ -1,142 +1,71 @@
-# 工作流名称
-name: Google Daily Update
-
-# 触发条件：北京时间定时触发 + 手动触发
+name: 拉取并修改Google过滤规则生成Google.txt
 on:
   schedule:
-    # 北京时间每天凌晨2点触发（UTC时间18:00）
-    - cron: '0 18 * * *'
-  workflow_dispatch:  # 手动触发开关
+    - cron: '0 18 * * *'  # 北京时间2点
+  workflow_dispatch:
 
 jobs:
   fetch-modify-push:
     runs-on: ubuntu-latest
     env:
-      TZ: Asia/Shanghai  # 全局设置北京时间
+      TZ: Asia/Shanghai
 
     steps:
-      # 步骤1：拉取仓库代码（修复：不指定分支，后续手动创建/切换）
-      - name: 拉取仓库代码（完整仓库）
+      # 步骤1：拉取仓库（不指定分支，确保是合法Git仓库）
+      - name: 拉取仓库代码
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          # 移除 ref: Grey，避免首次运行分支不存在导致检出失败
-          token: ${{ secrets.GITHUB_TOKEN }}  # 显式指定token，提升权限
+          persist-credentials: true  # 关键：保留凭证
 
-      # 步骤2：配置Python环境
-      - name: 安装并配置Python环境
+      # 步骤2：配置Python
+      - name: 配置Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.10"
 
-      # 步骤3：下载远程filter_37.txt文件
-      - name: 拉取远程Google过滤规则文件
+      # 步骤3：下载远程文件
+      - name: 下载filter_37.txt
         run: |
-          # 静默下载，失败重试3次，超时10秒
-          curl -sL --retry 3 --connect-timeout 10 \
-            "https://raw.githubusercontent.com/AdguardTeam/HostlistsRegistry/main/assets/filter_37.txt" \
-            -o "temp_filter.txt"
-          # 验证文件是否有效
-          if [ -s "temp_filter.txt" ]; then
-            echo "✅ 远程文件下载成功，大小：$(du -h temp_filter.txt | awk '{print $1}')"
-          else
-            echo "❌ 远程文件下载失败或为空"
-            exit 1
-          fi
+          curl -sL --retry 3 "https://raw.githubusercontent.com/AdguardTeam/HostlistsRegistry/main/assets/filter_37.txt" -o "temp_filter.txt"
+          if [ ! -s "temp_filter.txt" ]; then exit 1; fi
 
-      # 步骤4：运行Python脚本生成Google.txt
-      - name: 执行Python脚本生成Google.txt
-        id: generate_file
+      # 步骤4：运行Python脚本
+      - name: 生成Google.txt
+        id: gen
         run: |
-          # 检查Python脚本是否存在
-          if [ ! -f ".github/workflows/update_google_filter.py" ]; then
-            echo "❌ Python脚本不存在：.github/workflows/update_google_filter.py"
-            exit 1
-          fi
-          # 执行脚本并捕获输出
-          SCRIPT_OUTPUT=$(python .github/workflows/update_google_filter.py)
-          echo "脚本输出：$SCRIPT_OUTPUT"
-          
-          # 提取版本号和时间（带默认值）
-          NEW_VERSION=$(echo "$SCRIPT_OUTPUT" | grep "^NEW_VERSION=" | cut -d'=' -f2 || echo "1.0.0.0")
-          CURRENT_DATE=$(echo "$SCRIPT_OUTPUT" | grep "^CURRENT_DATE=" | cut -d'=' -f2 || echo "$(date +%Y-%m-%d)")
-          
-          # 设置步骤输出
+          python .github/workflows/update_google_filter.py > script.log 2>&1
+          NEW_VERSION=$(grep "^NEW_VERSION=" script.log | cut -d'=' -f2 || echo "1.0.0.0")
+          CURRENT_DATE=$(grep "^CURRENT_DATE=" script.log | cut -d'=' -f2 || echo "$(date +%Y-%m-%d)")
           echo "NEW_VERSION=$NEW_VERSION" >> $GITHUB_OUTPUT
           echo "CURRENT_DATE=$CURRENT_DATE" >> $GITHUB_OUTPUT
-          
-          # 验证生成结果
-          echo "✅ 提取到的信息："
-          echo "   版本号：$NEW_VERSION"
-          echo "   更新时间：$CURRENT_DATE"
-          head -10 Google.txt
 
-      # 步骤5：修复Git仓库配置 + 切换/创建Grey分支（核心修复）
-      - name: 配置Git并切换到Grey分支
+      # 步骤5：终极推送逻辑（核心修复）
+      - name: 强制创建Grey分支并推送
         run: |
-          # 配置Git用户（必选，避免身份验证失败）
+          # 1. 重置Git配置（确保环境干净）
+          git config --global --unset-all user.name
+          git config --global --unset-all user.email
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # 修复：先拉取所有远程分支，确保能检测到Grey分支
-          git fetch origin
+          # 2. 强制切换到Grey分支（不存在则基于当前分支创建）
+          git checkout -B Grey  # -B 强制创建/覆盖本地Grey分支
           
-          # 切换/创建Grey分支（兼容首次创建）
-          if git show-ref --verify --quiet refs/heads/Grey; then
-            # 本地已有Grey分支，直接切换
-            git checkout Grey
-            # 拉取远程Grey分支最新内容（避免冲突）
-            git pull origin Grey --rebase
-          elif git show-ref --verify --quiet refs/remotes/origin/Grey; then
-            # 远程有Grey分支但本地没有，检出
-            git checkout -b Grey origin/Grey
-          else
-            # 本地/远程都没有Grey分支，基于当前分支创建
-            git checkout -b Grey
-          fi
+          # 3. 强制设置远程地址（用token认证，核心！）
+          git remote set-url origin https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
           
-          echo "✅ 当前分支：$(git branch --show-current)"
-          echo "✅ 远程分支列表："
-          git branch -r
-
-      # 步骤6：提交并推送修改（修复：兼容首次推送，增加错误重试）
-      - name: 提交并推送修改到Grey分支
-        run: |
-          # 检查Google.txt是否有修改（严格判断）
-          if [ -f "Google.txt" ] && [ $(git status --porcelain | grep -c "Google.txt") -gt 0 ]; then
-            # 添加文件
-            git add Google.txt
-            # 提交（带防重复提交逻辑）
-            COMMIT_MSG="chore: 更新Google.txt 版本号${{ steps.generate_file.outputs.NEW_VERSION }} 北京时间${{ steps.generate_file.outputs.CURRENT_DATE }}"
-            git commit -m "$COMMIT_MSG" || echo "ℹ️ 无新的提交内容（文件未实际修改）"
-            
-            # 修复：推送时强制关联，增加重试（解决exit code 128）
-            git push --set-upstream origin Grey || git push -f origin Grey
-            echo "✅ 成功推送到Grey分支，提交信息：$COMMIT_MSG"
-          else
-            echo "ℹ️ Google.txt无修改，无需推送"
-            exit 0  # 无修改时正常退出，避免报错
-          fi
+          # 4. 提交文件（无论是否有修改，强制提交）
+          git add Google.txt || echo "文件未找到，跳过add"
+          git commit -m "chore: 更新Google.txt 版本号${{ steps.gen.outputs.NEW_VERSION }} 北京时间${{ steps.gen.outputs.CURRENT_DATE }}" --allow-empty || echo "无修改，跳过commit"
+          
+          # 5. 强制推送（-f 确保覆盖，仅首次/无冲突时安全）
+          git push -f origin Grey
+          echo "✅ 强制推送到Grey分支成功"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # 强制使用HTTPS推送，避免SSH权限问题
-          GIT_CONFIG_COUNT: 1
-          GIT_CONFIG_KEY_0: remote.origin.url
-          GIT_CONFIG_VALUE_0: https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
 
-      # 步骤7：清理临时文件
-      - name: 清理临时文件
+      # 步骤6：清理文件
+      - name: 清理
         if: always()
-        run: |
-          rm -f temp_filter.txt
-          echo "✅ 临时文件清理完成"
-
-      # 步骤8：输出运行日志（便于排查）
-      - name: 输出运行总结
-        if: always()
-        run: |
-          echo "📝 运行总结："
-          echo "   分支：$(git branch --show-current)"
-          echo "   版本：${{ steps.generate_file.outputs.NEW_VERSION }}"
-          echo "   时间：${{ steps.generate_file.outputs.CURRENT_DATE }}"
-          echo "   状态：${{ job.status }}"
+        run: rm -f temp_filter.txt script.log
