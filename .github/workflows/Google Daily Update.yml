@@ -1,4 +1,4 @@
-name: Google Daily Update
+name: 拉取并修改Google过滤规则生成Google.txt
 
 # 触发条件：每6小时自动运行 + 手动触发（和GKD一致）
 on:
@@ -35,74 +35,85 @@ jobs:
           python -m pip install --upgrade pip
           pip install json5 requests
 
-      # 4. 下载远程filter_37.txt（带代理+重试）
-      - name: Download remote filter file
+      # 4. 下载远程广告规则文件（优化：验证规则完整性）
+      - name: Download remote ad filter file
         run: |
-          echo "📥 下载filter_37.txt到仓库根目录..."
-          # 带重试+代理，确保下载成功
-          curl -sL --retry 10 --connect-timeout 30 \
-            "https://adguardteam.github.io/HostlistsRegistry/assets/filter_37.txt" \
-            -o "temp_filter.txt"
+          echo "📥 下载Google广告拦截规则文件..."
+          # 优先用代理，确保国内可访问
+          PROXY_URL="https://adguardteam.github.io/HostlistsRegistry/assets/filter_37.txt"
+          ORIGIN_URL="https://raw.githubusercontent.com/AdguardTeam/HostlistsRegistry/main/assets/filter_37.txt"
           
-          # 验证文件（失败则创建空文件不终止）
-          if [ -s "temp_filter.txt" ]; then
-            echo "✅ 下载成功，文件大小：$(du -h temp_filter.txt | awk '{print $1}')"
-            touch .filter_download_success  # 创建下载成功标记文件
+          # 下载并验证规则行数（广告规则至少有10行）
+          curl -sL --retry 10 --connect-timeout 30 "$PROXY_URL" -o "temp_filter.txt"
+          RULE_COUNT=$(wc -l < "temp_filter.txt")
+          
+          if [ $RULE_COUNT -lt 10 ]; then
+            echo "⚠️ 代理地址规则不完整，尝试原地址..."
+            curl -sL --retry 5 --connect-timeout 20 "$ORIGIN_URL" -o "temp_filter.txt"
+            RULE_COUNT=$(wc -l < "temp_filter.txt")
+          fi
+          
+          # 最终验证
+          if [ $RULE_COUNT -ge 10 ]; then
+            echo "✅ 广告规则下载成功，共 $RULE_COUNT 行"
+            touch .filter_download_success
           else
-            echo "⚠️ 下载失败，创建空文件继续流程"
-            touch temp_filter.txt
+            echo "❌ 广告规则下载失败/不完整，终止流程"
+            exit 1
           fi
 
-      # 5. 执行Python脚本（指定.github/workflows下的脚本）
+      # 5. 执行Python脚本（保留广告规则，仅替换头部）
       - name: Run Google filter sync script
         id: sync
         if: hashFiles('.filter_download_success') != ''
         run: |
-          echo "🚀 执行.github/workflows/update_google_filter.py..."
-          # 执行脚本（根目录运行，脚本路径绝对指定）
+          echo "🚀 处理广告规则并生成Google.txt..."
           python .github/workflows/update_google_filter.py
           
-          # 提取版本号（复用GKD的标记文件逻辑）
+          # 提取版本号并验证生成的规则文件
           NEW_VERSION=$(grep "^NEW_VERSION=" script_output.log | cut -d'=' -f2 || echo "1.0.0.0")
+          GOOGLE_RULE_COUNT=$(wc -l < "Google.txt")
+          echo "✅ 生成的Google.txt包含 $GOOGLE_RULE_COUNT 行广告规则"
+          
           echo "$NEW_VERSION" > .google_update_success
           echo "NEW_VERSION=$NEW_VERSION" >> $GITHUB_OUTPUT
 
-      # 6. 提交并推送（修复rebase冲突问题）
+      # 6. 提交并推送（修复rebase冲突，保留GKD逻辑）
       - name: Commit and push changes to Grey branch
         if: hashFiles('.google_update_success') != ''
         run: |
-          # 配置Git身份（和GKD完全一致）
+          # 配置Git身份
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
           # 切换到Grey分支
           git checkout Grey
           
-          # 核心修复：暂存本地修改→拉取最新→恢复修改（解决rebase冲突）
-          git stash push -u -m "temp stash for google.txt update"
-          git pull origin Grey --rebase || echo "远程Grey分支无更新，跳过rebase"
+          # 暂存修改→拉取最新→恢复修改（核心修复）
+          git stash push -u -m "temp stash for ad filter update"
+          git pull origin Grey --rebase || echo "远程无更新，跳过rebase"
           git stash pop || (echo "⚠️ 暂存恢复失败，直接添加文件" && git add Google.txt)
           
-          # 读取版本号（复用GKD的文件读取）
+          # 读取版本号
           NEW_VERSION=$(cat .google_update_success)
           
-          # 添加生成的Google.txt
+          # 添加规则文件
           git add Google.txt || true
           
-          # 检查变更（GKD的关键防错逻辑）
+          # 检查变更
           if git diff --staged --quiet; then
-            echo "ℹ️  无变更，跳过推送"
+            echo "ℹ️  广告规则无变更，跳过推送"
             exit 0
           fi
           
-          # 提交（GKD风格的提交信息）
-          git commit -m "🔄 自动更新Google过滤规则至版本 v${NEW_VERSION}" --allow-empty
+          # 提交（注明广告规则更新）
+          git commit -m "🔄 自动更新Google广告拦截规则至版本 v${NEW_VERSION}" --allow-empty
           
-          # 推送（原生git push，和GKD一致）
+          # 推送
           git push origin Grey
-          echo "🚀 Google.txt已推送到Grey分支！"
+          echo "🚀 Google广告拦截规则已推送到Grey分支！"
 
-      # 7. 清理临时文件（复用GKD的清理逻辑）
+      # 7. 清理临时文件
       - name: Cleanup temporary files
         if: always()
         run: |
