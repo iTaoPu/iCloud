@@ -1,296 +1,123 @@
-name: GKD Subscription Sync
+name: GKD Sync
 
 on:
   schedule:
-    - cron: "0 */6 * * *"
-  workflow_dispatch:
+    - cron: "0 */6 * * *"  # 每6小时执行一次
+  workflow_dispatch:       # 手动触发
 
 jobs:
   sync:
     runs-on: ubuntu-latest
-    
     steps:
-      # 1. 检出仓库
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
-      # 2. 设置Python
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: "3.10"
 
-      # 3. 安装依赖
       - name: Install dependencies
-        run: |
-          pip install json5 requests
+        run: pip install json5 requests
 
-      # 4. 获取上游信息
-      - name: Get upstream info
-        id: upstream_info
+      - name: Sync subscription
         run: |
-          echo "Getting upstream information..."
-          
-          cat > get_upstream.py << 'EOF'
+          cat > sync.py << 'EOF'
 import json5
 import requests
 import json
-
-# 获取版本信息（JSON5格式）
-version_url = "https://raw.githubusercontent.com/Lin-arm/GKD_subscription/main/dist/gkd.version.json5"
-print(f"Downloading version file: {version_url}")
-
-try:
-    # 获取版本文件
-    response = requests.get(version_url, timeout=10)
-    data = json5.loads(response.text)
-    
-    upstream_version = data.get("version", 0)
-    upstream_id = data.get("id", 667)
-    
-    print(f"Original version: {upstream_version}")
-    print(f"Original ID: {upstream_id}")
-    
-    # 输出到环境变量
-    with open("upstream_info.json", "w") as f:
-        json.dump({"version": upstream_version, "id": upstream_id}, f)
-    
-    # 输出到GitHub Actions
-    if "GITHUB_OUTPUT" in os.environ:
-        with open(os.environ['GITHUB_OUTPUT'], 'a') as fh:
-            fh.write(f"upstream_version={upstream_version}\n")
-            fh.write(f"upstream_id={upstream_id}\n")
-    
-    print("Successfully got upstream info")
-    
-except Exception as e:
-    print(f"Error: {e}")
-    exit(1)
-EOF
-
-          python get_upstream.py
-          
-          # 读取输出
-          if [ -f "upstream_info.json" ]; then
-            UPSTREAM_VERSION=$(python3 -c "import json; print(json.load(open('upstream_info.json')).get('version', 0))")
-            UPSTREAM_ID=$(python3 -c "import json; print(json.load(open('upstream_info.json')).get('id', 667))")
-            
-            echo "::set-output name=upstream_version::${UPSTREAM_VERSION}"
-            echo "::set-output name=upstream_id::${UPSTREAM_ID}"
-          fi
-
-      # 5. 检查本地版本
-      - name: Check local version
-        id: local_info
-        run: |
-          echo "Checking local version..."
-          
-          if [ -f "Guīzé.version.stor" ]; then
-            LOCAL_VERSION=$(python3 -c "
-import json
-try:
-    with open('Guīzé.version.stor', 'r', encoding='utf-8') as f:
-        data = json.load(f)
-    print(data.get('version', 0))
-except Exception as e:
-    print(0)
-")
-          else
-            LOCAL_VERSION="0"
-          fi
-          
-          echo "Local version: $LOCAL_VERSION"
-          
-          # 使用新格式输出
-          echo "local_version=$LOCAL_VERSION" >> $GITHUB_OUTPUT
-
-      # 6. 比较版本
-      - name: Compare versions
-        id: compare
-        run: |
-          LOCAL="${{ steps.local_info.outputs.local_version }}"
-          UPSTREAM="${{ steps.upstream_info.outputs.upstream_version }}"
-          
-          echo "版本比较:"
-          echo "本地: $LOCAL"
-          echo "上游: $UPSTREAM"
-          
-          # 转换为整数
-          LOCAL_INT=$((LOCAL))
-          UPSTREAM_INT=$((UPSTREAM))
-          
-          # 创建更新标志
-          if [ $UPSTREAM_INT -gt $LOCAL_INT ]; then
-            echo "🔄 需要更新"
-            echo "UPDATE_NEEDED=true" >> $GITHUB_ENV
-          else
-            echo "✅ 已是最新"
-            echo "UPDATE_NEEDED=false" >> $GITHUB_ENV
-          fi
-
-      # 7. 下载并修改订阅文件
-      - name: Process subscription
-        if: env.UPDATE_NEEDED == 'true'
-        env:
-          UPSTREAM_VERSION: ${{ steps.upstream_info.outputs.upstream_version }}
-        run: |
-          echo "处理订阅文件..."
-          echo "上游版本: $UPSTREAM_VERSION"
-          
-          cat > process_subscription.py << 'EOF'
-import json5
-import json
-import requests
 import os
 
-print("开始处理订阅文件...")
+# 配置信息
+UPSTREAM_VERSION_URL = "https://raw.githubusercontent.com/Lin-arm/GKD_subscription/main/dist/gkd.version.json5"
+UPSTREAM_SUB_URL = "https://raw.githubusercontent.com/Lin-arm/GKD_subscription/main/dist/gkd.json5"
+LOCAL_VERSION_FILE = "Guīzé.version.stor"
+LOCAL_SUB_FILE = "Guīzé.stor"
 
-# 下载完整的订阅文件
-subscription_url = "https://raw.githubusercontent.com/Lin-arm/GKD_subscription/main/dist/gkd.json5"
-print(f"下载URL: {subscription_url}")
+# 自定义配置
+CUSTOM_CONFIG = {
+    "id": 2015,
+    "name": "少数π⁺ 🌀Guīzé訂閱−禁止傳播",
+    "author": "少数π⁺",
+    "checkUpdateUrl": "./Guīzé.version.stor",
+    "supportUri": "https://iCloud.ifanr.us.ci"
+}
 
-try:
-    # 获取原始订阅文件
-    response = requests.get(subscription_url, timeout=30)
-    response.raise_for_status()
+def get_upstream_version():
+    """获取上游版本号"""
+    resp = requests.get(UPSTREAM_VERSION_URL, timeout=10)
+    data = json5.loads(resp.text)
+    return int(data.get("version", 0))
+
+def get_local_version():
+    """获取本地版本号"""
+    try:
+        with open(LOCAL_VERSION_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        return int(data.get("version", 0))
+    except:
+        return 0
+
+def update_subscription(upstream_version):
+    """下载并更新订阅文件"""
+    # 下载上游订阅
+    resp = requests.get(UPSTREAM_SUB_URL, timeout=30)
+    data = json5.loads(resp.text)
     
-    # 解析JSON5格式
-    data = json5.loads(response.text)
+    # 应用自定义配置
+    data.update(CUSTOM_CONFIG)
+    data["version"] = upstream_version
     
-    print("原始数据字段:")
-    for key in data.keys():
-        print(f"  {key}: {data[key] if len(str(data[key])) < 50 else str(data[key])[:50] + '...'}")
-    
-    # 获取上游版本
-    upstream_version = int(os.environ.get("UPSTREAM_VERSION", 424))
-    
-    print(f"\n将使用版本号: {upstream_version}")
-    
-    # 修改所有指定字段
-    data["id"] = 2015
-    data["name"] = "少数π⁺ 🌀Guīzé訂閱−禁止傳播"
-    data["version"] = upstream_version  # 使用上游最新版本
-    data["author"] = "少数π⁺"
-    data["checkUpdateUrl"] = "./Guīzé.version.stor"
-    data["supportUri"] = "https://iCloud.ifanr.us.ci"
-    
-    print("\n修改后的字段:")
-    print(f"  id: {data['id']}")
-    print(f"  name: {data['name']}")
-    print(f"  version: {data['version']}")
-    print(f"  author: {data['author']}")
-    print(f"  checkUpdateUrl: {data['checkUpdateUrl']}")
-    print(f"  supportUri: {data['supportUri']}")
-    
-    # 保存为主订阅文件（标准JSON格式）
-    with open("Guīzé.stor", "w", encoding="utf-8") as f:
+    # 保存主文件
+    with open(LOCAL_SUB_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
     
-    print("\n✅ Guīzé.stor 文件生成成功")
-    
-    # 创建版本文件
-    version_data = {
-        "id": 2015,
-        "name": "少数π⁺ 🌀Guīzé訂閱−禁止傳播",
-        "version": upstream_version,
-        "author": "少数π⁺",
-        "checkUpdateUrl": "./Guīzé.version.stor",
-        "supportUri": "https://iCloud.ifanr.us.ci"
-    }
-    
-    with open("Guīzé.version.stor", "w", encoding="utf-8") as f:
+    # 保存版本文件
+    version_data = {k: v for k, v in data.items() if k in ["id", "name", "version", "author", "checkUpdateUrl", "supportUri"]}
+    with open(LOCAL_VERSION_FILE, "w", encoding="utf-8") as f:
         json.dump(version_data, f, ensure_ascii=False, indent=2)
     
-    print("✅ Guīzé.version.stor 文件生成成功")
+    print(f"✅ 已更新到版本 {upstream_version}")
+
+def main():
+    print("🔍 检查版本更新...")
+    local_ver = get_local_version()
+    upstream_ver = get_upstream_version()
     
-    # 显示文件信息
-    main_size = os.path.getsize("Guīzé.stor")
-    version_size = os.path.getsize("Guīzé.version.stor")
+    print(f"本地版本: {local_ver}, 上游版本: {upstream_ver}")
     
-    print(f"\n文件大小:")
-    print(f"  Guīzé.stor: {main_size:,} 字节")
-    print(f"  Guīzé.version.stor: {version_size:,} 字节")
-    
-    # 生成一个简短的摘要文件
-    with open("update_summary.txt", "w", encoding="utf-8") as f:
-        f.write(f"GKD订阅更新摘要\n")
-        f.write(f"================\n")
-        f.write(f"更新前版本: ${{ steps.local_info.outputs.local_version }}\n")
-        f.write(f"更新后版本: {upstream_version}\n")
-        f.write(f"更新文件: Guīzé.stor, Guīzé.version.stor\n")
-        f.write(f"修改字段:\n")
-        f.write(f"  - id: 667 → 2015\n")
-        f.write(f"  - name: 'id667的GKD订阅🚀' → '少数π⁺ 🌀Guīzé訂閱−禁止傳播'\n")
-        f.write(f"  - author: '👻' → '少数π⁺'\n")
-        f.write(f"  - checkUpdateUrl: './gkd.version.json5' → './Guīzé.version.stor'\n")
-        f.write(f"  - supportUri: 'https://github.com/Lin-arm/GKD_subscription/issues/new/choose' → 'https://iCloud.ifanr.us.ci'\n")
-    
-    print("✅ 更新摘要文件生成成功")
-    
-except Exception as e:
-    print(f"处理订阅文件时出错: {e}")
-    import traceback
-    traceback.print_exc()
-    exit(1)
+    if upstream_ver > local_ver:
+        print("📥 开始更新订阅...")
+        update_subscription(upstream_ver)
+        # 设置更新标记
+        with open("update_flag", "w") as f:
+            f.write(f"{local_ver}→{upstream_ver}")
+    else:
+        print("✅ 已是最新版本")
+        exit(0)
+
+if __name__ == "__main__":
+    main()
 EOF
 
-          python process_subscription.py
+          # 执行同步脚本
+          python sync.py
 
-      # 8. 显示更新内容
-      - name: Show update summary
-        if: env.UPDATE_NEEDED == 'true'
-        run: |
-          if [ -f "update_summary.txt" ]; then
-            echo "更新内容:"
-            cat update_summary.txt
-          fi
-
-      # 9. 提交更新
       - name: Commit and push
-        if: env.UPDATE_NEEDED == 'true'
+        if: hashFiles('update_flag') != ''
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
-          # 检查是否有文件变化
-          if git status --porcelain | grep -q "Guīzé"; then
-            echo "检测到文件变化，将提交更新..."
-            
-            git add "Guīzé.stor" "Guīzé.version.stor" "update_summary.txt"
-            
-            LOCAL="${{ steps.local_info.outputs.local_version }}"
-            UPSTREAM="${{ steps.upstream_info.outputs.upstream_version }}"
-            
-            COMMIT_MSG="✨ 自动更新订阅 (v$LOCAL → v$UPSTREAM)
-            
-修改内容:
-• id: 667 → 2015
-• name: 'id667的GKD订阅🚀' → '少数π⁺ 🌀Guīzé訂閱−禁止傳播'
-• version: $LOCAL → $UPSTREAM
-• author: '👻' → '少数π⁺'
-• checkUpdateUrl: './gkd.version.json5' → './Guīzé.version.stor'
-• supportUri: 'https://github.com/Lin-arm/GKD_subscription/issues/new/choose' → 'https://iCloud.ifanr.us.ci'"
-            
-            git commit -m "$COMMIT_MSG"
-            git push
-            
-            echo "✅ 成功提交和推送更新"
-          else
-            echo "⚠️ 没有检测到文件变化，跳过提交"
-          fi
-
-      # 10. 完成提示
-      - name: Final status
-        run: |
-          if [ "$UPDATE_NEEDED" = "true" ]; then
-            echo "🎉 订阅更新完成！"
-            echo "  本地版本: ${{ steps.local_info.outputs.local_version }}"
-            echo "  最新版本: ${{ steps.upstream_info.outputs.upstream_version }}"
-            
-            echo "生成的文件:"
-            ls -la Guīzé*
-          else
-            echo "✅ 已是最新版本，无需更新"
-          fi
+          # 获取版本信息
+          VERSION_CHANGE=$(cat update_flag)
+          
+          # 提交更新
+          git add Guīzé.stor Guīzé.version.stor
+          git commit -m "🔄 更新订阅 $VERSION_CHANGE"
+          git push
+          
+          # 清理临时文件
+          rm -f update_flag
+          
+          echo "🚀 更新已推送至仓库"
