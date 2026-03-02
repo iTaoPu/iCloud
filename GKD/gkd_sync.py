@@ -2,7 +2,9 @@
 # -*- coding: utf-8 -*-
 """
 GKD 订阅同步脚本（存放于GKD目录）
-功能：自动检查上游版本并更新本地订阅文件（版本文件仅保留id和version）
+功能：自动检查上游版本并更新本地订阅文件
+- 主文件(Guīzé.stor)保持上游JSON5格式+紧凑排版（无隔行）
+- 版本文件(Guīzé.version.stor)仅保留id和version
 """
 
 import json5
@@ -19,7 +21,7 @@ UPSTREAM_SUB_URL = "https://raw.githubusercontent.com/Lin-arm/GKD_subscription/m
 LOCAL_VERSION_FILE = "Guīzé.version.stor"
 LOCAL_SUB_FILE = "Guīzé.stor"
 
-# 自定义配置
+# 自定义配置（仅覆盖指定字段，不改变其他格式）
 CUSTOM_CONFIG = {
     "id": 2015,
     "name": "少数π⁺ 🌀Guīzé訂閱−禁止傳播",
@@ -64,7 +66,7 @@ def get_local_version():
             print(f"📂 正在读取本地版本文件: {LOCAL_VERSION_FILE}")
             with open(LOCAL_VERSION_FILE, "r", encoding="utf-8") as f:
                 data = json.load(f)
-            # 仅读取version字段（兼容修改后的格式）
+            # 仅读取version字段（兼容精简后的格式）
             local_version = int(data.get("version", 0))
             print(f"✅ 本地当前版本: {local_version}")
             return local_version
@@ -76,22 +78,25 @@ def get_local_version():
         return 0
 
 def update_subscription(upstream_version):
-    """下载并更新订阅文件（保存到当前目录，版本文件仅保留id和version）"""
+    """下载并更新订阅文件（保持上游JSON5格式+紧凑排版）"""
     try:
         print(f"📥 正在下载上游订阅文件: {UPSTREAM_SUB_URL}")
         resp = requests.get(UPSTREAM_SUB_URL, timeout=TIMEOUT_SUBSCRIPTION)
         resp.raise_for_status()
+        
+        # 用JSON5解析上游内容（保留原生格式特性）
         data = json5.loads(resp.text)
         print(f"✅ 成功下载订阅文件，大小：{len(resp.text)} 字节")
         
-        # 应用自定义配置到主订阅文件
+        # 应用自定义配置（仅覆盖指定字段，不修改其他内容）
         data.update(CUSTOM_CONFIG)
         data["version"] = upstream_version
         
-        # 保存主订阅文件（当前目录）
+        # 保存主订阅文件：使用JSON5格式+紧凑排版（无隔行，匹配上游）
         with open(LOCAL_SUB_FILE, "w", encoding="utf-8") as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
-        print(f"✅ 已保存主订阅文件: {LOCAL_SUB_FILE}")
+            # ensure_ascii=False保留中文，indent=None取消隔行/缩进（紧凑格式）
+            json5.dump(data, f, ensure_ascii=False, indent=None)
+        print(f"✅ 已保存主订阅文件: {LOCAL_SUB_FILE}（格式与上游一致，无隔行）")
         
         # 构建版本文件数据（仅保留id和version两个字段）
         version_data = {
@@ -99,7 +104,7 @@ def update_subscription(upstream_version):
             "version": upstream_version  # 最新版本号
         }
         
-        # 保存版本文件（仅包含id和version）
+        # 保存版本文件（精简格式）
         with open(LOCAL_VERSION_FILE, "w", encoding="utf-8") as f:
             json.dump(version_data, f, ensure_ascii=False, indent=2)
         print(f"✅ 已保存版本文件: {LOCAL_VERSION_FILE}（仅包含id和version）")
@@ -148,7 +153,7 @@ def main():
         print(f"\n📢 发现新版本！开始更新...")
         update_success = update_subscription(upstream_ver)
         if update_success:
-            print("\n✅ 同步完成！文件保存在GKD目录，版本文件仅含id和version")
+            print("\n✅ 同步完成！文件保存在GKD目录，格式与上游一致")
             sys.exit(0)
         else:
             print("\n❌ 同步失败！请检查错误信息")
