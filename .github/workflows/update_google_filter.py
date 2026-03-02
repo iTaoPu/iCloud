@@ -1,28 +1,23 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-独立脚本：生成Google.txt（版本号自增+北京时间）
-存放路径：.github/workflows/update_google_filter.py
-"""
 import os
 from datetime import datetime, timedelta
 
 def get_beijing_time() -> str:
-    """获取北京时间，格式：YYYY-MM-DD"""
-    beijing_tz = timedelta(hours=8)
-    return (datetime.utcnow() + beijing_tz).strftime("%Y-%m-%d")
+    """获取北京时间"""
+    return (datetime.utcnow() + timedelta(hours=8)).strftime("%Y-%m-%d")
 
 def get_new_version() -> str:
-    """读取现有版本号并自增最后一位，无文件则返回1.0.0.0"""
+    """自增版本号"""
     default_ver = "1.0.0.0"
-    if not os.path.exists("Google.txt"):
+    google_path = os.path.join(os.getenv("ROOT_DIR", "."), "Google.txt")
+    if not os.path.exists(google_path):
         return default_ver
     
     try:
-        with open("Google.txt", "r", encoding="utf-8") as f:
+        with open(google_path, "r", encoding="utf-8") as f:
             for line in f:
                 if line.startswith("! Version:"):
-                    # 提取并自增版本号
                     ver = line.strip().split(":")[1].strip()
                     parts = ver.split(".")
                     parts[-1] = str(int(parts[-1]) + 1)
@@ -32,16 +27,26 @@ def get_new_version() -> str:
         return default_ver
 
 def generate_google_txt():
-    """核心逻辑：生成最终的Google.txt"""
-    # 1. 基础信息
-    beijing_date = get_beijing_time()
-    new_version = get_new_version()
+    """核心逻辑：读取temp_filter.txt，生成Google.txt"""
+    # 修复：从环境变量获取绝对路径（关键！）
+    temp_path = os.getenv("TEMP_FILTER_PATH", "temp_filter.txt")
+    root_dir = os.getenv("ROOT_DIR", ".")
+    google_path = os.path.join(root_dir, "Google.txt")
     
-    # 2. 读取远程临时文件
-    with open("temp_filter.txt", "r", encoding="utf-8") as f:
+    # 1. 验证临时文件（打印路径，便于调试）
+    print(f"📝 Python脚本调试：")
+    print(f"   临时文件路径：{temp_path}")
+    print(f"   文件是否存在：{os.path.exists(temp_path)}")
+    print(f"   文件大小：{os.path.getsize(temp_path) if os.path.exists(temp_path) else 0} bytes")
+    
+    if not os.path.exists(temp_path) or os.path.getsize(temp_path) == 0:
+        raise Exception(f"临时文件不存在或为空：{temp_path}")
+    
+    # 2. 读取临时文件（绝对路径）
+    with open(temp_path, "r", encoding="utf-8") as f:
         raw_content = f.read()
     
-    # 3. 提取核心规则（跳过原头部）
+    # 3. 提取规则（逻辑不变）
     rule_lines = []
     extract = False
     for line in raw_content.split("\n"):
@@ -51,7 +56,9 @@ def generate_google_txt():
             extract = True
     rule_content = "\n".join(rule_lines).strip()
     
-    # 4. 拼接自定义头部
+    # 4. 生成最终内容
+    beijing_date = get_beijing_time()
+    new_version = get_new_version()
     final_content = f"""! Title: AdRules i叚娤.倖鍢 Google List
 ! Homepage: https://i叚娤.倖鍢.net.cn
 ! Powerd by i叚娤.倖鍢
@@ -63,8 +70,8 @@ def generate_google_txt():
 
 {rule_content}"""
     
-    # 5. 写入文件
-    with open("Google.txt", "w", encoding="utf-8") as f:
+    # 5. 写入Google.txt（绝对路径）
+    with open(google_path, "w", encoding="utf-8") as f:
         f.write(final_content)
     
     # 6. 输出供工作流读取的变量
