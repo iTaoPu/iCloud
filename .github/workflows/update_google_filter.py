@@ -1,21 +1,30 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+"""
+Google过滤规则生成脚本（放置在.github/workflows目录）
+"""
 import os
 from datetime import datetime, timedelta
 
-def get_beijing_time() -> str:
+# 重定向输出到日志文件（便于YAML提取版本号）
+import sys
+sys.stdout = open("script_output.log", "w", encoding="utf-8")
+sys.stderr = sys.stdout
+
+def get_beijing_time():
     """获取北京时间"""
     return (datetime.utcnow() + timedelta(hours=8)).strftime("%Y-%m-%d")
 
-def get_new_version() -> str:
-    """自增版本号"""
+def get_new_version():
+    """自增版本号（读取根目录的Google.txt）"""
     default_ver = "1.0.0.0"
-    google_path = os.path.join(os.getenv("ROOT_DIR", "."), "Google.txt")
-    if not os.path.exists(google_path):
+    google_file = os.path.join(os.getcwd(), "Google.txt")  # 根目录的Google.txt
+    
+    if not os.path.exists(google_file):
         return default_ver
     
     try:
-        with open(google_path, "r", encoding="utf-8") as f:
+        with open(google_file, "r", encoding="utf-8") as f:
             for line in f:
                 if line.startswith("! Version:"):
                     ver = line.strip().split(":")[1].strip()
@@ -26,27 +35,20 @@ def get_new_version() -> str:
     except Exception:
         return default_ver
 
-def generate_google_txt():
-    """核心逻辑：读取temp_filter.txt，生成Google.txt"""
-    # 修复：从环境变量获取绝对路径（关键！）
-    temp_path = os.getenv("TEMP_FILTER_PATH", "temp_filter.txt")
-    root_dir = os.getenv("ROOT_DIR", ".")
-    google_path = os.path.join(root_dir, "Google.txt")
+def main():
+    """主函数：读取temp_filter.txt（根目录），生成Google.txt"""
+    # 1. 基础路径（根目录的临时文件）
+    temp_file = os.path.join(os.getcwd(), "temp_filter.txt")
+    google_file = os.path.join(os.getcwd(), "Google.txt")
     
-    # 1. 验证临时文件（打印路径，便于调试）
-    print(f"📝 Python脚本调试：")
-    print(f"   临时文件路径：{temp_path}")
-    print(f"   文件是否存在：{os.path.exists(temp_path)}")
-    print(f"   文件大小：{os.path.getsize(temp_path) if os.path.exists(temp_path) else 0} bytes")
+    # 2. 读取临时文件
+    if not os.path.exists(temp_file) or os.path.getsize(temp_file) == 0:
+        raise Exception(f"临时文件为空：{temp_file}")
     
-    if not os.path.exists(temp_path) or os.path.getsize(temp_path) == 0:
-        raise Exception(f"临时文件不存在或为空：{temp_path}")
-    
-    # 2. 读取临时文件（绝对路径）
-    with open(temp_path, "r", encoding="utf-8") as f:
+    with open(temp_file, "r", encoding="utf-8") as f:
         raw_content = f.read()
     
-    # 3. 提取规则（逻辑不变）
+    # 3. 提取核心规则
     rule_lines = []
     extract = False
     for line in raw_content.split("\n"):
@@ -70,17 +72,18 @@ def generate_google_txt():
 
 {rule_content}"""
     
-    # 5. 写入Google.txt（绝对路径）
-    with open(google_path, "w", encoding="utf-8") as f:
+    # 5. 写入根目录的Google.txt
+    with open(google_file, "w", encoding="utf-8") as f:
         f.write(final_content)
     
-    # 6. 输出供工作流读取的变量
+    # 6. 输出版本号（供YAML读取）
     print(f"NEW_VERSION={new_version}")
     print(f"CURRENT_DATE={beijing_date}")
+    print("✅ 脚本执行成功")
 
 if __name__ == "__main__":
     try:
-        generate_google_txt()
+        main()
     except Exception as e:
-        print(f"❌ 执行失败：{str(e)}")
-        exit(1)
+        print(f"❌ 脚本执行失败：{str(e)}")
+        sys.exit(1)
