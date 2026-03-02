@@ -20,8 +20,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          ref: Grey  # 明确指定检出Grey分支
-          # 如需使用PAT，取消注释下面这行（替换为你的密钥名）
+          ref: Grey  # 你的仓库主分支
+          # 如需使用PAT，取消注释下面这行
           # token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
       # 2. 设置Python环境
@@ -36,11 +36,16 @@ jobs:
           python -m pip install --upgrade pip
           pip install json5 requests
 
-      # 4. 执行同步脚本
-      - name: Run GKD sync script
-        run: python gkd_sync.py
+      # 4. 进入GKD目录执行同步脚本
+      - name: Run GKD sync script (in GKD directory)
+        run: |
+          # 确保GKD目录存在（如果手动创建过可省略）
+          mkdir -p GKD
+          # 进入GKD目录执行脚本
+          cd GKD
+          python gkd_sync.py
 
-      # 5. 提交并推送更新到Grey分支
+      # 5. 提交并推送GKD目录下的所有更新
       - name: Commit and push changes to Grey branch
         if: hashFiles('.update_success') != ''
         run: |
@@ -48,17 +53,17 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # 切换到Grey分支（双重确认）
+          # 切换到Grey分支
           git checkout Grey
           
-          # 拉取Grey分支最新代码，避免冲突
+          # 拉取Grey分支最新代码
           git pull origin Grey --rebase
           
           # 获取更新版本号
           NEW_VERSION=$(cat .update_success)
           
-          # 添加更新的文件
-          git add Guīzé.stor Guīzé.version.stor .update_success || true
+          # 添加GKD目录下的所有相关文件（脚本+生成的订阅文件）
+          git add GKD/gkd_sync.py GKD/Guīzé.stor GKD/Guīzé.version.stor .update_success || true
           
           # 检查是否有实际变更
           if git diff --staged --quiet; then
@@ -66,13 +71,13 @@ jobs:
             exit 0
           fi
           
-          # 提交变更
-          git commit -m "🔄 自动更新GKD订阅至版本 v${NEW_VERSION}" --allow-empty
+          # 提交变更（注明所有文件在GKD目录）
+          git commit -m "🔄 自动更新GKD订阅至版本 v${NEW_VERSION}（所有文件保存在GKD目录）" --allow-empty
           
-          # 推送到Grey分支（核心修改：替换为Grey）
+          # 推送到Grey分支
           git push origin Grey
           
-          echo "🚀 更新已成功推送到Grey分支！"
+          echo "🚀 更新已成功推送到Grey分支！所有文件保存在GKD目录"
 
       # 6. 清理临时文件
       - name: Cleanup temporary files
