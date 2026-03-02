@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-GKD 订阅同步脚本
-功能：自动检查上游版本并更新本地订阅文件（文件保存到GKD目录）
+GKD 订阅同步脚本（存放于GKD目录）
+功能：自动检查上游版本并更新本地订阅文件（文件保存在当前目录）
 """
 
 import json5
@@ -11,22 +11,21 @@ import json
 import os
 import sys
 
-# ===================== 配置区域（关键修改：添加GKD目录）=====================
+# ===================== 配置区域（路径改为当前目录）=====================
 # 上游数据源地址
 UPSTREAM_VERSION_URL = "https://raw.githubusercontent.com/Lin-arm/GKD_subscription/main/dist/gkd.version.json5"
 UPSTREAM_SUB_URL = "https://raw.githubusercontent.com/Lin-arm/GKD_subscription/main/dist/gkd.json5"
 
-# 本地文件路径（保存到GKD目录）
-GKD_DIR = "GKD"  # GKD目录名
-LOCAL_VERSION_FILE = os.path.join(GKD_DIR, "Guīzé.version.stor")
-LOCAL_SUB_FILE = os.path.join(GKD_DIR, "Guīzé.stor")
+# 本地文件路径（当前目录，即GKD目录）
+LOCAL_VERSION_FILE = "Guīzé.version.stor"
+LOCAL_SUB_FILE = "Guīzé.stor"
 
 # 自定义配置
 CUSTOM_CONFIG = {
     "id": 2015,
     "name": "少数π⁺ 🌀Guīzé訂閱−禁止傳播",
     "author": "少数π⁺",
-    "checkUpdateUrl": "./Guīzé.version.stor",  # 相对路径保持不变（GKD目录内）
+    "checkUpdateUrl": "./Guīzé.version.stor",
     "supportUri": "https://iCloud.ifanr.us.ci"
 }
 
@@ -34,8 +33,8 @@ CUSTOM_CONFIG = {
 TIMEOUT_VERSION = 10
 TIMEOUT_SUBSCRIPTION = 30
 
-# 更新标记文件
-UPDATE_FLAG_FILE = ".update_success"
+# 更新标记文件（放在仓库根目录，供工作流判断）
+UPDATE_FLAG_FILE = "../.update_success"
 # ====================================================================
 
 def get_upstream_version():
@@ -60,7 +59,7 @@ def get_upstream_version():
         sys.exit(1)
 
 def get_local_version():
-    """获取本地版本号（从GKD目录读取）"""
+    """获取本地版本号（当前目录）"""
     try:
         if os.path.exists(LOCAL_VERSION_FILE):
             print(f"📂 正在读取本地版本文件: {LOCAL_VERSION_FILE}")
@@ -77,12 +76,8 @@ def get_local_version():
         return 0
 
 def update_subscription(upstream_version):
-    """下载并更新订阅文件（保存到GKD目录）"""
+    """下载并更新订阅文件（保存到当前目录）"""
     try:
-        # 自动创建GKD目录（如果不存在）
-        os.makedirs(GKD_DIR, exist_ok=True)
-        print(f"📁 确保GKD目录存在: {os.path.abspath(GKD_DIR)}")
-        
         print(f"📥 正在下载上游订阅文件: {UPSTREAM_SUB_URL}")
         resp = requests.get(UPSTREAM_SUB_URL, timeout=TIMEOUT_SUBSCRIPTION)
         resp.raise_for_status()
@@ -93,7 +88,7 @@ def update_subscription(upstream_version):
         data.update(CUSTOM_CONFIG)
         data["version"] = upstream_version
         
-        # 保存主订阅文件到GKD目录
+        # 保存主订阅文件（当前目录）
         with open(LOCAL_SUB_FILE, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
         print(f"✅ 已保存主订阅文件: {LOCAL_SUB_FILE}")
@@ -108,18 +103,18 @@ def update_subscription(upstream_version):
             "supportUri": data["supportUri"]
         }
         
-        # 保存版本文件到GKD目录
+        # 保存版本文件（当前目录）
         with open(LOCAL_VERSION_FILE, "w", encoding="utf-8") as f:
             json.dump(version_data, f, ensure_ascii=False, indent=2)
         print(f"✅ 已保存版本文件: {LOCAL_VERSION_FILE}")
         
-        # 创建更新标记文件
+        # 创建更新标记文件（根目录，供工作流识别）
         with open(UPDATE_FLAG_FILE, "w") as f:
             f.write(str(upstream_version))
         
         # 验证文件是否生成
         if os.path.exists(LOCAL_SUB_FILE) and os.path.exists(LOCAL_VERSION_FILE):
-            print(f"🎉 订阅更新完成！版本号：{upstream_version}（文件保存在GKD目录）")
+            print(f"🎉 订阅更新完成！版本号：{upstream_version}")
             return True
         else:
             print("❌ 文件生成失败")
@@ -140,7 +135,7 @@ def update_subscription(upstream_version):
 def main():
     """主函数：执行完整的版本检查和更新流程"""
     print("=" * 50)
-    print("🎯 开始GKD订阅同步检查（文件保存到GKD目录）")
+    print("🎯 开始GKD订阅同步检查（脚本位于GKD目录）")
     print("=" * 50)
     
     # 1. 获取版本号
@@ -157,7 +152,7 @@ def main():
         print(f"\n📢 发现新版本！开始更新...")
         update_success = update_subscription(upstream_ver)
         if update_success:
-            print("\n✅ 同步完成！文件已保存到GKD目录")
+            print("\n✅ 同步完成！文件保存在GKD目录")
             sys.exit(0)
         else:
             print("\n❌ 同步失败！请检查错误信息")
