@@ -1,9 +1,9 @@
-name: 同步并修改订阅
+name: 同步并修改订阅（高效版）
 
 on:
   schedule:
-    - cron: '0 */6 * * *'   # 每6小时运行一次（可根据需要调整）
-  workflow_dispatch:          # 允许手动触发
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
 
 jobs:
   sync:
@@ -11,19 +11,62 @@ jobs:
     steps:
       - name: 检出仓库
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT }}
+          fetch-depth: 0  # 获取完整历史记录，便于检查版本
 
       - name: 设置 Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
+      - name: 下载并检查上游版本
+        id: check-version
+        run: |
+          # 下载上游文件
+          curl -s -L -o gkd.json5 "https://raw.githubusercontent.com/Lin-arm/GKD_subscription/main/dist/gkd.json5"
+          
+          # 读取当前版本文件（如果存在）
+          if [ -f "Guīzé.version.stor" ]; then
+            CURRENT_VERSION=$(jq -r .version Guīzé.version.stor 2>/dev/null || echo "0")
+          else
+            CURRENT_VERSION="0"
+          fi
+          
+          # 读取上游版本
+          UPSTREAM_VERSION=$(python3 -c "
+          import json5
+          import json
+          try:
+              with open('gkd.json5', 'r', encoding='utf-8') as f:
+                  data = json5.load(f)
+              print(data.get('version', 0))
+          except:
+              print(0)
+          ")
+          
+          echo "当前版本: $CURRENT_VERSION"
+          echo "上游版本: $UPSTREAM_VERSION"
+          
+          # 比较版本
+          if [ "$UPSTREAM_VERSION" -gt "$CURRENT_VERSION" ]; then
+            echo "version_changed=true" >> $GITHUB_OUTPUT
+            echo "need_update=true" >> $GITHUB_OUTPUT
+            echo "检测到新版本，将更新"
+          else
+            echo "version_changed=false" >> $GITHUB_OUTPUT
+            echo "need_update=false" >> $GITHUB_OUTPUT
+            echo "版本未变化，跳过后续步骤"
+          fi
+          
+          echo "upstream_version=$UPSTREAM_VERSION" >> $GITHUB_OUTPUT
+
       - name: 安装依赖（json5 解析库）
+        if: steps.check-version.outputs.need_update == 'true'
         run: pip install json5
 
-      - name: 下载原始文件
-        run: curl -L -o gkd.json5 "https://raw.githubusercontent.com/Lin-arm/GKD_subscription/main/dist/gkd.json5"
-
       - name: 生成修改后的文件
+        if: steps.check-version.outputs.need_update == 'true'
         run: |
           cat > generate.py << 'EOF'
           import json5
@@ -33,20 +76,20 @@ jobs:
           with open('gkd.json5', 'r', encoding='utf-8') as f:
               data = json5.load(f)
 
-          # 提取版本号
-          version = data.get('version', 0)
+          # 提取版本号（已经在上一步获取）
+          version = ${{ steps.check-version.outputs.upstream_version }}
 
           # 复制原数据并替换指定字段
           new_data = data.copy()
           new_data.update({
               'id': 2015,
-              'name': '少数π⁺ 🌀Guīzé訂閱−禁止傳播',
+              'name': '少数π⁺ 🌀Guīzé订阅−禁止传播',
               'author': '少数π⁺',
               'checkUpdateUrl': './Guīzé.version.stor',
               'supportUri': 'https://iCloud.ifanr.us.ci/GKD'
           })
 
-          # 写入 Guīzé.stor（JSON 格式，保留缩进）
+          # 写入 Guīzé.stor
           with open('Guīzé.stor', 'w', encoding='utf-8') as f:
               json.dump(new_data, f, ensure_ascii=False, indent=2)
 
@@ -58,22 +101,15 @@ jobs:
           with open('Guīzé.version.stor', 'w', encoding='utf-8') as f:
               json.dump(version_data, f, ensure_ascii=False, indent=2)
           EOF
+          
           python generate.py
 
-      - name: 检查是否有文件变动
-        id: git-check
-        run: |
-          git add Guīzé.stor Guīzé.version.stor
-          if git diff --staged --quiet; then
-            echo "has_changes=false" >> $GITHUB_OUTPUT
-          else
-            echo "has_changes=true" >> $GITHUB_OUTPUT
-          fi
-
-      - name: 提交并推送（如有变动）
-        if: steps.git-check.outputs.has_changes == 'true'
+      - name: 提交并推送更新
+        if: steps.check-version.outputs.need_update == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git commit -m "自动更新订阅：同步上游版本 $(jq -r .version Guīzé.version.stor)"
+          
+          git add Guīzé.stor Guīzé.version.stor
+          git commit -m "自动更新订阅：同步上游版本 ${{ steps.check-version.outputs.upstream_version }}"
           git push
