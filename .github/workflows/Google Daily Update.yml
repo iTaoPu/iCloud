@@ -1,12 +1,9 @@
-name: Google Daily Update
-
-# 触发条件：北京时间定时触发 + 手动触发
+name: 拉取并修改Google过滤规则生成Google.txt
 on:
   schedule:
-    - cron: '0 18 * * *'  # 北京时间凌晨2点（UTC 18:00）
-  workflow_dispatch:      # 手动触发开关
+    - cron: '0 18 * * *'
+  workflow_dispatch:
 
-# 核心：显式赋予写入权限（复用GKD工作流的权限声明）
 permissions:
   contents: write
   pull-requests: write
@@ -15,53 +12,65 @@ jobs:
   fetch-modify-push:
     runs-on: ubuntu-latest
     env:
-      TZ: Asia/Shanghai   # 全局设置北京时间
+      TZ: Asia/Shanghai
 
     steps:
-      # 步骤1：检出仓库代码（复用GKD的checkout逻辑，指定Grey分支）
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          ref: Grey  # 直接指定Grey分支
-          persist-credentials: true  # 保留凭证（GKD工作流默认开启）
-          # 如需用PAT，取消注释下面这行（替换为你的密钥名）
-          # token: ${{ secrets.PAT_TOKEN }}
+          ref: Grey
+          persist-credentials: true
 
-      # 步骤2：设置Python环境（复用GKD逻辑）
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.10"
 
-      # 步骤3：下载远程filter_37.txt文件
+      # 修复1：下载文件到根目录，并打印路径+大小（验证下载成功）
       - name: Download remote filter file
         run: |
-          echo "📥 下载远程Google过滤规则文件..."
-          # 保留重试逻辑，确保下载稳定
-          curl -sL --retry 5 --connect-timeout 20 \
-            "https://raw.githubusercontent.com/AdguardTeam/HostlistsRegistry/main/assets/filter_37.txt" \
-            -o "temp_filter.txt"
+          echo "📥 当前工作目录：$(pwd)"
+          # 下载到仓库根目录（绝对路径确保无误）
+          ROOT_DIR=$(pwd)
+          TEMP_FILE="$ROOT_DIR/temp_filter.txt"
           
-          # 验证文件有效性
-          if [ ! -s "temp_filter.txt" ]; then
-            echo "❌ 远程文件下载失败或为空，终止流程"
-            exit 1
-          fi
-          echo "✅ 远程文件下载成功"
+          # 带详细日志的下载命令
+          curl -v --retry 10 --connect-timeout 30 \
+            "https://raw.githubusercontent.com/AdguardTeam/HostlistsRegistry/main/assets/filter_37.txt" \
+            -o "$TEMP_FILE"
+          
+          # 强制验证文件（打印关键信息）
+          echo "📄 下载文件验证："
+          echo "路径：$TEMP_FILE"
+          echo "是否存在：$(if [ -f "$TEMP_FILE" ]; then echo "是"; else echo "否"; fi)"
+          echo "文件大小：$(du -h "$TEMP_FILE" | awk '{print $1}')"
+          echo "前5行内容："
+          head -5 "$TEMP_FILE" || echo "文件为空"
 
-      # 步骤4：执行Python脚本生成Google.txt
+      # 修复2：执行Python脚本时，明确指定根目录，避免路径错误
       - name: Run Python script to generate Google.txt
         id: gen
         run: |
-          # 检查脚本是否存在（复用GKD的简洁检查）
+          echo "🚀 当前工作目录：$(pwd)"
           SCRIPT_PATH=".github/workflows/update_google_filter.py"
+          TEMP_FILE="$(pwd)/temp_filter.txt"
+          
+          # 传递根目录和临时文件路径给Python脚本（关键！）
+          export ROOT_DIR=$(pwd)
+          export TEMP_FILTER_PATH="$TEMP_FILE"
+          
+          # 检查脚本和临时文件是否存在
           if [ ! -f "$SCRIPT_PATH" ]; then
             echo "❌ Python脚本不存在：$SCRIPT_PATH"
             exit 1
           fi
+          if [ ! -f "$TEMP_FILE" ]; then
+            echo "❌ 临时文件不存在：$TEMP_FILE"
+            exit 1
+          fi
           
-          # 执行脚本并捕获输出
+          # 执行脚本（在根目录执行，确保路径正确）
           python "$SCRIPT_PATH" > script.log 2>&1
           if [ $? -ne 0 ]; then
             echo "❌ 脚本执行失败，日志："
@@ -69,53 +78,39 @@ jobs:
             exit 1
           fi
           
-          # 提取版本号和时间（复用GKD的文件读取逻辑）
+          # 提取输出并验证生成的Google.txt
           NEW_VERSION=$(grep "^NEW_VERSION=" script.log | cut -d'=' -f2)
           CURRENT_DATE=$(grep "^CURRENT_DATE=" script.log | cut -d'=' -f2)
-          
-          # 生成标记文件（复用GKD的.update_success逻辑）
-          echo "$NEW_VERSION" > .google_update_success
-          
-          # 设置步骤输出
           echo "NEW_VERSION=$NEW_VERSION" >> $GITHUB_OUTPUT
           echo "CURRENT_DATE=$CURRENT_DATE" >> $GITHUB_OUTPUT
-          echo "✅ Google.txt生成成功，版本：$NEW_VERSION"
+          
+          echo "✅ Google.txt生成验证："
+          echo "路径：$(pwd)/Google.txt"
+          echo "是否存在：$(if [ -f "Google.txt" ]; then echo "是"; else echo "否"; fi)"
+          head -10 Google.txt || echo "文件为空"
+          echo "$NEW_VERSION" > .google_update_success
 
-      # 步骤5：提交并推送（完全复用GKD的Git逻辑）
+      # 保留后续的提交/推送/清理步骤（无需修改）
       - name: Commit and push changes to Grey branch
-        if: hashFiles('.google_update_success') != ''  # 有更新才推送
+        if: hashFiles('.google_update_success') != ''
         run: |
-          # 配置Git身份（和GKD完全一致）
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
-          # 切换到Grey分支（冗余但兼容）
           git checkout Grey
-          
-          # 拉取最新代码（避免冲突，GKD核心逻辑）
           git pull origin Grey --rebase
           
-          # 读取版本号（复用GKD的文件读取方式）
           NEW_VERSION=$(cat .google_update_success)
-          
-          # 添加文件（仅Google.txt）
           git add Google.txt || true
           
-          # 检查是否有实际变更（GKD的关键逻辑）
           if git diff --staged --quiet; then
             echo "ℹ️  没有需要提交的变更"
             exit 0
           fi
           
-          # 提交变更（和GKD格式一致）
           git commit -m "🔄 自动更新Google.txt至版本 v${NEW_VERSION}（北京时间${{ steps.gen.outputs.CURRENT_DATE }}）" --allow-empty
-          
-          # 推送（原生git push，和GKD完全一致）
           git push origin Grey
-          
           echo "🚀 Google.txt更新已成功推送到Grey分支！"
 
-      # 步骤6：清理临时文件（复用GKD的清理逻辑）
       - name: Cleanup temporary files
         if: always()
         run: |
