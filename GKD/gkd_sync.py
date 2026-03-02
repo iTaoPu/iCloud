@@ -27,7 +27,7 @@ CUSTOM_CONFIG = {
     "name": "少数π⁺ 🌀Guīzé訂閱−禁止傳播",
     "author": "少数π⁺",
     "checkUpdateUrl": "./Guīzé.version.stor",
-    "supportUri": "https://iCloud.ifanr.us.ci"
+    "supportUri": "https://icloud.ifanr.pp.ua/GKD"
 }
 
 # 超时配置
