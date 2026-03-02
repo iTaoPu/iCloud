@@ -29,44 +29,53 @@ def get_beijing_time():
 def increment_version(current_version: str) -> str:
     """版本号自增（最后一位数字+1）"""
     try:
+        # 拆分版本号（如 1.0.14.62 → [1,0,14,62]）
         version_parts = list(map(int, current_version.split(".")))
+        # 最后一位自增
         version_parts[-1] += 1
+        # 重新拼接
         return ".".join(map(str, version_parts))
     except (ValueError, IndexError):
+        # 解析失败时返回初始版本
         return "1.0.0.0"
 
 def get_existing_version():
-    """从仓库根目录的 Google.txt 读取版本号"""
-    if not os.path.exists("Google.txt"):  # 路径为仓库根目录
-        return "1.0.0.0"
+    """从已存在的 Google.txt 中读取版本号"""
+    if not os.path.exists("Google.txt"):
+        return "1.0.0.0"  # 无文件时返回初始版本
     
     with open("Google.txt", "r", encoding="utf-8") as f:
         content = f.read()
-    version_match = re.search(r"! Version: (\d+\.\d+\.\d+\.\d+)", content)
-    return version_match.group(1) if version_match else "1.0.0.0"
+    # 匹配 ! Version: x.x.x.x 格式（兼容任意空格）
+    version_match = re.search(r"! Version:\s*(\d+\.\d+\.\d+\.\d+)", content)
+    if version_match:
+        return version_match.group(1).strip()
+    else:
+        return "1.0.0.0"
 
 def process_filter_file():
-    """处理过滤文件，生成仓库根目录的 Google.txt"""
+    """处理过滤文件，生成最终的 Google.txt"""
     # 1. 获取基础信息
     beijing_date = get_beijing_time()
     old_version = get_existing_version()
     new_version = increment_version(old_version)
     
-    # 2. 读取仓库根目录的临时文件（工作流下载到根目录）
+    # 2. 读取远程下载的临时文件
     if not os.path.exists("temp_filter.txt"):
         raise FileNotFoundError("临时文件 temp_filter.txt 不存在，请先下载远程文件")
     
     with open("temp_filter.txt", "r", encoding="utf-8") as f:
         raw_content = f.read()
     
-    # 3. 提取核心规则内容
+    # 3. 提取原始文件的规则内容（去掉原有头部，保留核心规则）
+    # 匹配从 ! Version: 开始到 ! Update Date: 结束的头部，只保留之后的内容
     rule_content = re.sub(
         r"^.*?(! Version: .*?\n! Update Date: .*?\n)", "", 
         raw_content, 
         flags=re.DOTALL | re.MULTILINE
     ).strip()
     
-    # 4. 拼接新内容
+    # 4. 拼接新的头部 + 核心规则
     new_content = f"""
 {CUSTOM_HEADER["title"]}
 {CUSTOM_HEADER["homepage"]}
@@ -78,11 +87,15 @@ def process_filter_file():
 ! Update Date (Beijing Time):  {beijing_date}
 
 {rule_content}
-""".strip() + "\n"
+""".strip() + "\n"  # 保证文件末尾有换行
     
-    # 5. 写入仓库根目录的 Google.txt
+    # 5. 写入最终的 Google.txt
     with open("Google.txt", "w", encoding="utf-8") as f:
         f.write(new_content)
+    
+    # 关键修改：输出环境变量格式的内容（供Shell读取）
+    print(f"NEW_VERSION={new_version}")
+    print(f"CURRENT_DATE={beijing_date}")
     
     print(f"✅ Google.txt 生成完成")
     print(f"   版本号：{new_version}（原版本：{old_version}）")
