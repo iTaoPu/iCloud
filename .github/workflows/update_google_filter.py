@@ -121,7 +121,7 @@ def main():
     custom_header = f"""! Title: AdRules i叚娤.倖鍢 Google 广告拦截规则
 ! Homepage: https://i叚娤.倖鍢.net.cn
 ! Powerd by i叚娤.倖鍢
-! Expires: 3 day
+! Expires: irregularly (update frequency)
 ! Description: Completely blocks all Google-related domains (including YouTube).
 ! Version: {new_version}
 ! Update Time:  {beijing_time}
