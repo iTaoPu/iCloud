@@ -2,9 +2,9 @@
 ! Homepage: https://i叚娤.倖鍢.net.cn
 ! Powerd by i叚娤.倖鍢
 ! Expires: 1 day
-! Description: 完整拦截Google/YouTube相关广告、跟踪域名
-! Version: 1.0.0.2
-! Update Time (Beijing Time):  2026-03-02 16:46:18
+! Description: Completely blocks all Google-related domains (including YouTube).
+! Version: 1.0.0.3
+! Update Time:  2026-03-02 16:51:47
 ! Source: https://github.com/AdguardTeam/HostlistsRegistry
 ! ------------------------------------
 
