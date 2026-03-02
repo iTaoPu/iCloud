@@ -3,7 +3,7 @@ name: Google Daily Update
 # 触发条件：每6小时自动运行 + 手动触发（和GKD一致）
 on:
   schedule:
-    - cron: "0 18 * * *"
+    - cron: "0 */6 * * *"
   workflow_dispatch:
 
 # 复用GKD的权限声明（核心：显式赋予写入权限）
@@ -29,22 +29,22 @@ jobs:
         with:
           python-version: "3.10"
 
-      # 3. 安装依赖（GKD用啥咱用啥，保持一致）
+      # 3. 安装依赖（和GKD保持一致）
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install json5 requests  # 复用GKD的依赖，即使脚本用不到也不影响
+          pip install json5 requests
 
-      # 4. 下载远程filter_37.txt（根目录，带详细日志）
+      # 4. 下载远程filter_37.txt（带代理+重试）
       - name: Download remote filter file
         run: |
           echo "📥 下载filter_37.txt到仓库根目录..."
           # 带重试+代理，确保下载成功
           curl -sL --retry 10 --connect-timeout 30 \
-            "https://adguardteam.github.io/HostlistsRegistry/assets/filter_37.txt" \
+            "https://raw.fastgit.org/AdguardTeam/HostlistsRegistry/main/assets/filter_37.txt" \
             -o "temp_filter.txt"
           
-          # 验证文件（和GKD一样，失败则创建空文件不终止）
+          # 验证文件（失败则创建空文件不终止）
           if [ -s "temp_filter.txt" ]; then
             echo "✅ 下载成功，文件大小：$(du -h temp_filter.txt | awk '{print $1}')"
             touch .filter_download_success  # 创建下载成功标记文件
@@ -67,7 +67,7 @@ jobs:
           echo "$NEW_VERSION" > .google_update_success
           echo "NEW_VERSION=$NEW_VERSION" >> $GITHUB_OUTPUT
 
-      # 6. 提交并推送（完全复用GKD的Git逻辑）
+      # 6. 提交并推送（修复rebase冲突问题）
       - name: Commit and push changes to Grey branch
         if: hashFiles('.google_update_success') != ''
         run: |
@@ -75,9 +75,13 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # 切换+拉取最新代码（GKD核心逻辑）
+          # 切换到Grey分支
           git checkout Grey
-          git pull origin Grey --rebase
+          
+          # 核心修复：暂存本地修改→拉取最新→恢复修改（解决rebase冲突）
+          git stash push -u -m "temp stash for google.txt update"
+          git pull origin Grey --rebase || echo "远程Grey分支无更新，跳过rebase"
+          git stash pop || (echo "⚠️ 暂存恢复失败，直接添加文件" && git add Google.txt)
           
           # 读取版本号（复用GKD的文件读取）
           NEW_VERSION=$(cat .google_update_success)
