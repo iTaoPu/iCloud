@@ -3,7 +3,7 @@
 """
 GKD 订阅同步脚本（存放于GKD目录）
 功能：自动检查上游版本并更新本地订阅文件
-- 主文件(Guīzé.stor)：JSON5紧凑格式（无隔行，匹配上游）
+- 主文件(Guīzé.stor)：完全无空格的JSON5紧凑格式
 - 版本文件(Guīzé.version.stor)：{id: 2015, version: 版本号} 无引号格式
 """
 
@@ -84,7 +84,7 @@ def get_local_version():
         return 0
 
 def update_subscription(upstream_version):
-    """下载并更新订阅文件，版本文件生成指定的无引号格式"""
+    """下载并更新订阅文件，主文件生成完全无空格的JSON5格式"""
     try:
         print(f"📥 正在下载上游订阅文件: {UPSTREAM_SUB_URL}")
         resp = requests.get(UPSTREAM_SUB_URL, timeout=TIMEOUT_SUBSCRIPTION)
@@ -98,10 +98,14 @@ def update_subscription(upstream_version):
         data.update(CUSTOM_CONFIG)
         data["version"] = upstream_version
         
-        # 保存主订阅文件：JSON5紧凑格式（无隔行，匹配上游）
+        # 第一步：生成JSON5字符串（无缩进）
+        json5_str = json5.dumps(data, ensure_ascii=False, indent=None)
+        # 第二步：移除所有空格（包括键值间、逗号后、大括号旁的空格）
+        json5_str_no_space = json5_str.replace(" ", "")
+        # 第三步：保存完全无空格的内容
         with open(LOCAL_SUB_FILE, "w", encoding="utf-8") as f:
-            json5.dump(data, f, ensure_ascii=False, indent=None)
-        print(f"✅ 已保存主订阅文件: {LOCAL_SUB_FILE}（格式与上游一致，无隔行）")
+            f.write(json5_str_no_space)
+        print(f"✅ 已保存主订阅文件: {LOCAL_SUB_FILE}（完全无空格紧凑格式）")
         
         # 生成指定格式的版本文件（{id: 2015, version: 版本号}）
         version_content = """{
@@ -157,7 +161,7 @@ def main():
         print(f"\n📢 发现新版本！开始更新...")
         update_success = update_subscription(upstream_ver)
         if update_success:
-            print("\n✅ 同步完成！版本文件格式为 {id: 2015, version: 版本号}")
+            print("\n✅ 同步完成！主文件完全无空格，版本文件格式符合要求")
             sys.exit(0)
         else:
             print("\n❌ 同步失败！请检查错误信息")
