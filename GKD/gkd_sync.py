@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 GKD 订阅同步脚本（存放于GKD目录）
-功能：自动检查上游版本并更新本地订阅文件（文件保存在当前目录）
+功能：自动检查上游版本并更新本地订阅文件（所有文件保存在GKD目录）
 """
 
 import json5
@@ -11,8 +11,7 @@ import json
 import os
 import sys
 
-# ===================== 配置区域（路径改为当前目录）=====================
-# 上游数据源地址
+# ===================== 配置区域 =====================
 UPSTREAM_VERSION_URL = "https://raw.githubusercontent.com/Lin-arm/GKD_subscription/main/dist/gkd.version.json5"
 UPSTREAM_SUB_URL = "https://raw.githubusercontent.com/Lin-arm/GKD_subscription/main/dist/gkd.json5"
 
@@ -33,9 +32,9 @@ CUSTOM_CONFIG = {
 TIMEOUT_VERSION = 10
 TIMEOUT_SUBSCRIPTION = 30
 
-# 更新标记文件（放在仓库根目录，供工作流判断）
-UPDATE_FLAG_FILE = "../.update_success"
-# ====================================================================
+# 更新标记文件（放在GKD目录内）
+UPDATE_FLAG_FILE = ".update_success"
+# ====================================================
 
 def get_upstream_version():
     """获取上游最新版本号"""
@@ -108,7 +107,7 @@ def update_subscription(upstream_version):
             json.dump(version_data, f, ensure_ascii=False, indent=2)
         print(f"✅ 已保存版本文件: {LOCAL_VERSION_FILE}")
         
-        # 创建更新标记文件（根目录，供工作流识别）
+        # 创建更新标记文件（GKD目录内）
         with open(UPDATE_FLAG_FILE, "w") as f:
             f.write(str(upstream_version))
         
