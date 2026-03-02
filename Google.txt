@@ -1,0 +1,9 @@
+! Title: AdRules i叚娤.倖鍢 Google List
+! Homepage: https://i叚娤.倖鍢.net.cn
+! Powerd by i叚娤.倖鍢
+! Expires: irregularly (update frequency)
+! Description: Completely blocks all Google-related domains (including YouTube)
+! ------------------------------------
+! Version: 1.0.0.0
+! Update Date (Beijing Time):  2026-03-02
+
