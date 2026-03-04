@@ -166,7 +166,7 @@ def main():
     beijing_time = get_beijing_time()
     custom_header = f"""! Title: AdRules 隱耀がく山道 Google List
 ! Homepage: https://i叚娤.倖鍢.net.cn
-! Powerd by i叚娤.倖鍢 & Upstream Authors
+! Powerd by 長髯主簿 & Upstream Authors
 ! Expires: irregularly (update frequency)
 ! Description: Completely blocks all Google-related domains (including YouTube).
 ! ------------------------------------
