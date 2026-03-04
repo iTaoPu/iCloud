@@ -25,7 +25,7 @@ LOCAL_SUB_FILE = "Guīzé.stor"
 CUSTOM_CONFIG = {
     "id": 2015,
     "name": "少数π⁺ 🌀Guīzé訂閱−禁止傳播",
-    "author": "少数π⁺",
+    "author": "長髯主簿",
     "checkUpdateUrl": "./Guīzé.version.stor",
     "supportUri": "https://icloud.sspai.pp.ua/GKD"
 }
