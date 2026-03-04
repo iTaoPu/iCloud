@@ -1,6 +1,6 @@
-! Title: AdRules i叚娤.倖鍢 iTLD List
+! Title: AdRules 長髯主簿 iTLD List
 ! Homepage: https://i叚娤.倖鍢.net.cn
-! Powerd by i叚娤.倖鍢
+! Powerd by 長髯主簿
 ! Expires: irregularly (update frequency)
 ! Description: 时间在变，人也在变，不管我们如何努力，回不去就是回不去。
 ! ------------------------------------
