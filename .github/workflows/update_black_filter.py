@@ -124,7 +124,7 @@ def main():
     # 7. 构建自定义头部
     custom_header = f"""! Title: AdRules 秋風がく山道 Black List
 ! Homepage: https://i叚娤.倖鍢.net.cn
-! Powerd by i叚娤.倖鍢 & Upstream Authors
+! Powerd by 長髯主簿 & Upstream Authors
 ! Expires: irregularly (update frequency)
 ! Description: 极致的体积控制，超高的命中率，极低的硬件要求！
 ! ------------------------------------
