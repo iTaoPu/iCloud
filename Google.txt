@@ -1,12 +1,12 @@
 ! Title: AdRules 禁墟がく山道 Google List
 ! Homepage: https://i叚娤.倖鍢.net.cn
 ! Powerd by 長髯主簿 & Upstream Authors
-！Signature: 此地為禁, 萬物寂滅
+! Signature: 此地為禁, 萬物寂滅
 ! Expires: irregularly (update frequency)
 ! Description: Completely blocks all Google-related domains (including YouTube).
 ! ------------------------------------
 ! Version: 1.0.14.63
-! Update Time: 2026-03-04 18:01:22
+! Update Time: 2026-03-04 18:05:19
 
 ||adgoogle.net^
 ||crashlytics.com^
