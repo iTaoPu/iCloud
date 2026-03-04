@@ -167,7 +167,7 @@ def main():
     custom_header = f"""! Title: AdRules 禁墟がく山道 Google List
 ! Homepage: https://i叚娤.倖鍢.net.cn
 ! Powerd by 長髯主簿 & Upstream Authors
-！Signature: 此地為禁, 萬物寂滅
+! Signature: 此地為禁, 萬物寂滅
 ! Expires: irregularly (update frequency)
 ! Description: Completely blocks all Google-related domains (including YouTube).
 ! ------------------------------------
