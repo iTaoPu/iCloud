@@ -54,18 +54,12 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # 切换到Grey分支
-          git checkout Grey
+          # 【修复1】先拉取最新代码，确保本地分支是最新的
+          echo "🔄 拉取远程最新代码..."
+          git pull origin Grey
           
-          # 拉取Grey分支最新代码
-          git pull origin Grey --rebase
-          
-          # 进入GKD目录获取更新版本号
-          cd GKD
-          NEW_VERSION=$(cat .update_success)
-          cd ..
-          
-          # 添加GKD目录下的所有相关文件
+          # 【修复2】先暂存和提交所有更改，然后再推送到远程
+          echo "📝 暂存GKD目录所有更改..."
           git add GKD/ || true
           
           # 检查是否有实际变更
@@ -74,13 +68,23 @@ jobs:
             exit 0
           fi
           
-          # 提交变更（注明版本文件仅含id和version）
+          # 读取更新版本号
+          if [ -f "GKD/.update_success" ]; then
+            NEW_VERSION=$(cat "GKD/.update_success")
+          else
+            echo "❌ 找不到版本标记文件"
+            exit 1
+          fi
+          
+          # 提交变更
+          echo "💾 提交变更..."
           git commit -m "🔄 自动更新GKD订阅至版本 v${NEW_VERSION}" --allow-empty
           
           # 推送到Grey分支
+          echo "🚀 推送更新到远程..."
           git push origin Grey
           
-          echo "🚀 更新已成功推送到Grey分支！版本文件仅包含id和version字段"
+          echo "✅ 更新已成功推送到Grey分支！版本：v${NEW_VERSION}"
 
       # 6. 清理临时文件（GKD目录内的标记文件）
       - name: Cleanup temporary files
