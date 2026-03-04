@@ -14,7 +14,7 @@ jobs:
   sync-google-filter:
     runs-on: ubuntu-latest
     steps:
-      # 1. 检出仓库（使用第二个方案的checkout配置）
+      # 1. 检出仓库
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
@@ -27,25 +27,25 @@ jobs:
         with:
           python-version: "3.10"
 
-      # 3. 下载Google规则（基于第二个方案逻辑）
+      # 3. 下载Google规则（FIXED：输出正确的文件名）
       - name: Download remote Google filter file
         id: download_google
         run: |
           echo "📥 下载Google过滤规则..."
           
-          # 基于第二个方案的多URL策略
+          # URL列表
           URLS=(
-            "https://adguardteam.github.io/HostlistsRegistry/assets/filter_37.txt"
             "https://raw.githubusercontent.com/AdguardTeam/HostlistsRegistry/main/assets/filter_37.txt"
+            "https://adguardteam.github.io/HostlistsRegistry/assets/filter_37.txt"
             "https://wget.la/raw.githubusercontent.com/AdguardTeam/HostlistsRegistry/main/assets/filter_37.txt"
           )
           
           for url in "${URLS[@]}"; do
             echo "尝试下载: $url"
-            # 使用curl，添加连接超时和重试
-            if curl -sL --retry 2 --connect-timeout 30 -o "temp_google_filter.txt" "$url"; then
-              # 验证文件内容（保持第二个方案的简单验证）
-              RULE_COUNT=$(grep -c '^' "temp_google_filter.txt" 2>/dev/null || wc -l < "temp_google_filter.txt" || echo "0")
+            # 关键修复：输出文件名必须与Python脚本匹配
+            if curl -sL --retry 2 --connect-timeout 30 -o "temp_filter.txt" "$url"; then
+              # 验证文件内容
+              RULE_COUNT=$(grep -c '^' "temp_filter.txt" 2>/dev/null || wc -l < "temp_filter.txt" || echo "0")
               if [ "$RULE_COUNT" -gt 50 ]; then
                 echo "✅ 下载成功，共 $RULE_COUNT 行规则"
                 echo "DOWNLOAD_SUCCESS=1" >> $GITHUB_OUTPUT
@@ -60,65 +60,78 @@ jobs:
           echo "❌ 所有下载尝试失败"
           exit 1
 
-      # 4. 执行Python脚本（保持第二个方案逻辑）
+      # 4. 执行Python脚本（增加调试信息）
       - name: Run Google filter sync script
         id: sync_google
         if: steps.download_google.outputs.DOWNLOAD_SUCCESS == '1'
         run: |
           echo "🚀 处理Google过滤规则..."
+          echo "当前工作目录：$(pwd)"
+          echo "目录内容："
+          ls -la
           
-          # 尝试多个可能的脚本路径
-          if [ -f ".github/workflows/update_google_filter.py" ]; then
-            SCRIPT=".github/workflows/update_google_filter.py"
-          elif [ -f "scripts/update_google_filter.py" ]; then
-            SCRIPT="scripts/update_google_filter.py"
-          elif [ -f "update_google_filter.py" ]; then
-            SCRIPT="update_google_filter.py"
+          # 检查临时文件
+          echo "检查临时文件："
+          ls -la temp_filter.txt 2>/dev/null || echo "临时文件不存在"
+          
+          # 检查Python脚本
+          SCRIPT=".github/workflows/update_google_filter.py"
+          if [ -f "$SCRIPT" ]; then
+            echo "✅ 找到Python脚本: $SCRIPT"
+            echo "脚本大小: $(wc -c < "$SCRIPT") 字节"
           else
-            echo "❌ 未找到Python脚本，跳过脚本执行"
-            echo "ℹ️ 直接使用原始Google规则"
-            
-            # 如果没有Python脚本，直接复制临时文件
-            if [ -f "temp_google_filter.txt" ]; then
-              cp "temp_google_filter.txt" "Google.txt"
-              echo "file_ready=1" >> $GITHUB_OUTPUT
-            else
-              echo "❌ 临时文件不存在"
-              exit 1
-            fi
-            exit 0
-          fi
-          
-          echo "执行脚本: $SCRIPT"
-          python "$SCRIPT"
-          
-          # 基于第二个方案提取版本号
-          if [ -f "script_output.log" ]; then
-            if grep -q "^NEW_VERSION=" script_output.log; then
-              NEW_VERSION=$(grep "^NEW_VERSION=" script_output.log | cut -d'=' -f2)
-            else
-              # 生成基于日期的版本
-              NEW_VERSION="google_$(date +%Y.%m.%d.%H)"
-            fi
-            echo "版本号: $NEW_VERSION"
-            echo "new_version=$NEW_VERSION" >> $GITHUB_OUTPUT
-            echo "file_ready=1" >> $GITHUB_OUTPUT
-          else
-            echo "⚠️ 日志文件不存在，使用默认版本号"
-            echo "new_version=google_$(date +%Y.%m.%d.%H)" >> $GITHUB_OUTPUT
-            echo "file_ready=1" >> $GITHUB_OUTPUT
-          fi
-          
-          # 验证Google.txt文件
-          if [ ! -f "Google.txt" ]; then
-            echo "❌ Google.txt未生成"
+            echo "❌ 未找到Python脚本: $SCRIPT"
+            find . -name "*.py" -type f 2>/dev/null | head -10
             exit 1
           fi
           
-          GOOGLE_RULE_COUNT=$(grep -c '^' "Google.txt" 2>/dev/null || wc -l < "Google.txt" || echo "0")
-          echo "✅ 生成Google.txt: $GOOGLE_RULE_COUNT 条规则"
+          # 执行脚本（使用绝对路径）
+          python "$SCRIPT"
+          
+          # 检查执行结果
+          if [ $? -eq 0 ]; then
+            echo "✅ Python脚本执行成功"
+          else
+            echo "❌ Python脚本执行失败"
+            # 查看日志文件
+            if [ -f "script_output.log" ]; then
+              echo "=== 脚本输出日志 ==="
+              tail -50 script_output.log
+              echo "==================="
+            fi
+            exit 1
+          fi
+          
+          # 输出结果信息
+          if [ -f "script_output.log" ]; then
+            echo "=== 最新日志内容 ==="
+            tail -20 script_output.log
+            echo "================="
+            
+            # 提取版本号
+            if grep -q "^NEW_VERSION=" script_output.log; then
+              NEW_VERSION=$(grep "^NEW_VERSION=" script_output.log | cut -d'=' -f2)
+              echo "new_version=$NEW_VERSION" >> $GITHUB_OUTPUT
+            else
+              NEW_VERSION="google_$(date +%Y.%m.%d.%H)"
+              echo "new_version=$NEW_VERSION" >> $GITHUB_OUTPUT
+            fi
+          else
+            NEW_VERSION="google_$(date +%Y.%m.%d.%H)"
+            echo "new_version=$NEW_VERSION" >> $GITHUB_OUTPUT
+          fi
+          
+          # 验证生成的文件
+          if [ -f "Google.txt" ]; then
+            GOOGLE_RULE_COUNT=$(grep -c '^' "Google.txt" 2>/dev/null || echo "1")
+            echo "✅ 生成Google.txt: $GOOGLE_RULE_COUNT 条规则"
+            echo "file_ready=1" >> $GITHUB_OUTPUT
+          else
+            echo "❌ Google.txt未生成"
+            exit 1
+          fi
 
-      # 5. 提交并推送（采用第二个方案的推送方式）
+      # 5. 提交并推送
       - name: Commit and push Google updates
         if: steps.download_google.outputs.DOWNLOAD_SUCCESS == '1' && steps.sync_google.outputs.file_ready == '1'
         env:
@@ -126,11 +139,11 @@ jobs:
         run: |
           echo "🚀 提交Google规则更新..."
           
-          # 配置Git身份（保持第二个方案）
+          # 配置Git身份
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # 检查是否需要切换到Grey分支（改进版）
+          # 确保在Grey分支
           CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
           if [ "$CURRENT_BRANCH" != "Grey" ]; then
             echo "当前分支: $CURRENT_BRANCH，切换到Grey分支"
@@ -139,34 +152,32 @@ jobs:
             echo "已在Grey分支上"
           fi
           
-          # 添加文件（只添加Google.txt）
+          # 添加文件
           git add Google.txt
           
-          # 检查变更（基于第二个方案）
+          # 检查变更
           if git diff --cached --quiet; then
             echo "ℹ️ 无内容变更，跳过提交"
-            echo "skip_commit=true" >> $GITHUB_ENV
             exit 0
           fi
           
           # 生成提交信息
-          COMMIT_VERSION=${{ env.NEW_VERSION }}
-          if [ -z "$COMMIT_VERSION" ]; then
+          if [ -n "${{ env.NEW_VERSION }}" ]; then
+            COMMIT_VERSION="${{ env.NEW_VERSION }}"
+          else
             COMMIT_VERSION="$(date +%Y.%m.%d.%H)"
           fi
           
-          # 提交（采用第二个方案风格）
+          # 提交并推送
           git commit -m "🔄 [Google] Auto update to v${COMMIT_VERSION}"
-          
-          # 推送（采用第二个方案的token推送方式）
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git Grey
           
           echo "✅ Google规则更新完成并已推送"
 
-      # 6. 清理临时文件（基于第二个方案）
+      # 6. 清理临时文件
       - name: Cleanup
         if: always()
         run: |
           echo "🧹 清理临时文件..."
-          rm -f temp_google_filter.txt script_output.log google_script.log 2>/dev/null || true
+          rm -f temp_filter.txt script_output.log 2>/dev/null || true
           echo "清理完成"
