@@ -169,9 +169,9 @@ def main():
 ! Powerd by i叚娤.倖鍢 & Upstream Authors
 ! Expires: irregularly (update frequency)
 ! Description: Completely blocks all Google-related domains (including YouTube).
+! ------------------------------------
 ! Version: {new_version}
 ! Update Time: {beijing_time}
-! ------------------------------------
 
 """
     
