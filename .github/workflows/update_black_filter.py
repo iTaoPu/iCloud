@@ -5,10 +5,10 @@ AWAvenue广告规则生成black.txt脚本（移除指定行，版本号跟随上
 """
 import os
 import hashlib
+import sys
 from datetime import datetime, timedelta
 
 # 重定向输出到日志文件
-import sys
 sys.stdout = open("black_script_output.log", "w", encoding="utf-8")
 sys.stderr = sys.stdout
 
@@ -37,18 +37,6 @@ def get_upstream_info(temp_file):
     except Exception as e:
         print(f"⚠️ 读取上游信息失败：{e}，使用默认值")
         return upstream_ver, upstream_update_time
-
-def get_file_md5(file_path):
-    """计算文件MD5值（判断内容是否变更）"""
-    if not os.path.exists(file_path):
-        return ""
-    try:
-        with open(file_path, "rb") as f:
-            md5_obj = hashlib.md5()
-            md5_obj.update(f.read())
-            return md5_obj.hexdigest()
-    except Exception:
-        return ""
 
 def extract_core_rules(temp_file):
     """提取上游核心规则（移除指定行+跳过原始头部）"""
@@ -128,7 +116,7 @@ def main():
     
     # 6. 无变更则复用本地文件
     if local_core_md5 == upstream_core_md5 and os.path.exists(black_file):
-        print(f"ℹ️  上游规则无变更，复用本地版本：{local_ver}")
+        print(f"ℹ️ 上游规则无变更，复用本地版本：{local_ver}")
         print(f"NEW_VERSION={local_ver}")
         print(f"CURRENT_DATE={upstream_update_time}")
         sys.exit(0)
@@ -136,7 +124,7 @@ def main():
     # 7. 构建自定义头部
     custom_header = f"""! Title: AdRules 秋風がく山道 Black List
 ! Homepage: https://i叚娤.倖鍢.net.cn
-! Powerd by i叚娤.倖鍢
+! Powerd by i叚娤.倖鍢 & Upstream Authors
 ! Expires: irregularly (update frequency)
 ! Description: 极致的体积控制，超高的命中率，极低的硬件要求！
 ! ------------------------------------
