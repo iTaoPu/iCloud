@@ -1,6 +1,7 @@
 ! Title: AdRules 秋風がく山道 Black List
 ! Homepage: https://i叚娤.倖鍢.net.cn
 ! Powerd by 長髯主簿 & Upstream Authors
+! Signature: 云栖翠篁, 心绝尘氛
 ! Expires: irregularly (update frequency)
 ! Description: 极致的体积控制，超高的命中率，极低的硬件要求！
 ! ------------------------------------
