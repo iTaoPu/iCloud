@@ -3,7 +3,7 @@ name: Google Daily Update
 # 触发条件：每3天UTC 10:00运行（北京时间18:00）
 on:
   schedule:
-    - cron: "0 18 */3 * *"  # UTC 10:00 = 北京时间18:00
+    - cron: '0 18 */3 * *'  # UTC 10:00 = 北京时间18:00
   workflow_dispatch:
 
 # 显式赋予写入权限
