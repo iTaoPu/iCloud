@@ -1,49 +1,27 @@
 name: GKD Subscription Sync
 
-# 初始触发：仅手动触发（首次运行后会自动添加定时规则）
+# 触发条件：每6小时自动运行 + 手动触发
 on:
+  schedule:
+    - cron: "0 */6 * * *"
   workflow_dispatch:
 
-# 赋予工作流完整权限（需修改workflow文件和推送代码）
+# 赋予工作流足够的写入权限
 permissions:
   contents: write
   pull-requests: write
-  actions: write  # 新增：允许修改workflow配置
 
 jobs:
-  # 第一步：将北京时间cron转换为UTC cron
-  calculate-cron:
-    runs-on: ubuntu-latest
-    outputs:
-      cron: ${{ steps.convert-cron.outputs.cron }}  # 输出换算后的UTC cron
-    steps:
-      - name: Convert Beijing time (8:00) to UTC cron
-        id: convert-cron
-        uses: nickytonline/convert-cron-time@v1
-        with:
-          cron: "0 8 * * *"          # 直接写：北京时间每天8点
-          timezone: "Asia/Shanghai"  # 指定时区为上海（等同于北京）
-          debug: true                # 可选：打印换算过程，方便排查
-
-  # 第二步：执行GKD订阅同步核心逻辑
   sync-subscription:
-    needs: calculate-cron  # 依赖第一步的cron换算结果
     runs-on: ubuntu-latest
     steps:
-      # 新增：打印当前北京时间（验证时区）
-      - name: Show current Beijing time
-        run: |
-          sudo timedatectl set-timezone Asia/Shanghai
-          echo "📅 本次运行的北京时间：$(date '+%Y-%m-%d %H:%M:%S')"
-          echo "⏰ 定时规则：北京时间每天8点（UTC cron: ${{ needs.calculate-cron.outputs.cron }}）"
-
       # 1. 检出仓库代码（指定Grey分支）
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
           ref: Grey  # 你的仓库主分支
-          # 注意：如果仓库是私有的，需要取消注释并配置PAT
+          # 如需使用PAT，取消注释下面这行
           # token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
       # 2. 设置Python环境
@@ -76,11 +54,11 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # 先拉取最新代码，避免冲突
+          # 【修复1】先拉取最新代码，确保本地分支是最新的
           echo "🔄 拉取远程最新代码..."
           git pull origin Grey
           
-          # 暂存GKD目录所有更改
+          # 【修复2】先暂存和提交所有更改，然后再推送到远程
           echo "📝 暂存GKD目录所有更改..."
           git add GKD/ || true
           
@@ -98,9 +76,9 @@ jobs:
             exit 1
           fi
           
-          # 提交变更（备注北京时间）
+          # 提交变更
           echo "💾 提交变更..."
-          git commit -m "🔄 自动更新GKD订阅至版本 v${NEW_VERSION}（北京时间8点同步）" --allow-empty
+          git commit -m "🔄 自动更新GKD订阅至版本 v${NEW_VERSION}" --allow-empty
           
           # 推送到Grey分支
           echo "🚀 推送更新到远程..."
@@ -108,56 +86,9 @@ jobs:
           
           echo "✅ 更新已成功推送到Grey分支！版本：v${NEW_VERSION}"
 
-      # 6. 清理临时文件
+      # 6. 清理临时文件（GKD目录内的标记文件）
       - name: Cleanup temporary files
         if: always()
         run: |
           rm -f GKD/.update_success || true
           echo "🧹 临时文件清理完成"
-
-  # 第三步：自动更新Workflow文件，添加定时规则（仅首次运行需要）
-  update-workflow-schedule:
-    needs: [calculate-cron, sync-subscription]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          ref: Grey
-          # token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-
-      - name: Update workflow with Beijing time cron
-        run: |
-          # 获取当前workflow文件名
-          WORKFLOW_FILE=".github/workflows/$(basename $GITHUB_WORKFLOW).yml"
-          echo "📝 正在更新Workflow文件：$WORKFLOW_FILE"
-          
-          # 检查文件是否存在
-          if [ ! -f "$WORKFLOW_FILE" ]; then
-            echo "❌ 未找到Workflow文件：$WORKFLOW_FILE"
-            exit 1
-          fi
-          
-          # 替换on字段：添加schedule（北京时间8点对应的UTC cron）
-          # 保留workflow_dispatch，同时添加自动计算的cron
-          sed -i '/^on:$/a \ \ schedule:\n    - cron: "'"${{ needs.calculate-cron.outputs.cron }}"'"' "$WORKFLOW_FILE"
-          
-          # 验证修改结果
-          echo "🔍 修改后的on字段："
-          grep -A 5 "^on:$" "$WORKFLOW_FILE"
-          
-          # 提交并推送修改
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add "$WORKFLOW_FILE"
-          
-          # 仅当有变更时提交
-          if git diff --staged --quiet; then
-            echo "ℹ️ Workflow文件无需更新（已配置正确的cron）"
-            exit 0
-          fi
-          
-          git commit -m "⚙️ 自动配置定时任务：北京时间每天8点（UTC cron: ${{ needs.calculate-cron.outputs.cron }}）"
-          git push origin Grey
-          
-          echo "✅ Workflow已更新！后续将自动在北京时间每天8点运行"
