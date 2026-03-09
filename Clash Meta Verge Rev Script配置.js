@@ -9,14 +9,12 @@
 const domesticNameservers = [
   "https://dns.alidns.com/dns-query", // 阿里公共DNS
   "https://doh.pub/dns-query",        // 腾讯DNSPod
-  "https://doh.360.cn/dns-query",      // 360安全DNS
 ];
 
 // 国外DNS服务器 (DoH协议)
 const foreignNameservers = [
   "https://mozilla.cloudflare-dns.com/dns-query", // Cloudflare DNS (1.1.1.1)
   "https://dns.google/dns-query",         // Google DNS (8.8.8.8)
-  "https://dns.quad9.net/dns-query",      // Quad9 DNS(9.9.9.9)
 ];
 
 // ===================== DNS配置（防泄露核心） =====================
@@ -158,10 +156,6 @@ const ruleProviders = {
 // ===================== 自定义规则 =====================
 const rules = [
   // 自定义域名规则（可根据实际需求调整目标代理组）
-  "DOMAIN-SUFFIX,googleapis.cn,🌐 节点选择",    // Google国内服务
-  "DOMAIN-SUFFIX,gstatic.com,🌐 节点选择",      // Google静态资源
-  "DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🌐 节点选择", // Google Play
-  "DOMAIN-SUFFIX,github.io,🌐 节点选择",        // Github Pages
   "DOMAIN-SUFFIX,coodesker.com,🛑 全球拦截",    // 酷呆桌面
   "DOMAIN-SUFFIX,adobe.io,🛑 全球拦截",         // Adobe.io
   "DOMAIN-SUFFIX,adobe.com,🛑 全球拦截",        // Adobe官网
@@ -354,4 +348,5 @@ function main(config) {
   // 返回增强后的配置
   return config;
 }
+
 
