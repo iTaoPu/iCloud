@@ -42,7 +42,7 @@ const dnsConfig = {
     "localhost.work.weixin.qq.com"
   ],
   // 基础DNS：仅用于解析DNS服务器自身域名（国内DNS，避免递归泄露）
-  "default-nameserver": ["119.29.29.29", "223.5.5.5", "180.76.76.76"],
+  "default-nameserver": ["119.29.29.29", "223.5.5.5"],
   // 主DNS：国内域名优先使用（包含DoH和UDP备用）
   "nameserver": domesticNameservers,
   // 备用DNS：仅特定场景触发
@@ -354,3 +354,4 @@ function main(config) {
   // 返回增强后的配置
   return config;
 }
+
