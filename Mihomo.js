@@ -222,7 +222,7 @@ function main(config) {
     },
     {
       ...groupBaseOption,
-      "name": "📲电报消息服务",
+      "name": "📲电报消息",
       "type": "select",
       "proxies": ["🌐节点选择", "♻️延迟选优", "🔯故障转移", "🔮负载均衡·散列", "🔮负载均衡·轮询", "☑️手动切换", "🎯全球直连"],
       "include-all": true,
