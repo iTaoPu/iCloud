@@ -228,6 +228,7 @@ function main(config) {
       ...groupBaseOption,
       "name": "🛑全球拦截",
       "type": "select",
+      "proxies": ["REJECT", "DIRECT"],
     },
     {
       ...groupBaseOption,
