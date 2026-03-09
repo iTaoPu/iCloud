@@ -17,79 +17,79 @@ const ruleProviders = {
   "reject": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://www.jsdelivr.com/gh/Loyalsoldier/clash-rules@release/reject.txt",
+    "url": "https://www.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/reject.txt",
     "path": "./ruleset/loyalsoldier/reject.yaml"
   },
   "icloud": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://www.jsdelivr.com/gh/Loyalsoldier/Clash-Rules@release/icloud.txt",
+    "url": "https://www.jsdmirror.com/gh/Loyalsoldier/Clash-Rules@release/icloud.txt",
     "path": "./ruleset/loyalsoldier/icloud.yaml"
   },
   "apple": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://www.jsdelivr.com/gh/Loyalsoldier/clash-rules@release/apple.txt",
+    "url": "https://www.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/apple.txt",
     "path": "./ruleset/loyalsoldier/apple.yaml"
   },
   "google": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://www.jsdelivr.com/gh/Loyalsoldier/clash-rules@release/google.txt",
+    "url": "https://www.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/google.txt",
     "path": "./ruleset/loyalsoldier/google.yaml"
   },
   "proxy": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://www.jsdelivr.com/gh/Loyalsoldier/clash-rules@release/proxy.txt",
+    "url": "https://www.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/proxy.txt",
     "path": "./ruleset/loyalsoldier/proxy.yaml"
   },
   "direct": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://www.jsdelivr.com/gh/Loyalsoldier/clash-rules@release/direct.txt",
+    "url": "https://www.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/direct.txt",
     "path": "./ruleset/loyalsoldier/direct.yaml"
   },
   "private": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://www.jsdelivr.com/gh/Loyalsoldier/clash-rules@release/private.txt",
+    "url": "https://www.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/private.txt",
     "path": "./ruleset/loyalsoldier/private.yaml"
   },
   "gfw": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://www.jsdelivr.com/gh/Loyalsoldier/clash-rules@release/gfw.txt",
+    "url": "https://www.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/gfw.txt",
     "path": "./ruleset/loyalsoldier/gfw.yaml"
   },
   "tld-not-cn": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://www.jsdelivr.com/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt",
+    "url": "https://www.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt",
     "path": "./ruleset/loyalsoldier/tld-not-cn.yaml"
   },
   "telegramcidr": {
     ...ruleProviderCommon,
     "behavior": "ipcidr",
-    "url": "https://www.jsdelivr.com/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt",
+    "url": "https://www.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt",
     "path": "./ruleset/loyalsoldier/telegramcidr.yaml"
   },
   "cncidr": {
     ...ruleProviderCommon,
     "behavior": "ipcidr",
-    "url": "https://www.jsdelivr.com/gh/Loyalsoldier/clash-rules@release/cncidr.txt",
+    "url": "https://www.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/cncidr.txt",
     "path": "./ruleset/loyalsoldier/cncidr.yaml"
   },
   "lancidr": {
     ...ruleProviderCommon,
     "behavior": "ipcidr",
-    "url": "https://www.jsdelivr.com/gh/Loyalsoldier/clash-rules@release/lancidr.txt",
+    "url": "https://www.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/lancidr.txt",
     "path": "./ruleset/loyalsoldier/lancidr.yaml"
   },
   "applications": {
     ...ruleProviderCommon,
     "behavior": "classical",
-    "url": "https://www.jsdelivr.com/gh/Loyalsoldier/clash-rules@release/applications.txt",
+    "url": "https://www.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/applications.txt",
     "path": "./ruleset/loyalsoldier/applications.yaml"
   }
 };
@@ -147,7 +147,7 @@ function main(config) {
       "type": "select",
       "proxies": ["♻️延迟选优", "🔯故障转移", "🔮负载均衡·散列", "🔮负载均衡·轮询", "☑️手动切换", "DIRECT"],
       "include-all": false,
-      "icon": "https://www.jsdelivr.com/gh/iTaoPu/iCloud@Grey/IconSet/Area.png"
+      "icon": "https://www.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/Area.png"
     },
     {
       ...groupBaseOption,
@@ -155,7 +155,7 @@ function main(config) {
       "type": "select",
       "proxies": ["REJECT", "DIRECT"],
       "include-all": true,
-      "icon": "https://www.jsdelivr.com/gh/iTaoPu/iCloud@Grey/IconSet/Catnet.png"
+      "icon": "https://www.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/Catnet.png"
     },
     {
       ...groupBaseOption,
@@ -163,14 +163,14 @@ function main(config) {
       "type": "url-test",
       "tolerance": 100,
       "include-all": true,
-      "icon": "https://www.jsdelivr.com/gh/iTaoPu/iCloud@Grey/IconSet/Auto.png"
+      "icon": "https://www.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/Auto.png"
     },
     {
       ...groupBaseOption,
       "name": "🔯故障转移",
       "type": "fallback",
       "include-all": true,
-      "icon": "https://www.jsdelivr.com/gh/iTaoPu/iCloud@Grey/IconSet/ambulance.png"
+      "icon": "https://www.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/ambulance.png"
     },
     {
       ...groupBaseOption,
@@ -178,7 +178,7 @@ function main(config) {
       "type": "load-balance",
       "strategy": "consistent-hashing",
       "include-all": true,
-      "icon": "https://www.jsdelivr.com/gh/iTaoPu/iCloud@Grey/IconSet/merry_go.png"
+      "icon": "https://www.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/merry_go.png"
     },
     {
       ...groupBaseOption,
@@ -186,7 +186,7 @@ function main(config) {
       "type": "load-balance",
       "strategy": "round-robin",
       "include-all": true,
-      "icon": "https://www.jsdelivr.com/gh/iTaoPu/iCloud@Grey/IconSet/balance.png"
+      "icon": "https://www.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/balance.png"
     },
     {
       ...groupBaseOption,
@@ -194,7 +194,7 @@ function main(config) {
       "type": "select",
       "proxies": ["🌐节点选择", "♻️延迟选优", "🔯故障转移", "🔮负载均衡·散列", "🔮负载均衡·轮询", "☑️手动切换", "🎯全球直连"],
       "include-all": true,
-      "icon": "https://www.jsdelivr.com/gh/iTaoPu/iCloud@Grey/IconSet/World_Map.png"
+      "icon": "https://www.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/World_Map.png"
     },
     {
       ...groupBaseOption,
@@ -202,7 +202,7 @@ function main(config) {
       "type": "select",
       "proxies": ["🌐节点选择", "♻️延迟选优", "🔯故障转移", "🔮负载均衡·散列", "🔮负载均衡·轮询", "☑️手动切换", "🎯全球直连"],
       "include-all": true,
-      "icon": "https://www.jsdelivr.com/gh/iTaoPu/iCloud@Grey/IconSet/google.png"
+      "icon": "https://www.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/google.png"
     },
     {
       ...groupBaseOption,
@@ -210,7 +210,7 @@ function main(config) {
       "type": "select",
       "proxies": ["🎯全球直连", "🌐节点选择", "♻️延迟选优", "🔯故障转移", "🔮负载均衡·散列", "🔮负载均衡·轮询", "☑️手动切换"],
       "include-all": true,
-      "icon": "https://www.jsdelivr.com/gh/iTaoPu/iCloud@Grey/IconSet/microsoft.png"
+      "icon": "https://www.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/microsoft.png"
     },
     {
       ...groupBaseOption,
@@ -218,7 +218,7 @@ function main(config) {
       "type": "select",
       "proxies": ["🌐节点选择", "♻️延迟选优", "🔯故障转移", "🔮负载均衡·散列", "🔮负载均衡·轮询", "☑️手动切换", "🎯全球直连"],
       "include-all": true,
-      "icon": "https://www.jsdelivr.com/gh/iTaoPu/iCloud@Grey/IconSet/apple_blue.png"
+      "icon": "https://www.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/apple_blue.png"
     },
     {
       ...groupBaseOption,
@@ -226,7 +226,7 @@ function main(config) {
       "type": "select",
       "proxies": ["🌐节点选择", "♻️延迟选优", "🔯故障转移", "🔮负载均衡·散列", "🔮负载均衡·轮询", "☑️手动切换", "🎯全球直连"],
       "include-all": true,
-      "icon": "https://www.jsdelivr.com/gh/iTaoPu/iCloud@Grey/IconSet/Telegram.png"
+      "icon": "https://www.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/Telegram.png"
     },
     {
       ...groupBaseOption,
@@ -234,14 +234,14 @@ function main(config) {
       "type": "select",
       "proxies": ["DIRECT", "🌐节点选择", "♻️延迟选优", "🔯故障转移", "🔮负载均衡·散列", "🔮负载均衡·轮询", "☑️手动切换"],
       "include-all": true,
-      "icon": "https://www.jsdelivr.com/gh/iTaoPu/iCloud@Grey/IconSet/link.png"
+      "icon": "https://www.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/link.png"
     },
     {
       ...groupBaseOption,
       "name": "🛑全球拦截",
       "type": "select",
       "proxies": ["REJECT", "DIRECT"],
-      "icon": "https://www.jsdelivr.com/gh/iTaoPu/iCloud@Grey/IconSet/Reject.png"
+      "icon": "https://www.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/Reject.png"
     },
     {
       ...groupBaseOption,
@@ -249,7 +249,7 @@ function main(config) {
       "type": "select",
       "proxies": ["🌐节点选择", "♻️延迟选优", "🔯故障转移", "🔮负载均衡·散列", "🔮负载均衡·轮询", "☑️手动切换", "🎯全球直连"],
       "include-all": true,
-      "icon": "https://www.jsdelivr.com/gh/iTaoPu/iCloud@Grey/IconSet/fish.png"
+      "icon": "https://www.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/fish.png"
     }
   ];
 
