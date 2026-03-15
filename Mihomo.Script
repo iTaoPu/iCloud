@@ -1,7 +1,7 @@
 /*
  * Clash 配置增强脚本 - 防DNS泄露 + 规则优化 (完全还原格式版)
  * * 功能：自动覆盖Clash配置中的DNS、规则、代理组等核心配置
- * * 注意：本脚本需要 Clash Meta 内核支持
+ * * 注意：本脚本需要 Clash Meta(Mihomo) 内核支持
  */
 
 // ===================== 基础配置 =====================
@@ -194,7 +194,7 @@ function main(config) {
       ...groupBaseOption,
       "name": "🌐节点选择",
       "type": "select",
-      "proxies": ["♻️延迟选优", "🔯故障转移", "🔮负载均衡·散列", "🔮负载均衡·轮询", "☑️手动切换", "DIRECT"],
+      "proxies": ["♻️延迟选优", "🔯故障转移", "🔮负载均衡", "☑️手动切换", "DIRECT", "🛑全球拦截"],
       "include-all": false
     },
     {
@@ -219,16 +219,9 @@ function main(config) {
     },
     {
       ...groupBaseOption,
-      "name": "🔮负载均衡·散列",
+      "name": "🔮负载均衡",
       "type": "load-balance",
       "strategy": "consistent-hashing",
-      "include-all": true
-    },
-    {
-      ...groupBaseOption,
-      "name": "🔮负载均衡·轮询",
-      "type": "load-balance",
-      "strategy": "round-robin",
       "include-all": true
     },
     {
@@ -247,7 +240,7 @@ function main(config) {
       ...groupBaseOption,
       "name": "🐟漏网之鱼",
       "type": "select",
-      "proxies": ["🌐节点选择", "♻️延迟选优", "🔯故障转移", "🎯全球直连"],
+      "proxies": ["🌐节点选择", "♻️延迟选优", "🔯故障转移", "🔮负载均衡", "🎯全球直连", "🛑全球拦截"],
       "include-all": true
     }
   ];
