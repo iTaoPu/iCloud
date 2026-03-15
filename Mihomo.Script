@@ -257,7 +257,8 @@ function main(config) {
     "enable": true,
     "sniff": {
       "TLS": { "ports": [443, 8443], "override-destination": true },
-      "HTTP": { "ports": [80, "8080-8880"], "override-destination": true }
+      "HTTP": { "ports": [80, "8080-8880"], "override-destination": true },
+      "QUIC": { "ports": [443, 8443], "override-destination": true }
     }
   };
 
