@@ -1,18 +1,65 @@
-/**
- * Clash 配置增强脚本 - 规则优化版 (无DNS/GEO/自定义域名)
- * 功能：自动覆盖Clash配置中的代理组、规则集，保留规则集引用和兜底规则
+/*
+ * Clash 配置增强脚本 - 防DNS泄露 + 规则优化 (修复版)
+ * 功能：自动覆盖Clash配置中的DNS、规则、代理组等核心配置
  * 注意：本脚本需要 Clash Meta 内核支持
  */
 
+// ===================== 基础配置 =====================
+const domesticNameservers = [
+  "https://dns.alidns.com/dns-query", // 阿里公共DNS
+  "https://doh.pub/dns-query",        // 腾讯DNSPod
+];
+
+const foreignNameservers = [
+  "https://mozilla.cloudflare-dns.com/dns-query", // Cloudflare DNS
+  "https://dns.google/dns-query",                 // Google DNS
+];
+
+// ===================== DNS配置（防泄露核心） =====================
+const dnsConfig = {
+  "enable": true,
+  "listen": "127.0.0.1:1053",
+  "ipv6": true,
+  "use-system-hosts": false,
+  "cache-algorithm": "arc",
+  "enhanced-mode": "fake-ip",          // Fake-IP模式
+  "fake-ip-range": "198.18.0.1/16",
+  "fake-ip-filter": [
+    "+.lan",
+    "+.local",
+    "+.msftconnecttest.com",
+    "+.msftncsi.com",
+    "localhost.ptlogin2.qq.com",
+    "localhost.sec.qq.com",
+    "localhost.work.weixin.qq.com"
+  ],
+  "default-nameserver": ["119.29.29.29", "223.5.5.5"],
+  "nameserver": domesticNameservers,
+  "fallback": foreignNameservers,
+  "fallback-filter": {
+    "geosite": [
+      "geolocation-!cn",
+      "gfw",
+      "google",
+      "youtube",
+      "github",
+      "telegram"
+    ],
+    "geoip": true,
+    "ipcidr": [],
+    "domain": []
+  },
+  "proxy-server-nameserver": foreignNameservers
+};
+
 // ===================== 规则集通用配置 =====================
 const ruleProviderCommon = {
-  "type": "http",          // 远程规则集类型
-  "format": "yaml",        // 规则集格式
-  "interval": 43200        // 规则集更新间隔（12小时，平衡及时性与流量）
+  "type": "http",
+  "format": "yaml",
+  "interval": 43200
 };
 
 // ===================== 规则集配置 =====================
-// 注意：如果镜像站 cdn.jsdelivr.net 失效，可手动替换为原始 GitHub 地址
 const ruleProviders = {
   "reject": {
     ...ruleProviderCommon,
@@ -94,9 +141,8 @@ const ruleProviders = {
   }
 };
 
-// ===================== 核心规则（仅规则集引用 + 兜底） =====================
+// ===================== 核心规则 =====================
 const rules = [
-  // 规则集引用
   "RULE-SET,applications,🎯全球直连",
   "RULE-SET,private,🎯全球直连",
   "RULE-SET,reject,🛑全球拦截",
@@ -110,8 +156,6 @@ const rules = [
   "RULE-SET,lancidr,🎯全球直连,no-resolve",
   "RULE-SET,cncidr,🎯全球直连,no-resolve",
   "RULE-SET,telegramcidr,📲电报消息,no-resolve",
-  
-  // 兜底规则
   "GEOIP,LAN,🎯全球直连,no-resolve",
   "GEOIP,CN,🎯全球直连,no-resolve",
   "MATCH,🐟漏网之鱼"
@@ -119,17 +163,16 @@ const rules = [
 
 // ===================== 代理组通用配置 =====================
 const groupBaseOption = {
-  "interval": 300,            // 节点检测间隔（5分钟）
-  "timeout": 5000,            // 检测超时时间（5秒）
-  "url": "https://www.google.com/generate_204", // 检测URL
-  "lazy": true,               // 懒加载（仅使用时检测）
-  "max-failed-times": 3,      // 最大失败次数（超过则禁用节点）
-  "hidden": false             // 不隐藏代理组
+  "interval": 300,
+  "timeout": 5000,
+  "url": "https://www.google.com/generate_204",
+  "lazy": true,
+  "max-failed-times": 3,
+  "hidden": false
 };
 
 // ===================== 主函数（配置入口） =====================
 function main(config) {
-  // 校验：确保配置中有代理节点/代理提供商
   const proxyCount = config?.proxies?.length ?? 0;
   const proxyProviderCount = typeof config?.["proxy-providers"] === "object" 
     ? Object.keys(config["proxy-providers"]).length 
@@ -139,7 +182,7 @@ function main(config) {
     throw new Error("配置文件中未找到任何代理节点/提供商，请先配置代理！");
   }
 
-  // 1. 覆盖代理组配置（所有图片图标均已保留）
+  // 1. 覆盖代理组配置
   config["proxy-groups"] = [
     {
       ...groupBaseOption,
@@ -253,15 +296,25 @@ function main(config) {
     }
   ];
 
-  // 2. 覆盖规则集和规则（仅规则集引用 + 兜底）
+  // 2. 覆盖规则集和规则
   config["rule-providers"] = ruleProviders;
   config["rules"] = rules;
 
-  // 3. 设置日志级别（便于排错）
+  // 3. 注入 DNS 配置 (修复点)
+  config["dns"] = dnsConfig;
+
+  // 4. 注入域名嗅探 (Sniffer) 以增强防泄露 (修复点)
+  config["sniffer"] = {
+    "enable": true,
+    "sniff": {
+      "TLS": { "ports": [443, 8443], "override-destination": true },
+      "HTTP": { "ports": [80, "8080-8880"], "override-destination": true },
+      "QUIC": { "ports": [443] }
+    }
+  };
+
+  // 5. 设置日志级别
   config["log-level"] = "info";
 
-  // 注意：不修改任何DNS和GEO数据相关配置，保留用户原有设置
-
-  // 返回增强后的配置
   return config;
 }
