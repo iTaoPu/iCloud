@@ -7,12 +7,12 @@
 // ===================== 基础配置 =====================
 const domesticNameservers = [
   "https://dns.alidns.com/dns-query", // 阿里公共DNS
-  "https://doh.pub/dns-query",         // 腾讯DNSPod
+  "https://doh.pub/dns-query",        // 腾讯DNSPod
 ];
 
 const foreignNameservers = [
-  "https://dns.cloudflare.com/dns-query", // Cloudflare DNS
-  "https://dns.google/dns-query",                 // Google DNS
+  "https://dns.cloudflar.com/dns-query", // Cloudflare DNS
+  "https://dns.google/dns-query",        // Google DNS
 ];
 
 // ===================== DNS配置（防泄露核心） =====================
@@ -149,6 +149,7 @@ const ruleProviders = {
 
 // ===================== 核心规则 =====================
 const rules = [
+// Loyalsoldier 规则集
   "RULE-SET,applications,🎯全球直连",
   "RULE-SET,private,🎯全球直连",
   "RULE-SET,reject,🛑全球拦截",
@@ -188,68 +189,110 @@ function main(config) {
     throw new Error("配置文件中未找到任何代理节点/提供商，请先配置代理！");
   }
 
-  // 1. 覆盖代理组配置
+// 1. 覆盖代理组配置
   config["proxy-groups"] = [
     {
-      ...groupBaseOption,
       "name": "🌐节点选择",
       "type": "select",
-      "proxies": ["♻️延迟选优", "🔯故障转移", "🔮负载均衡", "☑️手动切换", "DIRECT", "🛑全球拦截"],
-      "include-all": false,
-      "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/Area.png" 
+      "proxies": ["♻️延迟选优", "🔮负载均衡", "🇭🇰港台节点", "🇸🇬狮城节点", "🇯🇵日韩节点", "🇺🇲鹰酱节点", "🇪🇺欧盟节点", "🔯故障转移", "☑️手动切换", "DIRECT"],
+      "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/Area.png"
     },
-    {
-      ...groupBaseOption,
-      "name": "☑️手动切换",
-      "type": "select",
-      "proxies": ["DIRECT", "REJECT"],
-      "include-all": true,
-      "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/Catnet.png" 
+    { 
+      "name": "♻️延迟选优", 
+    "type": "url-test", 
+    "include-all": true, 
+    ...groupBaseOption, 
+    "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/Auto.png" 
     },
-    {
-      ...groupBaseOption,
-      "name": "♻️延迟选优",
-      "type": "url-test",
-      "tolerance": 100,
-      "include-all": true,
-      "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/Auto.png" 
+    { 
+      "name": "🔮负载均衡", 
+    "type": "load-balance", 
+    "strategy": "consistent-hashing", 
+    "include-all": true, 
+    ...groupBaseOption, 
+    "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/balance.png" 
     },
-    {
+    
+    // --- 全球直连 ---
+    { 
+      "name": "🎯全球直连", 
+      "type": "select", 
+      "proxies": ["DIRECT", "🌐节点选择", "🇭🇰港台节点", "🇸🇬狮城节点", "🇯🇵日韩节点", "🇺🇲鹰酱节点", "🇪🇺欧盟节点"], 
       ...groupBaseOption,
-      "name": "🔯故障转移",
-      "type": "fallback",
-      "include-all": true,
-      "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/ambulance.png" 
-    },
-    {
-      ...groupBaseOption,
-      "name": "🔮负载均衡",
-      "type": "load-balance",
-      "strategy": "consistent-hashing",
-      "include-all": true,
-      "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/balance.png"
-    },
-    {
-      ...groupBaseOption,
-      "name": "🎯全球直连",
-      "type": "select",
-      "proxies": ["DIRECT", "🌐节点选择", "♻️延迟选优", "🔯故障转移", "🔮负载均衡"],
       "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/link.png" 
     },
-    {
-      ...groupBaseOption,
-      "name": "🛑全球拦截",
-      "type": "select",
-      "proxies": ["REJECT", "DIRECT"],
+    
+    // 兜底与工具组
+    { 
+      "name": "🛑全球拦截", 
+      "type": "select", 
+      "proxies": ["REJECT", "DIRECT"], 
+      ...groupBaseOption, 
       "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/Reject.png" 
     },
-    {
-      ...groupBaseOption,
-      "name": "🐟漏网之鱼",
-      "type": "select",
-      "proxies": ["🌐节点选择", "♻️延迟选优", "🔯故障转移", "🔮负载均衡", "🎯全球直连", "🛑全球拦截"],
-      "include-all": true,
+    { 
+      "name": "🔯故障转移", 
+      "type": "fallback", 
+      "include-all": true, 
+      ...groupBaseOption, 
+      "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/ambulance.png" 
+    },
+    { 
+      "name": "☑️手动切换", 
+      "type": "select", 
+      "include-all": true, 
+      ...groupBaseOption, 
+      "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/Catnet.png" 
+    },
+    { 
+      "name": "🐟漏网之鱼", 
+      "type": "select", 
+      "proxies": ["🌐节点选择", "🎯全球直连", "♻️延迟选优", "☑️手动切换"], 
+      "include-all": true, 
+      ...groupBaseOption, 
       "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/fish.png" 
+    },
+
+     // --- 地区分组 (带图标) ---
+    { 
+      "name": "🇭🇰港台节点", 
+      "type": "url-test", 
+      "filter": "(?i)港|HK|台|TW", 
+      "include-all": true, 
+      ...groupBaseOption, 
+      "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/HK.png" 
+    },
+    { 
+      "name": "🇸🇬狮城节点", 
+      "type": "url-test", 
+      "filter": "(?i)新|新加坡|狮城|SG", 
+      "include-all": true, 
+      ...groupBaseOption, 
+      "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/SG.png" 
+    },
+    { 
+      "name": "🇯🇵日韩节点", 
+      "type": "url-test", 
+      "filter": "(?i)日|JP|韩|KR", 
+      "include-all": true, 
+     ...groupBaseOption, 
+      "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/JP.png" 
+    },
+    { 
+      "name": "🇺🇲鹰酱节点", 
+      "type": "url-test", 
+      "filter": "(?i)美|鹰酱|US|USA", 
+      "include-all": true, 
+      ...groupBaseOption, 
+      "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/US.png" 
+    },
+    { 
+      "name": "🇪🇺欧盟节点", 
+      "type": "url-test", 
+      "filter": "(?i)欧|EU|英|德|法|荷", 
+      "include-all": true, 
+      ...groupBaseOption, 
+      "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/EU.png" 
     }
   ];
 
