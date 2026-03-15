@@ -1,7 +1,6 @@
 /*
  * Clash 配置增强脚本 - 防DNS泄露 + 规则优化 (完全还原格式版)
  * * 功能：自动覆盖Clash配置中的DNS、规则、代理组等核心配置
- * 修复：调整规则顺序，确保 iCloud/Apple 域名优先直连，避免被 tld-not-cn 误判为代理
  * * 注意：本脚本需要 Clash Meta 内核支持
  */
 
@@ -33,8 +32,6 @@ const dnsConfig = {
     "localhost.ptlogin2.qq.com",
     "localhost.sec.qq.com",
     "localhost.work.weixin.qq.com",
-    "+.apple.com",                   // 修复：补全 Apple/iCloud 过滤
-    "+.icloud.com"
   ],
   "default-nameserver": ["119.29.29.29", "223.5.5.5"],
   "nameserver": domesticNameservers,
