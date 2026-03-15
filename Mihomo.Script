@@ -17,79 +17,79 @@ const ruleProviders = {
   "reject": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt",
+    "url": "https://cdn.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/reject.txt",
     "path": "./ruleset/reject.yaml"
   },
   "icloud": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt",
+    "url": "https://cdn.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/icloud.txt",
     "path": "./ruleset/icloud.yaml"
   },
   "apple": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt",
+    "url": "https://cdn.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/apple.txt",
     "path": "./ruleset/apple.yaml"
   },
   "google": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt",
+    "url": "https://cdn.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/google.txt",
     "path": "./ruleset/google.yaml"
   },
   "proxy": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt",
+    "url": "https://cdn.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/proxy.txt",
     "path": "./ruleset/proxy.yaml"
   },
   "direct": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt",
+    "url": "https://cdn.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/direct.txt",
     "path": "./ruleset/direct.yaml"
   },
   "private": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt",
+    "url": "https://cdn.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/private.txt",
     "path": "./ruleset/private.yaml"
   },
   "gfw": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt",
+    "url": "https://cdn.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/gfw.txt",
     "path": "./ruleset/gfw.yaml"
   },
   "tld-not-cn": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt",
+    "url": "https://cdn.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt",
     "path": "./ruleset/tld-not-cn.yaml"
   },
   "telegramcidr": {
     ...ruleProviderCommon,
     "behavior": "ipcidr",
-    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt",
+    "url": "https://cdn.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt",
     "path": "./ruleset/telegramcidr.yaml"
   },
   "cncidr": {
     ...ruleProviderCommon,
     "behavior": "ipcidr",
-    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt",
+    "url": "https://cdn.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/cncidr.txt",
     "path": "./ruleset/cncidr.yaml"
   },
   "lancidr": {
     ...ruleProviderCommon,
     "behavior": "ipcidr",
-    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt",
+    "url": "https://cdn.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/lancidr.txt",
     "path": "./ruleset/lancidr.yaml"
   },
   "applications": {
     ...ruleProviderCommon,
     "behavior": "classical",
-    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt",
+    "url": "https://cdn.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/applications.txt",
     "path": "./ruleset/applications.yaml"
   }
 };
@@ -143,15 +143,15 @@ function main(config) {
   config["proxy-groups"] = [
     {
       ...groupBaseOption,
-      "name": "🌐 节点选择",
+      "name": "🌐节点选择",
       "type": "select",
-      "proxies": ["♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡·散列", "🔮 负载均衡·轮询", "☑️ 手动切换", "DIRECT"],
+      "proxies": ["♻️延迟选优", "🔯故障转移", "🔮负载均衡·散列", "🔮负载均衡·轮询", "☑️手动切换", "DIRECT"],
       "include-all": false,
       "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/Area.png"
     },
     {
       ...groupBaseOption,
-      "name": "☑️ 手动切换",
+      "name": "☑️手动切换",
       "type": "select",
       "proxies": ["REJECT", "DIRECT"],
       "include-all": true,
@@ -159,7 +159,7 @@ function main(config) {
     },
     {
       ...groupBaseOption,
-      "name": "♻️ 延迟选优",
+      "name": "♻️延迟选优",
       "type": "url-test",
       "tolerance": 100,
       "include-all": true,
@@ -167,14 +167,14 @@ function main(config) {
     },
     {
       ...groupBaseOption,
-      "name": "🔯 故障转移",
+      "name": "🔯故障转移",
       "type": "fallback",
       "include-all": true,
       "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/ambulance.png"
     },
     {
       ...groupBaseOption,
-      "name": "🔮 负载均衡·散列",
+      "name": "🔮负载均衡·散列",
       "type": "load-balance",
       "strategy": "consistent-hashing",
       "include-all": true,
@@ -182,7 +182,7 @@ function main(config) {
     },
     {
       ...groupBaseOption,
-      "name": "🔮 负载均衡·轮询",
+      "name": "🔮负载均衡·轮询",
       "type": "load-balance",
       "strategy": "round-robin",
       "include-all": true,
@@ -190,64 +190,64 @@ function main(config) {
     },
     {
       ...groupBaseOption,
-      "name": "🌍 国外媒体",
+      "name": "🌍国外媒体",
       "type": "select",
-      "proxies": ["🌐 节点选择", "♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡·散列", "🔮 负载均衡·轮询", "☑️ 手动切换", "🎯 全球直连"],
+      "proxies": ["🌐节点选择", "♻️延迟选优", "🔯故障转移", "🔮负载均衡·散列", "🔮负载均衡·轮询", "☑️手动切换", "🎯全球直连"],
       "include-all": true,
       "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/World_Map.png"
     },
     {
       ...groupBaseOption,
-      "name": "📢 谷歌服务",
+      "name": "📢谷歌服务",
       "type": "select",
-      "proxies": ["🌐 节点选择", "♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡·散列", "🔮 负载均衡·轮询", "☑️ 手动切换", "🎯 全球直连"],
+      "proxies": ["🌐节点选择", "♻️延迟选优", "🔯故障转移", "🔮负载均衡·散列", "🔮负载均衡·轮询", "☑️手动切换", "🎯全球直连"],
       "include-all": true,
       "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/google.png"
     },
     {
       ...groupBaseOption,
-      "name": "Ⓜ️ 微软服务",
+      "name": "Ⓜ️微软服务",
       "type": "select",
-      "proxies": ["🎯 全球直连", "🌐 节点选择", "♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡·散列", "🔮 负载均衡·轮询", "☑️ 手动切换"],
+      "proxies": ["🎯全球直连", "🌐节点选择", "♻️延迟选优", "🔯故障转移", "🔮负载均衡·散列", "🔮负载均衡·轮询", "☑️手动切换"],
       "include-all": true,
       "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/microsoft.png"
     },
     {
       ...groupBaseOption,
-      "name": "🍎 苹果服务",
+      "name": "🍎苹果服务",
       "type": "select",
-      "proxies": ["🌐 节点选择", "♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡·散列", "🔮 负载均衡·轮询", "☑️ 手动切换", "🎯 全球直连"],
+      "proxies": ["🌐节点选择", "♻️延迟选优", "🔯故障转移", "🔮负载均衡·散列", "🔮负载均衡·轮询", "☑️手动切换", "🎯全球直连"],
       "include-all": true,
       "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/apple_blue.png"
     },
     {
       ...groupBaseOption,
-      "name": "📲 电报消息",
+      "name": "📲电报消息",
       "type": "select",
-      "proxies": ["🌐 节点选择", "♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡·散列", "🔮 负载均衡·轮询", "☑️ 手动切换", "🎯 全球直连"],
+      "proxies": ["🌐节点选择", "♻️延迟选优", "🔯故障转移", "🔮负载均衡·散列", "🔮负载均衡·轮询", "☑️手动切换", "🎯全球直连"],
       "include-all": true,
       "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/Telegram.png"
     },
     {
       ...groupBaseOption,
-      "name": "🎯 全球直连",
+      "name": "🎯全球直连",
       "type": "select",
-      "proxies": ["DIRECT", "🌐 节点选择", "♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡·散列", "🔮 负载均衡·轮询", "☑️ 手动切换"],
+      "proxies": ["DIRECT", "🌐节点选择", "♻️延迟选优", "🔯故障转移", "🔮负载均衡·散列", "🔮负载均衡·轮询", "☑️手动切换"],
       "include-all": true,
       "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/link.png"
     },
     {
       ...groupBaseOption,
-      "name": "🛑 全球拦截",
+      "name": "🛑全球拦截",
       "type": "select",
       "proxies": ["REJECT", "DIRECT"],
       "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/Reject.png"
     },
     {
       ...groupBaseOption,
-      "name": "🐟 漏网之鱼",
+      "name": "🐟漏网之鱼",
       "type": "select",
-      "proxies": ["🌐 节点选择", "♻️ 延迟选优", "🔯 故障转移", "🔮 负载均衡·散列", "🔮 负载均衡·轮询", "☑️ 手动切换", "🎯 全球直连"],
+      "proxies": ["🌐节点选择", "♻️延迟选优", "🔯故障转移", "🔮负载均衡·散列", "🔮负载均衡·轮询", "☑️手动切换", "🎯全球直连"],
       "include-all": true,
       "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/fish.png"
     }
