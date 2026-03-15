@@ -135,6 +135,7 @@ const rules = [
   "RULE-SET,lancidr,🎯全球直连,no-resolve",
   "RULE-SET,cncidr,🎯全球直连,no-resolve",
   "RULE-SET,telegramcidr,🌐节点选择,no-resolve",
+  "GEOIP,LAN,🎯全球直连,no-resolve",
   "GEOIP,CN,🎯全球直连,no-resolve",
   "MATCH,🐟漏网之鱼"
 ];
