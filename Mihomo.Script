@@ -36,10 +36,9 @@ const dnsConfig = {
   "default-nameserver": ["119.29.29.29", "223.5.5.5"],
   "nameserver": domesticNameservers,
   "fallback": foreignNameservers,
-  //  强制指定 DNS 解析路径，杜绝查询外溢
   "nameserver-policy": {
-    "geosite:cn": ["https://dns.alidns.com/dns-query", "https://doh.pub/dns-query"],
-    "geosite:geolocation-!cn": ["https://dns.google/dns-query", "https://mozilla.cloudflare-dns.com/dns-query"]
+    "geosite:cn": domesticNameservers,
+    "geosite:geolocation-!cn": foreignNameservers
   },
   "fallback-filter": {
     "geosite": [
@@ -51,7 +50,7 @@ const dnsConfig = {
       "telegram"
     ],
     "geoip": true,
-    "ipcidr": [],
+    "ipcidr": ["240.0.0.0/4", "0.0.0.0/8", "127.0.0.0/8", "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16"],
     "domain": []
   },
   "proxy-server-nameserver": foreignNameservers
