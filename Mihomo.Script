@@ -7,7 +7,7 @@
 // ===================== 基础配置 =====================
 const domesticNameservers = [
   "https://dns.alidns.com/dns-query", // 阿里公共DNS
-  "https://doh.pub/dns-query",        // 腾讯DNSPod
+  "https://doh.pub/dns-query",         // 腾讯DNSPod
 ];
 
 const foreignNameservers = [
@@ -146,16 +146,16 @@ const rules = [
   "RULE-SET,applications,🎯全球直连",
   "RULE-SET,private,🎯全球直连",
   "RULE-SET,reject,🛑全球拦截",
-  "RULE-SET,icloud,Ⓜ️微软服务",
-  "RULE-SET,apple,🍎苹果服务",
-  "RULE-SET,google,📢谷歌服务",
-  "RULE-SET,proxy,🌐节点选择",
-  "RULE-SET,gfw,🌐节点选择",
   "RULE-SET,tld-not-cn,🌐节点选择",
+  "RULE-SET,gfw,🌐节点选择",
+  "RULE-SET,icloud,🎯全球直连",
+  "RULE-SET,apple,🎯全球直连",
+  "RULE-SET,google,🌐节点选择",
+  "RULE-SET,proxy,🌐节点选择",
   "RULE-SET,direct,🎯全球直连",
   "RULE-SET,lancidr,🎯全球直连,no-resolve",
   "RULE-SET,cncidr,🎯全球直连,no-resolve",
-  "RULE-SET,telegramcidr,📲电报消息,no-resolve",
+  "RULE-SET,telegramcidr,🌐节点选择,no-resolve",
   "GEOIP,LAN,🎯全球直连,no-resolve",
   "GEOIP,CN,🎯全球直连,no-resolve",
   "MATCH,🐟漏网之鱼"
@@ -189,110 +189,60 @@ function main(config) {
       "name": "🌐节点选择",
       "type": "select",
       "proxies": ["♻️延迟选优", "🔯故障转移", "🔮负载均衡·散列", "🔮负载均衡·轮询", "☑️手动切换", "DIRECT"],
-      "include-all": false,
-      "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/Area.png"
+      "include-all": false
     },
     {
       ...groupBaseOption,
       "name": "☑️手动切换",
       "type": "select",
       "proxies": ["REJECT", "DIRECT"],
-      "include-all": true,
-      "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/Catnet.png"
+      "include-all": true
     },
     {
       ...groupBaseOption,
       "name": "♻️延迟选优",
       "type": "url-test",
       "tolerance": 100,
-      "include-all": true,
-      "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/Auto.png"
+      "include-all": true
     },
     {
       ...groupBaseOption,
       "name": "🔯故障转移",
       "type": "fallback",
-      "include-all": true,
-      "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/ambulance.png"
+      "include-all": true
     },
     {
       ...groupBaseOption,
       "name": "🔮负载均衡·散列",
       "type": "load-balance",
       "strategy": "consistent-hashing",
-      "include-all": true,
-      "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/merry_go.png"
+      "include-all": true
     },
     {
       ...groupBaseOption,
       "name": "🔮负载均衡·轮询",
       "type": "load-balance",
       "strategy": "round-robin",
-      "include-all": true,
-      "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/balance.png"
-    },
-    {
-      ...groupBaseOption,
-      "name": "🌍国外媒体",
-      "type": "select",
-      "proxies": ["🌐节点选择", "♻️延迟选优", "🔯故障转移", "🔮负载均衡·散列", "🔮负载均衡·轮询", "☑️手动切换", "🎯全球直连"],
-      "include-all": true,
-      "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/World_Map.png"
-    },
-    {
-      ...groupBaseOption,
-      "name": "📢谷歌服务",
-      "type": "select",
-      "proxies": ["🌐节点选择", "♻️延迟选优", "🔯故障转移", "🔮负载均衡·散列", "🔮负载均衡·轮询", "☑️手动切换", "🎯全球直连"],
-      "include-all": true,
-      "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/google.png"
-    },
-    {
-      ...groupBaseOption,
-      "name": "Ⓜ️微软服务",
-      "type": "select",
-      "proxies": ["🎯全球直连", "🌐节点选择", "♻️延迟选优", "🔯故障转移", "🔮负载均衡·散列", "🔮负载均衡·轮询", "☑️手动切换"],
-      "include-all": true,
-      "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/microsoft.png"
-    },
-    {
-      ...groupBaseOption,
-      "name": "🍎苹果服务",
-      "type": "select",
-      "proxies": ["🌐节点选择", "♻️延迟选优", "🔯故障转移", "🔮负载均衡·散列", "🔮负载均衡·轮询", "☑️手动切换", "🎯全球直连"],
-      "include-all": true,
-      "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/apple_blue.png"
-    },
-    {
-      ...groupBaseOption,
-      "name": "📲电报消息",
-      "type": "select",
-      "proxies": ["🌐节点选择", "♻️延迟选优", "🔯故障转移", "🔮负载均衡·散列", "🔮负载均衡·轮询", "☑️手动切换", "🎯全球直连"],
-      "include-all": true,
-      "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/Telegram.png"
+      "include-all": true
     },
     {
       ...groupBaseOption,
       "name": "🎯全球直连",
       "type": "select",
-      "proxies": ["DIRECT", "🌐节点选择", "♻️延迟选优", "🔯故障转移", "🔮负载均衡·散列", "🔮负载均衡·轮询", "☑️手动切换"],
-      "include-all": true,
-      "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/link.png"
+      "proxies": ["DIRECT", "🌐节点选择"]
     },
     {
       ...groupBaseOption,
       "name": "🛑全球拦截",
       "type": "select",
-      "proxies": ["REJECT", "DIRECT"],
-      "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/Reject.png"
+      "proxies": ["REJECT", "DIRECT"]
     },
     {
       ...groupBaseOption,
       "name": "🐟漏网之鱼",
       "type": "select",
-      "proxies": ["🌐节点选择", "♻️延迟选优", "🔯故障转移", "🔮负载均衡·散列", "🔮负载均衡·轮询", "☑️手动切换", "🎯全球直连"],
-      "include-all": true,
-      "icon": "https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/IconSet/fish.png"
+      "proxies": ["🌐节点选择", "♻️延迟选优", "🔯故障转移", "🎯全球直连"],
+      "include-all": true
     }
   ];
 
@@ -300,10 +250,10 @@ function main(config) {
   config["rule-providers"] = ruleProviders;
   config["rules"] = rules;
 
-  // 3. 注入 DNS 配置 (修复点)
+  // 3. 注入 DNS 配置
   config["dns"] = dnsConfig;
 
-  // 4. 注入域名嗅探 (Sniffer) 以增强防泄露 (修复点)
+  // 4. 注入域名嗅探 (Sniffer)
   config["sniffer"] = {
     "enable": true,
     "sniff": {
