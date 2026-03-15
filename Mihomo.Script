@@ -273,7 +273,7 @@ function main(config) {
   };
 
   // 5. 设置日志级别
-  config["log-level"] = "info";
+  config["log-level"] = "error";
 
   return config;
 }
