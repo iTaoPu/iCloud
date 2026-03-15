@@ -11,7 +11,7 @@ const domesticNameservers = [
 ];
 
 const foreignNameservers = [
-  "https://mozilla.cloudflare-dns.com/dns-query", // Cloudflare DNS
+  "https://dns.cloudflare.com/dns-query", // Cloudflare DNS
   "https://dns.google/dns-query",                 // Google DNS
 ];
 
