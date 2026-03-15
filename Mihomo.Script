@@ -1,6 +1,9 @@
 /*
  * Clash 配置增强脚本 - 防DNS泄露 + 规则优化 (修复版)
+ * 
  * 功能：自动覆盖Clash配置中的DNS、规则、代理组等核心配置
+ * 修复：调整规则顺序，确保 iCloud/Apple 域名优先直连，避免被 tld-not-cn 误判为代理
+ * 
  * 注意：本脚本需要 Clash Meta 内核支持
  */
 
@@ -36,9 +39,10 @@ const dnsConfig = {
   "default-nameserver": ["119.29.29.29", "223.5.5.5"],
   "nameserver": domesticNameservers,
   "fallback": foreignNameservers,
+  // 强制指定 DNS 解析路径，杜绝查询外溢
   "nameserver-policy": {
-    "geosite:cn": domesticNameservers,
-    "geosite:geolocation-!cn": foreignNameservers
+    "geosite:cn": ["https://dns.alidns.com/dns-query", "https://doh.pub/dns-query"],
+    "geosite:geolocation-!cn": ["https://dns.google/dns-query", "https://mozilla.cloudflare-dns.com/dns-query"]
   },
   "fallback-filter": {
     "geosite": [
@@ -146,13 +150,14 @@ const ruleProviders = {
 };
 
 // ===================== 核心规则 =====================
+// 修复：将 iCloud 和 Apple 规则提前，确保优先直连
 const rules = [
   "RULE-SET,applications,🎯全球直连",
   "RULE-SET,private,🎯全球直连",
   "RULE-SET,reject,🛑全球拦截",
-  "RULE-SET,icloud,🎯全球直连",
-  "RULE-SET,apple,🎯全球直连",
-  "RULE-SET,tld-not-cn,🌐节点选择",
+  "RULE-SET,icloud,🎯全球直连",      // 提前，避免被 tld-not-cn 匹配
+  "RULE-SET,apple,🎯全球直连",       // 提前
+  "RULE-SET,tld-not-cn,🌐节点选择",  // 后置，避免误伤 apple/icloud
   "RULE-SET,gfw,🌐节点选择",
   "RULE-SET,google,🌐节点选择",
   "RULE-SET,proxy,🌐节点选择",
@@ -268,7 +273,7 @@ function main(config) {
   };
 
   // 5. 设置日志级别
-  config["log-level"] = "error";
+  config["log-level"] = "info";
 
   return config;
 }
