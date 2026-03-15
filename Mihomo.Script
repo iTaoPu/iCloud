@@ -1,16 +1,19 @@
 /*
- * Clash 配置增强脚本 - 防DNS泄露 + 规则优化 (完整修复版)
+ * Clash 配置增强脚本 - 防DNS泄露 + 规则优化 (完全还原格式版)
+ * * 功能：自动覆盖Clash配置中的DNS、规则、代理组等核心配置
+ * 修复：调整规则顺序，确保 iCloud/Apple 域名优先直连，避免被 tld-not-cn 误判为代理
+ * * 注意：本脚本需要 Clash Meta 内核支持
  */
 
 // ===================== 基础配置 =====================
 const domesticNameservers = [
-  "https://dns.alidns.com/dns-query",
-  "https://doh.pub/dns-query",
+  "https://dns.alidns.com/dns-query", // 阿里公共DNS
+  "https://doh.pub/dns-query",         // 腾讯DNSPod
 ];
 
 const foreignNameservers = [
-  "https://mozilla.cloudflare-dns.com/dns-query",
-  "https://dns.google/dns-query",
+  "https://mozilla.cloudflare-dns.com/dns-query", // Cloudflare DNS
+  "https://dns.google/dns-query",                 // Google DNS
 ];
 
 // ===================== DNS配置（防泄露核心） =====================
@@ -20,47 +23,134 @@ const dnsConfig = {
   "ipv6": true,
   "use-system-hosts": false,
   "cache-algorithm": "arc",
-  "enhanced-mode": "fake-ip",
+  "enhanced-mode": "fake-ip",         // Fake-IP模式
   "fake-ip-range": "198.18.0.1/16",
   "fake-ip-filter": [
-    "+.lan", "+.local", "+.msftconnecttest.com", "+.msftncsi.com",
-    "localhost.ptlogin2.qq.com", "localhost.sec.qq.com", "localhost.work.weixin.qq.com"
+    "+.lan",
+    "+.local",
+    "+.msftconnecttest.com",
+    "+.msftncsi.com",
+    "localhost.ptlogin2.qq.com",
+    "localhost.sec.qq.com",
+    "localhost.work.weixin.qq.com",
+    "+.apple.com",                   // 修复：补全 Apple/iCloud 过滤
+    "+.icloud.com"
   ],
   "default-nameserver": ["119.29.29.29", "223.5.5.5"],
   "nameserver": domesticNameservers,
   "fallback": foreignNameservers,
+  // 强制指定 DNS 解析路径，杜绝查询外溢
   "nameserver-policy": {
     "geosite:cn": domesticNameservers,
     "geosite:geolocation-!cn": foreignNameservers
   },
   "fallback-filter": {
-    "geosite": ["gfw", "google", "youtube", "github", "telegram"],
+    "geosite": [
+      "geolocation-!cn",
+      "gfw",
+      "google",
+      "youtube",
+      "github",
+      "telegram"
+    ],
     "geoip": true,
     "geoip-code": "CN",
-    "ipcidr": ["240.0.0.0/4", "0.0.0.0/8", "127.0.0.0/8", "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16"]
+    "ipcidr": [],
+    "domain": []
   },
-  "proxy-server-nameserver": domesticNameservers // 确保解析代理服务器域名使用国内DNS
+  "proxy-server-nameserver": domesticNameservers // 修复：确保代理节点连接使用国内DNS解析
 };
 
 // ===================== 规则集通用配置 =====================
-const ruleProviderCommon = { "type": "http", "format": "yaml", "interval": 43200 };
-
-const ruleProviders = {
-  "reject": { ...ruleProviderCommon, "behavior": "domain", "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt", "path": "./ruleset/reject.yaml" },
-  "icloud": { ...ruleProviderCommon, "behavior": "domain", "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt", "path": "./ruleset/icloud.yaml" },
-  "apple": { ...ruleProviderCommon, "behavior": "domain", "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt", "path": "./ruleset/apple.yaml" },
-  "google": { ...ruleProviderCommon, "behavior": "domain", "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt", "path": "./ruleset/google.yaml" },
-  "proxy": { ...ruleProviderCommon, "behavior": "domain", "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt", "path": "./ruleset/proxy.yaml" },
-  "direct": { ...ruleProviderCommon, "behavior": "domain", "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt", "path": "./ruleset/direct.yaml" },
-  "private": { ...ruleProviderCommon, "behavior": "domain", "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt", "path": "./ruleset/private.yaml" },
-  "gfw": { ...ruleProviderCommon, "behavior": "domain", "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt", "path": "./ruleset/gfw.yaml" },
-  "tld-not-cn": { ...ruleProviderCommon, "behavior": "domain", "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt", "path": "./ruleset/tld-not-cn.yaml" },
-  "telegramcidr": { ...ruleProviderCommon, "behavior": "ipcidr", "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt", "path": "./ruleset/telegramcidr.yaml" },
-  "cncidr": { ...ruleProviderCommon, "behavior": "ipcidr", "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt", "path": "./ruleset/cncidr.yaml" },
-  "lancidr": { ...ruleProviderCommon, "behavior": "ipcidr", "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt", "path": "./ruleset/lancidr.yaml" },
-  "applications": { ...ruleProviderCommon, "behavior": "classical", "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt", "path": "./ruleset/applications.yaml" }
+const ruleProviderCommon = {
+  "type": "http",
+  "format": "yaml",
+  "interval": 43200
 };
 
+// ===================== 规则集配置 =====================
+const ruleProviders = {
+  "reject": {
+    ...ruleProviderCommon,
+    "behavior": "domain",
+    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt",
+    "path": "./ruleset/reject.yaml"
+  },
+  "icloud": {
+    ...ruleProviderCommon,
+    "behavior": "domain",
+    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt",
+    "path": "./ruleset/icloud.yaml"
+  },
+  "apple": {
+    ...ruleProviderCommon,
+    "behavior": "domain",
+    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt",
+    "path": "./ruleset/apple.yaml"
+  },
+  "google": {
+    ...ruleProviderCommon,
+    "behavior": "domain",
+    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt",
+    "path": "./ruleset/google.yaml"
+  },
+  "proxy": {
+    ...ruleProviderCommon,
+    "behavior": "domain",
+    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt",
+    "path": "./ruleset/proxy.yaml"
+  },
+  "direct": {
+    ...ruleProviderCommon,
+    "behavior": "domain",
+    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt",
+    "path": "./ruleset/direct.yaml"
+  },
+  "private": {
+    ...ruleProviderCommon,
+    "behavior": "domain",
+    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt",
+    "path": "./ruleset/private.yaml"
+  },
+  "gfw": {
+    ...ruleProviderCommon,
+    "behavior": "domain",
+    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt",
+    "path": "./ruleset/gfw.yaml"
+  },
+  "tld-not-cn": {
+    ...ruleProviderCommon,
+    "behavior": "domain",
+    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt",
+    "path": "./ruleset/tld-not-cn.yaml"
+  },
+  "telegramcidr": {
+    ...ruleProviderCommon,
+    "behavior": "ipcidr",
+    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt",
+    "path": "./ruleset/telegramcidr.yaml"
+  },
+  "cncidr": {
+    ...ruleProviderCommon,
+    "behavior": "ipcidr",
+    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt",
+    "path": "./ruleset/cncidr.yaml"
+  },
+  "lancidr": {
+    ...ruleProviderCommon,
+    "behavior": "ipcidr",
+    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt",
+    "path": "./ruleset/lancidr.yaml"
+  },
+  "applications": {
+    ...ruleProviderCommon,
+    "behavior": "classical",
+    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt",
+    "path": "./ruleset/applications.yaml"
+  }
+};
+
+// ===================== 核心规则 =====================
 const rules = [
   "RULE-SET,applications,🎯全球直连",
   "RULE-SET,private,🎯全球直连",
@@ -80,24 +170,108 @@ const rules = [
   "MATCH,🐟漏网之鱼"
 ];
 
-// ===================== 主函数 =====================
+// ===================== 代理组通用配置 =====================
+const groupBaseOption = {
+  "interval": 300,
+  "timeout": 5000,
+  "url": "https://www.google.com/generate_204",
+  "lazy": true,
+  "max-failed-times": 3,
+  "hidden": false
+};
+
+// ===================== 主函数（配置入口） =====================
 function main(config) {
+  const proxyCount = config?.proxies?.length ?? 0;
+  const proxyProviderCount = typeof config?.["proxy-providers"] === "object" 
+    ? Object.keys(config["proxy-providers"]).length 
+    : 0;
+  
+  if (proxyCount === 0 && proxyProviderCount === 0) {
+    throw new Error("配置文件中未找到任何代理节点/提供商，请先配置代理！");
+  }
+
+  // 1. 覆盖代理组配置
   config["proxy-groups"] = [
-    { "name": "🌐节点选择", "type": "select", "proxies": ["♻️延迟选优", "🔯故障转移", "🔮负载均衡·散列", "🔮负载均衡·轮询", "☑️手动切换", "DIRECT"], "include-all": false },
-    { "name": "☑️手动切换", "type": "select", "proxies": ["REJECT", "DIRECT"], "include-all": true },
-    { "name": "♻️延迟选优", "type": "url-test", "tolerance": 100, "url": "https://www.google.com/generate_204", "interval": 300, "lazy": true, "include-all": true },
-    { "name": "🔯故障转移", "type": "fallback", "url": "https://www.google.com/generate_204", "interval": 300, "include-all": true },
-    { "name": "🔮负载均衡·散列", "type": "load-balance", "strategy": "consistent-hashing", "url": "https://www.google.com/generate_204", "interval": 300, "include-all": true },
-    { "name": "🔮负载均衡·轮询", "type": "load-balance", "strategy": "round-robin", "url": "https://www.google.com/generate_204", "interval": 300, "include-all": true },
-    { "name": "🎯全球直连", "type": "select", "proxies": ["DIRECT", "🌐节点选择"] },
-    { "name": "🛑全球拦截", "type": "select", "proxies": ["REJECT", "DIRECT"] },
-    { "name": "🐟漏网之鱼", "type": "select", "proxies": ["🌐节点选择", "♻️延迟选优", "🔯故障转移", "🎯全球直连"], "include-all": true }
+    {
+      ...groupBaseOption,
+      "name": "🌐节点选择",
+      "type": "select",
+      "proxies": ["♻️延迟选优", "🔯故障转移", "🔮负载均衡·散列", "🔮负载均衡·轮询", "☑️手动切换", "DIRECT"],
+      "include-all": false
+    },
+    {
+      ...groupBaseOption,
+      "name": "☑️手动切换",
+      "type": "select",
+      "proxies": ["REJECT", "DIRECT"],
+      "include-all": true
+    },
+    {
+      ...groupBaseOption,
+      "name": "♻️延迟选优",
+      "type": "url-test",
+      "tolerance": 100,
+      "include-all": true
+    },
+    {
+      ...groupBaseOption,
+      "name": "🔯故障转移",
+      "type": "fallback",
+      "include-all": true
+    },
+    {
+      ...groupBaseOption,
+      "name": "🔮负载均衡·散列",
+      "type": "load-balance",
+      "strategy": "consistent-hashing",
+      "include-all": true
+    },
+    {
+      ...groupBaseOption,
+      "name": "🔮负载均衡·轮询",
+      "type": "load-balance",
+      "strategy": "round-robin",
+      "include-all": true
+    },
+    {
+      ...groupBaseOption,
+      "name": "🎯全球直连",
+      "type": "select",
+      "proxies": ["DIRECT", "🌐节点选择"]
+    },
+    {
+      ...groupBaseOption,
+      "name": "🛑全球拦截",
+      "type": "select",
+      "proxies": ["REJECT", "DIRECT"]
+    },
+    {
+      ...groupBaseOption,
+      "name": "🐟漏网之鱼",
+      "type": "select",
+      "proxies": ["🌐节点选择", "♻️延迟选优", "🔯故障转移", "🎯全球直连"],
+      "include-all": true
+    }
   ];
 
+  // 2. 覆盖规则集和规则
   config["rule-providers"] = ruleProviders;
   config["rules"] = rules;
+
+  // 3. 注入 DNS 配置
   config["dns"] = dnsConfig;
-  config["sniffer"] = { "enable": true, "sniff": { "TLS": { "ports": [443, 8443], "override-destination": true }, "HTTP": { "ports": [80, "8080-8880"], "override-destination": true }, "QUIC": { "ports": [443] } } };
+
+  // 4. 注入域名嗅探 (Sniffer)
+  config["sniffer"] = {
+    "enable": true,
+    "sniff": {
+      "TLS": { "ports": [443, 8443], "override-destination": true },
+      "HTTP": { "ports": [80, "8080-8880"], "override-destination": true }
+    }
+  };
+
+  // 5. 设置日志级别
   config["log-level"] = "error";
 
   return config;
