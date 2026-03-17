@@ -109,7 +109,7 @@ webview://https://yangshipin.cn/tv/home?pid=600084744
 #EXTINF:-1 tvg-name="CGTN阿语" tvg-logo="https://logo.sspai.dpdns.org/img/CGTNalby.png" group-title="📽️央视频",CGTN阿拉伯语
 webview://https://yangshipin.cn/tv/home?pid=600084782
 
-# 💰💰付费频道
+# 💰付费频道
 #EXTINF:-1 tvg-name="CCTV16" tvg-logo="https://logo.sspai.dpdns.org/img/CCTV16+.png" group-title="💰付费频道",CCTV-16 奥林匹克 4K
 webview://https://yangshipin.cn/tv/home?pid=600099502
 #EXTINF:-1 tvg-name="风云剧场" tvg-logo="https://logo.sspai.dpdns.org/img/CCTVfyjc.png" group-title="💰付费频道",CCTV 风云剧场
@@ -205,9 +205,9 @@ webview://https://yangshipin.cn/tv/home?pid=600190403
 #EXTINF:-1 tvg-name="新疆卫视" tvg-logo="https://logo.sspai.dpdns.org/img/Xinjiang.png" group-title="📡卫视频道",新疆卫视
 webview://https://yangshipin.cn/tv/home?pid=600152138
 #EXTINF:-1 tvg-name="CETV1" tvg-logo="https://logo.sspai.dpdns.org/img/CETV1.png" group-title="📡卫视频道",CETV-1
-webview://https://yangshipin.cn/tv/home?pid=600152138
+webview://https://yangshipin.cn/tv/home?pid=600171827
 
-# 🗺️国际教育频道
+# 🗺️国际教育
 #EXTINF:-1 tvg-name="国际教育汉语文化" tvg-logo="https://logo.sspai.dpdns.org/img/CEC汉语文化.png" group-title="🗺️国际教育",国际教育·汉语文化
 webview://http://m3u8.cec-tv.com.cn/?url=http://play.cec-tv.com.cn/channel/cec-tv1.m3u8
 http://play.cec-tv.com.cn/channel/cec-tv1.m3u8
