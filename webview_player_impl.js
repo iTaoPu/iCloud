@@ -13,7 +13,6 @@
   var HOST_CONFIGS = {
     'tv.cctv.com': {
       beforeInit: function () {
-        // 更新后的分辨率映射表
         var resolutionValues = {
           "流畅": 360,
           "标清": 480,
@@ -187,6 +186,57 @@
         }, 1000);
       }
     },
+
+    // 新增站点：www.btzx.com.cn 解决全屏样式被覆盖问题
+    'www.btzx.com.cn': {
+      init: function () {
+        var self = this;
+        // 每500ms强制应用全屏样式（使用!important确保优先级）
+        setInterval(function () {
+          var video = self._getVideoElement();
+          if (video) {
+            video.style.setProperty('position', 'fixed', 'important');
+            video.style.setProperty('top', '-1px', 'important');
+            video.style.setProperty('left', '-1px', 'important');
+            video.style.setProperty('right', '-1px', 'important');
+            video.style.setProperty('bottom', '-1px', 'important');
+            video.style.setProperty('width', 'calc(100vw + 2px)', 'important');
+            video.style.setProperty('height', 'calc(100vh + 2px)', 'important');
+            video.style.setProperty('z-index', '9999', 'important');
+            video.style.setProperty('background-color', 'black', 'important');
+            video.style.setProperty('object-fit', 'cover', 'important');
+            video.style.setProperty('box-sizing', 'border-box', 'important');
+            video.style.setProperty('pointer-events', 'auto', 'important');
+            video.style.setProperty('margin', '0', 'important');
+            video.style.setProperty('padding', '0', 'important');
+            video.style.setProperty('border', 'none', 'important');
+          }
+        }, 500);
+      }
+    },
+
+    // 新增站点：web.ningxiahuangheyun.com 解决有画面无声音问题
+    'web.ningxiahuangheyun.com': {
+      init: function () {
+        var self = this;
+        return self._waitForVideoElement().then(function (video) {
+          // 强制取消静音
+          video.muted = false;
+          // 尝试自动播放（可能会被浏览器阻止，但至少取消了静音）
+          video.play().catch(function (err) {
+            _log('取消静音后自动播放失败: ' + err.message, 'warn');
+          });
+          // 添加一次性点击事件，当用户点击页面时再次尝试恢复声音
+          document.addEventListener('click', function onClick() {
+            if (video.paused) {
+              video.muted = false;
+              video.play().catch(function (e) {});
+            }
+            document.removeEventListener('click', onClick);
+          }, { once: true });
+        });
+      }
+    }
   };
 
   var WebviewVideoPlayer = {
