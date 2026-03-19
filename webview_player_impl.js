@@ -6,6 +6,9 @@
   var _isPaused = false;
   var _videoWidth = 0;
   var _videoHeight = 0;
+  var _eventListeners = [];
+  var _mutationObserver = null;
+  var _statusInterval = null;
   var _currentVideoElement = null;
 
   var RESOLUTION_MAP = {
@@ -34,33 +37,53 @@
         }
         return 0;
       }
+    },
+    'yangshipin.cn': {
+      init: function () {
+        var self = this;
+        var res = new URLSearchParams(window.location.search).get('resolution');
+        if (!res) return self._waitForVideoMetadata();
+        return self._waitForElement('.quality-list, .definition-btn, .bei-list-inner', 8000)
+          .then(function () {
+            var items = document.querySelectorAll('.bei-list-inner span, .quality-list li, .definition-btn, [class*="quality"]');
+            var target = Array.from(items).find(function (el) {
+              var txt = el.innerText || "";
+              if (res.includes('4K')) return /4K|2160|超高/.test(txt);
+              if (res.includes('1080')) return /1080|超清|蓝光/.test(txt);
+              return txt.includes(res);
+            });
+            if (target) target.click();
+            return self._waitForVideoMetadata();
+          });
+      }
     }
-    // ... 其他配置保持不变
   };
 
   var WebviewVideoPlayer = {
     initialize: async function () {
-      if (_isInitialized) return;
-      _log('Initializing Secure Video Environment...');
+      if (_isInitialized) return Promise.resolve();
+      _log('Starting Ultimate Video Fix...');
 
       var config = HOST_CONFIGS[location.host] || {};
       if (config.beforeInit) try { config.beforeInit(); } catch (e) {}
 
-      try {
-        await this._waitForVideoElement();
-        if (config.init) await config.init.call(this);
-        
-        this._prepareDOMEnvironment();
-        this._applyDeepRepair();
-        this._attachEventListeners();
-        this._startStatusMonitoring();
-        
-        _isInitialized = true;
-        _log('Success: Environment fully repaired.');
-      } catch (error) {
-        _log('Fail: ' + error.message, 'error');
-        this._showErrorUI(error.message);
-      }
+      var self = this;
+      return this._waitForVideoElement()
+        .then(function () {
+          if (config.init) return config.init.call(self);
+        })
+        .then(function () {
+          self._prepareDOMEnvironment();
+          self._applyDeepRepair(); 
+          self._attachEventListeners();
+          self._startStatusMonitoring();
+          _isInitialized = true;
+          _log('Success: Video environment repaired.');
+        })
+        .catch(function (error) {
+          _log('Fail: ' + error.message, 'error');
+          self._showErrorUI(error.message);
+        });
     },
 
     _getVideoElement: function () {
@@ -76,68 +99,72 @@
       return null;
     },
 
-    // 修复 play() 报错的辅助函数
-    _safePlay: function (v) {
-      if (!v) return;
-      try {
-        var p = v.play();
-        if (p !== undefined && typeof p.catch === 'function') {
-          p.catch(function (e) { _log('Play interrupted: ' + e.message); });
-        }
-      } catch (e) {
-        _log('Exec play failed: ' + e.message);
-      }
-    },
-
     _applyDeepRepair: function () {
       var video = this._getVideoElement();
       if (!video) return;
       _currentVideoElement = video;
 
-      // 1. 尝试不移动节点，而是通过穿透父级限制（解决有声无画）
-      var p = video.parentElement;
-      while (p && p !== document.body) {
-        p.style.setProperty('overflow', 'visible', 'important');
-        p.style.setProperty('transform', 'none', 'important');
-        p.style.setProperty('clip', 'auto', 'important');
-        p.style.setProperty('filter', 'none', 'important');
-        p = p.parentElement;
+      // 1. 节点提取：绕过容器限制
+      if (video.parentElement !== document.body) {
+        var wasPaused = video.paused;
+        var currentTime = video.currentTime;
+        document.body.appendChild(video);
+        
+        // 针对 fjtv.net 修复：判断 play() 是否返回 Promise
+        if (!wasPaused) {
+          try {
+            var p = video.play();
+            if (p !== undefined && typeof p.catch === 'function') {
+              p.catch(function(e){ _log('Play error: ' + e.message); });
+            }
+          } catch(e) {}
+        }
+        if (currentTime > 0) video.currentTime = currentTime;
       }
 
-      // 2. 强力样式锁定
+      // 2. 样式锁定（解决“有声无画”：清除遮挡、裁切、透明度、滤镜问题）
       var s = video.style;
       var props = {
         'position': 'fixed', 'top': '0', 'left': '0', 'width': '100vw', 'height': '100vh',
-        'z-index': '2147483647', 'background-color': 'black', 'object-fit': 'contain',
-        'display': 'block', 'visibility': 'visible', 'opacity': '1',
-        'transform': 'translateZ(0)', // 强制开启硬件加速，解决黑屏
-        '-webkit-transform': 'translateZ(0)',
-        'clip-path': 'none', 'margin': '0'
+        'z-index': '2147483647', 'background-color': '#000', 'object-fit': 'contain',
+        'display': 'block', 'visibility': 'visible', 'opacity': '1', 'transform': 'none',
+        'clip-path': 'none', 'mask': 'none', 'transition': 'none', 'margin': '0',
+        'padding': '0', 'filter': 'none'
       };
-      for (var prop in props) s.setProperty(prop, props[prop], 'important');
+      for (var p in props) s.setProperty(p, props[p], 'important');
 
-      // 3. 漂白背景
+      // 3. 漂白计划：隐藏其他元素
       Array.from(document.body.children).forEach(el => {
-        if (el !== video && !el.contains(video) && el.id !== 'webview-video-error' && el.tagName !== 'SCRIPT' && el.tagName !== 'STYLE') {
+        if (el !== video && el.id !== 'webview-video-error' && el.tagName !== 'SCRIPT' && el.tagName !== 'STYLE') {
           el.style.setProperty('display', 'none', 'important');
         }
       });
+
+      // 强制触发渲染重绘 (针对 btzx.com.cn 等站点)
+      video.style.display = 'none';
+      video.offsetHeight; 
+      video.style.setProperty('display', 'block', 'important');
     },
 
     _startStatusMonitoring: function () {
       var self = this;
-      setInterval(function () {
+      _statusInterval = setInterval(function () {
         var v = self._getVideoElement();
         if (!v) return;
 
-        // 纠正静音和全屏
-        if (v.style.position !== 'fixed') self._applyDeepRepair();
+        if (v.parentElement !== document.body || v.style.position !== 'fixed') {
+          self._applyDeepRepair();
+        }
+
         if (v.muted) v.muted = false;
         if (v.volume !== _volume) v.volume = _volume;
 
-        // 修复 play().catch 报错点
+        // 自动播放保活，同样增加 Promise 检查
         if (!_isPaused && v.paused && v.readyState >= 2) {
-          self._safePlay(v);
+          try {
+            var p = v.play();
+            if (p !== undefined && typeof p.catch === 'function') p.catch(function(){});
+          } catch(e) {}
         }
 
         if (v.videoWidth !== _videoWidth || v.videoHeight !== _videoHeight) {
@@ -145,20 +172,28 @@
           window.WebviewVideoPlayerInterface?.changeResolution?.(_videoWidth, _videoHeight);
         }
       }, 800);
+
+      _mutationObserver = new MutationObserver(() => {
+        var v = self._getVideoElement();
+        if (v && (v !== _currentVideoElement || v.parentElement !== document.body)) self._applyDeepRepair();
+      });
+      _mutationObserver.observe(document.body, { childList: true });
     },
 
     _prepareDOMEnvironment: function () {
+      var m = document.querySelector('meta[name="viewport"]') || document.createElement('meta');
+      m.name = 'viewport';
+      m.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
+      if (!m.parentNode) document.head.appendChild(m);
       document.body.style.setProperty('background', '#000', 'important');
       document.body.style.setProperty('overflow', 'hidden', 'important');
-      // 触发一次回流渲染，解决某些设备画面不刷新的问题
-      document.body.offsetHeight;
     },
 
     _waitForVideoElement: function (timeout) {
       return new Promise((resolve, reject) => {
         var v = this._getVideoElement();
         if (v) return resolve(v);
-        var timer = setTimeout(() => { obs.disconnect(); reject(new Error('Timeout')); }, timeout || 20000);
+        var timer = setTimeout(() => { obs.disconnect(); reject(new Error('Wait video timeout')); }, timeout || 30000);
         var obs = new MutationObserver(() => {
           var v2 = this._getVideoElement();
           if (v2) { clearTimeout(timer); obs.disconnect(); resolve(v2); }
@@ -167,13 +202,31 @@
       });
     },
 
+    _waitForVideoMetadata: function () {
+      var v = this._getVideoElement();
+      if (!v) return Promise.reject();
+      return new Promise(res => {
+        if (v.videoWidth > 0) return res();
+        v.addEventListener('loadedmetadata', () => res(), { once: true });
+        setTimeout(res, 5000);
+      });
+    },
+
+    _waitForElement: function (sel, timeout) {
+      return new Promise(res => {
+        var el = document.querySelector(sel);
+        if (el) return res(el);
+        setTimeout(res, timeout || 8000);
+      });
+    },
+
     _attachEventListeners: function () {
       var v = this._getVideoElement();
       if (!v) return;
-      var self = this;
       var handlers = {
         play: () => { _isPaused = false; window.WebviewVideoPlayerInterface?.triggerPlaying?.(); },
         pause: () => { _isPaused = true; window.WebviewVideoPlayerInterface?.triggerPaused?.(); },
+        waiting: () => window.WebviewVideoPlayerInterface?.triggerLoading?.(),
         timeupdate: () => {
           if (window.WebviewVideoPlayerInterface?.changePosition) {
             var pos = Math.floor(v.currentTime * 1000);
@@ -189,7 +242,7 @@
       var d = document.createElement('div');
       d.id = 'webview-video-error';
       d.style.cssText = 'position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:999999;background:#000;color:#fff;display:flex;justify-content:center;align-items:center;';
-      d.textContent = 'Player Error: ' + msg;
+      d.textContent = msg;
       document.body.appendChild(d);
     }
   };
