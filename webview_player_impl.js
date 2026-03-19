@@ -14,43 +14,22 @@
     'tv.cctv.com': {
       beforeInit: function () {
         var resolutionValues = {
-            "流畅": 360, "标清": 480, "高清": 540, "超清": 720,
-            "1080P": 1080, "1080": 1080, "超高清": 1080, "蓝光": 1080,
-            "2K": 1440, "1440": 1440, "4K": 2160, "2160": 2160, "8K": 4320
-      };
-
+          "流畅": 360, "标清": 480, "高清": 540, "超清": 720, "1080P": 1080, "1080": 1080, "超高清": 1080, "蓝光": 1080, "2K": 1440, "1440": 1440, "4K": 2160, "2160": 2160, "8K": 4320
+        };
         var resolution = new URLSearchParams(window.location.search).get('resolution');
         localStorage.setItem('cctv_live_resolution', resolutionValues[resolution] || 'auto');
       },
-
       init: function () {
         var errorMsgEl = document.getElementById('error_msg_player');
-        if (errorMsgEl) {
-          throw new Error(errorMsgEl.textContent);
-        }
+        if (errorMsgEl) { throw new Error(errorMsgEl.textContent); }
       },
-
       getDuration: function () {
         var params = new URLSearchParams(window.location.search);
         var startAt = params.get('stime');
         var endAt = params.get('etime');
         if (startAt && endAt && startAt.length === 14 && endAt.length === 14) {
-          var startDate = new Date(
-            parseInt(startAt.slice(0, 4)),
-            parseInt(startAt.slice(4, 6)) - 1,
-            parseInt(startAt.slice(6, 8)),
-            parseInt(startAt.slice(8, 10)),
-            parseInt(startAt.slice(10, 12)),
-            parseInt(startAt.slice(12, 14))
-          );
-          var endDate = new Date(
-            parseInt(endAt.slice(0, 4)),
-            parseInt(endAt.slice(4, 6)) - 1,
-            parseInt(endAt.slice(6, 8)),
-            parseInt(endAt.slice(8, 10)),
-            parseInt(endAt.slice(10, 12)),
-            parseInt(endAt.slice(12, 14))
-          );
+          var startDate = new Date(parseInt(startAt.slice(0, 4)), parseInt(startAt.slice(4, 6)) - 1, parseInt(startAt.slice(6, 8)), parseInt(startAt.slice(8, 10)), parseInt(startAt.slice(10, 12)), parseInt(startAt.slice(12, 14)));
+          var endDate = new Date(parseInt(endAt.slice(0, 4)), parseInt(endAt.slice(4, 6)) - 1, parseInt(endAt.slice(6, 8)), parseInt(endAt.slice(8, 10)), parseInt(endAt.slice(10, 12)), parseInt(endAt.slice(12, 14)));
           return Math.floor((endDate - startDate) / 1000 * 1000);
         }
         return 0;
@@ -61,14 +40,12 @@
       init: function () {
         var self = this;
         var resolution = new URLSearchParams(window.location.search).get('resolution');
-
         return self._waitForElement('.bei-list-inner, .bright-text')
           .then(function () {
             var spans = document.querySelectorAll('.bei-list-inner span');
             var resolutionItem = Array.from(spans).find(function (span) {
               return span.innerText && span.innerText.includes(resolution);
             });
-
             if (resolutionItem) {
               resolutionItem.click();
               return self._waitForVideoMetadata();
@@ -76,9 +53,7 @@
           })
           .then(function () {
             var errorMsgEl = document.querySelector('.bright-text');
-            if (errorMsgEl) {
-              throw new Error(errorMsgEl.textContent);
-            }
+            if (errorMsgEl) { throw new Error(errorMsgEl.textContent); }
           });
       },
     },
@@ -87,14 +62,8 @@
       init: function () {
         var channel = (new URLSearchParams(window.location.search)).get('channel');
         var lis = document.querySelectorAll('.btnStream > li');
-        var channelItem = Array.from(lis)
-          .find(function (li) {
-            return li.innerText && li.innerText.includes(channel);
-          });
-
-        if (channelItem) {
-          channelItem.click();
-        }
+        var channelItem = Array.from(lis).find(function (li) { return li.innerText && li.innerText.includes(channel); });
+        if (channelItem) { channelItem.click(); }
       }
     },
 
@@ -102,14 +71,10 @@
       init: function () {
         var self = this;
         var channel = (new URLSearchParams(window.location.search)).get('channel');
-
         return self._waitForElement('#programMain')
           .then(function () {
             var slides = document.querySelector('#programMain').querySelectorAll('.swiper-slide');
-            var channelItem = Array.from(slides).find(function (slide) {
-              return slide.innerText && slide.innerText.includes(channel);
-            });
-
+            var channelItem = Array.from(slides).find(function (slide) { return slide.innerText && slide.innerText.includes(channel); });
             if (channelItem) {
               var imgBox = channelItem.querySelector('.imgBox');
               if (imgBox) imgBox.click();
@@ -122,13 +87,8 @@
       init: function () {
         var channel = (new URLSearchParams(window.location.search)).get('channel');
         var items = document.querySelectorAll('.tv_list > .tv_c');
-        var channelItem = Array.from(items).find(function (item) {
-          return item.innerText && item.innerText.includes(channel);
-        });
-
-        if (channelItem) {
-          channelItem.click();
-        }
+        var channelItem = Array.from(items).find(function (item) { return item.innerText && item.innerText.includes(channel); });
+        if (channelItem) { channelItem.click(); }
       }
     },
 
@@ -136,13 +96,8 @@
       init: function () {
         var channel = (new URLSearchParams(window.location.search)).get('channel');
         var lis = document.querySelectorAll('.right_list li');
-        var channelItem = Array.from(lis).find(function (li) {
-          return li.innerText && li.innerText.includes(channel);
-        });
-
-        if (channelItem) {
-          channelItem.click();
-        }
+        var channelItem = Array.from(lis).find(function (li) { return li.innerText && li.innerText.includes(channel); });
+        if (channelItem) { channelItem.click(); }
       }
     },
 
@@ -150,29 +105,20 @@
       init: function () {
         var channel = (new URLSearchParams(window.location.search)).get('channel');
         var lis = document.querySelectorAll('.right_list li');
-        var channelItem = Array.from(lis).find(function (li) {
-          return li.innerText && li.innerText.includes(channel);
-        });
-
-        if (channelItem) {
-          channelItem.click();
-        }
+        var channelItem = Array.from(lis).find(function (li) { return li.innerText && li.innerText.includes(channel); });
+        if (channelItem) { channelItem.click(); }
       }
     },
 
     'web.guangdianyun.tv': {
-      init: function () {
-        return this._waitForVideoMetadata();
-      }
+      init: function () { return this._waitForVideoMetadata(); }
     },
 
     'www.cditv.cn': {
       init: function () {
         setInterval(function () {
           var video = document.querySelector('video');
-          if (video) {
-            video.parentElement.style.transform = 'none';
-          }
+          if (video) { video.parentElement.style.transform = 'none'; }
         }, 1000);
       }
     },
@@ -180,49 +126,43 @@
     'www.btzx.com.cn': {
       init: function () {
         var self = this;
-        var video = self._getVideoElement();
-        if (!video) return;
-
-        self._applyFullscreenStyles(video);
-
-        var observer = new MutationObserver(function(mutations) {
-          mutations.forEach(function(mut) {
-            if (mut.type === 'childList') {
-              var newVideo = self._getVideoElement();
-              if (newVideo && newVideo !== video) {
-                video = newVideo;
-                self._applyFullscreenStyles(video);
-              }
-            }
-          });
-        });
-        observer.observe(document.body, { childList: true, subtree: true });
-
-        setInterval(function() {
-          var v = self._getVideoElement();
-          if (v && v.style.position !== 'fixed') {
-            self._applyFullscreenStyles(v);
+        // 注入全局强力样式，解除父级溢出限制
+        var style = document.createElement('style');
+        style.id = 'btzx-fix-style';
+        style.textContent = `
+          html, body { overflow: hidden !important; width: 100% !important; height: 100% !important; }
+          video.btzx-fullscreen {
+            position: fixed !important;
+            top: 0 !important; left: 0 !important;
+            width: 100vw !important; height: 100vh !important;
+            z-index: 2147483647 !important;
+            background: #000 !important;
+            object-fit: contain !important;
           }
-        }, 2000);
-      },
+        `;
+        if (!document.getElementById('btzx-fix-style')) document.head.appendChild(style);
 
-      _applyFullscreenStyles: function(video) {
-        if (!video) return;
-        video.style.setProperty('position', 'fixed', 'important');
-        video.style.setProperty('top', '0', 'important');
-        video.style.setProperty('left', '0', 'important');
-        video.style.setProperty('right', '0', 'important');
-        video.style.setProperty('bottom', '0', 'important');
-        video.style.setProperty('width', '100%', 'important');
-        video.style.setProperty('height', '100%', 'important');
-        video.style.setProperty('z-index', '9999', 'important');
-        video.style.setProperty('background-color', 'black', 'important');
-        video.style.setProperty('object-fit', 'contain', 'important');
-        video.style.setProperty('box-sizing', 'border-box', 'important');
-        video.style.setProperty('pointer-events', 'auto', 'important');
-        video.style.setProperty('margin', '0', 'important');
-        video.style.setProperty('padding', '0', 'important');
-        video.style.setProperty('border', 'none', 'important');
+        var applyBtzxStyles = function() {
+          var video = self._getVideoElement();
+          if (!video) return;
+          
+          video.classList.add('btzx-fullscreen');
+          
+          // 向上递归清除所有容器的限制
+          var parent = video.parentElement;
+          while (parent && parent !== document.body) {
+            parent.style.setProperty('overflow', 'visible', 'important');
+            parent.style.setProperty('position', 'static', 'important');
+            parent.style.setProperty('transform', 'none', 'important');
+            parent.style.setProperty('filter', 'none', 'important');
+            parent.style.setProperty('perspective', 'none', 'important');
+            parent = parent.parentElement;
+          }
+        };
+
+        applyBtzxStyles();
+        // 增加定时检查，防止动态加载的样式覆盖
+        setInterval(applyBtzxStyles, 1000);
       }
     },
 
@@ -231,14 +171,9 @@
         var self = this;
         return self._waitForVideoElement().then(function (video) {
           video.muted = false;
-          video.play().catch(function (err) {
-            _log('取消静音后自动播放失败: ' + err.message, 'warn');
-          });
+          video.play().catch(function (err) { _log('取消静音后自动播放失败: ' + err.message, 'warn'); });
           document.addEventListener('click', function onClick() {
-            if (video.paused) {
-              video.muted = false;
-              video.play().catch(function (e) {});
-            }
+            if (video.paused) { video.muted = false; video.play().catch(function (e) {}); }
             document.removeEventListener('click', onClick);
           }, { once: true });
         });
@@ -248,32 +183,19 @@
 
   var WebviewVideoPlayer = {
     initialize: async function () {
-      if (_isInitialized) {
-        _log('Video player already initialized, skipping duplicate call', 'warn');
-        return Promise.resolve();
-      }
-
+      if (_isInitialized) return Promise.resolve();
       _log('Starting video player initialization...');
 
       var beforeInit = HOST_CONFIGS[location.host] && HOST_CONFIGS[location.host].beforeInit;
-      if (beforeInit) {
-        try {
-          beforeInit();
-        } catch (e) {
-          _log('Pre-initialization failed: ' + e.message, 'error');
-        }
-      }
+      if (beforeInit) { try { beforeInit(); } catch (e) { _log('Pre-initialization failed: ' + e.message, 'error'); } }
 
       var self = this;
-
       return this._waitForVideoElement()
         .then(function () {
           var init = HOST_CONFIGS[location.host] && HOST_CONFIGS[location.host].init;
           if (init) { return init.call(self); }
         })
-        .then(function () {
-          return self._waitForVideoElement();
-        })
+        .then(function () { return self._waitForVideoElement(); })
         .then(function () {
           self._prepareDOMEnvironment();
           self._enterFullscreen();
@@ -291,80 +213,31 @@
 
     destroy: function () {
       _log('Cleaning up resources...');
-
-      _eventListeners.forEach(function (item) {
-        item.element.removeEventListener(item.type, item.listener);
-      });
+      _eventListeners.forEach(function (item) { item.element.removeEventListener(item.type, item.listener); });
       _eventListeners = [];
-
-      if (_mutationObserver) {
-        _mutationObserver.disconnect();
-        _mutationObserver = null;
-      }
-
-      if (_statusInterval) {
-        clearInterval(_statusInterval);
-        _statusInterval = null;
-      }
-
+      if (_mutationObserver) { _mutationObserver.disconnect(); _mutationObserver = null; }
+      if (_statusInterval) { clearInterval(_statusInterval); _statusInterval = null; }
       _isInitialized = false;
     },
 
-    play: function () {
-      _isPaused = false;
-      var video = this._getVideoElement();
-      if (video) video.play();
-    },
-
-    pause: function () {
-      _isPaused = true;
-      var video = this._getVideoElement();
-      if (video) video.pause();
-    },
-
-    stop: function () {
-      this.pause();
-    },
-
-    setVolume: function (volume) {
-      _volume = Math.max(0, Math.min(1, volume));
-      var video = this._getVideoElement();
-      if (video) video.volume = _volume;
-    },
-
-    getVolume: function () {
-      var video = this._getVideoElement();
-      return video ? video.volume : 1.0;
-    },
-
-    _getVideoElement: function () {
-      return document.querySelector('video');
-    },
+    play: function () { _isPaused = false; var video = this._getVideoElement(); if (video) video.play(); },
+    pause: function () { _isPaused = true; var video = this._getVideoElement(); if (video) video.pause(); },
+    stop: function () { this.pause(); },
+    setVolume: function (volume) { _volume = Math.max(0, Math.min(1, volume)); var video = this._getVideoElement(); if (video) video.volume = _volume; },
+    getVolume: function () { var video = this._getVideoElement(); return video ? video.volume : 1.0; },
+    _getVideoElement: function () { return document.querySelector('video'); },
 
     _waitForVideoElement: function (timeout) {
       timeout = timeout || 60000;
       var video = this._getVideoElement();
       if (video) return Promise.resolve(video);
-
       return new Promise(function (resolve, reject) {
-        var timer = setTimeout(function () {
-          observer.disconnect();
-          reject(new Error('等待video元素超时'));
-        }, timeout);
-
+        var timer = setTimeout(function () { observer.disconnect(); reject(new Error('等待video元素超时')); }, timeout);
         var observer = new MutationObserver(function () {
           var v = document.querySelector('video');
-          if (v) {
-            clearTimeout(timer);
-            observer.disconnect();
-            resolve(v);
-          }
+          if (v) { clearTimeout(timer); observer.disconnect(); resolve(v); }
         });
-
-        observer.observe(document.body, {
-          childList: true,
-          subtree: true
-        });
+        observer.observe(document.body, { childList: true, subtree: true });
       });
     },
 
@@ -373,23 +246,10 @@
       var video = this._getVideoElement();
       if (!video) return Promise.reject(new Error('video元素不存在'));
       if (video.videoWidth > 0) return Promise.resolve();
-
       return new Promise(function (resolve, reject) {
-        var timer = setTimeout(function () {
-          cleanup();
-          reject(new Error('等待video元数据超时'));
-        }, timeout);
-
-        var cleanup = function () {
-          clearTimeout(timer);
-          video.removeEventListener('loadedmetadata', onLoaded);
-        };
-
-        var onLoaded = function () {
-          cleanup();
-          resolve();
-        };
-
+        var timer = setTimeout(function () { cleanup(); reject(new Error('等待video元数据超时')); }, timeout);
+        var cleanup = function () { clearTimeout(timer); video.removeEventListener('loadedmetadata', onLoaded); };
+        var onLoaded = function () { cleanup(); resolve(); };
         video.addEventListener('loadedmetadata', onLoaded);
       });
     },
@@ -398,26 +258,13 @@
       timeout = timeout || 60000;
       var element = document.querySelector(selector);
       if (element) return Promise.resolve(element);
-
       return new Promise(function (resolve, reject) {
-        var timer = setTimeout(function () {
-          observer.disconnect();
-          reject(new Error('等待元素超时: ' + selector));
-        }, timeout);
-
+        var timer = setTimeout(function () { observer.disconnect(); reject(new Error('等待元素超时: ' + selector)); }, timeout);
         var observer = new MutationObserver(function () {
           var el = document.querySelector(selector);
-          if (el) {
-            clearTimeout(timer);
-            observer.disconnect();
-            resolve(el);
-          }
+          if (el) { clearTimeout(timer); observer.disconnect(); resolve(el); }
         });
-
-        observer.observe(document.body, {
-          childList: true,
-          subtree: true
-        });
+        observer.observe(document.body, { childList: true, subtree: true });
       });
     },
 
@@ -429,183 +276,82 @@
         document.head.appendChild(viewportMeta);
       }
       viewportMeta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
-
       document.body.style.margin = '0';
       document.body.style.overflow = 'hidden';
-
-      const stylesheets = document.querySelectorAll('link[rel="stylesheet"], style');
+      const stylesheets = document.querySelectorAll('link[rel="stylesheet"], style:not(#btzx-fix-style)');
       stylesheets.forEach(sheet => sheet.remove());
     },
 
     _enterFullscreen: function () {
       var video = this._getVideoElement();
       if (!video) return;
-
+      // 默认全屏逻辑，如果有特定 HOST_CONFIGS 则会根据 init 覆盖样式
       video.style.position = 'fixed';
-      video.style.top = '-1px';
-      video.style.left = '-1px';
-      video.style.right = '-1px';
-      video.style.bottom = '-1px';
-      video.style.width = 'calc(100vw + 2px)';
-      video.style.height = 'calc(100vh + 2px)';
+      video.style.top = '-1px'; video.style.left = '-1px';
+      video.style.right = '-1px'; video.style.bottom = '-1px';
+      video.style.width = 'calc(100vw + 2px)'; video.style.height = 'calc(100vh + 2px)';
       video.style.zIndex = '9999';
       video.style.backgroundColor = 'black';
       video.style.objectFit = 'cover';
       video.style.boxSizing = 'border-box';
       video.style.pointerEvents = 'auto';
-      video.style.margin = '0';
-      video.style.padding = '0';
-      video.style.border = 'none';
-
-      _log('Entered fullscreen mode');
+      video.style.margin = '0'; video.style.padding = '0'; video.style.border = 'none';
     },
 
     _attachEventListeners: function () {
       var video = this._getVideoElement();
       if (!video) return;
-
       var handlers = {
-        play: function () {
-          _isPaused = false;
-          if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface.triggerPlaying) {
-            window.WebviewVideoPlayerInterface.triggerPlaying();
-          }
-        },
-        pause: function () {
-          _isPaused = true;
-          if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface.triggerPaused) {
-            window.WebviewVideoPlayerInterface.triggerPaused();
-          }
-        },
-        waiting: function () {
-          if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface.triggerLoading) {
-            window.WebviewVideoPlayerInterface.triggerLoading();
-          }
-        },
-        ended: function () {
-          if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface.triggerEnded) {
-            window.WebviewVideoPlayerInterface.triggerEnded();
-          }
-        },
-        error: function (event) {
-          _log('Video error', 'error');
-          if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface.triggerError) {
-            window.WebviewVideoPlayerInterface.triggerError();
-          }
-        },
+        play: function () { _isPaused = false; if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface.triggerPlaying) { window.WebviewVideoPlayerInterface.triggerPlaying(); } },
+        pause: function () { _isPaused = true; if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface.triggerPaused) { window.WebviewVideoPlayerInterface.triggerPaused(); } },
+        waiting: function () { if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface.triggerLoading) { window.WebviewVideoPlayerInterface.triggerLoading(); } },
+        ended: function () { if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface.triggerEnded) { window.WebviewVideoPlayerInterface.triggerEnded(); } },
+        error: function (event) { _log('Video error', 'error'); if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface.triggerError) { window.WebviewVideoPlayerInterface.triggerError(); } },
         loadedmetadata: function () {
           if (video.videoWidth && video.videoHeight) {
-            _videoWidth = video.videoWidth;
-            _videoHeight = video.videoHeight;
-            if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface.changeResolution) {
-              window.WebviewVideoPlayerInterface.changeResolution(_videoWidth, _videoHeight);
-            }
+            _videoWidth = video.videoWidth; _videoHeight = video.videoHeight;
+            if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface.changeResolution) { window.WebviewVideoPlayerInterface.changeResolution(_videoWidth, _videoHeight); }
           }
         },
         timeupdate: function () {
           if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface.changePosition) {
             var position = Math.floor(video.currentTime * 1000);
             var duration = HOST_CONFIGS[location.host] && HOST_CONFIGS[location.host].getDuration && HOST_CONFIGS[location.host].getDuration();
-            if (!duration || duration <= 0 || position > duration) {
-              duration = position;
-            }
+            if (!duration || duration <= 0 || position > duration) { duration = position; }
             window.WebviewVideoPlayerInterface.changePosition(position, duration);
           }
         }
       };
-
       Object.keys(handlers).forEach(function (event) {
         video.addEventListener(event, handlers[event]);
-        _eventListeners.push({
-          element: video,
-          type: event,
-          listener: handlers[event]
-        });
+        _eventListeners.push({ element: video, type: event, listener: handlers[event] });
       });
-
-      _log('Event listeners have been attached');
     },
 
     _startStatusMonitoring: function () {
       var self = this;
       var video = this._getVideoElement();
       if (!video) return;
-
-      var metadataHandler = function () {
-        if (video.videoWidth && video.videoHeight) {
-          self._updateResolution(video.videoWidth, video.videoHeight);
-        }
-      };
-      video.addEventListener('loadedmetadata', metadataHandler);
-      _eventListeners.push({
-        element: video,
-        type: 'loadedmetadata',
-        listener: metadataHandler
-      });
-
-      var srcHandler = function () {
-        if (video.videoWidth && video.videoHeight) {
-          self._updateResolution(video.videoWidth, video.videoHeight);
-        }
-      };
-      video.addEventListener('loadstart', srcHandler);
-      _eventListeners.push({
-        element: video,
-        type: 'loadstart',
-        listener: srcHandler
-      });
-
-      _mutationObserver = new MutationObserver(function () {
-        if (video.videoWidth && video.videoHeight) {
-          if (video.videoWidth !== _videoWidth || video.videoHeight !== _videoHeight) {
-            _videoWidth = video.videoWidth;
-            _videoHeight = video.videoHeight;
-            if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface.changeResolution) {
-              window.WebviewVideoPlayerInterface.changeResolution(_videoWidth, _videoHeight);
-            }
-          }
-        }
-      });
-
-      _mutationObserver.observe(video, {
-        attributes: true,
-        attributeFilter: ['src', 'videoWidth', 'videoHeight']
-      });
+      var statusHandler = function () { if (video.videoWidth && video.videoHeight) { self._updateResolution(video.videoWidth, video.videoHeight); } };
+      video.addEventListener('loadedmetadata', statusHandler);
+      video.addEventListener('loadstart', statusHandler);
+      _eventListeners.push({ element: video, type: 'loadedmetadata', listener: statusHandler });
+      _eventListeners.push({ element: video, type: 'loadstart', listener: statusHandler });
 
       _statusInterval = setInterval(function () {
         var v = self._getVideoElement();
         if (!v) return;
-
-        if (v.volume !== _volume) {
-          v.volume = _volume;
-        }
-
-        if (!_isPaused && v.paused && v.readyState >= 2) {
-          v.play().catch(function (err) {
-            _log('Autoplay failed: ' + err.message, 'warn');
-          });
-        }
-
-        if (v.style.position !== 'fixed') {
-          self._enterFullscreen();
-        }
-
-        if (v.videoWidth !== _videoWidth || v.videoHeight !== _videoHeight) {
-          self._updateResolution(v.videoWidth, v.videoHeight);
-        }
+        if (v.volume !== _volume) { v.volume = _volume; }
+        if (!_isPaused && v.paused && v.readyState >= 2) { v.play().catch(function (err) { _log('Autoplay failed: ' + err.message, 'warn'); }); }
+        if (v.style.position !== 'fixed' && !v.classList.contains('btzx-fullscreen')) { self._enterFullscreen(); }
+        if (v.videoWidth !== _videoWidth || v.videoHeight !== _videoHeight) { self._updateResolution(v.videoWidth, v.videoHeight); }
       }, 1000);
     },
 
     _updateResolution: function (width, height) {
       if (width === _videoWidth && height === _videoHeight) return;
-
-      _videoWidth = width;
-      _videoHeight = height;
-
-      if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface.changeResolution) {
-        window.WebviewVideoPlayerInterface.changeResolution(_videoWidth, _videoHeight);
-      }
-      _log('Resolution updated: ' + _videoWidth + 'x' + _videoHeight);
+      _videoWidth = width; _videoHeight = height;
+      if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface.changeResolution) { window.WebviewVideoPlayerInterface.changeResolution(_videoWidth, _videoHeight); }
     },
 
     _showErrorUI: function (message) {
@@ -613,55 +359,21 @@
       if (!errorDiv) {
         errorDiv = document.createElement('div');
         errorDiv.id = 'webview-video-error';
-        errorDiv.style.position = 'fixed';
-        errorDiv.style.top = '-1px';
-        errorDiv.style.left = '-1px';
-        errorDiv.style.right = '-1px';
-        errorDiv.style.bottom = '-1px';
-        errorDiv.style.width = 'calc(100vw + 2px)';
-        errorDiv.style.height = 'calc(100vh + 2px)';
-        errorDiv.style.zIndex = '100000';
-        errorDiv.style.margin = '0';
-        errorDiv.style.padding = '0';
-        errorDiv.style.border = 'none';
-        errorDiv.style.backgroundColor = 'black';
-        errorDiv.style.color = 'white';
-        errorDiv.style.fontSize = '3vw';
-        errorDiv.style.textAlign = 'center';
-        errorDiv.style.display = 'flex';
-        errorDiv.style.justifyContent = 'center';
-        errorDiv.style.alignItems = 'center';
-        errorDiv.style.fontFamily = 'system-ui, sans-serif';
+        errorDiv.style.cssText = 'position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:100000;background:black;color:white;display:flex;justify-content:center;align-items:center;font-size:3vw;text-align:center;';
         document.body.appendChild(errorDiv);
       }
-
       errorDiv.textContent = message;
     }
   };
 
   function _log(message, level) {
     level = level || 'info';
-    if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface.logV) {
-      window.WebviewVideoPlayerInterface.logV('[WebviewVideoPlayer] ' + message);
-    }
-    if (console && console[level]) {
-      console[level](message);
-    }
+    if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface.logV) { window.WebviewVideoPlayerInterface.logV('[WebviewVideoPlayer] ' + message); }
+    if (console && console[level]) { console[level](message); }
   }
 
-  if (!global.WebviewVideoPlayer) {
-    global.WebviewVideoPlayer = WebviewVideoPlayer;
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function () {
-      setTimeout(function () {
-        global.WebviewVideoPlayer.initialize();
-      }, 500);
-    });
-  } else {
-    setTimeout(function () {
-      global.WebviewVideoPlayer.initialize();
-    }, 500);
-  }
+  if (!global.WebviewVideoPlayer) { global.WebviewVideoPlayer = WebviewVideoPlayer; }
+  
+  var start = function () { setTimeout(function () { global.WebviewVideoPlayer.initialize(); }, 500); };
+  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', start); } else { start(); }
 })(typeof window !== 'undefined' ? window : this);
