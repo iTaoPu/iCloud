@@ -44,6 +44,7 @@
                 }).filter(function(i) { return i.val > 0; });
 
                 if (items.length > 0) {
+                  // 优先选 1080P，没有则选最接近的高清（含 2K）
                   items.sort(function(a, b) { return Math.abs(a.val - 1080) - Math.abs(b.val - 1080); });
                   items[0].el.click();
                   _qualityLocked = true; 
@@ -52,11 +53,11 @@
                     _isExecuting = false;
                   }, 500); 
                 } else { _isExecuting = false; }
-              }, 200);
+              }, 200); // 压缩响应延迟
             });
           }
           if (++retry > 15) { clearInterval(btnTimer); _isExecuting = false; }
-        }, 300);
+        }, 300); // 加快探测频率
       }
     },
     'web.guangdianyun.tv': { init: function () { return this._waitForVideoMetadata(); } },
@@ -82,6 +83,7 @@
       if (config.beforeInit) { try { config.beforeInit(); } catch(e) {} }
 
       var self = this;
+      // --- 启动时间压缩 ---
       setTimeout(function() {
         self._waitForVideoElement().then(function (video) {
           _currentVideo = video;
@@ -97,6 +99,7 @@
       var video = this._getVideoElement();
       if (!video || video.offsetWidth < 50) return;
       
+      // --- 双 WebView 状态保护：如果已经全屏锁定，不再重复操作 DOM ---
       if (video.getAttribute('data-v-fixed') === 'true' && video.offsetTop === 0) return;
 
       var p = video.parentElement;
@@ -144,14 +147,6 @@
           if (config.init) config.init.call(self);
         }
 
-        // --- 核心修复逻辑：音频丢失找回 ---
-        // 如果未主动暂停但视频变哑了（新增源抢占焦点导致），强制取消静音
-        if (!_isPaused && v.muted) {
-          v.muted = false;
-          // 如果不仅静音还自动暂停了，强制播放
-          if (v.paused && v.readyState >= 2) v.play().catch(function(){});
-        }
-
         if (!_isPaused && v.paused && v.readyState >= 2) {
           v.play().catch(function(){ v.muted=true; v.play(); });
         }
@@ -171,7 +166,7 @@
         var t = setInterval(function() {
           var v = self._getVideoElement();
           if (v) { clearInterval(t); resolve(v); }
-        }, 150); 
+        }, 150); // 加快探测频率
       });
     },
     _waitForElement: function (sel) {
@@ -195,6 +190,7 @@
     }
   };
 
+  // 极速启动
   if (document.readyState === 'complete') WebviewVideoPlayer.initialize(); 
   else window.addEventListener('load', function() { WebviewVideoPlayer.initialize(); });
 
