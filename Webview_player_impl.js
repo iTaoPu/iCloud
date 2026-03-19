@@ -7,95 +7,68 @@
   var _videoWidth = 0;
   var _videoHeight = 0;
   var _eventListeners = [];
-  var _mutationObserver = null;
   var _statusInterval = null;
 
   var HOST_CONFIGS = {
     'tv.cctv.com': {
       beforeInit: function () {
-        var resolutionValues = { "超清": 720, "高清": 540, "标清": 480, "流畅": 360 };
-        var resolution = new URLSearchParams(window.location.search).get('resolution');
-        localStorage.setItem('cctv_live_resolution', resolutionValues[resolution] || 'auto');
-      },
-      init: function () {
-        var errorMsgEl = document.getElementById('error_msg_player');
-        if (errorMsgEl && errorMsgEl.offsetHeight > 0) { throw new Error(errorMsgEl.textContent); }
+        var resMap = { "超清": 720, "高清": 540, "标清": 480, "流畅": 360 };
+        var res = new URLSearchParams(window.location.search).get('resolution');
+        localStorage.setItem('cctv_live_resolution', resMap[res] || 'auto');
       }
     },
-
     'yangshipin.cn': {
       init: function () {
         var self = this;
-        var resolution = new URLSearchParams(window.location.search).get('resolution');
-        return self._waitForElement('.bei-list-inner, .bright-text', 10000)
-          .then(function () {
-            var spans = document.querySelectorAll('.bei-list-inner span');
-            var resolutionItem = Array.from(spans).find(function (span) {
-              return span.innerText && span.innerText.includes(resolution);
-            });
-            if (resolutionItem) { resolutionItem.click(); return self._waitForVideoMetadata(); }
-          });
-      },
+        var res = new URLSearchParams(window.location.search).get('resolution');
+        return self._waitForElement('.bei-list-inner', 8000).then(function () {
+          var spans = document.querySelectorAll('.bei-list-inner span');
+          var target = Array.from(spans).find(s => s.innerText.includes(res));
+          if (target) target.click();
+        });
+      }
     },
-
-    // 针对 1905 的全屏修复
     'm.1905.com': {
       init: function () {
+        // 修复全屏被遮挡的核心补丁
         var style = document.createElement('style');
         style.textContent = `
-          /* 强制隐藏 1905 的广告层和干扰 UI */
-          .advert-layer, .vjs-poster, .m1905-player-poster, .online-count { display: none !important; }
-          /* 锁定视频容器为全屏 */
-          #player, .video-wrap, .m1905-player { 
-            position: fixed !important; top: 0 !important; left: 0 !important; 
-            width: 100vw !important; height: 100vh !important; z-index: 999999 !important; 
-          }
+          .advert-layer, .vjs-poster, .m1905-player-poster, .header, .footer, .btn-app-open { display: none !important; opacity: 0 !important; pointer-events: none !important; }
+          #player, .video-wrap, video { position: fixed !important; top: 0 !important; left: 0 !important; width: 100vw !important; height: 100vh !important; z-index: 2147483647 !important; }
         `;
         document.head.appendChild(style);
-        
-        // 尝试触发播放按钮
         var playBtn = document.querySelector('.play-btn, .video-play');
         if (playBtn) playBtn.click();
       }
     },
-
-    // 针对 iPanda 的提速：减少等待时间
     'live.ipanda.com': {
       init: function () {
-        _log('iPanda speed-up mode active');
-        // iPanda 页面逻辑较重，强制移除背景遮罩
-        var mask = document.querySelector('.player_cover, .vjs-poster');
-        if (mask) mask.style.display = 'none';
+        _log('iPanda focus mode');
+        var cover = document.querySelector('.player_cover');
+        if (cover) cover.remove();
       }
     },
-
-    // 针对 广电云 的提速：禁用非核心组件
     'web.guangdianyun.tv': {
       init: function () {
+        // 针对广电云卡死的优化：干掉弹幕和侧边栏
         var style = document.createElement('style');
-        style.textContent = '.danmu-container, .interaction-area, .sidebar { display: none !important; }';
+        style.textContent = '.danmu-container, .interaction-area, .sidebar-wrap { display: none !important; }';
         document.head.appendChild(style);
-        return this._waitForVideoMetadata(5000); // 缩短等待时长
       }
     }
   };
 
   var WebviewVideoPlayer = {
     initialize: async function () {
-      if (_isInitialized) return;
-      
-      // 检查当前域名是否在配置中
-      if (!HOST_CONFIGS[location.host]) return;
+      if (_isInitialized || !HOST_CONFIGS[location.host]) return;
 
       var self = this;
-      var beforeInit = HOST_CONFIGS[location.host].beforeInit;
-      if (beforeInit) beforeInit();
+      var config = HOST_CONFIGS[location.host];
+      if (config.beforeInit) config.beforeInit();
 
-      // 优化：加快 video 元素的捕获速度
-      return this._waitForVideoElement(15000)
-        .then(function () {
-          var init = HOST_CONFIGS[location.host].init;
-          if (init) { return init.call(self); }
+      return this._waitForVideoElement(15000) // 缩短等待时长提速
+        .then(function (video) {
+          if (config.init) return config.init.call(self);
         })
         .then(function () {
           self._prepareDOMEnvironment();
@@ -103,54 +76,45 @@
           self._attachEventListeners();
           self._startStatusMonitoring();
           _isInitialized = true;
+          _log('Initialized for ' + location.host);
         })
-        .catch(function (error) {
-          _log('Init error: ' + error.message);
-        });
+        .catch(function (e) { _log('Init task failed: ' + e.message); });
     },
 
     _prepareDOMEnvironment: function () {
-      var viewportMeta = document.querySelector('meta[name="viewport"]') || document.createElement('meta');
-      viewportMeta.name = 'viewport';
-      viewportMeta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
-      if (!viewportMeta.parentNode) document.head.appendChild(viewportMeta);
-
-      document.body.style.margin = '0';
-      document.body.style.backgroundColor = 'black';
+      var meta = document.querySelector('meta[name="viewport"]') || document.createElement('meta');
+      meta.name = 'viewport';
+      meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
+      if (!meta.parentNode) document.head.appendChild(meta);
       
-      // 1905 等站点需要禁用 body 的滚动以保持全屏稳定
       document.documentElement.style.overflow = 'hidden';
-      document.body.style.overflow = 'hidden';
+      document.body.style.backgroundColor = 'black';
+      document.body.style.margin = '0';
     },
 
     _enterFullscreen: function () {
       var video = this._getVideoElement();
       if (!video) return;
-
-      // 强力全屏 CSS
-      video.style.setProperty('position', 'fixed', 'important');
-      video.style.setProperty('top', '0', 'important');
-      video.style.setProperty('left', '0', 'important');
-      video.style.setProperty('width', '100vw', 'important');
-      video.style.setProperty('height', '100vh', 'important');
-      video.style.setProperty('z-index', '2147483647', 'important');
-      video.style.setProperty('background', 'black', 'important');
-      video.style.objectFit = 'contain';
-      
-      _log('Super Fullscreen applied');
+      // 强力全屏样式
+      var css = {
+        'position': 'fixed', 'top': '0', 'left': '0',
+        'width': '100vw', 'height': '100vh',
+        'z-index': '2147483646', 'background': 'black',
+        'object-fit': 'contain', 'display': 'block'
+      };
+      for (var key in css) { video.style.setProperty(key, css[key], 'important'); }
     },
 
-    // ... (以下保留你原始代码中未修改的 play, pause, setVolume, _getVideoElement, _attachEventListeners 等方法)
     _getVideoElement: function () { return document.querySelector('video'); },
-    
+
     _waitForVideoElement: function (timeout) {
-      timeout = timeout || 15000;
-      var video = this._getVideoElement();
-      if (video) return Promise.resolve(video);
+      var self = this;
       return new Promise((resolve, reject) => {
-        var timer = setTimeout(() => { obs.disconnect(); reject(new Error('Timeout')); }, timeout);
+        var v = self._getVideoElement();
+        if (v) return resolve(v);
+        var timer = setTimeout(() => { obs.disconnect(); reject(new Error('No video found')); }, timeout);
         var obs = new MutationObserver(() => {
-          var v = document.querySelector('video');
+          var v = self._getVideoElement();
           if (v) { clearTimeout(timer); obs.disconnect(); resolve(v); }
         });
         obs.observe(document.documentElement, { childList: true, subtree: true });
@@ -158,71 +122,71 @@
     },
 
     _waitForElement: function (selector, timeout) {
-      timeout = timeout || 10000;
-      var el = document.querySelector(selector);
-      if (el) return Promise.resolve(el);
       return new Promise(resolve => {
-        var timer = setTimeout(() => { obs.disconnect(); resolve(null); }, timeout);
+        if (document.querySelector(selector)) return resolve();
         var obs = new MutationObserver(() => {
-          if (document.querySelector(selector)) { clearTimeout(timer); obs.disconnect(); resolve(); }
+          if (document.querySelector(selector)) { obs.disconnect(); resolve(); }
         });
         obs.observe(document.body, { childList: true, subtree: true });
-      });
-    },
-
-    _waitForVideoMetadata: function (timeout) {
-      timeout = timeout || 10000;
-      var video = this._getVideoElement();
-      if (!video) return Promise.resolve();
-      return new Promise(resolve => {
-        var timer = setTimeout(resolve, timeout);
-        video.addEventListener('loadedmetadata', () => { clearTimeout(timer); resolve(); }, { once: true });
+        setTimeout(() => { obs.disconnect(); resolve(); }, timeout);
       });
     },
 
     _attachEventListeners: function () {
-        var video = this._getVideoElement();
-        if (!video) return;
-        var self = this;
-        video.addEventListener('play', () => { _isPaused = false; self._toApp('triggerPlaying'); });
-        video.addEventListener('pause', () => { _isPaused = true; self._toApp('triggerPaused'); });
-        video.addEventListener('waiting', () => self._toApp('triggerLoading'));
-        video.addEventListener('timeupdate', () => {
-            var pos = Math.floor(video.currentTime * 1000);
-            self._toApp('changePosition', pos, pos);
-        });
+      var video = this._getVideoElement();
+      if (!video) return;
+      var self = this;
+      var events = {
+        play: () => { _isPaused = false; self._toApp('triggerPlaying'); },
+        pause: () => { _isPaused = true; self._toApp('triggerPaused'); },
+        waiting: () => self._toApp('triggerLoading'),
+        error: () => self._toApp('triggerError'),
+        timeupdate: () => {
+          var pos = Math.floor(video.currentTime * 1000);
+          self._toApp('changePosition', pos, pos);
+        }
+      };
+      Object.keys(events).forEach(e => video.addEventListener(e, events[e]));
     },
 
     _startStatusMonitoring: function () {
       _statusInterval = setInterval(() => {
         var v = this._getVideoElement();
         if (!v) return;
+        // 监控全屏样式是否被篡改
         if (v.style.position !== 'fixed') this._enterFullscreen();
-        if (!_isPaused && v.paused) v.play().catch(()=>{});
+        // 自动播放补偿
+        if (!_isPaused && v.paused && v.readyState >= 2) v.play().catch(()=>{});
+        // 分辨率上报
+        if (v.videoWidth !== _videoWidth) {
+          _videoWidth = v.videoWidth;
+          this._toApp('changeResolution', _videoWidth, v.videoHeight);
+        }
       }, 2000);
     },
 
     _toApp: function (method, ...args) {
-      if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface[method]) {
-        window.WebviewVideoPlayerInterface[method](...args);
-      }
+      try {
+        if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface[method]) {
+          window.WebviewVideoPlayerInterface[method](...args);
+        }
+      } catch (e) { console.error('App Interface Error', e); }
     }
   };
 
-  function _log(message) {
-    if (window.WebviewVideoPlayerInterface?.logV) {
-      window.WebviewVideoPlayerInterface.logV('[WebviewVideoPlayer] ' + message);
-    }
-    console.log(message);
+  function _log(m) {
+    console.log('[WebviewVideoPlayer] ' + m);
+    try { window.WebviewVideoPlayerInterface?.logV?.(m); } catch(e) {}
   }
 
-  // 立即初始化
+  // 启动：不等 load 事件，DOMContentLoaded 立即执行
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => WebviewVideoPlayer.initialize());
   } else {
     WebviewVideoPlayer.initialize();
   }
-  
-  global.WebviewVideoPlayer = WebviewVideoPlayer;
+  // 兜底启动
+  window.addEventListener('load', () => setTimeout(() => WebviewVideoPlayer.initialize(), 1000));
 
+  global.WebviewVideoPlayer = WebviewVideoPlayer;
 })(window);
