@@ -125,16 +125,18 @@
       _statusInterval = setInterval(function () {
         var v = self._getVideoElement();
         if (!v) return;
+
         if (v !== _currentVideo) {
           _currentVideo = v; _qualityLocked = false;
           self._attachEventListeners(v);
           if (config.init) config.init.call(self);
         }
-        // 自动唤醒：针对直播断流或自动暂停的恢复
+
         if (!_isPaused && v.paused && v.readyState >= 2) {
           v.play().catch(function(){ v.muted=true; v.play(); });
         }
         self._applyUniversalFullfix();
+
         if (v.videoWidth !== _videoWidth || v.videoHeight !== _videoHeight) {
           _videoWidth = v.videoWidth; _videoHeight = v.videoHeight;
           self._invokeNative('changeResolution', _videoWidth, _videoHeight);
