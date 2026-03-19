@@ -73,7 +73,7 @@
               setTimeout(function() {
                 var v = self._getVideoElement();
                 if (v) v.click(); 
-              }, 1000);
+              }, 800);
 
               return self._waitForVideoMetadata();
             }
