@@ -9,61 +9,51 @@
   var _eventListeners = [];
   var _statusInterval = null;
 
-  // 1. 扩展分辨率映射表 (最低 1080P 逻辑基础)
   var RESOLUTION_MAP = {
-    "流畅": 360, "360": 360,
-    "标清": 480, "480": 480,
-    "高清": 540, "540": 540,
-    "超清": 720, "720": 720,
-    "1080P": 1080, "1080": 1080, "超高清": 1080, "蓝光": 1080,
-    "2K": 1440, "1440": 1440,
-    "4K": 2160, "2160": 2160,
-    "8K": 4320, "4320": 4320
+    "流畅": 360, "360": 360, "标清": 480, "480": 480, "高清": 540, "540": 540,
+    "超清": 720, "720": 720, "1080P": 1080, "1080": 1080, "超高清": 1080, "蓝光": 1080,
+    "2K": 1440, "4K": 2160, "8K": 4320
   };
 
   var HOST_CONFIGS = {
     'tv.cctv.com': {
       beforeInit: function () {
-        var params = new URLSearchParams(window.location.search);
-        var res = params.get('resolution');
-        var val = RESOLUTION_MAP[res] || 1080; // 默认 1080
-        localStorage.setItem('cctv_live_resolution', val);
-        _log('CCTV 预设画质: ' + val);
+        localStorage.setItem('cctv_live_resolution', 1080);
+        _log('CCTV 锁定 1080P');
       }
     },
-
     'yangshipin.cn': {
       init: function () {
         var self = this;
+        // 增加对菜单按钮的尝试点击，确保选项可见
+        var btn = document.querySelector('.bei-player-control-quality-btn');
+        if (btn) btn.click();
+
         return self._waitForElement('.bei-list-inner')
           .then(function () {
             var spans = document.querySelectorAll('.bei-list-inner span');
             var items = Array.prototype.map.call(spans, function(s) {
-              return { el: s, val: RESOLUTION_MAP[s.innerText.trim()] || 0 };
+              var text = s.innerText.trim();
+              return { el: s, val: RESOLUTION_MAP[text] || parseInt(text) || 0 };
             }).filter(function(i) { return i.val > 0; });
 
             if (items.length > 0) {
-              // 寻找最接近 1080 的档位
               items.sort(function(a, b) { return Math.abs(a.val - 1080) - Math.abs(b.val - 1080); });
-              _log('央视频自动选择画质: ' + items[0].el.innerText);
+              _log('央视频匹配最佳画质: ' + items[0].val);
               items[0].el.click();
               return self._waitForVideoMetadata();
             }
           });
       }
     },
-
     'web.guangdianyun.tv': {
       init: function () { return this._waitForVideoMetadata(); }
     },
-
     'live.ipanda.com': {
       init: function () { this._applyUniversalFullfix(); }
     },
-
     'm.1905.com': {
       init: function () {
-        // 1905 屏蔽掉浮动遮罩和下载引导
         var style = document.createElement('style');
         style.textContent = '.player-mask, .ad-box, .app-download-guide, .header-app { display: none !important; }';
         document.head.appendChild(style);
@@ -75,10 +65,9 @@
   var WebviewVideoPlayer = {
     initialize: function () {
       if (_isInitialized) return Promise.resolve();
-      
       var host = location.hostname.replace('www.', '');
       var config = HOST_CONFIGS[host];
-      if (!config) return Promise.resolve(); // 不在 5 个指定域名内则不执行
+      if (!config) return Promise.resolve();
 
       if (config.beforeInit) {
         try { config.beforeInit(); } catch (e) { _log('beforeInit Error: ' + e.message); }
@@ -95,7 +84,7 @@
           self._attachEventListeners();
           self._startStatusMonitoring();
           _isInitialized = true;
-          _log('播放器针对 ' + host + ' 初始化完成');
+          _log('针对 ' + host + ' 初始化完成');
         })
         .catch(function (error) {
           _log('初始化失败: ' + error.message, 'error');
@@ -106,7 +95,6 @@
       var video = this._getVideoElement();
       if (!video) return;
 
-      // 1. 递归解除所有父容器的 CSS 限制 (解决 1905/iPanda 全屏死穴)
       var parent = video.parentElement;
       while (parent && parent !== document.body) {
         parent.style.setProperty('transform', 'none', 'important');
@@ -120,7 +108,6 @@
         parent = parent.parentElement;
       }
 
-      // 2. 锁定视频样式
       video.style.setProperty('position', 'fixed', 'important');
       video.style.setProperty('top', '0', 'important');
       video.style.setProperty('left', '0', 'important');
@@ -141,7 +128,6 @@
       meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
       if (!meta.parentNode) document.head.appendChild(meta);
 
-      // 隐藏视频以外的所有 UI (Visibility 方案)
       var styleId = 'webview-player-mask';
       if (!document.getElementById(styleId)) {
         var style = document.createElement('style');
@@ -179,8 +165,7 @@
 
     _waitForVideoMetadata: function () {
       var video = this._getVideoElement();
-      if (!video) return Promise.resolve();
-      if (video.videoWidth > 0) return Promise.resolve();
+      if (!video || video.videoWidth > 0) return Promise.resolve();
       return new Promise(function (resolve) {
         video.addEventListener('loadedmetadata', function onLoaded() {
           video.removeEventListener('loadedmetadata', onLoaded);
@@ -202,7 +187,7 @@
         error: function () { self._invokeNative('triggerError'); },
         timeupdate: function () {
           var pos = Math.floor(video.currentTime * 1000);
-          self._invokeNative('changePosition', pos, pos); // 直播模式 dur = pos
+          self._invokeNative('changePosition', pos, pos);
         }
       };
 
@@ -217,11 +202,8 @@
       _statusInterval = setInterval(function () {
         var v = self._getVideoElement();
         if (!v) return;
-        
         if (v.volume !== _volume) v.volume = _volume;
         if (!_isPaused && v.paused && v.readyState >= 2) v.play().catch(function(){});
-        
-        // 持续全屏修正
         self._applyUniversalFullfix();
 
         if (v.videoWidth !== _videoWidth || v.videoHeight !== _videoHeight) {
@@ -242,13 +224,11 @@
 
   function _log(m, lv) {
     if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface.logV) {
-      window.WebviewVideoPlayerInterface.logV('[VideoPlayer] ' + m);
+      window.WebviewVideoPlayerInterface.logV('[Player] ' + m);
     }
-    console[lv || 'info']('[VideoPlayer] ' + m);
   }
 
   global.WebviewVideoPlayer = WebviewVideoPlayer;
-
   var start = function() { setTimeout(function(){ WebviewVideoPlayer.initialize(); }, 800); };
   if (document.readyState === 'complete') start();
   else window.addEventListener('load', start);
