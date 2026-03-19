@@ -1,16 +1,5 @@
 #EXTM3U x-tvg-url="https://itv.sspai.indevs.in/epg.xml.gz" catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}"
 
-#EXTINF:-1 tvg-id="温馨提示" tvg-name="温馨提示" tvg-logo="https://logo.sspai.dpdns.org/img/温馨提示.png" group-title="🦧温馨提示",温馨提示
-https://iCloud.yuwell.dpdns.org/温馨提示.mp4
-#EXTINF:-1 tvg-id="谨防诈骗" tvg-name="谨防诈骗" tvg-logo="https://logo.sspai.dpdns.org/img/谨防诈骗.png" group-title="🦧温馨提示",谨防诈骗
-https://iCloud.yuwell.dpdns.org/温馨提示.mp4
-#EXTINF:-1 tvg-id="禁止蕉绿" tvg-name="禁止蕉绿" tvg-logo="https://logo.sspai.dpdns.org/img/禁止蕉绿.png" group-title="🦧温馨提示",禁止蕉绿
-https://iCloud.yuwell.dpdns.org/温馨提示.mp4
-#EXTINF:-1 tvg-id="Cloudflare TV" tvg-name="Cloudflare TV" tvg-logo="https://logo.sspai.dpdns.org/img/CloudflareTV.png" group-title="🦧温馨提示",Cloudflare TV
-https://cloudflare.tv/hls/live.m3u8
-#EXTINF:-1 tvg-id="1905电影网" tvg-name="1905电影网" tvg-logo="https://logo.sspai.dpdns.org/img/1905电影网.png" group-title="🦧温馨提示",1905 电影网
-webview://https://m.1905.com/m/xl/live/
-
 # 🎥央视网
 #EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://logo.sspai.dpdns.org/img/CCTV1.png" group-title="🎥央视网",CCTV-1 综合
 webview://https://tv.cctv.com/live/cctv1/
@@ -205,22 +194,6 @@ webview://https://yangshipin.cn/tv/home?pid=600152138
 #EXTINF:-1 tvg-name="CETV1" tvg-logo="https://logo.sspai.dpdns.org/img/CETV1.png" group-title="📡卫视频道",CETV-1
 webview://https://yangshipin.cn/tv/home?pid=600171827
 
-# 🗺️国际教育
-#EXTINF:-1 tvg-name="国际教育汉语文化" tvg-logo="https://logo.sspai.dpdns.org/img/CEC汉语文化.png" group-title="🗺️国际教育",国际教育·汉语文化
-webview://http://m3u8.cec-tv.com.cn/?url=http://play.cec-tv.com.cn/channel/cec-tv1.m3u8
-http://play.cec-tv.com.cn/channel/cec-tv1.m3u8
-#EXTINF:-1 tvg-name="国际教育国际旅游" tvg-logo="https://logo.sspai.dpdns.org/img/CEC国际旅游.png" group-title="🗺️国际教育",国际教育·国际旅游
-webview://http://m3u8.cec-tv.com.cn/?url=http://play.cec-tv.com.cn/channel/cec-tv2.m3u8
-http://play.cec-tv.com.cn/channel/cec-tv2.m3u8
-#EXTINF:-1 tvg-name="国际教育国际教育" tvg-logo="https://logo.sspai.dpdns.org/img/CEC国际教育.png" group-title="🗺️国际教育",国际教育·国际教育
-webview://http://m3u8.cec-tv.com.cn/?url=http://play.cec-tv.com.cn/channel/cec-tv3.m3u8
-http://play.cec-tv.com.cn/channel/cec-tv3.m3u8
-#EXTINF:-1 tvg-name="国际教育国际健康" tvg-logo="https://logo.sspai.dpdns.org/img/CEC国际健康.png" group-title="🗺️国际教育",国际教育·国际健康
-webview://http://m3u8.cec-tv.com.cn/?url=http://play.cec-tv.com.cn/channel/cec-tv4.m3u8
-http://play.cec-tv.com.cn/channel/cec-tv4.m3u8
-#EXTINF:-1 tvg-name="国际教育美食文化" tvg-logo="https://logo.sspai.dpdns.org/img/CEC美食文化.png" group-title="🗺️国际教育",国际教育·美食文化
-webview://https://web.guangdianyun.tv/tv/3782?uin=4251
-
 # 🐼熊猫频道
 #EXTINF:-1 tvg-name="iPanda" tvg-logo="https://logo.sspai.dpdns.org/img/iPanda.png" group-title="🐼熊猫频道",中国大熊猫保护研究中心·24小时直播 𝟙
 webview://https://live.ipanda.com/xmwl/index.shtml
@@ -266,7 +239,3 @@ webview://https://live.ipanda.com/xmcd/02/index.shtml
 webview://https://live.ipanda.com/zxwz/milu/index.shtml
 #EXTINF:-1 tvg-name="iPanda" tvg-logo="https://logo.sspai.dpdns.org/img/iPanda.png" group-title="🐼熊猫频道",云南白马雪山自然保护区
 webview://https://live.ipanda.com/zxwz/bmxs/index.shtml
-
-# ♻️Webview检测
-#EXTINF:-1 tvg-name="Webview检测" tvg-logo="https://logo.sspai.dpdns.org/img/Webview.png" group-title="♻️Webview检测",Webview检测
-webview://https://loong.ifanr.eu.cc/browser
