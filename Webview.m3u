@@ -1,5 +1,8 @@
 #EXTM3U x-tvg-url="https://itv.sspai.indevs.in/epg.xml.gz" catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}"
 
+#EXTINF:-1 tvg-id="重温经典" tvg-name="重温经典" tvg-logo="https://logo.sspai.dpdns.org/img/重温经典.png" group-title="🦧重温经典",重温经典²⁰²⁵
+http://8.138.7.223/tv/cwjd.php
+
 # 🎥央视网
 #EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://logo.sspai.dpdns.org/img/CCTV1.png" group-title="🎥央视网",CCTV-1 综合
 webview://https://tv.cctv.com/live/cctv1/
