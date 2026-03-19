@@ -7,9 +7,8 @@
   var _videoWidth = 0;
   var _videoHeight = 0;
   var _statusInterval = null;
-  var _isExecuting = false; // 逻辑锁：防止指令冲突
+  var _isExecuting = false; 
 
-  // --- 增加 2K 支持 ---
   var RESOLUTION_MAP = {
     "流畅": 360, "360": 360, "标清": 480, "480": 480,
     "高清": 540, "540": 540, "超清": 720, "720": 720,
@@ -44,7 +43,6 @@
                 }).filter(function(i) { return i.val > 0; });
 
                 if (items.length > 0) {
-                  // 优先选 1080P，没有则选最接近的高清（含 2K）
                   items.sort(function(a, b) { return Math.abs(a.val - 1080) - Math.abs(b.val - 1080); });
                   items[0].el.click();
                   _qualityLocked = true; 
@@ -53,11 +51,11 @@
                     _isExecuting = false;
                   }, 500); 
                 } else { _isExecuting = false; }
-              }, 200); // 压缩响应延迟
+              }, 200); 
             });
           }
           if (++retry > 15) { clearInterval(btnTimer); _isExecuting = false; }
-        }, 300); // 加快探测频率
+        }, 300); 
       }
     },
     'web.guangdianyun.tv': { init: function () { return this._waitForVideoMetadata(); } },
@@ -83,7 +81,7 @@
       if (config.beforeInit) { try { config.beforeInit(); } catch(e) {} }
 
       var self = this;
-      // --- 启动时间压缩 ---
+      // 修复：针对 X5 内核，首屏延迟介入确保内核 Context 初始化完成
       setTimeout(function() {
         self._waitForVideoElement().then(function (video) {
           _currentVideo = video;
@@ -97,23 +95,23 @@
 
     _applyUniversalFullfix: function () {
       var video = this._getVideoElement();
-      if (!video || video.offsetWidth < 50) return;
+      // 修复：增加对有效宽度的判断，防止 X5 在视频预加载阶段强制操作 DOM 导致卡住
+      if (!video || video.offsetWidth < 10) return;
       
-      // --- 双 WebView 状态保护：如果已经全屏锁定，不再重复操作 DOM ---
       if (video.getAttribute('data-v-fixed') === 'true' && video.offsetTop === 0) return;
 
       var p = video.parentElement;
       while (p && p !== document.body) {
+        // 修复：仅修改必要属性，移除 visibility 这种可能触发全量重绘的样式
         p.style.setProperty('transform', 'none', 'important');
         p.style.setProperty('overflow', 'visible', 'important');
-        p.style.setProperty('visibility', 'visible', 'important');
         p.style.setProperty('display', 'block', 'important');
         if (getComputedStyle(p).position !== 'static') p.style.setProperty('position', 'static', 'important');
         p = p.parentElement;
       }
       var styles = {
         'position': 'fixed', 'top': '0', 'left': '0', 'width': '100vw', 'height': '100vh',
-        'z-index': '2147483647', 'background': '#000', 'object-fit': 'contain', 'display': 'block', 'visibility': 'visible'
+        'z-index': '2147483647', 'background': '#000', 'object-fit': 'contain', 'display': 'block'
       };
       for (var key in styles) { video.style.setProperty(key, styles[key], 'important'); }
       video.setAttribute('data-v-fixed', 'true');
@@ -123,14 +121,10 @@
 
     _attachEventListeners: function (video) {
       var self = this;
-      var events = {
-        play: function () { _isPaused = false; self._invokeNative('triggerPlaying'); },
-        pause: function () { _isPaused = true; self._invokeNative('triggerPaused'); }
-      };
-      Object.keys(events).forEach(function (e) {
-        video.removeEventListener(e, events[e]);
-        video.addEventListener(e, events[e]);
-      });
+      // 修复：显式清理旧监听，防止多 Webview 切换时内存泄露导致卡死
+      video.onplay = null; video.onpause = null;
+      video.onplay = function () { _isPaused = false; self._invokeNative('triggerPlaying'); };
+      video.onpause = function () { _isPaused = true; self._invokeNative('triggerPaused'); };
     },
 
     _startStatusMonitoring: function (config) {
@@ -147,8 +141,11 @@
           if (config.init) config.init.call(self);
         }
 
+        // 修复：readyState 判断增强。X5 内核 readyState 为 1 时调用 play() 容易卡住
         if (!_isPaused && v.paused && v.readyState >= 2) {
-          v.play().catch(function(){ v.muted=true; v.play(); });
+          v.play().catch(function(){ 
+            if (!v.muted) { v.muted = true; v.play(); } 
+          });
         }
         self._applyUniversalFullfix();
 
@@ -165,8 +162,9 @@
       return new Promise(function (resolve) {
         var t = setInterval(function() {
           var v = self._getVideoElement();
-          if (v) { clearInterval(t); resolve(v); }
-        }, 150); // 加快探测频率
+          // 修复：确保 video 标签已挂载且没有被移除
+          if (v && v.isConnected !== false) { clearInterval(t); resolve(v); }
+        }, 150);
       });
     },
     _waitForElement: function (sel) {
@@ -190,7 +188,6 @@
     }
   };
 
-  // 极速启动
   if (document.readyState === 'complete') WebviewVideoPlayer.initialize(); 
   else window.addEventListener('load', function() { WebviewVideoPlayer.initialize(); });
 
