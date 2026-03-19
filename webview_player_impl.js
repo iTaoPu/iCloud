@@ -2,99 +2,88 @@
   'use strict';
 
   var _isInitialized = false;
+  var _currentVideo = null;     // 核心：用于判断视频是否切换了下一集
+  var _qualityLocked = false;   // 核心：画质锁定开关
   var _volume = 1.0;
   var _isPaused = false;
   var _videoWidth = 0;
   var _videoHeight = 0;
-  var _eventListeners = [];
   var _statusInterval = null;
 
-  // 1. 分辨率数值映射表（标准对齐逻辑）
   var RESOLUTION_MAP = {
-    "流畅": 360, "360": 360,
-    "标清": 480, "480": 480,
-    "高清": 540, "540": 540,
-    "超清": 720, "720": 720,
+    "流畅": 360, "360": 360, "标清": 480, "480": 480,
+    "高清": 540, "540": 540, "超清": 720, "720": 720,
     "1080P": 1080, "1080": 1080, "超高清": 1080, "蓝光": 1080,
-    "2K": 1440, "4K": 2160, "8K": 4320
+    "2K": 1440, "4K": 2160
   };
 
   var HOST_CONFIGS = {
+    // 1. CCTV: 靠 localStorage 预设，本身就不需要重复点击
     'tv.cctv.com': {
       beforeInit: function () {
-        var params = new URLSearchParams(window.location.search);
-        var res = params.get('resolution');
-        var val = RESOLUTION_MAP[res] || 1080; // 默认直跳 1080
-        localStorage.setItem('cctv_live_resolution', val);
-        _log('CCTV 预设画质锁定: ' + val);
+        localStorage.setItem('cctv_live_resolution', 1080);
       }
     },
 
+    // 2. 央视频: 精准单次点击逻辑
     'yangshipin.cn': {
       init: function () {
         var self = this;
-        _log('开始执行央视频画质强制锁定...');
+        // 如果已经锁定过画质，直接退出，不再运行后续逻辑
+        if (_qualityLocked) return;
 
-        // 1. 循环探测并点击画质按钮（处理按钮加载延迟）
-        var retryBtn = 0;
+        _log('检测到新视频，开始尝试锁定 1080P...');
+        var retry = 0;
         var btnTimer = setInterval(function() {
-          var qualityBtn = document.querySelector('.bei-player-control-quality-btn');
-          if (qualityBtn) {
-            qualityBtn.click();
-            _log('已唤醒画质菜单');
+          // 再次双重检查，防止异步冲突
+          if (_qualityLocked) { clearInterval(btnTimer); return; }
+
+          var btn = document.querySelector('.bei-player-control-quality-btn');
+          if (btn) {
+            btn.click(); // 唤醒菜单
             clearInterval(btnTimer);
-          }
-          if (++retryBtn > 10) clearInterval(btnTimer);
-        }, 400);
-
-        // 2. 等待菜单容器并识别选项
-        return self._waitForElement('.bei-list-inner')
-          .then(function () {
-            // 给菜单展开留出物理动画时间
-            return new Promise(function(r) { setTimeout(r, 300); });
-          })
-          .then(function () {
-            var spans = document.querySelectorAll('.bei-list-inner span');
-            var items = Array.prototype.map.call(spans, function(s) {
-              var text = s.innerText.trim();
-              var numMatch = text.match(/\d+/);
-              // 混合识别：优先查表，其次提取数字
-              var val = RESOLUTION_MAP[text] || (numMatch ? parseInt(numMatch[0]) : 0);
-              return { el: s, val: val, name: text };
-            }).filter(function(i) { return i.val > 0; });
-
-            if (items.length > 0) {
-              // 寻找最接近 1080 的档位
-              items.sort(function(a, b) { return Math.abs(a.val - 1080) - Math.abs(b.val - 1080); });
-              _log('央视频自动选中: ' + items[0].name);
-              items[0].el.click();
-
-              // 3. 点击视频中央收起菜单，保持全屏纯净
+            
+            self._waitForElement('.bei-list-inner').then(function() {
               setTimeout(function() {
-                var v = self._getVideoElement();
-                if (v) v.click(); 
-              }, 800);
+                var spans = document.querySelectorAll('.bei-list-inner span');
+                var items = Array.prototype.map.call(spans, function(s) {
+                  var text = s.innerText.trim();
+                  var num = text.match(/\d+/);
+                  return { el: s, val: RESOLUTION_MAP[text] || (num ? parseInt(num[0]) : 0) };
+                }).filter(function(i) { return i.val > 0; });
 
-              return self._waitForVideoMetadata();
-            }
-          });
+                if (items.length > 0) {
+                  items.sort(function(a, b) { return Math.abs(a.val - 1080) - Math.abs(b.val - 1080); });
+                  
+                  // --- 执行点击并立刻锁死 ---
+                  items[0].el.click();
+                  _qualityLocked = true; 
+                  _log('1080P 已选中，画质逻辑永久休眠，直到切换下一集');
+                  
+                  // 收起菜单
+                  setTimeout(function() { 
+                    var v = self._getVideoElement(); 
+                    if(v) v.click(); 
+                  }, 800);
+                }
+              }, 300);
+            });
+          }
+          if (++retry > 15) clearInterval(btnTimer);
+        }, 400);
       }
     },
 
-    'web.guangdianyun.tv': {
-      init: function () { return this._waitForVideoMetadata(); }
-    },
-
-    'live.ipanda.com': {
-      init: function () { this._applyUniversalFullfix(); }
-    },
-
+    'web.guangdianyun.tv': { init: function () { return this._waitForVideoMetadata(); } },
+    'live.ipanda.com': { init: function () { this._applyUniversalFullfix(); } },
     'm.1905.com': {
       init: function () {
-        // 屏蔽 1905 浮层及广告残留
-        var style = document.createElement('style');
-        style.textContent = '.player-mask, .ad-box, .app-download-guide, .header-app, .vjs-ads-label { display: none !important; }';
-        document.head.appendChild(style);
+        if (!document.getElementById('v-1905-fix')) {
+          var style = document.createElement('style');
+          style.id = 'v-1905-fix';
+          style.textContent = '.player-mask, .ad-box, .app-download-guide, .header-app { display: none !important; }';
+          document.head.appendChild(style);
+        }
         this._applyUniversalFullfix();
       }
     }
@@ -102,196 +91,133 @@
 
   var WebviewVideoPlayer = {
     initialize: function () {
-      if (_isInitialized) return Promise.resolve();
-      
       var host = location.hostname.replace('www.', '');
-      var config = HOST_CONFIGS[host];
-      if (!config) return Promise.resolve();
+      var config = HOST_CONFIGS[host] || { init: function() { this._applyUniversalFullfix(); } };
 
-      if (config.beforeInit) {
-        try { config.beforeInit(); } catch (e) { _log('beforeInit Error: ' + e.message); }
-      }
+      if (config.beforeInit) { try { config.beforeInit(); } catch(e) {} }
 
       var self = this;
-      return this._waitForVideoElement()
-        .then(function () {
-          if (config.init) return config.init.call(self);
-        })
-        .then(function () {
-          self._prepareDOMEnvironment();
-          self._applyUniversalFullfix();
-          self._attachEventListeners();
-          self._startStatusMonitoring();
-          _isInitialized = true;
-          _log('针对 ' + host + ' 初始化成功');
-        })
-        .catch(function (error) {
-          _log('初始化失败: ' + error.message);
-        });
+      return this._waitForVideoElement().then(function (video) {
+        _currentVideo = video;
+        if (config.init) config.init.call(self);
+        self._prepareDOMEnvironment();
+        self._applyUniversalFullfix();
+        self._attachEventListeners(video);
+        self._startStatusMonitoring(config);
+      });
     },
 
     _applyUniversalFullfix: function () {
       var video = this._getVideoElement();
       if (!video) return;
-
-      // 1. 递归破解父容器 CSS 限制（核心稳定性逻辑）
-      var parent = video.parentElement;
-      while (parent && parent !== document.body) {
-        parent.style.setProperty('transform', 'none', 'important');
-        parent.style.setProperty('overflow', 'visible', 'important');
-        parent.style.setProperty('filter', 'none', 'important');
-        parent.style.setProperty('perspective', 'none', 'important');
-        parent.style.setProperty('contain', 'none', 'important');
-        // 修正 position 导致的偏移
-        if (getComputedStyle(parent).position !== 'static') {
-          parent.style.setProperty('position', 'static', 'important');
-        }
-        parent = parent.parentElement;
+      var p = video.parentElement;
+      while (p && p !== document.body) {
+        p.style.setProperty('transform', 'none', 'important');
+        p.style.setProperty('overflow', 'visible', 'important');
+        if (getComputedStyle(p).position !== 'static') p.style.setProperty('position', 'static', 'important');
+        p = p.parentElement;
       }
-
-      // 2. 视频强制置顶全屏
       var styles = {
-        'position': 'fixed',
-        'top': '0',
-        'left': '0',
-        'width': '100vw',
-        'height': '100vh',
-        'z-index': '2147483647',
-        'background': '#000',
-        'object-fit': 'contain',
-        'display': 'block',
-        'visibility': 'visible'
+        'position': 'fixed', 'top': '0', 'left': '0',
+        'width': '100vw', 'height': '100vh', 'z-index': '2147483647',
+        'background': '#000', 'object-fit': 'contain', 'display': 'block'
       };
-      for (var key in styles) {
-        video.style.setProperty(key, styles[key], 'important');
-      }
-
+      for (var key in styles) { video.style.setProperty(key, styles[key], 'important'); }
       document.documentElement.style.overflow = 'hidden';
       document.body.style.overflow = 'hidden';
     },
 
-    _prepareDOMEnvironment: function () {
-      var meta = document.querySelector('meta[name="viewport"]') || document.createElement('meta');
-      meta.name = 'viewport';
-      meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
-      if (!meta.parentNode) document.head.appendChild(meta);
-
-      var styleId = 'webview-player-mask';
-      if (!document.getElementById(styleId)) {
-        var style = document.createElement('style');
-        style.id = styleId;
-        // 隐藏除视频、Canvas、报错信息以外的所有网页元素
-        style.textContent = 'body *:not(video):not(canvas):not([id*="error"]):not([class*="player"]) { visibility: hidden !important; pointer-events: none !important; }';
-        document.head.appendChild(style);
-      }
-    },
-
-    _getVideoElement: function () { return document.querySelector('video'); },
-
-    _waitForVideoElement: function (timeout) {
+    _attachEventListeners: function (video) {
       var self = this;
-      timeout = timeout || 30000;
-      var video = self._getVideoElement();
-      if (video) return Promise.resolve(video);
-
-      return new Promise(function (resolve) {
-        var observer = new MutationObserver(function () {
-          var v = self._getVideoElement();
-          if (v) { observer.disconnect(); resolve(v); }
-        });
-        observer.observe(document.body, { childList: true, subtree: true });
-        setTimeout(function() { observer.disconnect(); resolve(self._getVideoElement()); }, timeout);
-      });
-    },
-
-    _waitForElement: function (selector) {
-      return new Promise(function (resolve) {
-        var timer = setInterval(function () {
-          if (document.querySelector(selector)) { clearInterval(timer); resolve(); }
-        }, 400);
-      });
-    },
-
-    _waitForVideoMetadata: function () {
-      var video = this._getVideoElement();
-      if (!video || video.videoWidth > 0) return Promise.resolve();
-      return new Promise(function (resolve) {
-        video.addEventListener('loadedmetadata', function onLoaded() {
-          video.removeEventListener('loadedmetadata', onLoaded);
-          resolve();
-        });
-        setTimeout(resolve, 5000);
-      });
-    },
-
-    _attachEventListeners: function () {
-      var self = this;
-      var video = this._getVideoElement();
-      if (!video) return;
-
       var events = {
         play: function () { _isPaused = false; self._invokeNative('triggerPlaying'); },
         pause: function () { _isPaused = true; self._invokeNative('triggerPaused'); },
-        waiting: function () { self._invokeNative('triggerLoading'); },
-        error: function () { self._invokeNative('triggerError'); },
-        timeupdate: function () {
-          var pos = Math.floor(video.currentTime * 1000);
-          self._invokeNative('changePosition', pos, pos);
-        }
+        timeupdate: function () { self._invokeNative('changePosition', Math.floor(video.currentTime * 1000)); }
       };
-
       Object.keys(events).forEach(function (e) {
+        video.removeEventListener(e, events[e]);
         video.addEventListener(e, events[e]);
-        _eventListeners.push({ element: video, type: e, listener: events[e] });
       });
     },
 
-    _startStatusMonitoring: function () {
+    _startStatusMonitoring: function (config) {
       var self = this;
+      if (_statusInterval) clearInterval(_statusInterval);
       _statusInterval = setInterval(function () {
         var v = self._getVideoElement();
         if (!v) return;
-        
-        // 1. 自动播放与静音解除尝试
-        if (!_isPaused && v.paused && v.readyState >= 2) {
-          v.play().catch(function() {
-            // 某些 WebView 限制，若播放失败则静音尝试
-            v.muted = true; v.play();
-          });
-        }
-        
-        // 2. 音量与全屏布局锁定（对抗 1905 广告切正片）
-        if (v.volume !== _volume) v.volume = _volume;
-        self._applyUniversalFullfix();
 
-        // 3. 分辨率上报
+        // --- 核心：切换视频检测 ---
+        if (v !== _currentVideo) {
+          _log('视频源变更，重置画质锁定锁');
+          _currentVideo = v;
+          _qualityLocked = false; // 重置锁，给新视频一次自动切画质的机会
+          self._attachEventListeners(v);
+          if (config.init) config.init.call(self);
+        }
+
+        if (!_isPaused && v.paused && v.readyState >= 2) {
+          v.play().catch(function(){ v.muted=true; v.play(); });
+        }
+        self._applyUniversalFullfix();
+        
         if (v.videoWidth !== _videoWidth || v.videoHeight !== _videoHeight) {
-          _videoWidth = v.videoWidth;
-          _videoHeight = v.videoHeight;
+          _videoWidth = v.videoWidth; _videoHeight = v.videoHeight;
           self._invokeNative('changeResolution', _videoWidth, _videoHeight);
         }
       }, 1500);
     },
 
-    _invokeNative: function (method) {
+    _getVideoElement: function () { return document.querySelector('video'); },
+
+    _waitForVideoElement: function () {
+      var self = this;
+      return new Promise(function (resolve) {
+        var v = self._getVideoElement();
+        if (v) return resolve(v);
+        var obs = new MutationObserver(function () {
+          var v = self._getVideoElement(); if (v) { obs.disconnect(); resolve(v); }
+        });
+        obs.observe(document.body, { childList: true, subtree: true });
+        setTimeout(function() { obs.disconnect(); resolve(self._getVideoElement()); }, 10000);
+      });
+    },
+
+    _waitForElement: function (sel) {
+      return new Promise(function (res) {
+        var t = setInterval(function () { if (document.querySelector(sel)) { clearInterval(t); res(); } }, 400);
+      });
+    },
+
+    _waitForVideoMetadata: function () {
+      var v = this._getVideoElement();
+      if (!v || v.videoWidth > 0) return Promise.resolve();
+      return new Promise(function (res) {
+        v.addEventListener('loadedmetadata', function onM() { v.removeEventListener('loadedmetadata', onM); res(); });
+        setTimeout(res, 5000);
+      });
+    },
+
+    _prepareDOMEnvironment: function () {
+      if (document.getElementById('v-mask')) return;
+      var style = document.createElement('style');
+      style.id = 'v-mask';
+      style.textContent = 'body *:not(video):not(canvas):not([class*="player"]) { visibility: hidden !important; pointer-events: none !important; }';
+      document.head.appendChild(style);
+    },
+
+    _invokeNative: function (m) {
       var args = Array.prototype.slice.call(arguments, 1);
-      if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface[method]) {
-        window.WebviewVideoPlayerInterface[method].apply(window.WebviewVideoPlayerInterface, args);
+      if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface[m]) {
+        window.WebviewVideoPlayerInterface[m].apply(window.WebviewVideoPlayerInterface, args);
       }
     }
   };
 
-  function _log(m) {
-    if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface.logV) {
-      window.WebviewVideoPlayerInterface.logV('[JS_Player] ' + m);
-    }
-  }
+  function _log(m) { if (window.WebviewVideoPlayerInterface) window.WebviewVideoPlayerInterface.logV('[Player] ' + m); }
 
   global.WebviewVideoPlayer = WebviewVideoPlayer;
+  var start = function() { setTimeout(function(){ WebviewVideoPlayer.initialize(); }, 800); };
+  if (document.readyState === 'complete') start(); else window.addEventListener('load', start);
 
-  // 延时启动，确保 WebView 的桥接对象已经注入
-  var start = function() { setTimeout(function(){ WebviewVideoPlayer.initialize(); }, 400); };
-  if (document.readyState === 'complete') start();
-  else window.addEventListener('load', start);
-
-})(typeof window !== 'undefined' ? window : this);
+})(window);
