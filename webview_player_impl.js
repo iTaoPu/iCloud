@@ -7,11 +7,14 @@
   var _videoWidth = 0;
   var _videoHeight = 0;
   var _statusInterval = null;
+  var _isExecuting = false; 
 
+  // --- 增加 2K 映射 ---
   var RESOLUTION_MAP = {
     "流畅": 360, "360": 360, "标清": 480, "480": 480,
     "高清": 540, "540": 540, "超清": 720, "720": 720,
-    "1080P": 1080, "1080": 1080, "超高清": 1080, "蓝光": 1080, "4K": 2160
+    "1080P": 1080, "1080": 1080, "超高清": 1080, "蓝光": 1080,
+    "2K": 1440, "1440": 1440, "4K": 2160, "2160": 2160
   };
 
   var HOST_CONFIGS = {
@@ -21,10 +24,11 @@
     'yangshipin.cn': {
       init: function () {
         var self = this;
-        if (_qualityLocked) return;
+        if (_qualityLocked || _isExecuting) return;
+        _isExecuting = true;
+
         var retry = 0;
         var btnTimer = setInterval(function() {
-          if (_qualityLocked) { clearInterval(btnTimer); return; }
           var btn = document.querySelector('.bei-player-control-quality-btn');
           if (btn) {
             btn.click(); 
@@ -39,17 +43,20 @@
                 }).filter(function(i) { return i.val > 0; });
 
                 if (items.length > 0) {
+                  // --- 优化：优先选择 1080P，如果没有则选最接近 1080P 的高画质（如 2K） ---
                   items.sort(function(a, b) { return Math.abs(a.val - 1080) - Math.abs(b.val - 1080); });
                   items[0].el.click();
                   _qualityLocked = true; 
                   setTimeout(function() { 
-                    var v = self._getVideoElement(); if(v) v.click(); 
+                    var v = self._getVideoElement(); 
+                    if(v) v.click(); 
+                    _isExecuting = false; 
                   }, 500); 
-                }
+                } else { _isExecuting = false; }
               }, 300);
             });
           }
-          if (++retry > 15) clearInterval(btnTimer);
+          if (++retry > 15) { clearInterval(btnTimer); _isExecuting = false; }
         }, 400);
       }
     },
@@ -87,7 +94,11 @@
 
     _applyUniversalFullfix: function () {
       var video = this._getVideoElement();
-      if (!video) return;
+      if (!video || video.offsetWidth < 100) return;
+      
+      // 如果已经是全屏状态，跳过 DOM 操作，防止双源下引起卡顿
+      if (video.style.position === 'fixed' && video.style.height === '100vh') return;
+
       var p = video.parentElement;
       while (p && p !== document.body) {
         p.style.setProperty('transform', 'none', 'important');
@@ -110,8 +121,7 @@
       var self = this;
       var events = {
         play: function () { _isPaused = false; self._invokeNative('triggerPlaying'); },
-        pause: function () { _isPaused = true; self._invokeNative('triggerPaused'); },
-        timeupdate: function () { self._invokeNative('changePosition', Math.floor(video.currentTime * 1000)); }
+        pause: function () { _isPaused = true; self._invokeNative('triggerPaused'); }
       };
       Object.keys(events).forEach(function (e) {
         video.removeEventListener(e, events[e]);
@@ -122,54 +132,56 @@
     _startStatusMonitoring: function (config) {
       var self = this;
       if (_statusInterval) clearInterval(_statusInterval);
+      
       _statusInterval = setInterval(function () {
         var v = self._getVideoElement();
-        if (!v) return;
+        if (!v || _isExecuting) return;
 
         if (v !== _currentVideo) {
-          _currentVideo = v; _qualityLocked = false;
+          _currentVideo = v; 
+          _qualityLocked = false;
           self._attachEventListeners(v);
           if (config.init) config.init.call(self);
         }
 
         if (!_isPaused && v.paused && v.readyState >= 2) {
-          v.play().catch(function(){ v.muted=true; v.play(); });
+          v.play().catch(function(){
+             v.muted = true; 
+             v.play();
+          });
         }
-        self._applyUniversalFullfix();
 
+        self._applyUniversalFullfix();
+        
         if (v.videoWidth !== _videoWidth || v.videoHeight !== _videoHeight) {
           _videoWidth = v.videoWidth; _videoHeight = v.videoHeight;
           self._invokeNative('changeResolution', _videoWidth, _videoHeight);
         }
-      }, 1500);
+      }, 1500); 
     },
 
-    _getVideoElement: function () { return document.querySelector('video'); },
+    _getVideoElement: function () { 
+       var v = document.querySelector('video');
+       return v;
+    },
+
     _waitForVideoElement: function () {
       var self = this;
       return new Promise(function (resolve) {
-        var v = self._getVideoElement();
-        if (v) return resolve(v);
-        var obs = new MutationObserver(function () {
-          var v = self._getVideoElement(); if (v) { obs.disconnect(); resolve(v); }
-        });
-        obs.observe(document.body, { childList: true, subtree: true });
-        setTimeout(function() { obs.disconnect(); resolve(self._getVideoElement()); }, 10000);
+        var check = function() {
+          var v = self._getVideoElement();
+          if (v) resolve(v); else setTimeout(check, 500);
+        };
+        check();
       });
     },
+
     _waitForElement: function (sel) {
       return new Promise(function (res) {
         var t = setInterval(function () { if (document.querySelector(sel)) { clearInterval(t); res(); } }, 400);
       });
     },
-    _waitForVideoMetadata: function () {
-      var v = this._getVideoElement();
-      if (!v || v.videoWidth > 0) return Promise.resolve();
-      return new Promise(function (res) {
-        v.addEventListener('loadedmetadata', function onM() { v.removeEventListener('loadedmetadata', onM); res(); });
-        setTimeout(res, 5000);
-      });
-    },
+
     _invokeNative: function (m) {
       var args = Array.prototype.slice.call(arguments, 1);
       if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface[m]) {
