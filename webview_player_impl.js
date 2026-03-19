@@ -7,9 +7,7 @@
   var _videoWidth = 0;
   var _videoHeight = 0;
   var _statusInterval = null;
-  var _currentVideoElement = null;
 
-  // 使用您指定的分辨率映射
   var RESOLUTION_MAP = {
     "流畅": 360, "标清": 480, "高清": 540, "超清": 720,
     "1080P": 1080, "1080": 1080, "超高清": 1080, "蓝光": 1080,
@@ -19,7 +17,7 @@
   var WebviewVideoPlayer = {
     initialize: async function () {
       if (_isInitialized) return Promise.resolve();
-      _log('Starting Ultimate Video Fix (No-Move Mode)...');
+      _log('Executing Critical Render Repair...');
 
       var self = this;
       return this._waitForVideoElement()
@@ -29,7 +27,7 @@
           self._attachEventListeners();
           self._startStatusMonitoring();
           _isInitialized = true;
-          _log('Success: Video environment stabilized.');
+          _log('Success: Video forced to front.');
         })
         .catch(function (error) {
           _log('Fail: ' + error.message, 'error');
@@ -52,59 +50,62 @@
     _applyDeepRepair: function () {
       var video = this._getVideoElement();
       if (!video) return;
-      _currentVideoElement = video;
 
-      // 1. 基础环境锁定
-      [document.documentElement, document.body].forEach(el => {
-        el.style.setProperty('background', '#000', 'important');
-        el.style.setProperty('overflow', 'hidden', 'important');
-        el.style.setProperty('margin', '0', 'important');
-        el.style.setProperty('padding', '0', 'important');
-      });
-
-      // 2. 递归向上：解除所有父容器的限制（关键：不移动节点，防止 btzx 闪退）
-      var parent = video.parentElement;
-      while (parent && parent !== document.body) {
-        parent.style.setProperty('position', 'static', 'important');
-        parent.style.setProperty('overflow', 'visible', 'important');
-        parent.style.setProperty('display', 'block', 'important');
-        parent.style.setProperty('transform', 'none', 'important');
-        parent.style.setProperty('clip', 'auto', 'important');
-        parent.style.setProperty('filter', 'none', 'important');
-        parent.style.setProperty('perspective', 'none', 'important');
-        parent = parent.parentElement;
+      // 1. 净化全局环境
+      const styleTagId = 'webview-force-video-style';
+      if (!document.getElementById(styleTagId)) {
+        var style = document.createElement('style');
+        style.id = styleTagId;
+        style.innerHTML = `
+          html, body { background: #000 !important; overflow: hidden !important; width: 100% !important; height: 100% !important; margin: 0 !important; padding: 0 !important; }
+          video { pointer-events: auto !important; }
+          .webview-hidden-node { display: none !important; visibility: hidden !important; }
+        `;
+        document.head.appendChild(style);
       }
 
-      // 3. 强制视频全屏覆盖
+      // 2. 溯源清理：将视频的每一个父节点都强制转化为全屏容器
+      var curr = video;
+      var path = [];
+      while (curr && curr !== document.documentElement) {
+        path.push(curr);
+        if (curr !== video) {
+          curr.style.cssText = "all: unset !important; display: block !important; position: static !important; width: 100% !important; height: 100% !important; margin: 0 !important; padding: 0 !important; overflow: visible !important;";
+        }
+        curr = curr.parentElement;
+      }
+
+      // 3. 锁定视频样式（最强优先级）
       var s = video.style;
       var props = {
         'position': 'fixed', 'top': '0', 'left': '0', 'width': '100vw', 'height': '100vh',
         'z-index': '2147483647', 'background-color': '#000', 'object-fit': 'contain',
         'display': 'block', 'visibility': 'visible', 'opacity': '1', 'transform': 'none',
-        'clip-path': 'none', 'mask': 'none', 'filter': 'none', 'margin': '0'
+        'clip': 'auto', 'clip-path': 'none', 'filter': 'none'
       };
       for (var p in props) s.setProperty(p, props[p], 'important');
 
-      // 4. 隐藏干扰元素（仅保留视频及其父级链路）
-      this._hideStrangers(video);
+      // 4. 物理隐藏所有非视频链路的同级节点
+      this._isolateVideoPath(path);
 
-      // 5. 安全触发播放（兼容 fjtv.net）
+      // 5. 解决 fjtv.net 的 play() 返回值问题
       if (!video.paused) {
         try {
           var p = video.play();
-          if (p !== undefined && typeof p.catch === 'function') p.catch(function(){});
+          if (p && typeof p.catch === 'function') p.catch(() => {});
         } catch(e) {}
       }
     },
 
-    _hideStrangers: function(video) {
-      var path = [];
-      var curr = video;
-      while (curr) { path.push(curr); curr = curr.parentElement; }
-
-      Array.from(document.body.children).forEach(el => {
-        if (!path.includes(el) && el.tagName !== 'SCRIPT' && el.tagName !== 'STYLE') {
-          el.style.setProperty('display', 'none', 'important');
+    _isolateVideoPath: function(path) {
+      // 遍历所有父节点，隐藏它们的非路径子节点
+      path.forEach(node => {
+        if (node.parentElement) {
+          Array.from(node.parentElement.children).forEach(sibling => {
+            if (!path.includes(sibling) && sibling.tagName !== 'SCRIPT' && sibling.tagName !== 'STYLE') {
+              sibling.classList.add('webview-hidden-node');
+            }
+          });
         }
       });
     },
@@ -115,8 +116,8 @@
         var v = self._getVideoElement();
         if (!v) return;
 
-        // 持续监控：如果样式被原站 JS 还原，则再次修复
-        if (v.style.position !== 'fixed' || v.style.visibility === 'hidden') {
+        // 检测样式是否被第三方 JS 还原（特别是 btzx 这种动态插入广告或蒙层的）
+        if (v.style.position !== 'fixed' || v.offsetWidth === 0) {
           self._applyDeepRepair();
         }
 
@@ -126,7 +127,7 @@
         if (!_isPaused && v.paused && v.readyState >= 2) {
           try {
             var p = v.play();
-            if (p !== undefined && typeof p.catch === 'function') p.catch(function(){});
+            if (p && typeof p.catch === 'function') p.catch(() => {});
           } catch(e) {}
         }
 
@@ -134,7 +135,7 @@
           _videoWidth = v.videoWidth; _videoHeight = v.videoHeight;
           window.WebviewVideoPlayerInterface?.changeResolution?.(_videoWidth, _videoHeight);
         }
-      }, 500);
+      }, 600);
     },
 
     _prepareDOMEnvironment: function () {
@@ -148,12 +149,12 @@
       return new Promise((resolve, reject) => {
         var v = this._getVideoElement();
         if (v) return resolve(v);
-        var timer = setTimeout(() => { obs.disconnect(); reject(new Error('Timeout')); }, timeout || 20000);
         var obs = new MutationObserver(() => {
           var v2 = this._getVideoElement();
-          if (v2) { clearTimeout(timer); obs.disconnect(); resolve(v2); }
+          if (v2) { obs.disconnect(); resolve(v2); }
         });
         obs.observe(document.documentElement, { childList: true, subtree: true });
+        setTimeout(() => { obs.disconnect(); reject(new Error('Wait Timeout')); }, timeout || 15000);
       });
     },
 
