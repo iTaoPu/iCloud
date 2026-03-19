@@ -126,29 +126,30 @@
     'www.btzx.com.cn': {
       init: function () {
         var self = this;
-        // 注入全局强力样式，解除父级溢出限制
-        var style = document.createElement('style');
-        style.id = 'btzx-fix-style';
-        style.textContent = `
-          html, body { overflow: hidden !important; width: 100% !important; height: 100% !important; }
-          video.btzx-fullscreen {
-            position: fixed !important;
-            top: 0 !important; left: 0 !important;
-            width: 100vw !important; height: 100vh !important;
-            z-index: 2147483647 !important;
-            background: #000 !important;
-            object-fit: contain !important;
-          }
-        `;
-        if (!document.getElementById('btzx-fix-style')) document.head.appendChild(style);
+        // 1. 注入针对该站点的全局强力样式，提高优先级并防止干扰
+        var styleId = 'btzx-core-fix';
+        if (!document.getElementById(styleId)) {
+          var style = document.createElement('style');
+          style.id = styleId;
+          style.textContent = `
+            .btzx-force-fullscreen {
+              position: fixed !important;
+              top: 0 !important; left: 0 !important;
+              width: 100vw !important; height: 100vh !important;
+              z-index: 2147483647 !important;
+              background: #000 !important;
+              object-fit: contain !important;
+            }
+            .btzx-no-scroll { overflow: hidden !important; }
+          `;
+          document.head.appendChild(style);
+        }
 
-        var applyBtzxStyles = function() {
+        var applyBtzxFix = function() {
           var video = self._getVideoElement();
           if (!video) return;
-          
-          video.classList.add('btzx-fullscreen');
-          
-          // 向上递归清除所有容器的限制
+
+          // 2. 核心：向上递归清除所有父容器的布局限制（transform/overflow/position）
           var parent = video.parentElement;
           while (parent && parent !== document.body) {
             parent.style.setProperty('overflow', 'visible', 'important');
@@ -156,13 +157,19 @@
             parent.style.setProperty('transform', 'none', 'important');
             parent.style.setProperty('filter', 'none', 'important');
             parent.style.setProperty('perspective', 'none', 'important');
+            parent.style.setProperty('contain', 'none', 'important');
             parent = parent.parentElement;
           }
+
+          // 3. 应用强制全屏类名
+          video.classList.add('btzx-force-fullscreen');
+          document.documentElement.classList.add('btzx-no-scroll');
+          document.body.classList.add('btzx-no-scroll');
         };
 
-        applyBtzxStyles();
-        // 增加定时检查，防止动态加载的样式覆盖
-        setInterval(applyBtzxStyles, 1000);
+        // 首次执行并设置定时巡检，应对该站点的动态 DOM 刷新
+        applyBtzxFix();
+        setInterval(applyBtzxFix, 2000);
       }
     },
 
@@ -278,14 +285,13 @@
       viewportMeta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
       document.body.style.margin = '0';
       document.body.style.overflow = 'hidden';
-      const stylesheets = document.querySelectorAll('link[rel="stylesheet"], style:not(#btzx-fix-style)');
+      const stylesheets = document.querySelectorAll('link[rel="stylesheet"], style:not(#btzx-core-fix)');
       stylesheets.forEach(sheet => sheet.remove());
     },
 
     _enterFullscreen: function () {
       var video = this._getVideoElement();
-      if (!video) return;
-      // 默认全屏逻辑，如果有特定 HOST_CONFIGS 则会根据 init 覆盖样式
+      if (!video || video.classList.contains('btzx-force-fullscreen')) return;
       video.style.position = 'fixed';
       video.style.top = '-1px'; video.style.left = '-1px';
       video.style.right = '-1px'; video.style.bottom = '-1px';
@@ -343,7 +349,7 @@
         if (!v) return;
         if (v.volume !== _volume) { v.volume = _volume; }
         if (!_isPaused && v.paused && v.readyState >= 2) { v.play().catch(function (err) { _log('Autoplay failed: ' + err.message, 'warn'); }); }
-        if (v.style.position !== 'fixed' && !v.classList.contains('btzx-fullscreen')) { self._enterFullscreen(); }
+        if (v.style.position !== 'fixed' && !v.classList.contains('btzx-force-fullscreen')) { self._enterFullscreen(); }
         if (v.videoWidth !== _videoWidth || v.videoHeight !== _videoHeight) { self._updateResolution(v.videoWidth, v.videoHeight); }
       }, 1000);
     },
