@@ -14,20 +14,10 @@
     'tv.cctv.com': {
       beforeInit: function () {
         var resolutionValues = {
-          "流畅": 360,
-          "标清": 480,
-          "高清": 540,
-          "超清": 720,
-          "1080P": 1080,
-          "1080": 1080,
-          "超高清": 1080,
-          "蓝光": 1080,
-          "2K": 1440,
-          "1440": 1440,
-          "4K": 2160,
-          "2160": 2160,
-          "8K": 4320
-        };
+            "流畅": 360, "标清": 480, "高清": 540, "超清": 720,
+            "1080P": 1080, "1080": 1080, "超高清": 1080, "蓝光": 1080,
+            "2K": 1440, "1440": 1440, "4K": 2160, "2160": 2160, "8K": 4320
+      };
 
         var resolution = new URLSearchParams(window.location.search).get('resolution');
         localStorage.setItem('cctv_live_resolution', resolutionValues[resolution] || 'auto');
@@ -187,17 +177,14 @@
       }
     },
 
-    // 站点：www.btzx.com.cn 解决全屏样式被覆盖问题（温和版）
     'www.btzx.com.cn': {
       init: function () {
         var self = this;
         var video = self._getVideoElement();
         if (!video) return;
 
-        // 应用全屏样式（使用 contain 确保画面完整可见）
         self._applyFullscreenStyles(video);
 
-        // 监听 DOM 变化，若视频元素被替换则重新应用
         var observer = new MutationObserver(function(mutations) {
           mutations.forEach(function(mut) {
             if (mut.type === 'childList') {
@@ -211,7 +198,6 @@
         });
         observer.observe(document.body, { childList: true, subtree: true });
 
-        // 每隔 2 秒检查样式是否被覆盖，若被覆盖则重新应用
         setInterval(function() {
           var v = self._getVideoElement();
           if (v && v.style.position !== 'fixed') {
@@ -231,7 +217,7 @@
         video.style.setProperty('height', '100%', 'important');
         video.style.setProperty('z-index', '9999', 'important');
         video.style.setProperty('background-color', 'black', 'important');
-        video.style.setProperty('object-fit', 'contain', 'important'); // 改为 contain，确保全部可见
+        video.style.setProperty('object-fit', 'contain', 'important');
         video.style.setProperty('box-sizing', 'border-box', 'important');
         video.style.setProperty('pointer-events', 'auto', 'important');
         video.style.setProperty('margin', '0', 'important');
@@ -240,18 +226,14 @@
       }
     },
 
-    // 站点：web.ningxiahuangheyun.com 解决有画面无声音问题
     'web.ningxiahuangheyun.com': {
       init: function () {
         var self = this;
         return self._waitForVideoElement().then(function (video) {
-          // 强制取消静音
           video.muted = false;
-          // 尝试自动播放（可能会被浏览器阻止，但至少取消了静音）
           video.play().catch(function (err) {
             _log('取消静音后自动播放失败: ' + err.message, 'warn');
           });
-          // 添加一次性点击事件，当用户点击页面时再次尝试恢复声音
           document.addEventListener('click', function onClick() {
             if (video.paused) {
               video.muted = false;
