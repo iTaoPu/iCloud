@@ -46,12 +46,12 @@
         var endAt = params.get('etime');
         if (startAt && endAt && startAt.length === 14 && endAt.length === 14) {
           var startDate = new Date(
-            parseInt(startAt.slice(0, 4)),     // year
-            parseInt(startAt.slice(4, 6)) - 1, // month
-            parseInt(startAt.slice(6, 8)),     // day
-            parseInt(startAt.slice(8, 10)),    // hour
-            parseInt(startAt.slice(10, 12)),   // minute
-            parseInt(startAt.slice(12, 14))    // second
+            parseInt(startAt.slice(0, 4)),
+            parseInt(startAt.slice(4, 6)) - 1,
+            parseInt(startAt.slice(6, 8)),
+            parseInt(startAt.slice(8, 10)),
+            parseInt(startAt.slice(10, 12)),
+            parseInt(startAt.slice(12, 14))
           );
           var endDate = new Date(
             parseInt(endAt.slice(0, 4)),
@@ -187,35 +187,60 @@
       }
     },
 
-    // 新增站点：www.btzx.com.cn 解决全屏样式被覆盖问题
+    // 站点：www.btzx.com.cn 解决全屏样式被覆盖问题（温和版）
     'www.btzx.com.cn': {
       init: function () {
         var self = this;
-        // 每500ms强制应用全屏样式（使用!important确保优先级）
-        setInterval(function () {
-          var video = self._getVideoElement();
-          if (video) {
-            video.style.setProperty('position', 'fixed', 'important');
-            video.style.setProperty('top', '-1px', 'important');
-            video.style.setProperty('left', '-1px', 'important');
-            video.style.setProperty('right', '-1px', 'important');
-            video.style.setProperty('bottom', '-1px', 'important');
-            video.style.setProperty('width', 'calc(100vw + 2px)', 'important');
-            video.style.setProperty('height', 'calc(100vh + 2px)', 'important');
-            video.style.setProperty('z-index', '9999', 'important');
-            video.style.setProperty('background-color', 'black', 'important');
-            video.style.setProperty('object-fit', 'cover', 'important');
-            video.style.setProperty('box-sizing', 'border-box', 'important');
-            video.style.setProperty('pointer-events', 'auto', 'important');
-            video.style.setProperty('margin', '0', 'important');
-            video.style.setProperty('padding', '0', 'important');
-            video.style.setProperty('border', 'none', 'important');
+        var video = self._getVideoElement();
+        if (!video) return;
+
+        // 应用全屏样式（使用 contain 确保画面完整可见）
+        self._applyFullscreenStyles(video);
+
+        // 监听 DOM 变化，若视频元素被替换则重新应用
+        var observer = new MutationObserver(function(mutations) {
+          mutations.forEach(function(mut) {
+            if (mut.type === 'childList') {
+              var newVideo = self._getVideoElement();
+              if (newVideo && newVideo !== video) {
+                video = newVideo;
+                self._applyFullscreenStyles(video);
+              }
+            }
+          });
+        });
+        observer.observe(document.body, { childList: true, subtree: true });
+
+        // 每隔 2 秒检查样式是否被覆盖，若被覆盖则重新应用
+        setInterval(function() {
+          var v = self._getVideoElement();
+          if (v && v.style.position !== 'fixed') {
+            self._applyFullscreenStyles(v);
           }
-        }, 500);
+        }, 2000);
+      },
+
+      _applyFullscreenStyles: function(video) {
+        if (!video) return;
+        video.style.setProperty('position', 'fixed', 'important');
+        video.style.setProperty('top', '0', 'important');
+        video.style.setProperty('left', '0', 'important');
+        video.style.setProperty('right', '0', 'important');
+        video.style.setProperty('bottom', '0', 'important');
+        video.style.setProperty('width', '100%', 'important');
+        video.style.setProperty('height', '100%', 'important');
+        video.style.setProperty('z-index', '9999', 'important');
+        video.style.setProperty('background-color', 'black', 'important');
+        video.style.setProperty('object-fit', 'contain', 'important'); // 改为 contain，确保全部可见
+        video.style.setProperty('box-sizing', 'border-box', 'important');
+        video.style.setProperty('pointer-events', 'auto', 'important');
+        video.style.setProperty('margin', '0', 'important');
+        video.style.setProperty('padding', '0', 'important');
+        video.style.setProperty('border', 'none', 'important');
       }
     },
 
-    // 新增站点：web.ningxiahuangheyun.com 解决有画面无声音问题
+    // 站点：web.ningxiahuangheyun.com 解决有画面无声音问题
     'web.ningxiahuangheyun.com': {
       init: function () {
         var self = this;
@@ -426,8 +451,8 @@
       document.body.style.margin = '0';
       document.body.style.overflow = 'hidden';
 
-      const stylesheets = document.querySelectorAll('link[rel="stylesheet"], style')
-      stylesheets.forEach(sheet => sheet.remove())
+      const stylesheets = document.querySelectorAll('link[rel="stylesheet"], style');
+      stylesheets.forEach(sheet => sheet.remove());
     },
 
     _enterFullscreen: function () {
