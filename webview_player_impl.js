@@ -2,153 +2,255 @@
   'use strict';
 
   var _isInitialized = false;
-  var _isPaused = false;
   var _volume = 1.0;
+  var _isPaused = false;
+  var _videoWidth = 0;
+  var _videoHeight = 0;
+  var _eventListeners = [];
+  var _statusInterval = null;
 
+  // 1. 扩展分辨率映射表 (最低 1080P 逻辑基础)
   var RESOLUTION_MAP = {
-    "流畅": 360, "360": 360, "标清": 480, "480": 480, "高清": 540, "540": 540,
-    "超清": 720, "720": 720, "1080P": 1080, "1080": 1080, "超高清": 1080, "蓝光": 1080
+    "流畅": 360, "360": 360,
+    "标清": 480, "480": 480,
+    "高清": 540, "540": 540,
+    "超清": 720, "720": 720,
+    "1080P": 1080, "1080": 1080, "超高清": 1080, "蓝光": 1080,
+    "2K": 1440, "1440": 1440,
+    "4K": 2160, "2160": 2160,
+    "8K": 4320, "4320": 4320
   };
 
-  var WebviewVideoPlayer = {
-    // 1. 核心启动：全屏修复与业务逻辑并行
-    initialize: function () {
-      if (_isInitialized) return;
-      var host = location.hostname.replace('www.', '');
-      
-      // A. 立即开始高频全屏监控（解决 1905 延迟问题）
-      this._startInstantFullfix();
-
-      // B. 异步处理各站点的特有逻辑（如画质切换）
-      this._handleSiteSpecifics(host);
-
-      this._attachBaseEvents();
-      _isInitialized = true;
-      console.log('[Player] 核心引擎已启动');
-    },
-
-    // 2. 暴力全屏：不等待任何条件，只要有 video 就强修
-    _startInstantFullfix: function () {
-      var self = this;
-      var fix = function () {
-        var video = document.querySelector('video');
-        if (!video) return;
-
-        // 针对 1905：如果视频不在 body 下，直接“抢”出来
-        if (location.host.indexOf('1905.com') !== -1 && video.parentElement !== document.body) {
-          document.body.appendChild(video);
-        }
-
-        // 递归解除父级限制
-        var p = video.parentElement;
-        while (p && p !== document.body) {
-          p.style.setProperty('transform', 'none', 'important');
-          p.style.setProperty('overflow', 'visible', 'important');
-          p.style.setProperty('filter', 'none', 'important');
-          p = p.parentElement;
-        }
-
-        // 强制视频全屏样式
-        var s = video.style;
-        s.setProperty('position', 'fixed', 'important');
-        s.setProperty('top', '0', 'important');
-        s.setProperty('left', '0', 'important');
-        s.setProperty('width', '100vw', 'important');
-        s.setProperty('height', '100vh', 'important');
-        s.setProperty('z-index', '2147483647', 'important');
-        s.setProperty('object-fit', 'contain', 'important');
-        s.setProperty('background', '#000', 'important');
-        
-        document.body.style.setProperty('overflow', 'hidden', 'important');
-      };
-
-      // 前 10 秒每 300ms 检查一次（瞬时响应），之后每 1.5 秒检查一次（稳定）
-      var count = 0;
-      var timer = setInterval(function () {
-        fix();
-        if (++count > 30) {
-          clearInterval(timer);
-          setInterval(fix, 1500);
-        }
-      }, 300);
-    },
-
-    // 3. 站点业务逻辑（画质切换等）
-    _handleSiteSpecifics: function (host) {
-      var self = this;
-      if (host === 'tv.cctv.com') {
-        localStorage.setItem('cctv_live_resolution', 1080);
-      } 
-      else if (host === 'yangshipin.cn') {
-        this._waitFor('.bei-player-control-quality-btn', function(btn) {
-          btn.click();
-          self._waitFor('.bei-list-inner span', function() {
-            self._pickBest(document.querySelectorAll('.bei-list-inner span'));
-          });
-        });
-      } 
-      else if (host === 'm.1905.com') {
-        this._waitFor('.vjs-menu-button', function(btn) {
-          btn.click();
-          self._waitFor('.vjs-menu-item', function() {
-            self._pickBest(document.querySelectorAll('.vjs-menu-item'));
-          });
-        });
+  var HOST_CONFIGS = {
+    'tv.cctv.com': {
+      beforeInit: function () {
+        var params = new URLSearchParams(window.location.search);
+        var res = params.get('resolution');
+        var val = RESOLUTION_MAP[res] || 1080; // 默认 1080
+        localStorage.setItem('cctv_live_resolution', val);
+        _log('CCTV 预设画质: ' + val);
       }
     },
 
-    _pickBest: function (elements) {
-      var options = Array.prototype.map.call(elements, function(el) {
-        var text = el.innerText.trim();
-        var val = RESOLUTION_MAP[text] || parseInt(text.match(/\d+/) || 0);
-        return { el: el, val: val };
-      }).filter(function(i) { return i.val > 0; });
+    'yangshipin.cn': {
+      init: function () {
+        var self = this;
+        return self._waitForElement('.bei-list-inner')
+          .then(function () {
+            var spans = document.querySelectorAll('.bei-list-inner span');
+            var items = Array.prototype.map.call(spans, function(s) {
+              return { el: s, val: RESOLUTION_MAP[s.innerText.trim()] || 0 };
+            }).filter(function(i) { return i.val > 0; });
 
-      if (options.length > 0) {
-        options.sort(function(a, b) { return Math.abs(a.val - 1080) - Math.abs(b.val - 1080); });
-        options[0].el.click();
-        // 切换完关掉菜单
-        setTimeout(function() { var v = document.querySelector('video'); if(v) v.click(); }, 500);
+            if (items.length > 0) {
+              // 寻找最接近 1080 的档位
+              items.sort(function(a, b) { return Math.abs(a.val - 1080) - Math.abs(b.val - 1080); });
+              _log('央视频自动选择画质: ' + items[0].el.innerText);
+              items[0].el.click();
+              return self._waitForVideoMetadata();
+            }
+          });
       }
     },
 
-    _waitFor: function (sel, cb) {
-      var t = setInterval(function() {
-        var el = document.querySelector(sel);
-        if (el) { clearInterval(t); cb(el); }
-      }, 500);
-      setTimeout(function() { clearInterval(t); }, 10000);
+    'web.guangdianyun.tv': {
+      init: function () { return this._waitForVideoMetadata(); }
     },
 
-    _attachBaseEvents: function () {
-      var self = this;
-      window.addEventListener('timeupdate', function(e) {
-        if (e.target.tagName === 'VIDEO') {
-          var v = e.target;
-          var pos = Math.floor(v.currentTime * 1000);
-          self._invoke('changePosition', pos, pos);
-          // 顺便锁定音量和播放状态
-          if (v.volume !== _volume) v.volume = _volume;
-          if (!_isPaused && v.paused && v.readyState >= 2) v.play().catch(function(){});
-        }
-      }, true);
+    'live.ipanda.com': {
+      init: function () { this._applyUniversalFullfix(); }
     },
 
-    _invoke: function (m) {
-      var args = Array.prototype.slice.call(arguments, 1);
-      if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface[m]) {
-        window.WebviewVideoPlayerInterface[m].apply(window.WebviewVideoPlayerInterface, args);
+    'm.1905.com': {
+      init: function () {
+        // 1905 屏蔽掉浮动遮罩和下载引导
+        var style = document.createElement('style');
+        style.textContent = '.player-mask, .ad-box, .app-download-guide, .header-app { display: none !important; }';
+        document.head.appendChild(style);
+        this._applyUniversalFullfix();
       }
     }
   };
 
-  // 注入全屏遮罩样式（立即执行）
-  var style = document.createElement('style');
-  style.textContent = 'body *:not(video) { visibility: hidden !important; pointer-events: none !important; } video { visibility: visible !important; pointer-events: auto !important; }';
-  document.head.appendChild(style);
+  var WebviewVideoPlayer = {
+    initialize: function () {
+      if (_isInitialized) return Promise.resolve();
+      
+      var host = location.hostname.replace('www.', '');
+      var config = HOST_CONFIGS[host];
+      if (!config) return Promise.resolve(); // 不在 5 个指定域名内则不执行
 
-  // 启动
-  if (document.readyState === 'complete') WebviewVideoPlayer.initialize();
-  else window.addEventListener('load', function() { WebviewVideoPlayer.initialize(); });
+      if (config.beforeInit) {
+        try { config.beforeInit(); } catch (e) { _log('beforeInit Error: ' + e.message); }
+      }
+
+      var self = this;
+      return this._waitForVideoElement()
+        .then(function () {
+          if (config.init) return config.init.call(self);
+        })
+        .then(function () {
+          self._prepareDOMEnvironment();
+          self._applyUniversalFullfix();
+          self._attachEventListeners();
+          self._startStatusMonitoring();
+          _isInitialized = true;
+          _log('播放器针对 ' + host + ' 初始化完成');
+        })
+        .catch(function (error) {
+          _log('初始化失败: ' + error.message, 'error');
+        });
+    },
+
+    _applyUniversalFullfix: function () {
+      var video = this._getVideoElement();
+      if (!video) return;
+
+      // 1. 递归解除所有父容器的 CSS 限制 (解决 1905/iPanda 全屏死穴)
+      var parent = video.parentElement;
+      while (parent && parent !== document.body) {
+        parent.style.setProperty('transform', 'none', 'important');
+        parent.style.setProperty('overflow', 'visible', 'important');
+        parent.style.setProperty('filter', 'none', 'important');
+        parent.style.setProperty('perspective', 'none', 'important');
+        parent.style.setProperty('contain', 'none', 'important');
+        if (getComputedStyle(parent).position !== 'static') {
+          parent.style.setProperty('position', 'static', 'important');
+        }
+        parent = parent.parentElement;
+      }
+
+      // 2. 锁定视频样式
+      video.style.setProperty('position', 'fixed', 'important');
+      video.style.setProperty('top', '0', 'important');
+      video.style.setProperty('left', '0', 'important');
+      video.style.setProperty('width', '100vw', 'important');
+      video.style.setProperty('height', '100vh', 'important');
+      video.style.setProperty('z-index', '2147483647', 'important');
+      video.style.setProperty('background', '#000', 'important');
+      video.style.setProperty('object-fit', 'contain', 'important');
+      video.style.setProperty('visibility', 'visible', 'important');
+
+      document.documentElement.style.overflow = 'hidden';
+      document.body.style.overflow = 'hidden';
+    },
+
+    _prepareDOMEnvironment: function () {
+      var meta = document.querySelector('meta[name="viewport"]') || document.createElement('meta');
+      meta.name = 'viewport';
+      meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
+      if (!meta.parentNode) document.head.appendChild(meta);
+
+      // 隐藏视频以外的所有 UI (Visibility 方案)
+      var styleId = 'webview-player-mask';
+      if (!document.getElementById(styleId)) {
+        var style = document.createElement('style');
+        style.id = styleId;
+        style.textContent = 'body *:not(video):not(canvas):not([id="webview-video-error"]) { visibility: hidden !important; pointer-events: none !important; }';
+        document.head.appendChild(style);
+      }
+    },
+
+    _getVideoElement: function () { return document.querySelector('video'); },
+
+    _waitForVideoElement: function (timeout) {
+      var self = this;
+      timeout = timeout || 30000;
+      var video = self._getVideoElement();
+      if (video) return Promise.resolve(video);
+
+      return new Promise(function (resolve) {
+        var observer = new MutationObserver(function () {
+          var v = self._getVideoElement();
+          if (v) { observer.disconnect(); resolve(v); }
+        });
+        observer.observe(document.body, { childList: true, subtree: true });
+        setTimeout(function() { observer.disconnect(); resolve(self._getVideoElement()); }, timeout);
+      });
+    },
+
+    _waitForElement: function (selector) {
+      return new Promise(function (resolve) {
+        var timer = setInterval(function () {
+          if (document.querySelector(selector)) { clearInterval(timer); resolve(); }
+        }, 500);
+      });
+    },
+
+    _waitForVideoMetadata: function () {
+      var video = this._getVideoElement();
+      if (!video) return Promise.resolve();
+      if (video.videoWidth > 0) return Promise.resolve();
+      return new Promise(function (resolve) {
+        video.addEventListener('loadedmetadata', function onLoaded() {
+          video.removeEventListener('loadedmetadata', onLoaded);
+          resolve();
+        });
+        setTimeout(resolve, 5000);
+      });
+    },
+
+    _attachEventListeners: function () {
+      var self = this;
+      var video = this._getVideoElement();
+      if (!video) return;
+
+      var events = {
+        play: function () { _isPaused = false; self._invokeNative('triggerPlaying'); },
+        pause: function () { _isPaused = true; self._invokeNative('triggerPaused'); },
+        waiting: function () { self._invokeNative('triggerLoading'); },
+        error: function () { self._invokeNative('triggerError'); },
+        timeupdate: function () {
+          var pos = Math.floor(video.currentTime * 1000);
+          self._invokeNative('changePosition', pos, pos); // 直播模式 dur = pos
+        }
+      };
+
+      Object.keys(events).forEach(function (e) {
+        video.addEventListener(e, events[e]);
+        _eventListeners.push({ element: video, type: e, listener: events[e] });
+      });
+    },
+
+    _startStatusMonitoring: function () {
+      var self = this;
+      _statusInterval = setInterval(function () {
+        var v = self._getVideoElement();
+        if (!v) return;
+        
+        if (v.volume !== _volume) v.volume = _volume;
+        if (!_isPaused && v.paused && v.readyState >= 2) v.play().catch(function(){});
+        
+        // 持续全屏修正
+        self._applyUniversalFullfix();
+
+        if (v.videoWidth !== _videoWidth || v.videoHeight !== _videoHeight) {
+          _videoWidth = v.videoWidth;
+          _videoHeight = v.videoHeight;
+          self._invokeNative('changeResolution', _videoWidth, _videoHeight);
+        }
+      }, 1500);
+    },
+
+    _invokeNative: function (method) {
+      var args = Array.prototype.slice.call(arguments, 1);
+      if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface[method]) {
+        window.WebviewVideoPlayerInterface[method].apply(window.WebviewVideoPlayerInterface, args);
+      }
+    }
+  };
+
+  function _log(m, lv) {
+    if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface.logV) {
+      window.WebviewVideoPlayerInterface.logV('[VideoPlayer] ' + m);
+    }
+    console[lv || 'info']('[VideoPlayer] ' + m);
+  }
+
+  global.WebviewVideoPlayer = WebviewVideoPlayer;
+
+  var start = function() { setTimeout(function(){ WebviewVideoPlayer.initialize(); }, 800); };
+  if (document.readyState === 'complete') start();
+  else window.addEventListener('load', start);
 
 })(typeof window !== 'undefined' ? window : this);
