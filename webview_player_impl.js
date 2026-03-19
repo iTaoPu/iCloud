@@ -13,28 +13,34 @@
   var HOST_CONFIGS = {
     'tv.cctv.com': {
       beforeInit: function () {
-        // 扩展分辨率映射，增加 1080P 和 4K 支持
+        // 【修复点】扩展分辨率映射，增加 1080P 和 4K 支持
         var resolutionValues = {
-          "4K": "4k",
-          "1080": "1080",
-          "超清": 720,
-          "高清": 540,
+          "流畅": 360,
           "标清": 480,
-          "流畅": 360
+          "高清": 540, // 部分旧接口可能用 540 代表高清
+          "超清": 720,
+          "超高清": 1080, // 新增
+          "1080P": 1080,  // 新增
+          "1080": 1080,   // 新增
+          "4K": 2160     // 新增
         };
 
-        var params = new URLSearchParams(window.location.search);
-        var resParam = params.get('resolution');
-        if (resParam) {
-          var targetRes = resolutionValues[resParam] || 'auto';
-          localStorage.setItem('cctv_live_resolution', targetRes);
-          _log('已设置CCTV分辨率缓存: ' + targetRes);
+        var resolution = new URLSearchParams(window.location.search).get('resolution');
+        if (resolution) {
+          // 支持直接传入数字，也支持传入中文名称
+          var targetVal = resolutionValues[resolution] || parseInt(resolution);
+          if (!isNaN(targetVal)) {
+            localStorage.setItem('cctv_live_resolution', targetVal.toString());
+            _log('Set CCTV resolution to: ' + targetVal);
+          } else {
+            localStorage.setItem('cctv_live_resolution', 'auto');
+          }
         }
       },
 
       init: function () {
         var errorMsgEl = document.getElementById('error_msg_player');
-        if (errorMsgEl && errorMsgEl.offsetHeight > 0) {
+        if (errorMsgEl) {
           throw new Error(errorMsgEl.textContent);
         }
       },
@@ -44,11 +50,23 @@
         var startAt = params.get('stime');
         var endAt = params.get('etime');
         if (startAt && endAt && startAt.length === 14 && endAt.length === 14) {
-          var parse = function(s) {
-            return new Date(s.slice(0, 4), parseInt(s.slice(4, 6)) - 1, s.slice(6, 8), s.slice(8, 10), s.slice(10, 12), s.slice(12, 14));
-          };
-          // 返回毫秒级时长
-          return Math.floor(parse(endAt).getTime() - parse(startAt).getTime());
+          var startDate = new Date(
+            parseInt(startAt.slice(0, 4)),
+            parseInt(startAt.slice(4, 6)) - 1,
+            parseInt(startAt.slice(6, 8)),
+            parseInt(startAt.slice(8, 10)),
+            parseInt(startAt.slice(10, 12)),
+            parseInt(startAt.slice(12, 14))
+          );
+          var endDate = new Date(
+            parseInt(endAt.slice(0, 4)),
+            parseInt(endAt.slice(4, 6)) - 1,
+            parseInt(endAt.slice(6, 8)),
+            parseInt(endAt.slice(8, 10)),
+            parseInt(endAt.slice(10, 12)),
+            parseInt(endAt.slice(12, 14))
+          );
+          return Math.floor((endDate - startDate) / 1000 * 1000);
         }
         return 0;
       },
@@ -57,28 +75,52 @@
     'yangshipin.cn': {
       init: function () {
         var self = this;
-        var params = new URLSearchParams(window.location.search);
-        // 默认尝试 1080P
-        var resolution = params.get('resolution') || "1080";
+        var resolution = new URLSearchParams(window.location.search).get('resolution');
+        if (!resolution) return self._waitForVideoMetadata();
 
-        return self._waitForElement('.bei-list-inner, .bright-text')
+        return self._waitForElement('.bei-list-inner, .bright-text, .quality-list, .definition-btn')
           .then(function () {
-            var spans = document.querySelectorAll('.bei-list-inner span');
-            // 模糊匹配包含 resolution 字符的选项（如 "蓝光1080P", "1080P"）
-            var resolutionItem = Array.prototype.find.call(spans, function (span) {
-              var text = span.innerText || "";
-              return text.indexOf(resolution) !== -1;
+            // 【修复点】扩大搜索范围，查找包含 4K, 2160, 1080 等关键词的元素
+            var selectors = [
+              '.bei-list-inner span', 
+              '.quality-list li', 
+              '.definition-btn', 
+              '[class*="quality"]', 
+              '[class*="resolution"]'
+            ];
+            
+            var allCandidates = [];
+            selectors.forEach(function(sel) {
+              var els = document.querySelectorAll(sel);
+              els.forEach(function(el) { allCandidates.push(el); });
+            });
+
+            var resolutionItem = Array.from(allCandidates).find(function (span) {
+              if (!span.innerText) return false;
+              var text = span.innerText.trim();
+              // 模糊匹配：支持 "4K", "超高清", "1080", "2160" 等
+              if (resolution === '4K' || resolution === '2160' || resolution === '2160P') {
+                return text.includes('4K') || text.includes('2160') || text.includes('超高清');
+              }
+              if (resolution === '1080' || resolution === '1080P') {
+                return text.includes('1080') || text.includes('超清');
+              }
+              // 原有逻辑
+              return text.includes(resolution);
             });
 
             if (resolutionItem) {
-              _log('找到分辨率选项: ' + resolutionItem.innerText);
+              _log('Clicking resolution item: ' + resolutionItem.innerText);
               resolutionItem.click();
+              return self._waitForVideoMetadata();
+            } else {
+              _log('Resolution item not found for: ' + resolution, 'warn');
               return self._waitForVideoMetadata();
             }
           })
           .then(function () {
             var errorMsgEl = document.querySelector('.bright-text');
-            if (errorMsgEl && errorMsgEl.innerText.trim() !== "") {
+            if (errorMsgEl) {
               throw new Error(errorMsgEl.textContent);
             }
           });
@@ -89,10 +131,14 @@
       init: function () {
         var channel = (new URLSearchParams(window.location.search)).get('channel');
         var lis = document.querySelectorAll('.btnStream > li');
-        var item = Array.prototype.find.call(lis, function (li) {
-          return li.innerText && li.innerText.indexOf(channel) !== -1;
-        });
-        if (item) item.click();
+        var channelItem = Array.from(lis)
+          .find(function (li) {
+            return li.innerText && li.innerText.includes(channel);
+          });
+
+        if (channelItem) {
+          channelItem.click();
+        }
       }
     },
 
@@ -100,50 +146,106 @@
       init: function () {
         var self = this;
         var channel = (new URLSearchParams(window.location.search)).get('channel');
+
         return self._waitForElement('#programMain')
           .then(function () {
-            var slides = document.querySelectorAll('#programMain .swiper-slide');
-            var item = Array.prototype.find.call(slides, function (s) {
-              return s.innerText && s.innerText.indexOf(channel) !== -1;
+            var slides = document.querySelector('#programMain').querySelectorAll('.swiper-slide');
+            var channelItem = Array.from(slides).find(function (slide) {
+              return slide.innerText && slide.innerText.includes(channel);
             });
-            if (item) {
-              var btn = item.querySelector('.imgBox');
-              if (btn) btn.click();
+
+            if (channelItem) {
+              var imgBox = channelItem.querySelector('.imgBox');
+              if (imgBox) imgBox.click();
             }
           });
       }
     },
 
+    'www.nbs.cn': {
+      init: function () {
+        var channel = (new URLSearchParams(window.location.search)).get('channel');
+        var items = document.querySelectorAll('.tv_list > .tv_c');
+        var channelItem = Array.from(items).find(function (item) {
+          return item.innerText && item.innerText.includes(channel);
+        });
+
+        if (channelItem) {
+          channelItem.click();
+        }
+      }
+    },
+
+    'www.brtn.cn': {
+      init: function () {
+        var channel = (new URLSearchParams(window.location.search)).get('channel');
+        var lis = document.querySelectorAll('.right_list li');
+        var channelItem = Array.from(lis).find(function (li) {
+          return li.innerText && li.innerText.includes(channel);
+        });
+
+        if (channelItem) {
+          channelItem.click();
+        }
+      }
+    },
+
+    'www.btime.com': {
+      init: function () {
+        var channel = (new URLSearchParams(window.location.search)).get('channel');
+        var lis = document.querySelectorAll('.right_list li');
+        var channelItem = Array.from(lis).find(function (li) {
+          return li.innerText && li.innerText.includes(channel);
+        });
+
+        if (channelItem) {
+          channelItem.click();
+        }
+      }
+    },
+
+    'web.guangdianyun.tv': {
+      init: function () {
+        return this._waitForVideoMetadata();
+      }
+    },
+
     'www.cditv.cn': {
       init: function () {
-        // 持续修正成都台的容器偏移
-        var fixTimer = setInterval(function () {
+        setInterval(function () {
           var video = document.querySelector('video');
-          if (video && video.parentElement) {
+          if (video) {
             video.parentElement.style.transform = 'none';
           }
         }, 1000);
-        _eventListeners.push({ element: window, type: 'unload', listener: function() { clearInterval(fixTimer); } });
       }
-    }
+    },
   };
 
   var WebviewVideoPlayer = {
-    initialize: function () {
-      if (_isInitialized) return Promise.resolve();
+    initialize: async function () {
+      if (_isInitialized) {
+        _log('Video player already initialized, skipping duplicate call', 'warn');
+        return Promise.resolve();
+      }
+
+      _log('Starting video player initialization...');
+
+      var beforeInit = HOST_CONFIGS[location.host] && HOST_CONFIGS[location.host].beforeInit;
+      if (beforeInit) {
+        try {
+          beforeInit();
+        } catch (e) {
+          _log('Pre-initialization failed: ' + e.message, 'error');
+        }
+      }
 
       var self = this;
-      var config = HOST_CONFIGS[location.host];
-
-      if (config && config.beforeInit) {
-        try { config.beforeInit(); } catch (e) { _log('Pre-init error: ' + e.message, 'error'); }
-      }
 
       return this._waitForVideoElement()
         .then(function () {
-          if (config && config.init) {
-            return config.init.call(self);
-          }
+          var init = HOST_CONFIGS[location.host] && HOST_CONFIGS[location.host].init;
+          if (init) { return init.call(self); }
         })
         .then(function () {
           return self._waitForVideoElement();
@@ -154,12 +256,61 @@
           self._attachEventListeners();
           self._startStatusMonitoring();
           _isInitialized = true;
-          _log('播放器脚本初始化成功');
+          _log('Video player initialized successfully');
         })
-        .catch(function (err) {
-          _log('初始化失败: ' + err.message, 'error');
-          self._showErrorUI(err.message);
+        .catch(function (error) {
+          _log('Initialization failed: ' + error.message, 'error');
+          self._showErrorUI(error.message);
+          throw error;
         });
+    },
+
+    destroy: function () {
+      _log('Cleaning up resources...');
+
+      _eventListeners.forEach(function (item) {
+        item.element.removeEventListener(item.type, item.listener);
+      });
+      _eventListeners = [];
+
+      if (_mutationObserver) {
+        _mutationObserver.disconnect();
+        _mutationObserver = null;
+      }
+
+      if (_statusInterval) {
+        clearInterval(_statusInterval);
+        _statusInterval = null;
+      }
+
+      _isInitialized = false;
+    },
+
+    play: function () {
+      _isPaused = false;
+      var video = this._getVideoElement();
+      if (video) video.play();
+    },
+
+    pause: function () {
+      _isPaused = true;
+      var video = this._getVideoElement();
+      if (video) video.pause();
+    },
+
+    stop: function () {
+      this.pause();
+    },
+
+    setVolume: function (volume) {
+      _volume = Math.max(0, Math.min(1, volume));
+      var video = this._getVideoElement();
+      if (video) video.volume = _volume;
+    },
+
+    getVolume: function () {
+      var video = this._getVideoElement();
+      return video ? video.volume : 1.0;
     },
 
     _getVideoElement: function () {
@@ -167,178 +318,326 @@
     },
 
     _waitForVideoElement: function (timeout) {
-      var self = this;
-      timeout = timeout || 30000;
-      var video = self._getVideoElement();
+      timeout = timeout || 60000;
+      var video = this._getVideoElement();
       if (video) return Promise.resolve(video);
 
       return new Promise(function (resolve, reject) {
         var timer = setTimeout(function () {
           observer.disconnect();
-          reject(new Error('等待视频元素超时'));
+          reject(new Error('等待 video 元素超时'));
         }, timeout);
 
         var observer = new MutationObserver(function () {
-          var v = self._getVideoElement();
+          var v = document.querySelector('video');
           if (v) {
             clearTimeout(timer);
             observer.disconnect();
             resolve(v);
           }
         });
-        observer.observe(document.body, { childList: true, subtree: true });
+
+        observer.observe(document.body, {
+          childList: true,
+          subtree: true
+        });
       });
     },
 
     _waitForVideoMetadata: function (timeout) {
-      var self = this;
-      timeout = timeout || 20000;
-      var video = self._getVideoElement();
-      if (!video) return Promise.reject(new Error('未找到video'));
+      timeout = timeout || 60000;
+      var video = this._getVideoElement();
+      if (!video) return Promise.reject(new Error('video 元素不存在'));
       if (video.videoWidth > 0) return Promise.resolve();
 
-      return new Promise(function (resolve) {
+      return new Promise(function (resolve, reject) {
         var timer = setTimeout(function () {
-          video.removeEventListener('loadedmetadata', onLoaded);
-          resolve(); // 超时后也尝试继续，避免死等
+          cleanup();
+          reject(new Error('等待 video 元数据超时'));
         }, timeout);
-        function onLoaded() {
+
+        var cleanup = function () {
           clearTimeout(timer);
           video.removeEventListener('loadedmetadata', onLoaded);
+        };
+
+        var onLoaded = function () {
+          cleanup();
           resolve();
-        }
+        };
+
         video.addEventListener('loadedmetadata', onLoaded);
       });
     },
 
     _waitForElement: function (selector, timeout) {
-      timeout = timeout || 20000;
-      var el = document.querySelector(selector);
-      if (el) return Promise.resolve(el);
+      timeout = timeout || 60000;
+      var element = document.querySelector(selector);
+      if (element) return Promise.resolve(element);
 
       return new Promise(function (resolve, reject) {
         var timer = setTimeout(function () {
           observer.disconnect();
-          reject(new Error('等待元素超时: ' + selector));
+          reject(new Error('等待元素超时：' + selector));
         }, timeout);
+
         var observer = new MutationObserver(function () {
-          var target = document.querySelector(selector);
-          if (target) {
+          var el = document.querySelector(selector);
+          if (el) {
             clearTimeout(timer);
             observer.disconnect();
-            resolve(target);
+            resolve(el);
           }
         });
-        observer.observe(document.body, { childList: true, subtree: true });
+
+        observer.observe(document.body, {
+          childList: true,
+          subtree: true
+        });
       });
     },
 
     _prepareDOMEnvironment: function () {
-      // 优化：不删除所有样式，改用 CSS 覆盖保证视频最顶层显示
-      var style = document.createElement('style');
-      style.textContent = `
-        body, html { overflow: hidden !important; margin: 0 !important; padding: 0 !important; background: #000 !important; }
-        video { z-index: 999999 !important; visibility: visible !important; display: block !important; }
-        /* 隐藏可能遮挡视频的其他浮层（慎重使用，可根据需要调整） */
-        #error_msg_player, .bright-text { visibility: visible !important; } 
-      `;
-      document.head.appendChild(style);
+      var viewportMeta = document.querySelector('meta[name="viewport"]');
+      if (!viewportMeta) {
+        viewportMeta = document.createElement('meta');
+        viewportMeta.name = 'viewport';
+        document.head.appendChild(viewportMeta);
+      }
+      viewportMeta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
 
-      var meta = document.querySelector('meta[name="viewport"]') || document.createElement('meta');
-      meta.name = 'viewport';
-      meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
-      if (!meta.parentNode) document.head.appendChild(meta);
+      document.body.style.margin = '0';
+      document.body.style.overflow = 'hidden';
+
+      const stylesheets = document.querySelectorAll('link[rel="stylesheet"], style')
+      stylesheets.forEach(sheet => sheet.remove())
     },
 
     _enterFullscreen: function () {
       var video = this._getVideoElement();
       if (!video) return;
-      var s = video.style;
-      s.position = 'fixed';
-      s.top = '0'; s.left = '0';
-      s.width = '100vw'; s.height = '100vh';
-      s.objectFit = 'contain'; // 1080P下保持比例，防止拉伸
-      s.zIndex = '999999';
-      s.backgroundColor = '#000';
+
+      video.style.position = 'fixed';
+      video.style.top = '-1px';
+      video.style.left = '-1px';
+      video.style.right = '-1px';
+      video.style.bottom = '-1px';
+      video.style.width = 'calc(100vw + 2px)';
+      video.style.height = 'calc(100vh + 2px)';
+      video.style.zIndex = '9999';
+      video.style.backgroundColor = 'black';
+      video.style.objectFit = 'cover';
+      video.style.boxSizing = 'border-box';
+      video.style.pointerEvents = 'auto';
+      video.style.margin = '0';
+      video.style.padding = '0';
+      video.style.border = 'none';
+
+      _log('Entered fullscreen mode');
     },
 
     _attachEventListeners: function () {
-      var self = this;
       var video = this._getVideoElement();
       if (!video) return;
 
       var handlers = {
-        play: function () { _isPaused = false; self._toNative('triggerPlaying'); },
-        pause: function () { _isPaused = true; self._toNative('triggerPaused'); },
-        waiting: function () { self._toNative('triggerLoading'); },
-        error: function () { self._toNative('triggerError'); },
+        play: function () {
+          _isPaused = false;
+          if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface.triggerPlaying) {
+            window.WebviewVideoPlayerInterface.triggerPlaying();
+          }
+        },
+        pause: function () {
+          _isPaused = true;
+          if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface.triggerPaused) {
+            window.WebviewVideoPlayerInterface.triggerPaused();
+          }
+        },
+        waiting: function () {
+          if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface.triggerLoading) {
+            window.WebviewVideoPlayerInterface.triggerLoading();
+          }
+        },
+        ended: function () {
+          if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface.triggerEnded) {
+            window.WebviewVideoPlayerInterface.triggerEnded();
+          }
+        },
+        error: function (event) {
+          _log('Video error', 'error');
+          if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface.triggerError) {
+            window.WebviewVideoPlayerInterface.triggerError();
+          }
+        },
+        loadedmetadata: function () {
+          if (video.videoWidth && video.videoHeight) {
+            _videoWidth = video.videoWidth;
+            _videoHeight = video.videoHeight;
+            if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface.changeResolution) {
+              window.WebviewVideoPlayerInterface.changeResolution(_videoWidth, _videoHeight);
+            }
+          }
+        },
         timeupdate: function () {
-          var pos = Math.floor(video.currentTime * 1000);
-          var config = HOST_CONFIGS[location.host];
-          var dur = (config && config.getDuration) ? config.getDuration() : Math.floor(video.duration * 1000);
-          self._toNative('changePosition', pos, Math.max(pos, dur || 0));
+          if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface.changePosition) {
+            var position = Math.floor(video.currentTime * 1000);
+            var duration = HOST_CONFIGS[location.host] && HOST_CONFIGS[location.host].getDuration && HOST_CONFIGS[location.host].getDuration();
+            if (!duration || duration <= 0 || position > duration) {
+              duration = position;
+            }
+            window.WebviewVideoPlayerInterface.changePosition(position, duration);
+          }
         }
       };
 
-      Object.keys(handlers).forEach(function (e) {
-        video.addEventListener(e, handlers[e]);
-        _eventListeners.push({ element: video, type: e, listener: handlers[e] });
+      Object.keys(handlers).forEach(function (event) {
+        video.addEventListener(event, handlers[event]);
+        _eventListeners.push({
+          element: video,
+          type: event,
+          listener: handlers[event]
+        });
       });
+
+      _log('Event listeners have been attached');
     },
 
     _startStatusMonitoring: function () {
       var self = this;
+      var video = this._getVideoElement();
+      if (!video) return;
+
+      var metadataHandler = function () {
+        if (video.videoWidth && video.videoHeight) {
+          self._updateResolution(video.videoWidth, video.videoHeight);
+        }
+      };
+      video.addEventListener('loadedmetadata', metadataHandler);
+      _eventListeners.push({
+        element: video,
+        type: 'loadedmetadata',
+        listener: metadataHandler
+      });
+
+      var srcHandler = function () {
+        if (video.videoWidth && video.videoHeight) {
+          self._updateResolution(video.videoWidth, video.videoHeight);
+        }
+      };
+      video.addEventListener('loadstart', srcHandler);
+      _eventListeners.push({
+        element: video,
+        type: 'loadstart',
+        listener: srcHandler
+      });
+
+      _mutationObserver = new MutationObserver(function () {
+        if (video.videoWidth && video.videoHeight) {
+          if (video.videoWidth !== _videoWidth || video.videoHeight !== _videoHeight) {
+            _videoWidth = video.videoWidth;
+            _videoHeight = video.videoHeight;
+            if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface.changeResolution) {
+              window.WebviewVideoPlayerInterface.changeResolution(_videoWidth, _videoHeight);
+            }
+          }
+        }
+      });
+
+      _mutationObserver.observe(video, {
+        attributes: true,
+        attributeFilter: ['src', 'videoWidth', 'videoHeight']
+      });
+
       _statusInterval = setInterval(function () {
         var v = self._getVideoElement();
         if (!v) return;
 
-        // 强制音量同步
-        if (v.volume !== _volume) v.volume = _volume;
+        if (v.volume !== _volume) {
+          v.volume = _volume;
+        }
 
-        // 自动播放维护
         if (!_isPaused && v.paused && v.readyState >= 2) {
-          v.play().catch(function(){});
+          v.play().catch(function (err) {
+            _log('Autoplay failed: ' + err.message, 'warn');
+          });
         }
 
-        // 强制全屏状态
-        if (v.style.position !== 'fixed') self._enterFullscreen();
+        if (v.style.position !== 'fixed') {
+          self._enterFullscreen();
+        }
 
-        // 实时分辨率反馈
         if (v.videoWidth !== _videoWidth || v.videoHeight !== _videoHeight) {
-          _videoWidth = v.videoWidth;
-          _videoHeight = v.videoHeight;
-          self._toNative('changeResolution', _videoWidth, _videoHeight);
+          self._updateResolution(v.videoWidth, v.videoHeight);
         }
-      }, 1500);
+      }, 1000);
     },
 
-    _toNative: function (method) {
-      var args = Array.prototype.slice.call(arguments, 1);
-      if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface[method]) {
-        window.WebviewVideoPlayerInterface[method].apply(window.WebviewVideoPlayerInterface, args);
+    _updateResolution: function (width, height) {
+      if (width === _videoWidth && height === _videoHeight) return;
+
+      _videoWidth = width;
+      _videoHeight = height;
+
+      if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface.changeResolution) {
+        window.WebviewVideoPlayerInterface.changeResolution(_videoWidth, _videoHeight);
       }
+      _log('Resolution updated: ' + _videoWidth + 'x' + _videoHeight);
     },
 
-    _showErrorUI: function (msg) {
-      var div = document.createElement('div');
-      div.style = 'position:fixed;top:0;left:0;width:100%;height:100%;background:#000;color:#fff;display:flex;align-items:center;justify-content:center;z-index:9999999;font-size:14px;padding:20px;';
-      div.textContent = '播放失败: ' + msg;
-      document.body.appendChild(div);
+    _showErrorUI: function (message) {
+      var errorDiv = document.getElementById('webview-video-error');
+      if (!errorDiv) {
+        errorDiv = document.createElement('div');
+        errorDiv.id = 'webview-video-error';
+        errorDiv.style.position = 'fixed';
+        errorDiv.style.top = '-1px';
+        errorDiv.style.left = '-1px';
+        errorDiv.style.right = '-1px';
+        errorDiv.style.bottom = '-1px';
+        errorDiv.style.width = 'calc(100vw + 2px)';
+        errorDiv.style.height = 'calc(100vh + 2px)';
+        errorDiv.style.zIndex = '100000';
+        errorDiv.style.margin = '0';
+        errorDiv.style.padding = '0';
+        errorDiv.style.border = 'none';
+        errorDiv.style.backgroundColor = 'black';
+        errorDiv.style.color = 'white';
+        errorDiv.style.fontSize = '3vw';
+        errorDiv.style.textAlign = 'center';
+        errorDiv.style.display = 'flex';
+        errorDiv.style.justifyContent = 'center';
+        errorDiv.style.alignItems = 'center';
+        errorDiv.style.fontFamily = 'system-ui, sans-serif';
+        document.body.appendChild(errorDiv);
+      }
+
+      errorDiv.textContent = message;
     }
   };
 
-  function _log(m, lv) {
-    var out = '[Player] ' + m;
+  function _log(message, level) {
+    level = level || 'info';
     if (window.WebviewVideoPlayerInterface && window.WebviewVideoPlayerInterface.logV) {
-      window.WebviewVideoPlayerInterface.logV(out);
+      window.WebviewVideoPlayerInterface.logV('[WebviewVideoPlayer] ' + message);
     }
-    console[lv || 'info'](out);
+    if (console && console[level]) {
+      console[level](message);
+    }
   }
 
-  global.WebviewVideoPlayer = WebviewVideoPlayer;
+  if (!global.WebviewVideoPlayer) {
+    global.WebviewVideoPlayer = WebviewVideoPlayer;
+  }
 
-  var run = function() { setTimeout(function(){ WebviewVideoPlayer.initialize(); }, 600); };
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', run);
-  else run();
-
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function () {
+      setTimeout(function () {
+        global.WebviewVideoPlayer.initialize();
+      }, 500);
+    });
+  } else {
+    setTimeout(function () {
+      global.WebviewVideoPlayer.initialize();
+    }, 500);
+  }
 })(typeof window !== 'undefined' ? window : this);
