@@ -7,16 +7,19 @@
   var _videoWidth = 0;
   var _videoHeight = 0;
   var _statusInterval = null;
+  var _currentVideoElement = null;
 
+  // 使用您指定的分辨率映射
   var RESOLUTION_MAP = {
     "流畅": 360, "标清": 480, "高清": 540, "超清": 720,
-    "1080P": 1080, "1080": 1080, "超高清": 1080, "蓝光": 1080
+    "1080P": 1080, "1080": 1080, "超高清": 1080, "蓝光": 1080,
+    "2K": 1440, "1440": 1440, "4K": 2160, "2160": 2160, "8K": 4320
   };
 
   var WebviewVideoPlayer = {
     initialize: async function () {
       if (_isInitialized) return Promise.resolve();
-      _log('Starting Deep Repair Mode...');
+      _log('Starting Ultimate Video Fix (No-Move Mode)...');
 
       var self = this;
       return this._waitForVideoElement()
@@ -26,7 +29,7 @@
           self._attachEventListeners();
           self._startStatusMonitoring();
           _isInitialized = true;
-          _log('Success: Environment stabilized.');
+          _log('Success: Video environment stabilized.');
         })
         .catch(function (error) {
           _log('Fail: ' + error.message, 'error');
@@ -49,15 +52,17 @@
     _applyDeepRepair: function () {
       var video = this._getVideoElement();
       if (!video) return;
+      _currentVideoElement = video;
 
-      // 1. 锁定 HTML/BODY 基础环境
+      // 1. 基础环境锁定
       [document.documentElement, document.body].forEach(el => {
         el.style.setProperty('background', '#000', 'important');
         el.style.setProperty('overflow', 'hidden', 'important');
         el.style.setProperty('margin', '0', 'important');
+        el.style.setProperty('padding', '0', 'important');
       });
 
-      // 2. 递归向上：破除所有父容器的裁剪和偏移（解决闪退核心）
+      // 2. 递归向上：解除所有父容器的限制（关键：不移动节点，防止 btzx 闪退）
       var parent = video.parentElement;
       while (parent && parent !== document.body) {
         parent.style.setProperty('position', 'static', 'important');
@@ -65,43 +70,40 @@
         parent.style.setProperty('display', 'block', 'important');
         parent.style.setProperty('transform', 'none', 'important');
         parent.style.setProperty('clip', 'auto', 'important');
-        parent.style.setProperty('z-index', 'auto', 'important');
+        parent.style.setProperty('filter', 'none', 'important');
+        parent.style.setProperty('perspective', 'none', 'important');
         parent = parent.parentElement;
       }
 
-      // 3. 锁定视频样式：强制全屏且最顶层
+      // 3. 强制视频全屏覆盖
       var s = video.style;
       var props = {
         'position': 'fixed', 'top': '0', 'left': '0', 'width': '100vw', 'height': '100vh',
         'z-index': '2147483647', 'background-color': '#000', 'object-fit': 'contain',
         'display': 'block', 'visibility': 'visible', 'opacity': '1', 'transform': 'none',
-        'filter': 'none', 'transition': 'none', 'margin': '0'
+        'clip-path': 'none', 'mask': 'none', 'filter': 'none', 'margin': '0'
       };
       for (var p in props) s.setProperty(p, props[p], 'important');
 
-      // 4. 隐藏干扰元素：隐藏 body 下非视频所在链路的其它节点
-      // 这里的逻辑是：只保留包含 video 的链路，其它的全部隐藏
-      this._hideNonEssential(video);
-      
-      // 5. 解决 fjtv.net 的 play() 报错
+      // 4. 隐藏干扰元素（仅保留视频及其父级链路）
+      this._hideStrangers(video);
+
+      // 5. 安全触发播放（兼容 fjtv.net）
       if (!video.paused) {
         try {
           var p = video.play();
-          if (p && typeof p.catch === 'function') p.catch(function(){});
+          if (p !== undefined && typeof p.catch === 'function') p.catch(function(){});
         } catch(e) {}
       }
     },
 
-    _hideNonEssential: function(video) {
-      var nodesToKeep = [];
+    _hideStrangers: function(video) {
+      var path = [];
       var curr = video;
-      while (curr) {
-        nodesToKeep.push(curr);
-        curr = curr.parentElement;
-      }
+      while (curr) { path.push(curr); curr = curr.parentElement; }
 
       Array.from(document.body.children).forEach(el => {
-        if (!nodesToKeep.includes(el) && el.tagName !== 'SCRIPT' && el.tagName !== 'STYLE') {
+        if (!path.includes(el) && el.tagName !== 'SCRIPT' && el.tagName !== 'STYLE') {
           el.style.setProperty('display', 'none', 'important');
         }
       });
@@ -113,24 +115,21 @@
         var v = self._getVideoElement();
         if (!v) return;
 
-        // 持续监控样式。如果 position 不是 fixed，说明被原站脚本还原了
+        // 持续监控：如果样式被原站 JS 还原，则再次修复
         if (v.style.position !== 'fixed' || v.style.visibility === 'hidden') {
           self._applyDeepRepair();
         }
 
-        // 强行解除静音
         if (v.muted) v.muted = false;
         if (v.volume !== _volume) v.volume = _volume;
 
-        // 自动播放保活
         if (!_isPaused && v.paused && v.readyState >= 2) {
           try {
             var p = v.play();
-            if (p && typeof p.catch === 'function') p.catch(function(){});
+            if (p !== undefined && typeof p.catch === 'function') p.catch(function(){});
           } catch(e) {}
         }
 
-        // 分辨率回调
         if (v.videoWidth !== _videoWidth || v.videoHeight !== _videoHeight) {
           _videoWidth = v.videoWidth; _videoHeight = v.videoHeight;
           window.WebviewVideoPlayerInterface?.changeResolution?.(_videoWidth, _videoHeight);
@@ -149,7 +148,7 @@
       return new Promise((resolve, reject) => {
         var v = this._getVideoElement();
         if (v) return resolve(v);
-        var timer = setTimeout(() => { obs.disconnect(); reject(new Error('Wait timeout')); }, timeout || 20000);
+        var timer = setTimeout(() => { obs.disconnect(); reject(new Error('Timeout')); }, timeout || 20000);
         var obs = new MutationObserver(() => {
           var v2 = this._getVideoElement();
           if (v2) { clearTimeout(timer); obs.disconnect(); resolve(v2); }
