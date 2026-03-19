@@ -447,12 +447,12 @@ webview://https://live.fjtv.net/setv
 webview://https://live.fjtv.net/hxtv
 #EXTINF:-1 tvg-name="福建综合" tvg-logo="https://logo.sspai.dpdns.org/img/Fujian1.png" group-title="🚝福建频道",综合频道
 webview://https://live.fjtv.net/zhpd
-#EXTINF:-1 tvg-name="福建公共" tvg-logo="https://logo.sspai.dpdns.org/img/Fujian2.png" group-title="🚝福建频道",公共频道
+#EXTINF:-1 tvg-name="福建公共" tvg-logo="https://logo.sspai.dpdns.org/img/Fujian2.png" group-title="🚝福建频道",乡村·公共
 webview://https://live.fjtv.net/ggpd
 #EXTINF:-1 tvg-name="福建新闻" tvg-logo="https://logo.sspai.dpdns.org/img/Fujian3.png" group-title="🚝福建频道",新闻频道
-webview://https://live.fjtv.net/xwpd/
+webview://https://live.fjtv.net/xwpd
 #EXTINF:-1 tvg-name="福建电视剧" tvg-logo="https://logo.sspai.dpdns.org/img/Fujian4.png" group-title="🚝福建频道",电视剧频道
-webview://https://live.fjtv.net/dsjpd/
+webview://https://live.fjtv.net/dsjpd
 #EXTINF:-1 tvg-name="福建旅游" tvg-logo="https://logo.sspai.dpdns.org/img/Fujian5.png" group-title="🚝福建频道",旅游频道
 webview://https://live.fjtv.net/dspd
 #EXTINF:-1 tvg-name="福建经济生活" tvg-logo="https://logo.sspai.dpdns.org/img/Fujian6.png" group-title="🚝福建频道",经济生活
@@ -564,17 +564,17 @@ webview://https://www.ahtv.cn/folder9000/folder20193?channelIndex=7
 
 # 🦼山西频道
 #EXTINF:-1 tvg-name="山西卫视" tvg-logo="https://logo.sspai.dpdns.org/img/山西卫视.png" group-title="🦼山西频道",山西卫视
-webview://https://apphhplushttps.sxrtv.com//television/live_wap_650.html
+webview://https://apphhplushttps.sxrtv.com/television/live_wap_650.html
 #EXTINF:-1 tvg-name="山西经济与科教" tvg-logo="https://logo.sspai.dpdns.org/img/Shanxi_1.png" group-title="🦼山西频道",经济与科教
-webview://https://apphhplushttps.sxrtv.com//television/live_wap_653.html
+webview://https://apphhplushttps.sxrtv.com/television/live_wap_653.html
 #EXTINF:-1 tvg-name="山西影视" tvg-logo="https://logo.sspai.dpdns.org/img/Shanxi_2.png" group-title="🦼山西频道",影视频道
-webview://https://apphhplushttps.sxrtv.com//television/live_wap_654.html
+webview://https://apphhplushttps.sxrtv.com/television/live_wap_654.html
 #EXTINF:-1 tvg-name="山西社会与法治" tvg-logo="https://logo.sspai.dpdns.org/img/Shanxi_3.png" group-title="🦼山西频道",社会与法治
-webview://https://apphhplushttps.sxrtv.com//television/live_wap_655.html
+webview://https://apphhplushttps.sxrtv.com/television/live_wap_655.html
 #EXTINF:-1 tvg-name="山西文体生活" tvg-logo="https://logo.sspai.dpdns.org/img/Shanxi_6.png" group-title="🦼山西频道",文体生活
-webview://https://apphhplushttps.sxrtv.com//television/live_wap_656.html
+webview://https://apphhplushttps.sxrtv.com/television/live_wap_656.html
 #EXTINF:-1 tvg-name="黄河电视" tvg-logo="https://logo.sspai.dpdns.org/img/Huanghe.png" group-title="🦼山西频道",黄河电视
-webview://https://apphhplushttps.sxrtv.com//television/live_wap_651.html
+webview://https://apphhplushttps.sxrtv.com/television/live_wap_651.html
 
 # 🛻宁夏频道
 #EXTINF:-1 tvg-name="宁夏卫视" tvg-logo="https://logo.sspai.dpdns.org/img/宁夏卫视.png" group-title="🛻宁夏频道",宁夏卫视
