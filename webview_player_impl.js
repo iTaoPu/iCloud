@@ -290,7 +290,7 @@
   global.WebviewVideoPlayer = WebviewVideoPlayer;
 
   // 延时启动，确保 WebView 的桥接对象已经注入
-  var start = function() { setTimeout(function(){ WebviewVideoPlayer.initialize(); }, 800); };
+  var start = function() { setTimeout(function(){ WebviewVideoPlayer.initialize(); }, 400); };
   if (document.readyState === 'complete') start();
   else window.addEventListener('load', start);
 
