@@ -9,49 +9,75 @@
   var _eventListeners = [];
   var _statusInterval = null;
 
+  // 1. 扩展分辨率映射表
   var RESOLUTION_MAP = {
-    "流畅": 360, "360": 360, "标清": 480, "480": 480, "高清": 540, "540": 540,
-    "超清": 720, "720": 720, "1080P": 1080, "1080": 1080, "超高清": 1080, "蓝光": 1080,
+    "流畅": 360, "360": 360,
+    "标清": 480, "480": 480,
+    "高清": 540, "540": 540,
+    "超清": 720, "720": 720,
+    "1080P": 1080, "1080": 1080, "超高清": 1080, "蓝光": 1080,
     "2K": 1440, "4K": 2160, "8K": 4320
   };
 
   var HOST_CONFIGS = {
     'tv.cctv.com': {
       beforeInit: function () {
-        localStorage.setItem('cctv_live_resolution', 1080);
-        _log('CCTV 锁定 1080P');
+        // CCTV 优先尝试从 URL 获取，否则默认锁定 1080
+        var params = new URLSearchParams(window.location.search);
+        var res = params.get('resolution');
+        var val = RESOLUTION_MAP[res] || 1080; 
+        localStorage.setItem('cctv_live_resolution', val);
+        _log('CCTV 预设画质锁定: ' + val);
       }
     },
+
     'yangshipin.cn': {
       init: function () {
         var self = this;
-        // 增加对菜单按钮的尝试点击，确保选项可见
-        var btn = document.querySelector('.bei-player-control-quality-btn');
-        if (btn) btn.click();
+        _log('准备唤醒央视频画质菜单...');
+        
+        // 1. 立即点击下方的“画质/自动”按钮，激活 DOM 渲染
+        var qualityBtn = document.querySelector('.bei-player-control-quality-btn');
+        if (qualityBtn) qualityBtn.click();
 
+        // 2. 等待菜单容器出现
         return self._waitForElement('.bei-list-inner')
           .then(function () {
             var spans = document.querySelectorAll('.bei-list-inner span');
             var items = Array.prototype.map.call(spans, function(s) {
               var text = s.innerText.trim();
-              return { el: s, val: RESOLUTION_MAP[text] || parseInt(text) || 0 };
+              // 增强识别：正则提取数字，确保 "1080P(超清)" 也能识别成 1080
+              var match = text.match(/\d+/);
+              var val = RESOLUTION_MAP[text] || (match ? parseInt(match[0]) : 0);
+              return { el: s, val: val, name: text };
             }).filter(function(i) { return i.val > 0; });
 
             if (items.length > 0) {
+              // 3. 寻找最接近 1080 的档位
               items.sort(function(a, b) { return Math.abs(a.val - 1080) - Math.abs(b.val - 1080); });
-              _log('央视频匹配最佳画质: ' + items[0].val);
+              _log('央视频自动选择画质: ' + items[0].name);
               items[0].el.click();
+
+              // 4. 延迟点一下屏幕中央，收起菜单，保持界面纯净
+              setTimeout(function() {
+                var v = self._getVideoElement();
+                if (v) v.click(); 
+              }, 800);
+
               return self._waitForVideoMetadata();
             }
           });
       }
     },
-    'web.guangdianyun.tv': {
-      init: function () { return this._waitForVideoMetadata(); }
-    },
+    
     'live.ipanda.com': {
       init: function () { this._applyUniversalFullfix(); }
     },
+
+    'web.guangdianyun.tv': {
+      init: function () { return this._waitForVideoMetadata(); }
+    },
+
     'm.1905.com': {
       init: function () {
         var style = document.createElement('style');
@@ -65,6 +91,7 @@
   var WebviewVideoPlayer = {
     initialize: function () {
       if (_isInitialized) return Promise.resolve();
+      
       var host = location.hostname.replace('www.', '');
       var config = HOST_CONFIGS[host];
       if (!config) return Promise.resolve();
@@ -84,7 +111,7 @@
           self._attachEventListeners();
           self._startStatusMonitoring();
           _isInitialized = true;
-          _log('针对 ' + host + ' 初始化完成');
+          _log('播放器针对 ' + host + ' 初始化完成');
         })
         .catch(function (error) {
           _log('初始化失败: ' + error.message, 'error');
@@ -157,15 +184,18 @@
 
     _waitForElement: function (selector) {
       return new Promise(function (resolve) {
-        var timer = setInterval(function () {
-          if (document.querySelector(selector)) { clearInterval(timer); resolve(); }
-        }, 500);
+        var check = function() {
+          if (document.querySelector(selector)) { resolve(); }
+          else { setTimeout(check, 500); }
+        };
+        check();
       });
     },
 
     _waitForVideoMetadata: function () {
       var video = this._getVideoElement();
-      if (!video || video.videoWidth > 0) return Promise.resolve();
+      if (!video) return Promise.resolve();
+      if (video.videoWidth > 0) return Promise.resolve();
       return new Promise(function (resolve) {
         video.addEventListener('loadedmetadata', function onLoaded() {
           video.removeEventListener('loadedmetadata', onLoaded);
@@ -205,7 +235,6 @@
         if (v.volume !== _volume) v.volume = _volume;
         if (!_isPaused && v.paused && v.readyState >= 2) v.play().catch(function(){});
         self._applyUniversalFullfix();
-
         if (v.videoWidth !== _videoWidth || v.videoHeight !== _videoHeight) {
           _videoWidth = v.videoWidth;
           _videoHeight = v.videoHeight;
