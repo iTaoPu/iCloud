@@ -2,8 +2,8 @@
   'use strict';
 
   var _isInitialized = false;
-  var _currentVideo = null;     // 记录当前 video 实例，用于换集检测
-  var _qualityLocked = false;   // 画质单次点击锁
+  var _currentVideo = null;     
+  var _qualityLocked = false;   
   var _volume = 1.0;
   var _isPaused = false;
   var _videoWidth = 0;
@@ -18,16 +18,14 @@
   };
 
   var HOST_CONFIGS = {
-    // 1. CCTV
     'tv.cctv.com': {
       beforeInit: function () { localStorage.setItem('cctv_live_resolution', 1080); }
     },
 
-    // 2. 央视频 (保持单次精准点击逻辑)
     'yangshipin.cn': {
       init: function () {
         var self = this;
-        if (_qualityLocked) return; // 如果已经锁过画质，直接退出
+        if (_qualityLocked) return;
 
         var retry = 0;
         var btnTimer = setInterval(function() {
@@ -48,11 +46,13 @@
                 if (items.length > 0) {
                   items.sort(function(a, b) { return Math.abs(a.val - 1080) - Math.abs(b.val - 1080); });
                   items[0].el.click();
-                  _qualityLocked = true; // 动作完成，上锁
+                  _qualityLocked = true; 
                   _log('1080P 锁定成功');
+                  
+                  // --- 优化点 1：弹出后自动消失 1000 改为 500 (总计约 800ms) ---
                   setTimeout(function() { 
                     var v = self._getVideoElement(); if(v) v.click(); 
-                  }, 800);
+                  }, 500); 
                 }
               }, 300);
             });
@@ -65,14 +65,12 @@
     'web.guangdianyun.tv': { init: function () { return this._waitForVideoMetadata(); } },
     'live.ipanda.com': { init: function () { this._applyUniversalFullfix(); } },
     
-    // 5. 1905 电影网 (恢复原本的遮罩逻辑)
     'm.1905.com': {
       init: function () {
         var styleId = 'v-1905-style';
         if (!document.getElementById(styleId)) {
           var style = document.createElement('style');
           style.id = styleId;
-          // 只针对已知的广告和遮罩元素进行 display: none
           style.textContent = '.player-mask, .ad-box, .app-download-guide, .header-app { display: none !important; }';
           document.head.appendChild(style);
         }
@@ -106,7 +104,6 @@
       while (p && p !== document.body) {
         p.style.setProperty('transform', 'none', 'important');
         p.style.setProperty('overflow', 'visible', 'important');
-        // 关键修复：确保所有父级在 CSS 层面不被隐藏
         p.style.setProperty('visibility', 'visible', 'important');
         p.style.setProperty('display', 'block', 'important');
         if (getComputedStyle(p).position !== 'static') p.style.setProperty('position', 'static', 'important');
@@ -142,11 +139,10 @@
         var v = self._getVideoElement();
         if (!v) return;
 
-        // --- 核心：换集/实例变更检测 ---
         if (v !== _currentVideo) {
-          _log('检测到视频实例变更，重置画质锁');
+          _log('换集检测，重置画质锁');
           _currentVideo = v;
-          _qualityLocked = false; // 换视频了，允许重新执行一次切画质
+          _qualityLocked = false; 
           self._attachEventListeners(v);
           if (config.init) config.init.call(self);
         }
@@ -204,7 +200,10 @@
   function _log(m) { if (window.WebviewVideoPlayerInterface) window.WebviewVideoPlayerInterface.logV('[Player] ' + m); }
 
   global.WebviewVideoPlayer = WebviewVideoPlayer;
-  var start = function() { setTimeout(function(){ WebviewVideoPlayer.initialize(); }, 800); };
+
+  // --- 优化点 2：800ms 改为 400ms ---
+  var start = function() { setTimeout(function(){ WebviewVideoPlayer.initialize(); }, 400); };
+
   if (document.readyState === 'complete') start(); else window.addEventListener('load', start);
 
 })(window);
