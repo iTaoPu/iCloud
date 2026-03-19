@@ -2,8 +2,8 @@
   'use strict';
 
   var _isInitialized = false;
-  var _currentVideo = null;     // 核心：用于判断视频是否切换了下一集
-  var _qualityLocked = false;   // 核心：画质锁定开关
+  var _currentVideo = null;     // 记录当前 video 实例，用于换集检测
+  var _qualityLocked = false;   // 画质单次点击锁
   var _volume = 1.0;
   var _isPaused = false;
   var _videoWidth = 0;
@@ -18,31 +18,24 @@
   };
 
   var HOST_CONFIGS = {
-    // 1. CCTV: 靠 localStorage 预设，本身就不需要重复点击
+    // 1. CCTV
     'tv.cctv.com': {
-      beforeInit: function () {
-        localStorage.setItem('cctv_live_resolution', 1080);
-      }
+      beforeInit: function () { localStorage.setItem('cctv_live_resolution', 1080); }
     },
 
-    // 2. 央视频: 精准单次点击逻辑
+    // 2. 央视频 (保持单次精准点击逻辑)
     'yangshipin.cn': {
       init: function () {
         var self = this;
-        // 如果已经锁定过画质，直接退出，不再运行后续逻辑
-        if (_qualityLocked) return;
+        if (_qualityLocked) return; // 如果已经锁过画质，直接退出
 
-        _log('检测到新视频，开始尝试锁定 1080P...');
         var retry = 0;
         var btnTimer = setInterval(function() {
-          // 再次双重检查，防止异步冲突
           if (_qualityLocked) { clearInterval(btnTimer); return; }
-
           var btn = document.querySelector('.bei-player-control-quality-btn');
           if (btn) {
-            btn.click(); // 唤醒菜单
+            btn.click(); 
             clearInterval(btnTimer);
-            
             self._waitForElement('.bei-list-inner').then(function() {
               setTimeout(function() {
                 var spans = document.querySelectorAll('.bei-list-inner span');
@@ -54,16 +47,11 @@
 
                 if (items.length > 0) {
                   items.sort(function(a, b) { return Math.abs(a.val - 1080) - Math.abs(b.val - 1080); });
-                  
-                  // --- 执行点击并立刻锁死 ---
                   items[0].el.click();
-                  _qualityLocked = true; 
-                  _log('1080P 已选中，画质逻辑永久休眠，直到切换下一集');
-                  
-                  // 收起菜单
+                  _qualityLocked = true; // 动作完成，上锁
+                  _log('1080P 锁定成功');
                   setTimeout(function() { 
-                    var v = self._getVideoElement(); 
-                    if(v) v.click(); 
+                    var v = self._getVideoElement(); if(v) v.click(); 
                   }, 800);
                 }
               }, 300);
@@ -76,11 +64,15 @@
 
     'web.guangdianyun.tv': { init: function () { return this._waitForVideoMetadata(); } },
     'live.ipanda.com': { init: function () { this._applyUniversalFullfix(); } },
+    
+    // 5. 1905 电影网 (恢复原本的遮罩逻辑)
     'm.1905.com': {
       init: function () {
-        if (!document.getElementById('v-1905-fix')) {
+        var styleId = 'v-1905-style';
+        if (!document.getElementById(styleId)) {
           var style = document.createElement('style');
-          style.id = 'v-1905-fix';
+          style.id = styleId;
+          // 只针对已知的广告和遮罩元素进行 display: none
           style.textContent = '.player-mask, .ad-box, .app-download-guide, .header-app { display: none !important; }';
           document.head.appendChild(style);
         }
@@ -93,17 +85,17 @@
     initialize: function () {
       var host = location.hostname.replace('www.', '');
       var config = HOST_CONFIGS[host] || { init: function() { this._applyUniversalFullfix(); } };
-
       if (config.beforeInit) { try { config.beforeInit(); } catch(e) {} }
 
       var self = this;
       return this._waitForVideoElement().then(function (video) {
         _currentVideo = video;
         if (config.init) config.init.call(self);
-        self._prepareDOMEnvironment();
+        
         self._applyUniversalFullfix();
         self._attachEventListeners(video);
         self._startStatusMonitoring(config);
+        _log('针对 ' + host + ' 初始化完成');
       });
     },
 
@@ -114,13 +106,16 @@
       while (p && p !== document.body) {
         p.style.setProperty('transform', 'none', 'important');
         p.style.setProperty('overflow', 'visible', 'important');
+        // 关键修复：确保所有父级在 CSS 层面不被隐藏
+        p.style.setProperty('visibility', 'visible', 'important');
+        p.style.setProperty('display', 'block', 'important');
         if (getComputedStyle(p).position !== 'static') p.style.setProperty('position', 'static', 'important');
         p = p.parentElement;
       }
       var styles = {
         'position': 'fixed', 'top': '0', 'left': '0',
         'width': '100vw', 'height': '100vh', 'z-index': '2147483647',
-        'background': '#000', 'object-fit': 'contain', 'display': 'block'
+        'background': '#000', 'object-fit': 'contain', 'display': 'block', 'visibility': 'visible'
       };
       for (var key in styles) { video.style.setProperty(key, styles[key], 'important'); }
       document.documentElement.style.overflow = 'hidden';
@@ -147,11 +142,11 @@
         var v = self._getVideoElement();
         if (!v) return;
 
-        // --- 核心：切换视频检测 ---
+        // --- 核心：换集/实例变更检测 ---
         if (v !== _currentVideo) {
-          _log('视频源变更，重置画质锁定锁');
+          _log('检测到视频实例变更，重置画质锁');
           _currentVideo = v;
-          _qualityLocked = false; // 重置锁，给新视频一次自动切画质的机会
+          _qualityLocked = false; // 换视频了，允许重新执行一次切画质
           self._attachEventListeners(v);
           if (config.init) config.init.call(self);
         }
@@ -196,14 +191,6 @@
         v.addEventListener('loadedmetadata', function onM() { v.removeEventListener('loadedmetadata', onM); res(); });
         setTimeout(res, 5000);
       });
-    },
-
-    _prepareDOMEnvironment: function () {
-      if (document.getElementById('v-mask')) return;
-      var style = document.createElement('style');
-      style.id = 'v-mask';
-      style.textContent = 'body *:not(video):not(canvas):not([class*="player"]) { visibility: hidden !important; pointer-events: none !important; }';
-      document.head.appendChild(style);
     },
 
     _invokeNative: function (m) {
