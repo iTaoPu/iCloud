@@ -104,13 +104,21 @@
       if (!video) return;
       _currentVideoElement = video;
 
-      // 1. 节点提取：绕过容器限制
+      // 1. 强制清理 Html/Body 容器背景与溢出
+      [document.documentElement, document.body].forEach(el => {
+        el.style.setProperty('background', '#000', 'important');
+        el.style.setProperty('overflow', 'hidden', 'important');
+        el.style.setProperty('margin', '0', 'important');
+        el.style.setProperty('padding', '0', 'important');
+      });
+
+      // 2. 节点提取：绕过容器限制
       if (video.parentElement !== document.body) {
         var wasPaused = video.paused;
         var currentTime = video.currentTime;
         document.body.appendChild(video);
         
-        // 针对 fjtv.net 修复：判断 play() 是否返回 Promise
+        // 针对 fjtv.net 修复：安全调用 play
         if (!wasPaused) {
           try {
             var p = video.play();
@@ -122,25 +130,26 @@
         if (currentTime > 0) video.currentTime = currentTime;
       }
 
-      // 2. 样式锁定（解决“有声无画”：清除遮挡、裁切、透明度、滤镜问题）
+      // 3. 极高强度样式锁定（解决 btzx.com.cn 有声无画及闪现问题）
       var s = video.style;
       var props = {
         'position': 'fixed', 'top': '0', 'left': '0', 'width': '100vw', 'height': '100vh',
         'z-index': '2147483647', 'background-color': '#000', 'object-fit': 'contain',
         'display': 'block', 'visibility': 'visible', 'opacity': '1', 'transform': 'none',
-        'clip-path': 'none', 'mask': 'none', 'transition': 'none', 'margin': '0',
-        'padding': '0', 'filter': 'none'
+        'clip': 'auto', 'clip-path': 'none', 'mask': 'none', 'filter': 'none',
+        'transition': 'none', 'margin': '0', 'padding': '0'
       };
       for (var p in props) s.setProperty(p, props[p], 'important');
 
-      // 3. 漂白计划：隐藏其他元素
+      // 4. 彻底消除 body 下其他元素的视觉干扰
       Array.from(document.body.children).forEach(el => {
         if (el !== video && el.id !== 'webview-video-error' && el.tagName !== 'SCRIPT' && el.tagName !== 'STYLE') {
           el.style.setProperty('display', 'none', 'important');
+          el.style.setProperty('visibility', 'hidden', 'important');
         }
       });
 
-      // 强制触发渲染重绘 (针对 btzx.com.cn 等站点)
+      // 5. 强制触发 Reflow 重绘渲染
       video.style.display = 'none';
       video.offsetHeight; 
       video.style.setProperty('display', 'block', 'important');
@@ -148,18 +157,19 @@
 
     _startStatusMonitoring: function () {
       var self = this;
+      // 提高轮询频率至 400ms，防止 btzx 等站点脚本动态还原样式
       _statusInterval = setInterval(function () {
         var v = self._getVideoElement();
         if (!v) return;
 
-        if (v.parentElement !== document.body || v.style.position !== 'fixed') {
+        // 如果位置被挪动或样式被篡改，立即修复
+        if (v.parentElement !== document.body || v.style.position !== 'fixed' || v.style.visibility === 'hidden') {
           self._applyDeepRepair();
         }
 
         if (v.muted) v.muted = false;
         if (v.volume !== _volume) v.volume = _volume;
 
-        // 自动播放保活，同样增加 Promise 检查
         if (!_isPaused && v.paused && v.readyState >= 2) {
           try {
             var p = v.play();
@@ -171,13 +181,15 @@
           _videoWidth = v.videoWidth; _videoHeight = v.videoHeight;
           window.WebviewVideoPlayerInterface?.changeResolution?.(_videoWidth, _videoHeight);
         }
-      }, 800);
+      }, 400);
 
-      _mutationObserver = new MutationObserver(() => {
+      _mutationObserver = new MutationObserver((mutations) => {
         var v = self._getVideoElement();
-        if (v && (v !== _currentVideoElement || v.parentElement !== document.body)) self._applyDeepRepair();
+        if (v && (v !== _currentVideoElement || v.parentElement !== document.body)) {
+          self._applyDeepRepair();
+        }
       });
-      _mutationObserver.observe(document.body, { childList: true });
+      _mutationObserver.observe(document.body, { childList: true, attributes: true });
     },
 
     _prepareDOMEnvironment: function () {
@@ -185,8 +197,6 @@
       m.name = 'viewport';
       m.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
       if (!m.parentNode) document.head.appendChild(m);
-      document.body.style.setProperty('background', '#000', 'important');
-      document.body.style.setProperty('overflow', 'hidden', 'important');
     },
 
     _waitForVideoElement: function (timeout) {
