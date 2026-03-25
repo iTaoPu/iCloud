@@ -164,7 +164,7 @@ def main():
     
     # 7. 内容有变更，生成新文件
     beijing_time = get_beijing_time()
-    custom_header = f"""! Title: AdRules 禁墟がく山道 Google List
+    custom_header = f"""! Title: AdRules 稗客がく山道 Google List
 ! Homepage: https://i叚娤.倖鍢.net.cn
 ! Powerd by 長髯主簿 & Upstream Authors
 ! Signature: 此地為禁, 萬物寂滅
