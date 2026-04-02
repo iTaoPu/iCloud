@@ -195,7 +195,7 @@ function main(config) {
     {
       "name": "🌐节点选择",
       "type": "select",
-      "proxies": ["♻️延迟选优", "☑️手动切换", "🔯故障转移", "🔮负载均衡", "🇭🇰港台节点", "🇸🇬狮城节点", "🇯🇵日韩节点", "🇺🇲鹰酱节点", "🇪🇺欧盟节点", "DIRECT", "🛑全球拦截"],
+      "proxies": ["♻️延迟选优", "☑️手动切换", "🔯故障转移", "🔮负载均衡","DIRECT", "🛑全球拦截"],
       "icon": "https://cdn.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/Area.png"
     },
     { 
@@ -230,7 +230,7 @@ function main(config) {
     { 
       "name": "🎯全球直连", 
       "type": "select", 
-      "proxies": ["DIRECT", "🌐节点选择", "🇭🇰港台节点", "🇸🇬狮城节点", "🇯🇵日韩节点", "🇺🇲鹰酱节点", "🇪🇺欧盟节点", "🔯故障转移", "🔮负载均衡"], 
+      "proxies": ["DIRECT", "🌐节点选择", "🔯故障转移", "🔮负载均衡"], 
       ...groupBaseOption,
       "icon": "https://cdn.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/link.png" 
     },
@@ -244,52 +244,10 @@ function main(config) {
     { 
       "name": "🐟漏网之鱼", 
       "type": "select", 
-      "proxies": ["🌐节点选择", "🎯全球直连", "🇭🇰港台节点", "🇸🇬狮城节点", "🇯🇵日韩节点", "🇺🇲鹰酱节点", "🇪🇺欧盟节点"], 
+      "proxies": ["🌐节点选择", "🎯全球直连", "🔯故障转移", "🔮负载均衡", "DIRECT"], 
       "include-all": true, 
       ...groupBaseOption, 
       "icon": "https://cdn.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/fish.png" 
-    },
-
-     // --- 地区分组 (带图标) ---
-    { 
-      "name": "🇭🇰港台节点", 
-      "type": "url-test", 
-      "filter": "(?i)港|HK|台|TW", 
-      "include-all": true, 
-      ...groupBaseOption, 
-      "icon": "https://cdn.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/HK.png" 
-    },
-    { 
-      "name": "🇸🇬狮城节点", 
-      "type": "url-test", 
-      "filter": "(?i)新|新加坡|狮城|SG", 
-      "include-all": true, 
-      ...groupBaseOption, 
-      "icon": "https://cdn.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/SG.png" 
-    },
-    { 
-      "name": "🇯🇵日韩节点", 
-      "type": "url-test", 
-      "filter": "(?i)日|JP|韩|KR", 
-      "include-all": true, 
-     ...groupBaseOption, 
-      "icon": "https://cdn.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/JP.png" 
-    },
-    { 
-      "name": "🇺🇲鹰酱节点", 
-      "type": "url-test", 
-      "filter": "(?i)美|鹰酱|US|USA", 
-      "include-all": true, 
-      ...groupBaseOption, 
-      "icon": "https://cdn.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/US.png" 
-    },
-    { 
-      "name": "🇪🇺欧盟节点", 
-      "type": "url-test", 
-      "filter": "(?i)欧|EU|英|德|法|荷|意|西|葡|奥|比|丹|瑞典|芬|希|匈|波|罗|捷|斯洛伐克|斯洛文尼亚|爱尔兰|卢森堡|拉脱维亚|立陶宛|爱沙尼亚|保加利亚|塞浦路斯|马耳他", 
-      "include-all": true, 
-      ...groupBaseOption, 
-      "icon": "https://cdn.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/EU.png" 
     }
   ];
 
