@@ -57,11 +57,6 @@
 在浏览器中访问：`https://myproxy.workers.dev/?test_notify=1`  
 如果配置正确，您会收到一条测试消息，同时页面返回 `{"success": true}`。
 
-### 自定义 User-Agent（可选）
-若目标站点校验 User-Agent，可在 Worker 代码中添加：
-```javascript
-forwardHeaders.set('User-Agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36');
-
 ## ❓ 常见问题
 
 ### 代理后出现 502 错误？
@@ -73,3 +68,15 @@ forwardHeaders.set('User-Agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) Appl
 - 目标网站可能校验 `Host` 头或 `Origin` 头。本 Worker 已正确设置 `Host`，如果仍有问题，请尝试添加：
   ```javascript
   forwardHeaders.set('Referer', targetUrl.origin);
+
+## 📄 许可证
+
+MIT © [Your Name]
+
+## 🤝 贡献
+
+欢迎提交 Issue 或 Pull Request。建议先开启 `NOTIFY_ALL_REQUESTS` 并配置 Telegram 进行充分测试。
+
+---
+
+**Enjoy your private proxy on Cloudflare Workers! 🎉**
