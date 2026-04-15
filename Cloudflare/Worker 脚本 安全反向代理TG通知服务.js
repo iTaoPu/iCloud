@@ -4,7 +4,7 @@
  */
 
 const DEFAULT_CONFIG = {
-  TARGET_HOST: '你的域名.后缀', 
+  TARGET_HOST: '目标域名', 
   FORCE_HTTPS: true,
   CORS_ENABLED: true,
   TG_TIMEOUT: 3000 // Telegram 请求超时时间
