@@ -1,0 +1,248 @@
+# ===================== 基础设置 =====================
+mixed-port: 7890
+ipv6: true
+allow-lan: true
+unified-delay: false
+tcp-concurrent: true
+external-controller: 127.0.0.1:9090
+log-level: error
+find-process-mode: strict
+global-client-fingerprint: chrome
+
+# ===================== Geo 数据库设置 (更新时间：12小时) =====================
+geodata-mode: true
+geox-url:
+  geoip: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@release/geoip-lite.dat
+  geosite: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@release/geosite.dat
+  mmdb: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@release/country-lite.mmdb
+  asn: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@release/GeoLite2-ASN.mmdb
+
+geo-auto-update: true
+geo-update-interval: 12 # 单位为小时，设置为 12
+
+# ===================== 代理提供者 =====================
+proxy-providers:
+  Vanic.8EB:
+    type: http
+    url: "https://cdn.sspai.pp.ua/raw.githubusercontent.com/Vanic24/VPN/main/8EB"
+    path: ./proxies/Vanic.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      url: https://www.google.com/generate_204
+      interval: 300
+
+# ===================== DNS 配置 (还原你的脚本逻辑) =====================
+dns:
+  enable: true
+  listen: 127.0.0.1:1053
+  ipv6: true
+  use-system-hosts: false
+  cache-algorithm: arc
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "+.lan"
+    - "+.local"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - "localhost.ptlogin2.qq.com"
+    - "localhost.sec.qq.com"
+    - "localhost.work.weixin.qq.com"
+  default-nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+  nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+  fallback:
+    - https://dns.cloudflare.com/dns-query
+    - https://dns.google/dns-query
+  nameserver-policy:
+    "geosite:cn": ["https://dns.alidns.com/dns-query", "https://doh.pub/dns-query"]
+    "geosite:geolocation-!cn": ["https://dns.cloudflare.com/dns-query", "https://dns.google/dns-query"]
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    geosite:
+      - geolocation-!cn
+      - gfw
+      - google
+      - youtube
+      - github
+      - telegram
+      - cloudflare
+  proxy-server-nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+
+# ===================== 代理组 =====================
+proxy-groups:
+  - name: 🌐节点选择
+    type: select
+    proxies: ["♻️延迟选优", "☑️手动切换", "🔯故障转移", "🔮负载均衡", "DIRECT", "🛑全球拦截"]
+    icon: "https://cdn.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/Area.png"
+
+  - name: ☑️手动切换
+    type: select
+    use: ["Vanic.8EB"]
+    icon: "https://cdn.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/Catnet.png"
+
+  - name: ♻️延迟选优
+    type: url-test
+    use: ["Vanic.8EB"]
+    interval: 300
+    url: "https://www.google.com/generate_204"
+    icon: "https://cdn.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/Auto.png"
+
+  - name: 🔯故障转移
+    type: fallback
+    use: ["Vanic.8EB"]
+    interval: 300
+    url: "https://www.google.com/generate_204"
+    icon: "https://cdn.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/ambulance.png"
+
+  - name: 🔮负载均衡
+    type: load-balance
+    use: ["Vanic.8EB"]
+    strategy: consistent-hashing
+    interval: 300
+    url: "https://www.google.com/generate_204"
+    icon: "https://cdn.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/balance.png"
+
+  - name: 🎯全球直连
+    type: select
+    proxies: ["DIRECT", "🔯故障转移", "🔮负载均衡"]
+    icon: "https://cdn.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/link.png"
+
+  - name: 🛑全球拦截
+    type: select
+    proxies: ["REJECT", "DIRECT"]
+    icon: "https://cdn.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/Reject.png"
+
+  - name: 🐟漏网之鱼
+    type: select
+    proxies: ["🌐节点选择", "🎯全球直连", "DIRECT", "🔯故障转移", "🔮负载均衡"]
+    use: ["Vanic.8EB"]
+    icon: "https://cdn.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/fish.png"
+
+# ===================== 规则集 =====================
+rule-providers:
+  reject:
+    type: http
+    behavior: domain
+    format: yaml
+    url: "https://cdn.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/reject.txt"
+    path: ./ruleset/reject.yaml
+    interval: 43200
+  icloud:
+    type: http
+    behavior: domain
+    format: yaml
+    url: "https://cdn.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/icloud.txt"
+    path: ./ruleset/icloud.yaml
+    interval: 43200
+  apple:
+    type: http
+    behavior: domain
+    format: yaml
+    url: "https://cdn.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/apple.txt"
+    path: ./ruleset/apple.yaml
+    interval: 43200
+  google:
+    type: http
+    behavior: domain
+    format: yaml
+    url: "https://cdn.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/google.txt"
+    path: ./ruleset/google.yaml
+    interval: 43200
+  proxy:
+    type: http
+    behavior: domain
+    format: yaml
+    url: "https://cdn.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/proxy.txt"
+    path: ./ruleset/proxy.yaml
+    interval: 43200
+  direct:
+    type: http
+    behavior: domain
+    format: yaml
+    url: "https://cdn.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/direct.txt"
+    path: ./ruleset/direct.yaml
+    interval: 43200
+  private:
+    type: http
+    behavior: domain
+    format: yaml
+    url: "https://cdn.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/private.txt"
+    path: ./ruleset/private.yaml
+    interval: 43200
+  gfw:
+    type: http
+    behavior: domain
+    format: yaml
+    url: "https://cdn.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/gfw.txt"
+    path: ./ruleset/gfw.yaml
+    interval: 43200
+  tld-not-cn:
+    type: http
+    behavior: domain
+    format: yaml
+    url: "https://cdn.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt"
+    path: ./ruleset/tld-not-cn.yaml
+    interval: 43200
+  telegramcidr:
+    type: http
+    behavior: ipcidr
+    format: yaml
+    url: "https://cdn.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt"
+    path: ./ruleset/telegramcidr.yaml
+    interval: 43200
+  cncidr:
+    type: http
+    behavior: ipcidr
+    format: yaml
+    url: "https://cdn.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/cncidr.txt"
+    path: ./ruleset/cncidr.yaml
+    interval: 43200
+  lancidr:
+    type: http
+    behavior: ipcidr
+    format: yaml
+    url: "https://cdn.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
+    path: ./ruleset/lancidr.yaml
+    interval: 43200
+  applications:
+    type: http
+    behavior: classical
+    format: yaml
+    url: "https://cdn.jsdmirror.com/gh/Loyalsoldier/clash-rules@release/applications.txt"
+    path: ./ruleset/applications.yaml
+    interval: 43200
+
+# ===================== 核心规则 =====================
+rules:
+  - RULE-SET,applications,🎯全球直连
+  - RULE-SET,private,🎯全球直连
+  - RULE-SET,reject,🛑全球拦截
+  - RULE-SET,icloud,🎯全球直连
+  - RULE-SET,apple,🎯全球直连
+  - RULE-SET,tld-not-cn,🌐节点选择
+  - RULE-SET,gfw,🌐节点选择
+  - RULE-SET,google,🌐节点选择
+  - RULE-SET,proxy,🌐节点选择
+  - RULE-SET,direct,🎯全球直连
+  - RULE-SET,lancidr,🎯全球直连,no-resolve
+  - RULE-SET,cncidr,🎯全球直连,no-resolve
+  - RULE-SET,telegramcidr,🌐节点选择,no-resolve
+  - GEOIP,LAN,🎯全球直连,no-resolve
+  - GEOIP,CN,🎯全球直连,no-resolve
+  - MATCH,🐟漏网之鱼
+
+# ===================== 域名嗅探 =====================
+sniffer:
+  enable: true
+  sniff:
+    TLS: { ports: [443, 8443], override-destination: true }
+    HTTP: { ports: [80, "8080-8880"], override-destination: true }
+    QUIC: { ports: [443, 8443], override-destination: true }
