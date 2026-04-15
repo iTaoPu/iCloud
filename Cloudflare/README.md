@@ -24,6 +24,7 @@
 | ----------------------- | ------------------------------------------------------ |
 | `TELEGRAM_BOT_TOKEN`    | Telegram Bot Token（从 [@BotFather](https://t.me/BotFather) 获取） |
 | `TELEGRAM_CHAT_ID`      | 接收通知的 Chat ID（可通过 [@userinfobot](https://t.me/userinfobot) 获取） |
+| `TARGET_HOSTNAME`      | 你.域名.后缀（添加需要代码的目标域名） |
 
 > 如果不需要通知，**不设置这两个变量即可**，Worker 仍会正常代理。
 
