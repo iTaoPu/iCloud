@@ -9,12 +9,23 @@ log-level: error
 find-process-mode: strict
 global-client-fingerprint: chrome
 
-# ===================== 代理提供者 (引入你的 all.yaml) =====================
+# ===================== Geo 数据库设置 (更新时间：12小时) =====================
+geodata-mode: true
+geox-url:
+  geoip: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip-lite.dat
+  geosite: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat
+  mmdb: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country-lite.mmdb
+  asn: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/GeoLite2-ASN.mmdb
+
+geo-auto-update: true
+geo-update-interval: 12 # 单位为小时，设置为 12
+
+# ===================== 代理提供者 =====================
 proxy-providers:
-  shaoyouvip:
+  ZRF.ME:
     type: http
-    url: "https://cdn.sspai.pp.ua/raw.githubusercontent.com/shaoyouvip/free/main/all.yaml"
-    path: ./proxies/shaoyouvip.yaml
+    url: "https://cdn.sspai.pp.ua/raw.githubusercontent.com/ZRF.ME/free/main/all.yaml"
+    path: ./proxies/ZRF.ME.yaml
     interval: 3600
     health-check:
       enable: true
@@ -65,7 +76,7 @@ dns:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
 
-# ===================== 代理组 (完全还原你的 UI 与逻辑) =====================
+# ===================== 代理组 =====================
 proxy-groups:
   - name: 🌐节点选择
     type: select
@@ -74,26 +85,26 @@ proxy-groups:
 
   - name: ☑️手动切换
     type: select
-    use: ["shaoyouvip"]
+    use: ["ZRF.ME"]
     icon: "https://cdn.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/Catnet.png"
 
   - name: ♻️延迟选优
     type: url-test
-    use: ["shaoyouvip"]
+    use: ["ZRF.ME"]
     interval: 300
     url: "https://www.google.com/generate_204"
     icon: "https://cdn.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/Auto.png"
 
   - name: 🔯故障转移
     type: fallback
-    use: ["shaoyouvip"]
+    use: ["ZRF.ME"]
     interval: 300
     url: "https://www.google.com/generate_204"
     icon: "https://cdn.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/ambulance.png"
 
   - name: 🔮负载均衡
     type: load-balance
-    use: ["shaoyouvip"]
+    use: ["ZRF.ME"]
     strategy: consistent-hashing
     interval: 300
     url: "https://www.google.com/generate_204"
@@ -112,10 +123,10 @@ proxy-groups:
   - name: 🐟漏网之鱼
     type: select
     proxies: ["🌐节点选择", "🎯全球直连", "DIRECT", "🔯故障转移", "🔮负载均衡"]
-    use: ["shaoyouvip"]
+    use: ["ZRF.ME"]
     icon: "https://cdn.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/fish.png"
 
-# ===================== 规则集 (还原 ruleProviders) =====================
+# ===================== 规则集 =====================
 rule-providers:
   reject:
     type: http
@@ -209,7 +220,7 @@ rule-providers:
     path: ./ruleset/applications.yaml
     interval: 43200
 
-# ===================== 核心规则 (还原 rules) =====================
+# ===================== 核心规则 =====================
 rules:
   - RULE-SET,applications,🎯全球直连
   - RULE-SET,private,🎯全球直连
@@ -228,7 +239,7 @@ rules:
   - GEOIP,CN,🎯全球直连,no-resolve
   - MATCH,🐟漏网之鱼
 
-# ===================== 域名嗅探 (还原 Sniffer) =====================
+# ===================== 域名嗅探 =====================
 sniffer:
   enable: true
   sniff:
