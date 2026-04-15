@@ -25,7 +25,16 @@ proxy-providers:
   Vanic.8EB:
     type: http
     url: "https://cdn.sspai.pp.ua/raw.githubusercontent.com/Vanic24/VPN/main/8EB"
-    path: ./proxies/Vanic.yaml
+    path: ./proxies/8EB.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      url: https://www.google.com/generate_204
+      interval: 300
+  Vanic.Sub:
+    type: http
+    url: "https://cdn.sspai.pp.ua/raw.githubusercontent.com/Vanic24/VPN/main/Sub3"
+    path: ./proxies/Sub.yaml
     interval: 3600
     health-check:
       enable: true
@@ -85,26 +94,26 @@ proxy-groups:
 
   - name: ☑️手动切换
     type: select
-    use: ["Vanic.8EB"]
+    use: ["Vanic.8EB", "Vanic.Sub"]
     icon: "https://cdn.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/Catnet.png"
 
   - name: ♻️延迟选优
     type: url-test
-    use: ["Vanic.8EB"]
+    use: ["Vanic.8EB", "Vanic.Sub"]
     interval: 300
     url: "https://www.google.com/generate_204"
     icon: "https://cdn.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/Auto.png"
 
   - name: 🔯故障转移
     type: fallback
-    use: ["Vanic.8EB"]
+    use: ["Vanic.8EB", "Vanic.Sub"]
     interval: 300
     url: "https://www.google.com/generate_204"
     icon: "https://cdn.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/ambulance.png"
 
   - name: 🔮负载均衡
     type: load-balance
-    use: ["Vanic.8EB"]
+    use: ["Vanic.8EB", "Vanic.Sub"]
     strategy: consistent-hashing
     interval: 300
     url: "https://www.google.com/generate_204"
@@ -123,7 +132,7 @@ proxy-groups:
   - name: 🐟漏网之鱼
     type: select
     proxies: ["🌐节点选择", "🎯全球直连", "DIRECT", "🔯故障转移", "🔮负载均衡"]
-    use: ["Vanic.8EB"]
+    use: ["Vanic.8EB", "Vanic.Sub"]
     icon: "https://cdn.jsdmirror.com/gh/iTaoPu/iCloud@Grey/IconSet/fish.png"
 
 # ===================== 规则集 =====================
