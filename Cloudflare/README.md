@@ -25,8 +25,6 @@
 | `TELEGRAM_BOT_TOKEN`    | Telegram Bot Token（从 [@BotFather](https://t.me/BotFather) 获取） |
 | `TELEGRAM_CHAT_ID`      | 接收通知的 Chat ID（可通过 [@userinfobot](https://t.me/userinfobot) 获取） |
 | `TARGET_HOSTNAME`      | 目标域名（添加需要代码的目标域名） |
-| `FORCE_HTTPS` | `true` | 是否强制目标站使用 HTTPS |
-| `CORS_ENABLED` | `true` | 是否允许跨域请求 |
 
 > 如果不需要通知，**不设置这两个变量即可**，Worker 仍会正常代理。
 
