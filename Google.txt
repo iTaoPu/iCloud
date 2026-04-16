@@ -5,8 +5,8 @@
 ! Expires: irregularly (update frequency)
 ! Description: Completely blocks all Google-related domains (including YouTube).
 ! ------------------------------------
-! Version: 1.0.14.65
-! Update Time: 2026-04-14 03:19:42
+! Version: 1.0.14.66
+! Update Time: 2026-04-17 03:22:20
 
 ||adgoogle.net^
 ||crashlytics.com^
@@ -1590,6 +1590,7 @@
 ||youtube.pl^
 ||youtubeeducation.com^
 ||youtubegaming.com^
+||youtubekids.com^
 ||ytimg.com^
 ||fitbit.com^
 ||accounts.nest.com^
