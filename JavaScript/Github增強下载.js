@@ -126,6 +126,15 @@
                 0%, 100% { transform: translateY(0); }
                 50% { transform: translateY(-2px); }
             }
+
+            /* 去除点击白色高亮 */
+            .XIU2-RF:active,
+            .XIU2-RF:focus,
+            .XIU2-RF:focus-visible {
+                outline: none !important;
+                box-shadow: none !important;
+                background-color: var(--color-btn-bg) !important;
+            }
         `;
         document.head.appendChild(style);
     }
