@@ -19,7 +19,7 @@ const foreignNameservers = [
 const dnsConfig = {
   "enable": true,
   "listen": "127.0.0.1:1053",
-  "ipv6": true,
+  "ipv6": false,
   "use-system-hosts": false,
   "cache-algorithm": "arc",
   "enhanced-mode": "fake-ip",         // Fake-IP模式
