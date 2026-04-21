@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name            网页加速器 (Stable Pro)
+// @name            网页加速器 (Pro)
 // @namespace       https://i叚娤.倖鍢.net.cn
 // @version         2.1.1
 // @author          言氏稗客
