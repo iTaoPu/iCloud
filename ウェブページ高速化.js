@@ -28,14 +28,14 @@
     const shouldAbort = () => {
         const link = document.createElement('link');
         if (!link.relList?.supports?.('prefetch')) return true;
-        
+
         // 流量与省流量模式保护
         const n = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
         if (n && (n.saveData || /2g|3g/.test(n.effectiveType))) return true;
 
         // 硬件保护：低核心 CPU 自动放弃
         if (navigator.hardwareConcurrency && navigator.hardwareConcurrency < 2) return true;
-        
+
         return false;
     };
 
@@ -50,7 +50,7 @@
             if (!GM_getValue('ext', false) && u.origin !== location.origin) return null;
             if (/(logout|login|sign|pay|del|exit|reset|cart|order|api)/i.test(u.href)) return null;
             if (/\.(zip|rar|7z|pdf|exe|apk|dmg|jpg|png|gif|webp|mp4|mp3|iso|torrent)$/i.test(u.pathname)) return null;
-            
+
             return u.href;
         } catch(e) { return null; }
     };
@@ -59,19 +59,19 @@
     const dispatch = (url) => {
         const work = () => {
             if (prefetched.has(url)) return;
-            
+
             const head = document.head;
             // DNS 预联
             const dns = document.createElement('link');
             dns.rel = 'dns-prefetch';
             dns.href = `//${new URL(url).hostname}`;
-            
+
             // 核心预取
             const pre = document.createElement('link');
             pre.rel = 'prefetch';
             pre.href = url;
             pre.setAttribute('as', 'document');
-            if (IS_FIREFOX) pre.crossOrigin = "anonymous"; 
+            if (IS_FIREFOX) pre.crossOrigin = "anonymous";
 
             head.appendChild(dns);
             head.appendChild(pre);
