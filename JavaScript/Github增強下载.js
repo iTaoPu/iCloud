@@ -67,14 +67,14 @@
 
             /* 第一个加速按钮：左间距 6px（与 Raw 按钮分开），同时左圆角 */
             .XIU2-First {
-                margin-left: 6px !important;
+                margin-left: 2px !important;
                 border-top-left-radius: 6px !important;
                 border-bottom-left-radius: 6px !important;
             }
 
             /* 最后一个加速按钮：右圆角 */
             .XIU2-Last {
-                margin-right: 8px !important;
+                margin-right: 3px !important;
                 border-top-right-radius: 6px !important;
                 border-bottom-right-radius: 6px !important;
             }
