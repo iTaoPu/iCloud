@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name            网页加速器 (Ultra Pro Max)
 // @namespace       https://i叚娤.倖鍢.net.cn
-// @version         3.6.0
+// @version         3.6.9
 // @author          言氏稗客
-// @description     全平台、全环境极致兼容。支持 Chrome/Firefox (PC+移动) 与 AdGuard 零压调度，双端优化。
+// @description     人的白嫖，就如同高山滚石一般，一旦开始，就再也停不下了 —— 「鲁迅」
 // @match           *://*/*
 // @run-at          document-idle
 // @grant           GM_setValue
