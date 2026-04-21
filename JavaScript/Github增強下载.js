@@ -1,5 +1,6 @@
 // ==UserScript==
 // @name         Github 增強 - 高速下載
+// @namespace    https://i叚娤.倖鍢.net.cn
 // @version      4.4.4
 // @author       言氏稗客
 // @description  人的白嫖，就如同高山滚石一般，一旦开始，就再也停不下了 —— 「鲁迅」
