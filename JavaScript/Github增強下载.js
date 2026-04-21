@@ -65,9 +65,9 @@
                 z-index: 1 !important;
             }
 
-            /* 第一个加速按钮：左间距 8px（与 Raw 按钮分开），同时左圆角 */
+            /* 第一个加速按钮：左间距 6px（与 Raw 按钮分开），同时左圆角 */
             .XIU2-First {
-                margin-left: 8px !important;
+                margin-left: 6px !important;
                 border-top-left-radius: 6px !important;
                 border-bottom-left-radius: 6px !important;
             }
