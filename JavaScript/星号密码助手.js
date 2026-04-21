@@ -9,7 +9,7 @@
 // @grant        GM_getValue
 // @grant        GM_registerMenuCommand
 // @run-at       document-start
-// @icon         https://itaopu.gitHub.io/icloud/JavaScript/星号密码助手.png
+// @icon         https://icloud.sspai.net.cn/JavaScript/星号密码助手.png
 // ==/UserScript==
 
 (function() {
