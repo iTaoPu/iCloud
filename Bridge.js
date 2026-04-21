@@ -9,6 +9,7 @@
 // @grant        GM_getValue
 // @grant        GM_registerMenuCommand
 // @run-at       document-start
+// @icon         data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAnUExURQAAAGZmZpmZmTMzMwAAAJmZzMzMzTMzzP///wAzM8zMzGZmZjMzM6R963oAAAAMdFJOUwBAUH+fv8/f39+f35869p3mAAAAXklEQVRIx+3RyQ7AIAhEURNU9P9/uGZpujByM8mcl9UhAsByScmUAnB8pLpA96G6S/VAFYmYAsGf6uG1S/Vf1S7VS6pXpCmpXfU9f6vO8p+Yv6v29p/Yp56Bv6v2+r9vWvIInmS6mB0AAAAASUVORK5CYII=
 // ==/UserScript==
 
 (function() {
