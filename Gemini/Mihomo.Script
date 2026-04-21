@@ -181,6 +181,16 @@ const groupBaseOption = {
 
 // ===================== 主函数（配置入口） =====================
 function main(config) {
+// Geo 数据库
+  config["geodata-mode"] = true;
+  config["geo-auto-update"] = true;
+  config["geo-update-interval"] = 12;
+  config["geox-url"] = {
+    "geoip": "https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@release/geoip-lite.dat",
+    "geosite": "https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@release/geosite.dat",
+    "mmdb": "https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@release/country-lite.mmdb",
+    "asn": "https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@release/GeoLite2-ASN.mmdb"
+  };
   const proxyCount = config?.proxies?.length ?? 0;
   const proxyProviderCount = typeof config?.["proxy-providers"] === "object" 
     ? Object.keys(config["proxy-providers"]).length 
