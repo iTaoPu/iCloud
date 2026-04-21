@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         星号密码助手 (PC/移动全内核版)
 // @namespace    https://i叚娤.倖鍢.net.cn
-// @version      3.6.9
+// @version      3.6.0
 // @author       言氏稗客
 // @description  人的白嫖，就如同高山滚石一般，一旦开始，就再也停不下了 —— 「鲁迅」
 // @match        *://*/*
@@ -9,7 +9,7 @@
 // @grant        GM_getValue
 // @grant        GM_registerMenuCommand
 // @run-at       document-start
-// @icon         https://icloud.sspai.net.cn/JavaScript/星号密码助手.png
+// @icon          https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/JavaScript/星号密码助手.ico
 // ==/UserScript==
 
 (function() {
