@@ -2,6 +2,7 @@
 // @name         Github 增強 - 高速下載
 // @version      4.4.4
 // @author       言氏稗客
+// @description  人的白嫖，就如同高山滚石一般，一旦开始，就再也停不下了 —— 「鲁迅」
 // @match        *://github.com/*
 // @icon         https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/JavaScript/jsdelivr.ico
 // @grant        none
@@ -15,7 +16,7 @@
         ['https://cdn.jsdmirror.com', 'JsDMirror (中)', '中国公益加速', true],
         ['https://cdn.jsdelivr.net', 'JsDelivr (美)', 'Cloudflare 全球加速', true],
         ['https://fastly.jsdelivr.net', 'Fastly (日)', 'Fastly 亚太加速', true],
-        ['https://wget.la/https://raw.githubusercontent.com', 'Wget.la (港)', '香港公益加速', false]
+        ['https://wget.la/raw.githubusercontent.com', 'Wget.la (港)', '香港公益加速', false]
     ];
 
     const cloudIcon = `<svg aria-hidden="true" height="14" viewBox="0 0 16 16" version="1.1" width="14" class="octicon octicon-cloud" style="margin-right: 6px; fill: currentColor; vertical-align: middle;"><path d="M8 14a4.996 4.996 0 0 1-4.755-3.463 3.5 3.5 0 1 1 .53-6.936 4.502 4.502 0 0 1 8.455 1.4A3.502 3.502 0 0 1 11.5 12h-3a.75.75 0 0 1 0-1.5h3a2 2 0 0 0 0-4 .75.75 0 0 1-.75-.75 3 3 0 0 0-5.892-.803.75.75 0 0 1-.682.553 2 2 0 1 0-.176 3.992.75.75 0 1 1-.1 1.498A3.5 3.5 0 0 0 3.5 10.5 3.5 3.5 0 0 0 8 14Z"></path></svg>`;
