@@ -9,7 +9,7 @@
 // @grant        GM_getValue
 // @grant        GM_registerMenuCommand
 // @run-at       document-start
-// @icon          https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/JavaScript/星号密码助手.ico
+// @icon         https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/JavaScript/星号密码助手.ico
 // ==/UserScript==
 
 (function() {
