@@ -14,10 +14,10 @@
     'use strict';
 
     const raw_url = [
-        ['https://cdn.jsdmirror.com', 'JsDMirror (中)', '中国公益加速', true],
-        ['https://cdn.jsdelivr.net', 'JsDelivr (美)', 'Cloudflare 全球加速', true],
-        ['https://fastly.jsdelivr.net', 'Fastly (日)', 'Fastly 亚太加速', true],
-        ['https://wget.la/raw.githubusercontent.com', 'Wget.la (港)', '香港公益加速', false]
+        ['https://cdn.jsdmirror.com', '中国', 'JsDMirror（中国公益加速）', true],
+        ['https://cdn.jsdelivr.net', '美国', 'JsDelivr（Cloudflare全球加速）', true],
+        ['https://fastly.jsdelivr.net', '日本', 'JsDelivr（Fastly亚太加速）', true],
+        ['https://wget.la/raw.githubusercontent.com', '香港', 'Wget.la（香港公益加速）', false]
     ];
 
     const cloudIcon = `<svg aria-hidden="true" height="14" viewBox="0 0 16 16" version="1.1" width="14" class="octicon octicon-cloud" style="margin-right: 6px; fill: currentColor; vertical-align: middle;"><path d="M8 14a4.996 4.996 0 0 1-4.755-3.463 3.5 3.5 0 1 1 .53-6.936 4.502 4.502 0 0 1 8.455 1.4A3.502 3.502 0 0 1 11.5 12h-3a.75.75 0 0 1 0-1.5h3a2 2 0 0 0 0-4 .75.75 0 0 1-.75-.75 3 3 0 0 0-5.892-.803.75.75 0 0 1-.682.553 2 2 0 1 0-.176 3.992.75.75 0 1 1-.1 1.498A3.5 3.5 0 0 0 3.5 10.5 3.5 3.5 0 0 0 8 14Z"></path></svg>`;
@@ -68,16 +68,16 @@
 
             /* 第一个加速按钮：左间距 6px（与 Raw 按钮分开），同时左圆角 */
             .XIU2-First {
-                margin-left: 2px !important;
-                border-top-left-radius: 6px !important;
-                border-bottom-left-radius: 6px !important;
+                margin-left: 0px !important;
+                border-top-left-radius: 0px !important;
+                border-bottom-left-radius: 0px !important;
             }
 
             /* 最后一个加速按钮：右圆角 */
             .XIU2-Last {
-                margin-right: 3px !important;
-                border-top-right-radius: 6px !important;
-                border-bottom-right-radius: 6px !important;
+                margin-right: 1px !important;
+                border-top-right-radius: 0px !important;
+                border-bottom-right-radius: 0px !important;
             }
 
             /* 深色模式调整边框和背景 */
