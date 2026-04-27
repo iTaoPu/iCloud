@@ -425,6 +425,8 @@ http://112.86.202.37:8112/JSBC_iptv/C10000229@JSBC
 http://112.86.202.37:8112/JSBC_iptv/C10000227@JSBC
 #EXTINF:-1 tvg-name="江苏综艺" tvg-logo="https://logo.sspai.net.cn/img/Jiangsu3.png" group-title="🪀江苏频道･单播",江苏综艺
 http://112.86.202.37:8112/JSBC_iptv/C10000225@JSBC
+#EXTINF:-1 tvg-name="好享购物" tvg-logo="https://logo.sspai.net.cn/img/HAOxiangGou.png" group-title="🪀江苏频道･单播",好享购物
+http://112.86.202.37:8112/JSBC_iptv/C10000230@JSBC
 
 # 🎯数字频道･单播
 #EXTINF:-1 tvg-name="金鹰纪实" tvg-logo="https://logo.sspai.net.cn/img/jyjs.png" group-title="🎯数字频道･单播",金鹰纪实
@@ -443,8 +445,6 @@ http://112.86.202.37:8112/JSBC_iptv/C10000236@JSBC
 http://112.86.202.37:8112/JSBC_iptv/C10000228@JSBC
 #EXTINF:-1 tvg-name="东方财经" tvg-logo="https://logo.sspai.net.cn/img/dfcj.png" group-title="🎯数字频道･单播",东方财经
 http://112.86.202.37:8112/JSBC_iptv/C10000420@JSBC
-#EXTINF:-1 tvg-name="好享购物" tvg-logo="https://logo.sspai.net.cn/img/HAOxiangGou.png" group-title="🎯数字频道･单播",好享购物
-http://112.86.202.37:8112/JSBC_iptv/C10000230@JSBC
 
 # 🚂咪视界･全网通
 #EXTINF:-1 tvg-logo="https://logo.sspai.net.cn/img/至臻视界4K.png" group-title="🚂咪视界･全网通",至臻视界4K
