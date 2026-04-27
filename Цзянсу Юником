@@ -105,7 +105,7 @@ http://112.86.202.37:8112/JSBC_iptv/C10000015@JSBC
 http://112.86.202.37:8112/JSBC_iptv/C10000049@JSBC
 #EXTINF:-1 tvg-name="浙江卫视" tvg-logo="https://logo.sspai.net.cn/img/Zhejiang.png" group-title="📡卫视频道",浙江卫视
 http://112.86.202.37:8112/JSBC_iptv/C10000044@JSBC
-#EXTINF:-1 tvg-name="湖南卫视" tvg-logo="https://logo.sspai.net.cn/img/Hunanpng" group-title="📡卫视频道",湖南卫视
+#EXTINF:-1 tvg-name="湖南卫视" tvg-logo="https://logo.sspai.net.cn/img/Hunan.png" group-title="📡卫视频道",湖南卫视
 http://112.86.202.37:8112/JSBC_iptv/C10000043@JSBC
 #EXTINF:-1 tvg-name="四川卫视" tvg-logo="https://logo.sspai.net.cn/img/Sichuan.png" group-title="📡卫视频道",四川卫视
 http://112.86.202.37:8112/JSBC_iptv/C10000167@JSBC
