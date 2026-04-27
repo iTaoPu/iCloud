@@ -31,7 +31,7 @@ http://112.86.202.37:8112/JSBC_iptv/C10000220@JSBC
 http://112.86.202.37:8112/JSBC_iptv/C10000039@JSBC
 #EXTINF:-1 tvg-name="CCTV5" tvg-logo="https://logo.sspai.net.cn/img/CCTV5.png" group-title="📺央视频道",CCTV-5
 http://112.86.202.37:8112/JSBC_iptv/C10000221@JSBC
-#EXTINF:-1 tvg-name="CCTV5+" tvg-logo="https://logo.sspai.net.cn/img/CCTV5+.png" group-title="📺央视频道",CCTV-5+
+#EXTINF:-1 tvg-name="CCTV5+" tvg-logo="https://logo.sspai.net.cn/img/CCTV5plus.png" group-title="📺央视频道",CCTV-5+
 http://112.86.202.37:8112/JSBC_iptv/C10000040@JSBC
 #EXTINF:-1 tvg-name="CCTV6" tvg-logo="https://logo.sspai.net.cn/img/CCTV6.png" group-title="📺央视频道",CCTV-6
 http://112.86.202.37:8112/JSBC_iptv/C10000222@JSBC
