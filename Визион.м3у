@@ -449,17 +449,17 @@ http://112.86.202.37:8112/JSBC_iptv/C10000230@JSBC
 # 🚂咪视界･全网通
 #EXTINF:-1 tvg-logo="https://logo.sspai.net.cn/img/至臻视界4K.png" group-title="🚂咪视界･全网通",至臻视界4K
 http://anfeind1.kmdns.net:19999/migunohosts.php?Contentid=3000000010000015686
-#EXTINF:-1 tvg-logo="https://logo.sspai.net.cn/img/咪视界4K.png" group-title="🚂咪视界･全网通",咪咕视界4K
+#EXTINF:-1 tvg-logo="https://logo.sspai.net.cn/img/咪视界4K.png" group-title="🚂咪视界･全网通",咪视界4K
 http://anfeind1.kmdns.net:19999/migunohosts.php?Contentid=3000000010000005180
 #EXTINF:-1 tvg-logo="https://logo.sspai.net.cn/img/睛彩广场舞.png" group-title="🚂咪视界･全网通",睛彩广场舞
 http://anfeind1.kmdns.net:19999/migunohosts.php?Contentid=3000000020000011523
 #EXTINF:-1 tvg-logo="https://logo.sspai.net.cn/img/睛彩青少.png" group-title="🚂咪视界･全网通",睛彩青少
 http://anfeind1.kmdns.net:19999/migunohosts.php?Contentid=3000000020000011525
-#EXTINF:-1 tvg-logo="https://logo.sspai.net.cn/img/睛彩竞技.png" group-title="🚂咪视界･全网通",睛彩竞技
+#EXTINF:-1 tvg-logo="https://logo.sspai.net.cn/img/睛彩竞技.png" group-title="🚂咪视界･全网通",睛彩竞技 𝟙
 http://anfeind1.kmdns.net:19999/migunohosts.php?Contentid=3000000020000011521
-#EXTINF:-1 tvg-logo="https://logo.sspai.net.cn/img/睛彩竞技.png" group-title="🚂咪视界･全网通",睛彩竞技
+#EXTINF:-1 tvg-logo="https://logo.sspai.net.cn/img/睛彩竞技.png" group-title="🚂咪视界･全网通",睛彩竞技 𝟚
 http://anfeind1.kmdns.net:19999/migunohosts.php?Contentid=3000000020000011528
-#EXTINF:-1 tvg-logo="https://logo.sspai.net.cn/img/睛彩竞技.png" group-title="🚂咪视界･全网通",睛彩竞技
+#EXTINF:-1 tvg-logo="https://logo.sspai.net.cn/img/睛彩竞技.png" group-title="🚂咪视界･全网通",睛彩竞技 𝟛
 http://anfeind1.kmdns.net:19999/migunohosts.php?Contentid=3000000010000015470
 #EXTINF:-1 tvg-logo="https://logo.sspai.net.cn/img/睛彩篮球.png" group-title="🚂咪视界･全网通",睛彩篮球
 http://anfeind1.kmdns.net:19999/migunohosts.php?Contentid=3000000020000011529
