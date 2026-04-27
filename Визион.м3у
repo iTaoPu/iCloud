@@ -7,8 +7,6 @@ https://cloudflare.tv/hls/live.m3u8
 https://cloudflare.tv/hls/live.m3u8
 #EXTINF:-1 tvg-id="禁止蕉绿" tvg-name="禁止蕉绿" tvg-logo="https://logo.sspai.net.cn/img/禁止蕉绿.png" group-title="🦧温馨提示",禁止蕉绿
 https://cloudflare.tv/hls/live.m3u8
-#EXTINF:-1,tvg-id="重温经典" tvg-name="重温经典" tvg-logo="https://logo.sspai.net.cn/img/重温经典.png" group-title="🦧温馨提示",重温经典
-https://other.chinacert.cftest5.cn/cwjd.m3u8
 
 # 📺央视频道
 #EXTINF:-1 group-title="📺央视频道" tvg-logo="https://logo.sspai.net.cn/img/CCTV1.png" tvg-name="CCTV1",CCTV-1·综合 CQ
