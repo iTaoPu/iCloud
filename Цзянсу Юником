@@ -57,38 +57,33 @@ http://112.86.202.37:8112/JSBC_iptv/C10000404@JSBC
 http://112.86.202.37:8112/JSBC_iptv/C10000193@JSBC
 #EXTINF:-1 tvg-name="CCTV17" tvg-logo="https://logo.sspai.net.cn/img/CCTV17.png" group-title="📺央视频道",CCTV-17
 http://112.86.202.37:8112/JSBC_iptv/C10000041@JSBC
-#EXTINF:-1 tvg-name="兵器科技" tvg-logo="https://logo.sspai.net.cn/img/CCTVbqkj.png" group-title="📺央视频道",兵器科技
-http://112.86.202.37:8112/JSBC_iptv/C10000207@JSBC
-#EXTINF:-1 tvg-name="电视指南" tvg-logo="https://logo.sspai.net.cn/img/CCTVdszn.png" group-title="📺央视频道",电视指南
-http://112.86.202.37:8112/JSBC_iptv/C10000203@JSBC
-#EXTINF:-1 tvg-name="风云剧场" tvg-logo="https://logo.sspai.net.cn/img/CCTVfyjc.png" group-title="📺央视频道",风云剧场
-http://112.86.202.37:8112/JSBC_iptv/C10000208@JSBC
-#EXTINF:-1 tvg-name="风云音乐" tvg-logo="https://logo.sspai.net.cn/img/CCTVfyyy.png" group-title="📺央视频道",风云音乐
-http://112.86.202.37:8112/JSBC_iptv/C10000211@JSBC
-#EXTINF:-1 tvg-name="风云足球" tvg-logo="https://logo.sspai.net.cn/img/CCTVfyzq.png" group-title="📺央视频道",风云足球
-http://112.86.202.37:8112/JSBC_iptv/C10000204@JSBC
-#EXTINF:-1 tvg-name="高尔夫网球" tvg-logo="https://logo.sspai.net.cn/img/CCTVgefwq.png" group-title="📺央视频道",高尔夫网球
-http://112.86.202.37:8112/JSBC_iptv/C10000205@JSBC
-#EXTINF:-1 tvg-name="怀旧剧场" tvg-logo="https://logo.sspai.net.cn/img/CCTVhjjc.png" group-title="📺央视频道",怀旧剧场
-http://112.86.202.37:8112/JSBC_iptv/C10000210@JSBC
-#EXTINF:-1 tvg-name="女性时尚" tvg-logo="https://logo.sspai.net.cn/img/CCTVnxss.png" group-title="📺央视频道",女性时尚
-http://112.86.202.37:8112/JSBC_iptv/C10000212@JSBC
-#EXTINF:-1 tvg-name="世界地理" tvg-logo="https://logo.sspai.net.cn/img/CCTVsjdl.png" group-title="📺央视频道",世界地理
-http://112.86.202.37:8112/JSBC_iptv/C10000206@JSBC
-#EXTINF:-1 tvg-name="卫生健康" tvg-logo="https://logo.sspai.net.cn/img/CCTVwsjk.png" group-title="📺央视频道",卫生健康
-http://112.86.202.37:8112/JSBC_iptv/C10000416@JSBC
-#EXTINF:-1 tvg-name="央视台球" tvg-logo="https://logo.sspai.net.cn/img/CCTVystq.png" group-title="📺央视频道",央视台球
-http://112.86.202.37:8112/JSBC_iptv/C10000217@JSBC
-#EXTINF:-1 tvg-name="央视文化精品" tvg-logo="https://logo.sspai.net.cn/img/CCTVyswhjp.png" group-title="📺央视频道",央视文化精品
-http://112.86.202.37:8112/JSBC_iptv/C10000209@JSBC
-#EXTINF:-1 tvg-name="CETV1" tvg-logo="https://logo.sspai.net.cn/img/CETV1.png" group-title="📺央视频道",CETV-1
-http://112.86.202.37:8112/JSBC_iptv/C10000173@JSBC
-#EXTINF:-1 tvg-name="CETV4" tvg-logo="https://logo.sspai.net.cn/img/CETV4.png" group-title="📺央视频道",CETV-4
-http://112.86.202.37:8112/JSBC_iptv/C10000405@JSBC
-#EXTINF:-1 tvg-name="CETV早期教育" tvg-logo="https://logo.sspai.net.cn/img/CETV1.png" group-title="📺央视频道",CETV早期教育
-http://112.86.202.37:8112/JSBC_iptv/C10000417@JSBC
 #EXTINF:-1 tvg-name="CGTN俄语" tvg-logo="https://logo.sspai.net.cn/img/CGTNey.png" group-title="📺央视频道",CGTN俄语
 http://112.86.202.37:8112/JSBC_iptv/C10000233@JSBC
+
+# 💰付费･央视频
+#EXTINF:-1 tvg-name="兵器科技" tvg-logo="https://logo.sspai.net.cn/img/CCTVbqkj.png" group-title="💰付费･央视频",兵器科技
+http://112.86.202.37:8112/JSBC_iptv/C10000207@JSBC
+#EXTINF:-1 tvg-name="电视指南" tvg-logo="https://logo.sspai.net.cn/img/CCTVdszn.png" group-title="💰付费･央视频",电视指南
+http://112.86.202.37:8112/JSBC_iptv/C10000203@JSBC
+#EXTINF:-1 tvg-name="风云剧场" tvg-logo="https://logo.sspai.net.cn/img/CCTVfyjc.png" group-title="💰付费･央视频",风云剧场
+http://112.86.202.37:8112/JSBC_iptv/C10000208@JSBC
+#EXTINF:-1 tvg-name="风云音乐" tvg-logo="https://logo.sspai.net.cn/img/CCTVfyyy.png" group-title="💰付费･央视频",风云音乐
+http://112.86.202.37:8112/JSBC_iptv/C10000211@JSBC
+#EXTINF:-1 tvg-name="风云足球" tvg-logo="https://logo.sspai.net.cn/img/CCTVfyzq.png" group-title="💰付费･央视频",风云足球
+http://112.86.202.37:8112/JSBC_iptv/C10000204@JSBC
+#EXTINF:-1 tvg-name="高尔夫网球" tvg-logo="https://logo.sspai.net.cn/img/CCTVgefwq.png" group-title="💰付费･央视频",高尔夫网球
+http://112.86.202.37:8112/JSBC_iptv/C10000205@JSBC
+#EXTINF:-1 tvg-name="怀旧剧场" tvg-logo="https://logo.sspai.net.cn/img/CCTVhjjc.png" group-title="💰付费･央视频",怀旧剧场
+http://112.86.202.37:8112/JSBC_iptv/C10000210@JSBC
+#EXTINF:-1 tvg-name="女性时尚" tvg-logo="https://logo.sspai.net.cn/img/CCTVnxss.png" group-title="💰付费･央视频",女性时尚
+http://112.86.202.37:8112/JSBC_iptv/C10000212@JSBC
+#EXTINF:-1 tvg-name="世界地理" tvg-logo="https://logo.sspai.net.cn/img/CCTVsjdl.png" group-title="💰付费･央视频",世界地理
+http://112.86.202.37:8112/JSBC_iptv/C10000206@JSBC
+#EXTINF:-1 tvg-name="卫生健康" tvg-logo="https://logo.sspai.net.cn/img/CCTVwsjk.png" group-title="💰付费･央视频",卫生健康
+http://112.86.202.37:8112/JSBC_iptv/C10000416@JSBC
+#EXTINF:-1 tvg-name="央视台球" tvg-logo="https://logo.sspai.net.cn/img/CCTVystq.png" group-title="💰付费･央视频",央视台球
+http://112.86.202.37:8112/JSBC_iptv/C10000217@JSBC
+#EXTINF:-1 tvg-name="央视文化精品" tvg-logo="https://logo.sspai.net.cn/img/CCTVyswhjp.png" group-title="💰付费･央视频",央视文化精品
 
 # 📡卫视频道
 #EXTINF:-1 tvg-name="北京卫视" tvg-logo="https://logo.sspai.net.cn/img/Beijing.png" group-title="📡卫视频道",北京卫视
@@ -145,6 +140,12 @@ http://112.86.202.37:8112/JSBC_iptv/C10000410@JSBC
 http://112.86.202.37:8112/JSBC_iptv/C10000052@JSBC
 #EXTINF:-1 tvg-name="云南卫视" tvg-logo="https://logo.sspai.net.cn/img/Yunnan.png" group-title="📡卫视频道",云南卫视
 http://112.86.202.37:8112/JSBC_iptv/C10000202@JSBC
+#EXTINF:-1 tvg-name="CETV1" tvg-logo="https://logo.sspai.net.cn/img/CETV1.png" group-title="📡卫视频道",CETV-1
+http://112.86.202.37:8112/JSBC_iptv/C10000173@JSBC
+#EXTINF:-1 tvg-name="CETV4" tvg-logo="https://logo.sspai.net.cn/img/CETV4.png" group-title="📡卫视频道",CETV-4
+http://112.86.202.37:8112/JSBC_iptv/C10000405@JSBC
+#EXTINF:-1 tvg-name="CETV早期教育" tvg-logo="https://logo.sspai.net.cn/img/CETV早期教育.png" group-title="📡卫视频道",CETV早期教育
+http://112.86.202.37:8112/JSBC_iptv/C10000417@JSBC
 
 # 🪀江苏频道
 #EXTINF:-1 tvg-name="江苏城市" tvg-logo="https://logo.sspai.net.cn/img/Jiangsu2.png" group-title="🪀江苏频道",江苏城市
@@ -167,7 +168,7 @@ http://112.86.202.37:8112/JSBC_iptv/C10000187@JSBC
 http://112.86.202.37:8112/JSBC_iptv/C10000216@JSBC
 #EXTINF:-1 tvg-name="快乐垂钓" tvg-logo="https://logo.sspai.net.cn/img/klcd.png" group-title="🎯数字频道",快乐垂钓
 http://112.86.202.37:8112/JSBC_iptv/C10000142@JSBC
-#EXTINF:-1 tvg-name="梨园" tvg-logo="https://logo.sspai.net.cn/img/lypd.png" group-title="🎯数字频道",梨园频道
+#EXTINF:-1 tvg-name="梨园" tvg-logo="https://logo.sspai.net.cn/img/lypd.png" group-title="🎯数字频道",梨园
 http://112.86.202.37:8112/JSBC_iptv/C10000235@JSBC
 #EXTINF:-1 tvg-name="文物宝库" tvg-logo="https://logo.sspai.net.cn/img/wwbk.png" group-title="🎯数字频道",文物宝库
 http://112.86.202.37:8112/JSBC_iptv/C10000237@JSBC
