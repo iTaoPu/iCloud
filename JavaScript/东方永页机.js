@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         东方永页机（通用版）
+// @name         东方永页机 (通用版)
 // @namespace    https://i叚娤.倖鍢.net.cn
 // @version      2.0.2.6
 // @description  人的白嫖，就如同高山滚石一般，一旦开始，就再也停不下了 —— 「鲁迅」
