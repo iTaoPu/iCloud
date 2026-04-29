@@ -425,7 +425,7 @@ http://112.86.202.37:8112/JSBC_iptv/C10000405@JSBC
 http://112.86.202.37:8112/JSBC_iptv/C10000224@JSBC
 #EXTINF:-1 tvg-name="江苏教育" tvg-logo="https://logo.sspai.net.cn/img/Jiangsu7.png" group-title="🪀江苏频道･单播",江苏教育
 http://112.86.202.37:8112/JSBC_iptv/C10000231@JSBC
-#EXTINF:-1 tvg-name="江苏体育休闲" tvg-logo="https://logo.sspai.net.cn/img/Jiangsu5.png" group-title="🪀江苏频道･单播",江苏体育休闲
+#EXTINF:-1 tvg-name="江苏体育休闲" tvg-logo="https://logo.sspai.net.cn/img/Jiangsu5.png" group-title="🪀江苏频道･单播",江苏体育·休闲
 http://112.86.202.37:8112/JSBC_iptv/C10000226@JSBC
 #EXTINF:-1 tvg-name="江苏新闻" tvg-logo="https://logo.sspai.net.cn/img/Jiangsu1.png" group-title="🪀江苏频道･单播",江苏新闻
 http://112.86.202.37:8112/JSBC_iptv/C10000229@JSBC
