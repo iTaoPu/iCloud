@@ -64,6 +64,7 @@
 
                 position: relative !important;
                 z-index: 1 !important;
+                top: -2px !important;   /* 整体向上微调 2px，解决垂直偏下问题 */
             }
 
             /* 第一个加速按钮：左间距 1px（与 Raw 按钮分开），同时左圆角 */
@@ -217,7 +218,7 @@
         });
 
         fixCopyButtonSpacing();
-        console.log('[Github高速下载] 成功添加加速按钮（带圆角和Raw间距）');
+        console.log('[Github高速下载] 成功添加加速按钮（带圆角和Raw间距，已整体微调上移2px）');
     }
 
     let attemptCount = 0;
