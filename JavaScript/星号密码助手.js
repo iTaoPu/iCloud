@@ -1,128 +1,244 @@
 // ==UserScript==
-// @name         星号密码助手 (PC/移动全内核版)
+// @name         Github 增強 - 高速下載
 // @namespace    https://i叚娤.倖鍢.net.cn
-// @version      3.6.0
+// @version      4.4.4
 // @author       言氏稗客
 // @description  人的白嫖，就如同高山滚石一般，一旦开始，就再也停不下了 —— 「鲁迅」
-// @match        *://*/*
-// @grant        GM_setValue
-// @grant        GM_getValue
-// @grant        GM_registerMenuCommand
-// @run-at       document-start
-// @icon         https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/JavaScript/星号密码助手.ico
+// @match        *://github.com/*
+// @icon         https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/JavaScript/jsdelivr.ico
+// @grant        none
+// @run-at       document-end
 // ==/UserScript==
 
 (function() {
     'use strict';
 
-    // 1. 静态配置与内核判定
-    const CFG = {
-        M: parseInt(GM_getValue('m', 0)), // 0:悬停/长按, 1:双击, 2:聚焦, 3:Ctrl/长按
-        W: parseInt(GM_getValue('w', 300)),
-        IS_MOB: /Android|iPhone|iPad|iPod/i.test(navigator.userAgent),
-        IS_FF: navigator.userAgent.includes('Firefox')
-    };
+    const raw_url = [
+        ['https://cdn.jsdmirror.com', '中国', 'JsDMirror（中国公益加速）', true],
+        ['https://cdn.jsdelivr.net', '美国', 'JsDelivr（Cloudflare全球加速）', true],
+        ['https://fastly.jsdelivr.net', '日本', 'JsDelivr（Fastly亚太加速）', true],
+        ['https://wget.la/raw.githubusercontent.com', '香港', 'Wget.la（香港公益加速）', false]
+    ];
 
-    let timer;
+    const cloudIcon = `<svg aria-hidden="true" height="14" viewBox="0 0 16 16" version="1.1" width="14" class="octicon octicon-cloud" style="margin-right: 6px; fill: currentColor; vertical-align: middle;"><path d="M8 14a4.996 4.996 0 0 1-4.755-3.463 3.5 3.5 0 1 1 .53-6.936 4.502 4.502 0 0 1 8.455 1.4A3.502 3.502 0 0 1 11.5 12h-3a.75.75 0 0 1 0-1.5h3a2 2 0 0 0 0-4 .75.75 0 0 1-.75-.75 3 3 0 0 0-5.892-.803.75.75 0 0 1-.682.553 2 2 0 1 0-.176 3.992.75.75 0 1 1-.1 1.498A3.5 3.5 0 0 0 3.5 10.5 3.5 3.5 0 0 0 8 14Z"></path></svg>`;
 
-    // 2. 内核级切换函数：解决浏览器自动填充机制导致的干扰
-    const flip = (el, isShow) => {
-        if (!el || el.readOnly) return;
-        // 避免重复操作引发的重绘
-        const nextType = isShow ? 'text' : 'password';
-        if (el.type === nextType) return;
-
-        // Firefox 在切换 type 时可能会重置光标，此处做微任务保护
-        Promise.resolve().then(() => {
-            el._isC = true; // 标记为本脚本修改
-            el.type = nextType;
-        });
-    };
-
-    // 3. 高效事件过滤器
-    const getTarget = (e) => {
-        const t = e.target;
-        if (t.tagName !== 'INPUT') return null;
-        // 兼容 Chrome 自动填充样式和 Firefox 的私有属性
-        if (t.type === 'password' || t._isC) return t;
-        return null;
-    };
-
-    // 4. 事件策略池
-    const actions = {
-        0: (e) => { // 悬停/触控
-            const t = getTarget(e);
-            if (!t) return;
-            const isStart = ['mouseover', 'touchstart'].includes(e.type);
-            if (isStart) {
-                timer = setTimeout(() => flip(t, true), CFG.W);
-            } else {
-                clearTimeout(timer);
-                flip(t, false);
+    function addStyle() {
+        if (document.getElementById('XIU2-Style-Final')) return;
+        const style = document.createElement('style');
+        style.id = 'XIU2-Style-Final';
+        style.textContent = `
+            /* 消除父容器间隙 */
+            .BtnGroup {
+                font-size: 0 !important;
+                letter-spacing: -0.31em !important;
+                gap: 0 !important;
+                display: inline-flex !important;
+                flex-wrap: nowrap !important;
             }
-        },
-        1: (e) => { // 双击
-            const t = getTarget(e);
-            if (t) flip(t, t.type === 'password');
-        },
-        2: (e) => { // 聚焦
-            const t = getTarget(e);
-            if (t) flip(t, e.type === 'focusin');
-        },
-        3: (e) => { // 特殊组合键
-            const t = getTarget(e);
-            if (!t) return;
-            // PC 端 Ctrl+点击，移动端长按 (contextmenu)
-            if (e.ctrlKey || e.type === 'contextmenu') {
-                if (e.type === 'contextmenu' && CFG.M === 3) e.preventDefault();
-                flip(t, t.type === 'password');
+            .BtnGroup .BtnGroup-item,
+            .BtnGroup .XIU2-RF {
+                font-size: 12px !important;
+                letter-spacing: normal !important;
             }
-        }
-    };
 
-    // 5. 跨端挂载逻辑
-    const bind = () => {
-        const d = document;
-        const mode = CFG.M;
+            /* 加速按钮基础样式 */
+            .XIU2-RF {
+                margin-left: -1px !important;   /* 默认与左邻按钮边框重叠，消除间隙 */
+                margin-right: 0 !important;
+                border-radius: 0 !important;    /* 默认无圆角，中间按钮保持直角 */
+                display: inline-flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                gap: 0 !important;
+                height: 28px !important;
+                line-height: 20px !important;
+                padding: 4px 12px !important;
+                font-weight: 500 !important;
+                vertical-align: middle !important;
+                box-sizing: border-box !important;
 
-        if (mode === 0) {
-            const evs = CFG.IS_MOB ? ['touchstart', 'touchend', 'touchcancel'] : ['mouseover', 'mouseout'];
-            evs.forEach(ev => d.addEventListener(ev, actions[0], {passive: true, capture: true}));
-        } else if (mode === 1) {
-            d.addEventListener('dblclick', actions[1], true);
-        } else if (mode === 2) {
-            d.addEventListener('focusin', actions[2], true);
-            d.addEventListener('focusout', actions[2], true);
-        } else if (mode === 3) {
-            d.addEventListener('click', actions[3], true);
-            if (CFG.IS_MOB) d.addEventListener('contextmenu', actions[3], true);
-        }
+                background-color: var(--color-btn-bg, #f6f8fa) !important;
+                border: 1px solid var(--color-border-default, #d0d7de) !important;
+                color: var(--color-fg-default, #24292f) !important;
+                box-shadow: 0 1px 0 rgba(0,0,0,0.03) !important;
 
-        // 统一安全逻辑：回车还原、失去焦点还原
-        d.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter' && getTarget(e)) flip(e.target, false);
-        }, true);
-        
-        // 针对 Chrome 移动端的额外保护：切出应用时还原
-        window.addEventListener('blur', () => {
-            const focused = document.activeElement;
-            if (focused && focused._isC) flip(focused, false);
-        });
-    };
-
-    // 6. 极致轻量设置 (原生 Prompt)
-    if (window.self === window.top) {
-        GM_registerMenuCommand("⚙️ 极简配置", () => {
-            const m = prompt("模式: 0-悬停/触碰, 1-双击, 2-聚焦, 3-Ctrl/长按", CFG.M);
-            if (m !== null) {
-                GM_setValue('m', parseInt(m));
-                const w = prompt("延迟(ms):", CFG.W);
-                GM_setValue('w', parseInt(w) || 0);
-                location.reload();
+                position: relative !important;
+                z-index: 1 !important;
             }
-        });
+
+            /* 第一个加速按钮：左间距 1px（与 Raw 按钮分开），同时左圆角 */
+            .XIU2-First {
+                margin-left: 1px !important;
+                border-top-left-radius: 6px !important;
+                border-bottom-left-radius: 6px !important;
+            }
+
+            /* 最后一个加速按钮：右圆角 */
+            .XIU2-Last {
+                margin-right: 2px !important;
+                border-top-right-radius: 6px !important;
+                border-bottom-right-radius: 6px !important;
+            }
+
+            /* 深色模式调整边框和背景 */
+            @media (prefers-color-scheme: dark) {
+                .XIU2-RF {
+                    background-color: var(--color-btn-bg, #21262d) !important;
+                    border-color: var(--color-border-default, #30363d) !important;
+                    color: var(--color-fg-default, #c9d1d9) !important;
+                    box-shadow: 0 1px 0 rgba(255,255,255,0.05) !important;
+                }
+            }
+
+            /* 悬停效果：无白色背景，完全跟随主题 */
+            .XIU2-RF:hover {
+                z-index: 2 !important;
+                background-color: var(--color-btn-hover-bg, #f3f4f6) !important;
+                border-color: var(--color-border-default, #c0c5cc) !important;
+                color: var(--color-success-fg, #1f883d) !important;
+                box-shadow: 0 1px 0 rgba(0,0,0,0.08) !important;
+            }
+
+            @media (prefers-color-scheme: dark) {
+                .XIU2-RF:hover {
+                    background-color: var(--color-btn-hover-bg, #30363d) !important;
+                    border-color: var(--color-border-default, #8b949e) !important;
+                    box-shadow: 0 1px 0 rgba(255,255,255,0.08) !important;
+                }
+            }
+
+            .XIU2-RF:active {
+                background-color: var(--color-btn-active-bg, #eaeef2) !important;
+            }
+
+            /* 复制按钮左间距保障 */
+            .XIU2-Last + .BtnGroup-item,
+            .XIU2-Last + button,
+            .XIU2-Last + [data-testid="copy-button"],
+            .XIU2-Last + clipboard-copy {
+                margin-left: 8px !important;
+            }
+
+            /* 云朵浮动动画 */
+            .XIU2-RF:hover svg {
+                animation: xiu2-cloud-float 1.5s ease-in-out infinite;
+            }
+            @keyframes xiu2-cloud-float {
+                0%, 100% { transform: translateY(0); }
+                50% { transform: translateY(-2px); }
+            }
+
+            /* 去除点击白色高亮 */
+            .XIU2-RF:active,
+            .XIU2-RF:focus,
+            .XIU2-RF:focus-visible {
+                outline: none !important;
+                box-shadow: none !important;
+                background-color: var(--color-btn-bg) !important;
+            }
+        `;
+        document.head.appendChild(style);
     }
 
-    // 启动执行
-    bind();
+    function getConvertedUrl(prefix, isJSD) {
+        const path = location.pathname;
+        if (isJSD) {
+            const match = path.match(/^\/([^/]+\/[^/]+)\/blob\/([^/]+)\/(.*)$/);
+            if (match) {
+                return prefix + '/gh/' + match[1] + '@' + match[2] + '/' + match[3];
+            }
+            return prefix + path;
+        }
+        return prefix + path.replace('/blob/', '/');
+    }
+
+    function findRawButton() {
+        const selectors = [
+            'a[data-testid="raw-button"]',
+            'a#raw-url',
+            '[data-component="react-app"] a[href*="/raw/"]',
+            'a.BtnGroup-item[href*="/raw/"]'
+        ];
+        for (let sel of selectors) {
+            const btn = document.querySelector(sel);
+            if (btn) return btn;
+        }
+        const allLinks = document.querySelectorAll('a');
+        for (let link of allLinks) {
+            if (link.textContent.trim() === 'Raw' && link.getAttribute('href')?.includes('/raw/')) {
+                return link;
+            }
+        }
+        return null;
+    }
+
+    function fixCopyButtonSpacing() {
+        const lastAccel = document.querySelector('.XIU2-Last');
+        if (!lastAccel) return;
+        let copyBtn = lastAccel.nextElementSibling;
+        while (copyBtn && !copyBtn.matches('button, .BtnGroup-item, [data-testid="copy-button"], clipboard-copy, .js-copy-button')) {
+            copyBtn = copyBtn.nextElementSibling;
+        }
+        if (copyBtn && !copyBtn.style.marginLeft) {
+            copyBtn.style.marginLeft = '8px';
+        }
+    }
+
+    function addRawFile() {
+        const rawBtn = findRawButton();
+        if (!rawBtn) {
+            console.log('[Github高速下载] 未找到 Raw 按钮');
+            return;
+        }
+        // 移除已存在的加速按钮，避免重复
+        const existing = document.querySelectorAll('.XIU2-RF');
+        existing.forEach(btn => btn.remove());
+
+        addStyle();
+        const className = rawBtn.className;
+
+        let prevBtn = rawBtn;
+        raw_url.forEach((item, index) => {
+            const url = getConvertedUrl(item[0], item[3]);
+            const a = document.createElement('a');
+            const isFirst = (index === 0);
+            const isLast = (index === raw_url.length - 1);
+            let extraClass = ' XIU2-RF';
+            if (isFirst) extraClass += ' XIU2-First';
+            if (isLast) extraClass += ' XIU2-Last';
+            a.className = className + extraClass;
+            a.href = url;
+            a.target = '_blank';
+            a.role = 'button';
+            a.title = item[2];
+            a.innerHTML = `${cloudIcon}${item[1]}`;
+            rawBtn.parentNode.insertBefore(a, prevBtn.nextSibling);
+            prevBtn = a;
+        });
+
+        fixCopyButtonSpacing();
+        console.log('[Github高速下载] 成功添加加速按钮（带圆角和Raw间距）');
+    }
+
+    let attemptCount = 0;
+    const interval = setInterval(() => {
+        if (document.querySelector('.XIU2-RF')) {
+            clearInterval(interval);
+            return;
+        }
+        addRawFile();
+        attemptCount++;
+        if (attemptCount >= 20) {
+            clearInterval(interval);
+            console.log('[Github高速下载] 超过最大尝试次数');
+        }
+    }, 500);
+
+    const observer = new MutationObserver(() => {
+        if (document.querySelector('.XIU2-RF')) return;
+        addRawFile();
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+
+    addRawFile();
 })();
