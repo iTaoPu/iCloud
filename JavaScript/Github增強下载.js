@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Github 增強 - 高速下載
 // @namespace    https://i叚娤.倖鍢.net.cn
-// @version      4.4.5
+// @version      4.4.4
 // @author       言氏稗客
 // @description  人的白嫖，就如同高山滚石一般，一旦开始，就再也停不下了 —— 「鲁迅」
 // @match        *://github.com/*
@@ -41,7 +41,7 @@
                 letter-spacing: normal !important;
             }
 
-            /* 加速按钮基础样式（不固定高度，自动与 Raw 按钮对齐） */
+            /* 加速按钮基础样式 */
             .XIU2-RF {
                 margin-left: -1px !important;   /* 默认与左邻按钮边框重叠，消除间隙 */
                 margin-right: 0 !important;
@@ -50,11 +50,12 @@
                 align-items: center !important;
                 justify-content: center !important;
                 gap: 0 !important;
-                padding: 0 12px !important;     /* 左右内边距，上下留空由高度决定 */
+                height: 28px !important;
+                line-height: 20px !important;
+                padding: 4px 12px !important;
                 font-weight: 500 !important;
                 vertical-align: middle !important;
                 box-sizing: border-box !important;
-                white-space: nowrap !important;
 
                 background-color: var(--color-btn-bg, #f6f8fa) !important;
                 border: 1px solid var(--color-border-default, #d0d7de) !important;
@@ -63,6 +64,7 @@
 
                 position: relative !important;
                 z-index: 1 !important;
+                top: -2px !important;   /* 整体向上微调 2px，解决垂直偏下问题 */
             }
 
             /* 第一个加速按钮：左间距 1px（与 Raw 按钮分开），同时左圆角 */
@@ -194,12 +196,6 @@
         existing.forEach(btn => btn.remove());
 
         addStyle();
-
-        // 获取原始 Raw 按钮的高度和行高（用于自动平衡对齐）
-        const rawHeight = rawBtn.offsetHeight;
-        const rawStyle = window.getComputedStyle(rawBtn);
-        const rawLineHeight = rawStyle.lineHeight;
-
         const className = rawBtn.className;
 
         let prevBtn = rawBtn;
@@ -217,19 +213,12 @@
             a.role = 'button';
             a.title = item[2];
             a.innerHTML = `${cloudIcon}${item[1]}`;
-
-            // 关键：动态设置高度和行高，与 Raw 按钮完全一致
-            a.style.height = rawHeight + 'px';
-            if (rawLineHeight && rawLineHeight !== 'normal') {
-                a.style.lineHeight = rawLineHeight;
-            }
-
             rawBtn.parentNode.insertBefore(a, prevBtn.nextSibling);
             prevBtn = a;
         });
 
         fixCopyButtonSpacing();
-        console.log('[Github高速下载] 成功添加加速按钮（自动平衡对齐 Raw 按钮高度）');
+        console.log('[Github高速下载] 成功添加加速按钮（带圆角和Raw间距，已整体微调上移2px）');
     }
 
     let attemptCount = 0;
