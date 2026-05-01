@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         Github 增強 - 高速下載
 // @namespace    https://i叚娤.倖鍢.net.cn
-// @version      4.4.4
+// @version      4.5.2
 // @author       言氏稗客
-// @description  人的白嫖，就如同高山滚石一般，一旦开始，就再也停不下了 —— 「鲁迅」
+// @description  人的白嫖，就如同高山滚石一般，一旦开始，就再也停不下了 —— 「鲁迅」—— 精确 0.5px 对齐
 // @match        *://github.com/*
 // @icon         https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/JavaScript/jsdelivr.ico
 // @grant        none
@@ -34,6 +34,7 @@
                 gap: 0 !important;
                 display: inline-flex !important;
                 flex-wrap: nowrap !important;
+                align-items: center !important;
             }
             .BtnGroup .BtnGroup-item,
             .BtnGroup .XIU2-RF {
@@ -41,11 +42,11 @@
                 letter-spacing: normal !important;
             }
 
-            /* 加速按钮基础样式 */
+            /* 加速按钮基础样式 - 使用 transform 精确微调 0.5px */
             .XIU2-RF {
-                margin-left: -1px !important;   /* 默认与左邻按钮边框重叠，消除间隙 */
+                margin-left: -1px !important;
                 margin-right: 0 !important;
-                border-radius: 0 !important;    /* 默认无圆角，中间按钮保持直角 */
+                border-radius: 0 !important;
                 display: inline-flex !important;
                 align-items: center !important;
                 justify-content: center !important;
@@ -64,19 +65,19 @@
 
                 position: relative !important;
                 z-index: 1 !important;
-                top: -2px !important;   /* 整体向上微调 2px，解决垂直偏下问题 */
+                transform: translateY(-1.2px) !important;
             }
 
             /* 第一个加速按钮：左间距 1px（与 Raw 按钮分开），同时左圆角 */
             .XIU2-First {
-                margin-left: 1px !important;
+                margin-left: 1.2px !important;
                 border-top-left-radius: 6px !important;
                 border-bottom-left-radius: 6px !important;
             }
 
             /* 最后一个加速按钮：右圆角 */
             .XIU2-Last {
-                margin-right: 2px !important;
+                margin-right: 1.8px !important;
                 border-top-right-radius: 6px !important;
                 border-bottom-right-radius: 6px !important;
             }
@@ -91,7 +92,7 @@
                 }
             }
 
-            /* 悬停效果：无白色背景，完全跟随主题 */
+            /* 悬停效果 */
             .XIU2-RF:hover {
                 z-index: 2 !important;
                 background-color: var(--color-btn-hover-bg, #f3f4f6) !important;
@@ -218,7 +219,7 @@
         });
 
         fixCopyButtonSpacing();
-        console.log('[Github高速下载] 成功添加加速按钮（带圆角和Raw间距，已整体微调上移2px）');
+        console.log('[Github高速下载] 成功添加加速按钮');
     }
 
     let attemptCount = 0;
