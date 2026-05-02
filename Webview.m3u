@@ -204,20 +204,20 @@ webview://https://yangshipin.cn/tv/home?pid=600152138
 #EXTINF:-1 tvg-name="CETV1" tvg-logo="https://logo.sspai.net.cn/img/CETV1.png" group-title="📡卫视･央视频",CETV-1
 webview://https://yangshipin.cn/tv/home?pid=600171827
 
-# 🗺️国际教育
-#EXTINF:-1 tvg-name="国际教育汉语文化" tvg-logo="https://logo.sspai.net.cn/img/CEC汉语文化.png" group-title="🗺️国际教育",国际教育·汉语文化
+# 🗺️国际教育·中國
+#EXTINF:-1 tvg-name="国际教育汉语文化" tvg-logo="https://logo.sspai.net.cn/img/CEC汉语文化.png" group-title="🗺️国际教育·中國",国际教育·汉语文化
 webview://http://m3u8.cec-tv.com.cn/?url=http://play.cec-tv.com.cn/channel/cec-tv1.m3u8
 http://play.cec-tv.com.cn/channel/cec-tv1.m3u8
-#EXTINF:-1 tvg-name="国际教育国际旅游" tvg-logo="https://logo.sspai.net.cn/img/CEC国际旅游.png" group-title="🗺️国际教育",国际教育·国际旅游
+#EXTINF:-1 tvg-name="国际教育国际旅游" tvg-logo="https://logo.sspai.net.cn/img/CEC国际旅游.png" group-title="🗺️国际教育·中國",国际教育·国际旅游
 webview://http://m3u8.cec-tv.com.cn/?url=http://play.cec-tv.com.cn/channel/cec-tv2.m3u8
 http://play.cec-tv.com.cn/channel/cec-tv2.m3u8
-#EXTINF:-1 tvg-name="国际教育国际教育" tvg-logo="https://logo.sspai.net.cn/img/CEC国际教育.png" group-title="🗺️国际教育",国际教育·国际教育
+#EXTINF:-1 tvg-name="国际教育国际教育" tvg-logo="https://logo.sspai.net.cn/img/CEC国际教育.png" group-title="🗺️国际教育·中國",国际教育·国际教育
 webview://http://m3u8.cec-tv.com.cn/?url=http://play.cec-tv.com.cn/channel/cec-tv3.m3u8
 http://play.cec-tv.com.cn/channel/cec-tv3.m3u8
-#EXTINF:-1 tvg-name="国际教育国际健康" tvg-logo="https://logo.sspai.net.cn/img/CEC国际健康.png" group-title="🗺️国际教育",国际教育·国际健康
+#EXTINF:-1 tvg-name="国际教育国际健康" tvg-logo="https://logo.sspai.net.cn/img/CEC国际健康.png" group-title="🗺️国际教育·中國",国际教育·国际健康
 webview://http://m3u8.cec-tv.com.cn/?url=http://play.cec-tv.com.cn/channel/cec-tv4.m3u8
 http://play.cec-tv.com.cn/channel/cec-tv4.m3u8
-#EXTINF:-1 tvg-name="国际教育美食文化" tvg-logo="https://logo.sspai.net.cn/img/CEC美食文化.png" group-title="🗺️国际教育",国际教育·美食文化
+#EXTINF:-1 tvg-name="国际教育美食文化" tvg-logo="https://logo.sspai.net.cn/img/CEC美食文化.png" group-title="🗺️国际教育·中國",国际教育·美食文化
 webview://https://web.guangdianyun.tv/tv/3782?uin=4251
 
 # 🐼熊猫･央视网
