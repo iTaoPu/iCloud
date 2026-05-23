@@ -15,8 +15,9 @@
 
     const raw_url = [
         ['https://cdn.jsdmirror.com', '中国', 'JsDMirror（中国公益加速）', true],
-        ['https://cdn.jsdelivr.net', '美国', 'JsDelivr（Cloudflare全球加速）', true],
-        ['https://fastly.jsdelivr.net', '日本', 'JsDelivr（Fastly亚太加速）', true],
+        ['https://cdn.jsdelivr.net', '美国', 'JsDelivr（CDN加速）', true],
+        ['https://gcore.jsdelivr.net', '美国', 'JsDelivr（Gcore加速）', true],
+        ['https://fastly.jsdelivr.net', '日本', 'JsDelivr（Fastly加速）', true],
         ['https://wget.la/raw.githubusercontent.com', '香港', 'Wget.la（香港公益加速）', false]
     ];
 
