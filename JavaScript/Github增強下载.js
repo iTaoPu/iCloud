@@ -14,7 +14,8 @@
     'use strict';
 
     const raw_url = [
-        ['https://cdn.jsdmirror.com', '中国', 'JsDMirror（中国公益加速）', true],
+        ['https://cdn.sspai.li/raw.githubusercontent.com', '中国', '少数π⁺（Cloudflare加速）', true],
+        ['https://cdn.jsdmirror.com', '中国', 'JsDMirror（China加速）', true],
         ['https://cdn.jsdelivr.net', '美国', 'JsDelivr（CDN加速）', true],
         ['https://gcore.jsdelivr.net', '美国', 'JsDelivr（Gcore加速）', true],
         ['https://fastly.jsdelivr.net', '日本', 'JsDelivr（Fastly加速）', true],
