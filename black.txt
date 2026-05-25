@@ -6,7 +6,7 @@
 ! Description: 极致的体积控制，超高的命中率，极低的硬件要求！
 ! ------------------------------------
 ! Version: 1.6.9-release
-! Update Date: 2026-04-07
+! Update Date: 2026-05-24
 
 ||1500020991.vodplayer.wxamedia.com^
 ||1500022744.vodplayer.wxamedia.com^
@@ -124,6 +124,7 @@
 ||adsfilebssdlbig.ali.kugou.com^
 ||adsfileretry.service.kugou.com^
 ||adsfs-sdkconfig.heytapimage.com^
+||adsfs.heytapimage.com^
 ||adsfs.oppomobile.com^
 ||adslvfile.qq.com^
 ||adsmart.konka.com^
@@ -342,7 +343,6 @@
 ||doubleclick-cn.net^
 ||download.changhong.upgrade2.huan.tv^
 ||downloadxml.changhong.upgrade2.huan.tv^
-||drcn-weather.cloud.huawei.com^
 ||dsp-x.jd.com^
 ||dsp.fcbox.com^
 ||dualstack-logs.amap.com^
