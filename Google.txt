@@ -1,4 +1,4 @@
-! Title: AdRules 稗客がく山道 Google List
+! Title: AdRules 鯉躍がく山道 Google List
 ! Homepage: https://i叚娤.倖鍢.net.cn
 ! Powerd by 長髯主簿 & Upstream Authors
 ! Signature: 此地為禁, 萬物寂滅
@@ -6,7 +6,7 @@
 ! Description: Completely blocks all Google-related domains (including YouTube).
 ! ------------------------------------
 ! Version: 1.0.14.70
-! Update Time: 2026-05-29 04:29:00
+! Update Time: 2026-05-31 16:49:30
 
 ||adgoogle.net^
 ||crashlytics.com^
