@@ -6,7 +6,7 @@
 ! Description: Completely blocks all Google-related domains (including YouTube).
 ! ------------------------------------
 ! Version: 1.0.14.70
-! Update Time: 2026-06-01 03:22:36
+! Update Time: 2026-06-02 05:37:00
 
 ||adgoogle.net^
 ||crashlytics.com^
