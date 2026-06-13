@@ -5,7 +5,7 @@
 // @author       言氏稗客
 // @description  人的白嫖，就如同高山滚石一般，一旦开始，就再也停不下了 —— 「鲁迅」—— 精确 0.5px 对齐
 // @match        *://github.com/*
-// @icon         https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/JavaScript/jsdelivr.ico
+// @icon         https://cdn.jsdelivr.net/gh/iTaoPu/iCloud@Grey/JavaScript/jsdelivr.ico
 // @grant        none
 // @run-at       document-end
 // ==/UserScript==
