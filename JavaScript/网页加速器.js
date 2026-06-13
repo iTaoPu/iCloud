@@ -9,7 +9,7 @@
 // @grant           GM_setValue
 // @grant           GM_getValue
 // @grant           GM_registerMenuCommand
-// @icon             https://fastly.jsdelivr.net/gh/iTaoPu/iCloud@Grey/JavaScript/网页加速器.ico
+// @icon             https://cdn.jsdelivr.net/gh/iTaoPu/iCloud@Grey/JavaScript/网页加速器.ico
 // ==/UserScript==
 
 (function (window, document) {
