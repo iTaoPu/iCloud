@@ -36,8 +36,6 @@ jobs:
           # URL列表
           URLS=(
             "https://raw.githubusercontent.com/AdguardTeam/HostlistsRegistry/main/assets/filter_37.txt"
-            "https://adguardteam.github.io/HostlistsRegistry/assets/filter_37.txt"
-            "https://wget.la/raw.githubusercontent.com/AdguardTeam/HostlistsRegistry/main/assets/filter_37.txt"
           )
           
           for url in "${URLS[@]}"; do
