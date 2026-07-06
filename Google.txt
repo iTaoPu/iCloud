@@ -1,12 +1,12 @@
 ! Title: AdRules 鯉躍がく山道 Google List
-! Homepage: https://i叚娤.倖鍢.net.eu
+! Homepage: https://i叚娤.倖鍢.net.cn
 ! Powerd by 長髯主簿 & Upstream Authors
 ! Signature: 此地為禁, 萬物寂滅
 ! Expires: irregularly (update frequency)
 ! Description: Completely blocks all Google-related domains (including YouTube).
 ! ------------------------------------
 ! Version: 1.0.14.70
-! Update Time: 2026-07-05 03:19:47
+! Update Time: 2026-07-06 23:28:14
 
 ||adgoogle.net^
 ||crashlytics.com^
