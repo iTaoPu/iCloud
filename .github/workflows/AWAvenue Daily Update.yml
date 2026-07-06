@@ -35,7 +35,6 @@ jobs:
           # 使用可靠的下载地址
           URLS=(
             "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt"
-            "https://wget.la/raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt"
           )
           
           for url in "${URLS[@]}"; do
