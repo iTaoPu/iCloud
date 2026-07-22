@@ -2,7 +2,7 @@ name: Seiga Daily Update
 
 on:
   schedule:
-    - cron: '0 6 */3 * *'
+    - cron: '0 15 */3 * *'
   workflow_dispatch:
 
 permissions:
