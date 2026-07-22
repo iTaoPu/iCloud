@@ -34,20 +34,26 @@ def get_upstream_info(temp_file):
 
 def extract_core_rules(temp_file):
     core_rules = []
+    # 需要移除的行前缀（包括 Description 和 Homepage）
     remove_prefixes = [
         "!Total lines:",
         "!Update content:",
         "!Homepage:",
-        "!License:"
+        "!License:",
+        "! Description:",    # 移除原有的 Description 行
+        "!Description:"     # 兼容无空格的情况
     ]
     try:
         with open(temp_file, "r", encoding="utf-8") as f:
             for line in f:
                 line_strip = line.strip()
+                # 匹配并移除这些前缀行
                 if any(line_strip.startswith(prefix) for prefix in remove_prefixes):
                     continue
+                # 跳过原始头部中的其他注释（保留规则行）
                 if line_strip.startswith("!") and any(key in line_strip for key in ["Title", "Version", "Update time", "--------------------------------------"]):
                     continue
+                # 保留有效行（去除多余空行）
                 if line_strip or (core_rules and core_rules[-1].strip()):
                     core_rules.append(line.rstrip("\n"))
         return "\n".join(core_rules).strip()
@@ -97,6 +103,7 @@ def main():
         print(f"CURRENT_DATE={upstream_update_time}")
         sys.exit(0)
 
+    # 自定义头部（完全按您的要求）
     custom_header = f"""! Title: AdRules  晴雅がく山道 Black List
 ! Homepage: https://i叚娤.倖鍢.net.cn
 ! Powerd by 長髯主簿 & Upstream Authors
@@ -117,7 +124,7 @@ def main():
     print(f"NEW_VERSION={upstream_ver}")
     print(f"CURRENT_DATE={upstream_update_time}")
     print(f"✅ Seiga.txt 生成完成：版本 {upstream_ver}，有效规则 {rule_count} 条")
-    print(f"✅ 已移除指定前缀行")
+    print(f"✅ 已移除指定前缀行（包括 Description 和 Homepage）")
 
 if __name__ == "__main__":
     try:
