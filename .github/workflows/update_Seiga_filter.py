@@ -100,7 +100,7 @@ def main():
 ! Powerd by 長髯主簿 & Upstream Authors
 ! Signature: 素心若雪，淡意如云
 ! Expires: irregularly (update frequency)
-! Description: 自抓规则，精准过滤！
+! Description: 低误杀率，持续优化，精准过滤！
 ! ------------------------------------
 ! Version: {upstream_ver}
 ! Update Date: {upstream_update_time}
