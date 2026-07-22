@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-从上游规则生成 Seiga.txt（移除指定行，版本号跟随上游）
+晴雅广告规则生成Seiga.txt脚本（移除指定行，版本号跟随上游）
 """
 import os
 import hashlib
