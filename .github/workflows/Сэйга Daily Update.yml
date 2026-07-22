@@ -1,10 +1,12 @@
 name: Сэйга Daily Update
 
+# 触发条件：每3天自动运行 + 手动触发
 on:
   schedule:
     - cron: '0 30 */3 * *'
   workflow_dispatch:
 
+# 显式赋予写入权限
 permissions:
   contents: write
 
@@ -25,27 +27,34 @@ jobs:
         with:
           python-version: "3.10"
 
-      # 3. 下载远程规则（新地址）
-      - name: Download remote filter file
+      # 3. 下载远程AWAvenue规则
+      - name: Download remote AWAvenue filter file
         id: download
         run: |
-          echo "📥 下载上游规则：https://raw.githubusercontent.com/rssvcn/qy-Ads-Rule/main/black.txt"
-          URL="https://raw.githubusercontent.com/rssvcn/qy-Ads-Rule/main/black.txt"
+          echo "📥 下载AWAvenue-Ads-Rule.txt..."
+          # 使用可靠的下载地址
+          URLS=(
+            "https://raw.githubusercontent.com/rssvcn/qy-Ads-Rule/main/Сэйга.txt"
+          )
           
-          if curl -sL --retry 3 --connect-timeout 30 -o "temp_black_filter.txt" "$URL"; then
-            RULE_COUNT=$(wc -l < "temp_black_filter.txt" | tr -d ' ')
-            if [ "$RULE_COUNT" -gt 100 ]; then
-              echo "✅ 下载成功，共 $RULE_COUNT 行"
-              echo "DOWNLOAD_SUCCESS=1" >> $GITHUB_OUTPUT
-              exit 0
+          for url in "${URLS[@]}"; do
+            echo "尝试: $url"
+            if curl -sL --retry 3 --connect-timeout 30 -o "temp_black_filter.txt" "$url"; then
+              RULE_COUNT=$(wc -l < "temp_black_filter.txt" | tr -d ' ')
+              if [ "$RULE_COUNT" -gt 100 ]; then
+                echo "✅ 下载成功，共 $RULE_COUNT 行"
+                echo "DOWNLOAD_SUCCESS=1" >> $GITHUB_OUTPUT
+                exit 0
+              fi
             fi
-          fi
+            sleep 2
+          done
           
-          echo "❌ 下载失败"
+          echo "❌ 所有下载尝试失败"
           exit 1
 
-      # 4. 执行Python脚本（生成Сэйга.txt）
-      - name: Run sync script
+      # 4. 执行Python脚本（需要放在正确位置）
+      - name: Run black filter sync script
         id: sync
         if: steps.download.outputs.DOWNLOAD_SUCCESS == '1'
         run: |
@@ -62,34 +71,41 @@ jobs:
             exit 1
           fi
           
-          # 验证生成的文件（Сэйга.txt）
+          # 验证生成的文件
           if [ -f "Сэйга.txt" ]; then
-            RULE_COUNT=$(wc -l < "Сэйга.txt")
-            echo "生成的Сэйга.txt包含 $RULE_COUNT 行"
+            BLACK_RULE_COUNT=$(wc -l < "Сэйга.txt")
+            echo "生成的Сэйга.txt包含 $BLACK_RULE_COUNT 行"
           else
             echo "❌ Сэйга.txt未生成"
             exit 1
           fi
 
-      # 5. 提交并推送（仅推送Сэйга.txt）
+      # 5. 提交并推送
       - name: Commit and push changes
         if: steps.download.outputs.DOWNLOAD_SUCCESS == '1' && steps.sync.outputs.new_version
         env:
           NEW_VERSION: ${{ steps.sync.outputs.new_version }}
         run: |
+          # 配置Git身份
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
+          # 切换到正确分支
           git checkout Grey || git checkout -b Grey
           
+          # 添加文件
           git add Сэйга.txt
           
+          # 检查是否有变更
           if git diff --cached --quiet; then
             echo "ℹ️ 无变更，跳过提交"
             exit 0
           fi
           
+          # 提交
           git commit -m "🔄 Auto update Сэйга.txt to v${NEW_VERSION}"
+          
+          # 推送（使用token认证）
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git Grey
           
           echo "✅ 更新完成并已推送"
