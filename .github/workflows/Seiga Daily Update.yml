@@ -1,0 +1,97 @@
+name: Seiga Daily Update
+
+on:
+  schedule:
+    - cron: '0 6 */3 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-seiga:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          ref: Grey
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.10"
+
+      - name: Download upstream rule
+        id: download
+        run: |
+          echo "📥 下载上游规则：https://raw.githubusercontent.com/rssvcn/qy-Ads-Rule/main/black.txt"
+          URL="https://raw.githubusercontent.com/rssvcn/qy-Ads-Rule/main/black.txt"
+          if curl -sL --retry 3 --connect-timeout 30 -o temp_black_filter.txt "$URL"; then
+            RULE_COUNT=$(wc -l < temp_black_filter.txt | tr -d ' ')
+            if [ "$RULE_COUNT" -gt 100 ]; then
+              echo "✅ 下载成功，共 $RULE_COUNT 行"
+              echo "DOWNLOAD_SUCCESS=1" >> $GITHUB_OUTPUT
+              exit 0
+            fi
+          fi
+          echo "❌ 下载失败"
+          exit 1
+
+      - name: Run generation script
+        id: generate
+        if: steps.download.outputs.DOWNLOAD_SUCCESS == '1'
+        run: |
+          echo "🚀 执行 Python 脚本..."
+          python .github/workflows/update_Seiga_filter.py   # 此处已改为新名称
+          
+          if [ -f "black_script_output.log" ]; then
+            cat black_script_output.log
+          fi
+          
+          if [ -f "black_script_output.log" ]; then
+            NEW_VERSION=$(grep "^NEW_VERSION=" black_script_output.log | cut -d'=' -f2 || echo "1.0.0.0")
+            echo "版本号: $NEW_VERSION"
+            echo "new_version=$NEW_VERSION" >> $GITHUB_OUTPUT
+          else
+            echo "❌ 日志文件不存在"
+            exit 1
+          fi
+          
+          if [ -f "Seiga.txt" ]; then
+            RULE_COUNT=$(wc -l < Seiga.txt)
+            echo "生成的 Seiga.txt 包含 $RULE_COUNT 行"
+          else
+            echo "❌ Seiga.txt 未生成"
+            ls -la
+            exit 1
+          fi
+
+      - name: Commit and push changes
+        if: steps.download.outputs.DOWNLOAD_SUCCESS == '1' && steps.generate.outputs.new_version
+        env:
+          NEW_VERSION: ${{ steps.generate.outputs.new_version }}
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          git checkout Grey || git checkout -b Grey
+          
+          git add Seiga.txt
+          
+          if git diff --cached --quiet; then
+            echo "ℹ️ 无变更，跳过提交"
+            exit 0
+          fi
+          
+          git commit -m "🔄 Auto update Seiga.txt to v${NEW_VERSION}"
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git Grey
+          
+          echo "✅ 更新完成并已推送"
+
+      - name: Cleanup
+        if: always()
+        run: |
+          rm -f temp_black_filter.txt black_script_output.log .black_*.log || true
+          echo "🧹 清理完成"
