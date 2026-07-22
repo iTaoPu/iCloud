@@ -1,7 +1,8 @@
 name: Seiga Daily Update
+
 on:
   schedule:
-    - cron: '0 15 */3 * *'
+    - cron: '0 12 */3 * *'
   workflow_dispatch:
 
 permissions:
@@ -91,9 +92,6 @@ jobs:
 
       - name: Cleanup
         if: always()
-        run: |
-          rm -f temp_black_filter.txt black_script_output.log .black_*.log || true
-          echo "🧹 清理完成"
         run: |
           rm -f temp_black_filter.txt black_script_output.log .black_*.log || true
           echo "🧹 清理完成"
