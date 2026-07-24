@@ -95,7 +95,7 @@ def main():
         sys.exit(0)
 
     # 构建自定义头部（完全按您的要求）
-    custom_header = f"""! Title: AdRules 晴雅がく山道 Seiga List
+    custom_header = f"""! Title: AdRules 晴雅がく山道 Black List
 ! Homepage: https://i叚娤.倖鍢.net.cn
 ! Powerd by 長髯主簿 & Upstream Authors
 ! Signature: 素心若雪，淡意如云
