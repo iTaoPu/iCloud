@@ -1,4 +1,4 @@
-! Title: AdRules 晴雅がく山道 Seiga List
+! Title: AdRules 晴雅がく山道 Black List
 ! Homepage: https://i叚娤.倖鍢.net.cn
 ! Powerd by 長髯主簿 & Upstream Authors
 ! Signature: 素心若雪，淡意如云
@@ -6,7 +6,7 @@
 ! Description: 低误杀率，持续优化，精准过滤！
 ! ------------------------------------
 ! Version: 1.8.1
-! Update Date: 2026-07-22
+! Update Date: 2026-07-24
 
 ||*.ads.heytapmobi.com^
 ||*.applovin.com^
