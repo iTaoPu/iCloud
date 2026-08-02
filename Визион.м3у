@@ -435,6 +435,12 @@ http://112.86.202.37:8112/JSBC_iptv/C10000229@JSBC
 http://112.86.202.37:8112/JSBC_iptv/C10000227@JSBC
 #EXTINF:-1 tvg-name="江苏综艺" tvg-logo="https://logo.sspai.net.cn/img/Jiangsu3.png" group-title="🪀江苏频道･单播",江苏综艺
 http://112.86.202.37:8112/JSBC_iptv/C10000225@JSBC
+#EXTINF:-1,江苏公共新闻
+http://112.86.202.37:8112/JSBC_iptv/C10000229@JSBC
+#EXTINF:-1,江苏教育
+http://112.86.202.37:8112/JSBC_iptv/C10000231@JSBC
+#EXTINF:-1,江苏国际
+http://112.86.202.37:8112/JSBC_iptv/C10000470@JSBC
 #EXTINF:-1 tvg-name="好享购物" tvg-logo="https://logo.sspai.net.cn/img/HAOxiangGou.png" group-title="🪀江苏频道･单播",好享购物
 http://112.86.202.37:8112/JSBC_iptv/C10000230@JSBC
 
@@ -455,3 +461,7 @@ http://112.86.202.37:8112/JSBC_iptv/C10000236@JSBC
 http://112.86.202.37:8112/JSBC_iptv/C10000228@JSBC
 #EXTINF:-1 tvg-name="东方财经" tvg-logo="https://logo.sspai.net.cn/img/dfcj.png" group-title="🎯数字频道･单播",东方财经
 http://112.86.202.37:8112/JSBC_iptv/C10000420@JSBC
+#EXTINF:-1 tvg-name="生活时尚" tvg-logo="https://logo.sspai.net.cn/img/dfcj.png" group-title="🎯数字频道･单播",生活时尚
+http://112.86.202.37:8112/JSBC_iptv/C10000423@JSBC
+#EXTINF:-1,中学生频道
+http://112.86.202.37:8112/JSBC_iptv/C10000471@JSBC
