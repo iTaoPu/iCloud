@@ -417,10 +417,6 @@ http://112.86.202.37:8112/JSBC_iptv/C10000410@JSBC
 http://112.86.202.37:8112/JSBC_iptv/C10000052@JSBC
 #EXTINF:-1 tvg-name="云南卫视" tvg-logo="https://logo.sspai.net.cn/img/Yunnan.png" group-title="📡卫视频道･单播",云南卫视
 http://112.86.202.37:8112/JSBC_iptv/C10000202@JSBC
-#EXTINF:-1 tvg-name="CETV1" tvg-logo="https://logo.sspai.net.cn/img/CETV1.png" group-title="📡卫视频道･单播",CETV-1
-http://112.86.202.37:8112/JSBC_iptv/C10000173@JSBC
-#EXTINF:-1 tvg-name="CETV4" tvg-logo="https://logo.sspai.net.cn/img/CETV4.png" group-title="📡卫视频道･单播",CETV-4
-http://112.86.202.37:8112/JSBC_iptv/C10000405@JSBC
 
 # 🪀江苏频道･单播
 #EXTINF:-1 tvg-name="江苏城市" tvg-logo="https://logo.sspai.net.cn/img/Jiangsu2.png" group-title="🪀江苏频道･单播",江苏城市
@@ -435,20 +431,30 @@ http://112.86.202.37:8112/JSBC_iptv/C10000229@JSBC
 http://112.86.202.37:8112/JSBC_iptv/C10000227@JSBC
 #EXTINF:-1 tvg-name="江苏综艺" tvg-logo="https://logo.sspai.net.cn/img/Jiangsu3.png" group-title="🪀江苏频道･单播",江苏综艺
 http://112.86.202.37:8112/JSBC_iptv/C10000225@JSBC
-#EXTINF:-1,江苏公共新闻
-http://112.86.202.37:8112/JSBC_iptv/C10000229@JSBC
-#EXTINF:-1,江苏教育
-http://112.86.202.37:8112/JSBC_iptv/C10000231@JSBC
-#EXTINF:-1,江苏国际
+#EXTINF:-1 tvg-name="江苏国际" tvg-logo="https://logo.sspai.net.cn/img/Jiangsu6.png" group-title="🪀江苏频道･单播",江苏国际
 http://112.86.202.37:8112/JSBC_iptv/C10000470@JSBC
 #EXTINF:-1 tvg-name="好享购物" tvg-logo="https://logo.sspai.net.cn/img/HAOxiangGou.png" group-title="🪀江苏频道･单播",好享购物
 http://112.86.202.37:8112/JSBC_iptv/C10000230@JSBC
 
+# 🏆教育频道･单播
+#EXTINF:-1 tvg-name="CETV1" tvg-logo="https://logo.sspai.net.cn/img/CETV1.png" group-title="🏆教育频道･单播",CETV-1
+http://112.86.202.37:8112/JSBC_iptv/C10000173@JSBC
+#EXTINF:-1 tvg-name="CETV4" tvg-logo="https://logo.sspai.net.cn/img/CETV4.png" group-title="🏆教育频道･单播",CETV-4
+http://112.86.202.37:8112/JSBC_iptv/C10000405@JSBC
+#EXTINF:-1 tvg-name="中央新影中学生" tvg-logo="https://logo.sspai.net.cn/img/CNDzxs.png" group-title="🏆教育频道･单播",中央新影·中学生
+http://112.86.202.37:8112/JSBC_iptv/C10000471@JSBC
+
+# 🚸少儿频道･单播
+#EXTINF:-1 tvg-name="金鹰卡通" tvg-logo="https://logo.sspai.net.cn/img/jykt.png" group-title="🚸数字频道･单播",金鹰卡通
+http://112.86.202.37:8112/JSBC_iptv/C10000216@JSBC
+#EXTINF:-1 tvg-name="优漫卡通" tvg-logo="https://logo.sspai.net.cn/img/ymkt.png" group-title="🚸少儿频道･单播",优漫卡通
+http://112.86.202.37:8112/JSBC_iptv/C10000228@JSBC
+#EXTINF:-1 tvg-name="卡酷少儿" tvg-logo="https://logo.sspai.net.cn/img/kakushaoer.png" group-title="🚸少儿频道･单播",卡酷少儿
+http://112.86.202.37:8112/JSBC_iptv/C10000426@JSBC
+
 # 🎯数字频道･单播
 #EXTINF:-1 tvg-name="金鹰纪实" tvg-logo="https://logo.sspai.net.cn/img/jyjs.png" group-title="🎯数字频道･单播",金鹰纪实
 http://112.86.202.37:8112/JSBC_iptv/C10000187@JSBC
-#EXTINF:-1 tvg-name="金鹰卡通" tvg-logo="https://logo.sspai.net.cn/img/jykt.png" group-title="🎯数字频道･单播",金鹰卡通
-http://112.86.202.37:8112/JSBC_iptv/C10000216@JSBC
 #EXTINF:-1 tvg-name="快乐垂钓" tvg-logo="https://logo.sspai.net.cn/img/klcd.png" group-title="🎯数字频道･单播",快乐垂钓
 http://112.86.202.37:8112/JSBC_iptv/C10000142@JSBC
 #EXTINF:-1 tvg-name="梨园" tvg-logo="https://logo.sspai.net.cn/img/lypd.png" group-title="🎯数字频道･单播",梨园
@@ -457,11 +463,7 @@ http://112.86.202.37:8112/JSBC_iptv/C10000235@JSBC
 http://112.86.202.37:8112/JSBC_iptv/C10000237@JSBC
 #EXTINF:-1 tvg-name="武术世界" tvg-logo="https://logo.sspai.net.cn/img/wssj.png" group-title="🎯数字频道･单播",武术世界
 http://112.86.202.37:8112/JSBC_iptv/C10000236@JSBC
-#EXTINF:-1 tvg-name="优漫卡通" tvg-logo="https://logo.sspai.net.cn/img/ymkt.png" group-title="🎯数字频道･单播",优漫卡通
-http://112.86.202.37:8112/JSBC_iptv/C10000228@JSBC
 #EXTINF:-1 tvg-name="东方财经" tvg-logo="https://logo.sspai.net.cn/img/dfcj.png" group-title="🎯数字频道･单播",东方财经
 http://112.86.202.37:8112/JSBC_iptv/C10000420@JSBC
-#EXTINF:-1 tvg-name="生活时尚" tvg-logo="https://logo.sspai.net.cn/img/dfcj.png" group-title="🎯数字频道･单播",生活时尚
+#EXTINF:-1 tvg-name="生活时尚" tvg-logo="https://logo.sspai.net.cn/img/shss.png" group-title="🎯数字频道･单播",生活时尚
 http://112.86.202.37:8112/JSBC_iptv/C10000423@JSBC
-#EXTINF:-1,中学生频道
-http://112.86.202.37:8112/JSBC_iptv/C10000471@JSBC
