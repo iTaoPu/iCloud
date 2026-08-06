@@ -2,50 +2,51 @@ name: Deploy to GitHub Actions Pages
 
 on:
   push:
-    branches: ["main"] # 当推送到 main 分支时触发，如果是 master 请修改为 master
+    branches: ["Grey"] # 如果你的主分支名称是 master，请改为 ["master"]
 
-  # 允许在 Actions 页面手动触发运行
+  # 允许在 GitHub Actions 页面手动点击按钮触发
   workflow_dispatch:
 
-# 设置 GITHUB_TOKEN 权限，允许部署到 GitHub Pages
+# 授予部署到 GitHub Pages 所需的 Token 权限
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# 限制同一时间只能进行一个 Pages 部署，避免重复构建相互取消
+# 确保同一时间只有一个部署任务运行，防止并发推送到 Pages 导致冲突或取消
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  # 步骤 1：构建静态资源
+  # 构建步骤
   build:
     runs-on: ubuntu-latest
     steps:
+      # 1. 拉取仓库代码（使用 v5 适配 Node.js 24）
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       # -------------------------------------------------------------
-      # 如果你的项目需要构建（如 Vue/React/Hexo/Hugo 等），在此添加构建命令：
-      # 例如 Node.js 项目：
+      # 如果你的项目需要打包（如 Vue / React / Hexo / Hugo 等），取消注释以下内容：
       # - name: Setup Node
-      #   uses: actions/setup-node@v4
+      #   uses: actions/setup-node@v5
       #   with:
-      #     node-version: '20'
+      #     node-version: '22'
       # - run: npm ci
       # - run: npm run build
       # -------------------------------------------------------------
 
-      # 上传构建产物供 Pages 部署使用
+      # 2. 上传 Pages 静态产物
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # path 指向静态文件所在的目录
-          # 如果是纯 HTML 仓库填写 '.'；如果是 Vue/React 等填写 'dist' 或 'build'
+          # path: 指向静态资源目录
+          # 如果是纯 HTML 仓库填写 '.'
+          # 如果是 Vue/React 等框架打包后的产物，填写 'dist' 或 'build'
           path: '.' 
 
-  # 步骤 2：部署到 GitHub Pages
+  # 部署步骤
   deploy:
     environment:
       name: github-pages
@@ -53,6 +54,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
+      # 3. 执行部署
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
