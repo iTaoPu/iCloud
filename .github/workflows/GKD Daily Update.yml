@@ -17,7 +17,7 @@ jobs:
     steps:
       # 1. 检出仓库代码（指定Grey分支）
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
           ref: Grey  # 你的仓库主分支
@@ -26,7 +26,7 @@ jobs:
 
       # 2. 设置Python环境
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.10"
 
