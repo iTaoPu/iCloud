@@ -2,60 +2,42 @@ name: Deploy to GitHub Actions Pages
 
 on:
   push:
-    branches: ["Grey"] # 如果你的主分支名称是 master，请改为 ["master"]
-
-  # 允许在 GitHub Actions 页面手动点击按钮触发
+    branches: ["Grey"] # 若主分支为 master 请修改为 master
   workflow_dispatch:
 
-# 授予部署到 GitHub Pages 所需的 Token 权限
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# 并发控制：设为 true 可解决 "in progress deployment" 报错
-# 当有新提交推送时，会自动终止之前未完成的旧部署任务，确保只有一个部署在执行
+# 工作流级别的并发控制
 concurrency:
   group: "pages"
   cancel-in-progress: true
 
 jobs:
-  # 步骤 1：构建静态资源
   build:
     runs-on: ubuntu-latest
     steps:
-      # 拉取仓库代码（使用 v5 适配最新的 Node 运行环境）
       - name: Checkout
         uses: actions/checkout@v5
 
-      # -------------------------------------------------------------
-      # 如果你的项目需要打包（如 Vue / React / Hexo / Hugo 等），取消注释以下内容：
-      # - name: Setup Node
-      #   uses: actions/setup-node@v5
-      #   with:
-      #     node-version: '22'
-      # - run: npm ci
-      # - run: npm run build
-      # -------------------------------------------------------------
-
-      # 上传 Pages 静态文件产物
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # path 指向静态资源目录
-          # 纯静态 HTML 项目填 '.'
-          # Vue/React 等构建项目填写 'dist' 或 'build'
-          path: '.' 
+          path: '.'
 
-  # 步骤 2：部署到 GitHub Pages
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    # 给 deploy 步骤单独加排队锁，避免部署 API 频控冲突
+    concurrency:
+      group: "github-pages-deploy"
+      cancel-in-progress: false
     runs-on: ubuntu-latest
     needs: build
     steps:
-      # 执行 Pages 部署
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
