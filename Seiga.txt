@@ -5,8 +5,8 @@
 ! Expires: irregularly (update frequency)
 ! Description: 低误杀率，持续优化，精准过滤！
 ! ------------------------------------
-! Version: 1.8.5
-! Update Date: 2026-09-08
+! Version: 1.8.6
+! Update Date: 2026-10-11
 
 ||*.ads.heytapmobi.com^
 ||*.applovin.com^
@@ -536,8 +536,6 @@
 ||ad.track.66mobi.com^
 ||oneseeker.top^
 ||beacon.qq.com^
-||i.snssdk.com^
-||is.snssdk.com^
 ||sf3-ttcdn-tos.pstatp.com^
 ||bds.snssdk.com^
 ||dig.bdurl.net^
