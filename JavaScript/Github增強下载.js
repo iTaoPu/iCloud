@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Github 增強 - 高速下載
 // @namespace    https://i叚娤.倖鍢.net.cn
-// @version      7.7.7
+// @version      9.9.9
 // @author       言氏稗客
 // @description  人的白嫖，就如同高山滚石一般，一旦开始，就再也停不下了 —— 「鲁迅」—— 精确 0.5px 对齐
 // @match        *://github.com/*
@@ -15,15 +15,13 @@
 
     const raw_url = [
         ['https://cdn.sspai.net.cn/raw.githubusercontent.com', '中国', '少数π⁺（Cloudflare加速）', false],
-        ['https://gh-proxy.com/raw.githubusercontent.com', '全球', 'Cloudflare（Cloudflare加速）', false],
+        ['https://gh-proxy.com/raw.githubusercontent.com', '全球', 'Gh-Proxy.com（Cloudflare加速）', false],
         ['https://cdn.jsdmirror.com', '中国', 'JsDMirror（China加速）', true],
         ['https://cdn.jsdelivr.net', '美国', 'JsDelivr（CDN加速）', true],
         ['https://gcore.jsdelivr.net', '美国', 'JsDelivr（Gcore加速）', true],
         ['https://fastly.jsdelivr.net', '日本', 'JsDelivr（Fastly加速）', true],
         ['https://wget.la/raw.githubusercontent.com', '新加坡', 'Wget.la（新加坡公益加速）', false]
     ];
-
-    const cloudIcon = `<svg aria-hidden="true" height="14" viewBox="0 0 16 16" version="1.1" width="14" class="octicon octicon-cloud" style="margin-right: 6px; fill: currentColor; vertical-align: middle;"><path d="M8 14a4.996 4.996 0 0 1-4.755-3.463 3.5 3.5 0 1 1 .53-6.936 4.502 4.502 0 0 1 8.455 1.4A3.502 3.502 0 0 1 11.5 12h-3a.75.75 0 0 1 0-1.5h3a2 2 0 0 0 0-4 .75.75 0 0 1-.75-.75 3 3 0 0 0-5.892-.803.75.75 0 0 1-.682.553 2 2 0 1 0-.176 3.992.75.75 0 1 1-.1 1.498A3.5 3.5 0 0 0 3.5 10.5 3.5 3.5 0 0 0 8 14Z"></path></svg>`;
 
     function addStyle() {
         if (document.getElementById('XIU2-Style-Final')) return;
@@ -124,15 +122,6 @@
                 margin-left: 8px !important;
             }
 
-            /* 云朵浮动动画 */
-            .XIU2-RF:hover svg {
-                animation: xiu2-cloud-float 1.5s ease-in-out infinite;
-            }
-            @keyframes xiu2-cloud-float {
-                0%, 100% { transform: translateY(0); }
-                50% { transform: translateY(-2px); }
-            }
-
             /* 去除点击白色高亮 */
             .XIU2-RF:active,
             .XIU2-RF:focus,
@@ -216,7 +205,7 @@
             a.target = '_blank';
             a.role = 'button';
             a.title = item[2];
-            a.innerHTML = `${cloudIcon}${item[1]}`;
+            a.textContent = item[1];
             rawBtn.parentNode.insertBefore(a, prevBtn.nextSibling);
             prevBtn = a;
         });
