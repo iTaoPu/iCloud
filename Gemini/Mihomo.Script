@@ -71,79 +71,79 @@ const ruleProviders = {
   "reject": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt",
+    "url": "https://cdn.jsdelivr.net/gh/iTaoPu/Clash.Rules@release/reject.txt",
     "path": "./ruleset/reject.yaml"
   },
   "icloud": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt",
+    "url": "https://cdn.jsdelivr.net/gh/iTaoPu/Clash.Rules@release/icloud.txt",
     "path": "./ruleset/icloud.yaml"
   },
   "apple": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt",
+    "url": "https://cdn.jsdelivr.net/gh/iTaoPu/Clash.Rules@release/apple.txt",
     "path": "./ruleset/apple.yaml"
   },
   "google": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt",
+    "url": "https://cdn.jsdelivr.net/gh/iTaoPu/Clash.Rules@release/google.txt",
     "path": "./ruleset/google.yaml"
   },
   "proxy": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt",
+    "url": "https://cdn.jsdelivr.net/gh/iTaoPu/Clash.Rules@release/proxy.txt",
     "path": "./ruleset/proxy.yaml"
   },
   "direct": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt",
+    "url": "https://cdn.jsdelivr.net/gh/iTaoPu/Clash.Rules@release/direct.txt",
     "path": "./ruleset/direct.yaml"
   },
   "private": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt",
+    "url": "https://cdn.jsdelivr.net/gh/iTaoPu/Clash.Rules@release/private.txt",
     "path": "./ruleset/private.yaml"
   },
   "gfw": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt",
+    "url": "https://cdn.jsdelivr.net/gh/iTaoPu/Clash.Rules@release/gfw.txt",
     "path": "./ruleset/gfw.yaml"
   },
   "tld-not-cn": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt",
+    "url": "https://cdn.jsdelivr.net/gh/iTaoPu/Clash.Rules@release/tld-not-cn.txt",
     "path": "./ruleset/tld-not-cn.yaml"
   },
   "telegramcidr": {
     ...ruleProviderCommon,
     "behavior": "ipcidr",
-    "url": "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt",
+    "url": "https://cdn.jsdelivr.net/gh/iTaoPu/Clash.Rules@release/telegramcidr.txt",
     "path": "./ruleset/telegramcidr.yaml"
   },
   "cncidr": {
     ...ruleProviderCommon,
     "behavior": "ipcidr",
-    "url": "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt",
+    "url": "https://cdn.jsdelivr.net/gh/iTaoPu/Clash.Rules@release/cncidr.txt",
     "path": "./ruleset/cncidr.yaml"
   },
   "lancidr": {
     ...ruleProviderCommon,
     "behavior": "ipcidr",
-    "url": "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt",
+    "url": "https://cdn.jsdelivr.net/gh/iTaoPu/Clash.Rules@release/lancidr.txt",
     "path": "./ruleset/lancidr.yaml"
   },
   "applications": {
     ...ruleProviderCommon,
     "behavior": "classical",
-    "url": "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt",
+    "url": "https://cdn.jsdelivr.net/gh/iTaoPu/Clash.Rules@release/applications.txt",
     "path": "./ruleset/applications.yaml"
   }
 };
