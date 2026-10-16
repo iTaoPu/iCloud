@@ -11,7 +11,7 @@ permissions:
   contents: write
 
 jobs:
-  sync-trace-filter:
+  sync-Trace-filter:
     runs-on: ubuntu-latest
     steps:
       # 1. 检出仓库
@@ -28,7 +28,7 @@ jobs:
           python-version: "3.10"
 
       # 3. 下载远程规则
-      - name: Download remote trace filter file
+      - name: Download remote Trace filter file
         id: download
         run: |
           echo "📥 下载 AdGuard Tracking Protection 规则..."
@@ -39,8 +39,8 @@ jobs:
           
           for url in "${URLS[@]}"; do
             echo "尝试: $url"
-            if curl -sL --retry 3 --connect-timeout 30 -o "temp_trace_filter.txt" "$url"; then
-              RULE_COUNT=$(wc -l < "temp_trace_filter.txt" | tr -d ' ')
+            if curl -sL --retry 3 --connect-timeout 30 -o "temp_Trace_filter.txt" "$url"; then
+              RULE_COUNT=$(wc -l < "temp_Trace_filter.txt" | tr -d ' ')
               if [ "$RULE_COUNT" -gt 100 ]; then
                 echo "✅ 下载成功，共 $RULE_COUNT 行"
                 echo "DOWNLOAD_SUCCESS=1" >> $GITHUB_OUTPUT
@@ -54,16 +54,16 @@ jobs:
           exit 1
 
       # 4. 执行Python脚本
-      - name: Run trace filter sync script
+      - name: Run Trace filter sync script
         id: sync
         if: steps.download.outputs.DOWNLOAD_SUCCESS == '1'
         run: |
           echo "🚀 执行Python脚本..."
-          python .github/workflows/update_trace_filter.py
+          python .github/workflows/update_Trace_filter.py
           
           # 提取版本号
-          if [ -f "trace_script_output.log" ]; then
-            NEW_VERSION=$(grep "^NEW_VERSION=" trace_script_output.log | cut -d'=' -f2 || echo "1.0.0.0")
+          if [ -f "Trace_script_output.log" ]; then
+            NEW_VERSION=$(grep "^NEW_VERSION=" Trace_script_output.log | cut -d'=' -f2 || echo "1.0.0.0")
             echo "版本号: $NEW_VERSION"
             echo "new_version=$NEW_VERSION" >> $GITHUB_OUTPUT
           else
@@ -73,8 +73,8 @@ jobs:
           
           # 验证生成的文件
           if [ -f "Trace.txt" ]; then
-            TRACE_RULE_COUNT=$(wc -l < "Trace.txt")
-            echo "生成的Trace.txt包含 $TRACE_RULE_COUNT 行"
+            Trace_RULE_COUNT=$(wc -l < "Trace.txt")
+            echo "生成的Trace.txt包含 $Trace_RULE_COUNT 行"
           else
             echo "❌ Trace.txt未生成"
             exit 1
@@ -115,5 +115,5 @@ jobs:
       - name: Cleanup
         if: always()
         run: |
-          rm -f temp_trace_filter.txt trace_script_output.log .trace_*.log || true
+          rm -f temp_Trace_filter.txt Trace_script_output.log .Trace_*.log || true
           echo "🧹 清理完成"
