@@ -1,12 +1,10 @@
 name: Trace Daily Update
 
-# 触发条件：每3天自动运行 + 手动触发
 on:
   schedule:
     - cron: '0 10 */3 * *'
   workflow_dispatch:
 
-# 显式赋予写入权限
 permissions:
   contents: write
 
@@ -14,25 +12,21 @@ jobs:
   sync-Trace-filter:
     runs-on: ubuntu-latest
     steps:
-      # 1. 检出仓库
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           ref: Grey
           persist-credentials: true
 
-      # 2. 设置Python环境
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.10"
 
-      # 3. 下载远程规则
       - name: Download remote Trace filter file
         id: download
         run: |
           echo "📥 下载 AdGuard Tracking Protection 规则..."
-          # 使用指定的下载地址
           URLS=(
             "https://filters.adtidy.org/android/filters/3_optimized.txt"
           )
@@ -53,16 +47,19 @@ jobs:
           echo "❌ 所有下载尝试失败"
           exit 1
 
-      # 4. 执行Python脚本
       - name: Run Trace filter sync script
         id: sync
         if: steps.download.outputs.DOWNLOAD_SUCCESS == '1'
         run: |
           echo "🚀 执行Python脚本..."
-          python .github/workflows/update_Trace_filter.py
+          python .github/workflows/update_Trace_filter.py || {
+            echo "❌ Python 执行报错，打印日志内容："
+            [ -f "Trace_script_output.log" ] && cat Trace_script_output.log
+            exit 1
+          }
           
-          # 提取版本号
           if [ -f "Trace_script_output.log" ]; then
+            cat Trace_script_output.log
             NEW_VERSION=$(grep "^NEW_VERSION=" Trace_script_output.log | cut -d'=' -f2 || echo "1.0.0.0")
             echo "版本号: $NEW_VERSION"
             echo "new_version=$NEW_VERSION" >> $GITHUB_OUTPUT
@@ -71,7 +68,6 @@ jobs:
             exit 1
           fi
           
-          # 验证生成的文件
           if [ -f "Trace.txt" ]; then
             Trace_RULE_COUNT=$(wc -l < "Trace.txt")
             echo "生成的Trace.txt包含 $Trace_RULE_COUNT 行"
@@ -80,40 +76,30 @@ jobs:
             exit 1
           fi
 
-      # 5. 提交并推送
       - name: Commit and push changes
         if: steps.download.outputs.DOWNLOAD_SUCCESS == '1' && steps.sync.outputs.new_version
         env:
           NEW_VERSION: ${{ steps.sync.outputs.new_version }}
         run: |
-          # 配置Git身份
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # 切换到正确分支
           git checkout Grey || git checkout -b Grey
           
-          # 添加文件
           git add Trace.txt
           
-          # 检查是否有变更
           if git diff --cached --quiet; then
             echo "ℹ️ 无变更，跳过提交"
             exit 0
           fi
           
-          # 提交
           git commit -m "🔄 Auto update Trace.txt to v${NEW_VERSION}"
-          
-          # 推送（使用token认证）
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git Grey
           
-          # 显式重置变更为下一步做准备
           echo "✅ 更新完成并已推送"
 
-      # 6. 清理临时文件
       - name: Cleanup
         if: always()
         run: |
-          rm -f temp_Trace_filter.txt Trace_script_output.log .Trace_*.log || true
+          rm -f temp_Trace_filter.txt Trace_script_output.log || true
           echo "🧹 清理完成"
