@@ -114,10 +114,10 @@ def main():
         sys.exit(0)
     
     # 构建自定义头部
-    custom_header = f"""! Title: AdGuard 主簿がく山道 Trace List
+    custom_header = f"""! Title: AdGuard 離霭がく山道 Trace List
 ! Homepage: https://i叚娤.倖鍢.net.cn
 ! Powerd by 長髯主簿 & Upstream Authors
-! Signature: 云栖翠篁, 心绝尘氛
+! Signature: 竹影扫阶，雁过无痕
 ! Expires: irregularly (update frequency)
 ! Description: 拦截追踪探针与数据收集，守护个人隐私，掌控无痕浏览。！
 ! ------------------------------------
