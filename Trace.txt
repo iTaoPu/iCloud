@@ -1,9 +1,9 @@
-! Title: AdRules 秋風がく山道 Trace List
+! Title: AdGuard 離霭がく山道 Trace List
 ! Homepage: https://i叚娤.倖鍢.net.cn
 ! Powerd by 長髯主簿 & Upstream Authors
-! Signature: 云栖翠篁, 心绝尘氛
+! Signature: 竹影扫阶，雁过无痕
 ! Expires: irregularly (update frequency)
-! Description: 全方位屏蔽广告网络与第三方追踪器，深度保护隐私，实现真正意义上的无痕浏览！
+! Description: 拦截追踪探针与数据收集，守护个人隐私，掌控无痕浏览。！
 ! ------------------------------------
 ! Version: 2.1.13.61
 ! Update Date: 2026-10-16
