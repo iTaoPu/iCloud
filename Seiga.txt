@@ -6,7 +6,7 @@
 ! Description: 低误杀率，持续优化，精准过滤！
 ! ------------------------------------
 ! Version: 1.8.6
-! Update Date: 2026-10-16
+! Update Date: 2026-10-17
 
 ||*.ads.heytapmobi.com^
 ||*.applovin.com^
