@@ -15,6 +15,7 @@
 
     const raw_url = [
         ['https://cdn.sspai.net.cn/raw.githubusercontent.com', '中国', '少数π⁺（Cloudflare加速）', false],
+        ['https://raw.sspai.net.cn/raw.githubusercontent.com', '中国', '少数π⁺（JsDelivr加速）', false],
         ['https://gh-proxy.com/raw.githubusercontent.com', '全球', 'Gh-Proxy.com（Cloudflare加速）', false],
         ['https://cdn.jsdmirror.com', '中国', 'JsDMirror（China加速）', true],
         ['https://cdn.jsdelivr.net', '美国', 'JsDelivr（CDN加速）', true],
