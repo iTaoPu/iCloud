@@ -17,7 +17,7 @@
         ['https://cdn.sspai.net.cn/raw.githubusercontent.com', '中国', '少数π⁺（Cloudflare加速）', false],
         ['https://raw.sspai.net.cn/raw.githubusercontent.com', '中国', '少数π⁺（JsDelivr加速）', false],
         ['https://gh-proxy.com/raw.githubusercontent.com', '全球', 'Gh-Proxy.com（Cloudflare加速）', false],
-        ['https://cdn.jsdmirror.com', '中国', 'JsDMirror（China加速）', true],
+        ['https://cdn.jsdmirror.cn', '中国', 'JsDMirror（China加速）', true],
         ['https://cdn.jsdelivr.net', '美国', 'JsDelivr（CDN加速）', true],
         ['https://gcore.jsdelivr.net', '美国', 'JsDelivr（Gcore加速）', true],
         ['https://fastly.jsdelivr.net', '日本', 'JsDelivr（Fastly加速）', true],
