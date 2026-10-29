@@ -12,47 +12,47 @@ https://cloudflare.tv/hls/live.m3u8
 
 # 🎥央视･央视网
 #EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://logo.sspai.net.cn/img/CCTV1.png" group-title="🎥央视･央视网",CCTV-1 综合
-webview://https://tv.cctv.com/live/cctv1
+webview://https://tv.cctv.com/live/cctv1/
 #EXTINF:-1 tvg-name="CCTV2" tvg-logo="https://logo.sspai.net.cn/img/CCTV2.png" group-title="🎥央视･央视网",CCTV-2 财经
-webview://https://tv.cctv.com/live/cctv2
+webview://https://tv.cctv.com/live/cctv2/
 #EXTINF:-1 tvg-name="CCTV3" tvg-logo="https://logo.sspai.net.cn/img/CCTV3.png" group-title="🎥央视･央视网",CCTV-3 综艺
-webview://https://tv.cctv.com/live/cctv3
+webview://https://tv.cctv.com/live/cctv3/
 #EXTINF:-1 tvg-name="CCTV4" tvg-logo="https://logo.sspai.net.cn/img/CCTV4.png" group-title="🎥央视･央视网",CCTV-4 中文国际
-webview://https://tv.cctv.com/live/cctv4
+webview://https://tv.cctv.com/live/cctv4/
 #EXTINF:-1 tvg-name="CCTV4欧洲" tvg-logo="https://logo.sspai.net.cn/img/CCTV4oz.png" group-title="🎥央视･央视网",CCTV-4 中文国际 (欧)
-webview://https://tv.cctv.com/live/cctveurope/index.shtml
+webview://https://tv.cctv.com/live/cctveurope/
 #EXTINF:-1 tvg-name="CCTV4美洲" tvg-logo="https://logo.sspai.net.cn/img/CCTV4mz.png" group-title="🎥央视･央视网",CCTV-4 中文国际 (美)
 webview://https://tv.cctv.com/live/cctvamerica/
 #EXTINF:-1 tvg-name="CCTV5" tvg-logo="https://logo.sspai.net.cn/img/CCTV5.png" group-title="🎥央视･央视网",CCTV-5 体育
-webview://https://tv.cctv.com/live/cctv5
+webview://https://tv.cctv.com/live/cctv5/
 #EXTINF:-1 tvg-name="CCTV5" tvg-logo="https://logo.sspai.net.cn/img/CCTV5plus.png" group-title="🎥央视･央视网",CCTV-5+ 体育赛事
-webview://https://tv.cctv.com/live/cctv5plus
+webview://https://tv.cctv.com/live/cctv5plus/
 #EXTINF:-1 tvg-name="CCTV6" tvg-logo="https://logo.sspai.net.cn/img/CCTV6.png" group-title="🎥央视･央视网",CCTV-6 电影
-webview://https://tv.cctv.com/live/cctv6
+webview://https://tv.cctv.com/live/cctv6/
 #EXTINF:-1 tvg-name="CCTV7" tvg-logo="https://logo.sspai.net.cn/img/CCTV7.png" group-title="🎥央视･央视网",CCTV-7 国防军事
-webview://https://tv.cctv.com/live/cctv7
+webview://https://tv.cctv.com/live/cctv7/
 #EXTINF:-1 tvg-name="CCTV8" tvg-logo="https://logo.sspai.net.cn/img/CCTV8.png" group-title="🎥央视･央视网",CCTV-8 电视剧
-webview://https://tv.cctv.com/live/cctv8
+webview://https://tv.cctv.com/live/cctv8/
 #EXTINF:-1 tvg-name="CCTV9" tvg-logo="https://logo.sspai.net.cn/img/CCTV9.png" group-title="🎥央视･央视网",CCTV-9 纪录
-webview://https://tv.cctv.com/live/cctv9
+webview://https://tv.cctv.com/live/cctv9/
 #EXTINF:-1 tvg-name="CCTV10" tvg-logo="https://logo.sspai.net.cn/img/CCTV10.png" group-title="🎥央视･央视网",CCTV-10 科教
-webview://https://tv.cctv.com/live/cctv10
+webview://https://tv.cctv.com/live/cctv10/
 #EXTINF:-1 tvg-name="CCTV11" tvg-logo="https://logo.sspai.net.cn/img/CCTV11.png" group-title="🎥央视･央视网",CCTV-11 戏曲
-webview://https://tv.cctv.com/live/cctv11
+webview://https://tv.cctv.com/live/cctv11/
 #EXTINF:-1 tvg-name="CCTV12" tvg-logo="https://logo.sspai.net.cn/img/CCTV12.png" group-title="🎥央视･央视网",CCTV-12 社会与法
-webview://https://tv.cctv.com/live/cctv12
+webview://https://tv.cctv.com/live/cctv12/
 #EXTINF:-1 tvg-name="CCTV13" tvg-logo="https://logo.sspai.net.cn/img/CCTV13.png" group-title="🎥央视･央视网",CCTV-13 新闻
-webview://https://tv.cctv.com/live/cctv13
+webview://https://tv.cctv.com/live/cctv13/
 #EXTINF:-1 tvg-name="CCTV14" tvg-logo="https://logo.sspai.net.cn/img/CCTV14.png" group-title="🎥央视･央视网",CCTV-14 少儿
-webview://https://tv.cctv.com/live/cctv14
+webview://https://tv.cctv.com/live/cctv14/
 #EXTINF:-1 tvg-name="CCTV15" tvg-logo="https://logo.sspai.net.cn/img/CCTV15.png" group-title="🎥央视･央视网",CCTV-15 音乐
-webview://https://tv.cctv.com/live/cctv15
+webview://https://tv.cctv.com/live/cctv15/
 #EXTINF:-1 tvg-name="CCTV16" tvg-logo="https://logo.sspai.net.cn/img/CCTV16.png" group-title="🎥央视･央视网",CCTV-16 奥林匹克
-webview://https://tv.cctv.com/live/cctv16
+webview://https://tv.cctv.com/live/cctv16/
 #EXTINF:-1 tvg-name="CCTV17" tvg-logo="https://logo.sspai.net.cn/img/CCTV17.png" group-title="🎥央视･央视网",CCTV-17 农业农村
-webview://https://tv.cctv.com/live/cctv17
+webview://https://tv.cctv.com/live/cctv17/
 #EXTINF:-1 tvg-name="CCTV4K" tvg-logo="https://logo.sspai.net.cn/img/CCTV4K.png" group-title="🎥央视･央视网",CCTV4K
-webview://https://tv.cctv.com/live/cctv18
+webview://https://tv.cctv.com/live/cctv18/
 
 # 📽️央视･央视频
 #EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://logo.sspai.net.cn/img/CCTV1.png" group-title="📽️央视･央视频",CCTV-1 综合
