@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         网页加速器 (Ultimate Pure Fusion)
+// @name         网页加速器 (Pure Fusion)
 // @namespace    https://i叚娤.倖鍢.net.cn
 // @version      3.6.0
 // @author       言氏稗客
-// @description  人的白嫖，就如同高山滚石一般，一旦开始，就再也停不下了 —— 纯原生无依赖，兼顾全功能镜像加速与极致轻量防护
+// @description  人的白嫖，就如同高山滚石一般，一旦开始，就再也停不下了 —— 纯原生无依赖，专注极致网页预加载与轻量防护
 // @match        *://*/*
 // @run-at       document-idle
 // @grant        GM_setValue
@@ -19,9 +19,8 @@
     // 1. 默认配置管理
     const DEFAULT_CONFIG = {
         success_times: 0,
-        allow_external: false,      // 默认关闭外链加速（保护流量）
+        allow_external: true,      // 默认关闭外链加速（保护流量）
         allow_query: true,          // 允许带参数的链接
-        enable_store: true,         // 开启应用商店镜像加速
         delay: 130,                 // 悬停触发延迟 (ms)
         exclude_words: "login\nlogout\nregister\nsignin\nsignup\nsignout\npay\ncreate\nedit\ndownload\ndel\nreset\nsubmit\ndoubleclick\ngoogleads\nexit"
     };
@@ -50,26 +49,7 @@
 
     if (shouldAbort()) return;
 
-    // 3. 应用商店镜像重定向规则 (油小猴精髓)
-    const STORE_REGEXES = {
-        chrome: /^https?:\/\/chrome\.google\.com\/webstore\/.+?\/([a-z]{32})(?=[\/#?]|$)/,
-        chromeNew: /^https?:\/\/chromewebstore\.google\.com\/.+?\/([a-z]{32})(?=[\/#?]|$)/,
-        edge: /^https?:\/\/microsoftedge\.microsoft\.com\/addons\/.+?\/([a-z]{32})(?=[\/#?]|$)/,
-        firefox: /^https?:\/\/(reviewers\.)?(addons\.mozilla\.org|addons(?:-dev)?\.allizom\.org)\/.*?(?:addon|review)\/([^/<>"'?#]+)/,
-        microsoft: /^https?:\/\/(?:apps|www)\.microsoft\.com\/(?:store|p)\/.+?\/([a-zA-Z\d]{10,})(?=[\/#?]|$)/
-    };
-
-    const transformStoreUrl = (url) => {
-        if (!getConfig('enable_store')) return url;
-        if (STORE_REGEXES.chrome.test(url)) return url.replace("chrome.google.com", "chrome.crxsoso.com");
-        if (STORE_REGEXES.chromeNew.test(url)) return url.replace("chromewebstore.google.com", "chrome.crxsoso.com/webstore");
-        if (STORE_REGEXES.edge.test(url)) return url.replace("microsoftedge.microsoft.com", "microsoftedge.crxsoso.com");
-        if (STORE_REGEXES.firefox.test(url)) return url.replace("addons.mozilla.org", "addons.crxsoso.com");
-        if (STORE_REGEXES.microsoft.test(url)) return url.replace(/(www|apps)\.microsoft\.com/, "apps.crxsoso.com");
-        return url;
-    };
-
-    // 4. 深度 URL 清洗与安全过滤
+    // 3. 深度 URL 清洗与安全过滤
     const prefetched = new Set();
 
     const sanitize = (el) => {
@@ -100,8 +80,7 @@
             const fullUrlStr = u.href.toLowerCase();
             for (const kw of excludeKeywords) {
                 if (kw && fullUrlStr.includes(kw.toLowerCase())) {
-                    const isStore = Object.values(STORE_REGEXES).some(reg => reg.test(u.href));
-                    if (!isStore) return null;
+                    return null;
                 }
             }
 
@@ -118,25 +97,20 @@
             // 大文件或非网页后缀过滤
             if (/\.(zip|rar|7z|pdf|exe|apk|dmg|iso|torrent)$/i.test(u.pathname)) return null;
 
-            const finalUrl = transformStoreUrl(u.href);
-            if (prefetched.has(finalUrl)) return null;
+            if (prefetched.has(u.href)) return null;
 
-            return finalUrl;
+            return u.href;
         } catch (e) {
             return null;
         }
     };
 
-    // 5. 核心任务执行器（双重切片：Idle + Microtask）
-    const dispatch = (url, linkElement) => {
+    // 4. 核心任务执行器（双重切片：Idle + Microtask）
+    const dispatch = (url) => {
         if (prefetched.has(url)) return;
 
         const work = () => {
             if (prefetched.has(url)) return;
-
-            if (linkElement && linkElement.href !== url) {
-                linkElement.href = url;
-            }
 
             const head = document.head;
             const dns = document.createElement('link');
@@ -162,7 +136,7 @@
         (window.requestIdleCallback || window.requestAnimationFrame || setTimeout)(work, { timeout: 2000 });
     };
 
-    // 6. 事件闭环绑定（兼容防误触）
+    // 5. 事件闭环绑定（兼容防误触）
     let shutter = null;
     let lastTouchTime = 0;
     const TRIGGER_MS = IS_MOBILE ? 200 : getConfig('delay');
@@ -171,7 +145,7 @@
         lastTouchTime = performance.now();
         const link = e.target.closest('a');
         const url = sanitize(link);
-        if (url) dispatch(url, link);
+        if (url) dispatch(url);
     };
 
     const handleMouseOver = (e) => {
@@ -181,7 +155,7 @@
         const url = sanitize(link);
         if (url) {
             if (shutter) clearTimeout(shutter);
-            shutter = setTimeout(() => dispatch(url, link), TRIGGER_MS);
+            shutter = setTimeout(() => dispatch(url), TRIGGER_MS);
         }
     };
 
@@ -197,7 +171,7 @@
     document.addEventListener('mouseover', handleMouseOver, opt);
     document.addEventListener('mouseout', handleMouseOut, opt);
 
-    // 7. 纯原生轻量配置弹窗（无需 CDN，精致美观）
+    // 6. 纯原生轻量配置弹窗（无需 CDN，精致美观）
     GM_addStyle(`
         #fusion-setting-mask { position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 999999; display: flex; align-items: center; justify-content: center; font-family: sans-serif; }
         #fusion-setting-box { background: #fff; width: 420px; max-width: 90vw; border-radius: 8px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); padding: 20px; box-sizing: border-box; }
@@ -218,7 +192,7 @@
         mask.id = 'fusion-setting-mask';
         mask.innerHTML = `
             <div id="fusion-setting-box">
-                <h3>🚀 网页加速器配置 (Ultra Pure Fusion)</h3>
+                <h3>🚀 网页加速器配置 (Pure Fusion)</h3>
                 <div class="fusion-row">
                     <label>加速外部链接</label>
                     <input type="checkbox" id="f-ext" ${getConfig('allow_external') ? 'checked' : ''}>
@@ -226,10 +200,6 @@
                 <div class="fusion-row">
                     <label>加速带参数链接 (?)方案</label>
                     <input type="checkbox" id="f-query" ${getConfig('allow_query') ? 'checked' : ''}>
-                </div>
-                <div class="fusion-row">
-                    <label>应用商店镜像加速 (crxsoso)</label>
-                    <input type="checkbox" id="f-store" ${getConfig('enable_store') ? 'checked' : ''}>
                 </div>
                 <div class="fusion-col">
                     <label>排除关键词 (一行一个)</label>
@@ -249,14 +219,13 @@
         document.getElementById('fusion-save').onclick = () => {
             setConfig('allow_external', document.getElementById('f-ext').checked);
             setConfig('allow_query', document.getElementById('f-query').checked);
-            setConfig('enable_store', document.getElementById('f-store').checked);
             setConfig('exclude_words', document.getElementById('f-words').value);
             mask.remove();
             location.reload();
         };
     };
 
-    // 8. 油猴菜单注册
+    // 7. 油猴菜单注册
     GM_registerMenuCommand(`🚀 已加速: ${getConfig('success_times')} 次 (点击清零)`, () => {
         if (confirm("确定要重置加速统计次数吗？")) {
             setConfig('success_times', 0);
