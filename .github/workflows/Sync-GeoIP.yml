@@ -34,15 +34,14 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
-          # 检查是否有文件改动
-          git status
+          # 添加新下载的文件
           git add GeoIP.bin.gz
           
-          # 如果文件没有变化，则直接退出不进行 commit
-          if git diff --staged --quiet; then
+          # 检查是否有文件改动或新增
+          if git diff --cached --quiet && [ -z "$(git status --porcelain)" ]; then
             echo "GeoIP 数据库内容无更新，跳过提交。"
             exit 0
-          }
+          fi
           
           git commit -m "Auto-update GeoIP.bin.gz [skip ci]"
           git push
