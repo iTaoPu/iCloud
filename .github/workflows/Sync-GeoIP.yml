@@ -1,0 +1,48 @@
+name: Sync GeoIP Database
+
+on:
+  # 每周一北京时间 0 点自动运行
+  schedule:
+    - cron: '0 16 * * 0'
+  # 允许手动在 Actions 页面点击运行
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # 赋予推送代码到仓库的权限
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download and rename GeoIP.bin.gz
+        run: |
+          echo "正在下载最新的 GeoIP 数据库..."
+          curl -L -o GeoIP.bin.gz "https://github.com/pass-with-high-score/blockads-android/releases/download/geoip-database/geoip_ipv4.bin.gz"
+          
+          # 验证文件是否下载成功且不为空
+          if [ ! -s GeoIP.bin.gz ]; then
+            echo "错误：下载的文件为空或下载失败！"
+            exit 1
+          fi
+          echo "下载成功，文件大小："
+          ls -lh GeoIP.bin.gz
+
+      - name: Commit and Push to repository
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          # 检查是否有文件改动
+          git status
+          git add GeoIP.bin.gz
+          
+          # 如果文件没有变化，则直接退出不进行 commit
+          if git diff --staged --quiet; then
+            echo "GeoIP 数据库内容无更新，跳过提交。"
+            exit 0
+          }
+          
+          git commit -m "Auto-update GeoIP.bin.gz [skip ci]"
+          git push
