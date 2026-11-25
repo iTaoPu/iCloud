@@ -6,7 +6,7 @@
 ! Description: 极致的体积控制，超高的命中率，极低的硬件要求！
 ! ------------------------------------
 ! Version: 1.7.9-release
-! Update Date: 2026-11-16
+! Update Date: 2026-11-23
 
 ||1500020991.vodplayer.wxamedia.com^
 ||1500022744.vodplayer.wxamedia.com^
