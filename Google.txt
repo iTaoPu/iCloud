@@ -5,8 +5,8 @@
 ! Expires: irregularly (update frequency)
 ! Description: Completely blocks all Google-related domains (including YouTube).
 ! ------------------------------------
-! Version: 1.0.14.73
-! Update Time: 2026-11-23 07:25:10
+! Version: 1.0.14.74
+! Update Time: 2026-11-26 09:41:02
 
 ||adgoogle.net^
 ||crashlytics.com^
@@ -1612,13 +1612,10 @@
 ||home-assistant.nest.com^
 ||home.nest.com^
 ||hvac-diag.nest.com^
-||images.mail.nest.com^
 ||logsink.devices.nest.com^
 ||marketing-assets.nest.com^
 ||myaccount.nest.com^
 ||nssbridge.nest.com^
-||pdb-mysql-proxy01.data01.iad01.hq.nest.com^
-||pdb-mysql-proxy02.data01.iad01.hq.nest.com^
 ||pro.nest.com^
 ||resource-gateway.api.nest.com^
 ||shield-home.nest.com^
